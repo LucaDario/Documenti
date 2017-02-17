@@ -1,0 +1,42 @@
+\input{../../../Template/Layout.tex}
+\input{../../../Template/Comandi.tex}
+
+% Comandi per generare l'intro
+\newcommand{\documento}{\PdP}
+\newcommand{\versione}{1.0.0}
+\newcommand{\redatori}{\SL\\ & \FB}
+\newcommand{\revisori}{\RM}
+\newcommand{\approvazione}{\LD}
+\newcommand{\statoapprovazione}{Approvato}
+% Quando il documento sarà approvato, inserire all'interno del comando seguente la data nel formato GG mese AAAA dove GG è il giorno a due cifre, mese è il mese scritto per esteso con la prima lettera minuscola, e AAAA è l'anno a quattro cifre
+\newcommand{\dataApprovazione}{30 dicembre 2016}
+\newcommand{\uso}{Esterno}
+\newcommand{\destinatari}{\TV\\ & \RC\\ & \RB}
+
+\usepackage{graphicx}
+\usepackage{float}
+
+\newcommand{\sommario}{Questo documento si prefigge di regolamentare le operazioni di verifica del gruppo \gruppo\ necessarie ad assicurare i requisiti qualitativi per il progetto \progetto.
+}
+
+
+\input{Sezioni/Diario.tex}
+
+\begin{document}
+
+\input{../../../Template/Intro.tex}
+\input{../../../Template/Diario.tex}
+
+% Includi il template che ha nell'indice anche la lista delle figure e delle tabelle
+%\input{../../../Template/Indice.tex}
+\input{../../../Template/IndiceTabelleFigure.tex}
+
+\input{Sezioni/1-Introduzione.tex}
+\input{Sezioni/2-AnalisiDeiRischi.tex}
+\input{Sezioni/3-Pianificazione.tex}
+\input{Sezioni/4-Preventivo.tex}
+\input{Sezioni/5-SuddivisioneDelLavoro.tex}
+\input{Sezioni/6-ProspettoEconomico.tex}
+\input{Sezioni/7-Organigramma.tex}
+
+\end{document}

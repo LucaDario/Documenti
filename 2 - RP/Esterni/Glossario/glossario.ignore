@@ -1,0 +1,4 @@
+Diario.tex
+Glossario.tex
+#Ignora le sezioni del glossario
+^\w.tex$

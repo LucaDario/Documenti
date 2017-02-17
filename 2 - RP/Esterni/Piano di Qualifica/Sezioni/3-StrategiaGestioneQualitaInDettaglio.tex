@@ -1,0 +1,131 @@
+\section{Strategia di Gestione della Qualità in Dettaglio}
+\subsection{Risorse}
+Per raggiungere gli obiettivi qualitativi prefissati è necessario, oltre alle risorse umane, utilizzare la potenza e l'affidabilità delle risorse tecnologiche. Infatti, per agevolare il lavoro dei \VerP, verranno impiegati numerosi strumenti automatici che eseguiranno controlli sistematici sui prodotti generati. \\
+Le risorse tecniche e tecnologiche consistono in tutti quegli strumenti software e hardware che il \gruppo\ intende utilizzare per le attività di verifica su processi e prodotti; per la descrizione di tali strumenti si rimanda al documento \NdP.
+
+\subsection{Misure e metriche}
+Allo scopo di rendere quantificabile il processo di verifica verranno adottate delle misure basate su metriche stabilite a priori. Le metriche incerte, qualora ve ne fossero, verranno migliorate in modo incrementale. \\
+Le varie misure che verranno rilevate saranno analizzate confrontandole con due categorie di misurazione:
+\begin{itemize}
+\item
+\textbf{Accettazione}: intervallo di valori minimi entro i quali il prodotto sarà accettato;
+\item
+\textbf{Ottimale}: intervallo di valori ottimali entro i quali il prodotto risulta soddisfare pienamente, o quasi, i requisiti richiesti. I valori all'interno di tali intervalli devono essere quindi intesi come consigliati ma non vincolanti.
+\end{itemize}
+
+\subsubsection{Metriche per i documenti}
+Per i documenti redatti si è scelto di utilizzare l'indice di leggibilità per la lingua italiana: l'indice di Gulpease.
+
+\paragraph{L'indice di Gulpease}
+L'indice Gulpease rispetto ad altri indici di leggibilità possiede il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificando il calcolo dell'indice stesso. Esso considera due variabili linguistiche:
+\begin{itemize}
+\item La lunghezza della parola;
+\item La lunghezza della frase rispetto al numero delle lettere.
+\end{itemize}
+
+I valori dell'indice sono compresi tra 0 e 100, dove il valore 100 indica la leggibilità più alta e 0 la leggibilità più bassa.
+Gli intervalli richiesti per ogni documento redatto sono i seguenti:
+\begin{itemize}
+\item Accettazione: [40 -- 100];
+\item Ottimale: [50 -- 100].
+\end{itemize}
+
+\subsubsection{Metriche per il software}
+
+Questa sezione, che verrà rivista e incrementata nelle prossime revisioni, è da intendere come una dichiarazione di propositi.
+Per raggiungere gli obiettivi auspicati dallo standard ISO di riferimento (ISO/IEC 9126), ovvero funzionalità, affidabilità,
+efficienza, usabilità e manutenibilità, saranno applicate le seguenti metriche:
+
+\paragraph{Numero di livelli di annidamento per metodo}
+Rappresenta il numero di strutture di controllo, annidate tra loro, internamente ad un metodo.
+Un valore elevato per questa metrica potrebbe essere indice di una complessità troppo elevate del metodo stesso, e di un basso livello di astrazione del codice.
+Intervalli richiesti:
+\begin{itemize}
+\item
+Accettazione: [1 -- 5];
+\item
+Ottimale: [1 −- 3].
+\end{itemize}
+
+\paragraph{Numero di parametri per metodo}
+Rappresenta il numero di parametri da passare per la chiamata di un metodo.
+Un numero elevato per un dato metodo potrebbe evidenziare la necessità di ridurne le funzionalità associate e/o suddividerle in altri metodi ausiliari.
+Un alto valore di questo indice potrebbe evidenziare pertanto un possibile errore di progettazione.
+Intervalli richiesti:
+\begin{itemize}
+\item
+Accettazione: [0 −- 6];
+\item
+Ottimale: [0 −- 4].
+\end{itemize}
+
+\paragraph{Complessità ciclomatica}
+Questo indice viene utilizzato per misurare la complessità di un programma. Esso misura direttamente il numero di cammini linearmente indipendenti attraverso il \termine{grafo di controllo di flusso}. I nodi del grafo corrispondono a gruppi indivisibili di istruzioni, mentre gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo gruppo.
+Alti valori di \termine{complessità ciclomatica} implicano una ridotta manutenibilità del codice. Valori bassi potrebbero però determinare  una scarsa efficienza dei metodi. McCabe, ideatore di questa metrica, raccomandava che i programmatori contassero la complessità dei moduli in sviluppo, e li dividessero in moduli più piccoli, qualora tale complessità superi 10 ma osservando che in certe circostanze può essere appropriato rilassare tale restrizione e permettere moduli con una complessità anche di 15.
+Intervalli richiesti:
+\begin{itemize}
+\item
+Accettazione: [1 -− 15];
+\item
+Ottimale: [1 -− 10].
+\end{itemize}
+
+\paragraph{Numero di attributi per classe}
+Questa metrica prevede di valutare la qualità del software in base al numero di attributi presenti in una classe.
+Un numero elevato di attributi potrebbe evidenziare un possibile errore di progettazione con conseguente necessità di suddividere la classe in più classi in relazione tra loro seguendo il principio dell'incapsulamento.
+Intervalli richiesti:
+\begin{itemize}
+\item
+Accettazione: [0 −- 12];
+\item
+Ottimale: [0 −- 8].
+\end{itemize}
+
+\paragraph{Copertura dei test}
+Questo indice indica la percentuale di istruzioni del prodotto che vengono eseguite durante i test.
+Un valore percentuale alto indica una maggiore copertura dei test e quindi una maggiore probabilità che le componenti abbiano una ridotta quantità di errori.
+Tale indice può però essere abbassato da metodi molto semplici che non richiedono testing come ad esempio metodi \texttt{getter} e/o \texttt{setter}.
+Intervalli richiesti:
+\begin{itemize}
+\item
+Accettazione: [40\% −- 100\%];
+\item
+Ottimale: [65\% −- 100\%].
+\end{itemize}
+
+\paragraph{Linee di commento per linee di codice}
+Questo indice indica il rapporto tra linee di commento e linee di codice ed è utile per stimare la manutenibilità e la comprensibilità del codice. 
+Intervalli richiesti:
+\begin{itemize}
+\item
+Accettazione: [> 0.15];
+\item
+Ottimale: [>0.20].
+\end{itemize}
+
+\paragraph{Livello di stabilità}
+Per comprendere questa metrica è necessario dare una semplice spiegazione di \termine{accoppiamento afferente} e di \termine{accoppiamento efferente}.
+\begin{itemize}
+\item
+\textbf{Accoppiamento afferente}: indica il numero di classi esterne ad un \termine{package} che dipendono da classi interne ad esso.
+Un alto valore implica un alto grado di dipendenza del resto del software dal \termine{package}. Un valore eccessivamente basso, invece, potrebbe evidenziare che un \termine{package} fornisce poche funzionalità.
+\item
+\textbf{Accoppiamento efferente}: indica il numero di classi interne al \termine{package} che dipendono da classi esterne ad esso.
+Mantenendo il valore di tale indice basso è possibile garantire funzionalità di base indipendentemente dal resto del sistema.
+\end{itemize}
+
+La stabilità di un \termine{package} indica la possibilità di effettuare modifiche a tale \termine{package} senza influenzarne altri all'interno dell'applicazione. Tale indice è strettamente legato all'accoppiamento efferente ed afferente e viene calcolato dalla seguente formula:
+
+\begin{displaymath}
+{\text{Accoppiamento Afferente}}\over{\text{Accoppiamento Afferente} + \text{Accoppiamento Efferente}}
+\end{displaymath}
+
+Intervalli richiesti:
+\begin{itemize}
+\item
+Accettazione: [0.0 −- 0.8];
+\item
+Ottimale: [0.0 −- 0.3].
+\end{itemize}
+
+\newpage

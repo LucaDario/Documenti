@@ -1,0 +1,190 @@
+{
+    "1": {
+        "12 Factors App Guidelines": "Insieme di \\termine{Best Practices} per lo sviluppo di \\termine{web app}"
+    },
+    "A": {
+        "Accoppiamento Afferente": "Numero di classi esterne ad un \\termine{package} che dipendono da una classe interna ad esso",
+        "Accoppiamento Efferente": "Numero di classi interne ad un \\termine{package} che dipendono da una classe esterna ad esso",
+        "Ambienti Di Sviluppo": "Insieme di software atti a suportare il programmatore durante la scrittura del codice sorgente di un software",
+        "Analisi": "Metodo di indagine basato sulla scomposizione di ciò che si presenta unitario nei suoi elementi costitutivi",
+        "Api": "Insieme di procedure disponibili al programmatore, di solito raggruppate a formare un set di strumenti specifici per l'espletamento di un determinato compito all'interno di un certo programma",
+        "Atmosphere": "Sito web da cui è possibile cercare librerie compatibili con il \\termine{framework} \\termine{Meteor.js}"
+    },
+    "B": {
+        "Best Practice": "Insieme delle attività che, organizzate in modo sistematico, possono essere prese come riferimento e riprodotte per favorire il raggiungimento dei risultati migliori",
+        "Best Practices": "Insieme delle attività che, organizzate in modo sistematico, possono essere prese come riferimento e riprodotte per favorire il raggiungimento dei risultati migliori",
+        "Bitbucket": "Servizio di hosting per progetti software",
+        "Bolla": "Ogni messaggio presente all'interno di \\termine{Monolith} e, più in generale di \\termine{Rocket.chat}, che l'utente può visualizzare all'interno di una qualsiasi chat",
+        "Bolle": "Ogni messaggio presente all'interno di \\termine{Monolith} e, più in generale di \\termine{Rocket.chat}, che l'utente può visualizzare all'interno di una qualsiasi chat",
+        "Bolle Interattive": "Messagio in grado di cambiare il proprio contenuto dopo essere stato inviato",
+        "Bot": "Programma che accede alla rete attraverso lo stesso tipo di canali utilizzati dagli utenti umani, nel nostro caso che invia messaggi all'interno di una chat offrendo servizi utili agli utenti",
+        "Bottone Semplice": "Oggetto che genera eventi alla sua pressione",
+        "Business": "Termine inglese che identifica in generale un'attività economica e approssimativamente può essere tradotto con il termine italiano \\textit{affari}"
+    },
+    "C": {
+        "Callback": "In programmazione, un callback (o, in italiano, richiamo) è, in genere, una funzione, o un \"blocco di codice\" che viene passata come parametro ad un'altra funzione",
+        "Camel Case": "Pratica di scrivere parole composte o frasi unendo le parole tra loro ma lasciando le loro iniziali maiuscole es: (Ciao mondo = CiaoMondo)",
+        "Capability Maturity Model": "Modello di riferimento costituito da pratiche consolidate in una disciplina specifica",
+        "Capability Maturity Model Integration -- Cmmi": "Approccio al miglioramento dei processi il cui obiettivo è di aiutare un'organizzazione a migliorare le sue prestazioni",
+        "Capitolato": "Atto allegato a un contratto d'appalto che intercorre tra il cliente ed una ditta appaltatrice in cui vengono indicate modalità, costi e tempi di realizzazione dell'opera oggetto del contratto",
+        "Caso D'Uso": "Tecnica usata nei processi di ingegneria del software per effettuare in maniera esaustiva e non ambigua, la raccolta dei requisiti al fine di produrre software di qualità",
+        "Chai": "E' una libreria per verificare che lo stato di una variabile o oggetto sia quello desiderato",
+        "Checkbutton": "Componenete che ha due stati: selezionato e non selezionato",
+        "Ciclo Di Deming": "Metodo di gestione in quattro fasi, utilizzato in attività per il controllo e il miglioramento continuo dei processi e dei prodotti",
+        "Codifica": "Periodo durante il quale uno o più programmatori scrivono del codice (\\textit{codificano}) al fine di creare un prodotto software",
+        "Commento A Blocco": "Pratica che consente di scrivere un commento separandolo su più linee",
+        "Commit": "Comando del software \\termine{git} attraverso il quale è possibile salvare localmente una o più modifiche eseguite all'interno di uno o più file, spesso allegando un messaggio identificativo di tali modifiche",
+        "Committente": "Figura che commissiona un lavoro, indipendentemente dall'entità o dall'importo",
+        "Complessità Ciclomatica": "Metrica software utilizzata per misurare la complessità di un programma",
+        "Conformità": "Situazione in cui il software prodotto risulta essere coerente con gli obiettivi stabiliti in precedenza alla sua realizzazione",
+        "Css": "\\textit{eng. Cascading Style Sheets}, in italiano \\textit{fogli di stile a cascata}. Linguaggio usato per definire la formattazione di documenti HTML, XHTML e XML ad esempio i siti web e relative pagine web",
+        "Css3": "Versione 3 del linguaggio \\termine{CSS}",
+        "Csshint": "Software per rendere lo stile di scrittura dei documenti css conforme alle regole stabilite dal gruppo"
+    },
+    "D": {
+        "Dbms": "\\textit{eng. Database Management System}. Sistema software progettato per consentire la creazione, la manipolazione e l'interrogazione efficiente di database",
+        "Debugger": "Programma/software specificatamente progettato per l'analisi e l'eliminazione dei bug (\\textit{debugging}), ovvero errori di programmazione interni al codice di altri programmi",
+        "Default": "Stato o risposta di un sistema qualunque in assenza (per difetto, cioè in mancanza) di interventi espliciti (ad esempio input o configurazioni dell'utente), ovverosia \\textit{predefinito}",
+        "Demo": "Campione dimostrativo della produzione di programmatori. Specificatamente, risultato dell'utilizzo dell'\\termine{SDK} che ne mostra alcune (se non tutte) le funzionalità",
+        "Design-Pattern": "Soluzione progettuale generale ad un problema ricorrente",
+        "Diagramma Di Gantt": "Strumento di supporto alla gestione dei progetti si rappresenta sotto forma di un grafico avente un asse orizzontale in cui vi è la rappresentazione dell'arco temporale totale del progetto, suddiviso in fasi incrementali (ad esempio, giorni, settimane, mesi) e da un asse verticale che mostra la rappresentazione delle mansioni o attività che costituiscono il progetto",
+        "Diagrammi Di Gantt": "Strumento di supporto alla gestione dei progetti si rappresenta sotto forma di un grafico avente un asse orizzontale in cui vi è la rappresentazione dell'arco temporale totale del progetto, suddiviso in fasi incrementali (ad esempio, giorni, settimane, mesi) e da un asse verticale che mostra la rappresentazione delle mansioni o attività che costituiscono il progetto"
+    },
+    "E": {
+        "Editing Bubble": "Bolla avente contenuto modificabile",
+        "Efficacia": "Capacità di produrre l'effetto e i risultati voluti o sperati",
+        "Efficienza": "Capacità di azione o di produzione con il minimo di scarto, di spesa, di risorse e di tempo impiegati"
+    },
+    "F": {
+        "Font": "\\textit{eng. Tipo di carattere}. Insieme di caratteri tipografici caratterizzati e accomunati da un certo stile grafico o intesi per svolgere una data funzione",
+        "Framework": "Un framework in informatica e specificatamente nello sviluppo software è un'architettura logica di supporto su cui un software può essere progettato e realizzato, spesso facilitandone lo sviluppo da parte del programmatore",
+        "Framework Frontend": "\\termine{Framework} atto allo sviluppo di una interfaccia grafica"
+    },
+    "G": {
+        "Ganttchart": "\\textit{eng. Diagramma di Gantt} Strumento di supporto alla gestione dei progetti usato principalmente nelle attività di project management e costruito partendo da un asse orizzontale -- a rappresentazione dell'arco temporale totale del progetto, suddiviso in fasi incrementali (ad esempio, giorni, settimane, mesi) -- e da un asse verticale -- a rappresentazione delle mansioni o attività che costituiscono il progetto.",
+        "Gesture": "Gesto a cui è associata una azione",
+        "Git": "Software di controllo versione distribuito utilizzabile da interfaccia a riga di comando",
+        "Github": "Servizio di hosting per progetti software",
+        "Gitlab": "Servizio di hosting per progetti software",
+        "Google Drive": "Servizio web di archiviazione di file",
+        "Grafo Di Controllo Di Flusso": "Grafo che mostra il flusso di esecuzione di un programma, usato per calcolare la \\termine{Complessità Ciclomatica}",
+        "Gruppo": "Insieme delle persone fisiche Diego Cavestro, Francesco Bazzerla, Luca Dario, Manuel Turetta, Nicolò Dovico, Stefano Lia e Riccardo Montagnin"
+    },
+    "H": {
+        "Heroku": "Servizio di rete che consiste nell'allocare su un server web le pagine web di un sito web o un'applicazione web, rendendolo così accessibile dalla rete Internet e ai suoi utenti",
+        "Hosting": "Un servizio di rete che consiste nell'allocare su un server web le pagine web di un sito web o un'applicazione web, rendendolo così accessibile dalla rete Internet e ai suoi utenti",
+        "Html": "\\textit{eng. HyperText Markup Language, linguaggio a marcatori per ipertesti}. Linguaggio di \\termine{markup} solitamente usato per la formattazione e impaginazione di documenti ipertestuali disponibili nel World Wide Web sotto forma di pagine web, nato assieme al web 1.0",
+        "Html5": "Versione 5 di \\termine{HTML}, pubblicato come W3C Recommendation da ottobre 2014"
+    },
+    "I": {
+        "Ide": "\\textit{eng. Integrated Development Environment, ambiente di sviluppo integrato}. Software che, in fase di programmazione, aiuta i programmatori nello sviluppo del codice sorgente di un programma",
+        "Indice Di Manutenibilità": "Valore che indica quanto il codice risulta manutenibile",
+        "Inline": "Mantenere una seuquenza di caratteri nella stessa riga",
+        "Inspection": "\\textit{eng. Ispezione}",
+        "Instant Messaging": "E' una categoria di sistemi di comunicazione in tempo reale in rete, tipicamente Internet o una rete locale, che permette ai suoi utilizzatori lo scambio di messaggi",
+        "Intellij Idea": "Un ambiente di sviluppo integrato \\termine{IDE}",
+        "Iso": "\\textit{eng. International Organization for Standardization, Organizzazione internazionale per la normazione}. La più importante organizzazione a livello mondiale per la definizione di norme tecniche",
+        "Issue": "\\textit{eng. Problema}. All'interno del mondo \\termine{Git}, una \\termine{issue} è una metodologia utilizzata per far presente agli sviluppatori al lavoro su una determinata \\termine{repository} che vi è un problema con il codice scritto in essa",
+        "Issues": "\\textit{eng. Problema}. All'interno del mondo \\termine{Git}, una \\termine{issue} è una metodologia utilizzata per far presente agli sviluppatori al lavoro su una determinata \\termine{repository} che vi è un problema con il codice scritto in essa"
+    },
+    "J": {
+        "Javascript": "Linguaggio di scripting orientato agli oggetti e agli eventi, comunemente utilizzato nella programmazione Web lato client per la creazione, in siti web e applicazioni web, di effetti dinamici interattivi tramite funzioni di script invocate da eventi innescati a loro volta in vari modi dall'utente sulla pagina web in uso",
+        "Jenkins": "Strumento open source di continuous integration, scritto in linguaggio Java e che fornisce dei servizi di integrazione continua per lo sviluppo del software",
+        "Jolie": "Linguaggio di programmazione orientato ai micro servizzi",
+        "Jquery": "Libreria JavaScript per applicazioni web. Nasce con l'obiettivo di semplificare la selezione, la manipolazione, la gestione degli eventi e l'animazione di elementi DOM in pagine HTML, nonché implementare funzionalità AJAX",
+        "Jshint": "Strumento di analisi statica del codice volto al linguaggio \\termine{JavaScript}"
+    },
+    "L": {
+        "Latex": "\\termine{Linguaggio di markup} usato per la preparazione di testi basato sul programma di composizione tipografica \\LaTeX",
+        "Librerie": "Insieme di utility software",
+        "Linguaggio Di Markup": "E' un insieme di regole che descrivono i meccanismi di rappresentazione (strutturali, semantici o presentazionali) di un testo che, utilizzando convenzioni standardizzate, sono utilizzabili su più supporti",
+        "Log": "File o insieme di file su cui vengono memorizzate sequenzialmente e cronologicamente delle operazioni effettuate"
+    },
+    "M": {
+        "Manuale Utente": "Documento destinato all'utilizzatore finale del prodotto, contenente la documentazione del prodotto",
+        "Markup": "Sequenza di caratteri con cui si marcano gli elementi di un file di testo per assegnare loro determinate caratteristiche o funzioni",
+        "Meteor.Js": "\\termine{Framework} per creare web app usando il linguaggio di programmazione \\termine{javascript}",
+        "Microservizio": "Parte di un sistema che abbraccia l'approccio di implementazione a micro-servizi, ha la caratteristica di essere indipendente dagli altri moduli in modo tale da riuscire a sviluppare in modo agile sistemi distribuiti",
+        "Milestone": "\\textit{eng. Pietra miliare}. Indica importanti traguardi intermedi nello svolgimento del progetto",
+        "Mocha": "\\termine{Framework} per eseguire test automatici su codice \\termine{Javascript}",
+        "Mock": "Server per indicare che una più componente software è stata simulata durante l'esecuzione di test automatici",
+        "Modello Incrementale": "Per modello incrementale o modello iterativo si intende, nell'ambito dell'ingegneria informatica, un modello di sviluppo di un progetto software basato sulla successione dei seguenti passi principali: pianificazione, analisi dei requisiti, progetto, implementazione, prove, valutazione",
+        "Mongodb": "\\termine{DBMS} non relazionale orientato ai documenti. Classificato come un database di tipo NoSQL, \\termine{MongoDB} si allontana dalla struttura tradizionale basata su tabelle dei database relazionali in favore di documenti in stile JSON con schema dinamico (BSON), rendendo l'integrazione di dati di alcuni tipi di applicazioni più facile e veloce",
+        "Monolith": "\\termine{SDK} che permette agli sviluppatori che operano su piattaforma \\termine{Rocket.chat} di creare varie tipologie di bolle differenti oppure di utilizzare quelle preesistenti"
+    },
+    "O": {
+        "Open Source": "Software per il quale viene reso pubblico anche il suo codice sorgente",
+        "Organigramma": "Rappresentazione grafica di una struttura organizzativa corrente o in un certo momento storico"
+    },
+    "P": {
+        "Pacchetto Stand-Alone": "Pacchetto che non dipende da librerie esterne",
+        "Package": "\\textit{eng. Pacchetto}. Collezione di classi e interfacce correlate",
+        "Package Management": "Software che gestisce e organizza dei pacchetti software",
+        "Package Manager": "Collezione di strumenti che automatizzano il processo di installazione, aggiornamento, configurazione e rimozione dei pacchetti software",
+        "Pascalcase": "Tecnica tipografica che prevede la scrittura di parole composte come una unica parola all'interno delle quali l'iniziale di ciascuna parola inizia con una lettera maiuscola",
+        "Pdca": "\\textit{eng. Plan Do Check Act, sin. Ciclo di Deming}. Metodo di gestione in quattro fasi iterativo utilizzato in attività per il controllo e il miglioramento continuo dei processi e dei prodotti",
+        "Pdf": "\\textit{eng. Portable Document Format, Formato di documenti portatile}. Formato di file basato su un linguaggio di descrizione di pagina sviluppato da Adobe Systems nel 1993 per rappresentare documenti in modo indipendente dall'hardware e dal software utilizzati per generarli o per visualizzarli",
+        "Plugin": "Programma non autonomo che interagisce con un altro programma per ampliarne o estenderne le funzionalità originarie",
+        "Png": "\\textit{eng. Portable Network Graphics}. Formato di file per memorizzare immagini",
+        "Prodotto": "Nel campo del project management il prodotto rilasciato, indicato solitamente con il termine \\textit{deliverable} nella letteratura tecnologica, indica un oggetto materiale o immateriale realizzato (fornito/consegnato) come risultato di una attività del progetto",
+        "Progettazione Architetturale": "Progettazione \"ad altissimo livello\", in cui si definisce solo la struttura complessiva del sistema in termini dei principali moduli di cui esso è composto e delle relazioni macroscopiche fra di essi",
+        "Progettazione Di Dettaglio": "Rappresenta una descrizione del sistema molto vicina alla codifica, ovvero che la vincola in maniera sostanziale",
+        "Promise Centric Approach": "E un approccio centrato sul uso delle promesse, cioè oggetti che rappresentano il risultato di una chiamata di funzione asincrona, cioe una promessa che un risultato verrà fornito non appena disponibile",
+        "Proponente": "Persona fisica che presenta una idea di progetto da realizzare",
+        "Pull": "\\textit{eng. Tirare}. Atto con il quale, nel mondo \\termine{Git}, viene indicata l'azione di prelevare uno o più \\termine{commit} da una \\termine{repository} remota",
+        "Push": "\\textit{eng. Spingere}. Atto con il quale, nel mondo \\termine{Git}, viene indicata l'azione di caricare uno o più \\termine{commit} su una \\termine{repository} remota"
+    },
+    "Q": {
+        "Quality Assurance": "È l’insieme delle iniziative e delle attività rivolte a predefinire e a garantire che un prodotto oppure un servizio corrisponda a prestabiliti requisiti di qualità"
+    },
+    "R": {
+        "Repository": "Ambiente di un sistema informativo (ad es. di tipo ERP), in cui vengono gestiti i metadati, attraverso tabelle relazionali; l'insieme di tabelle, regole e motori di calcolo tramite cui si gestiscono i metadati prende il nome di \\textit{metabase}. Nell'ambiente \\termine{Git} viene indicato con questo termine il luogo dove è possibile salvare in remoto del codice, eseguire dei \\termine{pull}, dei \\termine{push} e aprire delle \\termine{issue}",
+        "Rest": "\\textit{eng. REpresentational State Transfer}. Interfaccia che usa il protocollo HTTP per invio, ricezione ed eliminazione dei dati",
+        "Rich Media Bubble": "\\termine{Bolla} che mostra delle anteprime mediante immagini di contenuti multimediali",
+        "Rocket.Chat": "Applicazione di \\termine{Instant Messaging}"
+    },
+    "S": {
+        "Scripting": "Linguaggio di programmazione destinato in genere a compiti di automazione",
+        "Scss": "E' una estensione del linguaggio \\termine{CSS} che aggiunge nuove utili e potenti funzionalità",
+        "Sdk": "\\textit{eng. Software Development Kit}. Insieme di strumenti per lo sviluppo e la documentazione di software",
+        "Server": "Componente o sottosistema informatico di elaborazione e gestione del traffico di informazioni che fornisce, a livello logico e fisico, un qualunque tipo di servizio ad altre componenti (tipicamente chiamate \\textit{clients}, cioè clienti) che ne fanno richiesta attraverso una rete di computer, all'interno di un sistema informatico o anche direttamente in locale su un computer",
+        "Sinon": "\\termine{Framework} per eseguire il \\termine{mock} di componenti software durante le fasi di testing",
+        "Slack": "Sistema di collaborazione di gruppo \\textit{cloud-based}. All'interno di questo sistema è possibile creare svariate chat all'interno delle quali si possono scrivere messaggi testuali, oppure inviare qualunque genere di file",
+        "Sonarqube": "Piattaforma open source create con lo scopo di offrire un servizio di ispezione continua della qualità del codice",
+        "Stakeholder": "Indica genericamente un soggetto (o un gruppo di soggetti) influente nei confronti di un'iniziativa economica, che sia un'azienda o un progetto",
+        "Stand-Alone": "Componenete software che non dipende da librerie esterne",
+        "Statement": "\\textit{eng. Dichiarazione}. All'interno dei linguaggi di programmazione, la più piccola unità di un programma che identifica una azione che deve essere eseguita",
+        "Sviluppatore": "Programmatore che si prende cura di uno o più aspetti del ciclo di vita del software, che è un qualcosa di più ampio della vera programmazione in sé"
+    },
+    "T": {
+        "Tab": "\\textit{abbr. Tabulazione}",
+        "Tailoring": "Significa adattare i requisiti e le specifiche di un progetto alle attuali esigenze operative di un'organizzazione attraverso la revisione, la modifica e l'integrazione di nuovi dati al progetto",
+        "Task": "\\textit{eng. Compito}",
+        "Team": "\\textit{eng. \\termine{Gruppo}}",
+        "Telegram": "Servizio di messaggistica istantanea basato su cloud ed erogato senza fini di lucro dalla società \\textit{Telegram LLC}",
+        "Template": "Documento o programma nel quale, come in un foglio semicompilato cartaceo, su una struttura generica o standard esistono spazi temporaneamente \"bianchi\" da riempire successivamente",
+        "Tempo Di Slack": "Periodo di tempo durante il quale un'attività può essere ritardata senza ritardare l'intero progetto di cui fa parte",
+        "Testing": "Fase del ciclo di vita di un software all'interno della quale il codice prodotto dalla fase di programmazione viene sottoposto a dei controllo che ne assicurano l'\\termine{efficacia} e l'\\termine{efficienza}",
+        "Twitter Bootstrap": "\\termine{Framework} per sviluppare interfacce web compatibili con i dispositivi mobili"
+    },
+    "U": {
+        "Uml": "\\textit{eng. Unified Modeling Language, Linguaggio di modellizzazione unificato}. Linguaggio di modellizzazione e specifica basato sul paradigma orientato agli oggetti",
+        "Uniformità": "Costanza di aspetto o di comportamento",
+        "Upper\\textunderscore Case": "Tecninca che consiste nel scrivere ogni lettera di una frase in maiuscolo rimpiazzando gli spazzi con un undersocre",
+        "Use Cases": "Tecnica usata nei processi di ingegneria del software per effettuare in maniera esaustiva e non ambigua, la raccolta dei requisiti al fine di produrre software di qualità"
+    },
+    "V": {
+        "Validazione": "Fase del ciclo di vita di un prodotto software all'interno della quale si vuole andare a confermare la sua \\termine{efficacia}",
+        "Verifica": "Fase del ciclo di vita di un prodotto software all'interno della quale si vuole andare a confermare la sua \\termine{efficienza} e correttezza di esecuzione",
+        "Visual Paradigm": "Software per realizzare diagrammi \\termine{UML}"
+    },
+    "W": {
+        "Walkthrough": "Tecnica nel quale un membro del \\termine{team} di sviluppo guida gli altri membri del \\termine{team} attraverso la verifica, le persone che vngono guidate poi faranno domande e commenti sulla eventuale presenza di errori",
+        "Way Of Working": "Insieme di \\termine{Best Practices}",
+        "Web App": "Applicazione in grado di eseguire su un web browser",
+        "Web Chat": "Applicazione di messaggistica istantanea che prevede un'interfaccia web per il suo utilizzo",
+        "Webhook": "\\textit{eng. Uncino web}. Metodo per aumentare o alterare il comportamento di una pagina web, o di un'applicazione web con chiamate di ritorno (callback) personalizzate",
+        "Work Product": "Prodotti generati dal \\termine{team} di sviluppo",
+        "Wrike": "Strumento online per la collaborazione e il project management che permette ai suoi utenti di modificare progetti, classificare le attività per importanza, tenere traccia dei programmi e collaborare online con altri utenti dello stesso gruppo"
+    }
+}

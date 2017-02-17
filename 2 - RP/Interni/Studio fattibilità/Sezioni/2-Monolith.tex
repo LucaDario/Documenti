@@ -1,0 +1,83 @@
+M\section{Capitolato \capitolato}
+\subsection{Descrizione}
+Dopo una attenta analisi a tutti i capitolati proposti, si è scelto di sviluppare il \termine{capitolato} \capitolato. \\
+L'obbiettivo di tale capitolato è la realizzazione di un \termine{SDK} dal nome \progetto in grado di permettere agli sviluppatori che lo andranno ad utilizzare, di creare delle \termine{bolle} interattive di varie tipologie, che verranno poi utilizzate per lo sviluppo di pacchetti da installare all'interno dell'applicazione di messaggistica istantanea \termine{Rocket.chat}. Oltre a ciò, è richiesta anche la realizzazione di uno di tali pacchetti (e la sua dimostrazione pratica), al fine di mostrare con un esempio come il \termine{SDK} sviluppato permette di creare tali \termine{bolle}.
+
+\subsection{Studio del dominio}
+Il dominio applicativo di questo progetto riguarda il contesto delle applicazioni di messaggistica istantanea, dell'intelligenza artificiale, e dell'automazione. \\
+Negli ultimi anni, in particolare dopo il rilascio della prima versione dell'applicazione \textit{WhatsApp}, il mercato delle applicazioni per smartphone ha visto crescere esponenzialmente la quantità di utenti che le utilizzano, e con esso, anche il tempo che ogni utente spende comunicando attraverso esse. E' pertanto naturale voler esplorare la possibilità di creare un sistema che dia agli sviluppatori la possibilità di automatizzare alcune procedure attraverso l'utilizzo di queste applicazioni, al fine di far sì che il sistema che si vuole sviluppare capisca ciò che l'utente vuole comunicare nel più breve tempo possibile.
+
+\subsubsection{Dominio applicativo}
+Da quanto descritto in precedenza, l'infrastruttura da realizzare dovrà avere le seguenti caratteristiche:
+
+\begin{itemize}
+
+	\item \textbf{Estensibilità}: il sistema dovrà permettere allo sviluppatore di poter creare nuove tipologie di \termine{bolle} partendo da quelle che già vi sono, dando la possibilità di aggiungere ad essere nuove funzioni;
+
+	\item \textbf{Persistenza}: tutti i dati che verranno inseriti dallo sviluppatore per creare una nuova tipologia di \termine{bolla} dovranno essere salvati per poter essere successivamente riutilizzati;
+	
+	\item \textbf{Possesso di una documentazione completa}: tutto ciò che sarà possibile fare all'interno del sistema dovrà essere documentato e correlato da esempi, al fine di rendere l'utilizzo del \termine{SDK} più facile;
+	
+	
+
+\end{itemize}
+
+
+\subsubsection{Dominio tecnologico} 
+Al fine di poter realizzare un sistema come quello descritto sopra, al \termine{team} vengono richieste conoscenze nei seguenti campi:
+
+\begin{itemize}
+
+	\item Conoscenza di linguaggi per la visualizzazione e lo \termine{scripting} di pagine web (\termine{HTML5}, \termine{CSS3}, \termine{jQuery}, \termine{Twitter Bootstrap});
+
+	\item Conoscenza di \termine{DBMS} non relazionali (\termine{MongoDB})
+
+	\item Conoscenza della piattaforma \termine{Meteor.js} per la programmazione lato server;
+	
+	\item Conoscenza di servizi \termine{REST}.
+
+\end{itemize}
+
+
+\subsection{Valutazione del capitolato}
+\subsubsection{Potenziali criticità}
+\begin{itemize}
+
+	\item \textbf{Inesperienza nelle tecnologie adottate}: il gruppo non ha mai lavorato con la piattaforma \termine{Meteor.js}, necessaria per lo sviluppo di un pacchetto per l'applicazione di messaggistica istantanea \termine{Rocket.chat}, e con sistemi di \termine{package management} come \termine{Atmosphere}. Sarà pertanto necessario spendere del tempo per comprendere entrambe le tecnologie e come poterle utilizzare al meglio;
+	
+	\item \textbf{Gestione di grande quantità di dati}: la quantità e la varietà di dati riguardanti ogni tipologia di bolla e come essa può interagire con l'utente impone l'utilizzo di \termine{DBMS} non relazionali, con i quali il team non ha ancora avuto modo di confrontarsi;
+	
+	\item \textbf{Sviluppo di \termine{librerie} proprietarie}: al fine di poter creare un \termine{SDK} in grado di dare allo sviluppatore che lo usa un ampio grado di libertà, vi è la necessità di creare una serie di molteplici \termine{librerie} atte a supportare un grande numero di operazioni; ciò rappresenta una nuova sfida per il gruppo.
+
+\end{itemize}
+
+\subsubsection{Analisi di mercato}
+L'utilizzo delle applicazioni di messaggistica istantanea è cresciuto esponenzialmente negli ultimi anni, e non accenna a calare. L'utilizzo di applicazioni in grado di automatizzare le richieste dei clienti tramite applicazioni di questo genere sta diventando ormai una richiesta sempre più presente all'interno di varie tipologie di mercati. \\
+\progetto\ ha le potenzialità per rispondere a questa domanda, e data la mancanza di un concorrente avente le stesse possibilità di personalizzazione, potrà recuperare in breve tempo il costo dello sviluppo. 
+
+\subsection{Valutazione finale}
+Riassumendo, il \termine{team} ha valutato come positivi i seguenti aspetti del capitolato:
+
+\begin{itemize}
+
+	\item Ampia disponibilità di documentazione per quanto riguarda la piattaforma \termine{Meteor.js}, l'applicazione di messaggistica istantanea \termine{Rocket.chat} e il servizio di gestione dei pacchetti \termine{Atmosphere};
+	
+	\item Interesse nei confronti del contesto delle applicazioni di messaggistica istantanea e di intelligenza artificiale come quello proposto dal \termine{capitolato}; 
+	
+	\item Uso di \termine{SDK} esistenti e recenti come \termine{Twitter Bootstrap} per la creazione dell’interfaccia web;
+	
+	\item Voglia di confrontarsi con tecnologie nuove che potranno sicuramente essere utili in un futuro ambito lavorativo;
+	
+	\item Possibile successivo risvolto commerciale dell'intera infrastruttura.
+
+\end{itemize}
+
+Dall'altro lato, ha valutato come negativi i seguenti aspetti:
+
+\begin{itemize}
+
+	\item La limitata conoscenza degli strumenti e dell'architettura di un \termine{SDK} rende difficile preventivare la quantità di lavoro.
+
+\end{itemize} 
+
+\newpage

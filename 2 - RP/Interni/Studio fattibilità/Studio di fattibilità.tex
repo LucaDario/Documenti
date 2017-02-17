@@ -1,0 +1,32 @@
+\input{../../../Template/Layout.tex}
+\input{../../../Template/Comandi.tex}
+
+% Comandi per generare l'intro
+\newcommand{\documento}{\SdF}
+\newcommand{\versione}{1.0.0}
+\newcommand{\redatori}{\RM}
+\newcommand{\revisori}{\SL}
+\newcommand{\approvazione}{\LD}
+\newcommand{\statoapprovazione}{Approvato}
+% Quando il documento sarà approvato, inserire all'interno del comando seguente la data nel formato GG mese AAAA dove GG è il giorno a due cifre, mese è il mese scritto per esteso con la prima lettera minuscola, e AAAA è l'anno a quattro cifre
+\newcommand{\dataApprovazione}{26 dicembre 2016}
+\newcommand{\uso}{Interno}
+\newcommand{\destinatari}{\TV\\ & \RC\\ & \RB}
+
+\newcommand{\sommario}{Questo documento vuole definire lo studio di fattibilità dei vari capitolati proposti e le motivazioni che hanno portato alla scelta del progetto
+"Monolith: An interactive bubble provider".
+}
+
+\input{Sezioni/Diario.tex}
+
+\begin{document}
+
+\input{../../../Template/Intro.tex}
+\input{../../../Template/Diario.tex}
+\input{../../../Template/Indice.tex}
+
+\input{Sezioni/1-Introduzione.tex}
+\input{Sezioni/2-Monolith.tex}
+\input{Sezioni/3-AltriCapitolati.tex}
+
+\end{document}

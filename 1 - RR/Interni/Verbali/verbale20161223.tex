@@ -1,0 +1,77 @@
+\input{../../../Template/Layout.tex}
+\input{../../../Template/Comandi.tex}
+
+% Comandi per generare l'intro
+\newcommand{\documento}{Verbale riunione 23/12/2016}
+\newcommand{\versione}{1.0.0}
+\newcommand{\redatori}{\LD}
+\newcommand{\revisori}{\RM}
+\newcommand{\approvazione}{\SL}
+\newcommand{\statoapprovazione}{Approvato}
+% Quando il documento sarà approvato, inserire all'interno del comando seguente la data nel formato GG mese AAAA dove GG è il giorno a due cifre, mese è il mese scritto per esteso con la prima lettera minuscola, e AAAA è l'anno a quattro cifre
+\newcommand{\dataApprovazione}{29 dicembre 2016}
+\newcommand{\uso}{Esterno}
+\newcommand{\destinatari}{\RB\\ & \gruppo\\ & \TV\\ & \RC}
+
+\newcommand{\sommario}{Verbale di incontro svoltosi tra il gruppo \gruppo\ e il proponente \RB.
+}
+
+% Comandi per generare il verbale
+\newcommand{\data}{23 dicembre 2016}
+\newcommand{\luogo}{The Rose Bar \& Pizzeria}
+\newcommand{\via}{Via Corso del Popolo}
+\newcommand{\civico}{37}
+\newcommand{\citta}{Padova}
+\newcommand{\provincia}{PD}
+\newcommand{\durata}{1 ora e 20 minuti}
+\newcommand{\partecipanti}{
+\begin{itemize}
+	\item \textbf{\RB :}
+		\begin{itemize}
+			\item Alessandro Maccagnan
+			\item Milo Ertola
+		\end{itemize}
+	
+	\item \textbf{\gruppo}
+		\begin{itemize}
+			\item \LD
+			\item \ND
+			\item \RM
+			\item \MT
+			\item \SL
+			\item \DC
+			\item \FB
+		\end{itemize}
+\end{itemize}
+}
+
+\newcommand{\ordineDelGiorno}{
+\begin{enumerate}
+	\item Chiarimenti sulle caratteristiche che dovrà avere la \termine{demo} finale.
+	\item Chiarimenti sulla definizione di \termine{SDK}.
+	\item Onerosità dei test con \termine{Rocket.Chat}.
+	\item Scarsa documentazione del codice sorgente di \termine{Rocket.Chat}	
+\end{enumerate}
+}
+
+\newcommand{\contenuto}{
+\begin{enumerate}
+	\item Il proponente ha fornito la massima libertà nella scelta della \termine{demo} finale. \\
+	\RB\ ha specificato che la \termine{demo} potrà essere rivolta sia ad un target d'utenza \termine{business} che di consumo.
+	
+	\item Il proponente ha chiaramente specificato che deve essere un pacchetto \termine{stand-alone} installabile in qualsiasi \termine{server} \termine{Rocket.Chat}. \RB\ ha consigliato di pensare prima ad un prototipo di \termine{demo} e successivamente ai casi d'uso per l'\termine{SDK} stesso, con lo scopo di non definire casi d'uso superflui. Infine il \termine{proponente} ha specificamente richiesto solo il \termine{manuale utente} completamente in inglese.
+	
+	\item \RB\ non ha avuto modo di sviluppare pacchetti per \termine{Rocket.Chat} e pertanto non è a conoscenza di metodi per velocizzare lo sviluppo con questa determinata piattaforma. Un consiglio che il \termine{proponente} ha potuto perà dare è quello di disattivare tutti i \termine{plugin} preinstallati su qualsiasi istanza di \termine{Rocket.chat} che non verranno utilizzati.
+	
+	
+	\item Il \termine{proponente}\ ha confermato la scarsa documentazione presente all'interno della \termine{repository}\ dove è presente il codice sorgente di \termine{Rocket.Chat} ma, essendo una applicazione sviluppata bene, ha potuto confermare che una semplice lettura del codice potrà risultare d'aiuto.
+	
+\end{enumerate}
+}
+
+
+\begin{document}
+\input{../../../Template/Intro.tex}
+\input{../../../Template/Verbale.tex}
+
+\end{document}

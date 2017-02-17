@@ -1,0 +1,24 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+__pycache__
+
+# LaTeX Auto generated files
+*.aux
+*.log
+*.toc
+*.gz*
+*.out
+*.pdf
+*.bak
+*.lof
+*.lot
+*.bak*
+
+*.swp

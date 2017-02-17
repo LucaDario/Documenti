@@ -1,0 +1,113 @@
+%Generali
+\newcommand{\capitolato}{C5 - Monolith: An interactive bubble provider}
+\newcommand{\progettoShort}{Monolith}
+\newcommand{\progetto}{Monolith: An interactive bubble provider}
+\newcommand{\gruppo}{NPE Developers}
+\newcommand{\gruppoLink}{\href{https://gitlab.com/npe-developers}{NpeDevelopers}}
+\newcommand{\email}{\href{mailto:npe.developers@gmail.com}{\textcolor{blue}{npe.developers@gmail.com}}}
+\newcommand{\password}{NP3Devel0pers}
+\newcommand{\myincludegraphics}[2][]{%
+	\setbox0=\hbox{\phantom{X}}%
+	\vtop{
+		\hbox{\phantom{X}}
+		\vskip-\ht0
+		\hbox{\includegraphics[#1]{#2}}}
+}
+
+
+
+
+%Componenti del gruppo
+\newcommand{\RM}{Riccardo Montagnin}
+\newcommand{\MT}{Manuel Turetta}
+\newcommand{\FB}{Francesco Bazzerla}
+\newcommand{\SL}{Stefano Lia}
+\newcommand{\LD}{Luca Dario}
+\newcommand{\DC}{Diego Cavestro}
+\newcommand{\ND}{Nicolò Dovico}
+
+%Ruoli
+\newcommand{\Pm}{Project Manager}
+\newcommand{\Am}{Amministratore}
+\newcommand{\AmP}{Amministratori}
+\newcommand{\An}{Analista}
+\newcommand{\AnP}{Analisti}
+\newcommand{\Dev}{Sviluppatore}
+\newcommand{\DevP}{Sviluppatori}
+\newcommand{\Ver}{Verificatore}
+\newcommand{\VerP}{Verificatori}
+\newcommand{\Progr}{Programmatore}
+\newcommand{\ProgrP}{Programmatori}
+\newcommand{\Prog}{Progettista}
+\newcommand{\ProgP}{Progettisti}
+
+
+
+%Firme
+\newcommand{\RMFirma}{\myincludegraphics[scale = 0.5]{../../../Template/Firme/RM.png}}
+\newcommand{\MTFirma}{\myincludegraphics[scale = 0.5]{../../../Template/Firme/MT.png}}
+\newcommand{\FBFirma}{\myincludegraphics[scale = 0.5]{../../../Template/Firme/FB.png}}
+\newcommand{\SLFirma}{\myincludegraphics[scale = 0.5]{../../../Template/Firme/SL.png}}
+\newcommand{\LDFirma}{\myincludegraphics[scale = 0.5]{../../../Template/Firme/LD.png}}
+\newcommand{\DCFirma}{\myincludegraphics[scale = 0.5]{../../../Template/Firme/DC.png}}
+\newcommand{\NDFirma}{\myincludegraphics[scale = 0.5]{../../../Template/Firme/ND.png}}
+
+%Professori e proponente
+\newcommand{\TV}{Prof. Tullio Vardanega}
+\newcommand{\RC}{Prof. Riccardo Cardin}
+\newcommand{\RB}{Red Babel}
+\newcommand{\proponente}{Red Babel}
+
+%Documenti
+\newcommand{\Gl}{Glossario}
+\newcommand{\glossario}{\textit{\Gl\_v.1.0.0.pdf}}
+\newcommand{\AdR}{Analisi dei Requisiti}
+\newcommand{\analisiDeiRequisiti}{\textit{\AdR\_v.1.0.0.pdf}}
+\newcommand{\AdRvDue}{AnalisiDeiRequisiti}
+\newcommand{\NdP}{Norme di Progetto}
+\newcommand{\normeDiProgetto}{\textit{\NdP\_v.1.0.0.pdf}}
+\newcommand{\PdP}{Piano di Progetto}
+\newcommand{\pianoDiProgetto}{\textit{\PdP\_v.1.0.0.pdf}}
+\newcommand{\SdF}{Studio di Fattibilità}
+\newcommand{\studioDiFattibilita}{\textit{\SdF\_v.1.0.0.pdf}}
+\newcommand{\PdQ}{Piano di Qualifica}
+\newcommand{\pianoDiQualifica}{\textit{\PdQ\_v.1.0.0.pdf}}
+\newcommand{\VI}{Verbale Interno}
+\newcommand{\VE}{Verbale Esterno}
+\newcommand{\ST}{Specifica Tecnica}
+\newcommand{\MU}{Manuale Utente}
+\newcommand{\DDP}{Definizione di Prodotto}
+
+%Periodo di progetto
+\newcommand{\ARM}{Analisi dei Requisiti di Massima}
+\newcommand{\ARD}{Analisi dei Requisiti in Dettaglio}
+\newcommand{\PA}{Progettazione Architetturale}
+\newcommand{\PD}{Progettazione di Dettaglio}
+\newcommand{\COD}{Codifica}
+\newcommand{\VV}{Verifica e Validazione Finale}
+
+%Consegne
+\newcommand{\RR}{Revisione dei Requisiti}
+\newcommand{\RP}{Revisione di Progettazione}
+\newcommand{\RQ}{Revisione di Qualifica}
+\newcommand{\RA}{Revisione di Accettazione}
+
+
+%Formattazione
+\newcommand{\termine}[1]{\textit{#1}\small{$_G$}}
+\newcommand{\link}[1]{\href{#1}{\textcolor{blue}{\texttt{#1}}}} 
+
+% Testi ricorrenti
+\newcommand{\scopoProdotto}{L'obiettivo di questo progetto è la realizzazione di un \termine{SDK} che permetta la creazione di bolle interattive, le quali, successivamente, verranno utilizzate all'interno dell'applicazione di messaggistica istantanea open source \termine{Rocket.chat}. \\
+Dopo la realizzazione di tale \termine{SDK}, è proposto lo sviluppo di un'applicazione in grado di sfruttare l'\termine{SDK} per implementare un uso originale di tali bolle.
+}
+\newcommand{\descrizioneGlossario}{Al fine di mantenere questo documento compatto e di facile lettura è stato realizzato un glossario esterno contenente tutte le definizioni dei termini che più comunemente verranno presentati al lettore.  
+Tale glossario si ritrova all'interno del file \glossario, e contiene tutti e soli i termini che vengono marcati con una \textit{G} a pedice.
+}
+\newcommand{\riferimentiNormativi}{
+	\begin{itemize}
+		\item \textbf{Norme di Progetto}: \normeDiProgetto
+		\item \textbf{\termine{Capitolato} d'appalto C5: Monolith - An Interactive bubble provider} \\
+			  \link{http://www.math.unipd.it/~tullio/IS-1/2016/Progetto/C5.pdf}
+	\end{itemize}
+}

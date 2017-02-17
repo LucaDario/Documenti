@@ -1,0 +1,36 @@
+\input{../../../Template/Layout.tex}
+\input{../../../Template/Comandi.tex}
+
+% Comandi per generare l'intro
+\newcommand{\documento}{\AdR}
+\newcommand{\versione}{1.0.0}
+\newcommand{\redatori}{\SL\\ & \DC\\ & \ND\\ & \LD}
+\newcommand{\revisori}{\FB}
+\newcommand{\dataApprovazione}{}
+\newcommand{\approvazione}{\RM}
+\newcommand{\statoapprovazione}{Approvato}
+\newcommand{\uso}{Esterno}
+\newcommand{\destinatari}{\RB\\ & \TV\\ & \RC}
+
+\newcommand{\sommario}{Il presente documento vuole esporre al committente l'analisi dei requisiti effettuata e le potenzialità del sistema software ideato al fine di soddisfare le richieste del capitolato \capitolato.".
+}
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{ltablex}
+\usepackage{float}
+
+
+\input{Sezioni/Diario.tex}
+
+\begin{document}
+
+\input{../../../Template/Intro.tex}
+\input{../../../Template/Diario.tex}
+\input{../../../Template/IndiceTabelleFigure.tex}
+\input{Sezioni/1-Introduzione.tex}
+\input{Sezioni/2-DescrizioneGenerale.tex}
+\input{Sezioni/3-CasiUso.tex}
+\input{Sezioni/4-Requisiti.tex}
+
+
+\end{document}

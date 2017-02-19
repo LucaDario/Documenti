@@ -8,6 +8,7 @@ import re
 import sys
 import Glossary
 import glob
+import IgnoreUtils
 
 # NOTA: le parole dovranno rispettare la seguente espressione regolare per essere cosiderate!!
 REG_EX = 'termine\{([^\}]+)\}+'
@@ -48,10 +49,15 @@ def main(args):
 
     founded_words = []
 
+    ignore_list = IgnoreUtils.load_ignore_list()
+
     # Iterate over the file and do the parsing
     for filename in glob.iglob(result, recursive=True):
-        print('Parsing: ' + filename)
-        founded_words += parse_file(filename, glossary)
+        if not IgnoreUtils.ignore_file(ignore_list, filename):
+            print('Parsing: ' + filename)
+            founded_words += parse_file(filename, glossary)
+        else:
+            print("Ignored " + filename)
 
     # Save the glossary
     glossary.commit()

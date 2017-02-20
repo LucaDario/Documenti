@@ -24,7 +24,9 @@ def main(args):
         # Open the file for output
         file = open('Sezioni/' + title + '.tex', 'w')
         # Write the file header
-        file.write("\section{" + title + "}\n\\begin{itemize}\n")
+        file.write("\section*{" + title + "}\n")
+        file.write("\\addcontentsline{toc}{section}{" + title + "}\n")
+        file.write("\\begin{itemize}\n")
         # Iterate over the words of the current section
         for word, description in section:
             # Write to file

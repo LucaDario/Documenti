@@ -1,0 +1,67 @@
+\input{../../../Template/Layout.tex}
+\input{../../../Template/Comandi.tex}
+
+% Comandi per generare l'intro
+\newcommand{\documento}{Verbale riunione 22/02/2017}
+\newcommand{\versione}{1.0.0}
+\newcommand{\redatori}{\LD}
+\newcommand{\revisori}{\RM}
+\newcommand{\approvazione}{\SL}
+\newcommand{\statoapprovazione}{Approvato}
+% Quando il documento sarà approvato, inserire all'interno del comando seguente la data nel formato GG mese AAAA dove GG è il giorno a due cifre, mese è il mese scritto per esteso con la prima lettera minuscola, e AAAA è l'anno a quattro cifre
+\newcommand{\dataApprovazione}{29 dicembre 2016}
+\newcommand{\uso}{Esterno}
+\newcommand{\destinatari}{\RB\\ & \gruppo\\ & \TV\\ & \RC}
+
+\newcommand{\sommario}{Verbale di incontro svoltosi tra il gruppo \gruppo\ e il proponente \RB.
+}
+
+% Comandi per generare il verbale
+\newcommand{\data}{23 dicembre 2016}
+\newcommand{\luogo}{Hangouts}
+\newcommand{\durata}{1 ora e 30 minuti}
+\newcommand{\partecipanti}{
+\begin{itemize}
+	\item \LD
+	\item \SL
+	\item \ND
+	\item \DC
+	\item \FB
+\end{itemize}
+}
+
+\newcommand{\ordineDelGiorno}{
+\begin{enumerate}
+	\item Chiarimenti sull'utilizzo delle bolle predefinite.
+	\item Discussione sulla realizzazione del \PdQ.
+	\item Discussione in merito alla progettazione dell'\termine{SDK}.
+	\item Suddivisione del lavoro.
+\end{enumerate}
+}
+
+\newcommand{\contenuto}{
+\begin{enumerate}
+	\item Le bolle predefinite sono quelle bolle presenti nell'\termine{SDK} che lo sviluppatore può usare direttamente per sviluppare l'applicazione software
+	
+	\item Il \PdQ\ viene affidato ai membri \MT\ e \SL\ che dovranno, nella maniera più dettagliata possibile, modificare il documento in modo da farlo coincidere con le idee emerse dalla lezione del 21/02/2017 di Ingegneria del Software.
+	
+	\item Per la progettazione si è deciso che:
+	\begin{itemize}
+	\item Saranno presenti i widget, ovvero semplici componenti che formeranno la bolla e layout che gestiranno il posizionamento dei widget all'interno della bolla stessa.
+		\item La \termine{bolla} avrà un solo layout che verrà impostato a verticale nel caso in cui lo sviluppatore non ne specifichi un altro.
+		\item Sarà possibile aggiungere ulteriori layout o widget al layout della bolla.
+		
+	\end{itemize}
+	
+	
+	\item Il lavoro è stato suddiviso in maniera equa tra tutti i membri ed ognuno lavorerà su parti di documenti distinte in modo da evitare possibili conflitti.
+	
+\end{enumerate}
+}
+
+
+\begin{document}
+\input{../../../Template/Intro.tex}
+\input{../../../Template/Verbale.tex}
+
+\end{document}

@@ -1,21 +1,29 @@
-\paragraph{Caso d'uso UC 1.3.1: Personalizzazione dell'elenco puntato}
-\label{UC 1.3.1: Personalizzare l'elenco puntato}
+\paragraph{Caso d'uso UC 1.3.1: Aggiunta di un widget bottone semplice}
+\label{UC 1.3.1: Aggiunta di un widget bottone semplice}
 \begin{figure}[ht]
 	\centering
-	\includegraphics{Usecases/img/{UC1.3.1}.png}
-	\caption{Caso d'uso UC 1.3.1: Personalizzazione dell'elenco puntato}
+	\includegraphics[scale=0.54]{Usecases/img/{UC1.3.1}.png}
+	\caption{Caso d'uso UC 1.3.1: Aggiunta di un widget bottone semplice}
 \end{figure}
-
 \FloatBarrier
 \begin{itemize}
 \item\textbf{Attori}: Sviluppatore.
-\item\textbf{Descrizione}: Lo sviluppatore vuole personalizzare lo stile di visualizzazione della checklist.
-\item\textbf{Precondizione}: Lo sviluppatore utilizza una bolla di tipo checklist e vuole personalizzarne lo stile di visualizzazione della checklist.
-\item\textbf{Postcondizione}: Lo sviluppatore ha personalizzato lo stile di visualizzazione della checklist con i parametri scelti.
+\item\textbf{Descrizione}: Lo sviluppatore vuole utilizzare un widget bottone semplice.
+\item\textbf{Precondizione}: Lo sviluppatore vuole utilizzare un widget bottone semplice.
+\item\textbf{Postcondizione}: Lo sviluppatore ha generato del codice eseguibile per creare un widget bottone semplice con i parametri scelti.
+
 \item\textbf{Scenario principale}:
 	\begin{itemize}
-		\item Lo sviluppatore vuole scegliere una visualizzazione come elenco numerato (UC 1.3.1.1).
-		\item Lo sviluppatore vuole scegliere una visualizzazione come elenco non numerato con indicatore "pallino" (UC 1.3.1.2).
-		\item Lo sviluppatore vuole scegliere una visualizzazione come elenco non numerato con indicatore "trattino" (UC 1.3.1.3).
+		\item Lo sviluppatore vuole impostare il testo del bottone (UC 1.3.1.1).
+		\item Lo sviluppatore vuole impostare le dimensioni del bottone (UC1.3.1.3).
+		\item Lo sviluppatore vuole impostare il colore di sfondo del bottone(UC1.3.1.5).
 	\end{itemize}
+	
+\item\textbf{Scenari alternativi}:	
+	\begin{itemize}
+		\item Lo sviluppatore non inserisce del testo nelwidget o lo inserisce in modo non valido(UC 1.3.1.3).
+		\item Lo sviluppatore non inserisce le dimensioni del bottone oppure le inserisce in modo non valido(UC 1.3.1.4).
+		\item Lo sviluppatore non inserisce un colore di sfondo del bottone oppure lo inserisce in modo non valido(UC 1.3.1.6).
+	\end{itemize}
+	
 \end{itemize}

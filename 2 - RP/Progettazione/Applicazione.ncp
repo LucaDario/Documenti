@@ -1,0 +1,102 @@
+<Project>
+  <Name>Applicazione</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Vista principale</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>MainView</Name>
+        <Access>Public</Access>
+        <Location left="807" top="50" />
+        <Size width="163" height="77" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>CreateListView</Name>
+        <Access>Public</Access>
+        <Location left="399" top="195" />
+        <Size width="163" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void startListCreation()</Member>
+        <Member type="Method">void renderView()</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>CreateListViewImpl</Name>
+        <Access>Public</Access>
+        <Location left="373" top="369" />
+        <Size width="199" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private CreateListViewPresenter presenter</Member>
+        <Member type="Method">void renderView()</Member>
+        <Member type="Method">void startListCreation()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CreateListViewPresenter</Name>
+        <Access>Public</Access>
+        <Location left="385" top="618" />
+        <Size width="170" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private CreateListView view</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void startListCreation()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CreateListUseCase</Name>
+        <Access>Public</Access>
+        <Location left="350" top="814" />
+        <Size width="228" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private DatabaseSource dbSource</Member>
+        <Member type="Method">public void createListForUserWithId(string id)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>DatabaseSource</Name>
+        <Access>Public</Access>
+        <Location left="792" top="1041" />
+        <Size width="228" height="94" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void createListForUserWithId(string id)</Member>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Dependency" first="0" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="2" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="3" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="2" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="3" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="4" second="5">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

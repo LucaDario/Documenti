@@ -1,0 +1,38 @@
+\newpage
+\subsubsection{Verifiche del software}
+In questa sezione verranno descritte le come e quando effettuare le metriche incentrate sul software.
+
+\paragraph{Numero di livelli di annidamento per metodo}
+\begin{itemize}
+\item \textbf{Chi:} \termine{SonarQube}.
+\item \textbf{Quando:} Dopo ogni push sulla \termine{repository}.
+\item \textbf{Come:} Questo test viene effettuato automaticamente da \termine{SonarQube}, se il test non viene superato il codice non verrà integrato nel ramo di produzione.
+\end{itemize}
+
+\paragraph{Complessità ciclomatica}
+\begin{itemize}
+\item \textbf{Chi:} \termine{SonarQube}.
+\item \textbf{Quando:} Dopo ogni push sulla \termine{repository}.
+\item \textbf{Come:} Questo test viene effettuato automaticamente da \termine{SonarQube}, se il test non viene superato il codice non verrà integrato nel ramo di produzione.
+\end{itemize}
+
+\paragraph{Numero di attributi per classe}
+\begin{itemize}
+\item \textbf{Chi:} \termine{SonarQube}.
+\item \textbf{Quando:} Dopo ogni push sulla \termine{repository}.
+\item \textbf{Come:} Questo test viene effettuato automaticamente da \termine{SonarQube}, se il test non viene superato il codice non verrà integrato nel ramo di produzione.
+\end{itemize}
+
+\paragraph{Linee di commento per linee di codice}
+\begin{itemize}
+\item \textbf{Chi:} Il \Progr.
+\item \textbf{Quando:} Dopo la scrittura di ogni metodo o funzione.
+\item \textbf{Come:} Il \Progr\ deve verificare che il test soddisfi almeno il livello di accettazione descritto per poter considerare la funzione o il metodo accettabile. Nel caso in cui non sia raggiunto il minimo livello, il \Prog\ dovrà provvedere a trovare frasi più semplici e coese rispetto a quelle in precedenza. 
+\end{itemize}
+
+\paragraph{Copertura dei test}
+\begin{itemize}
+\item \textbf{Chi:} \termine{SonarQube}.
+\item \textbf{Quando:} Dopo ogni push sulla \termine{repository}.
+\item \textbf{Come:} Questo test viene effettuato automaticamente da \termine{SonarQube}, se il test non viene superato il codice non verrà integrato nel ramo di produzione.
+\end{itemize}

@@ -21,21 +21,4 @@ Sono stati individuati quattro livelli di testing:
 \input{Sezioni/Test/T2-Integrazione.tex}
 \input{Sezioni/Test/T3-Sistema.tex}
 \input{Sezioni/Test/T4-Validazione.tex}
-
-\subsection{Strumenti}
-Per eseguire i test citati e per ottenere del codice di qualità si è deciso di utilizzare i seguenti strumenti.
-
-\subsubsection{Jenkins}
-\termine{Jenkins} è un software che permetterà di automatizzare una serie di operazioni che consentiranno al \termine{team} di monitorare la qualità del software in modo continuo ogni volta che verrà inviata una modifica alla \termine{repository} che conterrà il codice sorgente. \\
-Per ottenere questi risultati questo software si appoggerà agli altri strumenti descritti qua di seguito.
-
-\subsubsection{SonarQube}
-\termine{SonarQube} è un software che permette di eseguire analisi statica sul codice che verrà inviato alla \termine{repository} fornendo un feedback al programmatore per fargli sapere cosa dovrà migliorare. Inoltre permetterà di controllare che le regole che il \termine{team} si è imposto per la qualità del codice sorgente vengano rispettate.
-
-\subsubsection{Mocha}
-\termine{Mocha} è un \termine{framework} che permette di eseguire test di unità e di integrazione andando a creare dei \termine{mock} che simulino il comportamento delle varie parti, con lo scopo di testare ogni dettaglio in modo indipendente dal resto. Ad esso si affiancheranno anche:
-\begin{itemize}
-\item \textbf{\termine{Chai}}: libreria per formulare asserzioni sull'output atteso;
-\item \textbf{\termine{Sinon}}: libreria per simulare delle risposte di richieste a server remoti.
-\end{itemize}
 \newpage

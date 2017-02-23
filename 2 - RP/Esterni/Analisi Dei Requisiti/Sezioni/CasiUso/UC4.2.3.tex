@@ -1,14 +1,77 @@
-\paragraph{Caso d'uso UC 4.2.3: Aggiunta di un oggetto alla lista.}
-\label{Caso d'uso UC 4.2.3: Aggiunta di un oggetto alla lista.}
-
+\paragraph{Caso d'uso UC 4.2.3: Aggiunta un oggetto alla lista}
+\label {Caso d'uso UC 4.2.3: Aggiunta un oggetto alla lista}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.80]{Usecases/img/{UC4.2.3}.png}
+	\caption {Caso d'uso UC 4.2.3: Aggiunta un oggetto alla lista}
+\end{figure}
 \FloatBarrier
 \begin{itemize}
-\item \textbf{Attori:} Utente con permessi.
-\item \textbf{Descrizione:} L'utente vuole aggiungere un oggetto alla bolla lista-spesa.
-\item \textbf{Precondizione:} L'utente vuole aggiungere un oggetto alla bolla lista-spesa. 
-\item \textbf{Postcondizione:} L'utente ha aggiunto un oggetto alla bolla lista-spesa.
-\item \textbf{Scenario principale:}
-	\begin{itemize}
-	\item{L'utente aggiunge un oggetto alla bolla lista-spesa.}
+\item\textbf{Attori}: Utente con permessi.
+\item\textbf{Descrizione}: L'attore aggiunge un prodotto alla lista-spesa.
+\item\textbf{Precondizione}: L'attore ha i permessi per l'aggiunta di oggetti alla bolla lista.
+\item\textbf{Postcondizione}: L'oggetto viene aggiunto alla lista-spesa.
+\item\textbf{Estensioni}:
+\begin{itemize}
+		\item Visualizzazione messaggio d'errore(UC 4.2.3.2).
+		\item Impostazione della quantità richiesta a default(UC 4.2.3.7).
+		\item Impostazione della unità di misura relativa alla quantità di prodotto richiesta a default (UC 4.2.3.9).
 	\end{itemize}
+	
+\item\textbf{Scenario principale}:
+	\begin{itemize}
+		\item Impostazione del nome del prodotto(UC 4.2.3.1).
+		\item Impostazione dell'immagine del prodotto(UC 4.2.3.3).
+		\item Impostazione della descrizione del prodotto(UC 4.2.3.4).
+		\item Impostazione delle note relativo al prodotto(UC 4.2.3.5).
+		\item Impostazione della quantità di prodotto richiesta(UC 4.2.3.6).
+		\item Impostazione dell'unità di misura relativa alla quantità di prodotto richiesta(UC 4.2.3.8).
+	\end{itemize}
+	\item\textbf{Scenario alternativo}:
+	\begin{itemize}
+		\item L'attore visualizza un messaggio d'errore a causa del mancato inserimento del nome del prodotto(UC 4.2.3.2).
+		\item La quantità di prodotto richiesta viene impostata a default a causa del mancato inserimento di essa(UC 4.2.3.7).
+		\item L'unita di misura della quantità del prodotto viene impostata a default a causa del mancato inserimento di essa(UC 4.2.3.9).
+	\end{itemize}
+
 \end{itemize}
+
+
+\subparagraph{Caso d'uso UC 4.2.3.2 Impostazione del nome della lista a default.}
+	\begin{itemize}
+		\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: L' attore visualizza un messaggio d'errore a causa del mancato inserimento del nome del prodotto.
+		\item\textbf{Precondizione}: L' attore non imposta il nome del prodotto che vuole inserire.
+		\item\textbf{Postcondizione}: L' attore visualizza un messaggio d'errore.
+		\item\textbf{Scenario principale}:
+			\begin{itemize}
+				\item L'attore visualizza un messaggio d'errore. 
+			\end{itemize}
+		
+	\end{itemize}
+	
+\subparagraph{Caso d'uso UC 4.2.3.7 Impostazione della quantità richiesta a default.}
+	\begin{itemize}
+		\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: La quantità di prodotto richiesta viene impostata a default a causa del mancato inserimento di essa.
+		\item\textbf{Precondizione}: L'attore non imposta la quantità di prodotto richiesto.
+		\item\textbf{Postcondizione}:La bolla ha una quantità di prodotto impostata a default.
+		\item\textbf{Scenario principale}:
+			\begin{itemize}
+				\item La quantità del prodotto viene impostata a default.
+			\end{itemize}
+		
+	\end{itemize}
+\subparagraph{Caso d'uso UC 4.2.3.9 Impostazione della unità di misura relativa alla quantità di prodotto richiesta a default.}
+	\begin{itemize}
+		\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: L'unità di misura della quantità di prodotto richiesta viene impostata a default a causa del mancato inserimento di essa.
+		\item\textbf{Precondizione}: L'attore non imposta l'unità di misura della quantità di prodotto richiesto.
+		\item\textbf{Postcondizione}: La bolla ha un unità di misura della quantità di prodotto impostata a default.
+		\item\textbf{Scenario principale}:
+			\begin{itemize}
+				\item L'unità di misura della quantità del prodotto viene impostata a default.
+			\end{itemize}
+		
+\end{itemize}
+	

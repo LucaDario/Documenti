@@ -1,14 +1,77 @@
-\paragraph{Caso d'uso UC 4.2.5: Modifica di un oggetto della lista.}
-\label{Caso d'uso UC 4.2.5: Modifica di un oggetto della lista.}
-
+\paragraph{Caso d'uso UC 4.2.5: Modificare un oggetto della lista}
+\label {Caso d'uso UC 4.2.5: Modificare un oggetto della lista}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.80]{Usecases/img/{UC4.2.5}.png}
+	\caption {Caso d'uso UC 4.2.5: Modificare un oggetto della lista}
+\end{figure}
 \FloatBarrier
 \begin{itemize}
-\item \textbf{Attori:} Utente con permessi.
-\item \textbf{Descrizione:} L'utente vuole modificare un oggetto della bolla lista-spesa.
-\item \textbf{Precondizione:} L'utente vuole modificare un oggetto della bolla lista-spesa. 
-\item \textbf{Postcondizione:} L'utente ha modificato un oggetto della bolla lista-spesa.
-\item \textbf{Scenario principale:}
+\item\textbf{Attori}: Utente con permessi.
+\item\textbf{Descrizione}: L'attore modifica un oggetto della lista
+\item\textbf{Precondizione}: L'attore ha i permessi per la modifica di un oggetto della lista.
+\item\textbf{Postcondizione}: L'oggetto della lista viene modificato.
+\item\textbf{Estensioni}:
 	\begin{itemize}
-	\item{L'utente modifica un oggetto della bolla lista-spesa.}
+		\item Visualizzazione messaggio d'errore(UC 4.2.5.2).
+		\item Impostazione della quantità di prodotto richiesta a default(UC 4.2.5.7).
+		\item Impostazione dell'unità di misura della quantità richiesta a default(UC 4.2.5.9). 
 	\end{itemize}
+
+	
+\item\textbf{Scenario principale}:
+	\begin{itemize}
+		\item Modifica del nome del prodotto(UC 4.2.5.1).
+		\item Modifica dell'immagine del prodotto(UC 4.2.5.3).
+		\item Modifica della descrizione del prodotto(UC 4.2.5.4).
+		\item Modifica delle note relative al prodotto(UC 4.2.5.5).
+		\item Modifica della quantità richiesta di prodotto(UC 4.2.5.6).
+		\item Modifica dell'unità di misura relativa alla quantità richiesta di prodotto(UC 4.2.5.8).
+	\end{itemize}
+\item\textbf{Scenario alternativo}:
+	\begin{itemize}
+		\item L'attore visualizza un messaggio d'errore a causa del mancato inserimento del nome del prodotto(UC 4.2.5.2).
+		\item La quantità di prodotto viene aggiornata a default a causa del mancato inserimento di essa(UC 4.2.5.7).
+		\item L'unità di misura della quantità di prodotto viene aggiornata a default a causa del mancato inserimento di essa(UC 4.2.5.9).
+	\end{itemize}
+
+\end{itemize}
+
+
+\subparagraph{Caso d'uso UC 4.2.5.2 Visualizzazione messaggio d'errore.}
+	\begin{itemize}
+		\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: L' attore visualizza un messaggio d'errore a causa del mancato inserimento del nome del prodotto.
+		\item\textbf{Precondizione}: L' attore non imposta il nome del prodotto che vuole modificare.
+		\item\textbf{Postcondizione}: L' attore visualizza un messaggio d'errore.
+		\item\textbf{Scenario principale}:
+			\begin{itemize}
+				\item L'attore visualizza un messaggio d'errore. 
+			\end{itemize}
+		
+	\end{itemize}
+	
+\subparagraph{Caso d'uso UC 4.2.5.7 Impostazione della quantità di prodotto richiesta a default.}
+	\begin{itemize}
+		\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: La quantità di prodotto richiesta viene impostata a default a causa del mancato inserimento di essa.
+		\item\textbf{Precondizione}: L'attore non imposta la quantità di prodotto che vuole modificare.
+		\item\textbf{Postcondizione}:Il prodotto modificato ha una quantità  impostata a default.
+		\item\textbf{Scenario principale}:
+			\begin{itemize}
+				\item La quantità del prodotto viene impostata a default.
+			\end{itemize}
+		
+	\end{itemize}
+\subparagraph{Caso d'uso UC 4.2.5.9 Impostazione dell'unità di misura della quantità richiesta a default.}
+	\begin{itemize}
+		\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: L'unità di misura della quantità di prodotto richiesta viene impostata a default a causa del mancato inserimento di essa.
+		\item\textbf{Precondizione}: L'attore non imposta l'unità di misura della quantità di prodotto che vuole modificare.
+		\item\textbf{Postcondizione}: Il prodotto ha un unità di misura impostata a default.
+		\item\textbf{Scenario principale}:
+			\begin{itemize}
+				\item L'unità di misura della quantità del prodotto viene impostata a default.
+			\end{itemize}
+		
 \end{itemize}

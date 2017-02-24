@@ -10,6 +10,13 @@ dove \texttt{codice} è il codice gerarchico, numerico ed univoco, per identific
 \subsection{Attori}
 Di seguito è riportato il diagramma \termine{UML} che descrive la gerarchia degli attori.
 
+\label{Attori}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{Usecases/img/Attori.png}
+	\caption{Attori dell'applicazione}
+\end{figure}
+
 \subsubsection{Sviluppatore}
 Viene definito \termine{sviluppatore} una qualsiasi persona che abbia accesso diretto all'\termine{SDK} e ai suoi contenuti, e che lo utilizzerà al fine di creare una applicazione che ne sfrutti le caratteristiche.
 
@@ -23,12 +30,6 @@ Un utente senza permessi è una raffinazione del concetto di utente, e consiste 
 Un utente con permessi è un utente che ha ricevuto la lista tramite pubblicazione. Può quindi spuntarne i prodotti e inoltre ha ricevuto, dal creatore della lista, l'autorizzazione a modificare,aggiungere o rimuovere prodotti dalla lista stessa.
 \subsubsection{Creatore della lista}
 Il creatore della lista gode di tutte le proprietà dell'utente con permessi, ma in aggiunta può decidere se mandare una bolla lista tramite inoltro o tramite pubblicazione e concedere permessi di modifica della lista agli utenti che ha invitato tramite pubblicazione, decidendo o meno la partecipazione attiva degli altri utenti.
-\label{Attori}
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=1]{Usecases/img/Attori.png}
-	\caption{Attori dell'applicazione}
-\end{figure}
 
 
 

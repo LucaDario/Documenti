@@ -14,14 +14,6 @@
 			\hline
 			R1F1.1 & All'interno dell'\termine{SDK} deve essere possibile aggiungere un widget di tipo testo formattato e disporlo in qualsiasi modo all'interno della bolla & Interno, UC1.1, UC1, UC1.6 \\
 			\hline
-			R1F1.2 & All'interno dell'\termine{SDK} deve essere possibile aggiungere un widget di tipo immagine e disporlo in qualsiasi modo all'interno della bolla & Interno, UC1.2, UC1, UC1.6 \\ 
-			\hline
-			R1F1.3 & All'interno dell'\termine{SDK} deve essere possibile aggiungere un widget di tipo pulsante e disporlo in qualsiasi modo all'interno della bolla & Interno, UC1.3, UC1, UC1.6 \\ 
-			\hline
-			R1F1.4 & All'interno dell'\termine{SDK} deve essere possibile aggiungere un widget di tipo checklist e disporlo in qualsiasi modo all'interno della bolla & Interno, UC1.4, UC1, UC1.6 \\ 
-			\hline
-			R1F1.5 & All'interno dell'\termine{SDK} deve essere possibile aggiungere un widget personalizzato e disporlo in qualsiasi modo all'interno della bolla & Interno, UC1.5, UC1, UC1.6 \\ 
-			\hline
 			R2F1.1.1 & Deve essere possibile cambiare la dimensione del carattere con il quale è scritto il testo all'interno di un widget di testo formattato & Interno, UC1.1.1, UC1.1 \\
 			\hline
 			R1F1.1.2 & Se non viene inserita una grandezza del font personalizzata, oppure se ne viene inserita una non valida, deve essere impostata una grandezza di default & Interno, UC1.1.2, UC1.1\\
@@ -44,11 +36,19 @@
 			\hline
 			R1F1.1.11 & Deve essere previsto un messaggio di errore dettagliato nell'evenienza in cui venga aggiunto del testo non valido ad un widget di tipo testo formattato.	& Interno, UC1.1.11, UC1.1 \\
 			\hline
+			R1F1.2 & All'interno dell'\termine{SDK} deve essere possibile aggiungere un widget di tipo immagine e disporlo in qualsiasi modo all'interno della bolla & Interno, UC1.2, UC1, UC1.6 \\ 
+			\hline
+			R1F1.2.1 & Deve essere possibile associare una immagine ad un widget di tipo immagine & Interno, UC1.2.1, UC1.2 \\
+		\hline
+		R1F1.2.2 & Deve essere previsto un messaggio di errore da visualizzare nel qual caso lo sviluppatore non associ una immagine ad un widget immagine oppure tenti di associarne una non supportata & Interno, UC1.2.2, UC1.2 \\
+		\hline
+		R2F1.2.3 & Deve essere possibile impostare delle dimensioni personalizzate all'immagine presente all'interno di un widget di tipo immagine & Interno, UC1.2.3, UC1.2 \\
+		\hline
+		R1F1.2.4 & Devono essere previste delle dimensioni di default nel qual caso lo sviluppatore tenti di personalizzare le dimensioni di una immagine all'interno di un widget immagine usando valori non validi & Interno,UC1.2.4, UC1.2 \\
+			\hline
+			R1F1.3 & All'interno dell'\termine{SDK} deve essere possibile aggiungere un widget di tipo pulsante e disporlo in qualsiasi modo all'interno della bolla & Interno, UC1.3, UC1, UC1.6 \\ 
+			\hline
 			R1F1.3.1 & Deve essere possibile aggiungere un widget che rappresenti un bottone semplice & Interno, UC1.3.1, UC1.3 \\
-			\hline
-			R1F1.3.2 & Deve essere possibile aggiungere un widget che rappresenti un check button & Interno, UC1.3.2, UC1.3 \\
-			\hline
-			R1F1.3.3 & Deve essere possibile impostare una azione personalizzata per ogni evento di un bottone & Interno, UC1.3.3, UC1.3 \\
 			\hline
 			R1F1.3.1.1 & Deve essere possibile impostare il testo presente all'interno di un bottone semplice & Interno, UC1.3.1.1, UC1.3.1 \\
 			\hline
@@ -61,6 +61,8 @@
 			R3F1.3.1.5 & Deve essere possibile impostare il colore di sfondo di un bottone & Interno, UC1.3.1.5, UC1.3.1 \\
 			\hline
 			R1F1.3.1.6 & Deve essere previsto un colore di sfondo di default nel qual caso lo sviluppatore non lo personalizzi oppure tenti di utilizzarne uno non valido & Interno, UC1.3.1.6, UC1.3.1 \\
+			\hline
+			R1F1.3.2 & Deve essere possibile aggiungere un widget che rappresenti un check button & Interno, UC1.3.2, UC1.3 \\
 			\hline
 			R1F1.3.2.1 & Deve essere possibile impostare lo stato iniziale di un check button & Interno, UC1.3.2.1, UC1.3.2 \\
 		\hline
@@ -78,6 +80,8 @@
 		\hline
 		R2F1.3.2.3.5 & Se non viene personalizzato, il colore di default utilizzato per l'indicazione della selezione di un bottone di check deve essere il verde & Interno, UC1.3.2.3.5, UC1.3.2.3 \\
 		\hline
+			R1F1.3.3 & Deve essere possibile impostare una azione personalizzata per ogni evento di un bottone & Interno, UC1.3.3, UC1.3 \\
+			\hline
 		R1F1.3.3.1 & Deve essere possibile impostare una azione da eseguire in seguito al click normale di un bottone & Interno, UC1.3.3.1, UC1.3.3\\ 
 		\hline
 		R2F1.3.3.2 & Deve essere possibile impostare una azione da eseguire in seguito al click prolungato di un bottone & Interno, UC1.3.3.2, UC1.3.3\\ 
@@ -86,31 +90,23 @@
 		\hline
 		R3F1.3.3.4 & Deve essere previsto un valore di default per il tempo che deve intercorrere tra l'inizio del click prolungato di un bottone e l'avvio dell'azione associata & Interno, UC1.3.3.4, UC1.3.3\\ 
 		\hline
+		R1F1.4 & All'interno dell'\termine{SDK} deve essere possibile aggiungere un widget di tipo checklist e disporlo in qualsiasi modo all'interno della bolla & Interno, UC1.4, UC1, UC1.6 \\ 
+		\hline
 		R1F1.4.1 & Deve essere possibile personalizzare l'elenco puntato di un widget di tipo checklist & Interno, UC1.4.1, UC1.4 \\
 		\hline
-		R1F1.4.2 & Deve essere possibile impostare un messaggio di completamento da visualizzare una volta che tutti gli elementi di una checklist sono stati segnati come selezionati & Interno, UC1.4.2, UC1.4 \\
-		\hline
-		R1F1.4.3 & Deve essere previsto un messaggio di errore da visualizzare nel qual caso si cerchi di impostare un messaggio di completamento non valido per un widget di checklist & Interno, UC1.4.3, UC1.4 \\
-		\hline	
 		R3F1.4.1.1 & Deve essere possibile visualizzare la lista di un widget di tipo checklist sotto forma di elenco numerato & Interno, UC1.4.1.1, UC1.4.1 \\
 		\hline
 		R1F1.4.1.2 & Deve essere possibile visualizzare la lista di un widget di tipo checklist sotto forma di elenco non numerato con indicatore un pallino & Interno, UC1.4.1.2, UC1.4.1 \\
 		\hline
 		R2F1.4.1.3 & Deve essere possibile visualizzare la lista di un widget di tipo checklist sotto forma di elenco non numerato con indicatore un trattino & Interno, UC1.4.1.3, UC1.4.1 \\
 		\hline
-		R1F1.2.1 & Deve essere possibile associare una immagine ad un widget di tipo immagine & Interno, UC1.2.1, UC1.2 \\
+		R1F1.4.2 & Deve essere possibile impostare un messaggio di completamento da visualizzare una volta che tutti gli elementi di una checklist sono stati segnati come selezionati & Interno, UC1.4.2, UC1.4 \\
 		\hline
-		R1F1.2.2 & Deve essere previsto un messaggio di errore da visualizzare nel qual caso lo sviluppatore non associ una immagine ad un widget immagine oppure tenti di associarne una non supportata & Interno, UC1.2.2, UC1.2 \\
-		\hline
-		R2F1.2.3 & Deve essere possibile impostare delle dimensioni personalizzate all'immagine presente all'interno di un widget di tipo immagine & Interno, UC1.2.3, UC1.2 \\
-		\hline
-		R1F1.2.4 & Devono essere previste delle dimensioni di default nel qual caso lo sviluppatore tenti di personalizzare le dimensioni di una immagine all'interno di un widget immagine usando valori non validi & Interno,UC1.2.4, UC1.2 \\
+		R1F1.4.3 & Deve essere previsto un messaggio di errore da visualizzare nel qual caso si cerchi di impostare un messaggio di completamento non valido per un widget di checklist & Interno, UC1.4.3, UC1.4 \\
+		\hline	
+		R1F1.5 & All'interno dell'\termine{SDK} deve essere possibile aggiungere un widget personalizzato e disporlo in qualsiasi modo all'interno della bolla & Interno, UC1.5, UC1, UC1.6 \\ 
 			\hline
 		R1F1.5.1 & Deve essere possibile modificare il testo già contenuto all'interno di un widget testo & Interno, UC1.1.10 \\
-		\hline
-		R1F1.5.2 & Deve essere possibile modificare l'immagine associata ad un widget di tipo immagine & Interno, UC1.2.1 \\
-		\hline
-		R1F1.5.3 & Deve essere previsto un messaggio d'errore nel qual caso lo sviluppatore tenti di modificare una immagine già esistente utilizzandone una non valida & Interno, UC1.2.2 \\
 		\hline
 		R1F1.5.1.1 & Deve essere possibile modificare parte del testo precedentemente formattato in corsivo all'interno di un widget di testo formattato & Interno, UC1.1.3 \\
 		\hline
@@ -133,6 +129,10 @@
 		R1F1.5.1.10 & Deve essere possibile cambiare il testo presente all'interno di un widget precedentemente creata & Interno, UC1.1.10 \\
 		\hline
 		R1F1.5.1.11 & Deve essere previsto un messaggio di errore nel qual caso il testo che si vuole inserire in un widget non sia valido & Interno, UC1.1.11 \\
+		\hline
+		R1F1.5.2 & Deve essere possibile modificare l'immagine associata ad un widget di tipo immagine & Interno, UC1.2.1 \\
+		\hline
+		R1F1.5.3 & Deve essere previsto un messaggio d'errore nel qual caso lo sviluppatore tenti di modificare una immagine già esistente utilizzandone una non valida & Interno, UC1.2.2 \\
 		\hline
 			R1F2.1 & Deve essere possibile utilizzare una bolla avviso & Interno, UC2.1, UC2 \\
 			\hline

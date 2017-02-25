@@ -539,7 +539,7 @@ Mantenendo il valore di tale indice basso è possibile garantire funzionalità d
 La stabilità di un \termine{package} indica la possibilità di effettuare modifiche a tale \termine{package} senza influenzarne altri all'interno dell'applicazione. Tale indice è strettamente legato all'accoppiamento efferente ed afferente e viene calcolato dalla seguente formula:
 
 \begin{displaymath}
-{\text{Accoppiamento Afferente}}\over{\text{Accoppiamento Afferente} + \text{Accoppiamento Efferente}}
+{\text{Accoppiamento Efferente}}\over{\text{Accoppiamento Afferente} + \text{Accoppiamento Efferente}}
 \end{displaymath}
 
 Intervalli richiesti:
@@ -549,6 +549,28 @@ Accettazione: [0.0 −- 0.8];
 \item
 Ottimale: [0.0 −- 0.3].
 \end{itemize}
+
+\subparagraph{Astrattezza}
+Questa metrica misura l'astrattezza del nostro package tramite il seguente rapporto 
+\begin{displaymath}
+{\text{Numero classi astratte e interfacce}}\over{\text{Numero totale classi}}
+\end{displaymath}
+In questa metrica non esiste un valore accettabile ma solo un valore che si vorrà ottenere; esso sarà indicato nel Piano di qualifica.
+\subparagraph{Distanza dalla sequenza principale}
+Questa metrica misura il bilanciamento tra l'astrattezza e la stabilità del \termine{package} da noi sviluppato. I \termine{package} idealmente perfetti sono infatti quelli o compleatamente concreti e instabili(I=1, A=0) o quelli astratti e stabili (I=0, A=1). Per misurare questa metrica si utilizza quindi la seguente formula matematica:
+
+\begin{displaymath}
+{|\text{Astratezza} + \text{Livello di stabilità} - 1|}
+\end{displaymath}
+
+La sequenza principale menzionata nel titolo è infatti la linea retta A+I=1 e la formula appena descritta misura la distanza del nostro \termine{package} da esso.
+\begin{itemize}
+\item
+Accettazione: [0.0 −- 0.3];
+\item
+Ottimale: [0.0 −- 0.1].
+\end{itemize}
+
 
 \subsubsection{Analisi}
 \paragraph{Analisi statica}

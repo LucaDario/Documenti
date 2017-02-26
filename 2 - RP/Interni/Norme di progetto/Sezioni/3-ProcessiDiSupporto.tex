@@ -246,7 +246,13 @@ Cosi come per i documenti anche per i verbali si è cercato di standardizzare la
   \item Documenti \textbf{da verificare};
   \item Documenti \textbf{approvati}.
 \end{itemize}
-I documenti \textbf{in lavorazione} sono quelli in fase di stesura da parte del relativo redattore. Ultimata la loro realizzazione questi documenti vengono segnati come \textbf{da verificare} e passano in mano al relativo \Ver. Infine i documenti \textbf{verificati} vengono consegnati al \Pm che avrà il compito di approvarli definitivamente.
+I documenti \textbf{in lavorazione} sono quelli in fase di stesura da parte del relativo redattore. Ultimata la loro realizzazione questi documenti vengono segnati come \textbf{da verificare} e passano in mano al relativo \Ver. Infine i documenti \textbf{verificati} vengono consegnati al \Pm che avrà il compito di approvarli definitivamente.Nella figura 1.0 è rappresantato lo schema del ciclo di vita di un documento
+\label{figura 1.0}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{ciclo_di_vita.jpg}
+	\caption{Ciclo di vita di un documento}
+\end{figure}
 
 \subsubsection{Versionamento}
 Ogni documento prodotto deve essere identificato, oltre che dal nome, dal numero
@@ -283,12 +289,288 @@ Per controllare le versioni e le modifiche applicate al software viene utilizzat
 Per garantire la qualità del prodotto vengono adottato varie metodologie tra le quali ritroviamo i processi di verifica e di validazione successivamente illustrati. \\
 Nel caso in cui i task assegnati al team non siano soddisfatti per eventuali problematiche, questi devono essere riportati nella lista di problemi menzionata nel \textit{processo di soluzione di problemi}. \\
 Un ulteriore garanzia di qualità è data dall'assicurarsi che i requisiti principali del progetto siano soddisfatti alla fine dello sviluppo del software. Ci si può assicurare di questo attraverso una documentazione valida ed un incontro con i committenti ed i proponenti che dovranno accertarsi della validità del prodotto finale. \\
-Infine l'organizzazione più naturale dei contenuti di questo documento è per processi (quelli adottati e adattati a partire dallo standard ISO/IEC 12207).
+L'organizzazione più naturale dei contenuti di questo documento è per processi (quelli adottati e adattati a partire dallo standard ISO/IEC 12207).\\
+Infine per stabilire in maniera quantitativa la qualità ottenuta abbiamo individuato delle metriche che andremo ora a esplicitare,indicando i range accettabili e nel caso,ottimali. Il loro valore effettivo è invece indicato nel Piano di qualifica.
+Le metriche individuate sono state suddivise in
+\begin{itemize}
+	\item\textbf{\termine{Qualità funzionale}};
+	\item\textbf{\termine{Qualità di affidabilità}};
+	\item\textbf{\termine{Qualità di usabilità}};
+	\item\textbf{\termine{Qualità di efficienza}};
+	\item\textbf{\termine{Qualità di manutenibilità}};
+\end{itemize}
 
+\subsubsection{Qualità funzionale}
+
+\paragraph{Completezza dell'implementazione funzionale}
+Indica la percentuale di requisiti funzionali coperti dall'implementazione.
+\begin{itemize}
+	\item \textbf{Misurazione}: 
+		$$C=\left(1-\mathlarger{\frac{N_{FM}}{N_{FI}}}\right) \cdot 100$$ 
+	dove $N_{FM}$ è il numero di funzionalità mancanti nell'implementazione e $N_{FI}$ è il numero di funzionalità individuate nell'attività di analisi.
+	\item \textbf{Range ottimale}: 100.
+	\item \textbf{Range di accettazione}: 100.
+\end{itemize}
+
+\paragraph{Accuratezza rispetto alle attese}
+Indica la percentuale di risultati concordi alle attese.
+\begin{itemize}
+	\item \textbf{Misurazione}: 
+		$$A=\left(1-\mathlarger{\frac{N_{RD}}{N_{TE}}}\right) \cdot 100$$
+	dove $N_{RD}$ è il numero di test che producono risultati discordanti rispetto alle attese e $N_{TE}$ è il numero di test-case eseguiti.
+	\item \textbf{Range ottimale}: 100.
+	\item \textbf{Range di accettazione}: 90 -- 100.
+\end{itemize}
+
+\paragraph{Controllo degli accessi}
+Indica la percentuale di operazioni illegali non bloccate.
+\begin{itemize}
+	\item \textbf{Misurazione}: 
+		$$I=\mathlarger{\frac{N_{IE}}{N_{II}}} \cdot 100$$
+	dove $N_{IE}$ è il numero di operazioni illegali effettuabili dai test e $N_{II}$ è il numero di operazioni illegali individuate.
+	\item \textbf{Range ottimale}: 0.
+	\item \textbf{Range di accettazione}: 0 -- 10.
+\end{itemize}
+
+\subsubsection{Qualità di affidabilità}
+\paragraph{Densità di \textit{failure}}
+Indica la percentuale di operazioni di testing che si sono concluse in fallimenti.
+
+\begin{itemize}
+	\item \textbf{Misurazione}: 
+		$$F=\mathlarger{\frac{N_{FR}}{N_{TE}}} \cdot 100$$
+	dove $N_{FR}$ è il numero di fallimenti rilevati durante l'attività di testing e $N_{TE}$ è il numero di test-case eseguiti.
+	\item \textbf{Range ottimale}: 0.
+	\item \textbf{Range di accettazione}: 0 -- 10.
+\end{itemize}
+
+\paragraph{Blocco di operazioni non corrette}
+Indica la percentuale di funzionalità in grado di gestire correttamente i \textit{fault} che potrebbero verificarsi.
+\begin{itemize}
+	\item \textbf{Misurazione}: 
+		$$B=\mathlarger{\frac{N_{FE}}{N_{ON}}} \cdot 100$$
+	dove $N_{FE}$ è il numero di \textit{failure} evitati durante i test effettuati e $N_{ON}$ è il numero di test-case eseguiti che prevedono l'esecuzione di operazioni non corrette, causa di possibili \textit{failure}.
+	\item \textbf{Range ottimale}: 100.
+	\item \textbf{Range di accettazione}: 80 -- 100.
+\end{itemize}
+
+\subsubsection{Qualità di usabilità}
+\paragraph{Comprensibilità delle funzioni offerte}
+Indica la percentuale di operazioni comprese in modo immediato dall'utente, senza la consultazione del manuale.
+\begin{itemize}
+	\item \textbf{Misurazione}: 
+		$$C=\mathlarger{\frac{N_{FC}}{N_{FO}}} \cdot 100$$
+	dove $N_{FC}$ è il numero di funzionalità comprese in modo immediato dall'utente durante l'attività di testing del prodotto e $N_{FO}$ è il numero di funzionalità offerte dal sistema.
+	\item \textbf{Range ottimale}: 90 -- 100.
+	\item \textbf{Range di accettazione}: 80 -- 100.
+\end{itemize}
+
+\paragraph{Facilità di apprendimento delle funzionalità}
+Indica il tempo medio impiegato dall'utente nell'imparare ad usare correttamente una data funzionalità.
+\begin{itemize}
+	\item \textbf{Misurazione}: indicatore numerico, espresso in minuti, che tiene traccia del tempo medio impiegato dall'utente nell'apprendere il corretto utilizzo di una funzionalità offerta dal sistema.
+	\item \textbf{Range ottimale}: 0 -- 15.
+	\item \textbf{Range di accettazione}: 0 -- 30.
+\end{itemize}
+
+\paragraph{Consistenza operazionale in uso}
+Indica la percentuale di messaggi e funzionalità offerte all'utente che rispettano le sue aspettative riguardo al comportamento del software.
+\begin{itemize}
+	\item \textbf{Misurazione}: 
+		$$C=\left(1-\mathlarger{\frac{N_{MFI}}{N_{MFO}}}\right) \cdot 100$$
+	dove $N_{MFI}$ è il numero di messaggi e funzionalità che non rispettano le aspettative dell'utente e $N_{MFO}$ è il numero di messaggi e funzionalità offerti dal sistema.
+	\item \textbf{Range ottimale}: 90 -- 100.
+	\item \textbf{Range di accettazione}: 80 -- 100.
+\end{itemize}
+
+\subsection{Qualità di efficienza}
+
+\paragraph{Tempo di risposta}
+Indica il periodo temporale medio che intercorre fra la richiesta al software di una determinata funzionalità e la restituzione del risultato all'utente.
+\begin{itemize}
+	\item \textbf{Misurazione}: 
+		$$T_{RISP} = \mathlarger{\frac{\sum_{i=1}^{n} T_{i}}{n}}$$ 
+	con $T_{RISP}$ misurato in secondi, e dove $T_{i}$ è il tempo intercorso fra la richiesta $i$ di una funzionalità ed il completamento delle operazioni necessarie a restituire un risultato a tale richiesta.
+	\item \textbf{Range ottimale}: 0 -- 3.
+	\item \textbf{Range di accettazione}: 0 -- 8.
+\end{itemize}
+\subsection{Qualità di manutenibilità}
+
+\paragraph{Capacità di analisi di \textit{failure}}
+Indica la percentuale di \textit{failure} registrate delle quali sono state individuate le cause.
+\begin{itemize}
+	\item \textbf{Misurazione}: 
+		$$I=\mathlarger{\frac{N_{FI}}{N_{FR}}} \cdot 100$$
+	dove $N_{FI}$ è il numero di \textit{failure} delle quali sono state individuate le cause e $N_{FR}$ è il numero di \textit{failure} rilevate.
+	\item \textbf{Range ottimale}: 80 -- 100.
+	\item \textbf{Range di accettazione}: 60 -- 100.
+\end{itemize}
+
+\paragraph{Impatto delle modifiche}
+Indica la percentuale di modifiche effettuate in risposta a \textit{failure} che hanno portato all'introduzione di nuove \textit{failure} in altre componenti del sistema.
+\begin{itemize}
+	\item \textbf{Misurazione}: 
+		$$I=\mathlarger{\frac{N_{FRF}}{N_{FR}}} \cdot 100$$
+	dove $N_{FRF}$ è il numero di \textit{failure} risolte con l'introduzione di nuove \textit{failure} e $N_{FR}$ è il numero di \textit{failure} risolte;
+	\item \textbf{Range ottimale}: 0 -- 10.
+	\item \textbf{Range di accettazione}: 0 -- 20.
+\end{itemize}
+
+
+\paragraph{Javascript Lint}
+Anche se non è presente una metrica quantitativa che descriva quanto "bene" è scritto il codice, su richiesta dei proponenti abbiamo usato un tool chiamato javascript Lint che permette di individuare, ad esempio,errori di identazione,codice strutturato in modo non corretto e errori di codifica che non influenzano il comportamento del unità ma ne rendono più difficile la sua manutenibilità e lettura.
+Anche se abbiamo già elencato delle regole per la codifica del codice questo strumento ci permette di automizzare il controllo e affinarne la qualità.
+In particolare il tool  controlla.
+\begin{itemize}
+\item Controllo punti e virgola alla fine di ogni riga;
+\item Presenza di parentesi graffe anche per \termine{statement} di una singola riga;
+\item Presenza di parentesi graffe senza nessuna istruzione condizionale o iterazioni;
+\item Controllo dei punti decimali in un numero;
+\item Commenti al interno dei commenti;
+\item L'ambiguita di due linee di codice sono scritte nella stessa riga;
+\item I zeri iniziali interpretati come base ottale; 
+\item Statement che non provacano nessuna variazione al codice;
+\item Espressioni regolari che non sono precedute da parentesi sinistre,assegnazioni,virgole o i due punti;
+\item dichiarazioni separate da virgola invece che da punto e virgola;
+\item L'uso errato di incremento(++) e decremento(--) fatta eccezione per le singole variabili semplici;
+\item Uso del tipo \termine{void};
+\item Ripetizioni di un operatore di incremento o decremento ad esempio (x+++y) o (x--y);
+\item Uso di etichette identificative per i cicli;
+\end{itemize}
 
 \subsection{Processo di verifica}
 \subsubsection{Descrizione}
-Il processo di verifica ha il compito di controllare che ogni documento e software prodotto dal \termine{team} non presenti eventuali anomalie o errori e che esso rispecchi quanto previsto dai requisiti ad esso associati. In generale esistono due tipi di analisi nel mondo informatico, l'analisi statica e quella dinamica.
+Il processo di verifica ha il compito di controllare che ogni documento e software prodotto dal \termine{team} non presenti eventuali anomalie o errori e che esso rispecchi quanto previsto dai requisiti ad esso associati. In generale esistono due tipi di analisi nel mondo informatico, l'analisi statica e quella dinamica che andremo successivamente a elencare. Per rendere quantificabile il processo di verifica abbiamo scelto delle metriche per il software o i documenti.
+
+\paragraph{Metriche per i documenti}
+\subparagraph{indice di Gulpease}
+L'indice Gulpease rispetto ad altri indici di leggibilità possiede il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificando il calcolo dell'indice stesso. Esso considera due variabili linguistiche:
+\begin{itemize}
+\item La lunghezza della parola;
+\item La lunghezza della frase rispetto al numero delle lettere.
+\end{itemize}
+
+I valori dell'indice sono compresi tra 0 e 100, dove il valore 100 indica la leggibilità più alta e 0 la leggibilità più bassa.
+Gli intervalli richiesti per ogni documento redatto sono i seguenti:
+\begin{itemize}
+\item Accettazione: [40 -- 100];
+\item Ottimale: [50 -- 100].
+\end{itemize}
+\paragraph{Metriche per il software}
+
+\subparagraph{Numero di livelli di annidamento per metodo}
+Rappresenta il numero di strutture di controllo, annidate tra loro, internamente ad un metodo.
+Un valore elevato per questa metrica potrebbe essere indice di una complessità troppo elevate del metodo stesso, e di un basso livello di astrazione del codice.
+Intervalli richiesti:
+\begin{itemize}
+\item
+Accettazione: [1 -- 5];
+\item
+Ottimale: [1 −- 3].
+\end{itemize}
+
+\subparagraph{Numero di parametri per metodo}
+Rappresenta il numero di parametri da passare per la chiamata di un metodo.
+Un numero elevato per un dato metodo potrebbe evidenziare la necessità di ridurne le funzionalità associate e/o suddividerle in altri metodi ausiliari.
+Un alto valore di questo indice potrebbe evidenziare pertanto un possibile errore di progettazione.
+Intervalli richiesti:
+\begin{itemize}
+\item
+Accettazione: [0 −- 6];
+\item
+Ottimale: [0 −- 4].
+\end{itemize}
+
+\subparagraph{Complessità ciclomatica}
+Questo indice viene utilizzato per misurare la complessità di un programma. Esso misura direttamente il numero di cammini linearmente indipendenti attraverso il \termine{grafo di controllo di flusso}. I nodi del grafo corrispondono a gruppi indivisibili di istruzioni, mentre gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo gruppo.
+Alti valori di \termine{complessità ciclomatica} implicano una ridotta manutenibilità del codice. Valori bassi potrebbero però determinare  una scarsa efficienza dei metodi. McCabe, ideatore di questa metrica, raccomandava che i programmatori contassero la complessità dei moduli in sviluppo, e li dividessero in moduli più piccoli, qualora tale complessità superi 10 ma osservando che in certe circostanze può essere appropriato rilassare tale restrizione e permettere moduli con una complessità anche di 15.
+Intervalli richiesti:
+\begin{itemize}
+\item
+Accettazione: [1 -− 15];
+\item
+Ottimale: [1 -− 10].
+\end{itemize}
+
+\subparagraph{Numero di attributi per classe}
+Questa metrica prevede di valutare la qualità del software in base al numero di attributi presenti in una classe.
+Un numero elevato di attributi potrebbe evidenziare un possibile errore di progettazione con conseguente necessità di suddividere la classe in più classi in relazione tra loro seguendo il principio dell'incapsulamento.
+Intervalli richiesti:
+\begin{itemize}
+\item
+Accettazione: [0 −- 12];
+\item
+Ottimale: [0 −- 8].
+\end{itemize}
+
+\subparagraph{Copertura dei test}
+Questo indice indica la percentuale di istruzioni del prodotto che vengono eseguite durante i test.
+Un valore percentuale alto indica una maggiore copertura dei test e quindi una maggiore probabilità che le componenti abbiano una ridotta quantità di errori.
+Tale indice può però essere abbassato da metodi molto semplici che non richiedono testing come ad esempio metodi \texttt{getter} e/o \texttt{setter}.
+Intervalli richiesti:
+\begin{itemize}
+\item
+Accettazione: [40\% −- 100\%];
+\item
+Ottimale: [65\% −- 100\%].
+\end{itemize}
+
+\subparagraph{Linee di commento per linee di codice}
+Questo indice indica il rapporto tra linee di commento e linee di codice ed è utile per stimare la manutenibilità e la comprensibilità del codice. 
+Intervalli richiesti:
+\begin{itemize}
+\item
+Accettazione: [> 0.15];
+\item
+Ottimale: [>0.20].
+\end{itemize}
+
+\subparagraph{Livello di stabilità}
+Per comprendere questa metrica è necessario dare una semplice spiegazione di \termine{accoppiamento afferente} e di \termine{accoppiamento efferente}.
+\begin{itemize}
+\item
+\textbf{Accoppiamento afferente}: indica il numero di classi esterne ad un \termine{package} che dipendono da classi interne ad esso.
+Un alto valore implica un alto grado di dipendenza del resto del software dal \termine{package}. Un valore eccessivamente basso, invece, potrebbe evidenziare che un \termine{package} fornisce poche funzionalità.
+\item
+\textbf{Accoppiamento efferente}: indica il numero di classi interne al \termine{package} che dipendono da classi esterne ad esso.
+Mantenendo il valore di tale indice basso è possibile garantire funzionalità di base indipendentemente dal resto del sistema.
+\end{itemize}
+
+La stabilità di un \termine{package} indica la possibilità di effettuare modifiche a tale \termine{package} senza influenzarne altri all'interno dell'applicazione. Tale indice è strettamente legato all'accoppiamento efferente ed afferente e viene calcolato dalla seguente formula:
+
+\begin{displaymath}
+{\text{Accoppiamento Efferente}}\over{\text{Accoppiamento Afferente} + \text{Accoppiamento Efferente}}
+\end{displaymath}
+
+Intervalli richiesti:
+\begin{itemize}
+\item
+Accettazione: [0.0 −- 0.8];
+\item
+Ottimale: [0.0 −- 0.3].
+\end{itemize}
+
+\subparagraph{Astrattezza}
+Questa metrica misura l'astrattezza del nostro package tramite il seguente rapporto 
+\begin{displaymath}
+{\text{Numero classi astratte e interfacce}}\over{\text{Numero totale classi}}
+\end{displaymath}
+In questa metrica non esiste un valore accettabile ma solo un valore che si vorrà ottenere; esso sarà indicato nel Piano di qualifica.
+\subparagraph{Distanza dalla sequenza principale}
+Questa metrica misura il bilanciamento tra l'astrattezza e la stabilità del \termine{package} da noi sviluppato. I \termine{package} idealmente perfetti sono infatti quelli o compleatamente concreti e instabili(I=1, A=0) o quelli astratti e stabili (I=0, A=1). Per misurare questa metrica si utilizza quindi la seguente formula matematica:
+
+\begin{displaymath}
+{|\text{Astratezza} + \text{Livello di stabilità} - 1|}
+\end{displaymath}
+
+La sequenza principale menzionata nel titolo è infatti la linea retta A+I=1 e la formula appena descritta misura la distanza del nostro \termine{package} da esso.
+\begin{itemize}
+\item
+Accettazione: [0.0 −- 0.3];
+\item
+Ottimale: [0.0 −- 0.1].
+\end{itemize}
+
 
 \subsubsection{Analisi}
 \paragraph{Analisi statica}
@@ -315,6 +597,7 @@ I test di unità verificano che ogni singola componente del software funzioni co
 \begin{center}
   TU[Codice Test]
 \end{center}
+Lo sviluppatore avrà quindi il compito di svolgere dei test per vedere se l'unità da lui creata soddisferà i requisiti presenti nel analisi. Dovrà essere quindi esplicato in maniera tabellare e chiara quali requisiti sono stati soddisfatti dal unità correalata e attraverso quali test è stato verificato il processo.
 
 \paragraph{Test di integrazione}
 I test di integrazione verificano che più unità, validate singolarmente, funzionino

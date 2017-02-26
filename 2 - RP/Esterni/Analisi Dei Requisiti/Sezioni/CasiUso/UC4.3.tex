@@ -1,4 +1,5 @@
-\subsection{Caso d'uso UC 4.3: Condivisione di una bolla lista-spesa.}
+\newpage
+\subsubsection{Caso d'uso UC 4.3: Condivisione di una bolla lista-spesa.}
 \label{Caso d'uso UC 4.3: Condivisione di una bolla lista-spesa.}
 \begin{figure}[ht]
 	\centering
@@ -8,15 +9,17 @@
 
 \FloatBarrier
 \begin{itemize}
-\item \textbf{Attori:} Utente.
-\item \textbf{Descrizione:} L'utente utilizza l'applicazione demo lista-spesa.
-\item \textbf{Precondizione:} L'utente vuole utilizzare l'applicazione demo lista-spesa. 
-\item \textbf{Postcondizione:} L'utente ha utilizzato l'applicazione demo lista-spesa.
+\item \textbf{Attori:} Creatore della lista.
+\item \textbf{Descrizione:} Il Creatore della lista vuole condividere la bolla lista-spesa creata e può farlo in due modi:
+\begin{itemize}
+\item{Pubblicando la lista (ciò permetterà di interagirci).}
+\item{Inoltrando la lista (ciò permetterà solo di visualizzarla in formato testuale).}
+\end{itemize}
+\item \textbf{Precondizione:} Il Creatore della lista vuole condividere la bolla lista-spesa creata. 
+\item \textbf{Postcondizione:} Il Creatore della lista ha condiviso la bolla lista-spesa creata.
 \item \textbf{Scenario principale:}
 	\begin{itemize}
-	\item{Creazione di una bolla lista-spesa (UC 4.1).}
-	\item{Interazione con una bolla lista-spesa (UC 4.2).}
-	\item{Condivisione di una bolla lista-spesa (UC 4.3).}
-	\item{Richiesta di aiuto all'utilizzo della bolla lista spesa (UC 4.4).}
+	\item{Pubblicazione della lista (UC 4.3.1).}
+	\item{Inoltro della lista (UC 4.3.2).}
 	\end{itemize}
 \end{itemize}

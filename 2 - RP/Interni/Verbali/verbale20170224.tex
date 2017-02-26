@@ -1,0 +1,68 @@
+\input{../../../Template/Layout.tex}
+\input{../../../Template/Comandi.tex}
+
+% Comandi per generare l'intro
+\newcommand{\documento}{Verbale riunione 24/02/2017}
+\newcommand{\versione}{0.0.1}
+\newcommand{\redatori}{\SL}
+\newcommand{\revisori}{\LD}
+\newcommand{\approvazione}{\RM}
+\newcommand{\statoapprovazione}{Approvato}
+% Quando il documento sarà approvato, inserire all'interno del comando seguente la data nel formato GG mese AAAA dove GG è il giorno a due cifre, mese è il mese scritto per esteso con la prima lettera minuscola, e AAAA è l'anno a quattro cifre
+\newcommand{\dataApprovazione}{da fissare}
+\newcommand{\uso}{Esterno}
+\newcommand{\destinatari}{\RB\\ & \gruppo\\ & \TV\\ & \RC}
+
+\newcommand{\sommario}{Verbale di incontro svoltosi tra il gruppo \gruppo\ e il proponente \RB.
+}
+
+% Comandi per generare il verbale
+\newcommand{\data}{24 febbraio 2017}
+\newcommand{\luogo}{Skype}
+\newcommand{\durata}{1 ora}
+\newcommand{\partecipanti}{
+\begin{itemize}
+	\item \textbf{\RB :}
+		\begin{itemize}
+			\item Alessandro Maccagnan
+			\item Milo Ertola
+		\end{itemize}
+	
+	\item \textbf{\gruppo}
+		\begin{itemize}
+			\item \LD
+			\item \MT
+			\item \SL
+			\item \DC
+		\end{itemize}
+\end{itemize}
+}
+
+\newcommand{\ordineDelGiorno}{
+\begin{enumerate}
+	\item Spiegazione da parte del gruppo \gruppo{} dei cambiamenti fatti nel documento \AdR.
+	\item Spiegazione dell'applicazione da parte del gruppo \gruppo{}.	
+\end{enumerate}
+}
+
+\newcommand{\contenuto}{
+\begin{enumerate}
+	\item Il proponente ha dato il suo benestare ai cambiamenti avvenuti nel documento\AdR\ giudicandoli appropriati ai vincoli del Capitolato e si dichiara a conoscenza di tale cambiamenti.
+	
+	\item Il proponente ha dichiarato di essere a conoscenza dell'idea dell'applicazione del gruppo \gruppo\ ed ha consigliato per tale idea uno sviluppo su dispositivi mobili.
+	
+	\item Il proponente ha consigliato di valutare l'idea di sviluppare all'interno dell'\termine{SDK} alcune componenti logiche dell'applicativo.
+
+	\item Il proponente ha specificato l'obbligatorietà di utilizzare linting per mettere in evidenza utilizzi non corretti del linguaggio.	
+	
+	\item Milo Ertola di \RB\ ha dichiarato di essere in Italia dal 13 Maggio nel caso in cui si volesse fissare un incontro di persona.
+	
+\end{enumerate}
+}
+
+
+\begin{document}
+\input{../../../Template/Intro.tex}
+\input{../../../Template/Verbale.tex}
+
+\end{document}

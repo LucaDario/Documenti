@@ -193,7 +193,45 @@ Di seguito sono elencate le tecniche di denominazione raccomandate:
 \item Utilizzare nome composti da una sola lettera solamente per le variabili che identificano un indice all'interno di una istruzione ciclica;
 \item Cercare di utilizzare nomi diverse per tutte le classi, anche se facenti parte di packages diversi;
 \end{itemize}
+\subsubsection{Documentazione dei file}
+I file contenenti codice dovranno essere avere un’intestazione contenente:
+\begin{itemize}
+\color{ForestGreen}
+\item /*! 
+\item *   \textbackslash file Nome del file
+\item *   \textbackslash author Autore
+\item *   \textbackslash date Data di creazione
+\item *   \textbackslash brief Breve descrizione del file
+\item */
+\end{itemize}
+
+All'interno del file le classi dovranno contenere la seguente intestazione:
+\begin{itemize}
+\color{ForestGreen}
+\item /*!
+\item * \textbackslash class Nome della classe
+\item * \textbackslash brief Breve descrizione della classe
+\item */
+\end{itemize}
+
+All'interno del file i metodi dovranno contenere la seguente intestazione:
+\begin{itemize}
+\color{ForestGreen}
+\item /*!
+\item * \textbackslash brief Breve descrizione della funzione
+\item * \textbackslash param Nome del primo parametro
+\item *  eventuali successivi parametri
+\item * \textbackslash return Valore ritornato dalla funzione
+\item */
+\end{itemize}
   
+\subsubsection{Ricorsione}
+La ricorsione va evitata il più possibile. Per ogni funzione ricorsiva sarà necessario valutare il costo in termini di occupazione della memoria e bisognerà associare ad esso una prova di correttezza.
+Valutare la memoria occupata dalla funzione sarà obbligatorio in quanto le funzioni ricorsive possono facilmente non terminare occupando tutto lo stack della memeoria andando quinid in \termine{stack overflow}.
+
+\subsubsection{Sistemi Operativi}
+Ogni componente del team ha scelto di usare il sistema operativo preferito, anche se in totale sono stati usati 3 diversi s.o: MacOs, la distribuzione Linux ArchLinux e Windows 10. Non si è dovuto standardizzare l'uso di unico s.o per il semplice fatto che la programmazione non avveniva nel lato client ma a lato server rendendo cosi innifluente la scelta del sistema operativo del client. Inoltre standardizzando attraverso questo documento le norme di progettazione abbiamo reso iniffluente anche i piccoli cambiamenti che si potevano avere usando i vari s.o nella stesura dei documenti.
+
 
 
 \subsubsection{Strumenti}
@@ -207,6 +245,8 @@ Lo strumento che il \termine{team} ha scelto per la stesura e la manutenzione di
 \item La disponibilità di strumenti di controllo ortografico per minimizzare i possibili errori tipografici;
 \item La facilità d'uso e di configurazione;
 \item La possibilità di conversione del testo scritto in file \termine{PDF}.
+\item Gli editor usati usati per \termine{LaTeX} son \termine{Texmaker} su MacOS e Windows 10 e \termine{Gummi} .
+\item Per creare il glossario è stato implementato un script automatico in \termine{pyton} che attraverso un file json contenente i vocabili e le loro definizioni genera il glossario. Per far funzionare correttamente lo script è necassario che i redattori che creano il documento marchino con il rispettivo comando \termine{termine} gli elementi da inserire nel glossario.
 \end{itemize}
 
 \paragraph{IntelliJ IDEA}
@@ -244,6 +284,9 @@ Le ragioni che hanno portato a questa scelta sono:
 \item La possibilità di creare \termine{issues} e indirizzarle a determinate persone definendo la rispettiva data di scadenza di risoluzione;
 \item Richiesta specifica eseguita da parte del \termine{proponente} del progetto.
 \end{itemize}
+
+\paragraph{Git}
+Come sistema di controllo di versionamento la scelta è ricaduta obbligatoriamente su Git g avendo scelto GitHub come host.
 
 \paragraph{Wrike}
 Lo strumento di pianificazione che abbiamo scelto è \termine{Wrike}.

@@ -136,6 +136,9 @@ Il servizio scelto per l'\termine{hosting} delle \termine{repository} contenenti
   	
 \end{itemize}
 
+\paragraph{Regole per il push}
+Il team ha standardizzato i \termine{push} da effettuare nella \termine{Repository} contente i documenti. Dovrà essere specificato il documento(documenti se più di uno) modficiati/creati in quel particolare commit. Non è ancora stato definito un metodo unico per i \termine{push} effettuati nella codifica del codice in quanto non si sente ancora la necessità non avendo ancora scritto nulla.
+
 \subsubsection{Wrike}
 \termine{Wrike} è uno strumento online per la collaborazione ed il project management. Permette ai suoi utenti di modificare progetti, classificare le attività per importanza, tenere traccia dei programmi e collaborare online con altri utenti dello stesso gruppo. 
 
@@ -146,8 +149,17 @@ Si è scelto di utilizzare il sistema di pianificazione delle attività \termine
 I \termine{task} vengono creati dal \Pm\ e possono essere assegnati ad uno o più membri del gruppo. Nel caso in cui il compito sia di particolare importanza, il \Pm\ suddividerà il \termine{task} principale in sotto-task, e assegnerà ai membri del \termine{team} tali sotto-task. Dopo la sua creazione, il \Pm\ segnerà come \textbf{New} tale \termine{task}, e indicherà nella sezione commenti eventuali consigli o informazioni utili al destinatario del task. \\
 Successivamente il \Pm\ creerà i sotto-task di verifica assegnandoli ad un verificatore che avrà il compito di appurare la bontà del lavoro compiuto nel \termine{task} superiore, quando questo sarà segnato come pronto per la verifica. \\
 Il primo componente che inizierà a lavorare su quel \termine{task} dovrà segnarlo come \textbf{In Progress}, indicando che sta venendo fatto del lavoro su di esso. \\
+Se durante l'elaborazione del \termine{task} arriverà un compito con priorità maggiore al membro che stava lavorando in quel suddetto \termine{task}, l'utente dovrà metterlo in stato \textbf{In Progress} e completarlo una volta finiti i \termine{task} di maggior priorità
 Una volta che il proprietario riterrà il suo sotto-task completato dovrà segnalarlo come \textbf{On Hold}, in modo tale che il verificatore assegnato possa controllarlo e segnarlo come completato nel caso in cui risultasse idoneo. \\
 Se il \termine{task} riguardasse la stesura di un documento, una volta completata la verifica, il verificatore dovrà segnarlo come \textbf{On Hold}, lasciando al \Pm\ la responsabilità dell'ultima verifica e dell'approvazione del documento. A seguito di tale verifica ed approvazione, il \Pm\ segnerà successivamente il task come \textbf{Completed}.
+Il ciclo di vita di un task è descritto nel figura 2.0
+\label{figura 2.0}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{lavorazione_task.jpg}
+	\caption{Ciclo di vita di un task}
+\end{figure}
+
 
 
 \paragraph{Creazione di un task}

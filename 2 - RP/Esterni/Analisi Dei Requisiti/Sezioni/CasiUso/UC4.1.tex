@@ -1,0 +1,61 @@
+\subsubsection{Caso d'uso UC 4.1: Creazione di una bolla lista-spesa}
+\label{Caso d'uso UC 4.1: Creazione di una bolla lista-spesa}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.70]{Usecases/img/{UC4.1}.png}
+	\caption{Caso d'uso UC 4.1: Creazione di una bolla lista-spesa}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item\textbf{Attori}: Creatore della lista.
+\item\textbf{Descrizione}: L'attore crea la bolla lista-spesa e la configura.
+\item\textbf{Precondizione}: L'attore vuole creare una bolla lista-spesa.
+\item\textbf{Postcondizione}: Lo sviluppatore ha creato una bolla lista-spesa configurata.
+	
+\item\textbf{Scenario principale}:
+	\begin{itemize}
+		\item L'attore imposta il nome della lista-spesa(UC 4.1.1).
+		\item L'attore imposta l'immagine della lista-spesa(UC 4.1.3).
+	\end{itemize}
+\item\textbf{Scenario alternativo}:
+	\begin{itemize}
+		\item L'attore non imposta il nome della lista oppure non lo imposta in modo non corretto(UC 4.1.2).
+	\end{itemize}
+
+\end{itemize}
+
+\paragraph{Caso d'uso UC 4.1.1 Impostazione del nome della lista.}
+	\begin{itemize}
+	\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: L'attore imposta il nome della lista.
+		\item\textbf{Precondizione}: L'attore sta creando una bolla lista-spesa.
+		\item\textbf{Postcondizione}: La bolla viene configurata con un nome desiderato.
+		\item\textbf{Estensioni}: Impostazione del nome della lista a default(UC 4.1.2).
+		\item\textbf{Scenario principale:} L'attore che sta creando la lista imposta il nome desiderato(UC 4.1.1).
+		\item\textbf{Scenario alternativo:} L'attore che sta creando la lista non imposta il nome(UC 4.1.2)
+		
+	\end{itemize}
+
+\paragraph{Caso d'uso UC 4.1.2 Impostazione del nome della lista a default.}
+	\begin{itemize}
+	\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: La bolla viene impostata con un nome di default.
+		\item\textbf{Precondizione}: L'attore non imposta il nome della lista oppure non lo imposta in modo non corretto.
+		\item\textbf{Postcondizione}: La bolla viene configurata con un nome di default.
+		\item\textbf{Scenario principale}: Il nome della lista, a causa di un mancato inserimento, viene impostato a default(UC 4.1.2).
+		
+	\end{itemize}
+	
+	
+\paragraph{Caso d'uso UC 4.1.3 Impostazione dell'immagine della lista.}
+	\begin{itemize}
+	\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: L'attore imposta l'immagine della lista.
+		\item\textbf{Precondizione}: L'attore sta creando una bolla lista-spesa.
+		\item\textbf{Postcondizione}: La bolla viene configurata con l'immagine desiderata.
+		
+		\item\textbf{Scenario principale:} L'attore che sta creando la lista imposta l'immagine desiderata(UC 4.1.3).
+		
+		
+	\end{itemize}
+	

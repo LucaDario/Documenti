@@ -46,7 +46,7 @@
       <Entity type="Class">
         <Name>CreateListUseCase</Name>
         <Access>Public</Access>
-        <Location left="350" top="814" />
+        <Location left="350" top="958" />
         <Size width="228" height="111" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private DatabaseSource dbSource</Member>
@@ -56,7 +56,7 @@
       <Entity type="Interface">
         <Name>DatabaseSource</Name>
         <Access>Public</Access>
-        <Location left="624" top="1057" />
+        <Location left="901" top="1129" />
         <Size width="228" height="94" />
         <Collapsed>False</Collapsed>
         <Member type="Method">void createListForUserWithId(string id)</Member>
@@ -64,7 +64,7 @@
       <Entity type="Class">
         <Name>AddItemToListUseCase</Name>
         <Access>Public</Access>
-        <Location left="849" top="814" />
+        <Location left="650" top="958" />
         <Size width="291" height="111" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private DatabaseSource dbSource</Member>
@@ -74,22 +74,61 @@
       <Entity type="Class">
         <Name>CustomItem</Name>
         <Access>Public</Access>
-        <Location left="1467" top="362" />
+        <Location left="1622" top="303" />
         <Size width="162" height="216" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">public string name</Member>
-        <Member type="Field">public string imagePath</Member>
+        <Member type="Field">public int id</Member>
         <Member type="Field">public string description</Member>
+        <Member type="Field">public string imagePath</Member>
+        <Member type="Field">public string measurementUnit</Member>
+        <Member type="Field">public string name</Member>
         <Member type="Field">public List&lt;string&gt; notes</Member>
         <Member type="Field">public int quantity</Member>
-        <Member type="Field">public string measurementUnit</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SetItemQuantitytUseCase</Name>
+        <Access>Public</Access>
+        <Location left="990" top="753" />
+        <Size width="347" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ModifyItemInListUseCase modifyItemUseCase</Member>
+        <Member type="Method">public void setItemQuantityt(string listId, string itemId, int quantity)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AddItemNoteUseCase</Name>
+        <Access>Public</Access>
+        <Location left="1354" top="753" />
+        <Size width="347" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ModifyItemInListUseCase modifyItemUseCase</Member>
+        <Member type="Method">public void addNote(string listId, string itemId, string note)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SetItemDescriptionUseCase</Name>
+        <Access>Public</Access>
+        <Location left="1729" top="753" />
+        <Size width="347" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ModifyItemInListUseCase modifyItemUseCase</Member>
+        <Member type="Method">public void setDescription(string listId, string itemId, string description)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ModifyItemInList</Name>
+        <Access>Public</Access>
+        <Location left="1406" top="958" />
+        <Size width="276" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private DataBaseSource dbSource</Member>
+        <Member type="Method">public void modifyItem(string itemId, CustomItem newItem, string listId)</Member>
         <Modifier>None</Modifier>
       </Entity>
     </Entities>
     <Relationships>
       <Relationship type="Dependency" first="0" second="1">
-        <Label>
-        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
@@ -98,30 +137,42 @@
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
       <Relationship type="Dependency" first="3" second="2">
-        <Label>
-        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
       <Relationship type="Dependency" first="2" second="3">
-        <Label>
-        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
       <Relationship type="Dependency" first="3" second="4">
-        <Label>
-        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
       <Relationship type="Dependency" first="4" second="5">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="6" second="5">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="11" second="5">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="8" second="11">
         <Label>
         </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
-      <Relationship type="Dependency" first="6" second="5">
+      <Relationship type="Dependency" first="9" second="11">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="10" second="11">
         <Label>
         </Label>
         <StartOrientation>Vertical</StartOrientation>

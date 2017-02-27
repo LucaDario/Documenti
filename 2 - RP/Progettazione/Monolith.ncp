@@ -217,22 +217,27 @@
       <Entity type="Class">
         <Name>UrlOptions</Name>
         <Access>Public</Access>
-        <Location left="1087" top="1571" />
-        <Size width="163" height="111" />
+        <Location left="1087" top="1545" />
+        <Size width="226" height="145" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private boolean highlightUrl</Member>
         <Member type="Field">private string urlHighlightColor</Member>
+        <Member type="Method">public void setHighlightColor(string color)</Member>
+        <Member type="Method">public void setHighlightUrl(boolean highlight)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
         <Name>TextOptions</Name>
         <Access>Public</Access>
-        <Location left="1087" top="1698" />
-        <Size width="163" height="128" />
+        <Location left="1110" top="1707" />
+        <Size width="187" height="179" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private int fontSize</Member>
         <Member type="Field">private string textColor</Member>
         <Member type="Field">private string text</Member>
+        <Member type="Method">public void setFontSize(int size)</Member>
+        <Member type="Method">public void setTextColor(string color)</Member>
+        <Member type="Method">public void setText(string text)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -275,12 +280,15 @@
       <Entity type="Class">
         <Name>CheckStyle</Name>
         <Access>Public</Access>
-        <Location left="1725" top="1491" />
-        <Size width="163" height="128" />
+        <Location left="1725" top="1471" />
+        <Size width="252" height="179" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">public string selectionCharacter</Member>
-        <Member type="Field">public boolean useSelectionMark</Member>
-        <Member type="Field">public string selectionColor</Member>
+        <Member type="Field">private string selectionCharacter</Member>
+        <Member type="Field">private boolean useSelectionMark</Member>
+        <Member type="Field">private string selectionColor</Member>
+        <Member type="Method">public void setSelectionCharacter(string character)</Member>
+        <Member type="Method">public void useSelectionMark(boolean userMark)</Member>
+        <Member type="Method">public void setSelectionColor(string color)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -301,13 +309,17 @@
       <Entity type="Class">
         <Name>CheckOption</Name>
         <Access>Public</Access>
-        <Location left="1725" top="1639" />
-        <Size width="163" height="145" />
+        <Location left="1725" top="1667" />
+        <Size width="247" height="213" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">public string name</Member>
-        <Member type="Field">public function onClickAction</Member>
-        <Member type="Field">public function onLongClickAction</Member>
-        <Member type="Field">public boolean isChecked</Member>
+        <Member type="Field">private string name</Member>
+        <Member type="Field">private function onClickAction</Member>
+        <Member type="Field">private function onLongClickAction</Member>
+        <Member type="Field">private boolean isChecked</Member>
+        <Member type="Method">public void setName(string name)</Member>
+        <Member type="Method">public void setOnClickAction(function action)</Member>
+        <Member type="Method">public void setChecked(boolean checked)</Member>
+        <Member type="Method">public void setOnLongClickAction(function action)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Interface">
@@ -348,11 +360,13 @@
       <Entity type="Class">
         <Name>Indicator</Name>
         <Access>Public</Access>
-        <Location left="2352" top="1491" />
-        <Size width="163" height="111" />
+        <Location left="2339" top="1511" />
+        <Size width="209" height="145" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">public string character</Member>
-        <Member type="Field">public string color</Member>
+        <Member type="Field">private string character</Member>
+        <Member type="Field">private string color</Member>
+        <Member type="Method">public void setCharacter(string character)</Member>
+        <Member type="Method">public void setColor(string color)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Interface">
@@ -395,12 +409,15 @@
       <Entity type="Class">
         <Name>ImageOptions</Name>
         <Access>Public</Access>
-        <Location left="2909" top="1491" />
-        <Size width="163" height="128" />
+        <Location left="2900" top="1491" />
+        <Size width="164" height="179" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">public string path</Member>
-        <Member type="Field">public int width</Member>
-        <Member type="Field">public int heigth</Member>
+        <Member type="Field">private string path</Member>
+        <Member type="Field">private int width</Member>
+        <Member type="Field">private int heigth</Member>
+        <Member type="Method">public void setPath(string path)</Member>
+        <Member type="Method">public void setWidth(int width)</Member>
+        <Member type="Method">public void setHeight(int height)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Interface">

@@ -5,6 +5,7 @@ import os.path
 from collections import OrderedDict
 import codecs
 import unicodedata
+import re
 
 
 class TestIterator:
@@ -14,6 +15,9 @@ class TestIterator:
         self.id_counter = 0
         self.id_config = section['id_config']
         self.skip_not_approved = section['skip_not_approved']
+        self.place_holders = []
+        for place_holder in re.findall(r"\[\w+\]", self.id_config, re.IGNORECASE):
+            self.place_holders.append(place_holder.replace('[', '').replace(']', ''))
 
     # Iterator logic
     def __iter__(self):
@@ -26,7 +30,7 @@ class TestIterator:
             if self.skip_not_approved:
                 while self.current_element < len(self.tests) and not self.tests[self.current_element]['approved']:
                     self.current_element += 1
-                if self.current_element >= len(self.tests) :
+                if self.current_element >= len(self.tests):
                     raise StopIteration
 
             index = self.current_element
@@ -35,7 +39,12 @@ class TestIterator:
 
     def _generateId(self):
         self.id_counter += 1
-        return self.id_config.replace('#POS#', str(self.id_counter))
+        computed_id = self.id_config.replace('#POS#', str(self.id_counter))
+        current_test = self.tests[self.current_element - 1]
+        for place_holder in self.place_holders:
+            if place_holder in current_test:
+                computed_id = computed_id.replace('[' + place_holder + ']', current_test[place_holder])
+        return computed_id
 
 
 class SectionIterator:

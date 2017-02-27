@@ -141,13 +141,13 @@
         <Size width="224" height="213" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private ButtonWidgetPresenter presenter</Member>
-        <Member type="Method">void renderView()</Member>
-        <Member type="Method">void setBackgroundColor(string color)</Member>
-        <Member type="Method">void setHeight(int height)</Member>
-        <Member type="Method">void setWidth(int width)</Member>
-        <Member type="Method">void setOnClickAction(function action)</Member>
-        <Member type="Method">void setOnLongClick(function action)</Member>
-        <Member type="Method">void setText(string text)</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void setBackgroundColor(string color)</Member>
+        <Member type="Method">public void setHeight(int height)</Member>
+        <Member type="Method">public void setWidth(int width)</Member>
+        <Member type="Method">public void setOnClickAction(function action)</Member>
+        <Member type="Method">public void setOnLongClick(function action)</Member>
+        <Member type="Method">public void setText(string text)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -189,12 +189,12 @@
         <Size width="237" height="196" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private TextPresenter presenter</Member>
-        <Member type="Method">void renderView()</Member>
-        <Member type="Method">void setText(string text)</Member>
-        <Member type="Method">void setTextColor(string color)</Member>
-        <Member type="Method">void setFormatText(boolean formatText)</Member>
-        <Member type="Method">void setUrlHighlightColor(string color)</Member>
-        <Member type="Method">void setFontSize(int fontSize)</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void setText(string text)</Member>
+        <Member type="Method">public void setTextColor(string color)</Member>
+        <Member type="Method">public void setFormatText(boolean formatText)</Member>
+        <Member type="Method">public void setUrlHighlightColor(string color)</Member>
+        <Member type="Method">public void setFontSize(int fontSize)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -266,10 +266,10 @@
         <Size width="255" height="162" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private ChecklistPresenter presenter</Member>
-        <Member type="Method">void renderView()</Member>
-        <Member type="Method">void setCheckStyle(Checkstyle style)</Member>
-        <Member type="Method">void addOption(CheckOption option)</Member>
-        <Member type="Method">void setCompletionMessage(string message)</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void setCheckStyle(Checkstyle style)</Member>
+        <Member type="Method">public void addOption(CheckOption option)</Member>
+        <Member type="Method">public void setCompletionMessage(string message)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -326,9 +326,9 @@
         <Size width="234" height="145" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private ListPresenter presenter</Member>
-        <Member type="Method">void renderView()</Member>
-        <Member type="Method">void addItem(string text)</Member>
-        <Member type="Method">void setListIndicator(Indicator indicator)</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void addItem(string text)</Member>
+        <Member type="Method">public void setListIndicator(Indicator indicator)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -372,10 +372,10 @@
         <Size width="199" height="162" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private ImagePresenter presenter</Member>
-        <Member type="Method">void renderView()</Member>
-        <Member type="Method">void setImage(string imagePath)</Member>
-        <Member type="Method">void setImageWidth(int width)</Member>
-        <Member type="Method">void setImageHeigth(int heigth)</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void setImage(string imagePath)</Member>
+        <Member type="Method">public void setImageWidth(int width)</Member>
+        <Member type="Method">public void setImageHeigth(int heigth)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -432,7 +432,7 @@
         <Size width="259" height="111" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private VerticalLayoutPresenter presenter</Member>
-        <Member type="Method">void addItem(BubbleComponent component)</Member>
+        <Member type="Method">public void addItem(BubbleComponent component)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -441,7 +441,7 @@
         <Location left="3224" top="1244" />
         <Size width="259" height="128" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">privateVerticalLayoutView view</Member>
+        <Member type="Field">private VerticalLayoutView view</Member>
         <Member type="Field">private List&lt;BubbleComponent&gt; items</Member>
         <Member type="Method">public void addItem(BubbleComponent component)</Member>
         <Modifier>None</Modifier>
@@ -480,7 +480,7 @@
         <Location left="3543" top="1244" />
         <Size width="259" height="128" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">privateHorizontalLayoutView view</Member>
+        <Member type="Field">private HorizontalLayoutView view</Member>
         <Member type="Field">private List&lt;BubbleComponent&gt; items</Member>
         <Member type="Method">public void addItem(BubbleComponent component)</Member>
         <Modifier>None</Modifier>
@@ -491,8 +491,8 @@
         <Location left="3543" top="1016" />
         <Size width="259" height="111" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">private HorizontalLayoutPresenter presenter</Member>
-        <Member type="Method">void addItem(BubbleComponent component)</Member>
+        <Member type="Field">public HorizontalLayoutPresenter presenter</Member>
+        <Member type="Method">public void addItem(BubbleComponent component)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Interface">

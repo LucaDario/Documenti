@@ -1,0 +1,68 @@
+\input{../../../Template/Layout.tex}
+\input{../../../Template/Comandi.tex}
+
+% Comandi per generare l'intro
+\newcommand{\documento}{Verbale riunione 24/02/2017}
+\newcommand{\versione}{0.0.1}
+\newcommand{\redatori}{\SL}
+\newcommand{\revisori}{\LD}
+\newcommand{\approvazione}{\RM}
+\newcommand{\statoapprovazione}{Approvato}
+% Quando il documento sarà approvato, inserire all'interno del comando seguente la data nel formato GG mese AAAA dove GG è il giorno a due cifre, mese è il mese scritto per esteso con la prima lettera minuscola, e AAAA è l'anno a quattro cifre
+\newcommand{\dataApprovazione}{da fissare}
+\newcommand{\uso}{Esterno}
+\newcommand{\destinatari}{\RB\\ & \gruppo\\ & \TV\\ & \RC}
+
+\newcommand{\sommario}{Verbale di incontro svoltosi tra il gruppo \gruppo\ e il proponente \RB.
+}
+
+% Comandi per generare il verbale
+\newcommand{\data}{24 febbraio 2017}
+\newcommand{\luogo}{Skype}
+\newcommand{\durata}{1 ora e 30 minuti}
+\newcommand{\partecipanti}{
+\begin{itemize}
+	\item \textbf{\gruppo}
+		\begin{itemize}
+			\item \RM
+			\item \SL
+			\item \ND
+			\item \FB
+		\end{itemize}
+\end{itemize}
+}
+
+\newcommand{\ordineDelGiorno}{
+\begin{enumerate}
+	\item Discussione sulla progettazione.
+	\item Presentazione di idee su alcuni pattern da utilizzare.
+	\item Discussione sulla complessità della \termine{Clean Architecture}.
+	\item Discussione sul pattern \termine{Observer} usato su \termine{Rocket Chat}.
+\end{enumerate}
+}
+
+\newcommand{\contenuto}{
+\begin{enumerate}
+	\item E' stato deciso dai membri del gruppo \gruppo{} di utilizzare la \termine{Clean Architecture} come pattern architetturale. Esso si basa sull'utilizzo di un altro pattern denominato \termine{Model View Presenter}.
+	\item Il gruppo ha deciso in comune accordo di utilizzare la \termine{dependency injection} per gestire le dipendenze tra le varie componenti.
+	
+	\item La \termine{Clean Architecture} si basa sull'utilizzo di un altro pattern denominato \termine{Model View Presenter}. Esso si suddivide nei seguenti 4 strati, elencati dal più esterno al più interno:
+	\begin{itemize}
+	\item Il primo che rappresenta tutto ciò che è esterno all'applicazione come il web, i dispositivi ed il database.
+	\item Il secondo che rappresenta i vari tipo di Presenter che faranno da tramite tra i vari Model e le View.
+	\item Il terzo rappresenta gli usecases, che rappresentano il Model.
+	\item Il quarto invece rappresenta le entità, le quali rappresentano in modo più dettagliato gli usecases.
+	\end{itemize}
+	E' stato concordato dai membri del \gruppo{} che l'utilizzo di tale pattern suddiviso in questi strati risulta essere complicato per due motivi. Il primo che lo strato più interno, ovvero le entità, sono troppo specifiche e, considerarle, complicherebbe inutilmente lo sviluppo dell'applicazione. Il secondo è che lo sviluppo del gateway (il presenter del \termine{Database}), risulta troppo complesso e rischierebbe di compromettere la buona riuscita del progetto nei tempi previsti sul \PdP{}. Per cui il gruppo \gruppo{} ha deciso di considerare come strato più interno il \termine{Database} eliminando le entità.
+	
+	\item I \ProgP{} hanno notato che \termine{Rocket Chat} utilizza il design pattern \termine{Observer} per la trasmissione dell'evento legato al bottone per l'invio dei messaggi. Dunque anche il pattern \termine{Observer} dovrà essere utilizzato per lo sviluppo dell'applicazione.
+	
+\end{enumerate}
+}
+
+
+\begin{document}
+\input{../../../Template/Intro.tex}
+\input{../../../Template/Verbale.tex}
+
+\end{document}

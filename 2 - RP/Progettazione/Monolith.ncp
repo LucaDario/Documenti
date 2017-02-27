@@ -125,7 +125,7 @@
         <Name>ButtonWidgetView</Name>
         <Access>Public</Access>
         <Location left="446" top="1027" />
-        <Size width="222" height="179" />
+        <Size width="224" height="196" />
         <Collapsed>False</Collapsed>
         <Member type="Method">void setOnClickAction(function action)</Member>
         <Member type="Method">void setBackgroundColor(string color)</Member>
@@ -133,12 +133,13 @@
         <Member type="Method">void setWidth(int width)</Member>
         <Member type="Method">void setOnLongClick(function action)</Member>
         <Member type="Method">void seText(string text)</Member>
+        <Member type="Method">void onClick()</Member>
       </Entity>
       <Entity type="Class">
         <Name>ButtonWidget</Name>
         <Access>Public</Access>
-        <Location left="446" top="1269" />
-        <Size width="224" height="213" />
+        <Location left="446" top="1285" />
+        <Size width="224" height="247" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private ButtonWidgetPresenter presenter</Member>
         <Member type="Method">public void renderView()</Member>
@@ -148,13 +149,15 @@
         <Member type="Method">public void setOnClickAction(function action)</Member>
         <Member type="Method">public void setOnLongClick(function action)</Member>
         <Member type="Method">public void setText(string text)</Member>
+        <Member type="Method">public void seText(string text)</Member>
+        <Member type="Method">public void onClick()</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
         <Name>ButtonPresenter</Name>
         <Access>Public</Access>
-        <Location left="434" top="1545" />
-        <Size width="247" height="281" />
+        <Location left="434" top="1593" />
+        <Size width="247" height="298" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private ButtonGraphics buttonGraphics</Member>
         <Member type="Field">private ButtonWidgetView view</Member>
@@ -168,6 +171,7 @@
         <Member type="Method">public void setOnLongClickAction(function action)</Member>
         <Member type="Method">public void setWidth(int width)</Member>
         <Member type="Method">public void setText(string text)</Member>
+        <Member type="Method">public void onClick()</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Interface">
@@ -248,7 +252,7 @@
       <Entity type="Class">
         <Name>ButtonGraphics</Name>
         <Access>Public</Access>
-        <Location left="136" top="1593" />
+        <Location left="138" top="1612" />
         <Size width="222" height="230" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private string backgroundColor</Member>
@@ -266,23 +270,25 @@
         <Name>ChecklistWidgetView</Name>
         <Access>Public</Access>
         <Location left="1413" top="1027" />
-        <Size width="217" height="128" />
+        <Size width="217" height="145" />
         <Collapsed>False</Collapsed>
         <Member type="Method">void addOption(CheckOption option)</Member>
         <Member type="Method">void setCheckStyle(Checkstyle style)</Member>
         <Member type="Method">void setCompletionMessage(string message)</Member>
+        <Member type="Method">void onClick()</Member>
       </Entity>
       <Entity type="Class">
         <Name>ChecklistWidget</Name>
         <Access>Public</Access>
         <Location left="1398" top="1255" />
-        <Size width="255" height="162" />
+        <Size width="255" height="179" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private ChecklistPresenter presenter</Member>
         <Member type="Method">public void renderView()</Member>
         <Member type="Method">public void setCheckStyle(Checkstyle style)</Member>
         <Member type="Method">public void addOption(CheckOption option)</Member>
         <Member type="Method">public void setCompletionMessage(string message)</Member>
+        <Member type="Method">public void onClick()</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -306,7 +312,7 @@
         <Name>ChecklistPresenter</Name>
         <Access>Public</Access>
         <Location left="1398" top="1545" />
-        <Size width="255" height="196" />
+        <Size width="255" height="213" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private List&lt;CheckOption&gt; options</Member>
         <Member type="Field">private ChecklistWidgetView view</Member>
@@ -315,6 +321,7 @@
         <Member type="Method">public void renderView()</Member>
         <Member type="Method">public void addOption(CheckOption option)</Member>
         <Member type="Method">public void setCompletionMessage(string message)</Member>
+        <Member type="Method">public void onClick()</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">

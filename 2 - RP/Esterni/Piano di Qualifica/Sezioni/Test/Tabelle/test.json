@@ -1,0 +1,371 @@
+{
+  "Test di unità": {
+    "id_config": "TU#POS#",
+    "skip_not_approved": false,
+    "tests": [
+      {
+        "description": "Verificare che in un widget di tipo testo venga impostata in modo corretto la grandezza del font del testo",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che all'instanziazione di un widget di tipo testo venga impostata la grandezza del font al valore di default",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che all'interno di un widget di tipo testo venga impostata in corsivo la parte di testo richiesta",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che all'interno di un widget di tipo testo venga impostata in corsivo la parte di testo corretta",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che all'interno di un widget di tipo testo venga inserito un link cliccabile nel modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che all'interno di un widget di tipo testo i link cliccabili abbiano il colore corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che all'interno di un widget di tipo testo venga impostata in grassetto la parte di testo richiesta",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che all'interno di un widget di tipo testo venga impostato in modo corretto il colore del testo richiesto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che all'instanziazione di un widget di tipo testo venga impostato il colore del testo al colore di default",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che all'instanziazione di un widget di tipo testo venga impostato il colore del testo al colore di default",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che all'interno di un widget di tipo testo venga inserito del testo in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che venga mostrarto in modo corretto il messaggio di errore se viene inserita una sequenza di caratteri non valida in un widget di tipo testo",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo immagine l'immagine venga agiunta in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo immagine venga mostrato il messaggio di errore appropriato nel caso si inserisca un immagina non valida",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo immagine l'immagine venga agiunta in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che un widget di tipo immagine venga impostata la dimensione del immagine da visualizzare in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che all'instanziazione di un widget di tipo immagine venga impostata la larghezza e l'altezza di default",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare un widget di tipo immagine venga visualizzato con le dimensioni corrette",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo bottone venga impostato il testo in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che venga mostrarto in modo corretto il messaggio di errore se viene inserita una sequenza di caratteri non valida in un widget di tipo bottone",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che un widget di tipo bottone venga impostata la dimensione in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che all'instanziazione di un widget di tipo bottone venga impostata la larghezza e l'altezza di default",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo bottone venga impostato il colore di sfondo in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che all'instanziazione di un widget di tipo bottone venga impostato il colore di sfondo di default",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che un widget di tipo bottone venga visualizzato con dimensione, colore e testo correti",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo button vengano eseguiti gli eventi associati alla pressione",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo button vengano eseguiti gli eventi associati alla pressione pressione prolungata",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo button venga impostato in modo corretto la soglia per determinare che una pressione da parte del utente è di tipo: \"pressione prolungata\"",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che un un widget di tipo checkbutton venga cambiato in modo corretto la stato da \"cliccato\" a \"non cliccato\" e viceversa",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che all'instanziazione di un widget di tipo checkbutton venga inpostato lo stato a \"non cliccato\"",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che un widget di tipo checkbutton venga visualizzato con lo stile di spunta e colore corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo checkbutton vengano associati gli eventi di pressione nel modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo checkbutton vengano associati gli eventi di pressione prolungata nel modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo checkbutton vengano eseguiti gli eventi associati alla pressione",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo checkbutton vengano eseguiti gli eventi associati alla pressione pressione prolungata",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo checkbutton venga impostato in modo corretto la soglia per determinare che una pressione da parte del utente è di tipo: \"pressione prolungata\"",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che il widget di tipo checklist venga visualizzato con lo stile corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare in un widget di tipo checklist venga visualizzato l'eventuale messaggio di completamento",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare in un widget di tipo checklist venga mostrato un messaggio di errore se il messagio di completamento non è valido",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare in un widget di tipo checklist venga mostrato un messaggio di errore se il messagio di completamento non è valido",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che il nome della lista della spesa venga impostato nel modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che all'instanziazione di una lista della spaesa venga impostato il valore du default per il nome della lista",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che l'immagine della lista della spesa venga impostata in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che l'immagine della lista della spesa venga mostrata in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che l'immagine della lista della spesa venga mostrata in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che l'aggiunta di un nuovo prodotto alla lista della spesa venga inserito correttamente",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che nel caso di un errore durante l'aggiunta di un prodotto alla lista della spesa venga mostrato uk mesaggio di errore corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che l'immagine del prodotto venga aggiunta in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che l'immagine del prodotto venga mostrata in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che la descrizione del prodotto venga aggiunta in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che le note del prodotto vengano aggiunte in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che la quantità del prodotto venga aggiunta in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che alla creazione di un nuovo prodotto venga impostata la quantità di default",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che l'unità di misura relativa alla quantità del prodotto venga impostata in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che alla creazione di un nuovo prodotto venga impostata l'unità di misura di default",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che la rimozione di un prodotto dalla lista avvenga in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che la modifica del nome di un prodotto in una lista della spesa avvenga in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che la modifica della descrizione di un prodotto in una lista della spesa avvenga in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che la modifica del'immagine di un prodotto in una lista della spesa avvenga in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che la modifica delle note di un prodotto in una lista della spesa avvenga in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che la modifica della quantità di un prodotto in una lista della spesa avvenga in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che la modifica del unità di misura relativa alla quantità di un prodotto in una lista della spesa avvenga in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che la pubblicazione di una lista della spesa avvenga in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che l'inoltro di una lista della spesa avvenga in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che le interazioni con la lista della spesa siano coerenti con i permessi che ha l'utente",
+        "implemented": false,
+        "approved": false
+      }
+    ]
+  },
+  "Test di integrazione": {
+    "id_config": "TI#POS#",
+    "skip_not_approved": false,
+    "tests": [
+      {
+        "description": "Viene verificato che l'sdk sia in grado di interfacciarsi con la gestionde dei messaggi del software Rocket.chat",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Viene verificato che il prersenter associato al widget di tipo testo ",
+        "implemented": false,
+        "approved": false
+      }
+    ]
+  },
+  "Test di sistema": {
+    "id_config": "TS#POS#",
+    "skip_not_approved": false,
+    "tests": [
+      {
+        "description": "",
+        "implemented": false,
+        "approved": false
+      }
+    ]
+  },
+  "Test di validazione": {
+    "id_config": "TV#POS#",
+    "skip_not_approved": false,
+    "tests": [
+      {
+        "description": "",
+        "implemented": false,
+        "approved": false
+      }
+    ]
+  }
+}

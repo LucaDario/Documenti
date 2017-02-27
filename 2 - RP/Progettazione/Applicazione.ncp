@@ -1,44 +1,36 @@
 <Project>
   <Name>Applicazione</Name>
   <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
-    <Name>Vista principale</Name>
+    <Name>Views</Name>
     <Language>Java</Language>
     <Entities>
-      <Entity type="Class">
-        <Name>MainView</Name>
-        <Access>Public</Access>
-        <Location left="807" top="50" />
-        <Size width="163" height="77" />
-        <Collapsed>False</Collapsed>
-        <Modifier>None</Modifier>
-      </Entity>
       <Entity type="Interface">
         <Name>CreateListView</Name>
         <Access>Public</Access>
-        <Location left="399" top="195" />
+        <Location left="116" top="195" />
         <Size width="163" height="111" />
         <Collapsed>False</Collapsed>
         <Member type="Method">void startListCreation()</Member>
-        <Member type="Method">void renderView()</Member>
       </Entity>
       <Entity type="Class">
         <Name>CreateListViewImpl</Name>
         <Access>Public</Access>
-        <Location left="373" top="369" />
+        <Location left="102" top="375" />
         <Size width="199" height="145" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private CreateListViewPresenter presenter</Member>
-        <Member type="Method">void renderView()</Member>
-        <Member type="Method">void startListCreation()</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void startListCreation()</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
         <Name>CreateListViewPresenter</Name>
         <Access>Public</Access>
-        <Location left="385" top="618" />
-        <Size width="170" height="128" />
+        <Location left="102" top="608" />
+        <Size width="170" height="145" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private CreateListView view</Member>
+        <Member type="Field">private CreateListUseCase useCase</Member>
         <Member type="Method">public void renderView()</Member>
         <Member type="Method">public void startListCreation()</Member>
         <Modifier>None</Modifier>
@@ -46,7 +38,7 @@
       <Entity type="Class">
         <Name>CreateListUseCase</Name>
         <Access>Public</Access>
-        <Location left="350" top="958" />
+        <Location left="90" top="964" />
         <Size width="228" height="111" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private DatabaseSource dbSource</Member>
@@ -56,26 +48,18 @@
       <Entity type="Interface">
         <Name>DatabaseSource</Name>
         <Access>Public</Access>
-        <Location left="901" top="1129" />
-        <Size width="228" height="94" />
+        <Location left="905" top="1253" />
+        <Size width="338" height="128" />
         <Collapsed>False</Collapsed>
-        <Member type="Method">void createListForUserWithId(string id)</Member>
-      </Entity>
-      <Entity type="Class">
-        <Name>AddItemToListUseCase</Name>
-        <Access>Public</Access>
-        <Location left="650" top="958" />
-        <Size width="291" height="111" />
-        <Collapsed>False</Collapsed>
-        <Member type="Field">private DatabaseSource dbSource</Member>
-        <Member type="Method">public void addItemToList(string listId, CustomItem item)</Member>
-        <Modifier>None</Modifier>
+        <Member type="Method">void createListForUserWithId(string id, List list)</Member>
+        <Member type="Method">void addOrReplaceItemInList(string listId, CustomItem item)</Member>
+        <Member type="Method">void changeList(string listId, List list)</Member>
       </Entity>
       <Entity type="Class">
         <Name>CustomItem</Name>
         <Access>Public</Access>
-        <Location left="1622" top="303" />
-        <Size width="162" height="216" />
+        <Location left="3506" top="157" />
+        <Size width="163" height="196" />
         <Collapsed>False</Collapsed>
         <Member type="Field">public int id</Member>
         <Member type="Field">public string description</Member>
@@ -87,80 +71,418 @@
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
-        <Name>SetItemQuantitytUseCase</Name>
+        <Name>ModifyItemInListUseCase</Name>
         <Access>Public</Access>
-        <Location left="990" top="753" />
-        <Size width="347" height="111" />
-        <Collapsed>False</Collapsed>
-        <Member type="Field">private ModifyItemInListUseCase modifyItemUseCase</Member>
-        <Member type="Method">public void setItemQuantityt(string listId, string itemId, int quantity)</Member>
-        <Modifier>None</Modifier>
-      </Entity>
-      <Entity type="Class">
-        <Name>AddItemNoteUseCase</Name>
-        <Access>Public</Access>
-        <Location left="1354" top="753" />
-        <Size width="347" height="111" />
-        <Collapsed>False</Collapsed>
-        <Member type="Field">private ModifyItemInListUseCase modifyItemUseCase</Member>
-        <Member type="Method">public void addNote(string listId, string itemId, string note)</Member>
-        <Modifier>None</Modifier>
-      </Entity>
-      <Entity type="Class">
-        <Name>SetItemDescriptionUseCase</Name>
-        <Access>Public</Access>
-        <Location left="1729" top="753" />
-        <Size width="347" height="111" />
-        <Collapsed>False</Collapsed>
-        <Member type="Field">private ModifyItemInListUseCase modifyItemUseCase</Member>
-        <Member type="Method">public void setDescription(string listId, string itemId, string description)</Member>
-        <Modifier>None</Modifier>
-      </Entity>
-      <Entity type="Class">
-        <Name>ModifyItemInList</Name>
-        <Access>Public</Access>
-        <Location left="1406" top="958" />
-        <Size width="276" height="111" />
+        <Location left="1361" top="879" />
+        <Size width="276" height="196" />
         <Collapsed>False</Collapsed>
         <Member type="Field">private DataBaseSource dbSource</Member>
-        <Member type="Method">public void modifyItem(string itemId, CustomItem newItem, string listId)</Member>
+        <Member type="Method">public void setItemQuantityt(string listId, string itemId, int quantity)</Member>
+        <Member type="Method">public void addNoteToItem(string listId, string itemId, string note)</Member>
+        <Member type="Method">public void setItemDescription(string listId, string itemId, string description)</Member>
+        <Member type="Method">public void setItemImage(string listId, string itemId, string imagePath)</Member>
+        <Member type="Method">public void setItemMeasurementUnit(string listId, string itemId, string mu)</Member>
+        <Member type="Method">public void setItemName(string listId, string itemId, string name)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ModifyListUseCase</Name>
+        <Access>Public</Access>
+        <Location left="680" top="913" />
+        <Size width="299" height="162" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private dbSource DatabaseSource</Member>
+        <Member type="Method">public void modifyListName(string listId, string name)</Member>
+        <Member type="Method">public void modifyListImage(string listId, string imagePath)</Member>
+        <Member type="Method">public void removeItemFromList(string listId, string itemId)</Member>
+        <Member type="Method">public void addItemToList(string listId, CustomItem item)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ShareListUseCase</Name>
+        <Access>Public</Access>
+        <Location left="1816" top="947" />
+        <Size width="306" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private DatabaseSource dbSource</Member>
+        <Member type="Field">private ChatSource chat</Member>
+        <Member type="Method">public void shareListToContact(string listId, string contactId, boolean hasWriteAccess)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ShareWithContactViewPresenter</Name>
+        <Access>Public</Access>
+        <Location left="1839" top="610" />
+        <Size width="238" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ShareListUseCase shareUseCase</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void onContactSelected(string contactId)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ShareWithGroupViewImpl</Name>
+        <Access>Public</Access>
+        <Location left="2206" top="393" />
+        <Size width="347" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ShareWithGroupViewPresenter presenter</Member>
+        <Member type="Method">public void onClickShareListWithGroup(int listId, int groupId)</Member>
+        <Member type="Method">public void openShareWithContactView(string listId, string contactId)</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ShareWithContactViewImpl</Name>
+        <Access>Public</Access>
+        <Location left="1774" top="393" />
+        <Size width="351" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private SharewithContactViewPresenter presenter</Member>
+        <Member type="Method">public void onClickShareListWithContact(string listId, string contactId)</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ShareWithGroupViewPresenter</Name>
+        <Access>Public</Access>
+        <Location left="2241" top="610" />
+        <Size width="271" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ShareWithGrouipView view</Member>
+        <Member type="Method">public void shareListWithGroup(int listId, int groupId)</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>ShareWithGroupView</Name>
+        <Access>Public</Access>
+        <Location left="2206" top="195" />
+        <Size width="347" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void onClickShareListWithGroup(int listId, int groupId)</Member>
+        <Member type="Method">public void openShareWithContactView(string listId, string contactId)</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>ShareWithContactView</Name>
+        <Access>Public</Access>
+        <Location left="1809" top="195" />
+        <Size width="351" height="94" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void onClickShareListWithContact(string listId, string contactId)</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>ForwardListUseCase</Name>
+        <Access>Public</Access>
+        <Location left="2630" top="965" />
+        <Size width="316" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ChatSource chat</Member>
+        <Member type="Method">public void forwardListToContact(string listId, string contactId)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ForwardListViewImpl</Name>
+        <Access>Public</Access>
+        <Location left="2643" top="393" />
+        <Size width="267" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ForwardViewPresenter presenter</Member>
+        <Member type="Method">public void forwardList(string listId, string contactId)</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>ForwardListView</Name>
+        <Access>Public</Access>
+        <Location left="2630" top="195" />
+        <Size width="267" height="94" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void forwardList(string listId, string contactId)</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>GeneralView</Name>
+        <Access>Public</Access>
+        <Location left="1382" top="30" />
+        <Size width="163" height="94" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void renderView()</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>ForwardListViewPresenter</Name>
+        <Access>Public</Access>
+        <Location left="2630" top="610" />
+        <Size width="316" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ForwardListView view</Member>
+        <Member type="Method">public void forwardListToContact(string listId, string contactId)</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>ModifyListDetailsView</Name>
+        <Access>Public</Access>
+        <Location left="343" top="195" />
+        <Size width="299" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void modifyListName(string listId, string name)</Member>
+        <Member type="Method">void modifyListImage(string listId, string imagePath)</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>ModifyListDetailsViewImpl</Name>
+        <Access>Public</Access>
+        <Location left="343" top="375" />
+        <Size width="299" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ModifyListDetailsViewPresenter presenter</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void modifyListName(string listId, string name)</Member>
+        <Member type="Method">public void modifyListImage(string listId, string imagePath)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ModifyListDetailsViewPresenter</Name>
+        <Access>Public</Access>
+        <Location left="343" top="608" />
+        <Size width="299" height="162" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ModifyListDetailsView view</Member>
+        <Member type="Field">private ModifyListUseCase useCase</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void modifyListName(string listId, string name)</Member>
+        <Member type="Method">public void modifyListImage(string listId, string imagePath)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>RemoveItemView</Name>
+        <Access>Public</Access>
+        <Location left="700" top="195" />
+        <Size width="258" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void removeItem(string listId, string itemId)</Member>
+        <Member type="Method">void cancel()</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>RemoveItemViewImpl</Name>
+        <Access>Public</Access>
+        <Location left="700" top="375" />
+        <Size width="258" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private RemoveItemViewPresenter presenter</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void removeItem(string listId, string itemId)</Member>
+        <Member type="Method">public void cancel()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>RemoveItemViewPresenter</Name>
+        <Access>Public</Access>
+        <Location left="700" top="608" />
+        <Size width="258" height="162" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private RemoveItemView view</Member>
+        <Member type="Field">private ModifyListUseCase useCase</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void cancel()</Member>
+        <Member type="Method">public void removeItem(string listId, string itemId)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>AddItemView</Name>
+        <Access>Public</Access>
+        <Location left="1011" top="195" />
+        <Size width="262" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void addItem(string listId, CustomItem item)</Member>
+        <Member type="Method">void cancel()</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>AddItemViewImpl</Name>
+        <Access>Public</Access>
+        <Location left="1011" top="375" />
+        <Size width="262" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private AddItemViewPresenter presenter</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void addItem(string listId, CustomItem item)</Member>
+        <Member type="Method">public void cancel()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AddItemViewPresenter</Name>
+        <Access>Public</Access>
+        <Location left="1011" top="610" />
+        <Size width="258" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private AddItemView view</Member>
+        <Member type="Field">private ModifyListUseCase useCase</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void removeItem(string listId, string itemId)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>ModifyItemView</Name>
+        <Access>Public</Access>
+        <Location left="1467" top="195" />
+        <Size width="163" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void saveChanges()</Member>
+        <Member type="Method">void cancel()</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>ModifyItemViewImpl</Name>
+        <Access>Public</Access>
+        <Location left="1452" top="375" />
+        <Size width="206" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ModifyItemViewPresenter presenter</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void saveChanges()</Member>
+        <Member type="Method">public void cancel()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ModifyItemViewPresenter</Name>
+        <Access>Public</Access>
+        <Location left="1361" top="588" />
+        <Size width="384" height="213" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ModifyItemView view</Member>
+        <Member type="Field">private ModifyItemInListUseCase useCase</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void setItemQuantity(string listId, string itemId, int quantity)</Member>
+        <Member type="Method">public void addItemNote(string listId, string itemId, string note)</Member>
+        <Member type="Method">public void setItemDescription(string listId, string itemId, string description)</Member>
+        <Member type="Method">public void setItemMasurementUnit(string listId, string itemId, string mu)</Member>
+        <Member type="Method">public void setItemName(string listId, string itemId, string name)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>ChatSource</Name>
+        <Access>Public</Access>
+        <Location left="2261" top="1253" />
+        <Size width="358" height="94" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void shareMessageWithUser(string userId, BaseBubble message)</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>List</Name>
+        <Access>Public</Access>
+        <Location left="3738" top="157" />
+        <Size width="163" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private string id</Member>
+        <Member type="Field">private string imagePath</Member>
+        <Member type="Field">private List&lt;CustomItem&gt; items</Member>
+        <Member type="Field">private string name</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>HelpView</Name>
+        <Access>Public</Access>
+        <Location left="3094" top="195" />
+        <Size width="163" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void show()</Member>
+        <Member type="Method">void hide()</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>HelpViewImpl</Name>
+        <Access>Public</Access>
+        <Location left="3094" top="393" />
+        <Size width="173" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private HelpViewPresenter presenter</Member>
+        <Member type="Method">public void renderView()</Member>
+        <Member type="Method">public void show()</Member>
+        <Member type="Method">public void hide()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>HelpViewPresenter</Name>
+        <Access>Public</Access>
+        <Location left="3094" top="610" />
+        <Size width="163" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private HelpView view</Member>
+        <Member type="Method">public void renderView()</Member>
         <Modifier>None</Modifier>
       </Entity>
     </Entities>
     <Relationships>
-      <Relationship type="Dependency" first="0" second="1">
+      <Relationship type="Realization" first="1" second="0">
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
-      <Relationship type="Realization" first="2" second="1">
+      <Relationship type="Dependency" first="2" second="1">
+        <Label>
+        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
-      <Relationship type="Dependency" first="3" second="2">
+      <Relationship type="Dependency" first="1" second="2">
+        <Label>
+        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
       <Relationship type="Dependency" first="2" second="3">
+        <Label>
+        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
       <Relationship type="Dependency" first="3" second="4">
+        <Label>
+        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
-      <Relationship type="Dependency" first="4" second="5">
+      <Relationship type="Dependency" first="9" second="8">
+        <Label>
+        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
-      <Relationship type="Dependency" first="6" second="5">
+      <Relationship type="Dependency" first="8" second="4">
+        <Label>
+        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
-      <Relationship type="Realization" first="11" second="5">
+      <Relationship type="Dependency" first="6" second="4">
+        <Label>
+        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
-      <Relationship type="Dependency" first="8" second="11">
+      <Relationship type="Dependency" first="7" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="10" second="12">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="12" second="10">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="10" second="13">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="11" second="14">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="11" second="9">
         <Label>
         </Label>
         <StartOrientation>Vertical</StartOrientation>
@@ -172,7 +494,181 @@
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
-      <Relationship type="Dependency" first="10" second="11">
+      <Relationship type="Dependency" first="10" second="14">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="16" second="17">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="0" second="18">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="14" second="18">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="13" second="18">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="17" second="18">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="16" second="19">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="19" second="16">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="19" second="15">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="21" second="20">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="20" second="18">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="22" second="21">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="21" second="22">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="22" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="23" second="18">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="24" second="23">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="24" second="25">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="25" second="24">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="25" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="26" second="18">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="27" second="26">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="28" second="27">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="27" second="28">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="28" second="7">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="29" second="18">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="30" second="29">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="31" second="30">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="30" second="31">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="31" second="6">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="8" second="32">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="15" second="32">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="34" second="18">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="35" second="34">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="35" second="36">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="36" second="35">
         <Label>
         </Label>
         <StartOrientation>Vertical</StartOrientation>

@@ -17,7 +17,9 @@ class TestIterator:
         self.skip_not_approved = section['skip_not_approved']
         self.place_holders = []
         for place_holder in re.findall(r"\[\w+\]", self.id_config, re.IGNORECASE):
-            self.place_holders.append(place_holder.replace('[', '').replace(']', ''))
+            place_holder = place_holder.replace('[', '').replace(']', '')
+            if len(place_holder) > 0:
+                self.place_holders.append(place_holder)
 
     # Iterator logic
     def __iter__(self):

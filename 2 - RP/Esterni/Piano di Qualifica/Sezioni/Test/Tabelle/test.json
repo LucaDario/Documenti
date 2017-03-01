@@ -327,9 +327,15 @@
         "description": "Verificare che le interazioni con la lista della spesa siano coerenti con i permessi che ha l'utente",
         "implemented": false,
         "approved": false
+      },
+      {
+        "description": "Viene verificato che il codice html associato ad una qualsiasi widet sia valido",
+        "implemented": false,
+        "approved": false
       }
     ]
   },
+
   "Test di integrazione": {
     "id_config": "TI#POS#",
     "skip_not_approved": false,
@@ -340,31 +346,114 @@
         "approved": false
       },
       {
-        "description": "Viene verificato che il prersenter associato al widget di tipo testo ",
+        "description": "Viene verificato che il prersenter associato ad un widget qualisiasi mantega l'html associato alla view valido dopo una eventuale modifica",
         "implemented": false,
         "approved": false
       }
     ]
   },
+
   "Test di sistema": {
-    "id_config": "TS#POS#",
+    "id_config": "TS[type][importance]#POS#",
     "skip_not_approved": false,
     "tests": [
       {
-        "description": "",
+        "description": "Viene verificato che sia possibile creare un widget di tipo testo formattato",
         "implemented": false,
-        "approved": false
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile creare un widget di tipo immagine",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile creare un widget di tipo bottone",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile creare un widget di tipo checkbutton",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile creare un widget di tipo checklist",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile creare un widget personalizzato",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che i widget si dispongano in modo corretto",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile creare delle bolle personalizzate componendo dei widget",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile istanziare una bolla avviso",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile istanziare una bolla markdown",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile istanziare una bolla lista",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile aggiungere metodi e campi dati ad una bolla",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
       }
     ]
   },
+
   "Test di validazione": {
-    "id_config": "TV#POS#",
+    "id_config": "TV[type][importance]#POS#",
     "skip_not_approved": false,
     "tests": [
       {
         "description": "",
         "implemented": false,
-        "approved": false
+        "approved": false,
+        "type": "",
+        "importance": ""
       }
     ]
   }

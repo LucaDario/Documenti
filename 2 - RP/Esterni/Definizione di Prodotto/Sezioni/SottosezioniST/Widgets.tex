@@ -603,6 +603,8 @@
 		\item \textit{message:string}\\
 		Stringa che rappresenta il messaggio di completamento della checklist.
 		\end{itemize}}
+	\item \textit{public emitOnListCompletedEvent():void}\\
+	Questo metodo serve per lanciare l'evento di completamento della lista \texttt{onListCompleted()}.
 	\end{itemize}
 \item{Eventi}:
 	\begin{itemize}
@@ -618,6 +620,8 @@
 		\item \textit{itemId:string}\\
 		Id corrispondente all'entry della lista che è stata cliccata.
 		\end{itemize}}
+	\item \textit{public onListCompleted():void}\\
+	Evento che rappresenta il completamento della checklist, ovvero quando tutte le sue entry sono spuntate.
 	\end{itemize}
 \end{itemize}
 
@@ -690,6 +694,8 @@
 		\item \textit{message:string}\\
 		Stringa che rappresenta il messaggio di completamento della checklist.
 		\end{itemize}}
+	\item \textit{public emitOnListCompletedEvent():void}\\
+	Questo metodo serve per lanciare l'evento di completamento della lista \texttt{onListCompleted()}.
 	\item \textit{public renderView():string}\\
 	Genera il codice HTML CSS JS necessario per visualizzare il widget.
 	\end{itemize}
@@ -730,6 +736,8 @@
 	Collezione contentente tutte le opzioni della lista.
 	\item \textit{private style:CheckStyle}\\
 	Stile per le spunte della lista.
+	\item \textit{private completionMessage:string}\\
+	Stringa che contiene il messaggio di completamento della checklist.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}

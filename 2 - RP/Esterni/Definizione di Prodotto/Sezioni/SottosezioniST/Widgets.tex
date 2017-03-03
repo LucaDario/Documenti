@@ -29,7 +29,7 @@
 \item \textbf{Attributi}:
 \item \textbf{Metodi}:
 	\begin{itemize}
-	\item \textit{public setText(string text:int):void}\\
+	\item \textit{public setText(text:stringt):void}\\
 	Imposta il testo all'interno del bottone.
 		\item{\textbf{Parametri}: \begin{itemize}
 		\item \textit{text:string:int}\\
@@ -53,6 +53,25 @@
 		\item \textit{color:string}\\
 		Rappresenta la stringa in esadecimale corrispondente al colore che verrà impostata come sfondo del bottone.
 		\end{itemize}}
+	\item \textit{public setOnClickAction(action:function):void}\\
+	
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{action:function}\\
+		
+		\end{itemize}}
+	\item \textit{public setOnLongClickAction(action:function):void}\\
+	
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{action:function}\\
+		
+		\end{itemize}}
+	\end{itemize}
+\item \textbf{Eventi}:
+	\begin{itemize}
+	\item \textit{public onClick():void}\\
+	Evento che rappresenta il click normale sul bottone, dopo il quale si può personalizzare la reazione del bottone.
+	\item \textit{public onLongClick():void}\\
+	Evento che rappresenta il click prolungato sul bottone, dopo il quale si può personalizzare la reazione del bottone.
 	\end{itemize}
 \end{itemize}
 
@@ -75,9 +94,11 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{ButtonWidget():ButtonWidget}\\
+
 	\item \textit{public renderView():string}\\
 	 Genera il codice HTML CSS JS necessario per visualizzare il widget.
-	\item \textit{public setText(string text:int):void}\\
+	\item \textit{public setText(text:string):void}\\
 	Imposta il testo all'interno del bottone.
 		\item{\textbf{Parametri}: \begin{itemize}
 		\item \textit{text:int}\\
@@ -100,6 +121,18 @@
 		\item{\textbf{Parametri}: \begin{itemize}
 		\item \textit{color:string}\\
 		Rappresenta la stringa in esadecimale corrispondente al colore che verrà impostata come sfondo del bottone.
+		\end{itemize}}
+	\item \textit{public setOnClickAction(action:function):void}\\
+	
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{action:function}\\
+		
+		\end{itemize}}
+	\item \textit{public setOnLongClickAction(action:function):void}\\
+	
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{action:function}\\
+		
 		\end{itemize}}
 	\end{itemize}
 \item{Eventi}
@@ -127,9 +160,33 @@
 	\begin{itemize}
 	\item \textit{private view:ButtonWidgetView}\\
 	La view associata al presenter.
+	\item \textit{private onClickAction:function}\\
+
+	\item \textit{private onLongClicAction}\\
+
+	\item \textit{private graphics:ButtonGraphics}\\
+
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{ButtonWidgetPresenter(view:ButtonWidgetView):ButtonWidgetPresenter}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{view:ButtonWidgetView}\\
+
+		\end{itemize}}
+	\item \textit{public setOnClickAction(action:function):void}\\
+	
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{action:function}\\
+		
+		\end{itemize}}
+	\item \textit{public setOnLongClickAction(action:function):void}\\
+	
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{action:function}\\
+		
+		\end{itemize}}
 	\item \textit{public setText(string text:int):void}\\
 	Imposta il testo all'interno del bottone
 		\item{\textbf{Parametri}: \begin{itemize}
@@ -182,6 +239,8 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{ButtonGraphics():ButtonGraphics}\\
+
 	\item \textit{public setHeight(height:int):void}\\
 	Imposta l'altezza del bottone.
 		\item{\textbf{Parametri}: \begin{itemize}
@@ -224,10 +283,10 @@
 \item \textbf{Attributi}:
 \item \textbf{Metodi}:
 	\begin{itemize}
-	\item \textit{public setText(string text:int):void}\\
+	\item \textit{public setText(text:string):void}\\
 	Imposta il testo all'interno del widget testo.
 		\item{\textbf{Parametri}: \begin{itemize}
-		\item \textit{string text:int}\\
+		\item \textit{text:string}\\
 		Rappresenta con una string il testo che va inserito all'interno del widget.
 		\end{itemize}}
 	\item \textit{public setTextColor(color:string):void}\\
@@ -276,10 +335,12 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
-	\item \textit{public setText(string text:int):void}\\
+	\item \textit{public TextWidget():TextWidget}\\
+
+	\item \textit{public setText(text:string):void}\\
 	Imposta il testo all'interno del widget testo.
 		\item{\textbf{Parametri}: \begin{itemize}
-		\item \textit{string text:int}\\
+		\item \textit{text:string}\\
 		Rappresenta con una string il testo che va inserito all'interno del widget.
 		\end{itemize}}
 	\item \textit{public setTextColor(color:string):void}\\
@@ -334,10 +395,16 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
-	\item \textit{public setText(string text:int):void}\\
+	\item \textit{public TextWidgetPresenter(view:TextWidgetView):TextWidgetPresenter}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{view:TextWidgetView}\\
+
+		\end{itemize}}
+	\item \textit{public setText(text:string):void}\\
 	Imposta il testo all'interno del widget testo.
 		\item{\textbf{Parametri}: \begin{itemize}
-		\item \textit{string text:int}\\
+		\item \textit{text:string}\\
 		Rappresenta con una string il testo che va inserito all'interno del widget.
 		\end{itemize}}
 	\item \textit{public setTextColor(color:string):void}\\
@@ -389,9 +456,13 @@
 	Rappresenta la stringa in esadecimale corrispondente al colore del testo.
 	\item \textit{private text:string}\\
 	Rappresenta il testo stesso. 
+	\item \textit{private formatted:boolean}\\
+
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public TextStyle():TextStyle}\\
+
 	\item \textit{public setSize(size:int):void}\\
 	Imposta la grandezza del testo.
 		\item{\textbf{Parametri}: \begin{itemize}
@@ -410,12 +481,20 @@
 		\item \textit{string text:int}\\
 		Rappresenta con una string il testo che va inserito.
 		\end{itemize}}
+	\item \textit{public setFormatted(formatted:boolean):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{formatted:boolean}\\
+
+		\end{itemize}}
 	\item \textit{public getSize():int}\\
 	Ritorna il numero di pixel corrispondente all'altezza del testo.
 	\item \textit{public getColor():string}\\
 	Ritorna  la stringa in esadecimale corrispondente al colore del testo.
 	\item \textit{public getText():string}\\
 	Ritorna la stringa contenente il testo.
+	\item \textit{public isFormatted():boolean}\\
+
 	\end{itemize}
 \end{itemize}
 
@@ -440,6 +519,8 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public UrlStyle():UrlsStyle}\\
+
 	\item \textit{public setHighlight(color:boolean):void}\\
 	Imposta la possiblità di cliccare o meno i link presenti nel testo.
 		\item{\textbf{Parametri}: \begin{itemize}
@@ -480,6 +561,30 @@
 		\item \textit{option:CheckOption}\\
 		L'entry della checklist che verrà aggiunta.
 		\end{itemize}}
+	\item \textit{public setUseSelectionMark(useMark:boolean):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{useMark:boolean}\\
+
+		\end{itemize}} 
+	\item \textit{public setSelectionColor(color:string):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{color:string}\\
+
+		\end{itemize}} 
+	\item \textit{public setSelectionCharacter(character:string):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{character:string}\\
+
+		\end{itemize}} 
+	\item \textit{public setChecked(checked:boolean):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{checked:boolean}\\
+
+		\end{itemize}} 
 	\item \textit{public setCheckStyle(style:CheckStyle):void}\\
 	Questo metodo imposta lo stile per le spunte delle opzioni della checklist.
 		\item{\textbf{Parametri}: \begin{itemize}
@@ -495,10 +600,18 @@
 	\end{itemize}
 \item{Eventi}:
 	\begin{itemize}
-	\item \textit{public onClick():void}\\
-	Evento che rappresenta il click normale, dopo il quale si può personalizzare la reazione della checklist.
-	\item \textit{public onLongClick():void}\\
-	Evento che rappresenta il click prolungato, dopo il quale si può personalizzare la reazione della checklist.
+	\item \textit{public onItemClicked(itemId:string):void}\\
+	Evento che rappresenta il click normale su una delle entry della lista, dopo il quale si può personalizzare la reazione della checklist.
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{itemId:string}\\
+		Id corrispondente all'entry della lista che è stata cliccata.
+		\end{itemize}}
+	\item \textit{public onItemLongClicked(itemId:string):void}\\
+	Evento che rappresenta il click prolungato su una delle entry della lista, dopo il quale si può personalizzare la reazione della checklist.
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{itemId:string}\\
+		Id corrispondente all'entry della lista che è stata cliccata.
+		\end{itemize}}
 	\end{itemize}
 \end{itemize}
 
@@ -521,12 +634,38 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public ChecklistWidget():ChecklistWidget}\\
+
 	\item \textit{public addOption(option:CheckOption):void}\\
 	Questo metodo aggiunge una entry alla checklist.
 		\item{\textbf{Parametri}: \begin{itemize}
 		\item \textit{option:CheckOption}\\
 		L'entry della checklist che verrà aggiunta.
 		\end{itemize}}
+	\item \textit{public setUseSelectionMark(useMark:boolean):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{useMark:boolean}\\
+
+		\end{itemize}} 
+	\item \textit{public setSelectionColor(color:string):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{color:string}\\
+
+		\end{itemize}} 
+	\item \textit{public setSelectionCharacter(character:string):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{character:string}\\
+
+		\end{itemize}} 
+	\item \textit{public setChecked(checked:boolean):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{checked:boolean}\\
+
+		\end{itemize}} 
 	\item \textit{public setCheckStyle(style:CheckStyle):void}\\
 	Questo metodo imposta lo stile per le spunte delle opzioni della checklist.
 		\item{\textbf{Parametri}: \begin{itemize}
@@ -544,10 +683,18 @@
 	\end{itemize}
 \item{Eventi}:
 	\begin{itemize}
-	\item \textit{public onItemClicked(itemID:string):void}\\
+	\item \textit{public onItemClicked(itemId:string):void}\\
 	Evento che rappresenta il click normale su una delle entry della lista, dopo il quale si può personalizzare la reazione della checklist.
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{itemId:string}\\
+		Id corrispondente all'entry della lista che è stata cliccata.
+		\end{itemize}}
 	\item \textit{public onItemLongClicked(itemId:string):void}\\
 	Evento che rappresenta il click prolungato su una delle entry della lista, dopo il quale si può personalizzare la reazione della checklist.
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{itemId:string}\\
+		Id corrispondente all'entry della lista che è stata cliccata.
+		\end{itemize}}
 	\end{itemize}
 \end{itemize}
 
@@ -574,11 +721,41 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public ChecklistWidgetPresenter(view:ChecklistWidgetView):ChecklistWidgetPresenter}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{view:ChecklistWidgetView}\\
+
+		\end{itemize}}
 	\item \textit{public addOption(option:CheckOption):void}\\
 	Questo metodo aggiunge una entry alla checklist.
 		\item{\textbf{Parametri}: \begin{itemize}
 		\item \textit{option:CheckOption}\\
 		L'entry della checklist che verrà aggiunta.
+		\end{itemize}}
+	\item \textit{public setUseSelectionMark(useMark:boolean):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{useMark:boolean}\\
+
+		\end{itemize}} 
+	\item \textit{public setSelectionColor(color:string):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{color:string}\\
+
+		\end{itemize}} 
+	\item \textit{public setSelectionCharacter(character:string):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{character:string}\\
+
+		\end{itemize}} 
+	\item \textit{public setChecked(checked:boolean):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{checked:boolean}\\
+
 		\end{itemize}}
 	\item \textit{public setCheckStyle(style:CheckStyle):void}\\
 	Questo metodo imposta lo stile per le spunte delle opzioni della checklist.
@@ -633,6 +810,8 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public CheckOption():CheckOption}\\
+
 	\item \textit{public setChecked(checked:boolean):void}\\
 	Spunta la entry o toglie la spunta da essa.
 		\item{\textbf{Parametri}: \begin{itemize}
@@ -667,6 +846,8 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public CheckStyle():CheckStyle}\\
+
 	\item \textit{public setSelectionCharacter(character:string):void}\\
 	Imposta il carattere per la spunta delle entry della checklist.
 		\item{\textbf{Parametri}: \begin{itemize}
@@ -684,6 +865,24 @@
 		\item{\textbf{Parametri}: \begin{itemize}
 		\item \textit{color:string}\\
 		Rappresenta la stringa in esadecimale corrispondente al colore che verrà impostato per evidenziare le opzioni spuntate della checklist.
+		\end{itemize}}
+	\item \textit{public setUseSelectionMark(useMark:boolean):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{useMark:boolean}\\
+
+		\end{itemize}} 
+	\item \textit{public setSelectionColor(color:string):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{color:string}\\
+
+		\end{itemize}} 
+	\item \textit{public setSelectionCharacter(character:string):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{character:string}\\
+
 		\end{itemize}}
 	\item \textit{public getSelectionCharacter():string}\\
 	Ritorna il carattere che viene utilizzato per la spunta delle entry della checklist.
@@ -715,11 +914,17 @@
 		\item \textit{item:string}\\
 		Il testo dell'oggetto da aggiungere alla lista.
 		\end{itemize}}
-	\item \textit{public setIndicator(indicator:Indicator):void}\\
-	Imposta l'indicatore per gli oggetti della lista.
+	\item \textit{public setCharacter(character:string):void}\\
+
 		\item{\textbf{Parametri}: \begin{itemize}
-		\item \textit{indicator:Indicator}\\
-		Il simbolo che verrà impostato per indicare gli oggetti della lista.
+		\item \textit{character:string}\\
+
+		\end{itemize}}
+	\item \textit{public setColor(color:string):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{color:string}\\
+
 		\end{itemize}}
 	\end{itemize}
 \end{itemize}
@@ -743,17 +948,25 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public ListWidget():ListWidget}\\
+
 	\item \textit{public addItem(item:string):void}\\
 	Aggiunge un oggetto alla lista.
 		\item{\textbf{Parametri}: \begin{itemize}
 		\item \textit{item:string}\\
 		Il testo dell'oggetto da aggiungere alla lista.
 		\end{itemize}}
-	\item \textit{public setIndicator(indicator:Indicator):void}\\
-	Imposta l'indicatore per gli oggetti della lista.
+	\item \textit{public setCharacter(character:string):void}\\
+
 		\item{\textbf{Parametri}: \begin{itemize}
-		\item \textit{indicator:Indicator}\\
-		Il simbolo che verrà impostato per indicare gli oggetti della lista.
+		\item \textit{character:string}\\
+
+		\end{itemize}}
+	\item \textit{public setColor(color:string):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{color:string}\\
+
 		\end{itemize}}
 	\item \textit{public renderView():string}\\
 	Genera il codice HTML CSS JS necessario per visualizzare il widget.
@@ -783,17 +996,25 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public ListWidgetPresenter(view:ListWidgetView):ListWidgetPresenter}\\
+
 	\item \textit{public addItem(item:string):void}\\
 	Aggiunge un oggetto alla lista.
 		\item{\textbf{Parametri}: \begin{itemize}
 		\item \textit{item:string}\\
 		Il testo dell'oggetto da aggiungere alla lista.
 		\end{itemize}}
-	\item \textit{public setIndicator(indicator:Indicator):void}\\
-	Imposta l'indicatore per gli oggetti della lista.
+	\item \textit{public setCharacter(character:string):void}\\
+
 		\item{\textbf{Parametri}: \begin{itemize}
-		\item \textit{indicator:Indicator}\\
-		Il simbolo che verrà impostato per indicare gli oggetti della lista.
+		\item \textit{character:string}\\
+
+		\end{itemize}}
+	\item \textit{public setColor(color:string):void}\\
+
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{color:string}\\
+
 		\end{itemize}}
 	\item \textit{public renderView():string}\\
 	Genera il codice HTML CSS JS necessario per visualizzare il widget.
@@ -821,6 +1042,8 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public Indicator():Indicator}\\
+
 	\item \textit{public setCharacter(character:string):void}\\
 	Imposta il simbolo per indicare gli oggetti della lista.
 		\item{\textbf{Parametri}: \begin{itemize}
@@ -895,6 +1118,8 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public ImageWidget():ImageWidget}\\
+
 	\item \textit{public setImage(imagePath:string):void}\\
 	Imposta il percorso nel file system che porta all'immagine che si vuole inserire nel widget.
 		\item{\textbf{Parametri}: \begin{itemize}
@@ -938,6 +1163,8 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public ImageWidgetPresenter(view:ImageWidgetView):ImageWidgetPresenter}\\
+
 	\item \textit{public setImage(imagePath:string):void}\\
 	Imposta il percorso nel file system che porta all'immagine che si vuole inserire nel widget.
 		\item{\textbf{Parametri}: \begin{itemize}
@@ -984,6 +1211,8 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public ImageOptions():ImageOptions}\\
+
 	\item \textit{public setPath(path:string):void}\\
 	Imposta il percorso nel file system che porta all'immagine che si vuole inserire nel widget.
 		\item{\textbf{Parametri}: \begin{itemize}

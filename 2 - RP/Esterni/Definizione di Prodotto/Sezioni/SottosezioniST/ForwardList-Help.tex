@@ -1,0 +1,180 @@
+\subsubsection{ForwardListView}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+\item \textbf{Metodi}:
+\begin{itemize}
+\item \textit{public openShareContactView(listId:string, contactId:string):void}\\
+
+	\item{\textbf{Parametri}: \begin{itemize}
+	\item \textit{istId:string}\\
+	
+	\item \textit{contactId:string}\\
+	
+	\end{itemize}}
+	\item \textit{public openShareGroupView(listId:string, contactId:string):void}\\
+	
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{listId:string}\\
+		
+		\item \textit{contactId:string}\\
+		
+		\end{itemize}}
+\end{itemize}
+\item \textbf{Eventi}:
+\begin{itemize}
+\item \textit{public onForwardClicked():void}\\
+
+\end{itemize}
+\end{itemize}
+
+\subsubsection{ForwardListViewImpl}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private presenter:ForwardListViewPresenter}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}	
+	\item \textit{public renderView():string}\\
+
+	\item \textit{public openShareContactView(listId:string, contactId:string):void}\\
+	
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+			
+			\item \textit{contactId:string}\\
+	
+			\end{itemize}}
+	\item \textit{public openShareGroupView(listId:string, contactId:string):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+			
+			\item \textit{contactId:string}\\
+
+			\end{itemize}}
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{ForwardListViewPresenter}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private chatSource:ChatSource}\\
+	
+	\item \textit{private view:ForwardListView}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}	
+	\item \textit{public renderView():string}\\
+
+	\item \textit{public openShareContactView(listId:string, contactId:string):void}\\
+	
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+			
+			\item \textit{contactId:string}\\
+	
+			\end{itemize}}
+	\item \textit{public openShareGroupView(listId:string, contactId:string):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+			
+			\item \textit{contactId:string}\\
+
+			\end{itemize}}
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{ForwardListUseCase}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private chatSource:ChatSource}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public forwardList(listId:string, contactId:string):void}\\
+	
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+			
+			\item \textit{contactId:string}\\
+	
+			\end{itemize}}
+	\item \textit{public ForwardListUseCase(chatSource:ChatSource):ForwardListUseCase}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{chatSource:ChatSource}\\
+
+			\end{itemize}}
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{HelpView}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}:
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public hide():void}\\
+	
+	\item \textit{public show():void}\\
+
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{HelpViewImpl}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}:
+\begin{itemize}
+\item \textit{private presenter:HelpViewPresenter}\\
+
+\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public hide():void}\\
+	
+	\item \textit{public show():void}\\
+
+	\item \textit{public renderView():string}\\
+	
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{HelpViewPresenter}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}:
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public hide():void}\\
+	
+	\item \textit{public show():void}\\
+
+	\item \textit{public renderView():string}\\
+	
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}

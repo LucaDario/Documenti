@@ -17,17 +17,11 @@ Oggetto che rappresenta il layout verticale della bolla.
 \end{itemize}
 \item \textbf{Metodi:}
 \begin{itemize}
-\item \textit{public addWidget(widget:BaseWidgetView):void}\\
+\item \textit{public addComponent(component:BaseComponent):void}\\
 Aggiunge un widget alla bolla.
 \item{\textbf{Parametri}: \begin{itemize}
-\item \textit{widget:BaseWidgetView}\\
-Oggetto che rappresenta il widget che si desidera aggiungere alla bolla.
-\end{itemize}}
-\item \textit{public addLayout(layout:BaseLayoutView):void}\\
-Aggiunge un layout alla bolla.
-\item{\textbf{Parametri}: \begin{itemize}
-\item \textit{layout:BaseLayoutView}\\
-Oggetto che rappresenta il layout che si desidera aggiungere alla bolla.
+\item \textit{component:BaseComponent}\\
+Oggetto che rappresenta il componente che si desidera aggiungere alla bolla.
 \end{itemize}}
 \item \textit{public renderView():string}\\
 Genera il codice HTML, CSS e JavaScript necessario per visualizzare bolle.
@@ -50,11 +44,13 @@ Genera il codice HTML, CSS e JavaScript necessario per visualizzare bolle.
 \begin{itemize}
 \item \textit{private textView:TextWidgetView}\\
 Oggetto che rappresenta il widget contenente il testo della bolla lista.
-\item \textit{private checklistView:CheckListView}\\
+\item \textit{private checklist:CheckListView}\\
 Oggetto che rappresenta il widget contenente la lista di oggetti che si possono spuntare.
 \end{itemize}
 \item \textbf{Metodi:}
 \begin{itemize}
+\item \textit{public ToDoListBubble():ToDoListBubble}\\
+Il costruttore della classe ToDoListBubble.
 \item \textit{public addItem(item:string):void}\\
 Aggiunge un elemento con il nome definito alla bolla lista.
 \item{\textbf{Parametri}: \begin{itemize}
@@ -83,6 +79,8 @@ Oggetto che rappresenta il widget contenente il testo della bolla testo markdown
 \end{itemize}
 \item \textbf{Metodi:}
 \begin{itemize}
+\item \textit{public MarkdownBubble():MarkdownBubble}\\
+Il costruttore della classe MarkdownBubble.
 \item \textit{public setText(text:string):void}\\
 Imposta il testo della bolla lista con il valore definito.
 \item{\textbf{Parametri}: \begin{itemize}
@@ -113,6 +111,8 @@ Campo che rappresenta e contiene il messaggio della bolla avviso.
 \end{itemize}
 \item \textbf{Metodi:}
 \begin{itemize}
+\item \textit{public AlertBubble():AlertBubble}\\
+Il costruttore della classe AlertBubble.
 \item \textit{public setTitle(title:string):void}\\
 Imposta il titolo della bolla avviso con il valore title.
 \item{\textbf{Parametri}: \begin{itemize}

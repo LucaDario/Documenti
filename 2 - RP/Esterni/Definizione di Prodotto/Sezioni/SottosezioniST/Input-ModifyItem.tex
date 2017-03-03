@@ -1,0 +1,190 @@
+\subsubsection{InputItemInfoView}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}:
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public emitOnSavedItemEvent(item:ListItem):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{item:ListItem}\\
+
+			\end{itemize}}
+	\item \textit{public createViewForItemWithId(itemId:string):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{itemId:string}\\
+			\end{itemize}}
+
+	\end{itemize}
+\item \textbf{Eventi}:
+\begin{itemize}
+\item \textit{public onSavedItem(item:ListItem):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{item:ListItem}\\
+			
+\end{itemize}}
+\item \textit{public onSaveClicked():void}\\
+
+\end{itemize}
+\end{itemize}
+
+\subsubsection{InputItemInfoViewImpl}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private presenter:InputItemInfoViewImpl}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public createViewForItemWithId(itemId:string):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{itemId:string}\\
+
+			\end{itemize}}
+	\item \textit{public renderView():string}\\
+
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{InputItemInfoViewPresenter}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private view:InputItemInfoView}\\
+	
+	\item \textit{private getItemInfoUseCase:GetItemInfoUseCase}\\
+
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public createItemData():ListItem}\\
+
+	\item \textit{public renderView():string}\\
+
+	\item \textit{public createViewForItemWithId(itemId:string):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{itemId:string}\\
+
+			\end{itemize}}
+			\item \textit{public InputInfoViewPresenter(view:InputItemInfoView, useCase:GetItemInfoUseCase):InputInfoViewPresenter}\\
+			
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{view:InputItemInfoView}\\
+				
+				\item \textit{useCase:GetItemInfoUseCase}\\
+				
+			\end{itemize}}
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{GetItemInfoUseCase}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private databaseSource:DatabaseSource}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public getItemInfo(itemId:string):ListItem}\\
+	
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{itemId:string}\\
+
+			\end{itemize}}
+			\item \textit{public GetItemInfoUseCase(source:DatabaseSource):GetItemInfoUseCase}\\
+			
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{source:DatabaseSource}\\
+
+			\end{itemize}}
+	\end{itemize}
+\item{Eventi}:
+\end{itemize}
+
+\subsubsection{ModifyItemView}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+\item \textbf{Metodi}:
+\item \textbf{Eventi}:
+	\begin{itemize}
+	\item \textit{public onClickModifyItem(item:ListItem):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{item:ListItem}\\
+
+			\end{itemize}}
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{ModifyItemViewImpl}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private presenter:ModifyItemPresenter}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public renderView():string}\\
+
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{ModifyItemViewPresenter}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{public ModifyItemPresenter(view:InputItemInfoView, modifyList:ModifyListUseCase, showPopup:ShowPopupUseCase):ModifyItemPresenter}\\
+	
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{view:InputItemInfoView}\\
+		
+		\item \textit{modifyList:ModifyListUseCase}\\
+		
+		\item \textit{showPopup:ShowPopupUseCase}\\
+
+		\end{itemize}}
+	\item \textit{private inputItemInfoView:InputItemInfoView}\\
+	
+	\item \textit{private modifyListUseCase:ModifyListUseCase}\\
+	
+	\item \textit{private showPopup:ShowPopupUseCase}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{private showInputItemInfoPopup():void}\\
+
+	\item \textit{private saveItem(item:ListItem):string}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{item:ListItem}\\
+
+			\end{itemize}}
+	\item \textit{public renderView():string}\\
+
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}

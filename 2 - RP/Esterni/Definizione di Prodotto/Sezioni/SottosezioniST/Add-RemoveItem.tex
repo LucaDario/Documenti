@@ -1,132 +1,129 @@
 \subsubsection{GeneralView}
 \begin{itemize}
-\item \textbf{Descrizione}: 
+\item \textbf{Descrizione}: Interfaccia che sta alla base della gerarchia delle componenti della lista-spesa.
 \item \textbf{Utilizzo}:
 \item \textbf{Attributi}: 
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public renderView():string}\\
-
+	Genera il codice HTML CSS JS necessario per visualizzare una componente grafica della lista-spesa.
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}
 
 \subsubsection{RemoveItemView}
 \begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+\item \textbf{Descrizione}: Questa interfaccia rappresenta la view relativa alla rimozione di un oggetto dalla lista-spesa.
+\item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione della rimozione, visualizza i dati che gli vengono passati dal presenter.
 \item \textbf{Attributi}: 
 \item \textbf{Metodi}:
 \item \textbf{Eventi}:
 	\begin{itemize}	
 	\item \textit{public onItemRemoveClicked(item:ListItem):void}\\
-
+	Evento che rappresenta il click, da parte dell'utente, sull'oggetto visuale necessario alla rimozione di un oggetto dalla lista.
 			\item{\textbf{Parametri}: \begin{itemize}
-			\item \textit{litem:ListItem}\\
-
+			\item \textit{item:ListItem}\\
+			L'oggetto che è stato cliccato e che l'utente desidera rimuovere dalla lista.
 			\end{itemize}}
 	\end{itemize}
 \end{itemize}
 
 \subsubsection{RemoveItemViewImpl}
 \begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+\item \textbf{Descrizione}: Questa classe rappresenta la rimozione di un oggetto dalla lista-spesa, implementando l'interfaccia RemoveItemView.
+\item \textbf{Utilizzo}: Questa classe viene utilizzata dall'utente ogniqualvolta vuole rimuovere un oggetto alla lista-spesa.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private presenter:RemoveItemViewPresenter}\\
-	
+	Il presenter associato alla rimozione di un oggetto della lista, al quale questa classe delega la gestione del comportamento dell'elemento di rimozione degli oggetti.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public renderView():string}\\
-	
+		Genera il codice HTML CSS JS necessario per visualizzare la componente grafica della lista-spesa necessaria alla rimozione di un oggetto da essa.
 	\item \textit{public RemoveItemViewImpl():RemoveItemViewImpl}\\
-	
+	Costruttore della classe RemoveItemViewImpl.
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}
 
 \subsubsection{RemoveItemViewPresenter}
 \begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+item \textbf{Descrizione}: Questa classe rappresenta il presenter per gli elementi di rimozione degli oggetti  della lista-spesa.
+\item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione dell'elemento di rimozione e la view, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private view:RemoveItemView}\\
-
+	La view associata al presenter.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{RemoveItemViewPresenter(view:RemoveItemView):RemoveItemViewPresenter}\\
-
+	Costruttore della classe RemoveItemViewPresenter.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{view:RemoveItemView}\\
-			
+			La view necessaria alla costruzione del presenter.
 			\end{itemize}}
-	\item \textit{public removeItemViewPresene(listId:string,item:ListItem):void}\\
-
+	\item \textit{public removeItem(listId:string,item:ListItem):void}\\
+	Questo metodo serve per rimuovere un oggetto dalla lista-spesa.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-
+			L'id della lista dalla quale bisogna rimuovere l'oggetto.
 			\item \textit{item:ListItem}\\
-
+			L'oggetto da rimuovere.
 			\end{itemize}}
 	\item \textit{public renderView():string}\\
-
+	Genera il codice HTML CSS JS necessario per visualizzare la componente grafica della lista-spesa necessaria alla rimozione di un oggetto da essa.
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}
 
 \subsubsection{ModifyListUseCase}
 \begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+\item \textbf{Descrizione}: La classe rappresenta l'interazione con il database nel caso di modifiche alla lista.
+\item \textbf{Utilizzo}: Ogni modifica dei dati degli oggetti della lista o della lista stessa passa per questa classe, che fa ponte tra il presenter e il database.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private databaseSource:DatabaseSource}\\
-	
+	Questo attributo è un riferimento all'interfaccia \texttt{DatabaseSource}, che permette di interfacciarsi al database \termine{MongoDB}.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public ModifyListUseCase(source:DatabaseSource):ModifyListUseCase}\\
-	
+	Costruttore della classe ModifyListUseCase.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{source:DatabaseSource}\\
-			
+			Attributo necessario alla costruzione della classe, per la comunicazione con  il database.
 			\end{itemize}}
-	
 	\item \textit{public changeListInfo(listId:string,newList:ListData):void}\\
-
+	Questo metodo serve per modificare i dati di una lista.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-
+			L'id della lista che si vuole modificare.
 			\item \textit{newList:ListData}\\
-
+			La nuova lista che si andrà a sostituire alla precedente.
 			\end{itemize}}
 	\item \textit{public addItemToList(listId:string,item:ListItem):void}\\
-
+	Metodo che aggiunge un oggetto a una lista-spesa.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-
+			Id della lista alla quale si vuole aggiungere un oggetto.
 			\item \textit{item:ListItem}\\
-
+			Oggetto che si vuole aggiungere alla lista.
 			\end{itemize}}
-	\item \textit{public removeItemFromList(listId:string,item:ListItem):void}\\
-
+	\item \textit{public removeItemFromList(listId:string):void}\\
+	Metodo che rimuove un oggetto da una list-spesa.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-
-			\item \textit{item:ListItem}\\
-
+			Id della lista dalla quale si vuole rimuovere un oggetto.
 			\end{itemize}}
 	\item \textit{public updateItemInsideList(listId:string,item:ListItem):void}\\
-
+	Metodo che modifica un oggetto della lista.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-
+			Id della lista della quale si vuole modificare un oggetto.
 			\item \textit{item:ListItem}\\
-
+			Oggetto della lista che si vuole modificare.
 			\end{itemize}}
 	\end{itemize}
 \item \textbf{Eventi}:
@@ -135,7 +132,7 @@
 \subsubsection{DatabaseSource}
 \begin{itemize}
 \item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+\item \textbf{Utilizzo}: Utilizzata ogniqualvolta
 \item \textbf{Attributi}: 
 \item \textbf{Metodi}:
 	\begin{itemize}
@@ -193,101 +190,99 @@
 
 \subsubsection{AddItemView}
 \begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+\item \textbf{Descrizione}: Questa interfaccia rappresenta la view relativa all'aggiunta di un oggetto alla lista-spesa.
+\item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione dell'aggiunta, visualizza i dati che gli vengono passati dal presenter.
 \item \textbf{Attributi}: 
 \item \textbf{Metodi}:
 \item \textbf{Eventi}:
 	\begin{itemize}	
 	\item \textit{public onAddItemClicked():void}\\
-
+	Evento che rappresenta il click, da parte dell'utente, sull'oggetto visuale necessario all'aggiunta di un oggetto alla lista.
 	\end{itemize}
 \end{itemize}
 
 \subsubsection{AddItemViewImplementation}
 \begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+\item \textbf{Descrizione}: Questa classe rappresenta l'aggiunta di un oggetto alla lista-spesa, implementando l'interfaccia AddItemView.
+\item \textbf{Utilizzo}: Questa classe viene utilizzata dall'utente ogniqualvolta vuole aggiungere un oggetto alla lista-spesa.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private presenter:AddItemViewPresenter}\\
-	
+	Il presenter associato alla rimozione di un oggetto della lista, al quale questa classe delega la gestione del comportamento dell'elemento di rimozione degli oggetti.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public addItem(listId:string,item:ListItem):void}\\
-
+	Il metodo aggiunge un oggetto a una lista-spesa.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-
+			L'id della lista al quale si vuole aggiungere un oggetto.
 			\item \textit{item:ListItem}\\
-
+			L'oggetto che si vuole aggiungere alla lista.
 			\end{itemize}}
 	\item \textit{public renderView():string}\\
-	
+	Genera il codice HTML CSS JS necessario per visualizzare la componente grafica della lista-spesa necessaria all'aggiunta di un oggetto da essa.
 	\item \textit{AddItemViewImplementation():AddItemViewImplementation}\\
-	
+	Il costruttore della classe AddItemViewImplementation.
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}
 
 \subsubsection{AddItemViewPresenter}
 \begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+item \textbf{Descrizione}: Questa classe rappresenta il presenter per gli elementi di rimozione degli oggetti  della lista-spesa.
+\item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione dell'elemento di aggiunta e la view, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private view:AddItemView}\\
-	
+	La view associata al presenter.
 	\item \textit{private inputItemInfoView:InputItemInfoView}\\
-
+	Componente grafica per l'input dei dati relativi a un oggetto della lista-spesa.
 	\item \textit{private modifyListUseCase:ModifyListUseCase}\\
-
+	Componente necessaria alla comunicazione tra presenter e database.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public AddItemViewPresenter(view:AddItemView, inputView:InputItemInfoView, useCase:ModifyListUseCase):AddItemViewPresenter}	
 		\item{\textbf{Parametri}: \begin{itemize}
 		\item \textit{view:AddItemView}\\
-		
+			La view associata al presenter.
 		\item \textit{inputView:InputItemInfoView}\\
-		
+			Componente grafica per l'input dei dati relativi a un oggetto della lista-spesa.
 		\item \textit{useCase:ModifyListUseCase}\\
-		
+			Componente necessaria alla comunicazione tra presenter e database.
 		\end{itemize}}
 	\item \textit{private showInputItemInfoView():void}\\
-
+	Mostra la componente grafica necessaria all'input dei dati per un oggetto della lista-spesa.
 	\item \textit{public renderView():string}\\
-
+	Genera il codice HTML CSS JS necessario per visualizzare la componente grafica della lista-spesa necessaria all'aggiunta di un oggetto da essa.
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}
 
 \subsubsection{ShowPopupUseCase}
 \begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+\item \textbf{Descrizione}: La classe rappresenta l'interazione con un modale nella chat.
+\item \textbf{Utilizzo}: La classe viene utilizzata ogniqualvolta una delle altre classi necessita di mostrare un modale nelle sue interazioni.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private chatSource:ChatSource}\\
-	
+	La chat sulla quale si vuole intervenire utilizzando questa classe.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public showPopup(htmlCode:string):void}\\
-	
+	Questo metodo mostra un modale.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{htmlCode:string}\\
-
+			La stringa contiene il codice html del contenuto del modale che si vuole mostrare.
 			\end{itemize}}
-			
 	\item \textit{ShowPopupUseCase(chatSource:ChatSource):ShowPopupUseCase}\\
-	
+	Costruttore della classe ShowPopupUseCase.
 		\item{\textbf{Parametri}: \begin{itemize}
 		\item \textit{chatSource:ChatSource}\\
-		
+		Chat necessaria alla costruzione della classe.
 		\end{itemize}}
-
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}

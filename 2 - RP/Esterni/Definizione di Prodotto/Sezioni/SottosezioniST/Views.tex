@@ -1,0 +1,168 @@
+\subsubsection{ListData}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+\item \textbf{Metodi}:
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{ShareWithContactView}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+\item \textbf{Metodi}:
+\item \textbf{Eventi}:
+\begin{itemize}
+\item \textit{public onClickShareWithContact(contactId:string):void}\\
+
+	\item{\textbf{Parametri}: \begin{itemize}
+	\item \textit{contactId:string}\\
+	
+	\end{itemize}}
+\end{itemize}
+\end{itemize}
+
+\subsubsection{ShareWithContactViewImpl}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+\begin{itemize}
+\item \textit{private presenter:ShareWithContactViewPresenter}\\
+
+\end{itemize}
+\item \textbf{Metodi}:
+\begin{itemize}
+\item \textit{public renderView():string}\\
+
+\item \textit{public ShareWithContactViewImpl():ShareWithContactViewImpl}\\
+
+\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{ShareWithContactViewPresenter}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+\begin{itemize}
+\item \textit{private useCase:ShareListUseCase}\\
+
+\end{itemize}
+\item \textbf{Metodi}:
+\begin{itemize}
+\item \textit{private shareList(listId:string, contactId:string):void}\\
+
+	\item{\textbf{Parametri}: \begin{itemize}
+	\item \textit{listId:string}\\
+	
+	\item \textit{contactId:string}\\
+	
+	\end{itemize}}
+\item \textit{public ShareWithContactViewImpl():ShareWithContactViewImpl}\\
+
+\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{ShareListUseCase}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+\begin{itemize}
+\item \textit{private chatSource:ChatSource}\\
+
+\item \textit{private dbSource:DatabaseSource}\\
+
+\end{itemize}
+\item \textbf{Metodi}:
+\begin{itemize}
+\item \textit{public shareListWithContact(listId:string, contactId:string):void}\\
+
+	\item{\textbf{Parametri}: \begin{itemize}
+	\item \textit{listId:string}\\
+	
+	\item \textit{contactId:string}\\
+	
+	\end{itemize}}
+\item \textit{public ShareListUseCase(chatSource:ChatSource, dbSource:DatabaseSource):ShareListUseCase}\\
+
+	\item{\textbf{Parametri}: \begin{itemize}
+	\item \textit{chatSource:ChatSource}\\
+	
+	\item \textit{dbSource:DatabaseSource}\\
+	
+	\end{itemize}}
+\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{ShareWithGroupView}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+\item \textbf{Metodi}:
+\item{Eventi}:
+	\begin{itemize}
+	\item \textit{public onClickShareWithGroup(groupId:string):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{groupId:string}\\
+
+			\end{itemize}}
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{ShareWithGroupViewImpl}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}:
+	\begin{itemize}
+	\item \textit{private presenter:ShareWithGroupViewPresenter}\\
+	
+	\end{itemize} 
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public ShareWithGroupViewImpl():ShareWithGroupViewImpl}\\
+	
+	\item \textit{public renderView():string}\\
+
+	\end{itemize}
+\item{Eventi}:
+\end{itemize}
+
+\subsubsection{ShareWithGroupViewPresenter}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private view:ShareWithGroupView}\\
+	
+	\item \textit{private useCase:ShowPopupUseCase}\\
+		
+	\item \textit{private shareContactView:ShareWithContactView}\\
+	\end{itemize} 
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public ShareWithGroupViewPresenter(view:ShareWithGroupView,useCase:ShowPopupUseCase,shareContactView:ShareWithContactView):ShareWithGroupViewPresenter}\\
+	Il costruttore della classe ShareWithGroupViewPresenter.
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{view:ShareWithGroupView}\\
+			La view necessaria alla costruzione del presenter.
+			\item \textit{useCase:ShowPopupUseCase}\\
+			
+			\item \textit{shareContactView:ShareWithContactView}\\
+						
+			\end{itemize}}
+	\item \textit{public renderView():string}\\
+
+	\end{itemize}
+\item{Eventi}:
+\end{itemize}

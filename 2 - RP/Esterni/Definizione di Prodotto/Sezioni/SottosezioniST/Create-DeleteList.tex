@@ -1,0 +1,193 @@
+\subsubsection{CreateListView}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+\item \textbf{Metodi}:
+\item \textbf{Eventi}:
+	\begin{itemize}
+	\item \textit{public onCreateListClicked():void}\\
+
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{CreateListViewImpl}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private presenter:CreateListViewPresenter}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public renderView():string}\\
+
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{CreateListViewPresenter}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private createListView:CreateListView}\\
+	
+	\item \textit{private changeListInfoView:InputListInfoView}\\
+	
+	\item \textit{private manageList:ManageListUseCase}\\
+	
+	\item \textit{private showPopup:ShowPopupUseCase}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public CreateListViewPresenter(createList:CreateListView, listInfo:ChangeListInfoView, manageList:ManageListsUseCase, showPopup:ShowPopupUseCase):CreateListViewPresenter}\\
+	
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{createList:CreateListView}\\
+		
+		\item \textit{listInfo:ChangeListInfoView}\\
+		
+		\item \textit{manageList:ManageListsUseCase}\\
+		
+		\item \textit{showPopup:ShowPopupUseCase}\\
+		
+		\end{itemize}}
+	\item \textit{private showInputListInfoView():void}\\
+	 
+	\item \textit{public createList(list:ListData):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{list:ListData}\\
+
+			\end{itemize}}
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{InputListInfoView}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+\item \textbf{Metodi}:
+	\begin{itemize}	
+	\item \textit{public emitOnSavedDataEvent(list:ListaData):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{list:ListaData}\\
+
+			\end{itemize}}
+	\item \textit{public createViewForListWithId(listId:string):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+
+			\end{itemize}}
+	\end{itemize}
+\item \textbf{Eventi}:
+	\begin{itemize}
+	\item \textit{public onSaveClicked():void}\\
+	
+	\item \textit{public onSavedData(list:ListData):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{list:ListData}\\
+
+			\end{itemize}}
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{ManageListsUseCase}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private databaseSource:DatabaseSource}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public createList(userId:string):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{userId:string}\\
+
+			\end{itemize}}
+	\item \textit{public deleteList(id:string):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{id:string}\\
+
+			\end{itemize}}
+	\item \textit{public ManageListsUseCase(source:DatabaseSource):ManageListsUseCase}\\
+	
+		\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{source:DatabaseSource}\\
+			
+			\end{itemize}}
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{DeleteListView}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+\item \textbf{Metodi}:
+\item \textbf{Eventi}:
+	\begin{itemize}
+	\item \textit{public onDeleteListClicked(listId:string):void}\\
+
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{DeleteListViewImpl}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private presenter:DeleteListViewPresenter}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public renderView():string}\\
+
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{DeleteListViewPresenter}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private view:DeleteListView}\\
+	
+	\item \textit{private manageList:ManageListUseCase}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public renderView():string}\\
+	
+	\item \textit{public DeleteListViewPresenter(view:DeleteListView, useCase:ManageListsUseCase):DeleteListViewPresenter}\\
+	
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{view:DeleteListView}\\
+
+		\item \textit{useCase:ManageListsUseCase}\\
+		
+		\end{itemize}}
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}

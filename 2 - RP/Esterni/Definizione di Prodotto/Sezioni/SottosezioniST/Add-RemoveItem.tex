@@ -1,0 +1,343 @@
+\subsubsection{GeneralView}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public renderView():string}\\
+
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{RemoveItemView}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+\item \textbf{Metodi}:
+\item \textbf{Eventi}:
+	\begin{itemize}	
+	\item \textit{public onItemRemoveClicked(item:ListItem):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{litem:ListItem}\\
+
+			\end{itemize}}
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{RemoveItemViewImpl}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private presenter:RemoveItemViewPresenter}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public renderView():string}\\
+	
+	\item \textit{public RemoveItemViewImpl():RemoveItemViewImpl}\\
+	
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{RemoveItemViewPresenter}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private view:RemoveItemView}\\
+
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{RemoveItemViewPresenter(view:RemoveItemView):RemoveItemViewPresenter}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{view:RemoveItemView}\\
+			
+			\end{itemize}}
+	\item \textit{public removeItemViewPresene(listId:string,item:ListItem):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+
+			\item \textit{item:ListItem}\\
+
+			\end{itemize}}
+	\item \textit{public renderView():string}\\
+
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{ModifyListUseCase}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private databaseSource:DatabaseSource}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public ModifyListUseCase(source:DatabaseSource):ModifyListUseCase}\\
+	
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{source:DatabaseSource}\\
+			
+			\end{itemize}}
+	
+	\item \textit{public changeListInfo(listId:string,newList:ListData):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+
+			\item \textit{newList:ListData}\\
+
+			\end{itemize}}
+	\item \textit{public addItemToList(listId:string,item:ListItem):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+
+			\item \textit{item:ListItem}\\
+
+			\end{itemize}}
+	\item \textit{public removeItemFromList(listId:string,item:ListItem):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+
+			\item \textit{item:ListItem}\\
+
+			\end{itemize}}
+	\item \textit{public updateItemInsideList(listId:string,item:ListItem):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+
+			\item \textit{item:ListItem}\\
+
+			\end{itemize}}
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{DatabaseSource}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public createListForUser(userId:string):ListData}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{userId:string}\\
+
+			\end{itemize}}
+	\item \textit{public removeList(listId:string):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+
+			\end{itemize}}
+	\item \textit{public getListWithId(id:string):ListData}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{id:string}\\
+
+			\end{itemize}}
+	\item \textit{public changeList(listId:string):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+
+			\end{itemize}}
+	\end{itemize}
+\item \textbf{Eventi}:
+	\begin{itemize}
+	\item \textit{public onListCreated(listId:string,creatorId:string):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+
+			\item \textit{creatorId:string}\\
+
+			\end{itemize}}
+	\item \textit{public onListRemoved(listId:string,creatorId:string):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+
+			\item \textit{creatorId:string}\\
+
+			\end{itemize}}
+	\item \textit{public onListChanged(listId:string):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+
+			\end{itemize}}
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{AddItemView}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+\item \textbf{Metodi}:
+\item \textbf{Eventi}:
+	\begin{itemize}	
+	\item \textit{public onAddItemClicked():void}\\
+
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{AddItemViewImplementation}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private presenter:AddItemViewPresenter}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public addItem(listId:string,item:ListItem):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:string}\\
+
+			\item \textit{item:ListItem}\\
+
+			\end{itemize}}
+	\item \textit{public renderView():string}\\
+	
+	\item \textit{AddItemViewImplementation():AddItemViewImplementation}\\
+	
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{AddItemViewPresenter}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private view:AddItemView}\\
+	
+	\item \textit{private inputItemInfoView:InputItemInfoView}\\
+
+	\item \textit{private modifyListUseCase:ModifyListUseCase}\\
+
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public AddItemViewPresenter(view:AddItemView, inputView:InputItemInfoView, useCase:ModifyListUseCase):AddItemViewPresenter}	
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{view:AddItemView}\\
+		
+		\item \textit{inputView:InputItemInfoView}\\
+		
+		\item \textit{useCase:ModifyListUseCase}\\
+		
+		\end{itemize}}
+	\item \textit{private showInputItemInfoView():void}\\
+
+	\item \textit{public renderView():string}\\
+
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{ShowPopupUseCase}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private chatSource:ChatSource}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public showPopup(htmlCode:string):void}\\
+	
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{htmlCode:string}\\
+
+			\end{itemize}}
+			
+	\item \textit{ShowPopupUseCase(chatSource:ChatSource):ShowPopupUseCase}\\
+	
+		\item{\textbf{Parametri}: \begin{itemize}
+		\item \textit{chatSource:ChatSource}\\
+		
+		\end{itemize}}
+
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{ChatSource}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public showPopup(htmlCode:string):void}\\
+	
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{htmlCode:string}\\
+
+			\end{itemize}}
+	\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{InputItemInfoView}
+\begin{itemize}
+\item \textbf{Descrizione}: 
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}:
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public emitOnSavedItemEvent(item:ListItem):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{item:ListItem}\\
+
+			\end{itemize}}
+	\item \textit{public createViewForItemWithId(itemId:string):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{itemId:string}\\
+
+			\end{itemize}}
+	\end{itemize}
+\item \textbf{Eventi}:
+	\begin{itemize}
+	\item \textit{public onSavedItem(item:ListItem):void}\\
+
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{item:ListItem}\\
+
+			\end{itemize}}
+	\item \textit{public onSaveClicked():void}\\
+
+	\end{itemize}
+\end{itemize}

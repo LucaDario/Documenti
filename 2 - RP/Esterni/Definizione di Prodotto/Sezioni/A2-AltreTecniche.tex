@@ -1,0 +1,8 @@
+\section{Altre tecniche}
+\subsection{Dependency injection}
+\begin{itemize}
+	\item \textbf{Scopo}: questa tecnica permette di applicare il principio di \termine{Inversion of Control}, e consiste nel fornire agli oggetti che presentano dipendenze verso altri oggetti queste dipendenze senza lasciare che siano i primi a crearle, ma facendo sì che sia un terzo oggetto a fornirle.
+	\item \textbf{Motivazione}: lo scopo dietro a questa tecnica è quello di aumentare il livello di \termine{decoupling} all'interno dell'applicazione, facendo sì che un oggetto che basa le sue funzioni su un secondo oggetto non debba preoccuparsi di come quest'ultimo viene creato (e dunque di creare lui e tutte le sue dipendenze), bensì utilizzi questo oggetto considerandolo come già fornito;
+	\item \textbf{Applicabilità}: questa tecnica può essere applicata all'interno di tutte quelle applicazioni che presentano un alto grado di accoppiamento tra le varie classi, per rilassare queste dipendenze. E' bene notare che, essendo necessaria una libreria di terze parti per applicare questa tecnica, essa non è applicabile a tutti i linguaggi di programmazione. Per il progetto, il \termine{gruppo} ha deciso di utilizzare la libreria \texttt{dependency-injection-es6};
+	\item \textbf{Utilizzo}: questa tecnica viene utilizzata all'interno del progetto per fornire a cascata tutte le dipendenze partendo dai vari Presenter delle viste e delle bolle all'interno dell'applicazione.
+\end{itemize}

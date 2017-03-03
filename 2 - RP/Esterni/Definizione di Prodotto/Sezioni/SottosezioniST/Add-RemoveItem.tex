@@ -312,27 +312,29 @@ item \textbf{Descrizione}: Questa classe rappresenta il presenter per gli elemen
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public emitOnSavedItemEvent(item:ListItem):void}\\
-
+	Metodo utilizzato per emettere l'evento OnSavedItemEvent.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{item:ListItem}\\
-
+			L'oggetto che che è stato salvato.
 			\end{itemize}}
-	\item \textit{public createViewForItemWithId(itemId:string):void}\\
-
+	\item \textit{public createViewForItemWithId(itemId:string,listId:string):void}\\
+	Il metodo crea una componente grafica per la modifca di un oggetto caricando i dati relativi a quell'oggetto dalla sua lista tramite l'id della lista e dell'oggetto stesso.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{itemId:string}\\
-
+			L'id dell'oggetto.
+			\item \textit{listId:string}\\
+			L'id della lista.
 			\end{itemize}}
 	\end{itemize}
 \item \textbf{Eventi}:
 	\begin{itemize}
 	\item \textit{public onSavedItem(item:ListItem):void}\\
-
+	Evento che rappresenta il salvataggio delle modifiche fatte a un particolare oggetto della lista-spesa.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{item:ListItem}\\
-
+			L'oggetto le cui modifiche sono state salvate.
 			\end{itemize}}
 	\item \textit{public onSaveClicked():void}\\
-
+	Evento che rappresenta il click, da parte dell'utente, sulla componente grafica necessaria al salvataggio delle modifiche effettuate alla lista.
 	\end{itemize}
 \end{itemize}

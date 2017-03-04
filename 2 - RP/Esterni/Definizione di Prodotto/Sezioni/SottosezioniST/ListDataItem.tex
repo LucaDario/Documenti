@@ -1,88 +1,92 @@
 \subsubsection{ListData}
 \begin{itemize}
-\item \textbf{Descrizione}:
-\item \textbf{Utilizzo}:
+\item \textbf{Descrizione}: Questa classe rappresenta la lista-spesa.
+\item \textbf{Utilizzo}: Viene utilizzata da tutte le classi che hanno a che fare con la lista, ovvero che creano, modificano e rimuovono liste, o che aggiungono o rimuovono utenti e oggetti al suo interno.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private id:string}\\
-	
+	Questa stringa rappresenta l'identificativo della lista.
 	\item \textit{private imagePath:string}\\
-	
+	Questa stringa rappresenta il percorso dell'immagine della lista.
 	\item \textit{private name:string}\\
-	
+	Questa stringa rappresenta il nome della lista.
 	\item \textit{private items:List<ListItem>}\\
-	
+	La lista degli oggetti contenuti dalla lista.
 	\item \textit{private creatorId:string}\\
-	
-	\item \textit{private List<string>}\\
-	
+	Questa stringa rappresenta l'identificativo del creatore della lista.
+	\item \textit{private users:List<string>}\\
+	La lista degli identificativi di tutti i partecipanti alla lista-spesa.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public ListData():ListData}\\
 	Il costruttore della classe ListData.
 	\item \textit{public setId(id:string):void}\\
-	
+	Imposta l'id della lista.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{id:string}\\
-
+				L'id che verrà impostato per la lista.
 			\end{itemize}}
 	\item \textit{public setImage(path:string):void}\\
-	
+	Imposta l'immagine della lista.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{path:string}\\
-
+				Il percorso dell'immagine che verrà impostata per la lista.
 			\end{itemize}}
 	\item \textit{public setName(name:string):void}\\
-	
+	Imposta il nome della lista.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{name:string}\\
-
+				Il nome che verrà impostato per la lista.
 			\end{itemize}}
 	\item \textit{public addItem(item:ListItem):void}\\
-	
+	Aggiunge un oggetto alla lista.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{item:ListItem}\\
-
+				L'oggetto che verrò aggiunto alla lista.
 			\end{itemize}}
 	\item \textit{public removeItem(id:string):void}\\
-	
+	Rimuove un oggetto dalla lista.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{id:string}\\
-
+				L'identificativo dell'oggetto che si desidera rimuovere dalla lista.
 			\end{itemize}}
 	\item \textit{public getItem(id:string):void}\\
-	
+	Ritorna un oggetto della lista.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{id:string}\\
-
+				L'identificativo dell'oggetto che si desidera.
 			\end{itemize}}
 	\item \textit{public getId():string}\\
-	
+	Ritorna l'identificativo della lista.
 	\item \textit{public getImagePath():string}\\
-	
+	Ritorna il percorso dell'immagine della lista.
 	\item \textit{public getName():string}\\
-	
+	Ritorna il nome della lista.
 	\item \textit{public getItems():List<ListItem>}\\
-	
+	Ritorna una lista contenente tutti gli oggetti presenti all'interno della lista.
 	\item \textit{public setCreator(id:string):void}\\
-	
+	Imposta il creatore della lista.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{id:string}\\
-
+				L'identificativo dell'utente che verrà impostato come creatore della lista.
 			\end{itemize}}
 	\item \textit{public getCreatorId():string}\\
-				
+	Ritorna l'identificativo del creatore della lista.
 	\item \textit{public addUser(id:string):void}\\
-	
+	Aggiunge un utente ai partecipanti della lista.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{id:string}\\
-
+				L'identificativo dell'utente che si desidera aggiungere alla lista.
 			\end{itemize}}
 	\item \textit{public hasUserPermissions(id:string):boolean}\\
-	
+	Ritorna true se l'utente in questione ha permessi di modifica sulla lista, false altrimenti.
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{id:string}\\
+				L'identificativo dell'utente di cui si vuole sapere i permessi.
+			\end{itemize}}
 	\item \textit{public getUsers():List<strings>}\\
-
+	Ritorna una lista contenente tutti i partecipanti alla lista-spesa.
 \item \textbf{Eventi}:
 \end{itemize}
 

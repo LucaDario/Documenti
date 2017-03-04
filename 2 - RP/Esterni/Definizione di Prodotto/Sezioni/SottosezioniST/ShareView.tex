@@ -1,0 +1,166 @@
+\subsubsection{ShareWithContactView}
+\begin{itemize}
+\item \textbf{Descrizione}: Interfaccia che estende \texttt{GeneralView} che una volta implementata permette al presenter e allo sviluppatore di condividere la vista di una lista ad un utente.
+\item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione della vista, e visualizza i dati che gli vengono passati dal presenter.
+\item \textbf{Attributi}: 
+\item \textbf{Metodi}:
+\item \textbf{Eventi}:
+\begin{itemize}
+\item \textit{public onClickShareWithContact(contactId:string):void}\\
+	Evento che notifica tutti gli oggetti in ascolto che è stato cliccato il pulsante relativo alla condivisione con un utente.
+	\item{\textbf{Parametri}: \begin{itemize}
+	\item \textit{contactId:string}\\
+	Id del contatto a cui condividere la lista.
+	\end{itemize}}
+\end{itemize}
+\end{itemize}
+
+\subsubsection{ShareWithContactViewImpl}
+\begin{itemize}
+\item \textbf{Descrizione}: Classe che implementa l'interfaccia \texttt{ShareWithContactView}, che permette al presenter e allo sviluppatore di condividere la vista di una lista con un utente.
+\item \textbf{Utilizzo}: Classe utilizzata per condividere la view di una lista ad un utente.
+\item \textbf{Attributi}: 
+\begin{itemize}
+\item \textit{private presenter:ShareWithContactViewPresenter}\\
+	Il presenter associato alla view per condividere una lista ad un utente, al quale questa classe delega la gestione del comportamento della view stessa.
+\end{itemize}
+\item \textbf{Metodi}:
+\begin{itemize}
+\item \textit{public renderView():string}\\
+	Genera il codice HTML CSS JS necessario per visualizzare la view.
+\item \textit{public ShareWithContactViewImpl():ShareWithContactViewImpl}\\
+	Il costruttore della classe ShareWithContactViewImpl.
+\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{ShareWithContactViewPresenter}
+\begin{itemize}
+\item \textbf{Descrizione}: Classe che rappresenta il presenter dedicato alla view per la condivisione di una lista ad un utente.
+\item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione della view e la parte logica dell'applicazione, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
+\item \textbf{Attributi}: 
+\begin{itemize}
+\item \textit{private useCase:ShareListUseCase}\\
+	Oggetti dedicati alla gestione della condivisione di una lista all'interno del database.
+\item \textit{private view:ShareWithContactView}\\
+	La view associata al presenter.
+\end{itemize}
+\item \textbf{Metodi}:
+\begin{itemize}
+\item \textit{private shareList(listId:string, contactId:string):void}\\
+	Metodo che permette la condivisione di una lista ad un utente.
+	\item{\textbf{Parametri}: \begin{itemize}
+	\item \textit{listId:string}\\
+	Id della lista da condividere.
+	\item \textit{contactId:string}\\
+	Id dell'utente a cui condividere la lista.
+	\end{itemize}}
+\item \textit{public ShareWithContactViewPresenter(useCase:ShareListUseCase, view:ShareWithContactView):ShareWithContactViewPresenter}\\
+	Il costruttore della classe ShareWithContactViewPresenter.
+		\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{useCase:ShareListUseCase}\\
+			Ogggetto dedicato alla gestione della condivisione di una lista all'interno del database.
+			\item \textit{view:ShareWithContactView}\\
+			La view necessaria alla costruzione del presenter.
+\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{ShareListUseCase}
+\begin{itemize}
+\item \textbf{Descrizione}: Classe dedicata alla gestione della condivisione di una lista all'interno del database.
+\item \textbf{Utilizzo}: Classe utilizzata per la gestione della condivisione di una lista all'interno del database.
+\item \textbf{Attributi}: 
+\begin{itemize}
+\item \textit{private chatSource:ChatSource}\\
+	Riferimento di interfaccia a Rocket.chat.
+\item \textit{private dbSource:DatabaseSource}\\
+	Riferimento al database.
+\end{itemize}
+\item \textbf{Metodi}:
+\begin{itemize}
+\item \textit{public shareListWithContact(listId:string, contactId:string):void}\\
+	Permettere di condividere la vista della lista ad un utente gestendo i relativi dati all'interno del database.
+	\item{\textbf{Parametri}: \begin{itemize}
+	\item \textit{listId:string}\\
+	Id della lista da condividere.
+	\item \textit{contactId:string}\\
+	Id dell'utente a cui condividere la lista.
+	\end{itemize}}
+\item \textit{public ShareListUseCase(chatSource:ChatSource, dbSource:DatabaseSource):ShareListUseCase}\\
+	Il costruttore della classe ShareListUseCase.
+	\item{\textbf{Parametri}: \begin{itemize}
+	\item \textit{chatSource:ChatSource}\\
+	 	Riferimento di interfaccia a Rocket.chat.
+	\item \textit{dbSource:DatabaseSource}\\
+		Riferimento al database.
+	\end{itemize}}
+\end{itemize}
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{ShareWithGroupView}
+\begin{itemize}
+\item \textbf{Descrizione}: Interfaccia che estende \texttt{GeneralView} che una volta implementata permette al presenter e allo sviluppatore di condividere la vista di una lista ad un gruppo di utenti.
+\item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione della vista, e visualizza i dati che gli vengono passati dal presenter.
+\item \textbf{Attributi}: 
+\item \textbf{Metodi}:
+\item{Eventi}:
+	\begin{itemize}
+	\item \textit{public onClickShareWithGroup(groupId:string):void}\\
+	Evento che notifica tutti gli oggetti in ascolto che è stato cliccato il pulsante relativo alla condivisione con un gruppo di utenti.										\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{groupId:string}\\
+			Id del gruppo a cui condividere la lista.
+			\end{itemize}}
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{ShareWithGroupViewImpl}
+\begin{itemize}
+\item \textbf{Descrizione}: Classe che implementa l'interfaccia \texttt{ShareWithGroupView}, che permette al presenter e allo sviluppatore di condividere la vista di una lista con un gruppo di utenti.
+\item \textbf{Utilizzo}: Classe utilizzata per condividere la view di una lista ad un gruppo di utenti.
+\item \textbf{Attributi}:
+	\begin{itemize}
+	\item \textit{private presenter:ShareWithGroupViewPresenter}\\
+	Il presenter associato alla view per condividere una lista ad un gruppo di utenti, al quale questa classe delega la gestione del comportamento della view stessa.
+	\end{itemize} 
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public ShareWithGroupViewImpl():ShareWithGroupViewImpl}\\
+	Il costruttore della classe ShareWithGroupViewImpl.
+	\item \textit{public renderView():string}\\
+		Genera il codice HTML CSS JS necessario per visualizzare la view.
+	\end{itemize}
+\item{Eventi}:
+\end{itemize}
+
+\subsubsection{ShareWithGroupViewPresenter}
+\begin{itemize}
+\item \textbf{Descrizione}: Classe che rappresenta il presenter dedicato alla view per la condivisione di una lista ad un gruppo di utenti.
+\item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione della view e la parte logica dell'applicazione, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private view:ShareWithGroupView}\\
+			La view associata al presenter.
+	\item \textit{private useCase:ShowPopupUseCase}\\
+		Oggetto dedicato alla creazione del popup per la condivisione della lista.
+	\item \textit{private shareContactView:ShareWithContactView}\\
+		Oggetto che rappresenta la vista in cui selezionare gli utenti a cui condividere la lista.
+	\end{itemize} 
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public ShareWithGroupViewPresenter(view:ShareWithGroupView,useCase:ShowPopupUseCase,shareContactView:ShareWithContactView):ShareWithGroupViewPresenter}\\
+	Il costruttore della classe ShareWithGroupViewPresenter.
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{view:ShareWithGroupView}\\
+			La view necessaria alla costruzione del presenter.
+			\item \textit{useCase:ShowPopupUseCase}\\
+			Oggetto dedicato alla creazione del popup per la condivisione della lista.
+			\item \textit{shareContactView:ShareWithContactView}\\
+					Oggetto che rappresenta la vista in cui selezionare gli utenti a cui condividere la lista.
+			\end{itemize}}
+	\item \textit{public renderView():string}\\
+		Genera il codice HTML CSS JS necessario per visualizzare la view.
+	\end{itemize}
+\item{Eventi}:
+\end{itemize}

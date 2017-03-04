@@ -1,7 +1,7 @@
 \subsubsection{InputListInfoViewImpl}
 \begin{itemize}
 \item \textbf{Descrizione}: Classe dedicata alla visualizzazione del popup che permette all'utente di inserire, rimuovere o modificare i dati relativi alla lista.
-\item \textbf{Utilizzo}: Classe utilizzata per visualizzare un popup che permette all'utente di inserire, rimuovere o modificare tutti i dati relativi alla lista.
+\item \textbf{Utilizzo}: Classe utilizzata per visualizzare popup che permette all'utente di inserire, rimuovere o modificare tutti i dati relativi alla lista.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private presenter:InputListInfoViewPresenter}\\
@@ -166,59 +166,6 @@ Il costruttore della classe ChangeListInfoViewPresenter.
 				\item \textit{listId:string}\\
 				Parametro che rappresenta l'id della lista di cui si vuole recuperare i dati e le informazioni.
 				\end{itemize}}
-	\end{itemize}
-\item{Eventi}:
-\end{itemize}
-
-\subsubsection{ModifyListUseCase}
-\begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
-\item \textbf{Attributi}: 
-	\begin{itemize}
-	\item \textit{private databaseSource:DatabaseSource}\\
-			Riferimento al database.
-	\end{itemize}
-\item \textbf{Metodi}:
-	\begin{itemize}
-	\item \textit{ModifyListUseCase(source:DatabaseSource):ModifyListUseCase}\\
-	Il costruttore della classe ModifyListUseCase.
-			\item{\textbf{Parametri}: \begin{itemize}
-			\item \textit{source:DatabaseSource}\\
-						Riferimento al database.
-			\end{itemize}}
-	\item \textit{public changeListInfo(listId:string,newList:ListData):void}\\
-	Metodo che permette di cambiare i dati e le informazioni di una determinata lista.
-			\item{\textbf{Parametri}: \begin{itemize}
-			\item \textit{listId:string}\\
-			Parametro che rappresenta l'id della lista di cui si vuole modificare i dati e le informazioni.
-			\item \textit{newList:ListData}\\
-			Insieme di tutti i dati e le informazioni modificate di una lista.
-			\end{itemize}}
-	\item \textit{public addItemToList(listId:string,item:ListItem):void}\\
-	Metodo che permette aggiunta di un elemento alla lista.
-			\item{\textbf{Parametri}: \begin{itemize}
-			\item \textit{listId:string}\\
-			Parametro che rappresenta l'id della lista a cui si vuole aggiungere un elemento.
-			\item \textit{item:ListItem}\\
-			Elemento da inserire nella lista.
-			\end{itemize}}
-	\item \textit{public removeItemFromList(listId:string,item:ListItem):void}\\
-	Metodo che permette l'eliminazione di un elemento da una lista.
-			\item{\textbf{Parametri}: \begin{itemize}
-			\item \textit{listId:string}\\
-			Parametro che rappresenta l'id della lista a cui si vuole rimuovere un elemento.
-			\item \textit{item:ListItem}\\
-			Elemento da rimuovere dalla lista.
-			\end{itemize}}	
-	\item \textit{public updateItemInsideList(listId:string,item:ListItem):void}\\
-	Metodo che permette la modifica di un elemento della lista.
-			\item{\textbf{Parametri}: \begin{itemize}
-			\item \textit{listId:string}\\
-			Parametro che rappresenta l'id della lista a cui si vuoe aggiornare un elemento.
-			\item \textit{item:ListItem}\\
-			Elemento da modificare della lista.
-			\end{itemize}}				
 	\end{itemize}
 \item{Eventi}:
 \end{itemize}

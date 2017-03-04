@@ -31,13 +31,13 @@
 \subsubsection{CreateListViewPresenter}
 \begin{itemize}
 \item \textbf{Descrizione}: Classe che rappresenta il presenter dedicato alla view per la creazione di una nuova lista.
-\item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione della view e la view, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
+\item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione della view e la parte logica dell'applicazione, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private createListView:CreateListView}\\
 	La view associata al presenter.
 	\item \textit{private changeListInfoView:InputListInfoView}\\
-	Insieme dei dati immessi dall'utente.
+	Vista che permette l'input dei dati relativi ad una lista.
 	\item \textit{private manageList:ManageListUseCase}\\
 	Oggetto dedicato alla gestione dei dati relativi alla lista all'interno del database.
 	\item \textit{private showPopup:ShowPopupUseCase}\\
@@ -51,14 +51,14 @@
 		\item \textit{createList:CreateListView}\\
 			La view associata al presenter.
 		\item \textit{listInfo:ChangeListInfoView}\\
-			Insieme dei dati immessi dall'utente.
+			Vista che permette l'input dei dati relativi ad una lista.
 		\item \textit{manageList:ManageListsUseCase}\\
 			Oggetto dedicato alla gestione dei dati relativi alla lista all'interno del database.
 		\item \textit{showPopup:ShowPopupUseCase}\\
 		
 		\end{itemize}}
 	\item \textit{private showInputListInfoView():void}\\
-	 Metodo che permette di recuperare e visualizzare i dati relativi alla lista.
+	 Metodo che permette di mostrare la vista attraverso la quale l'utente potrà andare a modificare i dati della lista.
 	\item \textit{public createList(list:ListData):void}\\
 	Metodo che crea la nuova lista.
 			\item{\textbf{Parametri}: \begin{itemize}
@@ -86,7 +86,7 @@
 	Metodo che permette di creare una una view per visualizzarli.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-			Parametro che rappresenta l'Id della lista di cui si vuole creare in una view.
+			Parametro che rappresenta l'id della lista di cui si vuole creare in una view.
 			\end{itemize}}
 	\end{itemize}
 \item \textbf{Eventi}:
@@ -170,11 +170,11 @@
 \subsubsection{DeleteListViewPresenter}
 \begin{itemize}
 \item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione della view e la view, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
+\item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione della view e la parte logica, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private view:DeleteListView}\\
-		Campo dati che rappresenta il presenter relativo alla view per l'eliminazione di una lista.
+		Campo dati che rappresenta la view per l'eliminazione di una lista.
 	\item \textit{private manageList:ManageListUseCase}\\
 				Oggetto dedicato alla gestione dei dati relativi alla lista all'interno del database.
 	\end{itemize}

@@ -42,6 +42,8 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{InputItemInfoViewImpl():InputItemInfoViewImpl}\\
+	Il costruttore della classe InputItemInfoViewImpl.
 	\item \textit{public createViewForItemWithId(itemId:string):void}\\
 	Il metodo crea una view per l'inserimento delle informazioni di un oggetto, a partire dal suo id.
 			\item{\textbf{Parametri}: \begin{itemize}
@@ -127,10 +129,10 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 \item \textbf{Eventi}:
 	\begin{itemize}
 	\item \textit{public onClickModifyItem(item:ListItem):void}\\
-
+	Evento che rappresenta il click dell'utente sulla componente grafica necessaria al salvataggio dei dati immessi.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{item:ListItem}\\
-
+			L'oggetto della lista che è stato modificato.
 			\end{itemize}}
 	\end{itemize}
 \end{itemize}
@@ -146,6 +148,8 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public ModifyItemViewImpl():ModifyItemViewImpl}\\
+	Il costruttore della classe ModifyItemViewImpl.
 	\item \textit{public renderView():string}\\
 	Genera il codice HTML CSS JS necessario per visualizzare la componente grafica della lista-spesa necessaria alla modifica delle informazioni di un oggetto nella lista.
 	\end{itemize}
@@ -158,32 +162,32 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 \item \textbf{Utilizzo}:
 \item \textbf{Attributi}: 
 	\begin{itemize}
+	\item \textit{private inputItemInfoView:InputItemInfoView}\\
+	La view associata al presenter.
+	\item \textit{private modifyListUseCase:ModifyListUseCase}\\
+	L'elemento di contatto con il database.
+	\item \textit{private showPopup:ShowPopupUseCase}\\
+	Componente necessaria alla visualizzazione di modali.
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
 	\item \textit{public ModifyItemPresenter(view:InputItemInfoView, modifyList:ModifyListUseCase, showPopup:ShowPopupUseCase):ModifyItemPresenter}\\
 	Il costruttore della classe ModifyItemViewPresenter
 		\item{\textbf{Parametri}: \begin{itemize}
 		\item \textit{view:InputItemInfoView}\\
-		
+		La view associata al presenter.
 		\item \textit{modifyList:ModifyListUseCase}\\
-		
+		L'elemento di contatto con il database.
 		\item \textit{showPopup:ShowPopupUseCase}\\
-
+		Componente necessaria alla visualizzazione di modali.
 		\end{itemize}}
-	\item \textit{private inputItemInfoView:InputItemInfoView}\\
-	
-	\item \textit{private modifyListUseCase:ModifyListUseCase}\\
-	
-	\item \textit{private showPopup:ShowPopupUseCase}\\
-	
-	\end{itemize}
-\item \textbf{Metodi}:
-	\begin{itemize}
 	\item \textit{private showInputItemInfoPopup():void}\\
-
+	Il metodo mostra un modale per l'inserimento delle informazioni relative ad un oggetto della lista-spesa.
 	\item \textit{private saveItem(item:ListItem):string}\\
-
+	Metodo usato per salvare i dati di un oggetto dopo la modifica.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{item:ListItem}\\
-
+			L'oggetto del quale si vogliono salvare le modifiche.
 			\end{itemize}}
 	\item \textit{public renderView():string}\\
 		Genera il codice HTML CSS JS necessario per visualizzare la componente grafica della lista-spesa necessaria alla modifica delle informazioni di un oggetto nella lista.

@@ -22,6 +22,8 @@ Il presenter associato all'inoltro di una lista, al quale questa classe delega l
 \end{itemize}
 \item \textbf{Metodi}: 
 	\begin{itemize}
+	\item \textit{public ForwardListViewImpl():ForwardListViewImpl}\\
+	Il costruttore della classe ForwardListViewImpl.
 	\item \textit{public renderView():string}\\
 		Genera il codice HTML CSS JS necessario per visualizzare la componente grafica della lista-spesa necessaria all'inoltro di essa.
 	\end{itemize}
@@ -38,9 +40,21 @@ Il presenter associato all'inoltro di una lista, al quale questa classe delega l
 	La chat sulla quale si vuole intervenire utilizzando questa classe.
 	\item \textit{private view:ForwardListView}\\
 	La view associata al presenter.
+	\item \textit {private forwardListUseCase:ForwardListUseCase}\\
+	La componente necessaria alla comunicazione con Rocket.Chat.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}	
+	\item \textit{public ForwardListViewPresenter(view:ForwardListView,popupUseCase:ShowPopupUseCase, forwardListUseCase:ForwardListUseCase):ForwardListViewPresenter}\\
+	Il costruttore della classe ForwardListViewPresenter.
+	\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{view:ForwardListView}\\
+			La view associata al presenter.
+			\item \textit{popupUseCase:ShowPopupUseCase}\\
+			La chat sulla quale si vuole intervenire utilizzando questa classe.			
+			\item \textit{forwardListUseCase:ForwardListUseCase}\\
+			La componente necessaria alla comunicazione con Rocket.Chat.
+			\end{itemize}}
 	\item \textit{public renderView():string}\\
 		Genera il codice HTML CSS JS necessario per visualizzare la componente grafica della lista-spesa necessaria alla rimozione di un oggetto da essa.
 	\item \textit{public forwardToContactWithId(listId:string,contactId:string):void}\\
@@ -118,6 +132,8 @@ Il presenter associato alla richiesta di aiuto di un utente, al quale questa cla
 \end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public HelpViewImpl():HelpViewImpl}\\
+	Il costruttore della classe HelpViewImpl.
 	\item \textit{public hide():void}\\
 	Metodo che nasconde la componente grafica necessaria alla richiesta d'aiuto da parte dell'utente.
 	\item \textit{public show():void}\\
@@ -139,6 +155,12 @@ Il presenter associato alla richiesta di aiuto di un utente, al quale questa cla
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public HelpViewPresenter(view:HelpView):HelpViewPresenter)\\
+	Il costruttore della classe HelpViewPresenter.
+			\item{\textbf{Parametri}: \begin{itemize}
+			\item \textit{view:HelpView}\\
+			La view necessaria alla costruzione di un oggetto di questa classe.
+			\end{itemize}}
 	\item \textit{public hide():void}\\
 	Metodo che nasconde la componente grafica necessaria alla richiesta d'aiuto da parte dell'utente.
 	\item \textit{public show():void}\\

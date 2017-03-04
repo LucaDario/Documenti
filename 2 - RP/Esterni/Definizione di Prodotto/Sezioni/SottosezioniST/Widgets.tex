@@ -65,6 +65,12 @@
 		\item \textit{action:function}\\
 		L'azione, sotto forma di funzione, che deve essere eseguita al click prolungato del bottone.
 		\end{itemize}}
+		\item \textit{public setOnLongClickActionTimer(milliseconds:int):void}\\
+		Questo metodo viene utilizzato per impostare il timer per la pressione prolungata di un bottone.
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{milliseconds:int}\\
+				Tempo in millisecondi.
+	\end{itemize}}
 	\end{itemize}
 \item \textbf{Eventi}:
 	\begin{itemize}
@@ -134,6 +140,12 @@
 		\item \textit{action:function}\\
 		L'azione, sotto forma di funzione, che deve essere eseguita al click prolungato del bottone.
 		\end{itemize}}
+		\item \textit{public setOnLongClickActionTimer(milliseconds:int):void}\\
+		Questo metodo viene utilizzato per impostare il timer per la pressione prolungata di un bottone.
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{milliseconds:int}\\
+				Tempo in millisecondi.
+	\end{itemize}}
 	\end{itemize}
 \item{Eventi}
 	\begin{itemize}
@@ -166,6 +178,8 @@
 	La funzione che il bottone eseguirà in seguito a un click prolungato.
 	\item \textit{private graphics:ButtonGraphics}\\
 	L'oggetto che contiene le informazioni sullo stile visuale del bottone.
+	\item \textit{private millisecondsBeforeOnLongClickActs:int}\\
+	Tempo di pressione di un bottone in millisecondi dopo cui eseguire azioni in seguito ad un click prolungato.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
@@ -187,6 +201,12 @@
 		\item \textit{action:function}\\
 		L'azione, sotto forma di funzione, che deve essere eseguita al click prolungato del bottone.
 		\end{itemize}}
+		\item \textit{public setOnLongClickActionTimer(milliseconds:int):void}\\
+		Questo metodo viene utilizzato per impostare il timer per la pressione prolungata di un bottone.
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{milliseconds:int}\\
+				Tempo in millisecondi.
+	\end{itemize}}
 	\item \textit{public setText(string text:int):void}\\
 	Imposta il testo all'interno del bottone
 		\item{\textbf{Parametri}: \begin{itemize}

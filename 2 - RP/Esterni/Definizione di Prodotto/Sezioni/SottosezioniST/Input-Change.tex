@@ -14,13 +14,13 @@
 	\item \textit{public InputListInfoViewImpl():InputListInfoViewImpl}\\
 	Il costruttore della classe InputListInfoViewImpl.
 	\item \textit{public createViewForListWithId(listId:string):void}\\
-	
+		Metodo che permette di creare una una view per visualizzarli.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
 			Id della lista.
 			\end{itemize}}
 	\item \textit{public emitOnSaveEvent(list:ListData):void}\\
-
+	Evento che notifica tutti gli oggetti in ascolto che è stata richiesta il salvataggio della lista.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{list:ListData}\\
 				Insieme di tutti i dati e le informazioni di una lista.
@@ -31,17 +31,17 @@
 
 \subsubsection{InputListInfoViewPresenter}
 \begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione della view e la view, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
+\item \textbf{Descrizione}: Classe che rappresenta il presenter dedicato alla view per l'inserimento dei dati della lista.
+\item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione della view e la parte logica dell'applicazione, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
 \item \textbf{Attributi}: 	
 	\begin{itemize}
 	\item \textit{private view:InputListInfoView}\\
 		La view associata al presenter.
 	\item \textit{private getListInfoUseCases:GetListInfoUseCases}\\
-		
+		Oggetto che rappresenta tutti gli elementi presenti nella lista e le loro informazioni.
 	\item \textit{private showPopupUseCases:ShowPopupUseCases}\\
-	
-	\end{itemize}
+		Oggetto che permette la creazione di un popup per l'immissione dei dati della lista da creare.	
+		\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}	
 	\item \textit{public InputListInfoViewPresenter(view:InputListInfoView,infoUseCase:GetListInfoUseCase,popupUseCase:ShowPopupUseCase):InputListInfoViewPresenter}\\
@@ -50,19 +50,19 @@
 			\item \textit{view:InputListInfoView}\\
 			La view necessaria alla costruzione del presenter.
 			\item \textit{infoUseCase:GetListInfoUseCase}\\
-
+				Oggetto che rappresenta tutti gli elementi presenti nella lista e le loro informazioni.
 			\item \textit{popupUseCase:ShowPopupUseCase}\\
-
+				Oggetto che permette la creazione di un popup per l'immissione dei dati della lista da creare.	
 			\end{itemize}}
 	\item \textit{private createListData():ListData}\\
-	 
+	 	Metodo dedicato alla creazione dell'oggetto rappresentante l'insieme dei dati, nuovi o modificati, che compongono della lista.
 	\item \textit{public renderView():string}\\
-
+	Genera il codice HTML CSS JS necessario per visualizzare la view.
 	\item \textit{public createViewForListWithId(listId:string):void}\\
-
+		Metodo che permette di creare una una view per visualizzarli.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-
+			Parametro che rappresenta l'id della lista di cui si vuole creare in una view.
 			\end{itemize}}
 	\end{itemize}
 \item{Eventi}:
@@ -70,50 +70,50 @@
 
 \subsubsection{ChangeListInfoView}
 \begin{itemize}
-\item \textbf{Descrizione}: 
+\item \textbf{Descrizione}: Interfaccia che una volta implementata permette al presenter e allo sviluppatore di modificare la view dedicata alla modifica delle informazioni di una lista.
 \item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione della vista, e visualizza i dati che gli vengono passati dal presenter.
 \item \textbf{Attributi}: 
 \item \textbf{Metodi}:
 \item{Eventi}:
 	\begin{itemize}	
 	\item \textit{public onChangeListInfoClicked():void}\\
-
+		Evento che notifica tutti gli oggetti in ascolto che è stato cliccato il pulsante relativo alla modifica della lista.
 	\end{itemize}
 \end{itemize}
 
 \subsubsection{ChangeListInfoViewImpl}
 \begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+\item \textbf{Descrizione}: Classe dedicata alla modifica dei dati e informazioni relativi alla lista.
+\item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione della view e la parte logica dell'applicazione, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private presenter:ChangeListInfoViewPresenter}\\
-	
+	Il presenter associato alla view dedicata alla modifica dei dati relativi alla lista, al quale questa classe delega la gestione del comportamento della view stessa.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public ChangeListInfoViewImpl():ChangeListInfoViewImpl}\\
 	Il costruttore della classe ChangeListInfoViewImpl.	
 	\item \textit{public renderView():string}\\
-
+	Genera il codice HTML CSS JS necessario per visualizzare la view.
 	\end{itemize}
 \item{Eventi}:
 \end{itemize}
 
 \subsubsection{ChangeListInfoViewPresenter}
 \begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}: Classe che rappresenta il presenter dedicato alla modifica delle informazioni di una lista.
+\item \textbf{Descrizione}: Classe che rappresenta il presenter dedicato alla modifica delle informazioni di una lista.
+\item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione della view e la parte logica dell'applicazione, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
 \item \textbf{Attributi}:
 	\begin{itemize}
 	\item \textit{private changeListView:ChangeListInfoView}\\
-	
+		La view associata al presenter.
 	\item \textit{private inputView:InputListInfoView}\\
-	
+		Oggetto che rappresenta l'insieme dei dati immessi dall'utente durante la modifica della lista.
 	\item \textit{private manageList:ManageListsUseCase}\\
-	
+Oggetto dedicato alla gestione dei dati relativi alla lista all'interno del database.
 	\item \textit{private showPopup:ShowPopupUseCase}\\
-	
+		Oggetto che permette la creazione di un popup per l'immissione dei dati della lista da creare.	
 	\end{itemize} 
 \item \textbf{Metodi}:
 	\begin{itemize}
@@ -123,22 +123,22 @@ Il costruttore della classe ChangeListInfoViewPresenter.
 			\item \textit{listInfoView:ChangeListInfoView}\\
 			La view necessaria alla costruzione del presenter.
 			\item \textit{inputView:InputItemInfoView}\\
-
+			  Oggetto che rappresenta l'insieme dei dati immessi dall'utente durante la modifica della lista.
 			\item \textit{manageList:ManageListsUseCase}\\
-
+				Oggetto dedicato alla gestione dei dati relativi alla lista all'interno del database.
 			\item \textit{showpopup:ShowPopupUseCase}\\
-
+				Oggetto che permette la creazione di un popup per l'immissione dei dati della lista da creare.	
 			\end{itemize}}
 	\item \textit{private showInputListInfoView():void}\\
-
+		Metodo che permette di visualizzare il popup che conterrà la vista dove l'utente modificherà i dati della lista.
 	\item \textit{private createViewForListWithId(list ListData:int):void}\\
-
+		Metodo che permette di creare una una view per visualizzarli.
 			\item{\textbf{Parametri}: \begin{itemize}
-			\item \textit{list ListData:int}\\
-
+			\item \textit{list:ListData}\\
+			Insieme di tutti i dati e le informazioni di una lista.
 			\end{itemize}}
 	\item \textit{public renderView():string}\\
-
+	Genera il codice HTML CSS JS necessario per visualizzare la view.
 	\end{itemize} 
 \item{Eventi}:
 \end{itemize}
@@ -150,7 +150,7 @@ Il costruttore della classe ChangeListInfoViewPresenter.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private databaseSource:DatabaseSource}\\
-	
+		Riferimento al database.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
@@ -158,13 +158,13 @@ Il costruttore della classe ChangeListInfoViewPresenter.
 	Il costruttore della classe GetListInfoUseCase.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{source:DatabaseSource}\\
-
+		Riferimento al database.
 			\end{itemize}}
 	\item \textit{public getListData(listId:string):ListData}\\
-	
+	Motodo che restituisce l'insieme dei dati e informazioni relativi a una lista.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{listId:string}\\
-				
+				Parametro che rappresenta l'id della lista di cui si vuole recuperare i dati e le informazioni.
 				\end{itemize}}
 	\end{itemize}
 \item{Eventi}:
@@ -177,7 +177,7 @@ Il costruttore della classe ChangeListInfoViewPresenter.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private databaseSource:DatabaseSource}\\
-	
+			Riferimento al database.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
@@ -185,39 +185,39 @@ Il costruttore della classe ChangeListInfoViewPresenter.
 	Il costruttore della classe ModifyListUseCase.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{source:DatabaseSource}\\
-
+						Riferimento al database.
 			\end{itemize}}
 	\item \textit{public changeListInfo(listId:string,newList:ListData):void}\\
-	
+	Metodo che permette di cambiare i dati e le informazioni di una determinata lista.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-
+			Parametro che rappresenta l'id della lista di cui si vuole modificare i dati e le informazioni.
 			\item \textit{newList:ListData}\\
-			
+			Insieme di tutti i dati e le informazioni modificate di una lista.
 			\end{itemize}}
 	\item \textit{public addItemToList(listId:string,item:ListItem):void}\\
-	
+	Metodo che permette aggiunta di un elemento alla lista.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-
+			Parametro che rappresenta l'id della lista a cui si vuole aggiungere un elemento.
 			\item \textit{item:ListItem}\\
-			
+			Elemento da inserire nella lista.
 			\end{itemize}}
 	\item \textit{public removeItemFromList(listId:string,item:ListItem):void}\\
-	
+	Metodo che permette l'eliminazione di un elemento da una lista.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-
+			Parametro che rappresenta l'id della lista a cui si vuole rimuovere un elemento.
 			\item \textit{item:ListItem}\\
-			
+			Elemento da rimuovere dalla lista.
 			\end{itemize}}	
 	\item \textit{public updateItemInsideList(listId:string,item:ListItem):void}\\
-	
+	Metodo che permette la modifica di un elemento della lista.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-
+			Parametro che rappresenta l'id della lista a cui si vuoe aggiornare un elemento.
 			\item \textit{item:ListItem}\\
-			
+			Elemento da modificare della lista.
 			\end{itemize}}				
 	\end{itemize}
 \item{Eventi}:

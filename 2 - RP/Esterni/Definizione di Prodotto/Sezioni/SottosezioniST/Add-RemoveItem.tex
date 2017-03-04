@@ -131,59 +131,61 @@
 
 \subsubsection{DatabaseSource}
 \begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}: 
+\item \textbf{Descrizione}: Interfaccia che permette la comunicazione tra il model ed il database sul quale verranno salvati tutti i dati relativi alle varie liste.
+\item \textbf{Utilizzo}: Interfaccia che permette di salvare, modificare, rimuovere dati all'interno del database.
 \item \textbf{Attributi}: 
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public createListForUser(userId:string):ListData}\\
-
+		Crea all'interno del database una nuova lista per l'utente impostato.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{userId:string}\\
-
+			Utente per cui verrà creata una nuova lista.
 			\end{itemize}}
 	\item \textit{public removeList(listId:string):void}\\
-
+	Rimuove all'interno del database la lista con l'id indicato.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-
+				Id della lista da rimuovere dal database.
 			\end{itemize}}
 	\item \textit{public getListWithId(id:string):ListData}\\
-
+	Restituisce la lista con l'id indicato recuperandola dal database.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{id:string}\\
-
+			Id della lista di cui recuperare i dati dal database.
 			\end{itemize}}
-	\item \textit{public changeList(listId:string):void}\\
-
+	\item \textit{public changeList(listId:string, list:ListData):void}\\
+		Permette di modificare i dati e le informazioni di una lista all'interno del database.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-
+			Id della lista di cui si vogliono modificare i dati o le informazioni.
+			\item \textit{list:ListData}\\
+			Insieme dei dati e informazioni che verranno sostituiti a quelli esistenti per la relativa lista.
 			\end{itemize}}
 	\end{itemize}
 \item \textbf{Eventi}:
 	\begin{itemize}
 	\item \textit{public onListCreated(listId:string,creatorId:string):void}\\
-
+		Evento che notifica tutti gli oggetti in ascolto che la lista è stata creata nel database.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-
+			Id della lista appena creata nel database.
 			\item \textit{creatorId:string}\\
-
+			Id del utente creatore della lista.
 			\end{itemize}}
 	\item \textit{public onListRemoved(listId:string,creatorId:string):void}\\
-
+			Evento che notifica tutti gli oggetti in ascolto che la lista è stata rimossa dal database.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-
+			Id della lista appena rimossa.
 			\item \textit{creatorId:string}\\
-
+			Id del creatore della lista rimossa.
 			\end{itemize}}
 	\item \textit{public onListChanged(listId:string):void}\\
-
+				Evento che notifica tutti gli oggetti in ascolto che la lista è stata modificata nel database.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-
+			Id della lista modificata all'interno del database.
 			\end{itemize}}
 	\end{itemize}
 \end{itemize}
@@ -290,17 +292,25 @@
 
 \subsubsection{ChatSource}
 \begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+\item \textbf{Descrizione}: Interfaccia che permette la comunicazione con l'istanza di Rocket.chat.
+\item \textbf{Utilizzo}: Permette di mostrare popup e inviare messaggi o effettuare altre operazioni riguardanti la chat.
 \item \textbf{Attributi}: 
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public showPopup(htmlCode:string):void}\\
-	
+	Permette di visualizzare un popup che contiene il codice html dato.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{htmlCode:string}\\
-
+				Codice html che verra visualizzato nel popup.
 			\end{itemize}}
+			\item \textit{public sendMessageToChat(chatId:string, message:string):void}\\
+			Permette di inviare un messaggio alla chat impostata.
+					\item{\textbf{Parametri}: \begin{itemize}
+\item \textit{chatId:string}\\
+	Id della chat a cui inviare verrà inviato il messaggio.
+\item \textit{message:string}\\
+	Messaggio che verrà inviato alla chat.
+\end{itemize}}
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}

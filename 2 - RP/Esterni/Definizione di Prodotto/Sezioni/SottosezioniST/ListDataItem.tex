@@ -1,0 +1,184 @@
+\subsubsection{ListData}
+\begin{itemize}
+\item \textbf{Descrizione}:
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private id:string}\\
+	
+	\item \textit{private imagePath:string}\\
+	
+	\item \textit{private name:string}\\
+	
+	\item \textit{private items:List<ListItem>}\\
+	
+	\item \textit{private creatorId:string}\\
+	
+	\item \textit{private List<string>}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public ListData():ListData}\\
+	Il costruttore della classe ListData.
+	\item \textit{public setId(id:string):void}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{id:string}\\
+
+			\end{itemize}}
+	\item \textit{public setImage(path:string):void}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{path:string}\\
+
+			\end{itemize}}
+	\item \textit{public setName(name:string):void}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{name:string}\\
+
+			\end{itemize}}
+	\item \textit{public addItem(item:ListItem):void}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{item:ListItem}\\
+
+			\end{itemize}}
+	\item \textit{public removeItem(id:string):void}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{id:string}\\
+
+			\end{itemize}}
+	\item \textit{public getItem(id:string):void}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{id:string}\\
+
+			\end{itemize}}
+	\item \textit{public getId():string}\\
+	
+	\item \textit{public getImagePath():string}\\
+	
+	\item \textit{public getName():string}\\
+	
+	\item \textit{public getItems():List<ListItem>}\\
+	
+	\item \textit{public setCreator(id:string):void}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{id:string}\\
+
+			\end{itemize}}
+	\item \textit{public getCreatorId():string}\\
+				
+	\item \textit{public addUser(id:string):void}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{id:string}\\
+
+			\end{itemize}}
+	\item \textit{public hasUserPermissions(id:string):boolean}\\
+	
+	\item \textit{public getUsers():List<strings>}\\
+
+\item \textbf{Eventi}:
+\end{itemize}
+
+\subsubsection{ListItem}
+\begin{itemize}
+\item \textbf{Descrizione}:
+\item \textbf{Utilizzo}:
+\item \textbf{Attributi}: 
+	\begin{itemize}
+	\item \textit{private id:string}\\
+	
+	\item \textit{private description:string}\\
+	
+	\item \textit{private imagePath:string}\\
+	
+	\item \textit{private measurementUnit:string}\\
+	
+	\item \textit{private name:string}\\
+	
+	\item \textit{private notes:List<string>}\\
+	
+	\item \textit{private quantity:int}\\
+	
+	\end{itemize}
+\item \textbf{Metodi}:
+	\begin{itemize}
+	\item \textit{public ListItem():ListItem}\\
+	Il costruttore della classe ListItem.
+	\item \textit{public setId(id:string):void}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{id:string}\\
+
+			\end{itemize}}
+	\item \textit{public setDescription(description:string):void}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{description:string}\\
+
+			\end{itemize}}
+	\item \textit{public setImage(path:string):void}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{path:string}\\
+
+			\end{itemize}}
+	\item \textit{public setMeasurementsUnit(mu:string):void}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{mu:string}\\
+
+			\end{itemize}}
+	\item \textit{public setName(name:string):void}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{name:string}\\
+
+			\end{itemize}}
+
+	\item \textit{public addNote(note:string):void}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{note:string}\\
+
+			\end{itemize}}
+	\item \textit{public removeNote(position:int):void}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{position:int}\\
+
+			\end{itemize}}
+	\item \textit{public getNote(position:int):string}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{position:int}\\
+
+			\end{itemize}}
+	\item \textit{public getNotes():List<string>}\\
+	
+	\item \textit{public setQuantity(qty:int):void}\\
+	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{qty:int}\\
+
+			\end{itemize}}
+	\item \textit{public getId():string}\\
+	
+	\item \textit{public getImagePath():string}\\
+	
+	\item \textit{public getName():string}\\
+	
+	\item \textit{public getDescription():List<ListItem>}\\
+	
+	\item \textit{public getMeasurementUnit():string}\\
+
+	\item \textit{public getQuantity():int}\\
+
+\item \textbf{Eventi}:
+\end{itemize}

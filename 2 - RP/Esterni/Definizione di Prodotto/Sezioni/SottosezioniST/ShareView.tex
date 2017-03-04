@@ -1,4 +1,12 @@
 \subsubsection{ShareWithContactView}
+
+\label{ShareWithContactView}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ShareWithContactView.png}
+	\caption{ShareWithContactView.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Interfaccia che estende \texttt{GeneralView} che una volta implementata permette al presenter e allo sviluppatore di condividere la vista di una lista ad un utente.
 \item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione della vista, e visualizza i dati che gli vengono passati dal presenter.
@@ -16,6 +24,14 @@
 \end{itemize}
 
 \subsubsection{ShareWithContactViewImpl}
+
+\label{ShareWithContactViewImpl}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ShareWithContactViewImpl.png}
+	\caption{ShareWithContactViewImpl.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Classe che implementa l'interfaccia \texttt{ShareWithContactView}, che permette al presenter e allo sviluppatore di condividere la vista di una lista con un utente.
 \item \textbf{Utilizzo}: Classe utilizzata per condividere la view di una lista ad un utente.
@@ -35,6 +51,14 @@
 \end{itemize}
 
 \subsubsection{ShareWithContactViewPresenter}
+
+\label{ShareWithContactViewPresenter}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ShareWithContactViewPresenter.png}
+	\caption{ShareWithContactViewPresenter.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Classe che rappresenta il presenter dedicato alla view per la condivisione di una lista ad un utente.
 \item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione della view e la parte logica dell'applicazione, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
@@ -68,6 +92,14 @@
 \end{itemize}
 
 \subsubsection{ShareListUseCase}
+
+\label{ShareListUseCase}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ShareListUseCase.png}
+	\caption{ShareListUseCase.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Classe dedicata alla gestione della condivisione di una lista all'interno del database.
 \item \textbf{Utilizzo}: Classe utilizzata per la gestione della condivisione di una lista all'interno del database.
@@ -101,6 +133,14 @@
 \end{itemize}
 
 \subsubsection{ShareWithGroupView}
+
+\label{ShareWithGroupView}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ShareWithGroupView.png}
+	\caption{ShareWithGroupView.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Interfaccia che estende \texttt{GeneralView} che una volta implementata permette al presenter e allo sviluppatore di condividere la vista di una lista ad un gruppo di utenti.
 \item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione della vista, e visualizza i dati che gli vengono passati dal presenter.
@@ -109,7 +149,8 @@
 \item{Eventi}:
 	\begin{itemize}
 	\item \textit{public onClickShareWithGroup(groupId:string):void}\\
-	Evento che notifica tutti gli oggetti in ascolto che è stato cliccato il pulsante relativo alla condivisione con un gruppo di utenti.										\item{\textbf{Parametri}: \begin{itemize}
+	Evento che notifica tutti gli oggetti in ascolto che è stato cliccato il pulsante relativo alla condivisione con un gruppo di utenti.										
+	\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{groupId:string}\\
 			Id del gruppo a cui condividere la lista.
 			\end{itemize}}
@@ -117,6 +158,14 @@
 \end{itemize}
 
 \subsubsection{ShareWithGroupViewImpl}
+
+\label{ShareWithGroupViewImpl}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ShareWithGroupViewImpl.png}
+	\caption{ShareWithGroupViewImpl.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Classe che implementa l'interfaccia \texttt{ShareWithGroupView}, che permette al presenter e allo sviluppatore di condividere la vista di una lista con un gruppo di utenti.
 \item \textbf{Utilizzo}: Classe utilizzata per condividere la view di una lista ad un gruppo di utenti.
@@ -136,6 +185,14 @@
 \end{itemize}
 
 \subsubsection{ShareWithGroupViewPresenter}
+
+\label{ShareWithGroupViewPresenter}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ShareWithGroupViewPresenter.png}
+	\caption{ShareWithGroupViewPresenter.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Classe che rappresenta il presenter dedicato alla view per la condivisione di una lista ad un gruppo di utenti.
 \item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione della view e la parte logica dell'applicazione, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.

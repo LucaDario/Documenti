@@ -1,4 +1,12 @@
 \subsubsection{GeneralView}
+
+\label{GeneralView}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/GeneralView.png}
+	\caption{GeneralView.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Interfaccia che sta alla base della gerarchia delle componenti della lista-spesa.
 \item \textbf{Utilizzo}:
@@ -12,6 +20,14 @@
 \end{itemize}
 
 \subsubsection{RemoveItemView}
+
+\label{RemoveItemView}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/RemoveItemView.png}
+	\caption{RemoveItemView.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Questa interfaccia rappresenta la view relativa alla rimozione di un oggetto dalla lista-spesa.
 \item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione della rimozione, visualizza i dati che gli vengono passati dal presenter.
@@ -29,6 +45,14 @@
 \end{itemize}
 
 \subsubsection{RemoveItemViewImpl}
+
+\label{RemoveItemViewImpl}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/RemoveItemViewImpl.png}
+	\caption{RemoveItemViewImpl.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Questa classe rappresenta la rimozione di un oggetto dalla lista-spesa, implementando l'interfaccia RemoveItemView.
 \item \textbf{Utilizzo}: Questa classe viene utilizzata dall'utente ogniqualvolta vuole rimuovere un oggetto alla lista-spesa.
@@ -48,6 +72,14 @@
 \end{itemize}
 
 \subsubsection{RemoveItemViewPresenter}
+
+\label{RemoveItemViewPresenter}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/RemoveItemViewPresenter.png}
+	\caption{RemoveItemViewPresenter.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Questa classe rappresenta il presenter per gli elementi di rimozione degli oggetti  della lista-spesa.
 \item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione dell'elemento di rimozione e la view, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
@@ -79,6 +111,14 @@
 \end{itemize}
 
 \subsubsection{ModifyListUseCase}
+
+\label{ModifyListUseCase}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ModifyListUseCase.png}
+	\caption{ModifyListUseCase.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: La classe rappresenta l'interazione con il database nel caso di modifiche alla lista.
 \item \textbf{Utilizzo}: Ogni modifica dei dati degli oggetti della lista o della lista stessa passa per questa classe, che fa ponte tra il presenter e il database.
@@ -130,6 +170,14 @@
 \end{itemize}
 
 \subsubsection{DatabaseSource}
+
+\label{DatabaseSource}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/DatabaseSource.png}
+	\caption{DatabaseSource.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Interfaccia che permette la comunicazione tra il model ed il database sul quale verranno salvati tutti i dati relativi alle varie liste.
 \item \textbf{Utilizzo}: Interfaccia che permette di salvare, modificare, rimuovere dati all'interno del database.
@@ -191,6 +239,14 @@
 \end{itemize}
 
 \subsubsection{AddItemView}
+
+\label{AddItemView}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/AddItemView.png}
+	\caption{AddItemView.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Questa interfaccia rappresenta la view relativa all'aggiunta di un oggetto alla lista-spesa.
 \item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione dell'aggiunta, visualizza i dati che gli vengono passati dal presenter.
@@ -204,6 +260,14 @@
 \end{itemize}
 
 \subsubsection{AddItemViewImplementation}
+
+\label{AddItemViewImplementation}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/AddItemViewImplementation.png}
+	\caption{AddItemViewImplementation.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Questa classe rappresenta l'aggiunta di un oggetto alla lista-spesa, implementando l'interfaccia AddItemView.
 \item \textbf{Utilizzo}: Questa classe viene utilizzata dall'utente ogniqualvolta vuole aggiungere un oggetto alla lista-spesa.
@@ -231,6 +295,14 @@
 \end{itemize}
 
 \subsubsection{AddItemViewPresenter}
+
+\label{AddItemViewPresenter}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/AddItemViewPresenter.png}
+	\caption{AddItemViewPresenter.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Questa classe rappresenta il presenter per gli elementi di rimozione degli oggetti  della lista-spesa.
 \item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione dell'elemento di aggiunta e la view, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
@@ -264,6 +336,14 @@
 \end{itemize}
 
 \subsubsection{ShowPopupUseCase}
+
+\label{ShowPopupUseCase}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ShowPopupUseCase.png}
+	\caption{ShowPopupUseCase.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: La classe rappresenta l'interazione con un modale nella chat.
 \item \textbf{Utilizzo}: La classe viene utilizzata ogniqualvolta una delle altre classi necessita di mostrare un modale nelle sue interazioni.
@@ -291,6 +371,14 @@
 \end{itemize}
 
 \subsubsection{ChatSource}
+
+\label{ChatSource}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ChatSource.png}
+	\caption{ChatSource.png}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Interfaccia che permette la comunicazione con l'istanza di Rocket.chat.
 \item \textbf{Utilizzo}: Permette di mostrare popup e inviare messaggi o effettuare altre operazioni riguardanti la chat.

@@ -121,68 +121,65 @@ Capacità di individuare con rapidità e sicurezza le soluzioni più opportune.
 La fase di progettazione si pone i seguenti obiettivi:
 \begin{itemize}
 \item Soddisfare i requisiti obbligatori fissati dal committente.
-\item Realizzare un applicativo  resistente alle modifiche, senza che l' intera struttura venga compromessa e/o nuovamente messa in discussione.
+\item Realizzare un applicativo  resistente alle modifiche, senza che l'intera struttura venga compromessa e/o nuovamente messa in discussione.
 \item Progettare un software con le caratteristiche che sono state elencate e descritte nella fase di analisi dei requisiti.
 \end{itemize}
 
 \subsubsection{Codifica}
 \paragraph{Descrizione}
-La fase di codifica ha come obbiettivo quello di passare, nel miglior modo possibile, dalla soluzione architetturale realizzata dai \textit{\ProgP} a quella finale eseguibile da un calcolatore.
+La fase di codifica ha come obiettivo quello di passare, nel miglior modo possibile, dalla soluzione architetturale realizzata dai \textit{\ProgP} a quella finale eseguibile da un calcolatore.
 In questa fase i responsabili della codifica sono i \textit{\ProgrP} e questi sono tenuti a seguire le seguenti \termine{best practice}, con lo scopo di produrre il prodotto designato nella fase di progettazione.
 
-\paragraph{Formattazzione}
-La formattazione facilita la comprensione e la modifica del codice, per facilitare il compito del \textit{\Prog} è fondamentare delineare uno standard di formattazione.
-Di seguito sono suggeriti alcuni metodi di formattazione:
+\paragraph{Formattazione}
+Per semplificare il compito del \textit{\Prog} è fondamentale delineare uno standard di formattazione.
+Esso coincide nei seguenti punti:
 
 \begin{itemize}
-\item Tenere la lunghezza del \termine{TAB} standard di \termine{IntelliJ IDEA}, esso è composto da quattro(4) spazi.
+\item Mantenere l'indentazione standard di \termine{IntelliJ IDEA} composta da quattro(4) spazi.
 
 \item Inserire le parentesi di apertura in modo \termine{inline}.
 
-\item Utilizzare spazi vuoti nel codice sorgente. 
-In questo modo sarà possibile creare dei paragrafi, migliorando così la comprensione logica del codice.
+\item Utilizzare spazi vuoti nel codice sorgente in modo da suddividere il file in paragrafi migliorandone lettura e comprensione.
 
 \item Inserire sempre le parentesi di apertura e di chiusura di una istruzione condizionale anche quando è presente solo uno \termine{statement} all'interno del suo corpo. In tal modo verrà facilitata la comprensione e manutenzione del codice.
 
-\item Suddividere logicamente il codice in diversi file fisici.
+\item Suddividere logicamente il codice in diversi file.
 
 \item Cercare di incapsulare più possibile il codice e non di creare funzioni e/o classi con una eccessiva quantità di codice.
 \end{itemize}
 
 \paragraph{Commenti}
 All'interno del codice è fondamentale inserire una buona quantità di commenti al fine di facilitare la comprensione, sia ad un lettore esterno, sia allo stesso programmatore a distanza di tempo.
-Di seguito sono suggeriti alcuni metodi di inserimento di commenti:
+Di seguito sono suggeriti alcuni metodi di inserimento di commenti che saranno utilizzati dal gruppo:
 
 \begin{itemize}
 \item Cercare di inserire commenti di facile comprensione a tutti.
 
-\item Commentare tutto ciò che non è immediato nel codice;
+\item Commentare tutto ciò che non è immediato nel codice.
 
-\item Evitare l' inserimento di commenti alla fine di una riga di codice ma preferire tale inserimento nella riga sovrastante ad essa;
+\item Evitare l'inserimento di commenti alla fine di una riga di codice ma preferire tale inserimento nella riga sovrastante ad essa.
 
-\item Qualora non banali, commentare sempre tutte le istruzioni condizionali;
+\item Commentare sempre tutte le istruzioni condizionali se considerate non di facile comprensione.
 
-\item Utilizzare il metodo di \termine{commento a blocco} e non il metodo di linea al fine di facilitare una eventuale estensione del commento stesso;
-
-\item Tenere sempre aggiornati i commenti relativi all'eventuale codice che si va a modificare, al fine di evitare problemi di inconsistenza con esso;
+\item Tenere sempre aggiornati i commenti relativi all'eventuale codice che si va a modificare, al fine di evitare problemi di inconsistenza con esso.
 
 \item Evitare commenti superflui o umoristici in quanto in caso di \termine{commit} resteranno nella storia dello sviluppo del software.
 \end{itemize}
 
 \paragraph{Documentazione}
 All'interno di un progetto \termine{open source} un'altra caratteristica di fondamentale importanza risulta essere la documentazione. \\
-Di seguito vengono pertanto riportate alcune \termine{best practice} per stilare la documentazione rendendola di facile comprensione.
+Di seguito vengono pertanto riportate alcune \termine{best practice} per stilare una documentazione di facile comprensione.
 
 \begin{itemize}
-\item Scrivere la documentazione in lingua inglese, in quanto il software dovrà poter essere letto anche da sviluppatori internazionali;
-\item Elencare in modo preciso tutte le variabili(anche quelle opzionali) ed i loro significato nei rispettivi metodi;
-\item Segnalare il tipo ed il significato del dato ritornato dai rispettivi metodi;
+\item Scrivere la documentazione in lingua inglese, in quanto il software dovrà poter essere letto anche da sviluppatori internazionali.
+\item Elencare in modo preciso tutte le variabili(anche quelle opzionali) ed i loro significato nei rispettivi metodi.
+\item Segnalare il tipo ed il significato del dato ritornato dai rispettivi metodi.
 \item Documentare in modo preciso il contratto di tutti i metodi pubblici e protetti delle classi.
 \end{itemize}
 
 \paragraph{Nomi}
 Lo schema di denominazione è uno dei supporti più determinanti per la comprensione del codice.
-Di seguito sono elencate le tecniche di denominazione raccomandate:
+Di seguito sono elencate le tecniche per raggiungere un buon utilizzo dei nomi.
 
 \begin{itemize}
 \item Seguire la pratica \termine{camel case} per la denominazione delle variabili locali;

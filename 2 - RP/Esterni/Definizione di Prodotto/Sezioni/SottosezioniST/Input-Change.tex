@@ -1,29 +1,29 @@
 \subsubsection{InputListInfoViewImpl}
 \begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+\item \textbf{Descrizione}: Classe dedicata alla visualizzazione del popup che permette all'utente di inserire, rimuovere o modificare i dati relativi alla lista.
+\item \textbf{Utilizzo}: Classe utilizzata per visualizzare un popup che permette all'utente di inserire, rimuovere o modificare tutti i dati relativi alla lista.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private presenter:InputListInfoViewPresenter}\\
-	
+		Il presenter associato alla view del popup, al quale questa classe delega la gestione del comportamento della view stessa.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}	
 	\item \textit{public renderView():string}\\
-	
+			Genera il codice HTML CSS JS necessario per visualizzare la view.
 	\item \textit{public InputListInfoViewImpl():InputListInfoViewImpl}\\
 	Il costruttore della classe InputListInfoViewImpl.
 	\item \textit{public createViewForListWithId(listId:string):void}\\
 	
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
-	
+			Id della lista.
 			\end{itemize}}
 	\item \textit{public emitOnSaveEvent(list:ListData):void}\\
 
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{list:ListData}\\
-
+				Insieme di tutti i dati e le informazioni di una lista.
 			\end{itemize}}
 	\end{itemize}
 \item{Eventi}:
@@ -32,11 +32,11 @@
 \subsubsection{InputListInfoViewPresenter}
 \begin{itemize}
 \item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+\item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione della view e la view, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
 \item \textbf{Attributi}: 	
 	\begin{itemize}
 	\item \textit{private view:InputListInfoView}\\
-	
+		La view associata al presenter.
 	\item \textit{private getListInfoUseCases:GetListInfoUseCases}\\
 		
 	\item \textit{private showPopupUseCases:ShowPopupUseCases}\\
@@ -71,7 +71,7 @@
 \subsubsection{ChangeListInfoView}
 \begin{itemize}
 \item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+\item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione della vista, e visualizza i dati che gli vengono passati dal presenter.
 \item \textbf{Attributi}: 
 \item \textbf{Metodi}:
 \item{Eventi}:
@@ -103,7 +103,7 @@
 \subsubsection{ChangeListInfoViewPresenter}
 \begin{itemize}
 \item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+\item \textbf{Utilizzo}: Classe che rappresenta il presenter dedicato alla modifica delle informazioni di una lista.
 \item \textbf{Attributi}:
 	\begin{itemize}
 	\item \textit{private changeListView:ChangeListInfoView}\\
@@ -160,8 +160,12 @@ Il costruttore della classe ChangeListInfoViewPresenter.
 			\item \textit{source:DatabaseSource}\\
 
 			\end{itemize}}
-	\item \textit{public getListData():ListData}\\
+	\item \textit{public getListData(listId:string):ListData}\\
 	
+				\item{\textbf{Parametri}: \begin{itemize}
+				\item \textit{listId:string}\\
+				
+				\end{itemize}}
 	\end{itemize}
 \item{Eventi}:
 \end{itemize}

@@ -93,97 +93,98 @@
 
 \subsubsection{ListItem}
 \begin{itemize}
-\item \textbf{Descrizione}:
-\item \textbf{Utilizzo}:
+\item \textbf{Descrizione}: Questa classe rappresenta i prodotti della lista-spesa.
+\item \textbf{Utilizzo}: Viene utilizzata da tutte le classi che hanno a che fare con i prodotti della lista, ovvero che aggiungono, rimuovono e modificano gli oggetti della lista.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private id:string}\\
-	
+		Questa stringa rappresenta l'identificativo del prodotto.
 	\item \textit{private description:string}\\
-	
+	Questa stringa rappresenta il la descrizione del prodotto.
 	\item \textit{private imagePath:string}\\
-	
+		Questa stringa rappresenta il percorso dell'immagine del prodotto.
 	\item \textit{private measurementUnit:string}\\
-	
+	Questa stringa rappresenta l'unità di misura relativa alla quantità di prodotto.
 	\item \textit{private name:string}\\
-	
+	Questa stringa rappresenta il nome del prodotto.
 	\item \textit{private notes:List<string>}\\
-	
+	Questa stringa rappresenta le note relative al prodotto.
 	\item \textit{private quantity:int}\\
-	
+	Questa stringa rappresenta la quantità di prodotto richiesta.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public ListItem():ListItem}\\
 	Il costruttore della classe ListItem.
 	\item \textit{public setId(id:string):void}\\
-	
+	Imposta l'id del prodotto.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{id:string}\\
-
+						L'id che verrà impostato per il prodotto.
 			\end{itemize}}
 	\item \textit{public setDescription(description:string):void}\\
-	
+	Imposta la descrizione del prodotto.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{description:string}\\
-
+				La descrizione relativa al prodotto.
 			\end{itemize}}
 	\item \textit{public setImage(path:string):void}\\
-	
+	Imposta l'immagine al prodotto.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{path:string}\\
-
+				l percorso dell'immagine che verrà impostata per il prodotto.
 			\end{itemize}}
 	\item \textit{public setMeasurementsUnit(mu:string):void}\\
-	
+	Imposta l'unità di misura relativa alla quantità di prodotto.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{mu:string}\\
-
+				L'unità di misura che verrà impostata al prodotto.
 			\end{itemize}}
 	\item \textit{public setName(name:string):void}\\
-	
+	Imposta il nome del prodotto.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{name:string}\\
-
+				Il nome che verrà impostato al prodotto.
 			\end{itemize}}
 
 	\item \textit{public addNote(note:string):void}\\
-	
+	Imposta le note relative al prodotto.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{note:string}\\
-
+				Le note relative al prodotto che verranno impostate al prodotto.
 			\end{itemize}}
 	\item \textit{public removeNote(position:int):void}\\
-	
+	Rimuove delle note relative al prodotto.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{position:int}\\
-
+				L'indice della nota da rimuovere.
 			\end{itemize}}
 	\item \textit{public getNote(position:int):string}\\
-	
+	Restituisce la nota relativa al prodotto nella posizione indicata.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{position:int}\\
-
+				L'indice della nota di cui si vuole recuperare il contenuto.
 			\end{itemize}}
 	\item \textit{public getNotes():List<string>}\\
-	
+	Restituisce tutte le note relative al prodotto.
 	\item \textit{public setQuantity(qty:int):void}\\
-	
+	Imposta la quantità richiesta di prodotto.
 				\item{\textbf{Parametri}: \begin{itemize}
 				\item \textit{qty:int}\\
-
+				Quantità che verrà impostata al prodotto.
 			\end{itemize}}
 	\item \textit{public getId():string}\\
-	
+	Restituisce l'id del prodotto.
 	\item \textit{public getImagePath():string}\\
-	
+	Restituisce il percorso dell'immagine del prodotto.
 	\item \textit{public getName():string}\\
-	
-	\item \textit{public getDescription():List<ListItem>}\\
-	
+	Restituisce il nome del prodotto.
+	\item \textit{public getDescription():string}\\
+	Restituisce la descrizione del prodotto.
 	\item \textit{public getMeasurementUnit():string}\\
-
+	Restituisce l'unità di misura impostata al prodotto.
 	\item \textit{public getQuantity():int}\\
+	Restituisce la quantità di prodotto richiesta.
 \end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}

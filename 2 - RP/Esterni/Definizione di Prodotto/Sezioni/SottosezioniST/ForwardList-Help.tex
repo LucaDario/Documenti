@@ -30,7 +30,7 @@ Il presenter associato all'inoltro di una lista, al quale questa classe delega l
 
 \subsubsection{ForwardListViewPresenter}
 \begin{itemize}
-item \textbf{Descrizione}: Questa classe rappresenta il presenter per gli elementi di inoltro della lista-spesa.
+\item \textbf{Descrizione}: Questa classe rappresenta il presenter per gli elementi di inoltro della lista-spesa.
 \item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione dell'elemento di inoltro e la view, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
 \item \textbf{Attributi}: 
 	\begin{itemize}
@@ -109,7 +109,7 @@ item \textbf{Descrizione}: Questa classe rappresenta il presenter per gli elemen
 
 \subsubsection{HelpViewImpl}
 \begin{itemize}
-\item \textbf{Descrizione}: Questa classe rappresenta la rimozione di un oggetto dalla lista-spesa, implementando l'interfaccia HelpViewView.
+\item \textbf{Descrizione}: Questa classe rappresenta la componente grafica necessaria alla richiesta di aiuto di un utente su una lista-spesa, implementando l'interfaccia HelpView.
 \item \textbf{Utilizzo}: Questa classe viene utilizzata dall'utente ogniqualvolta richiede aiuto su come usare la lista-spesa.
 \item \textbf{Attributi}:
 \begin{itemize}
@@ -130,9 +130,13 @@ Il presenter associato alla richiesta di aiuto di un utente, al quale questa cla
 
 \subsubsection{HelpViewPresenter}
 \begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+\item \textbf{Descrizione}: Questa classe rappresenta il presenter per gli elementi di richiesta di aiuto della lista-spesa.
+\item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione dell'elemento di richiesta di aiuto e la view, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
 \item \textbf{Attributi}:
+	\begin{itemize}
+	\item \textit{private view:HelpView}\\
+	La view associata al presenter.
+	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public hide():void}\\

@@ -13,17 +13,17 @@
 \item \textbf{Attributi:} 
 \begin{itemize}
 \item \textit{protected layout:VerticalLayoutView}\\
-Oggetto che rappresenta il layout verticale della bolla.
+Oggetto che rappresenta il layout verticale di default della bolla.
 \end{itemize}
 \item \textbf{Metodi:}
 \begin{itemize}
-\item \textit{public addComponent(component:BaseComponent):void}\\
-Aggiunge un widget alla bolla.
-\item{\textbf{Parametri}: \begin{itemize}
-\item \textit{component:BaseComponent}\\
-Oggetto che rappresenta il componente che si desidera aggiungere alla bolla.
-\end{itemize}}
-\item \textit{public renderView():string}\\
+	\item \textit{public addComponent(component:BaseComponent):void}\\
+Aggiunge un widget o layout alla bolla.
+		  \\ \textbf{Parametri}: \begin{itemize}
+				\item \textit{component:BaseComponent}\\
+					Oggetto che rappresenta il componente che si desidera aggiungere alla bolla.
+			\end{itemize}
+	\item \textit{public renderView():string}\\
 Genera il codice HTML, CSS e JavaScript necessario per visualizzare bolle.
 \end{itemize}
 \end{itemize}
@@ -53,10 +53,10 @@ Oggetto che rappresenta il widget contenente la lista di oggetti che si possono 
 Il costruttore della classe ToDoListBubble.
 \item \textit{public addItem(item:string):void}\\
 Aggiunge un elemento con il nome definito alla bolla lista.
-\item{\textbf{Parametri}: \begin{itemize}
+\ \textbf{Parametri}: \begin{itemize}
 \item \textit{item:string}\\
 Valore che rappresenta il nome dell'elemento che si vuole aggiungere alla lista.
-\end{itemize}}
+\end{itemize}
 \end{itemize}
 \end{itemize}
 
@@ -82,11 +82,11 @@ Oggetto che rappresenta il widget contenente il testo della bolla testo markdown
 \item \textit{public MarkdownBubble():MarkdownBubble}\\
 Il costruttore della classe MarkdownBubble.
 \item \textit{public setText(text:string):void}\\
-Imposta il testo della bolla lista con il valore definito.
-\item{\textbf{Parametri}: \begin{itemize}
+Imposta il testo della bolla con il valore definito.
+\\ \textbf{Parametri}: \begin{itemize}
 \item \textit{text:string}\\
 Valore che rappresenta il testo che si vuole inserire nella bolla testo markdown.
-\end{itemize}}
+\end{itemize}
 \end{itemize}
 \end{itemize}
 
@@ -115,15 +115,15 @@ Campo che rappresenta e contiene il messaggio della bolla avviso.
 Il costruttore della classe AlertBubble.
 \item \textit{public setTitle(title:string):void}\\
 Imposta il titolo della bolla avviso con il valore title.
-\item{\textbf{Parametri}: \begin{itemize}
+\\ \textbf{Parametri}: \begin{itemize}
 \item \textit{title:string}\\
 Valore che rappresenta il titolo che si vuole impostare alla bolla avviso.
-\end{itemize}}
+\end{itemize}
 \item \textit{public setMessage(message:string):void}\\
 Imposta il messaggio della bolla avviso con il valore message.
-\item{\textbf{Parametri}: \begin{itemize}
+\\ \textbf{Parametri}: \begin{itemize}
 \item \textit{message:string}\\
 Valore che rappresenta il messaggio testuale che si vuole impostare alla bolla avviso.
-\end{itemize}}
+\end{itemize}
 \end{itemize}
 \end{itemize}

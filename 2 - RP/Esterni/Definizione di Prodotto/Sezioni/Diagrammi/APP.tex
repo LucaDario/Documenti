@@ -9,7 +9,7 @@ In questi scenari faremo largo uso della libreria\termine{ vue.js} per aggiornar
 	\caption{Creazione di una lista}
 \end{figure}
 
-Questo scenario rappresenta l'utente che vuole creare una nuova lista nella chat di \termine{rocket.chat}. Inanzitutto alla pressione del pulsante creazione lista verrà emesso un evento che verrà catturato dalla classe \textit{CreateListVIewImpl} che demanderà la gestione di esso al presenter. Quest'ultimo attraverso il metodo \textit{showInputListInfoView} recupererà il codice html relativo al inserimento dei dati per la creazione della lista e lo mostrerà al utente attraverso un popup creato appositamente dalla chat. Dopo aver finito di inerire i dati desiderati l'utente premerà il relativo pulsante di salvataggio. In questo modo verrà emesso l'evento di salvataggio che verrà gestito dal presenter di \textit{showInputListInfoView} e infine attraverso il metodo \textit{createList} la lista verrà creata nel \termine{database} insieme al id del creatore 
+Questo scenario rappresenta l'utente che vuole creare una nuova lista nella chat di \termine{rocket.chat}. Inanzitutto alla pressione del pulsante creazione lista verrà emesso un evento che verrà catturato dalla classe \textit{CreateListVIewImpl} che demanderà la gestione di esso al presenter. Quest'ultimo attraverso il metodo \textit{showInputListInfoView} recupererà il codice html relativo al inserimento dei dati per la creazione della lista e lo mostrerà al utente attraverso un popup creato appositamente dalla chat. Dopo aver finito di inerire i dati desiderati l'utente premerà il relativo pulsante di salvataggio. In questo modo verrà emesso l'evento di salvataggio che verrà gestito dal presenter di \textit{showInputListInfoView} e infine attraverso il metodo \textit{createList} la lista verrà creata nel \termine{database} insieme al id del creatore .
 
 
 
@@ -114,7 +114,7 @@ Simile allo scenario precedente in questo caso l'utente vuole condividere e dare
 \end{figure}
 
 In questo scenario l'utente vuole inoltrare la lista a un contatto come fosse un semplice messaggio di testo, senza aggiungere al specifico contatto nessun permesso di modifica o interazione. L'utente premendo il bottone di inoltro sceglie un contatto. Si verifica quindi l'evento che verrà catturato dalla classe \textit{ForwardListViewImpl} demandandone la gestione al suo presenter.
-Quest'ultimo con il metodo \textit{forwardToContactWithId} inoltrerà la lista al contatto desiderato attraverso la classe \textit{ChatSource}.Prima del avvenuto inoltro al contatto selezionato è presente il metodo \textit{showPopUp} che interfaciandosi con la classe \textit{ForwardListUseCase} mostrerà a schermo un messaggio di conferma per l'inoltro 
+Quest'ultimo con il metodo \textit{forwardToContactWithId} inoltrerà la lista al contatto desiderato attraverso la classe \textit{ChatSource}.Prima del avvenuto inoltro al contatto selezionato è presente il metodo \textit{showPopUp} che interfaciandosi con la classe \textit{ForwardListUseCase} mostrerà a schermo un messaggio di conferma per l'inoltro e la scelta per il contatto a cui inoltrare il messaggio.
 
 
 
@@ -129,7 +129,7 @@ Quest'ultimo con il metodo \textit{forwardToContactWithId} inoltrerà la lista a
 \end{figure}
 
 In questo scenario l'utente vuole inoltrare la lista a un gruppo come fosse un semplice messaggio di testo, senza aggiungere al specifico gruppo nessun permesso di modifica o interazione. L'utente premendo il bottone di inoltro sceglie un gruppo. Si verifica quindi l'evento che verrà catturato dalla classe \textit{ForwardListViewImpl} demandandone la gestione al suo presenter.
-Quest'ultimo con il metodo \textit{forwardToGroupWithId} inoltrerà la lista al gruppo desiderato attraverso la classe \textit{ChatSource}.Prima del avvenuto inoltro al gruppo è presente il metodo \textit{showPopUp} che interfaciandosi con la classe \textit{ForwardListUseCase} mostrerà a schermo un messaggio di conferma per l'inoltro 
+Quest'ultimo con il metodo \textit{forwardToGroupWithId} inoltrerà la lista al gruppo desiderato attraverso la classe \textit{ChatSource}.Prima del avvenuto inoltro al gruppo è presente il metodo \textit{showPopUp} che interfaciandosi con la classe \textit{ForwardListUseCase} mostrerà a schermo un messaggio di conferma per l'inoltro e la selezione del gruppo a cui si desidera inoltrare.
 
 
 \subsubsection{Help}
@@ -142,4 +142,4 @@ Quest'ultimo con il metodo \textit{forwardToGroupWithId} inoltrerà la lista al 
 	
 \end{figure}
 
-In questo scenario l'utente vuole chiedere delle informazioni d'aiuto per l'utilizzo della nostra appliazione. Per richiedere aiuto l'utente può schiacciare il bottone di help apposito. In questa maniera viene attivato un evento nella classe \textit{HelpViewImpl} che demandanderà la gestione al suo presenter. Quest'ultimo attraverso il metodo \textit{show} farà visualizzare a schermo un popup con le informazioni utili. Per nascondere le informazioni d'aiuto avremo lo stesso flusso di utilizzo con l'evento \textit{hide} in sostituzione al evento \textit{show}
+In questo scenario l'utente vuole chiedere delle informazioni d'aiuto per l'utilizzo della nostra appliazione. Per richiedere aiuto l'utente può schiacciare il bottone di help apposito. In questa maniera viene attivato un metodo nella classe \textit{HelpViewImpl} che demandanderà la gestione al suo presenter. Quest'ultimo attraverso il metodo \textit{show} farà visualizzare a schermo un popup con le informazioni utili. Per nascondere le informazioni d'aiuto avremo lo stesso flusso di utilizzo con il metodo \textit{hide} in sostituzione al metodo \textit{show} attivabile nella stessa maniera.

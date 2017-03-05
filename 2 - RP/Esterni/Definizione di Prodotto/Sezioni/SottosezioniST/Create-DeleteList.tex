@@ -1,4 +1,12 @@
-\subsubsection{CreateListView}
+\subsubsection{feature::create\_list::CreateListView}
+
+\label{feature::create_list::CreateListView}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/CreateListView.png}
+	\caption{feature::create\_list::CreateListView}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Interfaccia che estende \texttt{GeneralView} che una volta implementata permette al presenter e allo sviluppatore di personalizzare la vista dedicata alla creazione di una nuova lista.
 \item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione della vista, e visualizza i dati che gli vengono passati dal presenter.
@@ -11,7 +19,15 @@
 	\end{itemize}
 \end{itemize}
 
-\subsubsection{CreateListViewImpl}
+\subsubsection{feature::create\_list::view::CreateListViewImpl}
+
+\label{feature::create_list::view::CreateListViewImpl}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/CreateListViewImpl.png}
+	\caption{feature::create\_list::view::CreateListViewImpl}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Classe che implementa l'interfaccia \texttt{CreateListView}, che permette al presenter e allo sviluppatore di personalizzare la vista dedicata alla creazione di una nuova lista.
 \item \textbf{Utilizzo}: Classe utilizzata per creare una nuova lista permettendo di personalizzarne la view.
@@ -22,13 +38,23 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public CreateListViewImpl():CreateListViewImpl}\\
+	Il costruttore della classe CreateListViewImpl.
 	\item \textit{public renderView():string}\\
 		Genera il codice HTML CSS JS necessario per visualizzare la view.
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}
 
-\subsubsection{CreateListViewPresenter}
+\subsubsection{feature::create\_list::presenter::CreateListViewPresenter}
+
+\label{feature::create_list::presenter::CreateListViewPresenter}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/CreateListViewPresenter.png}
+	\caption{feature::create\_list::presenter::CreateListViewPresenter}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Classe che rappresenta il presenter dedicato alla view per la creazione di una nuova lista.
 \item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione della view e la parte logica dell'applicazione, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
@@ -41,7 +67,7 @@
 	\item \textit{private manageList:ManageListUseCase}\\
 	Oggetto dedicato alla gestione dei dati relativi alla lista all'interno del database.
 	\item \textit{private showPopup:ShowPopupUseCase}\\
-	
+	Oggetto dedicato alla creazione del popup per la creazione della lista.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
@@ -55,7 +81,7 @@
 		\item \textit{manageList:ManageListsUseCase}\\
 			Oggetto dedicato alla gestione dei dati relativi alla lista all'interno del database.
 		\item \textit{showPopup:ShowPopupUseCase}\\
-		
+			Oggetto che permette creazione di un popup per l'immissione dei dati della lista da creare.
 		\end{itemize}}
 	\item \textit{private showInputListInfoView():void}\\
 	 Metodo che permette di mostrare la vista attraverso la quale l'utente potrà andare a modificare i dati della lista.
@@ -69,7 +95,15 @@
 \item \textbf{Eventi}:
 \end{itemize}
 
-\subsubsection{InputListInfoView}
+\subsubsection{feature::input\_list\_info::InputListInfoView}
+
+\label{feature::input_list_info::InputListInfoView}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/InputListInfoView.png}
+	\caption{feature::input\_list\_info::InputListInfoView}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Questa interfaccia rappresenta la view relativa al popup per l'immissione, rimozione o modifica di tutti i dati relativi alla lista.
 \item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione della vista, e visualizza i dati che gli vengono passati dal presenter.
@@ -77,7 +111,7 @@
 \item \textbf{Metodi}:
 	\begin{itemize}	
 	\item \textit{public emitOnSavedDataEvent(list:ListaData):void}\\
-	
+	Metodo necessario al presenter per far emettere alla view l'evento onSavedData(list:ListData), notificando tutti gli oggetti in ascolto che la lista è stata salvata con successo.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{list:ListaData}\\
 			Insieme di tutti i dati e le informazioni di una lista.
@@ -92,9 +126,9 @@
 \item \textbf{Eventi}:
 	\begin{itemize}
 	\item \textit{public onSaveClicked():void}\\
-	Evento che rappresenta interazione di un utente con un bottone dedicato al salvataggio della lista.
+	Evento emesso dalla view che rappresenta interazione di un utente con un bottone dedicato al salvataggio della lista.
 	\item \textit{public onSavedData(list:ListData):void}\\
-
+			Evento che notifica tutti gli oggetti in ascolto che la lista è stata salvata con successo.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{list:ListData}\\
 			Insieme di tutti i dati e le informazioni di una lista.
@@ -102,7 +136,15 @@
 	\end{itemize}
 \end{itemize}
 
-\subsubsection{ManageListsUseCase}
+\subsubsection{usecase::ManageListsUseCase}
+
+\label{usecase::ManageListsUseCase}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ManageListsUseCase.png}
+	\caption{usecase::ManageListsUseCase}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Classe che permette di gestire i dati relativi alle liste all'interno del database.
 \item \textbf{Utilizzo}: Classe utilizzata per eliminare o aggiungere una lista al database.
@@ -137,7 +179,15 @@
 \item \textbf{Eventi}:
 \end{itemize}
 
-\subsubsection{DeleteListView}
+\subsubsection{feature::delete\_list::DeleteListView}
+
+\label{feature::delete_list::DeleteListView}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/DeleteListView.png}
+	\caption{feature::delete\_list::DeleteListView}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Interfaccia che estende \texttt{GeneralView} che una volta implementata permette al Presenter e allo sviluppatore di personalizzare la vista dedicata all'eliminazione di una lista.
 \item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione della vista, e visualizza i dati che gli vengono passati dal presenter.
@@ -147,10 +197,22 @@
 	\begin{itemize}
 	\item \textit{public onDeleteListClicked(listId:string):void}\\
 	Evento che rappresenta il click sul bottone dedicato all'eliminazione di una lista, dopo il quale verrà eliminata la lista.
+	\item{\textbf{Parametri:} \begin{itemize}
+	\item \textit{listId:string}
+	Parametro che rappresenta l'id della lista che si vuole eliminare.
+	\end{itemize}}
 	\end{itemize}
 \end{itemize}
 
-\subsubsection{DeleteListViewImpl}
+\subsubsection{feature::delete\_list::view::DeleteListViewImpl}
+
+\label{feature::delete_list::view::DeleteListViewImpl}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/DeleteListViewImpl.png}
+	\caption{feature::delete\_list::view::DeleteListViewImpl}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Classe che implementa l'interfaccia \texttt{DeleteListView}, che permette al Presenter e allo sviluppatore di personalizzare la vista dedicata all'eliminazione di una lista.
 \item \textbf{Utilizzo}:
@@ -161,20 +223,30 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
+	\item \textit{public DeleteListViewImpl():DeleteListViewImpl}\\
+	Il costruttore della classe DeleteListViewImpl.
 	\item \textit{public renderView():string}\\
 			Genera il codice HTML CSS JS necessario per visualizzare la view.
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}
 
-\subsubsection{DeleteListViewPresenter}
+\subsubsection{feature::delete\_list::presenter::DeleteListViewPresenter}
+
+\label{feature::delete_list::presenter::DeleteListViewPresenter}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/DeleteListViewPresenter.png}
+	\caption{feature::delete\_list::presenter::DeleteListViewPresenter}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: 
 \item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione della view e la parte logica, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private view:DeleteListView}\\
-		Campo dati che rappresenta la view per l'eliminazione di una lista.
+		La view associata al presenter.
 	\item \textit{private manageList:ManageListUseCase}\\
 				Oggetto dedicato alla gestione dei dati relativi alla lista all'interno del database.
 	\end{itemize}

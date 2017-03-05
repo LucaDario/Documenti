@@ -1,4 +1,12 @@
-\subsubsection{InputItemInfoView}
+\subsubsection{feature::input\_item\_info::InputItemInfoView}
+
+\label{feature::input_item_info::InputItemInfoView}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/InputItemInfoView.png}
+	\caption{feature::input\_item\_info::InputItemInfoView}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Questa interfaccia rappresenta la view relativa all'aggiunta delle informazioni di un oggetto alla lista-spesa.
 \item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione dell'aggiunta, visualizza i dati che gli vengono passati dal presenter.
@@ -31,7 +39,15 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 \end{itemize}
 \end{itemize}
 
-\subsubsection{InputItemInfoViewImpl}
+\subsubsection{feature::input\_item\_info::view::InputItemInfoViewImpl}
+
+\label{feature::input_item_info::view::InputItemInfoViewImpl}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/InputItemInfoViewImpl.png}
+	\caption{feature::input\_item\_info::view::InputItemInfoViewImpl}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Questa classe rappresenta la componente grafica necessaria all'inserimento delle informazioni di un oggetto di una lista-spesa, implementando l'interfaccia InputItemInfoView.
 \item \textbf{Utilizzo}: Questa classe viene utilizzata dall'utente ogniqualvolta aggiunge i dati di un oggetto all'interno di una lista-spesa.
@@ -56,7 +72,15 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 \item \textbf{Eventi}:
 \end{itemize}
 
-\subsubsection{InputItemInfoViewPresenter}
+\subsubsection{feature::input\_item\_info::presenter::InputItemInfoViewPresenter}
+
+\label{feature::input_item_info::presenter::InputItemInfoViewPresenter}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/InputInfoViewPresenter.png}
+	\caption{feature::input\_item\_info::presenter::InputItemInfoViewPresenter}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Questa classe rappresenta il presenter per gli elementi di aggiunta dei dati degli oggetti di una lista-spesa.
 \item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione dell'elemento di aggiunta dei dati e la view, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
@@ -91,7 +115,15 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 \item \textbf{Eventi}:
 \end{itemize}
 
-\subsubsection{GetItemInfoUseCase}
+\subsubsection{usecase::GetItemInfoUseCase}
+
+\label{usecase::GetItemInfoUseCase}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/GetItemInfoUseCase.png}
+	\caption{usecase::GetItemInfoUseCase}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: La classe crea disaccoppiamento, fungendo da tramite tra i presenter e il database.
 \item \textbf{Utilizzo}: Se le classi necessitano di comunicare con il database e ricevere informazioni su un particolare oggetto, dovranno passare attraverso questa classe.
@@ -120,7 +152,15 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 \item{Eventi}:
 \end{itemize}
 
-\subsubsection{ModifyItemView}
+\subsubsection{feature::modify\_item::ModifyItemView}
+
+\label{feature::modify_item::ModifyItemView}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ModifyItemView.png}
+	\caption{feature::modify\_item::ModifyItemView}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Questa interfaccia rappresenta la view relativa alla modifica delle informazioni di un oggetto alla lista-spesa.
 \item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione della modifica, visualizza i dati che gli vengono passati dal presenter.
@@ -137,7 +177,15 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 	\end{itemize}
 \end{itemize}
 
-\subsubsection{ModifyItemViewImpl}
+\subsubsection{feature::modify\_item::view::ModifyItemViewImpl}
+
+\label{feature::modify_item::view::ModifyItemViewImpl}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ModifyItemViewImpl.png}
+	\caption{feature::modify\_item::view::ModifyItemViewImpl}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: Questa classe rappresenta la componente grafica necessaria alla modifica delle informazioni di un oggetto di una lista-spesa, implementando l'interfaccia ModifyItemInfoView.
 \item \textbf{Utilizzo}: Questa classe viene utilizzata dall'utente ogniqualvolta modifica i dati di un oggetto all'interno di una lista-spesa.
@@ -156,7 +204,15 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 \item \textbf{Eventi}:
 \end{itemize}
 
-\subsubsection{ModifyItemViewPresenter}
+\subsubsection{feature::modify\_item::presenter::ModifyItemViewPresenter}
+
+\label{feature::modify_item::presenter::ModifyItemViewPresenter}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ModifyItemPresenter.png}
+	\caption{feature::modify\_item::presenter::ModifyItemViewPresenter}
+\end{figure}
+
 \begin{itemize}
 \item \textbf{Descrizione}: 
 \item \textbf{Utilizzo}:

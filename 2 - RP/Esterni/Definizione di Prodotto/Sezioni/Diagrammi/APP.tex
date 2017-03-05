@@ -114,7 +114,8 @@ Simile allo scenario precedente in questo caso l'utente vuole condividere e dare
 \end{figure}
 
 In questo scenario l'utente vuole inoltrare la lista a un contatto come fosse un semplice messaggio di testo, senza aggiungere al specifico contatto nessun permesso di modifica o interazione. L'utente premendo il bottone di inoltro sceglie un contatto. Si verifica quindi l'evento che verrà catturato dalla classe \textit{ForwardListViewImpl} demandandone la gestione al suo presenter.
-Quest'ultimo con il metodo \textit{forwardToContactWithId} inoltrerà la lista al contatto desiderato attraverso la classe \textit{ChatSource} 
+Quest'ultimo con il metodo \textit{forwardToContactWithId} inoltrerà la lista al contatto desiderato attraverso la classe \textit{ChatSource}.Prima del avvenuto inoltro al contatto selezionato è presente il metodo \textit{showPopUp} che interfaciandosi con la classe \textit{ForwardListUseCase} mostrerà a schermo un messaggio di conferma per l'inoltro 
+
 
 
 \subsubsection{Inoltro a un gruppo}
@@ -128,7 +129,7 @@ Quest'ultimo con il metodo \textit{forwardToContactWithId} inoltrerà la lista a
 \end{figure}
 
 In questo scenario l'utente vuole inoltrare la lista a un gruppo come fosse un semplice messaggio di testo, senza aggiungere al specifico gruppo nessun permesso di modifica o interazione. L'utente premendo il bottone di inoltro sceglie un gruppo. Si verifica quindi l'evento che verrà catturato dalla classe \textit{ForwardListViewImpl} demandandone la gestione al suo presenter.
-Quest'ultimo con il metodo \textit{forwardToGroupWithId} inoltrerà la lista al gruppo desiderato attraverso la classe \textit{ChatSource} 
+Quest'ultimo con il metodo \textit{forwardToGroupWithId} inoltrerà la lista al gruppo desiderato attraverso la classe \textit{ChatSource}.Prima del avvenuto inoltro al gruppo è presente il metodo \textit{showPopUp} che interfaciandosi con la classe \textit{ForwardListUseCase} mostrerà a schermo un messaggio di conferma per l'inoltro 
 
 
 \subsubsection{Help}

@@ -341,12 +341,317 @@
     "skip_not_approved": false,
     "tests": [
       {
-        "description": "Viene verificato che l'sdk sia in grado di interfacciarsi con la gestionde dei messaggi del software Rocket.chat",
+        "description": "Si verifica che il mettodo ButtonWidget::setText passi correttamente al presenter il testo il  quale eventualmente formatterà il testo e lo presenterà nella view",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Viene verificato che il prersenter associato ad un widget qualisiasi mantega l'html associato alla view valido dopo una eventuale modifica",
+        "description": "Si verifica che il mettodo ButtonWidget::setHeight passi correttamente al presenter il valore dell'altezza il quale aggiornerà la view",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il mettodo ButtonWidget::setWidth passi correttamente al presenter il valore della lareghezza il quale aggiornerà la view",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il mettodo ButtonWidget::setBackgroundColor passi correttamente al presenter il colore dello sfondo il quale aggiornerà la view",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il mettodo ButtonWidget::setOnClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene premuto il pulsante",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il mettodo ButtonWidget::setOnLongClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene mantenuto premuto il pulsante",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il mettodo TextWidget::setText passi correttamente al presenter il testo che verrà poi mostrato a video",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il mettodo TextWidget::setTextColor passi correttamente al presenter il colore del testo il quele dovrà presengtare il testo nel colore corrispondente",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il metodo TextWidget::setFormatText passi al presenter il valore il quale dovrà presentare il testo formattato seguendo la sintassi markdown oppure lasciarlo invariato in fuznione al valore booleano passato al presenter",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il metodo TextWidget::setUrlHighlightColor passi al presenter il valore il quale dovrà presentare i link evidenziati oppure non evidenziati in fuznione al valore booleano passato al presenter",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il metodo TextWidget::setTextSize passi la dimensione del testo del presenter il quale dovrà occuparsi di presentare il testo della dimensione impostata",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il metodo ChecklistWidget::addOption passi al presenter il testo del elemento il quale dovrà presentare la view con il nuovo elemento",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il metodo ChecklistWidget::setUseSelectionMark ",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il metodo ChecklistWidget::setSelectionColor passi al presenter il colore dello spunta il quale docrà presentare la lista con lo stile corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il metodo ChecklistWidget::setSelectionCharacter passi al presenter lo stile della spunta il quale dovrà presentare la lista con lo stile corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il metodo ChecklistWidget::setCompletionMessage passi al presenter il messaggio che dovrà essere visualizzato quando il tutti gli elemnti della lista vengono spuntati",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il metodo ListWidget::addItem passi al presenter il testo del elemento il quale dovrà presentare la view con il nuovo elemento",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il metodo ListWidget::setIndicator passi al presenter lo stile con il quale si vuole mostrare la lista il quale dovrà presentarla con lo stile impostato",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il metodo ImageWidget::setWidth passi correttamente al presenter il valore dell'altezza il quale aggiornerà la view",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il metodo ImageWidget::setHeight passi correttamente al presenter il valore della larghezza il quale aggiornerà la view",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il metodo ImageWidget::setImage passi correttamente al presenter il path del'immagine che dovrà essere presentata nella view",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il metodo VerticalLayoutView::renderView generi la view mostrando gli elementi uno sotto l'altro nel ordine in cui sono stati inseriti",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il metodo HorizontalLayoutView::renderView generi la view mostrando gli elementi uno affinaco all'altro nel ordine in cui sono stati inseriti",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che RemoteItemViewPresenter riceva l'evento RemoveItemView::onItemRemovedClicked ed elimini l'elelemnto relativo dalla lista",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che RemoteItemViewPresenter rimuovendo un elemento dalla lista mantenga RemoveItemView in uno stato consistente agli elementi presenti",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che il ModifyListUseCase esegua le operazioni di aggiunta, rimmozione e aggiornamento dei dati trammite DatabaseSource in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che AddItemViewPresenter riceva l'evento AddItemView::onAddItemClicked ed aggiunga gli elementi",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ShowPopupUseCase interagisca in modod corretto con l'interfaccia ChatSource",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che CreateListViewPresenter riceva l'evento CreateListView::onCreateListClicked e lo gestisca in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che CreateListViewPresenter interagisca con ShowPopupUseCase in modo corretto il quale dovrà mostrare l'opportuno popup",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ShowPopupUseCase interagisca con ChatSource in modo corretto il quale dovà eseguire l'effetiva visualizzazione del popup e l'invio del messaggio",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che CreateListViewPresenter interagisca con ManageListUseCase aggiungendo una lista in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ManageListUseCase interagisca con DatabaseSource rimuovendo e aggiungendo una lista dal database in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che DeleteListViewPresenter riceva l'evento DeleteListView::onDeleteListClicked ed elimini l'emento selezionato dal utente",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che DeleteListViewPresenter interagisca con ManageListUseCase rimuovendo una lista in modo corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ForwardListViewPresenter riceva l'evento ForwardListView::onForwardClicked ed inizzi la procedura di inoltro trammite ForwardListUseCase",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ForwardListViewPresenter riceva l'evento ForwardListView::onForwardClicked ed inizzi la procedura di inoltro mostrando un popup trammite ShowPopupUseCase",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ShowPopupUseCase interagisca in modo corretto con ChatSource al fine di mostrare il popup corretto",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ForwardListUseCase interagisca in modo corretto con ChatSource al fine di inoltrare la lista selezionata",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che InputListInfoViewPresenter riceva l'evento InputListInfoView::onSaveClicked il quale aggiornerà i dati",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che InputListInfoViewPresenter successivamente al evento InputListInfoView::onSaveClicked invochi il metodo InputListInfoView::emitOnSavedDataEvent",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ChangeListInfoViewPresenter riceva l'evento InputListInfoView::onSavedData e presenti i nuovi dati che dovranno essere visualizzati",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che GetListInfoUseCase esegua i fetch dei dati in modo corretto dal database trammite DatabaseSource",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ChangeListInfoViewPresenter interagisca in modo corretto con ModifyListUseCase",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ChangeListInfoViewPresenter interagisca in modo corretto con ShowPopupUseCase",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che InputInfoViewPresenter ricevà l'evento InputItemInfoView::onSaveClicked a seguito del'intenzione di salvare i dati da parte del utente",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifca che ModifyItemPresenter ricevà l'evento InputItemInfoView::onSavedItem a seguito del avvenuto salvataggio dei dati",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che InputInfoViewPresenter interagisca in modod corretto con GetItemInfoUseCase",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che GetItemInfoUseCase interagisca in modo corretto con DatabaseSource",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ModifyItemPresenter ricevà l'evento ModifyItemView::onClickModifyItem",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ModifyItemPresenter interagisca in modod corretto con ModifyListUseCase",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ModifyItemPresenter interagisca in modod corretto con ShowPopupUseCase",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ModifyListUseCase interagisca in modo corretto con DatabaseSource",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ShowPopupUseCase interagisca in modo corretto con ChatSource",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ShareWithContactViewPresenter riceva l'evento ShareWithContactView::onClickShareWithContact",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ShareWithContactView",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ShareListUseCase",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ShareListUseCase interagisca in modo corretto con DatabaseSource",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ShareWithGroupViewPresenter riceva l'evento ShareWithGroupView::onClickShareWithGroup",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ShareWithGroupViewPresenter riceva l'evento ShareWithContactView::onClickShareWithContact",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ShareWithGroupViewPresenter interagisca in modo corretto con ShareWithContactView",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ShareWithGroupViewPresenter interagosca in modo corretto con ShowPopupUseCase",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Si verifca che ChatSource interagisca in modo corretto con Rocket.chat",
         "implemented": false,
         "approved": false
       }

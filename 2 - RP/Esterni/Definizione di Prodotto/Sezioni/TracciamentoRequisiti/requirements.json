@@ -92,17 +92,17 @@
   },
   "monolith.bubble.todolist" : {
     "ToDoListBubble" : {
-      "requisiti" : ["R1F0", "R1F2.3", "R1F4", "R1F4.1", "R1F4.1.1"]
+      "requisiti" : ["R1F0", "R1F2.3", "R1F4", "R1F4.2.1", "R1F4.2.2", "R1F4.2.3", "R1F4.2.4", "R1F4.2.3.5", "RIF4.2.5", "R1F4.1", "R1F4.1.1"]
     }
   },
   "application.communication" : {
     "ChatSource" : {
-      "requisiti" : ["R1F0", "R1F4", "R1F4.1", "R1F4.1.1", "R1F4.2.2", "R1F4.2.3"]
+      "requisiti" : ["R1F0", "R1F4", "R1F4.1", "R1F4.2.1", "R1F4.2.2", "R1F4.2.3", "RIF4.2.5"]
     }
   },
   "application.database" : {
-    "DataSource" : {
-      "requisiti" : ["R1F4", "R1F4.1.5", "R1F4.3.1.2"]
+    "DatabaseSource" : {
+      "requisiti" : ["R1F4.2.4", "R1F4", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5", "R1F4.2.3.1", "R1F4.2.3.3", "R1F4.2.3.4", "R1F4.2.6", "R1F4.3.1.2", "R1F4.1.1", "R1F4.2.3.6", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8", "R1F4.2.5.7", "R1F4.2.5.9", "R1F4.3.2", "R1F4.3.3", "R1F4.3.4", "R1F4.3.5", "R1F4.2.2", "R1F4.3.2", "R1F4.3.3", "R1F4.3.4", "R1F4.3.5"]
     }
   },
   "application.feature" : {
@@ -112,13 +112,13 @@
   },
   "application.feature.add_item" : {
     "AddItemView" : {
-      "requisiti" : ["R1F4.2.3.2"]
+      "requisiti" : ["R1F4.2.6", "R1F4.1"]
     },
     "AddItemViewImpl" : {
-      "requisiti" : ["R1F4.2.3.2"]
+      "requisiti" : ["R1F4.2.6", "R1F4.1"]
     },
     "AddItemViewPresenter" : {
-      "requisiti" : ["R1F4.2.3.2"]
+      "requisiti" : ["R1F4.2.6", "R1F4.2.3.2", "R1F4.1"]
     }
   },
   "application.feature.change_list_info" : {
@@ -126,7 +126,7 @@
       "requisiti" : ["R1F4.1.4", "R1F4.1.5"]
     },
     "ChangeListInfoViewPresenter": {
-      "requisiti" : ["R1F4.1.4", "R1F4.1.5", "R1F4.1.5"]
+      "requisiti" : ["R1F4.1.4", "R1F4.1.5"]
     },
     "ChangeListInfoViewImpl" : {
       "requisiti" : ["R1F4.1.4", "R1F4.1.5"]
@@ -134,13 +134,13 @@
   },
   "application.feature.create_list" : {
     "CreateListView" : {
-      "requisiti" : ["R1F4", "R1F4.1"]
+      "requisiti" : ["R1F4", "R1F4.1.1", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5"]
     },
     "CreateListViewImpl" : {
-      "requisiti" : ["R1F4"]
+      "requisiti" : ["R1F4", "R1F4.1.1", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5"]
     },
     "CreateListViewPresenter" : {
-      "requisiti" : ["R1F4", "R1F4.1", "R1F4.1.1", "R1F4.1.2", "R1F4.1.3", "R1F4.2.3.7", "R1F4.2.3.8", "R1F4.2.3.9", "R1F4.2.3.9", "R1F4.3.1.3"]
+      "requisiti" : ["R1F4", "R1F4.1.1", "R1F4.1.2", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5", "R1F4.2.3.9", "R1F4.2.3.9", "R1F4.3.1.3"]
     }
   },
   "application.feature.exception" : {
@@ -153,13 +153,13 @@
   },
   "application.feature.forward" : {
     "ForwardListView" : {
-      "requisiti" : ["R1F4.2.2", "R1F4.2.3", "R1F4.2.4", "R1F4.2.5", "R1F4.2.6"]
+      "requisiti" : ["R1F4.2.2", "R1F4.3.2", "R1F4.3.3", "R1F4.3.4", "R1F4.3.5"]
     },
     "ForwardListViewPresenter" : {
-      "requisiti" : ["R1F4.2.2", "R1F4.2.3", "R1F4.2.4", "R1F4.2.5", "R1F4.2.6"]
+      "requisiti" : ["R1F4.2.2", "R1F4.3.2", "R1F4.3.3", "R1F4.3.4", "R1F4.3.5"]
     },
     "ForwardListViewImpl" : {
-      "requisiti" : ["R1F4.2.2", "R1F4.2.3", "R1F4.2.4", "R1F4.2.5", "R1F4.2.6"]
+      "requisiti" : ["R1F4.2.2", "R1F4.3.2", "R1F4.3.3", "R1F4.3.4", "R1F4.3.5"]
     }
   },
   "application.feature.help" : {
@@ -175,99 +175,99 @@
   },
   "application.feature.input_item_info" : {
     "InputItemInfoView" : {
-      "requisiti" : ["R1F4.2.5.2"]
+      "requisiti" : ["R1F4.1", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5", "R1F4.2.3.1", "R1F4.2.3.4", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8" ]
     },
     "InputItemInfoViewPresenter" : {
-      "requisiti" : ["R1F4.2.3.2"]
+      "requisiti" : ["R1F4.1", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5", "R1F4.2.3.1", "R1F4.2.3.4", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8", "R1F4.2.5.7", "R1F4.2.5.9", "R1F4.2.3.7", "R1F4.2.3.9", "R1F4.2.3.2", "R1F4.2.5.2"]
     },
     "InputItemInfoViewImpl" : {
-      "requisiti" : ["R1F4.2.5.2"]
+      "requisiti" : ["R1F4.1", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5", "R1F4.2.3.1", "R1F4.2.3.4", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8" ]
     }
   },
   "application.feature.input_list_info" : {
     "InputListInfoView" : {
-      "requisiti" : ["R1F4.2.5.3"]
+      "requisiti" : ["R1F4.1", "R1F4.1.1", "R1F4.2.3.3"]
     },
     "InputListInfoViewPresenter" : {
-      "requisiti" : ["R1F4.2.5.3"]
+      "requisiti" : ["R1F4.1", "R1F4.1.1", "R1F4.1.2", "R1F4.2.3.3"]
     },
     "InputListInfoViewImpl" : {
-      "requisiti" : ["R1F4.2.5.3"]
+      "requisiti" : ["R1F4.1", "R1F4.1.1", "R1F4.2.3.3"]
     }
   },
   "application.feature.modify_item" : {
     "ModifyItemView" : {
-      "requisiti" : ["R1F4.2.3.1", "R1F4.2.3.2", "R1F4.2.3.4", "R1F4.2.3.5", "R1F4.2.3.6"]
+      "requisiti" : ["R1F4.2.3.1", "R1F4.2.3.5", "R1F4.2.3.5", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8" , "R1F4.2.3.6", "R1F4.1"]
     },
     "ModifyItemViewPresenter" : {
-      "requisiti" : ["R1F4.2.3.1", "R1F4.2.3.2", "R1F4.2.3.4", "R1F4.2.3.3", "R1F4.2.3.5", "R1F4.2.3.6", "R1F4.2.3.8", "R1F4.2.3.9", "R1F4.2.5.1", "R1F4.2.5.4", "R1F4.2.5.6", "R1F4.2.5.7", "R1F4.2.5.8"]
+      "requisiti" : ["R1F4.1", "R1F4.2.3.1", "R1F4.2.3.2", "R1F4.2.3.5", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8" , "R1F4.2.3.6", "R1F4.2.3.9", "R1F4.2.5.8"]
     },
     "ModifyItemViewImpl" : {
-      "requisiti" : ["R1F4.2.3.1", "R1F4.2.3.2", "R1F4.2.3.4", "R1F4.2.3.5", "R1F4.2.3.6"]
+      "requisiti" : ["R1F4.1", "R1F4.2.3.1", "R1F4.2.3.2", "R1F4.2.3.5", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8" , "R1F4.2.3.6"]
     }
   },
   "application.feature.remove_item" : {
     "RemoveItemView" : {
-      "requisiti" : ["R1F4.2.4", "R1F4.2.4"]
+      "requisiti" : ["R1F4.1", "R1F4.2.4"]
     },
     "RemoveItemViewPresenter" : {
-      "requisiti" : ["R1F4.2.4", "R1F4.2.4"]
+      "requisiti" : ["R1F4.1", "R1F4.2.4"]
     },
     "RemoveItemViewImpl" : {
-      "requisiti" : ["R1F4.2.4", "R1F4.2.4"]
+      "requisiti" : ["R1F4.1", "R1F4.2.4"]
     }
   },
   "application.feature.sharewithcontact" : {
     "ShareWithContactView" : {
-      "requisiti" : [ "R1F4.2.2", "R1F4.2.3", "R1F4.2.4", "R1F4.2.5", "R1F4.2.6"]
+      "requisiti" : ["R1F4.3.1.4", "R1F4.3.1.5", "R1F4.3.1.7"]
     },
     "ShareWithContactViewPresenter" : {
-      "requisiti" : ["R1F4.2.2", "R1F4.2.3", "R1F4.2.4", "R1F4.2.5", "R1F4.2.6", "R1F4.3.1.4", "R1F4.3.1.6", "R1F4.3.1.7"]
+      "requisiti" : ["R1F4.3.1.4", "R1F4.3.1.5", "R1F4.3.1.7"]
     },
     "ShareWithContactViewImpl" : {
-      "requisiti" : [ "R1F4.2.2", "R1F4.2.3", "R1F4.2.4", "R1F4.2.5", "R1F4.2.6"]
+      "requisiti" : ["R1F4.3.1.4", "R1F4.3.1.5", "R1F4.3.1.7"]
     }
   },
   "application.feature.sharewithgroup" : {
     "ShareWithGroupView" : {
-      "requisiti" : ["R1F4.2.2", "R1F4.2.3", "R1F4.2.4", "R1F4.2.5", "R1F4.2.6"]
+      "requisiti" : ["R1F4.3.1.1", "R1F4.3.1.2",  "R1F4.3.1.5"]
     },
     "ShareWithGroupViewPresenter" : {
-      "requisiti" : ["R1F4.2.2", "R1F4.2.3", "R1F4.2.4", "R1F4.2.5", "R1F4.2.6", "R1F4.3.1.6"]
+      "requisiti" : ["R1F4.3.1.1", "R1F4.3.1.2", "R1F4.3.1.3", "R1F4.3.1.5"]
     },
     "ShareWithGroupViewImpl" : {
-      "requisiti" : ["R1F4.2.2", "R1F4.2.3", "R1F4.2.4", "R1F4.2.5", "R1F4.2.6"]
+      "requisiti" : ["R1F4.3.1.1", "R1F4.3.1.2",  "R1F4.3.1.5"]
     }
   },
   "application.feature.list_data" : {
     "ListData" : {
-      "requisiti" : []
+      "requisiti" : ["R1F4", "R1F4.1", "R1F4.2.4"]
     },
     "ListItem" : {
-      "requisiti" : []
+      "requisiti" : ["R1F4.1", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5", "R1F4.2.3.1", "R1F4.2.3.4", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8"]
     }
   },
   "application.feature.usecase" : {
     "ForwardListUseCase" : {
-      "requisiti" : ["R1F4.3.2", "R1F4.3.3", "R1F4.3.4", "R1F4.3.5"]
+      "requisiti" : ["R1F4.3.2", "R1F4.3.3", "R1F4.3.4", "R1F4.3.5", "R1F4.3.4", "R1F4.3.5"]
     },
     "GetItemInfoUseCase" : {
-      "requisiti" : ["R1F4.2.5.5"]
+      "requisiti" : ["R1F4.2.5.1", "R1F4.2.5.2", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8" ]
     },
     "GetListInfoUseCase" : {
-      "requisiti" : ["R1F4.2.5.9"]
+      "requisiti" : ["R1F4.2.5.7", "R1F4.2.5.9"]
     },
     "ManageListUseCase" : {
-      "requisiti" : []
+      "requisiti" : ["R1F4", "R1F4.1"]
     },
     "ModifyListUseCase" : {
-      "requisiti" : ["R1F4.1.4", "R1F4.1.5", "R1F4.1.5", "R1F4.2.5.9", "R1F4.3.1.2"]
+      "requisiti" : ["R1F4.1.1", "R1F4.1.2", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5", "R1F4.2.2", "R1F4.2.3.1", "R1F4.2.3.3", "R1F4.2.3.4", "R1F4.2.3.8", "R1F4.2.3.6", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8", "R1F4.2.6", "R1F4.2.4"]
     },
     "ShareListUseCase" : {
-      "requisiti" : ["R1F4.2.2", "R1F4.2.3", "R1F4.3.1.1"]
+      "requisiti" : ["R1F4.2.3", "R1F4.2.3.5", "RIF4.2.5", "R1F4.3.1.1", "R1F4.3.1.2", "R1F4.3.1.4", "R1F4.3.1.6", "R1F4.3.1.7"]
     },
     "ShowPopupUseCase" : {
-      "requisiti" : []
+      "requisiti" : ["R1F4.3.1.1", "R1F4.3.1.2", "R1F4.3.1.3", "R1F4.3.1.4", "R1F4.3.1.6", "R1F4.3.1.7", "R1F4.3.2"]
     }
   }
 }

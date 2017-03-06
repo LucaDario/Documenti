@@ -1,5 +1,6 @@
+\newpage
 \subsection{Applicazione}
-In questi scenari faremo largo uso della libreria\termine{ vue.js} per aggiornare le visualizzazioni, all'interno della chat, delle bolle lista modificate. Lo schema di attivazione è abbastanza semplice in quanto una volta passati al presenter della bolla lista i dati modificati, la libreria \termine {vue.js} si occuperà del aggiornamento in tutte le chat che dipendono dalla lista modificata.
+In questi scenari faremo largo uso della libreria\termine{vue.js} per aggiornare le visualizzazioni, all'interno della chat, delle bolle lista modificate. Lo schema di attivazione è abbastanza semplice in quanto una volta passati al presenter della bolla lista i dati modificati, la libreria \termine {vue.js} si occuperà del aggiornamento in tutte le chat che dipendono dalla lista modificata.
 \subsubsection{Creazione di una lista}
 
 \label{Creazione di una lista}
@@ -27,7 +28,7 @@ In questo scenario lo sviluppatore vuole cancellare la propria lista causando l'
 \subsubsection{Modifica di una lista}
 
 \label{Modifca di un lista}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=16cm, height=14cm]{Sezioni/Diagrammi/img/Aggiungere un messaggio di completamento al widget Checklist.png}
 	\caption{Modifica di una lista}
@@ -44,13 +45,13 @@ RICCARDO MONTAGNIN
 \subsubsection{Aggiunta di un Item}
 
 \label{Aggiunta di un Item}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=16cm, height=14cm]{Sezioni/Diagrammi/img/Creazione di un widget bottone.png}
 	\caption{Aggiunta di un Item}
 \end{figure}
 
-In questo scenario lo sviluppatore vuole aggiungere dei prodotti (chiamati \termine{item} nella nostra applicazione} alla lista da esso creata. Oppure vuole aggiungerli a una lista nella quale ha permessi di modifca. L'utente premendo il pulsante \textit{aggiungi item} farà emettere un evento che verrà catturato dalla classe \textit{AddItemViewImpl} che demanderà la gestione al suo presenter. Quest'ultimo attraverso il metodo \textit{showInputInfoView} recupererà l'html necessario per la corretta aggiunta di un item e successivamente attraverso la classe \textit{showPopUpUseCase} farà visualizzare a schermo le informazioni prima recuperate. L'utente una volta che ha inserito le informazioni desiderate premerà il pulsante di aggiunta del item. In questo modo verrà emesso l'evento di salvataggio che verrà poi catturato dalla classe \textit{InputItemInfoViewImpl} che si occuperà di creare l'item ed emettere un evento per l'avvenuta creazione ed infine la classe \textit{AddItemViewPresenter} si occuperà di memorizzare la  lista con il nuovo \termine{item} nel \termine{database}. Infine all'avvenuta modifca della lista nel \termine{database} verrano eseguiti i metodi nel presenter della bolla lista per aggiornare tutti le chat contenenti l'istanza della lista appena modificata. 
+In questo scenario lo sviluppatore vuole aggiungere dei prodotti (chiamati \termine{item} nella nostra applicazione) alla lista da esso creata. Oppure vuole aggiungerli a una lista nella quale ha permessi di modifca. L'utente premendo il pulsante \textit{aggiungi item} farà emettere un evento che verrà catturato dalla classe \textit{AddItemViewImpl} che demanderà la gestione al suo presenter. Quest'ultimo attraverso il metodo \textit{showInputInfoView} recupererà l'html necessario per la corretta aggiunta di un item e successivamente attraverso la classe \textit{showPopUpUseCase} farà visualizzare a schermo le informazioni prima recuperate. L'utente una volta che ha inserito le informazioni desiderate premerà il pulsante di aggiunta del item. In questo modo verrà emesso l'evento di salvataggio che verrà poi catturato dalla classe \textit{InputItemInfoViewImpl} che si occuperà di creare l'item ed emettere un evento per l'avvenuta creazione ed infine la classe \textit{AddItemViewPresenter} si occuperà di memorizzare la  lista con il nuovo \termine{item} nel \termine{database}. Infine all'avvenuta modifca della lista nel \termine{database} verrano eseguiti i metodi nel presenter della bolla lista per aggiornare tutti le chat contenenti l'istanza della lista appena modificata. 
 
 
 
@@ -58,7 +59,7 @@ In questo scenario lo sviluppatore vuole aggiungere dei prodotti (chiamati \term
 \subsubsection{Modifica Item}
 
 \label{Modifica Item}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=16cm, height=14cm]{Sezioni/Diagrammi/img/Creazione di una bolla aggiungendo un widget checklist.png}
 	\caption{Modifica Item}
@@ -69,7 +70,7 @@ In questo scenario lo sviluppatore vuole modificare le informazioni di un \termi
 \subsubsection{Rimozione Item}
 
 \label{Rimozione Item }
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=16cm, height=14cm]{Sezioni/Diagrammi/img/Aggiunta ad una bolla un Layout contenente due widget di testo.png}
 	\caption{Rimozione Item}
@@ -81,7 +82,7 @@ In questo scenario l'utente vuole eliminare un item dalla lista. Per farlo l'ute
 \subsubsection{Pubblicazione a un contatto}
 
 \label{Pubblicazione di un contatto}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=12cm, height=8cm]{Sezioni/Diagrammi/img/Creazione di una bolla MarkDownBubble.png}
 	\caption{Pubblicazione di un contatto}
@@ -93,7 +94,7 @@ In questo scenario l'utente vuole pubblicare la lista a un altro contatto, dando
 \subsubsection{Pubblicazione a un gruppo}
 
 \label{Pubblicazione a un gruppo}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=12cm, height=8cm]{Sezioni/Diagrammi/img/Creazione di una bolla AlertBubble.png}
 	\caption{Pubblicazione a un gruppo}
@@ -106,7 +107,7 @@ Simile allo scenario precedente in questo caso l'utente vuole condividere e dare
 \subsubsection{Inoltro a un contatto}
 
 \label{Inoltro a un contatto}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=12cm, height=8cm]{Sezioni/Diagrammi/img/Creazione di una bolla ToDoListBubble.png}
 	\caption{Inoltro a un contatto}
@@ -121,7 +122,7 @@ Quest'ultimo con il metodo \textit{forwardToContactWithId} inoltrerà la lista a
 \subsubsection{Inoltro a un gruppo}
 
 \label{Inoltro a un contatto}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=12cm, height=8cm]{Sezioni/Diagrammi/img/Creazione di una bolla ToDoListBubble.png}
 	\caption{Inoltro a un contatto}
@@ -135,7 +136,7 @@ Quest'ultimo con il metodo \textit{forwardToGroupWithId} inoltrerà la lista al 
 \subsubsection{Help}
 
 \label{Help}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=12cm, height=8cm]{Sezioni/Diagrammi/img/Creazione di una bolla ToDoListBubble.png}
 	\caption{Help}

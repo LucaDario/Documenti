@@ -103,7 +103,7 @@
         "Latex": "\\termine{Linguaggio di markup} usato per la preparazione di testi basato sul programma di composizione tipografica \\LaTeX",
         "Librerie": "Insieme di utility software",
         "Linguaggio Di Markup": "E' un insieme di regole che descrivono i meccanismi di rappresentazione (strutturali, semantici o presentazionali) di un testo che, utilizzando convenzioni standardizzate, sono utilizzabili su più supporti",
-        "Linting": "Processo tramite il quale vengono individuati potenziali errori tramite l'utilizzo di un programma",
+        "Linting": "Processo tramite il quale vengono individuati potenziali errori nel codice tramite l'utilizzo di un programma",
         "Log": "File o insieme di file su cui vengono memorizzate sequenzialmente e cronologicamente delle operazioni effettuate"
     },
     "M": {

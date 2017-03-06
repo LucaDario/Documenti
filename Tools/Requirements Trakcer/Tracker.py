@@ -33,9 +33,9 @@ def print_table(name, column1, column2, data):
     section_file.write("\t\\begin{longtable}{|p{7cm}|p{5cm}|}\\hline\n")
     section_file.write("\t\t" + column1 + " & " + column2 + " \\\\ \\hline\n")
     for row in data:
-        section_file.write("\t\t" + row + " & ")
+        section_file.write("\t\t" + row.replace("_", "\_") + " & ")
         for item in data[row]:
-            section_file.write(item + " \\\\ & ")
+            section_file.write(item.replace("_", "\_") + " \\\\ & ")
         section_file.write("\\\\ \\hline\n")
     section_file.write("\t\\end{longtable}\n")
     section_file.write("\\end{center}\n")

@@ -76,7 +76,6 @@ Ottimale: [0 −- 4].
 \end{itemize}
 
 \subsubsection{Livello di stabilità}
-Per la descrizione di questa metrica si rimanda alle \NdP. \\
 
 \begin{displaymath}
 {\text{Accoppiamento Afferente}}\over{\text{Accoppiamento Afferente} + \text{Accoppiamento Efferente}}
@@ -89,6 +88,28 @@ Accettazione: [0.0 −- 0.8];
 \item
 Ottimale: [0.0 −- 0.3].
 \end{itemize}
+
+\subsection{Astrattezza}
+
+Un buon valore per questa metrica trovato dal gruppo deve essere maggiore o uguale a:
+\begin{displaymath}
+	\frac{1}{7}
+\end{displaymath}
+
+\subsection{Distanza dalla sequenza principali}
+
+\begin{displaymath}
+{|\text{Astratezza} + \text{Livello di stabilità} - 1|}
+\end{displaymath}
+
+Intervalli richiesti:
+\begin{itemize}
+\item
+Accettazione: [0.0 −- 0.3];
+\item
+Ottimale: [0.0 −- 0.1].
+\end{itemize}
+
 
 \subsection{Funzionalità}
 Rappresenta la capacità del prodotto di fornire tutte le funzioni che sono state individuate attraverso l'\AdR.

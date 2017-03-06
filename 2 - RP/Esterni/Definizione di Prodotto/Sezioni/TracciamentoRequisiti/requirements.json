@@ -1,0 +1,10 @@
+{
+  "package" : {
+    "classe1" : {
+      "requisiti" : ["RC1", "RC2"]
+    },
+    "classe2" : {
+      "requisiti" : ["RC1", "RC2"]
+    }
+  }
+}

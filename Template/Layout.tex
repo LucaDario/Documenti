@@ -25,6 +25,9 @@
 \usepackage{eurosym}
 \usepackage{amsmath}
 \usepackage{relsize}
+\usepackage{placeins}
+\usepackage{ltablex}
+\usepackage{float}
 
 \usepackage[multidot]{grffile}
 \usepackage{xcolor,colortbl}
@@ -74,27 +77,9 @@
 
 \setcounter{secnumdepth}{7}
 \setcounter{tocdepth}{7}
-%
-%
-%\titleformat{\paragraph}
-%{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
-%\titlespacing*{\paragraph}
-%{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
-%
-%
-%\titleclass{\subsubparagraph}{straight}[\subparagraph]
-%\newcounter{subsubparagraph}
-%
-%\titleformat{\subsubparagraph}[display]
-%  {\normalfont\normalsize\bf}
-%  {\thesubsubparagraph.}
-%  {.5em}
-%  {}
-%\renewcommand\thesubsubparagraph\textbf{\roman{subsubparagraph}}
-%\titlespacing*{\subsubparagraph} {0pt}{4pt}{6pt}
 
 
-%***LA SOTTOSEZIONE PARAGRAPH VIENE VISUALIZZATA COME UNA SECTION
+% Visualizza paragraph come una section
 \titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
 \titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 

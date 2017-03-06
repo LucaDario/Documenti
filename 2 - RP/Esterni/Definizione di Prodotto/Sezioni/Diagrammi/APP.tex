@@ -6,7 +6,7 @@ In questi scenari faremo largo uso della libreria\termine{vue.js} per aggiornare
 \label{Creazione di una lista}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=16cm, height=14cm]{Sezioni/Diagrammi/img/Creazione di un widget immagine.png}
+	\includegraphics[ width=\textwidth]{Sezioni/Diagrammi/img_app/creazione_lista.jpg}
 	\caption{Creazione di una lista}
 \end{figure}
 
@@ -19,7 +19,7 @@ Questo scenario rappresenta l'utente che vuole creare una nuova lista nella chat
 \label{Cancellazione di una lista}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=16cm, height=14cm]{Sezioni/Diagrammi/img/Creazione di un widget CheckList.png}
+	\includegraphics[width=16cm, height=14cm, angle=90]{Sezioni/Diagrammi/img_app/cancellare_lista.jpg}
 	\caption{Cancellazione di una lista}
 \end{figure}
 
@@ -30,16 +30,24 @@ In questo scenario lo sviluppatore vuole cancellare la propria lista causando l'
 \label{Modifca di un lista}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=16cm, height=14cm]{Sezioni/Diagrammi/img/Aggiungere un messaggio di completamento al widget Checklist.png}
+	\includegraphics[width=16cm, height=14cm]{Sezioni/Diagrammi/img_app/modifica_lista.jpg}
 	\caption{Modifica di una lista}
 \end{figure}
 
 In questo scenario lo sviluppatore vuole modifcare una lista cambiando, ad esempio, il suo nome o l'immagine ad essa associata. L'utente premendo il bottone modifica lista attiverà l'emissione di un evento che verrà catturato dalla classe \textit{ChangeListViewImpl} e demanderà la  gestione al suo presenter. Quest'ultimo attraverso il suo  metodo \textit{showInputListView} gli ritornerà l'html per la modifica della lista completa di tutte le informazioni di essa presenti nel \termine{database}. Successivamente richiamando il metodo \textit{showPopUp} si visualizzerà a schermo  le informazioni prima ottenute con la possibilità di modificarle. Una volta modificate le informazioni desiderate l'utente premerà il pulsante di conferma modifica in questo modo verrà emmesso l'evento di salvataggio che verrà catturato dalla classe \textit{InpuListInfoViewImpl} e successivamente demandato alla classe \textit{ChangeListPresenter} che si occuperà di salvare le modifiche nel \termine{database}.
 All'avvenuta modifica della lista  verrà emesso l'evento che attiverà i metodi nel presenter della bolla lista per aggiornare tutte le chat contenti l'istanza di quella lista.
  
-\subsubsection{Iterazione con lista [RICCARDO MONTAGNIN}
+\subsubsection{Interazione con lista }
 
-RICCARDO MONTAGNIN
+\label{Interaione con lista}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=16cm, height=14cm]{Sezioni/Diagrammi/img_app/Checklist_diagram.jpg}
+	\caption{Interaione con lista}
+\end{figure}
+
+In questo scenario l'utente vuole spuntare un \termine{item} per segnarlo come \textit{acquistato}.
+Per farlo l'utente clicca sul segno del quadrato, il click viene passato dalla bolla alla checklsit contenuta in essa, quindi viene emittato l'evento \textit{onItemClicked} identificando l'oggetto premuto. Ora lo usecase si occupa di aggiornare la lista chiamando il metodo \textit{updateItemInsideList} che chiama il metodo changeList di DatabaseSource per aggiornare la lista memorizzata. Una volta aggiornata, viene lanciato l'evento onChangedList che comunica l'avvenuto cambiamento.
 
 
 \subsubsection{Aggiunta di un Item}
@@ -47,7 +55,7 @@ RICCARDO MONTAGNIN
 \label{Aggiunta di un Item}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=16cm, height=14cm]{Sezioni/Diagrammi/img/Creazione di un widget bottone.png}
+	\includegraphics[width=16cm, height=14cm]{Sezioni/Diagrammi/img_app/aggiunta_item.jpg}
 	\caption{Aggiunta di un Item}
 \end{figure}
 
@@ -61,7 +69,7 @@ In questo scenario lo sviluppatore vuole aggiungere dei prodotti (chiamati \term
 \label{Modifica Item}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=16cm, height=14cm]{Sezioni/Diagrammi/img/Creazione di una bolla aggiungendo un widget checklist.png}
+	\includegraphics[width=16cm, height=14cm]{Sezioni/Diagrammi/img_app/modifica_item.jpg}
 	\caption{Modifica Item}
 \end{figure}
 
@@ -72,7 +80,7 @@ In questo scenario lo sviluppatore vuole modificare le informazioni di un \termi
 \label{Rimozione Item }
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=16cm, height=14cm]{Sezioni/Diagrammi/img/Aggiunta ad una bolla un Layout contenente due widget di testo.png}
+	\includegraphics[width=16cm, height=14cm]{Sezioni/Diagrammi/img_app/rimozione_item.jpg}
 	\caption{Rimozione Item}
 	
 \end{figure}
@@ -84,7 +92,7 @@ In questo scenario l'utente vuole eliminare un item dalla lista. Per farlo l'ute
 \label{Pubblicazione di un contatto}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=12cm, height=8cm]{Sezioni/Diagrammi/img/Creazione di una bolla MarkDownBubble.png}
+	\includegraphics[width=12cm, height=8cm]{Sezioni/Diagrammi/img_app/publicazione_con_contatto.jpg}
 	\caption{Pubblicazione di un contatto}
 	
 \end{figure}
@@ -96,7 +104,7 @@ In questo scenario l'utente vuole pubblicare la lista a un altro contatto, dando
 \label{Pubblicazione a un gruppo}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=12cm, height=8cm]{Sezioni/Diagrammi/img/Creazione di una bolla AlertBubble.png}
+	\includegraphics[width=12cm, height=8cm]{Sezioni/Diagrammi/img_app/publicazione_con_gruppo.jpg}
 	\caption{Pubblicazione a un gruppo}
 	
 \end{figure}
@@ -109,7 +117,7 @@ Simile allo scenario precedente in questo caso l'utente vuole condividere e dare
 \label{Inoltro a un contatto}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=12cm, height=8cm]{Sezioni/Diagrammi/img/Creazione di una bolla ToDoListBubble.png}
+	\includegraphics[width=12cm, height=8cm]{Sezioni/Diagrammi/img_app/forward_contatto.jpg}
 	\caption{Inoltro a un contatto}
 	
 \end{figure}
@@ -124,7 +132,7 @@ Quest'ultimo con il metodo \textit{forwardToContactWithId} inoltrerà la lista a
 \label{Inoltro a un contatto}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=12cm, height=8cm]{Sezioni/Diagrammi/img/Creazione di una bolla ToDoListBubble.png}
+	\includegraphics[width=12cm, height=8cm]{Sezioni/Diagrammi/img_app/forward_con_gruppo.jpg}
 	\caption{Inoltro a un contatto}
 	
 \end{figure}
@@ -138,7 +146,7 @@ Quest'ultimo con il metodo \textit{forwardToGroupWithId} inoltrerà la lista al 
 \label{Help}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=12cm, height=8cm]{Sezioni/Diagrammi/img/Creazione di una bolla ToDoListBubble.png}
+	\includegraphics[width=12cm, height=8cm]{Sezioni/Diagrammi/img_app/Help.jpg}
 	\caption{Help}
 	
 \end{figure}

@@ -111,7 +111,7 @@ if __name__ == '__main__':
         camel_code_title = remove_accents(title.title().replace(" ", "") + ".tex")
         section_file = open(camel_code_title, 'w')
         section_file.write("\\begin{center}\n")
-        section_file.write("\t\\begin{longtable}{|c|>{\centering}m{7cm}|c|}\\hline\n")
+        section_file.write("\t\\begin{longtable}{|c|>{\centering}m{10cm}|c|}\\hline\n")
         section_file.write("\t\tId & Descrizione & stato \\\\ \\hline\n")
         for id, test in section:
             implemented_tex = 'Non implementato'

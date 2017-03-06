@@ -209,7 +209,7 @@
         "approved": false
       },
       {
-        "description": "Verificare che all'instanziazione di una lista della spaesa venga impostato il valore du default per il nome della lista",
+        "description": "Verificare che all'instanziazione di una lista della spesa venga impostato il valore du default per il nome della lista",
         "implemented": false,
         "approved": false
       },
@@ -677,6 +677,20 @@
         "importance": "O"
       },
       {
+        "description": "Viene verificato che la dimensione del'immagine all'interno di un widget di tipo immagine sia corretta",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "F"
+      },
+      {
+        "description": "Viene verificato che previsto un messaggio di errore da visualizzare nel qual caso lo sviluppatore non associ una immagine ad un widget immagine oppure tenti di associarne una non supportata",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
         "description": "Viene verificato che sia possibile creare un widget di tipo bottone",
         "implemented": false,
         "approved": false,
@@ -698,21 +712,84 @@
         "importance": "O"
       },
       {
+        "description": "Viene verificato che sia possibile spuntare un elemento di un widget checklist",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che la spunta di un elemento di un widget checklist sia rappresentato mediate una spunta",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che la spunta di un elemento di un widget checklist sia rappresentato mediate una \"x\"",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "D"
+      },
+      {
+        "description": "Viene verificato che la spunta di un elemento di un widget checklist sia rappresentato mediate la colorazione della casella di spunta",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "D"
+      },
+      {
         "description": "Viene verificato che sia possibile creare un widget personalizzato",
         "implemented": false,
         "approved": false,
         "type": "F",
-        "importance": "O"
+        "importance": "D"
       },
       {
-        "description": "Viene verificato che i widget si dispongano in modo corretto",
+        "description": "Viene verificato che i widget si dispongano in verticale all'interno di un VerticalLayoutView",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile creare delle bolle personalizzate componendo dei widget",
+        "description": "Viene verificato che i widget si dispongano in orizzontale all'interno di un HorizzontalLayoutView",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile aggiungere un widget all'interno di un VerticalLayoutView",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile aggiungere un widget all'interno di un HorizzontalLayoutView",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile creare un layout personalizzato",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "F"
+      },
+      {
+        "description": "Viene verificato che sia possibile aggiungere un widget all'interno di una bolla",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile aggiungere un layout all'interno di una bolla",
         "implemented": false,
         "approved": false,
         "type": "F",
@@ -745,6 +822,83 @@
         "approved": false,
         "type": "F",
         "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile creare una bolla \"lista della spesa\"",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verifica che sia possibile aggiungere un elemento ad una bolla \"lista della spesa\"",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verifica che sia possibile rimuovere un elemento ad una bolla \"lista della spesa\"",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verifica che sia possibile spuntare un elemento di una bolla \"lista della spesa\"",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verifica che sia possibile condividere una bolla \"lista della spesa\"",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verifica che l'sdk si installi correttamente in una istanza di Rocket.chat hostata su Heroku",
+        "implemented": false,
+        "approved": false,
+        "type": "V",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'sdk funzioni con il browser chrome versione >= 56",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'sdk funzioni con il browser safari versione >= 10",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'sdk funzioni con il browser opera versione >= 43",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'sdk funzioni con il browser firefox versione >= 45",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'sdk funzioni con il browser microsoft edge versione >= 13",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
       }
     ]
   },
@@ -754,11 +908,81 @@
     "skip_not_approved": false,
     "tests": [
       {
-        "description": "",
+        "description": "Viene verificato che sia possibile scaricare l'sdk trammite il gestore dei pacchetti npm",
         "implemented": false,
         "approved": false,
-        "type": "",
-        "importance": ""
+        "type": "V",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'sdk sia utilizzabile dal applicazione di demo",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile istanziare tutti i widget che sono inclusi nel sdk",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile istanziare tutti i layout che sono inclusi nel sdk",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile istanziare tutte le bolle che sono incluse nel sdk",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile comporre una bolla personalizzata mediante widget e layout",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che un generico utente possa creare un lista della spesa e pubblicarla al'interno di un canale Rockt.chat",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che un generico utente possa creare un lista della spesa e pubblicarla ad un singolo utente avente un account sul istanza Rocket.chat su cui è installata l'sdk",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che se un utente ha i permessi per interagire con una bolla qust'ultimo sia in grado di visualizzare gli elementi e di spuntarli",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che se un utente inoltra una lista della spesa qust'ultima venga inoltrata in forma testuale bloccando quindi ogni forma di interazione con l'utente",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene  verificato che tutti i file che contengono codice scritto in javascript o coffe script passino i test di linting",
+        "implemented": false,
+        "approved": false,
+        "type": "V",
+        "importance": "O"
       }
     ]
   }

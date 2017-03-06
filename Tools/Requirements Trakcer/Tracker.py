@@ -30,7 +30,7 @@ def load_requirements():
 def print_table(name, column1, column2, data):
     section_file = open(name + ".tex", 'w')
     section_file.write("\\begin{center}\n")
-    section_file.write("\t\\begin{longtable}{|p{7cm}|p{5cm}|}\\hline\n")
+    section_file.write("\t\\begin{longtable}{|p{7cm}|p{7cm}|}\\hline\n")
     section_file.write("\t\t" + column1 + " & " + column2 + " \\\\ \\hline\n")
     for row in data:
         section_file.write("\t\t" + row.replace("_", "\_") + " & ")

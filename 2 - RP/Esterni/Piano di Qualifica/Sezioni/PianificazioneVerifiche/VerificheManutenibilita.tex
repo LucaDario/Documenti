@@ -1,12 +1,12 @@
 \newpage
-\subsubsection{Verifiche di efficenza}
-In questa sezione verranno descritte come e quando effettuare le metriche incentrate sul'efficenza del prodotto.
+\subsubsection{Verifiche di manutenibilità}
+In questa sezione verranno descritte come e quando effettuare le misurazioni incentrate sull'efficienza del prodotto.
 
 \paragraph{Capacità di analisi di failure}
 \begin{itemize}
-\item \textbf{Chi:}
-\item \textbf{Quando:}
-\item \textbf{Come:}
+\item \textbf{Chi:} Jenkins e il \Prog
+\item \textbf{Quando:} Dopo ogni push o merge sul ramo della \termine{repository} contenente il codice della versione di produzione.
+\item \textbf{Come:} Dopo il push o il merge Jenkis eseguira i test e mostrera al \Prog quelli falliti il quale dovrà individuare le causde delle failure.
 \end{itemize}
 
 \paragraph{Impatto delle modifiche}

@@ -29,7 +29,7 @@
         "Capitolato": "Atto allegato a un contratto d'appalto che intercorre tra il cliente ed una ditta appaltatrice in cui vengono indicate modalità, costi e tempi di realizzazione dell'opera oggetto del contratto",
         "Caso D'Uso": "Tecnica usata nei processi di ingegneria del software per effettuare in maniera esaustiva e non ambigua, la raccolta dei requisiti al fine di produrre software di qualità",
         "Chai": "E' una libreria per verificare che lo stato di una variabile o oggetto sia quello desiderato",
-        "Checkbutton": "Componenete che ha due stati: selezionato e non selezionato",
+        "Checkbutton": "Componente che ha due stati: selezionato e non selezionato",
         "Ciclo Di Deming": "Metodo di gestione in quattro fasi, utilizzato in attività per il controllo e il miglioramento continuo dei processi e dei prodotti",
         "Clean Architecture": "Pattern Architetturale e ideato da Robert Cecil Martin",
         "Codifica": "Periodo durante il quale uno o più programmatori scrivono del codice (\\textit{codificano}) al fine di creare un prodotto software",
@@ -51,13 +51,13 @@
         "Dependency Injection": "Design pattern della Programmazione orientata agli oggetti il cui scopo è quello di semplificare lo sviluppo e migliorare la testabilità di software di grandi dimensioni",
         "Dependency Inversion Principle": "Tecnica di disaccoppiamento dei moduli software, che consiste nel rovesciare la pratica tradizionale secondo cui i moduli di alto livello dipendono da quelli di basso livello",
         "Design-Pattern": "Soluzione progettuale generale ad un problema ricorrente",
-        "Diagramma Di Gantt": "Strumento di supporto alla gestione dei progetti si rappresenta sotto forma di un grafico avente un asse orizzontale in cui vi è la rappresentazione dell'arco temporale totale del progetto, suddiviso in fasi incrementali (ad esempio, giorni, settimane, mesi) e da un asse verticale che mostra la rappresentazione delle mansioni o attività che costituiscono il progetto",
+        "Diagramma Di Gantt": "Strumento di supporto alla gestione dei progetti si rappresenta sotto forma di un grafico avente un asse orizzontale in cui vi è la rappresentazione dell'arco temporale totale del progetto, suddiviso in fasi incrementali (ad esempio, giorni, settimane, mesi) e da un asse verticale che mostra la rappresentazione delle mansioni o attività che costituiscono il progetto"
     },
     "E": {
         "Editing Bubble": "Bolla avente contenuto modificabile",
         "Efficacia": "Capacità di produrre l'effetto e i risultati voluti o sperati",
         "Efficienza": "Capacità di azione o di produzione con il minimo di scarto, di spesa, di risorse e di tempo impiegati",
-        "Event Listener": "Pattern comportamentale che permette di impostare delle azioni che devono essere eseguite al verificarsi di un particolare evento",
+        "Event Listener": "Pattern comportamentale che permette di impostare delle azioni che devono essere eseguite al verificarsi di un particolare evento"
     },
     "F": {
         "Font": "\\textit{eng. Tipo di carattere}. Insieme di caratteri tipografici caratterizzati e accomunati da un certo stile grafico o intesi per svolgere una data funzione",
@@ -90,7 +90,7 @@
         "Intellij Idea": "Un ambiente di sviluppo integrato \\termine{IDE}",
         "Inversion Of Control": "Pattern per cui un componente di livello applicativo riceve il controllo da un componente appartenente a un libreria riusabile",
         "Iso": "\\textit{eng. International Organization for Standardization, Organizzazione internazionale per la normazione}. La più importante organizzazione a livello mondiale per la definizione di norme tecniche",
-        "Issue": "\\textit{eng. Problema}. All'interno del mondo \\termine{Git}, una \\termine{issue} è una metodologia utilizzata per far presente agli sviluppatori al lavoro su una determinata \\termine{repository} che vi è un problema con il codice scritto in essa",
+        "Issue": "\\textit{eng. Problema}. All'interno del mondo \\termine{Git}, una \\termine{issue} è una metodologia utilizzata per far presente agli sviluppatori al lavoro su una determinata \\termine{repository} che vi è un problema con il codice scritto in essa"
     },
     "J": {
         "Javascript": "Linguaggio di scripting orientato agli oggetti e agli eventi, comunemente utilizzato nella programmazione Web lato client per la creazione, in siti web e applicazioni web, di effetti dinamici interattivi tramite funzioni di script invocate da eventi innescati a loro volta in vari modi dall'utente sulla pagina web in uso",
@@ -103,12 +103,12 @@
         "Latex": "\\termine{Linguaggio di markup} usato per la preparazione di testi basato sul programma di composizione tipografica \\LaTeX",
         "Librerie": "Insieme di utility software",
         "Linguaggio Di Markup": "E' un insieme di regole che descrivono i meccanismi di rappresentazione (strutturali, semantici o presentazionali) di un testo che, utilizzando convenzioni standardizzate, sono utilizzabili su più supporti",
-        "Linting": "Processo tramite il quale vengono individuati potenziali errori tramite l'utilizzo di un programma",
+        "Linting": "Processo tramite il quale vengono individuati potenziali errori nel codice tramite l'utilizzo di un programma",
         "Log": "File o insieme di file su cui vengono memorizzate sequenzialmente e cronologicamente delle operazioni effettuate"
     },
     "M": {
         "Manuale Utente": "Documento destinato all'utilizzatore finale del prodotto, contenente la documentazione del prodotto",
-        "Markdown": "linguaggio di markup con una sintassi del testo semplice progettata in modo che possa essere convertita in HTML e in molti altri formati usando uno strumento omonimo",
+        "Markdown": "Linguaggio di markup con una sintassi del testo semplice progettata in modo che possa essere convertita in HTML e in molti altri formati usando uno strumento omonimo",
         "Markup": "Sequenza di caratteri con cui si marcano gli elementi di un file di testo per assegnare loro determinate caratteristiche o funzioni",
         "Meteor.Js": "\\termine{Framework} per creare web app usando il linguaggio di programmazione \\termine{javascript}",
         "Microservizio": "Parte di un sistema che abbraccia l'approccio di implementazione a micro-servizi, ha la caratteristica di essere indipendente dagli altri moduli in modo tale da riuscire a sviluppare in modo agile sistemi distribuiti",
@@ -122,7 +122,7 @@
         "Monolith": "\\termine{SDK} che permette agli sviluppatori che operano su piattaforma \\termine{Rocket.chat} di creare varie tipologie di bolle differenti oppure di utilizzare quelle preesistenti"
     },
     "O": {
-        "Observer": "Design pattern basato su uno o più oggetti, chiamati osservatori o observer, che vengono registrati per gestire un evento che potrebbe essere generato dall'oggetto osservato, chiamato soggetto.",
+        "Observer": "Design pattern basato su uno o più oggetti, chiamati osservatori o observer, che vengono registrati per gestire un evento che potrebbe essere generato dall'oggetto osservato, chiamato soggetto",
         "Open Source": "Software per il quale viene reso pubblico anche il suo codice sorgente",
         "Organigramma": "Rappresentazione grafica di una struttura organizzativa corrente o in un certo momento storico"
     },
@@ -191,7 +191,7 @@
         "Uml": "\\textit{eng. Unified Modeling Language, Linguaggio di modellizzazione unificato}. Linguaggio di modellizzazione e specifica basato sul paradigma orientato agli oggetti",
         "Uniformità": "Costanza di aspetto o di comportamento",
         "Upper\\textunderscore Case": "Tecnica che consiste nel scrivere ogni lettera di una frase in maiuscolo rimpiazzando gli spazi con un underscore",
-        "Use Cases": "Tecnica usata nei processi di ingegneria del software per effettuare in maniera esaustiva e non ambigua, la raccolta dei requisiti al fine di produrre software di qualità"
+        "Use Case": "Tecnica usata nei processi di ingegneria del software per effettuare in maniera esaustiva e non ambigua, la raccolta dei requisiti al fine di produrre software di qualità"
     },
     "V": {
         "Validazione": "Fase del ciclo di vita di un prodotto software, all'interno della quale si vuole andare a confermare la sua \\termine{efficacia}",

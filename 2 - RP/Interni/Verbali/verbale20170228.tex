@@ -1,0 +1,59 @@
+\input{../../../Template/Layout.tex}
+\input{../../../Template/Comandi.tex}
+
+% Comandi per generare l'intro
+\newcommand{\documento}{Verbale riunione 28/02/2017}
+\newcommand{\versione}{1.0.0}
+\newcommand{\redatori}{\FB}
+\newcommand{\revisori}{\RM}
+\newcommand{\approvazione}{\DC}
+\newcommand{\statoapprovazione}{Approvato}
+% Quando il documento sarà approvato, inserire all'interno del comando seguente la data nel formato GG mese AAAA dove GG è il giorno a due cifre, mese è il mese scritto per esteso con la prima lettera minuscola, e AAAA è l'anno a quattro cifre
+\newcommand{\dataApprovazione}{1 marzo 2017}
+\newcommand{\uso}{Esterno}
+\newcommand{\destinatari}{\RB\\ & \gruppo\\ & \TV\\ & \RC}
+
+\newcommand{\sommario}{Verbale di incontro tra i membri del gruppo \gruppo.
+}
+
+% Comandi per generare il verbale
+\newcommand{\data}{28 febbraio 2017}
+\newcommand{\luogo}{Torre Archimede - Via Trieste, 63 Padova}
+\newcommand{\durata}{1 ora}
+\newcommand{\partecipanti}{
+\begin{itemize}
+\item \textbf{\gruppo}
+		\begin{itemize}
+			\item \LD
+			\item \SL
+			\item \ND
+			\item \DC
+			\item \FB
+			\item \MT
+			\item \RM
+		\end{itemize}
+\end{itemize}
+}
+\newcommand{\ordineDelGiorno}{
+\begin{enumerate}
+	\item Discussione sull'utilizzo di framework esterni per implementare il design architetturale Model \termine{View} \termine{Presenter} in seguito all'incontro per la RP-Max.
+\end{enumerate}
+}
+
+\newcommand{\contenuto}{
+\begin{enumerate}
+	\item Il gruppo \gruppo\ ha discusso sull'utilizzo di framework esterni per implementare il design architetturale Model \termine{View} \termine{Presenter} a seguito del consiglio dato dal professor Cardin. A tal senso si erano presi in considerazione:
+	\begin{itemize}
+	\item riot.js
+	\item vue.js.
+	\end{itemize}
+	Dopo un'attenta analisi si è optato per l'utilizzo di vue.js poiché risultato essere più completo e più adatto alle necessità del gruppo per lo svolgimento dell'attività di codifica.
+\end{enumerate}
+}
+
+
+\begin{document}
+\input{../../../Template/Intro.tex}
+\input{../../../Template/Verbale.tex}
+
+\end{document}

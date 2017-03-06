@@ -76,7 +76,6 @@ Ottimale: [0 −- 4].
 \end{itemize}
 
 \subsubsection{Livello di stabilità}
-Per la descrizione di questa metrica si rimanda alle \NdP. \\
 
 \begin{displaymath}
 {\text{Accoppiamento Afferente}}\over{\text{Accoppiamento Afferente} + \text{Accoppiamento Efferente}}
@@ -85,10 +84,38 @@ Per la descrizione di questa metrica si rimanda alle \NdP. \\
 Intervalli richiesti:
 \begin{itemize}
 \item
+Accettazione: [0.0 −- 1];
+\item
+Ottimale: [0.0 −- 0.6].
+\end{itemize}
+
+\subsection{Astrattezza}
+
+\begin{displaymath}
+{\text{Numero classi astratte e interfacce}}\over{\text{Numero totale classi}}
+\end{displaymath}
+
+\begin{itemize}
+\item
 Accettazione: [0.0 −- 0.8];
 \item
 Ottimale: [0.0 −- 0.3].
 \end{itemize}
+
+\subsection{Distanza dalla sequenza principale}
+
+\begin{displaymath}
+{|\text{Astratezza} + \text{Livello di stabilità} - 1|}
+\end{displaymath}
+
+Intervalli richiesti:
+\begin{itemize}
+\item
+Accettazione: [0.0 −- 1];
+\item
+Ottimale: [0.0 −- 0.4].
+\end{itemize}
+
 
 \subsection{Funzionalità}
 Rappresenta la capacità del prodotto di fornire tutte le funzioni che sono state individuate attraverso l'\AdR.

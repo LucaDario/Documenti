@@ -5,7 +5,7 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 \begin{itemize}
 \item Suddivizione più più logica dei vari package e classi.
 \item Aumenta la manutenibilità del codice nel tempo.
-\item 
+\item
 \end{itemize}
 
 \subsubsection{Suddivisione in package  di \termine{Monolith}}
@@ -22,7 +22,7 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\item{monolith::bubble}: package contenente tutti i package che compongono le bolle ed esso ha una dipendenza con il il package component.
 	\item{monolith::component}: package contenente tutti i package dei componenti che compongono le bolle, ad esempio tutti i tipi di widget e layout.
 	\end{itemize}
-	
+
 \end{itemize}
 
 
@@ -40,9 +40,9 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\item{monolith::bubble::todolist}: package contenente la classe per creare una bolla di tipo \termine{ToDoList}.
 	\item{monolith::component::markdown}: package contenente la classe per creare una bolla di tipo \termine{markdown}.
 	\item{monolith::component::alert}: package contenente la classe per creare una bolla di tipo \termine{alert}.
-	
+
 	\end{itemize}
-	
+
 \end{itemize}
 
 \subsubsection{Suddivisione in package  di Monolith::bubble::todolist}
@@ -59,7 +59,7 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\item{monolith::bubble::ToDoListBubble}: classe per creare la bolla di tipo \termine{ToDoList}.
 	\end{itemize}
 \end{itemize}
-	
+
 \subsubsection{Suddivisione in package  di Monolith::bubble::markdown}
 \label{Monolith::bubble::markdown}
 \begin{figure}[H]
@@ -107,7 +107,7 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\item{monolith::component::widget}: package contenente tutti i package per la creazione di un \termine{widget}.
 	\item{monolith::component::BaseComponent}: classe interfaccia per un component base.
 	\end{itemize}
-	
+
 \end{itemize}
 
 \subsubsection{Suddivisione in package  di Monolith::component::layout}
@@ -125,7 +125,7 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\item{monolith::component::layout::horizontal}: package contenente tutti i package e classi per la creazione di un \termine{layout orizzontale}.
 	\item{monolith::component::layout:BaseLayout}: classe interfaccia per un layout base.
 	\end{itemize}
-	
+
 \end{itemize}
 
 
@@ -207,7 +207,7 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\item{monolith::component::widget::image}: package contenente tutti i package e classi per la creazione di un \termine{widget image}, ha una dipendenza con l'interfaccia BaseWidgetView.
 	\item{monolith::component::widget::BaseWidget}: classe interfaccia per un widget base.
 	\end{itemize}
-	
+
 \end{itemize}
 
 \subsubsection{Suddivisione in package  di Monolith::component::widget::button}
@@ -226,7 +226,7 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\item{monolith::component::widget::button::option}: package contenente tutte le classi per le option di un widget button.
 	\item{monolith::component::widget::ButtonWidgetView}: classe interfaccia per un widget button.
 	\end{itemize}
-	
+
 \end{itemize}
 
 
@@ -294,7 +294,7 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\item{monolith::component::widget::checklist::option}: package contenente tutte le classi per le option di un widget checklist.
 	\item{monolith::component::widget::CheckListWidgetView}: classe interfaccia per un widget checklist.
 	\end{itemize}
-	
+
 \end{itemize}
 
 
@@ -364,7 +364,7 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\item{monolith::component::widget::image::option}: package contenente tutte le classi per le option di un widget image.
 	\item{monolith::component::widget::image:ImageWidgetView}: classe interfaccia per un widget image.
 	\end{itemize}
-	
+
 \end{itemize}
 
 
@@ -433,7 +433,7 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\item{monolith::component::widget::list::option}: package contenente tutte le classi per le option di un widget list.
 	\item{monolith::component::widget::list:ListWidgetView}: classe interfaccia per un widget .
 	\end{itemize}
-	
+
 \end{itemize}
 
 
@@ -504,7 +504,7 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\item{monolith::component::widget::text::option}: package contenente tutte le classi per le option di un widget text.
 	\item{monolith::component::widget::text:TextWidgetView}: classe interfaccia per un widget text.
 	\end{itemize}
-	
+
 \end{itemize}
 
 
@@ -562,4 +562,5 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 
 
 
+\input{Sezioni/Packages/App.tex}
 \newpage

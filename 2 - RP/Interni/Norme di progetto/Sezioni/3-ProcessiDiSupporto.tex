@@ -305,8 +305,6 @@ Indica la percentuale di requisiti funzionali coperti dall'implementazione.
 	\item \textbf{Misurazione}: 
 		$$C=\left(1-\mathlarger{\frac{N_{FM}}{N_{FI}}}\right) \cdot 100$$ 
 	dove $N_{FM}$ è il numero di funzionalità mancanti nell'implementazione e $N_{FI}$ è il numero di funzionalità individuate nell'attività di analisi.
-	\item \textbf{Range ottimale}: 100.
-	\item \textbf{Range di accettazione}: 100.
 \end{itemize}
 
 \paragraph{Accuratezza rispetto alle attese}
@@ -315,8 +313,6 @@ Indica la percentuale di risultati concordi alle attese.
 	\item \textbf{Misurazione}: 
 		$$A=\left(1-\mathlarger{\frac{N_{RD}}{N_{TE}}}\right) \cdot 100$$
 	dove $N_{RD}$ è il numero di test che producono risultati discordanti rispetto alle attese e $N_{TE}$ è il numero di test-case eseguiti.
-	\item \textbf{Range ottimale}: 100.
-	\item \textbf{Range di accettazione}: 90 -- 100.
 \end{itemize}
 
 \paragraph{Controllo degli accessi}
@@ -325,8 +321,6 @@ Indica la percentuale di operazioni illegali non bloccate.
 	\item \textbf{Misurazione}: 
 		$$I=\mathlarger{\frac{N_{IE}}{N_{II}}} \cdot 100$$
 	dove $N_{IE}$ è il numero di operazioni illegali effettuabili dai test e $N_{II}$ è il numero di operazioni illegali individuate.
-	\item \textbf{Range ottimale}: 0.
-	\item \textbf{Range di accettazione}: 0 -- 10.
 \end{itemize}
 
 \subsubsection{Qualità di affidabilità}
@@ -337,8 +331,6 @@ Indica la percentuale di operazioni di testing che si sono concluse in falliment
 	\item \textbf{Misurazione}: 
 		$$F=\mathlarger{\frac{N_{FR}}{N_{TE}}} \cdot 100$$
 	dove $N_{FR}$ è il numero di fallimenti rilevati durante l'attività di testing e $N_{TE}$ è il numero di test-case eseguiti.
-	\item \textbf{Range ottimale}: 0.
-	\item \textbf{Range di accettazione}: 0 -- 10.
 \end{itemize}
 
 \paragraph{Blocco di operazioni non corrette}
@@ -347,8 +339,6 @@ Indica la percentuale di funzionalità in grado di gestire correttamente i \text
 	\item \textbf{Misurazione}: 
 		$$B=\mathlarger{\frac{N_{FE}}{N_{ON}}} \cdot 100$$
 	dove $N_{FE}$ è il numero di \textit{failure} evitati durante i test effettuati e $N_{ON}$ è il numero di test-case eseguiti che prevedono l'esecuzione di operazioni non corrette, causa di possibili \textit{failure}.
-	\item \textbf{Range ottimale}: 100.
-	\item \textbf{Range di accettazione}: 80 -- 100.
 \end{itemize}
 
 \subsubsection{Qualità di usabilità}
@@ -358,16 +348,12 @@ Indica la percentuale di operazioni comprese in modo immediato dall'utente, senz
 	\item \textbf{Misurazione}: 
 		$$C=\mathlarger{\frac{N_{FC}}{N_{FO}}} \cdot 100$$
 	dove $N_{FC}$ è il numero di funzionalità comprese in modo immediato dall'utente durante l'attività di testing del prodotto e $N_{FO}$ è il numero di funzionalità offerte dal sistema.
-	\item \textbf{Range ottimale}: 90 -- 100.
-	\item \textbf{Range di accettazione}: 80 -- 100.
 \end{itemize}
 
 \paragraph{Facilità di apprendimento delle funzionalità}
 Indica il tempo medio impiegato dall'utente nell'imparare ad usare correttamente una data funzionalità.
 \begin{itemize}
 	\item \textbf{Misurazione}: indicatore numerico, espresso in minuti, che tiene traccia del tempo medio impiegato dall'utente nell'apprendere il corretto utilizzo di una funzionalità offerta dal sistema.
-	\item \textbf{Range ottimale}: 0 -- 15.
-	\item \textbf{Range di accettazione}: 0 -- 30.
 \end{itemize}
 
 \paragraph{Consistenza operazionale in uso}
@@ -376,8 +362,6 @@ Indica la percentuale di messaggi e funzionalità offerte all'utente che rispett
 	\item \textbf{Misurazione}: 
 		$$C=\left(1-\mathlarger{\frac{N_{MFI}}{N_{MFO}}}\right) \cdot 100$$
 	dove $N_{MFI}$ è il numero di messaggi e funzionalità che non rispettano le aspettative dell'utente e $N_{MFO}$ è il numero di messaggi e funzionalità offerti dal sistema.
-	\item \textbf{Range ottimale}: 90 -- 100.
-	\item \textbf{Range di accettazione}: 80 -- 100.
 \end{itemize}
 
 \subsection{Qualità di efficienza}
@@ -388,8 +372,6 @@ Indica il periodo temporale medio che intercorre fra la richiesta al software di
 	\item \textbf{Misurazione}: 
 		$$T_{RISP} = \mathlarger{\frac{\sum_{i=1}^{n} T_{i}}{n}}$$ 
 	con $T_{RISP}$ misurato in secondi, e dove $T_{i}$ è il tempo intercorso fra la richiesta $i$ di una funzionalità ed il completamento delle operazioni necessarie a restituire un risultato a tale richiesta.
-	\item \textbf{Range ottimale}: 0 -- 3.
-	\item \textbf{Range di accettazione}: 0 -- 8.
 \end{itemize}
 \subsection{Qualità di manutenibilità}
 
@@ -399,8 +381,6 @@ Indica la percentuale di \textit{failure} registrate delle quali sono state indi
 	\item \textbf{Misurazione}: 
 		$$I=\mathlarger{\frac{N_{FI}}{N_{FR}}} \cdot 100$$
 	dove $N_{FI}$ è il numero di \textit{failure} delle quali sono state individuate le cause e $N_{FR}$ è il numero di \textit{failure} rilevate.
-	\item \textbf{Range ottimale}: 80 -- 100.
-	\item \textbf{Range di accettazione}: 60 -- 100.
 \end{itemize}
 
 \paragraph{Impatto delle modifiche}
@@ -409,8 +389,6 @@ Indica la percentuale di modifiche effettuate in risposta a \textit{failure} che
 	\item \textbf{Misurazione}: 
 		$$I=\mathlarger{\frac{N_{FRF}}{N_{FR}}} \cdot 100$$
 	dove $N_{FRF}$ è il numero di \textit{failure} risolte con l'introduzione di nuove \textit{failure} e $N_{FR}$ è il numero di \textit{failure} risolte.
-	\item \textbf{Range ottimale}: 0 -- 10.
-	\item \textbf{Range di accettazione}: 0 -- 20.
 \end{itemize}
 
 
@@ -425,7 +403,7 @@ In particolare il tool  controlla.
 \item Controllo dei punti decimali in un numero.
 \item Commenti all' interno dei commenti.
 \item Gli zeri iniziali interpretati come base ottale. 
-\item Statement che non provocano nessuna variazione al codice.
+\item \termine{Statement} che non provocano nessuna variazione al codice.
 \item Espressioni regolari che non sono precedute da parentesi sinistre,assegnazioni,virgole o i due punti.
 \item dichiarazioni separate da virgola invece che da punto e virgola.
 \item L'uso errato di incremento(++) e decremento(--) fatta eccezione per le singole variabili semplici.
@@ -447,79 +425,33 @@ L'indice Gulpease rispetto ad altri indici di leggibilità possiede il vantaggio
 \end{itemize}
 
 I valori dell'indice sono compresi tra 0 e 100, dove il valore 100 indica la leggibilità più alta e 0 la leggibilità più bassa.
-Gli intervalli richiesti per ogni documento redatto sono i seguenti:
-\begin{itemize}
-\item Accettazione: [40 -- 100].
-\item Ottimale: [50 -- 100].
-\end{itemize}
+
 \paragraph{Metriche per il software}
 
 \subparagraph{Numero di livelli di annidamento per metodo}
 Rappresenta il numero di strutture di controllo, annidate tra loro internamente ad un metodo.
 Un valore elevato per questa metrica potrebbe essere indice di una complessità troppo elevata del metodo stesso, e di un basso livello di astrazione del codice.
-Intervalli richiesti:
-\begin{itemize}
-\item
-Accettazione: [1 -- 5].
-\item
-Ottimale: [1 −- 3].
-\end{itemize}
 
 \subparagraph{Numero di parametri per metodo}
 Rappresenta il numero di parametri da passare per la chiamata di un metodo.
 Un numero elevato per un dato metodo potrebbe evidenziare la necessità di ridurne le funzionalità associate e/o suddividerle in altri metodi ausiliari.
 Un alto valore di questo indice potrebbe evidenziare pertanto un possibile errore di progettazione.
-Intervalli richiesti:
-\begin{itemize}
-\item
-Accettazione: [0 −- 6].
-\item
-Ottimale: [0 −- 4].
-\end{itemize}
 
 \subparagraph{Complessità ciclomatica}
 Questo indice viene utilizzato per misurare la complessità di un programma. Esso misura direttamente il numero di cammini linearmente indipendenti attraverso il \termine{grafo di controllo di flusso}. I nodi del grafo corrispondono a gruppi indivisibili di istruzioni, mentre gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo gruppo.
 Alti valori di \termine{complessità ciclomatica} implicano una ridotta manutenibilità del codice. Valori bassi potrebbero però determinare  una scarsa efficienza dei metodi. McCabe, ideatore di questa metrica, raccomandava che i programmatori contassero la complessità dei moduli in sviluppo, e li dividessero in moduli più piccoli, qualora tale complessità superi 10 ma osservando che in certe circostanze può essere appropriato rilassare tale restrizione e permettere moduli con una complessità anche di 15.
-Intervalli richiesti:
-\begin{itemize}
-\item
-Accettazione: [1 -− 15].
-\item
-Ottimale: [1 -− 10].
-\end{itemize}
 
 \subparagraph{Numero di attributi per classe}
 Questa metrica prevede di valutare la qualità del software in base al numero di attributi presenti in una classe.
 Un numero elevato di attributi potrebbe evidenziare un possibile errore di progettazione con conseguente necessità di suddividere la classe in più classi in relazione tra loro seguendo il principio dell'incapsulamento.
-Intervalli richiesti:
-\begin{itemize}
-\item
-Accettazione: [0 −- 12].
-\item
-Ottimale: [0 −- 8].
-\end{itemize}
 
 \subparagraph{Copertura dei test}
 Questo indice indica la percentuale di istruzioni del prodotto che vengono eseguite durante i test.
 Un valore percentuale alto indica una maggiore copertura dei test e quindi una maggiore probabilità che le componenti abbiano una ridotta quantità di errori.
 Tale indice può però essere abbassato da metodi molto semplici che non richiedono testing come ad esempio metodi \texttt{getter} e/o \texttt{setter}.
-Intervalli richiesti:
-\begin{itemize}
-\item
-Accettazione: [40\% −- 100\%].
-\item
-Ottimale: [65\% −- 100\%].
-\end{itemize}
 
 \subparagraph{Linee di commento per linee di codice}
 Questo indice indica il rapporto tra linee di commento e linee di codice ed è utile per stimare la manutenibilità e la comprensibilità del codice. 
-Intervalli richiesti:
-\begin{itemize}
-\item
-Accettazione: [> 0.15].
-\item
-Ottimale: [>0.20].
-\end{itemize}
 
 \subparagraph{Livello di stabilità}
 Per comprendere questa metrica è necessario dare una semplice spiegazione di \termine{accoppiamento afferente} e di \termine{accoppiamento efferente}.
@@ -538,16 +470,8 @@ La stabilità di un \termine{package} indica la possibilità di effettuare modif
 {\text{Accoppiamento Efferente}}\over{\text{Accoppiamento Afferente} + \text{Accoppiamento Efferente}}
 \end{displaymath}
 
-Intervalli richiesti:
-\begin{itemize}
-\item
-Accettazione: [0.0 −- 0.8].
-\item
-Ottimale: [0.0 −- 0.3].
-\end{itemize}
-
 \subparagraph{Astrattezza}
-Questa metrica misura l'astrattezza del nostro package tramite il seguente rapporto 
+Questa metrica misura l'astrattezza di ogni package tramite il seguente rapporto 
 \begin{displaymath}
 {\text{Numero classi astratte e interfacce}}\over{\text{Numero totale classi}}
 \end{displaymath}
@@ -560,12 +484,6 @@ Questa metrica misura il bilanciamento tra l'astrattezza e la stabilità del \te
 \end{displaymath}
 
 La sequenza principale menzionata nel titolo è infatti la linea retta A+I=1 e la formula appena descritta misura la distanza del nostro \termine{package} da esso.
-\begin{itemize}
-\item
-Accettazione: [0.0 −- 0.3].
-\item
-Ottimale: [0.0 −- 0.1].
-\end{itemize}
 
 
 \subsubsection{Analisi}

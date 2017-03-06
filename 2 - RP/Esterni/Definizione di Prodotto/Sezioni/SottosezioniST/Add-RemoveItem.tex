@@ -1,7 +1,7 @@
 \subsubsection{feature::GeneralView}
 
 \label{feature::GeneralView}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/GeneralView.png}
 	\caption{feature::GeneralView}
@@ -22,7 +22,7 @@
 \subsubsection{feature::remove\_item::RemoveItemView}
 
 \label{feature::remove_item::RemoveItemView}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/RemoveItemView.png}
 	\caption{feature::remove\_item::RemoveItemView}
@@ -47,7 +47,7 @@
 \subsubsection{feature::remove\_item::view::RemoveItemViewImpl}
 
 \label{feature::remove_item::view::RemoveItemViewImpl}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/RemoveItemViewImpl.png}
 	\caption{feature::remove\_item::view::RemoveItemViewImpl}
@@ -74,7 +74,7 @@
 \subsubsection{feature::remove\_item::presenter::RemoveItemViewPresenter}
 
 \label{feature::remove_item::presenter::RemoveItemViewPresenter}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/RemoveItemViewPresenter.png}
 	\caption{feature::remove\_item::presenter::RemoveItemViewPresenter}
@@ -113,7 +113,7 @@
 \subsubsection{usecase::ModifyListUseCase}
 
 \label{usecase::ModifyListUseCase}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ModifyListUseCase.png}
 	\caption{usecase::ModifyListUseCase}
@@ -174,14 +174,14 @@
 \subsubsection{database::DatabaseSource}
 
 \label{database::DatabaseSource}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/DatabaseSource.png}
 	\caption{database::DatabaseSource}
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione}: Interfaccia che permette la comunicazione tra il model ed il database sul quale verranno salvati tutti i dati relativi alle varie liste.
+\item \textbf{Descrizione}: Interfaccia che permette la comunicazione tra il model ed il database sul quale verranno salvati tutti i dati relativi alle varie liste. I metodi da essa esposti non vengono descritti nel dettaglio in quanto l'implementazione di questa interfaccia utilizzerà i noti metodi di Meteor.js, descritti approfonditamente nella rispettiva documentazione inserita all'interno dei riferimenti normativi.
 \item \textbf{Utilizzo}: Interfaccia che permette di salvare, modificare, rimuovere dati all'interno del database.
 \item \textbf{Attributi}: 
 \item \textbf{Metodi}:
@@ -241,7 +241,7 @@
 \subsubsection{feature::add\_item::AddItemView}
 
 \label{feature::add_item::AddItemView}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/AddItemView.png}
 	\caption{feature::add\_item::AddItemView}
@@ -259,13 +259,13 @@
 	\end{itemize}
 \end{itemize}
 
-\subsubsection{feature::add\_item::view::AddItemViewImplementation}
+\subsubsection{feature::add\_item::view::AddItemViewImpl}
 
-\label{feature::add_item::view::AddItemViewImplementation}
-\begin{figure}[ht]
+\label{feature::add_item::view::AddItemViewImpl}
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/AddItemViewImplementation.png}
-	\caption{feature::add\_item::view::AddItemViewImplementation}
+	\caption{feature::add\_item::view::AddItemViewImpl}
 \end{figure}
 
 \begin{itemize}
@@ -288,8 +288,8 @@
 			\end{itemize} 
 	\item \textit{public renderView():string}\\
 	Genera il codice HTML CSS JS necessario per visualizzare la componente grafica della lista-spesa necessaria all'aggiunta di un oggetto da essa.
-	\item \textit{AddItemViewImplementation():AddItemViewImplementation}\\
-	Il costruttore della classe AddItemViewImplementation.
+	\item \textit{AddItemViewImpl():AddItemViewImpl}\\
+	Il costruttore della classe AddItemViewImpl.
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}
@@ -297,7 +297,7 @@
 \subsubsection{feature::add\_item::presenter::AddItemViewPresenter}
 
 \label{feature::add_item::presenter::AddItemViewPresenter}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/AddItemViewPresenter.png}
 	\caption{feature::add\_item::presenter::AddItemViewPresenter}
@@ -338,7 +338,7 @@
 \subsubsection{usecase::ShowPopupUseCase}
 
 \label{usecase::ShowPopupUseCase}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ShowPopupUseCase.png}
 	\caption{usecase::ShowPopupUseCase}
@@ -373,14 +373,14 @@
 \subsubsection{communication::ChatSource}
 
 \label{communication::ChatSource}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ChatSource.png}
 	\caption{communication::ChatSource}
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione}: Interfaccia che permette la comunicazione con l'istanza di Rocket.chat.
+\item \textbf{Descrizione}: Interfaccia che permette la comunicazione con l'istanza di Rocket.chat.  I metodi messi a disposizione da questa interfaccia non vengono descritti nel dettaglio in quanto verranno implementati attraverso l'utilizzo di metodi descritti già approfonditamente dettagliati all'interno della documentazione di Rocket.chat stesso che è possibile trovare visitando la rispettiva pagina web il quale collegamento è stato inserito all'interno dei riferimenti informativi.
 \item \textbf{Utilizzo}: Permette di mostrare popup e inviare messaggi o effettuare altre operazioni riguardanti la chat.
 \item \textbf{Attributi}: 
 \item \textbf{Metodi}:

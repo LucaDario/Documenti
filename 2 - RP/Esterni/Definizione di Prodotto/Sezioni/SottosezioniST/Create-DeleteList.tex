@@ -95,47 +95,6 @@
 \item \textbf{Eventi}:
 \end{itemize}
 
-\subsubsection{feature::input\_list\_info::InputListInfoView}
-
-\label{feature::input_list_info::InputListInfoView}
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/InputListInfoView.png}
-	\caption{feature::input\_list\_info::InputListInfoView}
-\end{figure}
-
-\begin{itemize}
-\item \textbf{Descrizione}: Questa interfaccia rappresenta la view relativa al popup per l'immissione, rimozione o modifica di tutti i dati relativi alla lista.
-\item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione della vista, e visualizza i dati che gli vengono passati dal presenter.
-\item \textbf{Attributi}: 
-\item \textbf{Metodi}:
-	\begin{itemize}	
-	\item \textit{public emitOnSavedDataEvent(list:ListaData):void}\\
-	Metodo necessario al presenter per far emettere alla view l'evento onSavedData(list:ListData), notificando tutti gli oggetti in ascolto che la lista è stata salvata con successo.
-			\\ \textbf{Parametri}: \begin{itemize}
-			\item \textit{list:ListaData}\\
-			Insieme di tutti i dati immessi all'interno della vista da parte dell'utente.
-			\end{itemize} 
-	\item \textit{public createViewForListWithId(listId:string):void}\\
-	Metodo che permette di creare una una view per visualizzarli.
-			\\ \textbf{Parametri}: \begin{itemize}
-			\item \textit{listId:string}\\
-			Parametro che rappresenta l'id della lista di cui si vuole creare in una view.
-			\end{itemize} 
-	\end{itemize}
-\item \textbf{Eventi}:
-	\begin{itemize}
-	\item \textit{public onSaveClicked():void}\\
-	Evento emesso dalla view che rappresenta interazione di un utente con un bottone dedicato al salvataggio della lista.
-	\item \textit{public onSavedData(list:ListData):void}\\
-			Evento che notifica tutti gli oggetti in ascolto che i dati immessi sono stati salvati con successo.
-			\\ \textbf{Parametri}: \begin{itemize}
-			\item \textit{list:ListData}\\
-			Insieme di tutti i dati e le informazioni di una lista.
-			\end{itemize} 
-	\end{itemize}
-\end{itemize}
-
 \subsubsection{usecase::ManageListsUseCase}
 
 \label{usecase::ManageListsUseCase}

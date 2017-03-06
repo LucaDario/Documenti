@@ -8,7 +8,7 @@
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione:} Classe astratta che implementa l'interfaccia BaseComponent che rappresenta un oggetto layout per la disposizione di BaseComponent nelle bolle di Monolith.
+\item \textbf{Descrizione:} Classe astratta che implementa l'interfaccia BaseComponent e che rappresenta un oggetto layout per la disposizione di componenti nelle bolle di Monolith.
 \item \textbf{Utilizzo:} Classe utilizzata ed estesa ogni qualvolta uno sviluppatore intende creare un nuovo layout da inserire in una bolla.
 \item \textbf{Attributi:}
 \begin{itemize}
@@ -19,10 +19,10 @@ Rappresenta la lista di oggetti BaseComponent contenuti nel layout.
 \begin{itemize}
 \item \textit{public addItem(component:BaseComponent):void}\\
 Aggiunge un oggetto BaseComponent al layout.
-\item{\textbf{Parametri}: \begin{itemize}
+\\ \textbf{Parametri}: \begin{itemize}
 \item \textit{component:BaseComponent}\\
 Oggetto che rappresenta il BaseComponent da aggiungere al layout.
-\end{itemize}}
+\end{itemize}
 \end{itemize}
 \end{itemize}
 
@@ -37,7 +37,7 @@ Oggetto che rappresenta il BaseComponent da aggiungere al layout.
 
 \begin{itemize}
 \item \textbf{Descrizione:} Classe concreta che estende BaseLayout, destinata alla creazione di layout per la disposizione verticale di BaseComponent.
-\item \textbf{Utilizzo:} Classe utilizzata ogni qualvolta uno sviluppatore intende creare un nuovo layout verticale da inserire in una bolla.
+\item \textbf{Utilizzo:} Classe utilizzata ogni qualvolta uno sviluppatore intende creare un nuovo layout orizzontale da inserire in una bolla.
 \item \textbf{Attributi:}
 \item \textbf{Metodi:}
 \begin{itemize}
@@ -45,10 +45,10 @@ Oggetto che rappresenta il BaseComponent da aggiungere al layout.
 Il costruttore per la classe VerticalLayoutView.
 \item \textit{public addItem(component:BaseComponent):void}\\
 Aggiunge un oggetto BaseComponent al layout verticale.
-\item{\textbf{Parametri}: \begin{itemize}
+\\ \textbf{Parametri}: \begin{itemize}
 \item \textit{component:BaseComponent}\\
 Oggetto che rappresenta il BaseComponent da aggiungere al layout verticale.
-\end{itemize}}
+\end{itemize}
 \item \textit{public renderView():string}\\
 Genera il codice HTML, CSS e JavaScript necessario per visualizzare BaseComponent disposti nel layout verticale.
 \end{itemize}
@@ -73,10 +73,10 @@ Genera il codice HTML, CSS e JavaScript necessario per visualizzare BaseComponen
 Il costruttore per la classe HorizzontalLayoutView.
 \item \textit{public addItem(component:BaseComponent):void}\\
 Aggiunge un oggetto BaseComponent al layout orizzontale.
-\item{\textbf{Parametri}: \begin{itemize}
+\\ \textbf{Parametri}: \begin{itemize}
 \item \textit{component:BaseComponent}\\
 Oggetto che rappresenta il BaseComponent da aggiungere al layout orizzontale.
-\end{itemize}}
+\end{itemize}
 \item \textit{public renderView():string}\\
 Genera il codice HTML, CSS e JavaScript necessario per visualizzare BaseComponent disposti nel layout orizzontale.
 \end{itemize}

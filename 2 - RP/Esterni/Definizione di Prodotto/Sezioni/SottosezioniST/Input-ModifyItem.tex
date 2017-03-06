@@ -19,11 +19,13 @@
 			\item \textit{item:ListItem}\\
 			L'oggetto le cui informazioni sono state salvate.
 			\end{itemize}}
-	\item \textit{public createViewForItemWithId(itemId:string):void}\\
+	\item \textit{public createViewForItemWithId(itemId:string,listId:string):void}\\
 	Il metodo crea una view per l'inserimento delle informazioni di un oggetto, a partire dal suo id.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{itemId:string}\\
 			L'id dell'oggetto del quale si vogliono inserire le informazioni.
+			\item \textit{listId:string}\\
+			Id della lista a cui appartiene l'oggetto da modificare.
 			\end{itemize}}
 	\end{itemize}
 \item \textbf{Eventi}:
@@ -60,11 +62,13 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 	\begin{itemize}
 	\item \textit{InputItemInfoViewImpl():InputItemInfoViewImpl}\\
 	Il costruttore della classe InputItemInfoViewImpl.
-	\item \textit{public createViewForItemWithId(itemId:string):void}\\
+	\item \textit{public createViewForItemWithId(itemId:string,listId:string):void}\\
 	Il metodo crea una view per l'inserimento delle informazioni di un oggetto, a partire dal suo id.
 			\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{itemId:string}\\
 			L'id dell'oggetto del quale si vogliono inserire le informazioni.
+			\item \textit{listId:string}\\
+			Id della lista a cui appartiene l'oggetto da modificare.
 			\end{itemize}}
 	\item \textit{public renderView():string}\\
 	Genera il codice HTML CSS JS necessario per visualizzare la componente grafica della lista-spesa necessaria all'inserimento delle informazioni di un oggetto nella lista.

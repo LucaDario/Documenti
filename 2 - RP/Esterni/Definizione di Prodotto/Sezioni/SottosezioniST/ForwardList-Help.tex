@@ -29,11 +29,11 @@
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione}: Questa classe la componente grafica per l'inoltro di una lista-spesa, implementando l'interfaccia ForwardListView.
+\item \textbf{Descrizione}: Questa classe rappresenta la componente grafica per l'inoltro di una lista-spesa, implementando l'interfaccia ForwardListView.
 \item \textbf{Utilizzo}: Questa classe viene utilizzata dall'utente ogniqualvolta vuole inoltrare una lista-spesa.
 \item \textbf{Attributi}:
 \begin{itemize}
-\item \textbf{private presenter:ForwardListViewPresenter}\\
+\item \textit{private presenter:ForwardListViewPresenter}\\
 Il presenter associato all'inoltro di una lista, al quale questa classe delega la gestione del comportamento dell'elemento di inoltro della lista.
 \end{itemize}
 \item \textbf{Metodi}: 
@@ -56,47 +56,47 @@ Il presenter associato all'inoltro di una lista, al quale questa classe delega l
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione}: Questa classe rappresenta il presenter per gli elementi di inoltro della lista-spesa.
+\item \textbf{Descrizione}: Questa classe rappresenta il presenter per la vista di inoltro della lista-spesa.
 \item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione dell'elemento di inoltro e la view, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
 \item \textbf{Attributi}: 
 	\begin{itemize}
-	\item \textit{private chatSource:ChatSource}\\
-	La chat sulla quale si vuole intervenire utilizzando questa classe.
 	\item \textit{private view:ForwardListView}\\
 	La view associata al presenter.
+	\item \textit{private popupUseCase: ShowPopupUseCase} \\
+	Istanza della classe dedita alla visualizzazione di un modale.
 	\item \textit {private forwardListUseCase:ForwardListUseCase}\\
-	La componente necessaria alla comunicazione con Rocket.Chat.
+	Componente atta a inoltrare una lista ad una chat.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}	
-	\item \textit{public ForwardListViewPresenter(view:ForwardListView,popupUseCase:ShowPopupUseCase, forwardListUseCase:ForwardListUseCase):ForwardListViewPresenter}\\
+	\item \textit{public ForwardListViewPresenter(view:ForwardListView,popupUseCase:ShowPopupUseCase, \\ forwardListUseCase:ForwardListUseCase):ForwardListViewPresenter}\\
 	Il costruttore della classe ForwardListViewPresenter.
 	\item{\textbf{Parametri}: \begin{itemize}
 			\item \textit{view:ForwardListView}\\
 			La view associata al presenter.
 			\item \textit{popupUseCase:ShowPopupUseCase}\\
-			La chat sulla quale si vuole intervenire utilizzando questa classe.			
+			L'istanza della classe dedita alla visualizzazione di un modale.			
 			\item \textit{forwardListUseCase:ForwardListUseCase}\\
-			La componente necessaria alla comunicazione con Rocket.Chat.
+			La componente atta a inoltrare una lista ad una chat.
 			\end{itemize}}
 	\item \textit{public renderView():string}\\
 		Genera il codice HTML CSS JS necessario per visualizzare la componente grafica della lista-spesa necessaria alla rimozione di un oggetto da essa.
 	\item \textit{public forwardToContactWithId(listId:string,contactId:string):void}\\
 	Questo metodo inoltra una particolare lista a un utente Rocket.Chat.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
 			L'id della lista da inoltrare.
 			\item \textit{contactId:string}\\
 			L'id dell'utente al quale si vuole inoltrare la lista.
-			\end{itemize}}
+			\end{itemize} 
 	\item \textit{public forwardToGroupWithId(listId:string,groupId:string):void}\\
 	Questo metodo inoltra una particolare lista a un gruppo in Rocket.Chat.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
 			L'id della lista da inoltrare.
 			\item \textit{groupId:string}\\
 			L'id del gruppo al quale si vuole inoltrare la lista.
-			\end{itemize}}
+			\end{itemize} 
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}
@@ -120,20 +120,20 @@ Il presenter associato all'inoltro di una lista, al quale questa classe delega l
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
-	\item \textit{public forwardList(listId:string, contactId:string):void}\\
-	Il metodo inoltra una lista a un particolare contatto.
-			\item{\textbf{Parametri}: \begin{itemize}
+	\item \textit{public forwardList(listId:string, chatId:string):void}\\
+	Il metodo inoltra una lista ad una particolare chat.
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
 			L'id della lista da inoltrare.
 			\item \textit{contactId:string}\\
-			L'id del contatto a cui inoltrare la lista.
-			\end{itemize}}
+			L'id della chat alla quale inoltrare la lista.
+			\end{itemize} 
 	\item \textit{public ForwardListUseCase(chatSource:ChatSource):ForwardListUseCase}\\
 	Il costruttore della classe ForwardListUseCase.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{chatSource:ChatSource}\\
 			La chat necessaria alla costruzione di un oggetto di questa classe.
-			\end{itemize}}
+			\end{itemize} 
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}
@@ -213,10 +213,10 @@ Il presenter associato alla richiesta di aiuto di un utente, al quale questa cla
 	\begin{itemize}
 	\item \textit{public HelpViewPresenter(view:HelpView):HelpViewPresenter)}\\
 	Il costruttore della classe HelpViewPresenter.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{view:HelpView}\\
 			La view necessaria alla costruzione di un oggetto di questa classe.
-			\end{itemize}}
+			\end{itemize} 
 	\item \textit{public hide():void}\\
 	Metodo che nasconde la componente grafica necessaria alla richiesta d'aiuto da parte dell'utente.
 	\item \textit{public show():void}\\

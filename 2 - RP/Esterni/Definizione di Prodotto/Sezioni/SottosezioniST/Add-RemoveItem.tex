@@ -37,10 +37,10 @@
 	\begin{itemize}	
 	\item \textit{public onItemRemoveClicked(item:ListItem):void}\\
 	Evento che rappresenta il click, da parte dell'utente, sull'oggetto visuale necessario alla rimozione di un oggetto dalla lista.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{item:ListItem}\\
-			L'oggetto che è stato cliccato e che l'utente desidera rimuovere dalla lista.
-			\end{itemize}}
+			L'oggetto che è stato cliccato e che l'utente desidera rimuoverlo dalla lista.
+			\end{itemize} 
 	\end{itemize}
 \end{itemize}
 
@@ -54,7 +54,7 @@
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione}: Questa classe rappresenta la rimozione di un oggetto dalla lista-spesa, implementando l'interfaccia RemoveItemView.
+\item \textbf{Descrizione}: Questa classe rappresenta la vista per la rimozione di un oggetto dalla lista-spesa, implementando l'interfaccia RemoveItemView.
 \item \textbf{Utilizzo}: Questa classe viene utilizzata dall'utente ogniqualvolta vuole rimuovere un oggetto alla lista-spesa.
 \item \textbf{Attributi}: 
 	\begin{itemize}
@@ -92,18 +92,18 @@
 	\begin{itemize}
 	\item \textit{RemoveItemViewPresenter(view:RemoveItemView):RemoveItemViewPresenter}\\
 	Costruttore della classe RemoveItemViewPresenter.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{view:RemoveItemView}\\
 			La view necessaria alla costruzione del presenter.
-			\end{itemize}}
+			\end{itemize} 
 	\item \textit{public removeItem(listId:string,item:ListItem):void}\\
 	Questo metodo serve per rimuovere un oggetto dalla lista-spesa.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
 			L'id della lista dalla quale bisogna rimuovere l'oggetto.
 			\item \textit{item:ListItem}\\
 			L'oggetto da rimuovere.
-			\end{itemize}}
+			\end{itemize} 
 	\item \textit{public renderView():string}\\
 	Genera il codice HTML CSS JS necessario per visualizzare la componente grafica della lista-spesa necessaria alla rimozione di un oggetto da essa.
 	\end{itemize}
@@ -131,40 +131,42 @@
 	\begin{itemize}
 	\item \textit{public ModifyListUseCase(source:DatabaseSource):ModifyListUseCase}\\
 	Costruttore della classe ModifyListUseCase.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{source:DatabaseSource}\\
 			Attributo necessario alla costruzione della classe, per la comunicazione con  il database.
-			\end{itemize}}
+			\end{itemize} 
 	\item \textit{public changeListInfo(listId:string,newList:ListData):void}\\
 	Questo metodo serve per modificare i dati di una lista.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
 			L'id della lista che si vuole modificare.
 			\item \textit{newList:ListData}\\
 			La nuova lista che si andrà a sostituire alla precedente.
-			\end{itemize}}
+			\end{itemize} 
 	\item \textit{public addItemToList(listId:string,item:ListItem):void}\\
 	Metodo che aggiunge un oggetto a una lista-spesa.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
 			Id della lista alla quale si vuole aggiungere un oggetto.
 			\item \textit{item:ListItem}\\
 			Oggetto che si vuole aggiungere alla lista.
-			\end{itemize}}
-	\item \textit{public removeItemFromList(listId:string):void}\\
+			\end{itemize} 
+	\item \textit{public removeItemFromList(listId:string, itemId : string):void}\\
 	Metodo che rimuove un oggetto da una list-spesa.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
 			Id della lista dalla quale si vuole rimuovere un oggetto.
-			\end{itemize}}
+			\item \textit{itemId : string} \\
+			Id dell'oggetto che si vuole rimuovere dalla lista
+			\end{itemize} 
 	\item \textit{public updateItemInsideList(listId:string,item:ListItem):void}\\
 	Metodo che modifica un oggetto della lista.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
 			Id della lista della quale si vuole modificare un oggetto.
 			\item \textit{item:ListItem}\\
-			Oggetto della lista che si vuole modificare.
-			\end{itemize}}
+			Oggetto che si vuole sostituire all'oggetto della lista con id dato.
+			\end{itemize} 
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}
@@ -185,23 +187,23 @@
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public createListForUser(userId:string):ListData}\\
-		Crea all'interno del database una nuova lista per l'utente impostato.
-			\item{\textbf{Parametri}: \begin{itemize}
+		Crea all'interno del database una nuova lista per l'utente impostato e ritorna tale lista.
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{userId:string}\\
 			Utente per cui verrà creata una nuova lista.
-			\end{itemize}}
+			\end{itemize} 
 	\item \textit{public removeList(listId:string):void}\\
 	Rimuove all'interno del database la lista con l'id indicato.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
 				Id della lista da rimuovere dal database.
-			\end{itemize}}
+			\end{itemize} 
 	\item \textit{public getListWithId(id:string):ListData}\\
 	Restituisce la lista con l'id indicato recuperandola dal database.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{id:string}\\
 			Id della lista di cui recuperare i dati dal database.
-			\end{itemize}}
+			\end{itemize} 
 	\item \textit{public changeList(listId:string, list:ListData):void}\\
 		Permette di modificare i dati e le informazioni di una lista all'interno del database.
 			\item{\textbf{Parametri}: \begin{itemize}
@@ -215,26 +217,24 @@
 	\begin{itemize}
 	\item \textit{public onListCreated(listId:string,creatorId:string):void}\\
 		Evento che notifica tutti gli oggetti in ascolto che la lista è stata creata nel database.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
 			Id della lista appena creata nel database.
 			\item \textit{creatorId:string}\\
-			Id del utente creatore della lista.
-			\end{itemize}}
+			Id dell'utente creatore della lista.
+			\end{itemize} 
 	\item \textit{public onListRemoved(listId:string,creatorId:string):void}\\
 			Evento che notifica tutti gli oggetti in ascolto che la lista è stata rimossa dal database.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
 			Id della lista appena rimossa.
-			\item \textit{creatorId:string}\\
-			Id del creatore della lista rimossa.
-			\end{itemize}}
+			\end{itemize} 
 	\item \textit{public onListChanged(listId:string):void}\\
 				Evento che notifica tutti gli oggetti in ascolto che la lista è stata modificata nel database.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
 			Id della lista modificata all'interno del database.
-			\end{itemize}}
+			\end{itemize} 
 	\end{itemize}
 \end{itemize}
 
@@ -280,12 +280,12 @@
 	\begin{itemize}
 	\item \textit{public addItem(listId:string,item:ListItem):void}\\
 	Il metodo aggiunge un oggetto a una lista-spesa.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{listId:string}\\
 			L'id della lista al quale si vuole aggiungere un oggetto.
 			\item \textit{item:ListItem}\\
 			L'oggetto che si vuole aggiungere alla lista.
-			\end{itemize}}
+			\end{itemize} 
 	\item \textit{public renderView():string}\\
 	Genera il codice HTML CSS JS necessario per visualizzare la componente grafica della lista-spesa necessaria all'aggiunta di un oggetto da essa.
 	\item \textit{AddItemViewImplementation():AddItemViewImplementation}\\
@@ -317,7 +317,7 @@
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
-	\item \textit{public AddItemViewPresenter(view:AddItemView, inputView:InputItemInfoView, useCase:ModifyListUseCase):AddItemViewPresenter}\\
+	\item \textit{public AddItemViewPresenter(view:AddItemView, inputView:InputItemInfoView, \\ useCase:ModifyListUseCase):AddItemViewPresenter}\\
 	Il costruttore della classe AddItemViewPresenter.	
 		\item{\textbf{Parametri}: \begin{itemize}
 		\item \textit{view:AddItemView}\\
@@ -345,27 +345,27 @@
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione}: La classe rappresenta l'interazione con un modale nella chat.
+\item \textbf{Descrizione}: La classe rappresenta una utility per la creazione facilitata di popup.
 \item \textbf{Utilizzo}: La classe viene utilizzata ogniqualvolta una delle altre classi necessita di mostrare un modale nelle sue interazioni.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private chatSource:ChatSource}\\
-	La chat sulla quale si vuole intervenire utilizzando questa classe.
+	Interfaccia che permette la comunicazione con la chat all'interno della quale si vuole mostrare il popup.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public showPopup(htmlCode:string):void}\\
 	Questo metodo mostra un modale.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{htmlCode:string}\\
-			La stringa contiene il codice html del contenuto del modale che si vuole mostrare.
-			\end{itemize}}
+			La stringa contiene il codice HTML del contenuto del modale che si vuole mostrare.
+			\end{itemize} 
 	\item \textit{ShowPopupUseCase(chatSource:ChatSource):ShowPopupUseCase}\\
 	Costruttore della classe ShowPopupUseCase.
-		\item{\textbf{Parametri}: \begin{itemize}
+		\\\textbf{Parametri}: \begin{itemize}
 		\item \textit{chatSource:ChatSource}\\
 		Chat necessaria alla costruzione della classe.
-		\end{itemize}}
+		\end{itemize} 
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}
@@ -387,18 +387,18 @@
 	\begin{itemize}
 	\item \textit{public showPopup(htmlCode:string):void}\\
 	Permette di visualizzare un popup che contiene il codice html dato.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\\textbf{Parametri}: \begin{itemize}
 			\item \textit{htmlCode:string}\\
-				Codice html che verra visualizzato nel popup.
-			\end{itemize}}
+				Codice HTML che verrà visualizzato nel popup.
+			\end{itemize} 
 			\item \textit{public sendMessageToChat(chatId:string, message:string):void}\\
 			Permette di inviare un messaggio alla chat impostata.
-					\item{\textbf{Parametri}: \begin{itemize}
-\item \textit{chatId:string}\\
-	Id della chat a cui inviare verrà inviato il messaggio.
-\item \textit{message:string}\\
-	Messaggio che verrà inviato alla chat.
-\end{itemize}}
+			\\ \textbf{Parametri}: \begin{itemize}
+			\item \textit{chatId:string}\\
+			Id della chat a cui inviare verrà inviato il messaggio.
+			\item \textit{message:string}\\
+			Messaggio che verrà inviato alla chat.
+\end{itemize} 
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}

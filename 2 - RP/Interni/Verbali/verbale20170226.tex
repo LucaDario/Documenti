@@ -43,9 +43,8 @@
 
 \newcommand{\contenuto}{
 \begin{enumerate}
-	\item E' stato deciso dai membri del gruppo \gruppo{} di utilizzare la \termine{Clean Architecture} come pattern architetturale. Esso si basa sull'utilizzo di un altro pattern denominato \termine{Model View Presenter}.
+	\item E' stato deciso dai membri del gruppo \gruppo\ di utilizzare la \termine{Clean Architecture} come pattern architetturale. Esso si basa sull'utilizzo di un altro pattern denominato \termine{Model View Presenter}.
 	\item Il gruppo ha deciso in comune accordo di utilizzare la \termine{dependency injection} per gestire le dipendenze tra le varie componenti.
-	
 	\item La \termine{Clean Architecture} si basa sull'utilizzo di un altro pattern denominato \termine{Model View Presenter}. Esso si suddivide nei seguenti 4 strati, elencati dal più esterno al più interno:
 	\begin{itemize}
 	\item Il primo che rappresenta tutto ciò che è esterno all'applicazione come il web, i dispositivi ed il database.
@@ -53,7 +52,7 @@
 	\item Il terzo rappresenta gli usecases, che rappresentano il Model.
 	\item Il quarto invece rappresenta le entità, le quali rappresentano in modo più dettagliato gli usecases.
 	\end{itemize}
-	E' stato concordato dai membri del \gruppo{} che l'utilizzo di tale pattern suddiviso in questi strati risulta essere complicato per due motivi. Il primo che lo strato più interno, ovvero le entità, sono troppo specifiche e, considerarle, complicherebbe inutilmente lo sviluppo dell'applicazione. Il secondo è che lo sviluppo del gateway (il presenter del \termine{Database}), risulta troppo complesso e rischierebbe di compromettere la buona riuscita del progetto nei tempi previsti sul \PdP{}. Per cui il gruppo \gruppo{} ha deciso di considerare come strato più interno il \termine{Database} eliminando le entità.
+	E' stato concordato dai membri del \gruppo\ che l'utilizzo di tale pattern suddiviso in questi strati risulta essere complicato per due motivi. Il primo che lo strato più interno, ovvero le entità, sono troppo specifiche e, considerarle, complicherebbe inutilmente lo sviluppo dell'applicazione. Il secondo è che lo sviluppo del gateway (il presenter del \termine{Database}), risulta troppo complesso e rischierebbe di compromettere la buona riuscita del progetto nei tempi previsti sul \PdP{}. Per cui il gruppo \gruppo{} ha deciso di considerare come strato più interno il \termine{Database} eliminando le entità.
 	
 	\item I \ProgP{} hanno notato che \termine{Rocket Chat} utilizza il design pattern \termine{Observer} per la trasmissione dell'evento legato al bottone per l'invio dei messaggi. Dunque anche il pattern \termine{Observer} dovrà essere utilizzato per lo sviluppo dell'applicazione.
 	

@@ -13,8 +13,8 @@ iniettare in base allo stato del programma.
 	\item \textbf{Struttura}: i componenti coinvolti nella \termine{Dependency Injection} sono: 
 	\begin{itemize}
 		\item Un \textbf{client} che viene creato e riceve le dipendenze.
-		\item Un contenitore che si occupa di creare il client e di iniettarvi le dipendenze.
-		\item Un servizio che deve essere iniettato al client.
+		\item Un \textbf{contenitore} che si occupa di creare il client e di iniettarvi le dipendenze.
+		\item Un \textbf{servizio} che deve essere iniettato al client.
 	\end{itemize}
 	Nello specifico di \texttt{dependency-injection-es6}, \texttt{container} funziona da contenitore che si occupa di risolvere le dipendenze. I client sono rappresentati dalle funzioni che costruiscono i componenti dell'applicazione, tipicamente Presenter, \termine{Use case} o \termine{Source}. Il servizio è una classe definita dall'utente che esegue le azioni desiderate. \\
 	\begin{figure}[ht]

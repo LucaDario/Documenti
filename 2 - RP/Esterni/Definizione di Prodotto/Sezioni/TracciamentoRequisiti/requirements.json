@@ -1,0 +1,79 @@
+{
+  "monolith.bubble" : {
+    "BaseBubble" : {
+      "requisiti" : ["R1F1", "R1F1", "R1F1.1", "R1F1.2", "R1F1.3", "R1F1.4", "R1F1.5", "R1F1.3.2", "R1F1.6"]
+    }
+  },
+  "monolith.component.layout" : {
+    "BaseLayout" : {
+      "requisiti" : ["R1F0", "R1F1", "R1F1.1", "R1F1.2", "R1F1.3", "R1F1.4", "R1F1.5", "R1F1.3.2", "R1F1.6"]
+    }
+  },
+  "monolith.component.layout.horizontal" : {
+    "HorizzontalLayoutView" : {
+      "requisiti" : ["R1F0", "R1F1", "R1F1.1", "R1F1.2", "R1F1.3", "R1F1.4", "R1F1.5", "R1F1.3.2", "R1F1.6"]
+    }
+  },
+  "monolith.component.layout.vertical" : {
+    "VerticalLayoutView" : {
+      "requisiti" : ["R1F0", "R1F1", "R1F1.1", "R1F1.2", "R1F1.3", "R1F1.4", "R1F1.5", "R1F1.3.2", "R1F1.6"]
+    }
+  },
+  "monolith.component.widget.text" : {
+    "TextWidget" : {
+      "requisiti" : ["R1F0", "R1F1", "R2F1.1.1", "R1F1.1.2", "R2F1.1.3", "R1F1.1.4", "R1F1.1.5", "R1F1.1.6", "R2F1.1.7", "R1F1.1.8", "R1F1.1.9", "R1F1.1.10", "R1F1.1.11", "R1F1.5.1", "R1F1.5.1.1", "R1F1.5.1.2", "R1F1.5.1.3", "R1F1.5.1.4", "R1F1.5.1.5", "R2F1.5.1.6", "R1F1.5.1.7", "R1F1.5.1.8", "R1F1.5.1.9", "R1F1.5.1.10", "R1F1.5.1.11"]
+    },
+    "TextWidgetPresenter" : {
+      "requisiti" : ["R2F1.1.1", "R1F1.1.1", "R2F1.1.3", "R1F1.1.4", "R1F1.1.5", "R1F1.1.6", "R2F1.1.7", "R1F1.1.8", "R1F1.1.9", "R1F1.1.11"]
+    }
+  },
+  "monolith.component.widget.image" : {
+    "ImageWidget" : {
+      "requisiti" : ["R1F0", "R1F1", "R1F1.2", "R1F1.2.1", "R1F1.2.2", "R1F1.2.3", "R1F1.2.4", "R1F1.5.2.1", "R1F1.5.2.2"]
+    },
+    "ImageOptions" : {
+      "requisiti" : ["R1F0", "R1F1", "R1F1.2.3", "R1F1.2.4", "R1F1.5.2.1", "R1F1.5.2.2"]
+    },
+    "ImageWidgetPresenter" : {
+      "requisiti" : ["R1F0", "R1F1", "R1F1.2.1", "R1F1.2.2", "R1F1.2.3", "R1F1.2.4", "R1F1.5.2.1", "R1F1.5.2.2"]
+    }
+  },
+  "monolith.component.widget.button" : {
+    "ImageWidget" : {
+      "requisiti" : ["R1F0", "R1F1", "R1F1.3.1", "R1F1.3.1.1", "R1F1.3.1.2", "R1F1.3.1.3", "R1F1.3.1.4", "R1F1.3.1.5", "R1F1.3.1.6", "R1F1.3.3.1", "R1F1.3.3.2", "R1F1.3.3.3", "R1F1.3.3.4", "R1F1.5.3.1", "R1F1.5.3.3"]
+    }
+  },
+  "monolith.component.widget.checklist" : {
+    "CheckListWidget" : {
+      "requisiti" : ["R1F0", "R1F1", "R1F1.3.2", "R1F1.3.2.1", "R1F1.3.2.2", "R1F1.3.2.3", "R1F1.3.2.2", "R1F1.3.2.3", "R1F1.3.2.4", "R1F1.3.2.5", "R1F1.3.2.3.1", "R1F1.3.2.3.2", "R1F1.3.2.3.3", "R1F1.3.2.3.4", "R1F1.3.2.3.5", "R1F1.3.3", "R1F1.3.3.1", "R1F1.3.3.2", "R1F1.3.3.3", "R1F1.3.3.4", "R1F1.4", "R1F1.4,1", "R3F1.4.1.1", "R1F1.4.1.2", "R2F1.4.1.3", "R1F1.4.2", "R1F1.4.2.3", "R1F1.5.3.2", "R1F1.5.3.4"]
+    },
+    "CheckListWidgetPresenter" : {
+      "requisiti" : ["R1F0", "R1F1", "R1F1.3.2", "R1F1.3.2.1", "R1F1.3.2.2", "R1F1.3.2.3", "R1F1.3.2.2", "R1F1.3.2.3", "R1F1.3.2.4", "R1F1.3.2.5", "R1F1.3.2.3.1", "R1F1.3.2.3.2", "R1F1.3.2.3.3", "R1F1.3.2.3.4", "R1F1.3.2.3.5", "R1F1.3.3", "R1F1.3.3.1", "R1F1.3.3.2", "R1F1.3.3.3", "R1F1.3.3.4", "R1F1.4", "R1F1.4,1", "R3F1.4.1.1", "R1F1.4.1.2", "R2F1.4.1.3", "R1F1.4.2", "R1F1.4.2.3", "R1F1.5.3.2", "R1F1.5.3.4"]
+    }
+  },
+  "monolith.component.widget" : {
+    "BaseWidget" : {
+      "requisiti" : ["R1F0", "R1F1", "R1F1.5", "R1F3"]
+    }
+  },
+  "monolith.bubble.allert" : {
+    "AlertBubble" : {
+      "requisiti" : ["R1F0", "R1F2.1"]
+    }
+  },
+  "monolith.bubble.markdown" : {
+    "MarkdownBubble" : {
+      "requisiti" : ["R1F0", "R1F2.2"]
+    }
+  },
+  "monolith.bubble.todolist" : {
+    "ToDoListBubble" : {
+      "requisiti" : ["R1F0", "R1F2.3", "R1F4", "R1F4.1", "R1F4.1.1"]
+    }
+  },
+  "application.communication" : {
+    "ChatSource" : {
+      "requisiti" : ["R1F0", "R1F4", "R1F4.1", "R1F4.1.1"]
+    }
+  }
+}

@@ -51,13 +51,13 @@
         "Dependency Injection": "Design pattern della Programmazione orientata agli oggetti il cui scopo è quello di semplificare lo sviluppo e migliorare la testabilità di software di grandi dimensioni",
         "Dependency Inversion Principle": "Tecnica di disaccoppiamento dei moduli software, che consiste nel rovesciare la pratica tradizionale secondo cui i moduli di alto livello dipendono da quelli di basso livello",
         "Design-Pattern": "Soluzione progettuale generale ad un problema ricorrente",
-        "Diagramma Di Gantt": "Strumento di supporto alla gestione dei progetti si rappresenta sotto forma di un grafico avente un asse orizzontale in cui vi è la rappresentazione dell'arco temporale totale del progetto, suddiviso in fasi incrementali (ad esempio, giorni, settimane, mesi) e da un asse verticale che mostra la rappresentazione delle mansioni o attività che costituiscono il progetto",
+        "Diagramma Di Gantt": "Strumento di supporto alla gestione dei progetti si rappresenta sotto forma di un grafico avente un asse orizzontale in cui vi è la rappresentazione dell'arco temporale totale del progetto, suddiviso in fasi incrementali (ad esempio, giorni, settimane, mesi) e da un asse verticale che mostra la rappresentazione delle mansioni o attività che costituiscono il progetto"
     },
     "E": {
         "Editing Bubble": "Bolla avente contenuto modificabile",
         "Efficacia": "Capacità di produrre l'effetto e i risultati voluti o sperati",
         "Efficienza": "Capacità di azione o di produzione con il minimo di scarto, di spesa, di risorse e di tempo impiegati",
-        "Event Listener": "Pattern comportamentale che permette di impostare delle azioni che devono essere eseguite al verificarsi di un particolare evento",
+        "Event Listener": "Pattern comportamentale che permette di impostare delle azioni che devono essere eseguite al verificarsi di un particolare evento"
     },
     "F": {
         "Font": "\\textit{eng. Tipo di carattere}. Insieme di caratteri tipografici caratterizzati e accomunati da un certo stile grafico o intesi per svolgere una data funzione",
@@ -90,7 +90,7 @@
         "Intellij Idea": "Un ambiente di sviluppo integrato \\termine{IDE}",
         "Inversion Of Control": "Pattern per cui un componente di livello applicativo riceve il controllo da un componente appartenente a un libreria riusabile",
         "Iso": "\\textit{eng. International Organization for Standardization, Organizzazione internazionale per la normazione}. La più importante organizzazione a livello mondiale per la definizione di norme tecniche",
-        "Issue": "\\textit{eng. Problema}. All'interno del mondo \\termine{Git}, una \\termine{issue} è una metodologia utilizzata per far presente agli sviluppatori al lavoro su una determinata \\termine{repository} che vi è un problema con il codice scritto in essa",
+        "Issue": "\\textit{eng. Problema}. All'interno del mondo \\termine{Git}, una \\termine{issue} è una metodologia utilizzata per far presente agli sviluppatori al lavoro su una determinata \\termine{repository} che vi è un problema con il codice scritto in essa"
     },
     "J": {
         "Javascript": "Linguaggio di scripting orientato agli oggetti e agli eventi, comunemente utilizzato nella programmazione Web lato client per la creazione, in siti web e applicazioni web, di effetti dinamici interattivi tramite funzioni di script invocate da eventi innescati a loro volta in vari modi dall'utente sulla pagina web in uso",
@@ -191,7 +191,7 @@
         "Uml": "\\textit{eng. Unified Modeling Language, Linguaggio di modellizzazione unificato}. Linguaggio di modellizzazione e specifica basato sul paradigma orientato agli oggetti",
         "Uniformità": "Costanza di aspetto o di comportamento",
         "Upper\\textunderscore Case": "Tecnica che consiste nel scrivere ogni lettera di una frase in maiuscolo rimpiazzando gli spazi con un underscore",
-        "Use Cases": "Tecnica usata nei processi di ingegneria del software per effettuare in maniera esaustiva e non ambigua, la raccolta dei requisiti al fine di produrre software di qualità"
+        "Use Case": "Tecnica usata nei processi di ingegneria del software per effettuare in maniera esaustiva e non ambigua, la raccolta dei requisiti al fine di produrre software di qualità"
     },
     "V": {
         "Validazione": "Fase del ciclo di vita di un prodotto software, all'interno della quale si vuole andare a confermare la sua \\termine{efficacia}",

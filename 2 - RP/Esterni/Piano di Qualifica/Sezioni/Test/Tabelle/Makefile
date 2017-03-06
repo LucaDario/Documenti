@@ -1,4 +1,4 @@
-GENERATOR = ../../../../../../Tools/Tests\ Tracking/TestTracker.py
+GENERATOR = ../../../../../../Tools/Test\ Table\ Maker/TableMaker.py
 
 table :
 	$(GENERATOR)

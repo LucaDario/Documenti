@@ -8,34 +8,34 @@
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione}: Questa interfaccia rappresenta la view relativa all'aggiunta delle informazioni di un oggetto alla lista-spesa.
+\item \textbf{Descrizione}: Questa interfaccia rappresenta la view relativa all'input delle informazioni di un oggetto della lista-spesa.
 \item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione dell'aggiunta, visualizza i dati che gli vengono passati dal presenter.
 \item \textbf{Attributi}:
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public emitOnSavedItemEvent(item:ListItem):void}\\
-	Metodo necessario a l'emissione dell'evento \texttt{OnSavedItemEvent}.
-			\item{\textbf{Parametri}: \begin{itemize}
+	Metodo che permette l'emissione dell'evento \texttt{OnSavedItemEvent}.
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{item:ListItem}\\
-			L'oggetto le cui informazioni sono state salvate.
-			\end{itemize}}
+			Oggetto rappresentante tutte le informazioni inserite dall'utente.
+			\end{itemize} 
 	\item \textit{public createViewForItemWithId(itemId:string,listId:string):void}\\
-	Il metodo crea una view per l'inserimento delle informazioni di un oggetto, a partire dal suo id.
-			\item{\textbf{Parametri}: \begin{itemize}
+	Il metodo crea una view per l'inserimento delle informazioni di un oggetto precompilando i campi già inseriti con le informazioni ottenute a partire dal suo id.
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{itemId:string}\\
-			L'id dell'oggetto del quale si vogliono inserire le informazioni.
+			L'id dell'oggetto del quale si vogliono utilizzare le informazioni.
 			\item \textit{listId:string}\\
-			Id della lista a cui appartiene l'oggetto da modificare.
-			\end{itemize}}
+			L'id della lista a cui appartiene l'oggetto da modificare.
+			\end{itemize} 
 	\end{itemize}
 \item \textbf{Eventi}:
 \begin{itemize}
 \item \textit{public onSavedItem(item:ListItem):void}\\
 Evento che rappresenta il salvataggio dei dati di un particolare oggetto della lista-spesa.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{item:ListItem}\\
 			L'oggetto della lista che è stato salvato.
-			\end{itemize}}
+			\end{itemize} 
 \item \textit{public onSaveClicked():void}\\
 Evento che rappresenta il click dell'utente sulla componente grafica necessaria al salvataggio dei dati immessi.
 \end{itemize}
@@ -52,24 +52,24 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 
 \begin{itemize}
 \item \textbf{Descrizione}: Questa classe rappresenta la componente grafica necessaria all'inserimento delle informazioni di un oggetto di una lista-spesa, implementando l'interfaccia InputItemInfoView.
-\item \textbf{Utilizzo}: Questa classe viene utilizzata dall'utente ogniqualvolta aggiunge i dati di un oggetto all'interno di una lista-spesa.
+\item \textbf{Utilizzo}: Questa classe viene utilizzata dall'utente ogniqualvolta aggiunge o modifica i dati di un oggetto all'interno di una lista-spesa.
 \item \textbf{Attributi}:
 	\begin{itemize}
 	\item \textit{private presenter:InputItemViewPresenter}\\
-	Il presenter associato all'aggiunta dei dati di un oggetto alla lista, al quale questa classe delega la gestione del comportamento dell'elemento di inserimento.
+	Il presenter associato all'aggiunta o alla modifica dei dati di un oggetto alla lista, al quale questa classe delega la gestione del comportamento dell'elemento di inserimento.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{InputItemInfoViewImpl():InputItemInfoViewImpl}\\
 	Il costruttore della classe InputItemInfoViewImpl.
 	\item \textit{public createViewForItemWithId(itemId:string,listId:string):void}\\
-	Il metodo crea una view per l'inserimento delle informazioni di un oggetto, a partire dal suo id.
-			\item{\textbf{Parametri}: \begin{itemize}
+	Il metodo crea una view per l'inserimento delle informazioni di un oggetto precompilando i campi già inseriti con le informazioni ottenute a partire dal suo id.
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{itemId:string}\\
-			L'id dell'oggetto del quale si vogliono inserire le informazioni.
+			L'id dell'oggetto del quale si vogliono utilizzare le informazioni.
 			\item \textit{listId:string}\\
-			Id della lista a cui appartiene l'oggetto da modificare.
-			\end{itemize}}
+			L'id della lista a cui appartiene l'oggetto da modificare.
+			\end{itemize} 
 	\item \textit{public renderView():string}\\
 	Genera il codice HTML CSS JS necessario per visualizzare la componente grafica della lista-spesa necessaria all'inserimento delle informazioni di un oggetto nella lista.
 	\end{itemize}
@@ -93,7 +93,7 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 	\item \textit{private view:InputItemInfoView}\\
 	La view associata al presenter.
 	\item \textit{private getItemInfoUseCase:GetItemInfoUseCase}\\
-	Tramite questo elemento di contatto con il database si possono ottenere da quest'ultimo i dati relativi a un particolare oggetto.
+	Elemento di contatto con il database attraverso il quale si possono ottenere da quest'ultimo i dati relativi a un particolare oggetto.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
@@ -102,19 +102,21 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 	\item \textit{public renderView():string}\\
 	Genera il codice HTML CSS JS necessario per visualizzare la componente grafica della lista-spesa necessaria all'inserimento delle informazioni di un oggetto nella lista.
 	\item \textit{public createViewForItemWithId(itemId:string):void}\\
-	Il metodo crea una view per l'inserimento delle informazioni di un oggetto, a partire dal suo id.
-			\item{\textbf{Parametri}: \begin{itemize}
+	Il metodo crea una view per l'inserimento delle informazioni di un oggetto precompilando i campi già inseriti con le informazioni ottenute a partire dal suo id.
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{itemId:string}\\
-			L'id dell'oggetto del quale si vogliono inserire le informazioni.
-			\end{itemize}}
+			L'id dell'oggetto del quale si vogliono utilizzare le informazioni.
+			\item \textit{listId:string}\\
+			L'id della lista a cui appartiene l'oggetto da modificare.
+			\end{itemize} 
 	\item \textit{public InputInfoViewPresenter(view:InputItemInfoView, useCase:GetItemInfoUseCase):InputInfoViewPresenter}\\
 	Il costruttore della classe InputInfoViewPresenter.
-				\item{\textbf{Parametri}: \begin{itemize}
+				\\ \textbf{Parametri}: \begin{itemize}
 				\item \textit{view:InputItemInfoView}\\
 				La view necessaria alla costruzione del presenter.
 				\item \textit{useCase:GetItemInfoUseCase}\\
-				L'elemento di contatto con il database.
-			\end{itemize}}
+				L'elemento di interfaccia con il database.
+			\end{itemize} 
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}
@@ -129,7 +131,7 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione}: La classe crea disaccoppiamento, fungendo da tramite tra i presenter e il database.
+\item \textbf{Descrizione}: Classe che permette di ottenere i dati relativi ad un oggetto all'interno della lista salvato nel database.
 \item \textbf{Utilizzo}: Se le classi necessitano di comunicare con il database e ricevere informazioni su un particolare oggetto, dovranno passare attraverso questa classe.
 \item \textbf{Attributi}: 
 	\begin{itemize}
@@ -140,18 +142,18 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 	\begin{itemize}
 	\item \textit{public getItemInfo(itemId:string,listId):ListItem}\\
 	Ritorna l'oggetto della lista spesa richiesto.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{itemId:string}\\
 			L'id dell'oggetto del quale si vogliono ottenere le informazioni.
 			\item \textit{listId:string}\\
 			L'id della lista-spesa nella quale si trova l'oggetto in questione.
-			\end{itemize}}
+			\end{itemize} 
 			\item \textit{public GetItemInfoUseCase(source:DatabaseSource):GetItemInfoUseCase}\\
 			Il costruttore della classe GetItemInfoUseCase.
-				\item{\textbf{Parametri}: \begin{itemize}
+				\\ \textbf{Parametri}: \begin{itemize}
 				\item \textit{source:DatabaseSource}\\
 				Il database necessario alla costruzione dell'oggetto.
-			\end{itemize}}
+			\end{itemize} 
 	\end{itemize}
 \item{Eventi}:
 \end{itemize}
@@ -173,11 +175,11 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 \item \textbf{Eventi}:
 	\begin{itemize}
 	\item \textit{public onClickModifyItem(item:ListItem):void}\\
-	Evento che rappresenta il click dell'utente sulla componente grafica necessaria al salvataggio dei dati immessi.
-			\item{\textbf{Parametri}: \begin{itemize}
+	Evento che rappresenta il salvataggio dei dati immessi.
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{item:ListItem}\\
-			L'oggetto della lista che è stato modificato.
-			\end{itemize}}
+			Oggetto contenente tutti i dati immessi e salvati da parte dell'utente.
+			\end{itemize} 
 	\end{itemize}
 \end{itemize}
 
@@ -218,37 +220,37 @@ Evento che rappresenta il click dell'utente sulla componente grafica necessaria 
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione}: 
-\item \textbf{Utilizzo}:
+\item \textbf{Descrizione}: Questa classe rappresenta il presenter per la vista dedicata alla modifica dei dati di un oggetto presente all'interno di una lista.
+\item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione dell'elemento di aggiunta dei dati e la view, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
 \item \textbf{Attributi}: 
 	\begin{itemize}
 	\item \textit{private inputItemInfoView:InputItemInfoView}\\
 	La view associata al presenter.
 	\item \textit{private modifyListUseCase:ModifyListUseCase}\\
-	L'elemento di contatto con il database.
+	Elemento dedito alla modifica dei dati di un oggetto all'interno del database.
 	\item \textit{private showPopup:ShowPopupUseCase}\\
 	Componente necessaria alla visualizzazione di modali.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
-	\item \textit{public ModifyItemPresenter(view:InputItemInfoView, modifyList:ModifyListUseCase, showPopup:ShowPopupUseCase):ModifyItemPresenter}\\
+	\item \textit{public ModifyItemPresenter(view:InputItemInfoView, modifyList:ModifyListUseCase, \\ showPopup:ShowPopupUseCase):ModifyItemPresenter}\\
 	Il costruttore della classe ModifyItemViewPresenter
-		\item{\textbf{Parametri}: \begin{itemize}
+		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{view:InputItemInfoView}\\
 		La view associata al presenter.
 		\item \textit{modifyList:ModifyListUseCase}\\
 		L'elemento di contatto con il database.
 		\item \textit{showPopup:ShowPopupUseCase}\\
 		Componente necessaria alla visualizzazione di modali.
-		\end{itemize}}
+		\end{itemize} 
 	\item \textit{private showInputItemInfoPopup():void}\\
 	Il metodo mostra un modale per l'inserimento delle informazioni relative ad un oggetto della lista-spesa.
 	\item \textit{private saveItem(item:ListItem):string}\\
 	Metodo usato per salvare i dati di un oggetto dopo la modifica.
-			\item{\textbf{Parametri}: \begin{itemize}
+			\\ \textbf{Parametri}: \begin{itemize}
 			\item \textit{item:ListItem}\\
 			L'oggetto del quale si vogliono salvare le modifiche.
-			\end{itemize}}
+			\end{itemize} 
 	\item \textit{public renderView():string}\\
 		Genera il codice HTML CSS JS necessario per visualizzare la componente grafica della lista-spesa necessaria alla modifica delle informazioni di un oggetto nella lista.
 	\end{itemize}

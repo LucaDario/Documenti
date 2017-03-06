@@ -50,25 +50,29 @@ def main(args, argc):
     req_package = {}
     package_req = {}
 
-    for package in req:
-        print("Analizzo il package: " + package)
-        if package not in package_req:
-            package_req[package] = []
-        for classe in req[package]:
-            print("Analizzo la classe: " + classe)
-            if classe not in class_req:
-                class_req[classe] = []
-            for requiremt in req[package][classe]["requisiti"]:
-                if requiremt not in req_class:
-                    req_class[requiremt] = []
-                    req_package[requiremt] = []
+    for packages in req:
+        print("Analizzo il package: " + packages)
+        sub_puckage = packages.split(".")
+        for package in sub_puckage:
+            if package not in package_req:
+                package_req[package] = []
+            for classe in req[packages]:
+                print("Analizzo la classe: " + classe)
+                if classe not in class_req:
+                    class_req[classe] = []
+                for requiremt in req[packages][classe]["requisiti"]:
+                    if requiremt not in req_class:
+                        req_class[requiremt] = []
+                        req_package[requiremt] = []
 
-                if requiremt not in package_req[package]:
-                    package_req[package].append(requiremt)
-                if package not in req_package[requiremt]:
-                    req_package[requiremt].append(package)
-                class_req[classe].append(requiremt)
-                req_class[requiremt].append(classe)
+                    if requiremt not in package_req[package]:
+                        package_req[package].append(requiremt)
+                    if package not in req_package[requiremt]:
+                        req_package[requiremt].append(package)
+                    if requiremt not in class_req[classe]:
+                        class_req[classe].append(requiremt)
+                    if classe not in req_class[requiremt]:
+                        req_class[requiremt].append(classe)
 
         print(package_req)
         print(req_package)

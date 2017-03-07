@@ -100,12 +100,12 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\caption{Monolith::component}
 \end{figure}
 \begin{itemize}
-	\item{\textbf{Descrizione}}: package contenente tutte i packages che permettono la creazione dei componenti di una bolla.
+	\item{\textbf{Descrizione}}: package contenente tutti i packages che permettono la creazione dei componenti di una bolla.
 	\item{\textbf{Package e classi contenuti}}:
 	\begin{itemize}
-	\item{monolith::component::layout}: package contenente tutti i package e classi per la creazione di un \termine{layout}, esso ha la una dipendenza tra i \termine{widget}.
+	\item{monolith::component::layout}: package contenente tutti i package e le classi per la creazione di un \termine{layout}, esso ha la una dipendenza tra i \termine{widget}.
 	\item{monolith::component::widget}: package contenente tutti i package per la creazione di un \termine{widget}.
-	\item{monolith::component::BaseComponent}: classe interfaccia per un component base.
+	\item{monolith::component::BaseComponent}: interfaccia per un component base.
 	\end{itemize}
 
 \end{itemize}
@@ -118,12 +118,12 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\caption{Monolith::component::layout}
 \end{figure}
 \begin{itemize}
-	\item{\textbf{Descrizione}}: package contenente tutte i packages e classi che permettono la creazione di un layout.
+	\item{\textbf{Descrizione}}: package contenente tutti i packages e le classi che permettono la creazione di un layout.
 	\item{\textbf{Package e classi contenuti}}:
 	\begin{itemize}
-	\item{monolith::component::layout::vertical}: package contenente tutti i package e classi per la creazione di un \termine{layout verticale}.
-	\item{monolith::component::layout::horizontal}: package contenente tutti i package e classi per la creazione di un \termine{layout orizzontale}.
-	\item{monolith::component::layout:BaseLayout}: classe interfaccia per un layout base.
+	\item{monolith::component::layout::vertical}: package contenente tutti i package e le classi per la creazione di un \termine{layout verticale}.
+	\item{monolith::component::layout::horizontal}: package contenente tutti i package e le classi per la creazione di un \termine{layout orizzontale}.
+	\item{monolith::component::layout:BaseLayout}: interfaccia per un layout base.
 	\end{itemize}
 
 \end{itemize}
@@ -197,15 +197,15 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\caption{Monolith::component::widget}
 \end{figure}
 \begin{itemize}
-	\item{\textbf{Descrizione}}: package contenente tutte i packages e classi che permettono la creazione di un \termine{widget}.
+	\item{\textbf{Descrizione}}: package contenente tutti i packages e le classi che permettono la creazione di un \termine{widget}.
 	\item{\textbf{Package e classi contenuti}}:
 	\begin{itemize}
-	\item{monolith::component::widget::button}: package contenente tutti i package e classi per la creazione di un \termine{widget botton}.
-	\item{monolith::component::widget::text}: package contenente tutti i package e classi per la creazione di un \termine{widget text}, ha una dipendenza con l'interfaccia BaseWidgetView.
-	\item{monolith::component::widget::checklist}: package contenente tutti i package e classi per la creazione di un \termine{widget checklist}, ha una dipendenza con l'interfaccia BaseWidgetView.
-	\item{monolith::component::widget::list}: package contenente tutti i package e classi per la creazione di un \termine{widget list}, ha una dipendenza con l'interfaccia BaseWidgetView.
-	\item{monolith::component::widget::image}: package contenente tutti i package e classi per la creazione di un \termine{widget image}, ha una dipendenza con l'interfaccia BaseWidgetView.
-	\item{monolith::component::widget::BaseWidget}: classe interfaccia per un widget base.
+	\item{monolith::component::widget::button}: package contenente tutti i package e le classi per la creazione di un \termine{widget botton}.
+	\item{monolith::component::widget::text}: package contenente tutti i package e le classi per la creazione di un \termine{widget text}, ha una dipendenza con l'interfaccia BaseWidgetView.
+	\item{monolith::component::widget::checklist}: package contenente tutti i package e le classi per la creazione di un \termine{widget checklist}, ha una dipendenza con l'interfaccia BaseWidgetView.
+	\item{monolith::component::widget::list}: package contenente tutti i package e le classi per la creazione di un \termine{widget list}, ha una dipendenza con l'interfaccia BaseWidgetView.
+	\item{monolith::component::widget::image}: package contenente tutti i package e le classi per la creazione di un \termine{widget image}, ha una dipendenza con l'interfaccia BaseWidgetView.
+	\item{monolith::component::widget::BaseWidget}: interfaccia per un widget base.
 	\end{itemize}
 
 \end{itemize}
@@ -218,13 +218,13 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\caption{Monolith::component::widget::button}
 \end{figure}
 \begin{itemize}
-	\item{\textbf{Descrizione}}: package contenente tutte i packages e classi che permettono la creazione di un widget button.
+	\item{\textbf{Descrizione}}: package contenente tutti i packages e le classi che permettono la creazione di un widget button.
 	\item{\textbf{Package e classi contenuti}}:
 	\begin{itemize}
 	\item{monolith::component::widget::button::view}: package contenente tutte le classi per la view di un widget button.
 	\item{monolith::component::widget::button::presenter}: package contenente tutte le classi per il presenter di un widget button.
 	\item{monolith::component::widget::button::option}: package contenente tutte le classi per le option di un widget button.
-	\item{monolith::component::widget::ButtonWidgetView}: classe interfaccia per un widget button.
+	\item{monolith::component::widget::ButtonWidgetView}: interfaccia per un widget button.
 	\end{itemize}
 
 \end{itemize}
@@ -286,13 +286,13 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\caption{Monolith::component::widget::checklist}
 \end{figure}
 \begin{itemize}
-	\item{\textbf{Descrizione}}: package contenente tutte i packages e classi che permettono la creazione di un widget checklist.
+	\item{\textbf{Descrizione}}: package contenente tutti i packages e le classi che permettono la creazione di un widget checklist.
 	\item{\textbf{Package e classi contenuti}}:
 	\begin{itemize}
 	\item{monolith::component::widget::checklist::view}: package contenente tutte le classi per la view di un widget checklist.
 	\item{monolith::component::widget::checklist::presenter}: package contenente tutte le classi per il presenter di un widget checklist.
 	\item{monolith::component::widget::checklist::option}: package contenente tutte le classi per le option di un widget checklist.
-	\item{monolith::component::widget::CheckListWidgetView}: classe interfaccia per un widget checklist.
+	\item{monolith::component::widget::CheckListWidgetView}: interfaccia per un widget checklist.
 	\end{itemize}
 
 \end{itemize}
@@ -356,13 +356,13 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\caption{Monolith::component::widget::image}
 \end{figure}
 \begin{itemize}
-	\item{\textbf{Descrizione}}: package contenente tutte i packages e classi che permettono la creazione di un widget image.
+	\item{\textbf{Descrizione}}: package contenente tutti i packages e le classi che permettono la creazione di un widget image.
 	\item{\textbf{Package e classi contenuti}}:
 	\begin{itemize}
 	\item{monolith::component::widget::image::view}: package contenente tutte le classi per la view di un widget image.
 	\item{monolith::component::widget::image::presenter}: package contenente tutte le classi per il presenter di un widget image.
 	\item{monolith::component::widget::image::option}: package contenente tutte le classi per le option di un widget image.
-	\item{monolith::component::widget::image:ImageWidgetView}: classe interfaccia per un widget image.
+	\item{monolith::component::widget::image:ImageWidgetView}: interfaccia per un widget image.
 	\end{itemize}
 
 \end{itemize}
@@ -425,13 +425,13 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\caption{Monolith::component::widget::list}
 \end{figure}
 \begin{itemize}
-	\item{\textbf{Descrizione}}: package contenente tutte i packages e classi che permettono la creazione di un widget list.
+	\item{\textbf{Descrizione}}: package contenente tutti i packages e le classi che permettono la creazione di un widget list.
 	\item{\textbf{Package e classi contenuti}}:
 	\begin{itemize}
 	\item{monolith::component::widget::list::view}: package contenente tutte le classi per la view di un widget list.
 	\item{monolith::component::widget::list::presenter}: package contenente tutte le classi per il presenter di un widget list.
 	\item{monolith::component::widget::list::option}: package contenente tutte le classi per le option di un widget list.
-	\item{monolith::component::widget::list:ListWidgetView}: classe interfaccia per un widget .
+	\item{monolith::component::widget::list:ListWidgetView}: interfaccia per un widget .
 	\end{itemize}
 
 \end{itemize}
@@ -496,13 +496,13 @@ Il principio di progettazione che abbiamo addottato è il \termine{Common Closur
 	\caption{Monolith::component::widget::text}
 \end{figure}
 \begin{itemize}
-	\item{\textbf{Descrizione}}: package contenente tutte i packages e classi che permettono la creazione di un widget text.
+	\item{\textbf{Descrizione}}: package contenente tutti i packages e le classi che permettono la creazione di un widget text.
 	\item{\textbf{Package e classi contenuti}}:
 	\begin{itemize}
 	\item{monolith::component::widget::text::view}: package contenente tutte le classi per la view di un widget text.
 	\item{monolith::component::widget::text::presenter}: package contenente tutte le classi per il presenter di un widget text.
 	\item{monolith::component::widget::text::option}: package contenente tutte le classi per le option di un widget text.
-	\item{monolith::component::widget::text:TextWidgetView}: classe interfaccia per un widget text.
+	\item{monolith::component::widget::text:TextWidgetView}: interfaccia per un widget text.
 	\end{itemize}
 
 \end{itemize}

@@ -27,8 +27,8 @@ def load_requirements():
     return req
 
 
-def print_table(name, column1, column2, data):
-    section_file = open(name + ".tex", 'w')
+def print_table(file_name, table_name, column1, column2, data):
+    section_file = open(file_name + ".tex", 'w')
     section_file.write("\\begin{center}\n")
     section_file.write("\t\\begin{longtable}{|p{7cm}|p{7cm}|}\\hline\n")
     section_file.write("\t\t" + column1 + " & " + column2 + " \\\\ \\hline\n")
@@ -37,6 +37,8 @@ def print_table(name, column1, column2, data):
         for item in data[row]:
             section_file.write(item.replace("_", "\_") + " \\\\ & ")
         section_file.write("\\\\ \\hline\n")
+    section_file.write("\t\\caption[" + table_name + "]{" + table_name + "}\n")
+    section_file.write("\t\\label{tabella: " + table_name + "}\n")
     section_file.write("\t\\end{longtable}\n")
     section_file.write("\\end{center}\n")
     section_file.close()
@@ -78,10 +80,10 @@ def main(args, argc):
         print(req_package)
         print(class_req)
         print(req_class)
-        print_table("PackageReq", "Package", "Id Requisiti", package_req)
-        print_table("ReqPackage", "Id Requisiti", "Package", req_package)
-        print_table("ClasseReq", "Classe", "Id Requisiti", class_req)
-        print_table("ReqClasse", "Id Requisiti", "Classe", req_class)
+        print_table("PackageReq", "Tracciamento Packages - Requisiti", "Package", "Id Requisiti", package_req)
+        print_table("ReqPackage", "Tracciamento Requisiti - Packages", "Id Requisiti", "Package", req_package)
+        print_table("ClasseReq", "Tracciamento Classi - Requisiti", "Classe", "Id Requisiti", class_req)
+        print_table("ReqClasse", "Tracciamento Requisiti - Classi", "Id Requisiti", "Classe", req_class)
 
 if __name__ == '__main__':
     main(sys.argv, len(sys.argv))

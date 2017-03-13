@@ -6,7 +6,7 @@ Script in Python realizzato da [@manu0466](https://github.com/orgs/NPE-Developer
 
 ## Istruzioni
 **1**. Creare un file JSON di nome `requirements.json` formato come segue:
-```json
+```
 {
    "NomePackage1" : { 
         "Classe1Package1" : {

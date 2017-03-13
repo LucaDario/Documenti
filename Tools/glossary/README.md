@@ -1,5 +1,5 @@
 # Descrizione
-Script realizzato da @manu0466 utilizzando il linguaggio Python per la scrittura 
+Script realizzato da [@manu0466](https://github.com/orgs/NPE-Developers/people/manu0466) utilizzando il linguaggio Python per la scrittura 
 automatizzata del glossario e dei suoi termini. Esso prende in input i dati in formato JSON e
 resittuisce i file generati in linguaggio LaTeX pronti ad essere utilizzati.
 

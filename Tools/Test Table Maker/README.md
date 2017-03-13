@@ -6,7 +6,7 @@ Script in Python realizzato da [@manu0466](https://github.com/orgs/NPE-Developer
 
 ## Istruzioni
 **1**. Creare un file denominato `test.json` nel formato seguente:
-```json
+```
 {
   "type" : { 
     "id_config": string,
@@ -24,16 +24,16 @@ Script in Python realizzato da [@manu0466](https://github.com/orgs/NPE-Developer
 }
 ```
 Significato dei campi:
-* `type` (stringa): indicia la tipologia di test che sono contenuti in quella sezione (es. _Test di unit‡_, _Test strumentali_, ...).
+* `type` (stringa): indicia la tipologia di test che sono contenuti in quella sezione (es. _Test di unit√†_, _Test strumentali_, ...).
 * `id_config` (stringa): indicica come gli id che rappresentano i vari test devono essere formati. Sono permessi due identificativi particolari:
-  * `#POS#`: indica la posizione del test. Ad esempio `id_config : "TU#POS#"` generer‡ gli id progressivi `TU1`, `TU2`, etc.
-  * `[key]`: permette di selezionare un determinato elemento all'interno del JSON che rappresenta il test. Ad esempio `id_config : "TU[description]"` generer‡ id `TU` seguito dalla descrizione del test, per ogni test.
+  * `#POS#`: indica la posizione del test. Ad esempio `id_config : "TU#POS#"` generer√† gli id progressivi `TU1`, `TU2`, etc.
+  * `[key]`: permette di selezionare un determinato elemento all'interno del JSON che rappresenta il test. Ad esempio `id_config : "TU[description]"` generer√† id `TU` seguito dalla descrizione del test, per ogni test.
 * `skip_not_approved` (booleano): `true` se si vuole saltare la generazione dei test **non** approvati.
 * `tests` (JSONArray): contiene i vari test da generare. Ogni test contiene i seguenti campi:
    * `description` (stringa): descrizione del test.
-   * `implemented` (booleano): `true` se questo test Ë gi‡ stato implementato, `false` altrimenti.
-   * `approved` (booleano): `true` se questo test Ë stato approvato, `false` altrimenti
+   * `implemented` (booleano): `true` se questo test √® gi√† stato implementato, `false` altrimenti.
+   * `approved` (booleano): `true` se questo test √® stato approvato, `false` altrimenti
 
-N.B. Per poter visualizzare un esempio completo, il nostro Ë disponibile [qui](https://github.com/NPE-Developers/documenti/blob/master/2%20-%20RP/Esterni/Piano%20di%20Qualifica/Sezioni/Test/Tabelle/test.json).
+N.B. Per poter visualizzare un esempio completo, il nostro √® disponibile [qui](https://github.com/NPE-Developers/documenti/blob/master/2%20-%20RP/Esterni/Piano%20di%20Qualifica/Sezioni/Test/Tabelle/test.json).
 
 **2**. Utilizzare il comando `python Tracker.py` all'interno della cartella che contiene anche il file `test.json` precedentemente creato.

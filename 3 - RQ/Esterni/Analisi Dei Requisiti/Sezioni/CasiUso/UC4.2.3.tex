@@ -1,0 +1,170 @@
+\newpage
+\paragraph{Caso d'uso UC 4.2.3: Aggiunta di un prodotto alla lista}
+\label {Caso d'uso UC 4.2.3: Aggiunta di un prodotto alla lista}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.50]{Usecases/img/{UC4.2.3}.png}
+	\caption {Caso d'uso UC 4.2.3: Aggiunta di un prodotto alla lista}
+\end{figure}
+\FloatBarrier
+\begin{itemize}
+\item\textbf{Attori}: Utente con permessi.
+\item\textbf{Descrizione}: L'attore aggiunge un prodotto alla lista-spesa.
+\item\textbf{Precondizione}: L'attore ha i permessi per l'aggiunta di prodotti alla bolla lista.
+\item\textbf{Postcondizione}: L'oggetto viene aggiunto alla lista-spesa.
+\item\textbf{Estensioni}:
+\begin{itemize}
+		\item Visualizzazione messaggio d'errore(UC 4.2.3.2).
+		\item Impostazione della quantità richiesta a default(UC 4.2.3.7).
+		\item Impostazione della unità di misura relativa alla quantità di prodotto richiesta a default (UC 4.2.3.9).
+	\end{itemize}
+	
+\item\textbf{Scenario principale}:
+	\begin{itemize}
+		\item Impostazione del nome del prodotto(UC 4.2.3.1).
+		\item Impostazione dell'immagine del prodotto(UC 4.2.3.3).
+		\item Impostazione della descrizione del prodotto(UC 4.2.3.4).
+		\item Impostazione delle note relativo al prodotto(UC 4.2.3.5).
+		\item Impostazione della quantità di prodotto richiesta(UC 4.2.3.6).
+		\item Impostazione dell'unità di misura relativa alla quantità di prodotto richiesta(UC 4.2.3.8).
+	\end{itemize}
+	\item\textbf{Scenario alternativo}:
+	\begin{itemize}
+		\item L'attore visualizza un messaggio d'errore a causa del mancato inserimento del nome del prodotto(UC 4.2.3.2).
+		\item La quantità di prodotto richiesta viene impostata a default a causa del mancato inserimento di essa(UC 4.2.3.7).
+		\item L'unita di misura della quantità del prodotto viene impostata a default a causa del mancato inserimento di essa(UC 4.2.3.9).
+	\end{itemize}
+
+\end{itemize}
+
+
+\subparagraph{Caso d'uso UC 4.2.3.1 Impostazione del nome del prodotto.}
+	\begin{itemize}
+		\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: L'attore imposta il nome del prodotto che vuole aggiungere.
+		\item\textbf{Precondizione}: L' attore vuole inserire un prodotto.
+		\item\textbf{Postcondizione}: L'attore ha impostato il nome al prodotto che vuole aggiungere.
+		\item\textbf{Estensioni}: Visualizzazione messaggio d'errore(UC 4.2.3.2).
+		\item\textbf{Scenario principale}:
+			\begin{itemize}
+				\item L'attore ha impostato correttamente il nome del prodotto(UC 4.2.3.1). 
+			\end{itemize}
+		\item\textbf{Scenario alternativo}: L'attore non imposta il nome ed esso viene impostato a default(UC 4.2.3.2).
+		
+	\end{itemize}
+	
+	
+\subparagraph{Caso d'uso UC 4.2.3.2 Visualizzazione messaggio d'errore.}
+	\begin{itemize}
+		\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: L' attore visualizza un messaggio d'errore a causa del mancato inserimento del nome del prodotto.
+		\item\textbf{Precondizione}: L' attore non imposta il nome del prodotto che vuole inserire.
+		\item\textbf{Postcondizione}: L' attore visualizza un messaggio d'errore.
+		\item\textbf{Scenario principale}:
+			\begin{itemize}
+				\item L'attore visualizza un messaggio d'errore. 
+			\end{itemize}
+		
+	\end{itemize}
+	
+	\subparagraph{Caso d'uso UC 4.2.3.3 Impostazione dell'immagine del prodotto.}
+	\begin{itemize}
+		\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: L' attore imposta l'immagine del prodotto che vuole inserire.
+		\item\textbf{Precondizione}: L' attore vuole inserire un prodotto con relativa immagine.
+		\item\textbf{Postcondizione}: L' attore ha impostato l'immagine al prodotto.
+		\item\textbf{Scenario principale}:
+			\begin{itemize}
+				\item L'attore ha impostato correttamente l'immagine del prodotto(UC 4.2.3.3). 
+			\end{itemize}
+		
+	\end{itemize}
+	
+	\subparagraph{Caso d'uso UC 4.2.3.4 Impostazione della descrizione del prodotto.}
+	\begin{itemize}
+		\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: L' attore imposta una descrizione del prodotto che vuole inserire.
+		\item\textbf{Precondizione}: L' attore vuole inserire un prodotto con relativa descrizione.
+		\item\textbf{Postcondizione}: L' attore ha impostato una descrizione al prodotto.
+		\item\textbf{Scenario principale}:
+			\begin{itemize}
+				\item L'attore ha impostato correttamente la descrizione del prodotto(UC 4.2.3.4). 
+			\end{itemize}
+		
+	\end{itemize}
+	
+	\subparagraph{Caso d'uso UC 4.2.3.5 Impostazione delle note relative al prodotto.}
+	\begin{itemize}
+		\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: L' attore imposta le note relative del prodotto che vuole inserire.
+		\item\textbf{Precondizione}: L' attore vuole inserire un prodotto con relative note.
+		\item\textbf{Postcondizione}: L' attore ha impostato le note relative al prodotto.
+		\item\textbf{Scenario principale}:
+			\begin{itemize}
+				\item L'attore ha impostato correttamente le note relative al prodotto(UC 4.2.3.5). 
+			\end{itemize}
+		
+	\end{itemize}
+	
+	\subparagraph{Caso d'uso UC 4.2.3.6 Impostazione della quantità di prodotto richiesta.}
+	\begin{itemize}
+		\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: L'attore imposta la quantità di prodotto desiderato.
+		\item\textbf{Precondizione}: L' attore vuole inserire un prodotto.
+		\item\textbf{Postcondizione}: L'attore ha impostato la quantità di prodotto desiderato.
+		\item\textbf{Estensioni}: Impostazione della quantità di prodotto richiesta a default(UC 4.2.3.7).
+		\item\textbf{Scenario principale}:
+			\begin{itemize}
+				\item L'attore ha impostato correttamente la quantità di prodotto(UC 4.2.3.6). 
+			\end{itemize}
+		\item\textbf{Scenario alternativo}: La quantità di prodotto viene impostata a default a causa di un mancato inserimento di essa.(UC 4.2.3.2).
+		
+	\end{itemize}
+	
+	
+	
+	
+	
+\subparagraph{Caso d'uso UC 4.2.3.7 Impostazione della quantità richiesta a default.}
+	\begin{itemize}
+		\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: La quantità di prodotto richiesta viene impostata a default a causa del mancato inserimento di essa.
+		\item\textbf{Precondizione}: L'attore non imposta la quantità di prodotto richiesto.
+		\item\textbf{Postcondizione}:La bolla ha una quantità di prodotto impostata a default.
+		\item\textbf{Scenario principale}:
+			\begin{itemize}
+				\item La quantità del prodotto viene impostata a default.
+			\end{itemize}
+		
+	\end{itemize}
+	
+	\subparagraph{Caso d'uso UC 4.2.3.8 Impostazione dell'unità di misura relativa alla quantità di prodotto richiesta.}
+	\begin{itemize}
+		\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: L'attore imposta l'unità di misura della quantità di prodotto richiesta.
+		\item\textbf{Precondizione}: L' attore vuole inserire un prodotto.
+		\item\textbf{Postcondizione}: L'attore ha impostato l'unità di misura della quantità di prodotto.
+		\item\textbf{Estensioni}: Impostazione dell'unità di misura della quantità di prodotto a default(UC 4.2.3.9).
+		\item\textbf{Scenario principale}:
+			\begin{itemize}
+				\item L'attore ha impostato correttamente l'unità di misura della quantità di prodotto(UC 4.2.3.8). 
+			\end{itemize}
+		\item\textbf{Scenario alternativo}: L'unità di misura della quantità di prodotto viene impostata a default a causa di un mancato inserimento di essa.(UC 4.2.3.9).
+		
+	\end{itemize}
+	
+	
+	
+\subparagraph{Caso d'uso UC 4.2.3.9 Impostazione della unità di misura relativa alla quantità di prodotto richiesta a default.}
+	\begin{itemize}
+		\item\textbf{Attori}: Creatore della lista.
+		\item\textbf{Descrizione}: L'unità di misura della quantità di prodotto richiesta viene impostata a default a causa del mancato inserimento di essa.
+		\item\textbf{Precondizione}: L'attore non imposta l'unità di misura della quantità di prodotto richiesto.
+		\item\textbf{Postcondizione}: La bolla ha un unità di misura della quantità di prodotto impostata a default.
+		\item\textbf{Scenario principale}:
+			\begin{itemize}
+				\item L'unità di misura della quantità del prodotto viene impostata a default.
+			\end{itemize}
+		
+\end{itemize}
+	

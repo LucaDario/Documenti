@@ -1,0 +1,68 @@
+\begin{center}
+	\begin{longtable}{|c|>{\centering}m{10cm}|c|}\hline
+		Id & Descrizione & stato \\ \hline
+		TI1 & Si verifica che il mettodo ButtonWidget::setText passi correttamente al presenter il testo il  quale eventualmente formatterà il testo e lo presenterà nella view & Non implementato \\ \hline
+		TI2 & Si verifica che il mettodo ButtonWidget::setHeight passi correttamente al presenter il valore dell'altezza il quale aggiornerà la view & Non implementato \\ \hline
+		TI3 & Si verifica che il mettodo ButtonWidget::setWidth passi correttamente al presenter il valore della lareghezza il quale aggiornerà la view & Non implementato \\ \hline
+		TI4 & Si verifica che il mettodo ButtonWidget::setBackgroundColor passi correttamente al presenter il colore dello sfondo il quale aggiornerà la view & Non implementato \\ \hline
+		TI5 & Si verifica che il mettodo ButtonWidget::setOnClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene premuto il pulsante & Non implementato \\ \hline
+		TI6 & Si verifica che il mettodo ButtonWidget::setOnLongClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene mantenuto premuto il pulsante & Non implementato \\ \hline
+		TI7 & Si verifica che il mettodo TextWidget::setText passi correttamente al presenter il testo che verrà poi mostrato a video & Non implementato \\ \hline
+		TI8 & Si verifica che il mettodo TextWidget::setTextColor passi correttamente al presenter il colore del testo il quele dovrà presengtare il testo nel colore corrispondente & Non implementato \\ \hline
+		TI9 & Si verifica che il metodo TextWidget::setFormatText passi al presenter il valore il quale dovrà presentare il testo formattato seguendo la sintassi markdown oppure lasciarlo invariato in fuznione al valore booleano passato al presenter & Non implementato \\ \hline
+		TI10 & Si verifica che il metodo TextWidget::setUrlHighlightColor passi al presenter il valore il quale dovrà presentare i link evidenziati oppure non evidenziati in fuznione al valore booleano passato al presenter & Non implementato \\ \hline
+		TI11 & Si verifica che il metodo TextWidget::setTextSize passi la dimensione del testo del presenter il quale dovrà occuparsi di presentare il testo della dimensione impostata & Non implementato \\ \hline
+		TI12 & Si verifica che il metodo ChecklistWidget::addOption passi al presenter il testo del elemento il quale dovrà presentare la view con il nuovo elemento & Non implementato \\ \hline
+		TI13 & Si verifica che il metodo ChecklistWidget::setUseSelectionMark  & Non implementato \\ \hline
+		TI14 & Si verifica che il metodo ChecklistWidget::setSelectionColor passi al presenter il colore dello spunta il quale docrà presentare la lista con lo stile corretto & Non implementato \\ \hline
+		TI15 & Si verifica che il metodo ChecklistWidget::setSelectionCharacter passi al presenter lo stile della spunta il quale dovrà presentare la lista con lo stile corretto & Non implementato \\ \hline
+		TI16 & Si verifica che il metodo ChecklistWidget::setCompletionMessage passi al presenter il messaggio che dovrà essere visualizzato quando il tutti gli elemnti della lista vengono spuntati & Non implementato \\ \hline
+		TI17 & Si verifica che il metodo ListWidget::addItem passi al presenter il testo del elemento il quale dovrà presentare la view con il nuovo elemento & Non implementato \\ \hline
+		TI18 & Si verifica che il metodo ListWidget::setIndicator passi al presenter lo stile con il quale si vuole mostrare la lista il quale dovrà presentarla con lo stile impostato & Non implementato \\ \hline
+		TI19 & Si verifica che il metodo ImageWidget::setWidth passi correttamente al presenter il valore dell'altezza il quale aggiornerà la view & Non implementato \\ \hline
+		TI20 & Si verifica che il metodo ImageWidget::setHeight passi correttamente al presenter il valore della larghezza il quale aggiornerà la view & Non implementato \\ \hline
+		TI21 & Si verifica che il metodo ImageWidget::setImage passi correttamente al presenter il path del'immagine che dovrà essere presentata nella view & Non implementato \\ \hline
+		TI22 & Si verifica che il metodo VerticalLayoutView::renderView generi la view mostrando gli elementi uno sotto l'altro nel ordine in cui sono stati inseriti & Non implementato \\ \hline
+		TI23 & Si verifica che il metodo HorizontalLayoutView::renderView generi la view mostrando gli elementi uno affinaco all'altro nel ordine in cui sono stati inseriti & Non implementato \\ \hline
+		TI24 & Si verifica che RemoteItemViewPresenter riceva l'evento RemoveItemView::onItemRemovedClicked ed elimini l'elelemnto relativo dalla lista & Non implementato \\ \hline
+		TI25 & Si verifica che RemoteItemViewPresenter rimuovendo un elemento dalla lista mantenga RemoveItemView in uno stato consistente agli elementi presenti & Non implementato \\ \hline
+		TI26 & Si verifica che il ModifyListUseCase esegua le operazioni di aggiunta, rimmozione e aggiornamento dei dati trammite DatabaseSource in modo corretto & Non implementato \\ \hline
+		TI27 & Si verifica che AddItemViewPresenter riceva l'evento AddItemView::onAddItemClicked ed aggiunga gli elementi & Non implementato \\ \hline
+		TI28 & Si verifica che ShowPopupUseCase interagisca in modod corretto con l'interfaccia ChatSource & Non implementato \\ \hline
+		TI29 & Si verifica che CreateListViewPresenter riceva l'evento CreateListView::onCreateListClicked e lo gestisca in modo corretto & Non implementato \\ \hline
+		TI30 & Si verifica che CreateListViewPresenter interagisca con ShowPopupUseCase in modo corretto il quale dovrà mostrare l'opportuno popup & Non implementato \\ \hline
+		TI31 & Si verifica che ShowPopupUseCase interagisca con ChatSource in modo corretto il quale dovà eseguire l'effetiva visualizzazione del popup e l'invio del messaggio & Non implementato \\ \hline
+		TI32 & Si verifica che CreateListViewPresenter interagisca con ManageListUseCase aggiungendo una lista in modo corretto & Non implementato \\ \hline
+		TI33 & Si verifica che ManageListUseCase interagisca con DatabaseSource rimuovendo e aggiungendo una lista dal database in modo corretto & Non implementato \\ \hline
+		TI34 & Si verifica che DeleteListViewPresenter riceva l'evento DeleteListView::onDeleteListClicked ed elimini l'emento selezionato dal utente & Non implementato \\ \hline
+		TI35 & Si verifica che DeleteListViewPresenter interagisca con ManageListUseCase rimuovendo una lista in modo corretto & Non implementato \\ \hline
+		TI36 & Si verifica che ForwardListViewPresenter riceva l'evento ForwardListView::onForwardClicked ed inizzi la procedura di inoltro trammite ForwardListUseCase & Non implementato \\ \hline
+		TI37 & Si verifica che ForwardListViewPresenter riceva l'evento ForwardListView::onForwardClicked ed inizzi la procedura di inoltro mostrando un popup trammite ShowPopupUseCase & Non implementato \\ \hline
+		TI38 & Si verifica che ShowPopupUseCase interagisca in modo corretto con ChatSource al fine di mostrare il popup corretto & Non implementato \\ \hline
+		TI39 & Si verifica che ForwardListUseCase interagisca in modo corretto con ChatSource al fine di inoltrare la lista selezionata & Non implementato \\ \hline
+		TI40 & Si verifica che InputListInfoViewPresenter riceva l'evento InputListInfoView::onSaveClicked il quale aggiornerà i dati & Non implementato \\ \hline
+		TI41 & Si verifica che InputListInfoViewPresenter successivamente al evento InputListInfoView::onSaveClicked invochi il metodo InputListInfoView::emitOnSavedDataEvent & Non implementato \\ \hline
+		TI42 & Si verifica che ChangeListInfoViewPresenter riceva l'evento InputListInfoView::onSavedData e presenti i nuovi dati che dovranno essere visualizzati & Non implementato \\ \hline
+		TI43 & Si verifica che GetListInfoUseCase esegua i fetch dei dati in modo corretto dal database trammite DatabaseSource & Non implementato \\ \hline
+		TI44 & Si verifica che ChangeListInfoViewPresenter interagisca in modo corretto con ModifyListUseCase & Non implementato \\ \hline
+		TI45 & Si verifica che ChangeListInfoViewPresenter interagisca in modo corretto con ShowPopupUseCase & Non implementato \\ \hline
+		TI46 & Si verifica che InputInfoViewPresenter ricevà l'evento InputItemInfoView::onSaveClicked a seguito del'intenzione di salvare i dati da parte del utente & Non implementato \\ \hline
+		TI47 & Si verifca che ModifyItemPresenter ricevà l'evento InputItemInfoView::onSavedItem a seguito del avvenuto salvataggio dei dati & Non implementato \\ \hline
+		TI48 & Si verifica che InputInfoViewPresenter interagisca in modod corretto con GetItemInfoUseCase & Non implementato \\ \hline
+		TI49 & Si verifica che GetItemInfoUseCase interagisca in modo corretto con DatabaseSource & Non implementato \\ \hline
+		TI50 & Si verifica che ModifyItemPresenter ricevà l'evento ModifyItemView::onClickModifyItem & Non implementato \\ \hline
+		TI51 & Si verifica che ModifyItemPresenter interagisca in modod corretto con ModifyListUseCase & Non implementato \\ \hline
+		TI52 & Si verifica che ModifyItemPresenter interagisca in modod corretto con ShowPopupUseCase & Non implementato \\ \hline
+		TI53 & Si verifica che ModifyListUseCase interagisca in modo corretto con DatabaseSource & Non implementato \\ \hline
+		TI54 & Si verifica che ShowPopupUseCase interagisca in modo corretto con ChatSource & Non implementato \\ \hline
+		TI55 & Si verifica che ShareWithContactViewPresenter riceva l'evento ShareWithContactView::onClickShareWithContact & Non implementato \\ \hline
+		TI56 & Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ShareWithContactView & Non implementato \\ \hline
+		TI57 & Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ShareListUseCase & Non implementato \\ \hline
+		TI58 & Si verifica che ShareListUseCase interagisca in modo corretto con DatabaseSource & Non implementato \\ \hline
+		TI59 & Si verifica che ShareWithGroupViewPresenter riceva l'evento ShareWithGroupView::onClickShareWithGroup & Non implementato \\ \hline
+		TI60 & Si verifica che ShareWithGroupViewPresenter riceva l'evento ShareWithContactView::onClickShareWithContact & Non implementato \\ \hline
+		TI61 & Si verifica che ShareWithGroupViewPresenter interagisca in modo corretto con ShareWithContactView & Non implementato \\ \hline
+		TI62 & Si verifica che ShareWithGroupViewPresenter interagosca in modo corretto con ShowPopupUseCase & Non implementato \\ \hline
+		TI63 & Si verifca che ChatSource interagisca in modo corretto con Rocket.chat & Non implementato \\ \hline
+	\end{longtable}
+\end{center}

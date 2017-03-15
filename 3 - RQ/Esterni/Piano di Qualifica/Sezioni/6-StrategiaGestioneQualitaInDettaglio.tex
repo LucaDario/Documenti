@@ -1,0 +1,44 @@
+\section{Strategia di Gestione della Qualità in Dettaglio}
+\subsection{Risorse}
+Per raggiungere gli obiettivi qualitativi prefissati è necessario, oltre alle risorse umane, utilizzare la potenza e l'affidabilità delle risorse tecnologiche. Infatti, per agevolare il lavoro dei \VerP, verranno impiegati numerosi strumenti automatici che eseguiranno controlli sistematici sui prodotti generati. \\
+Le risorse tecniche e tecnologiche consistono in tutti quegli strumenti software e hardware che il \gruppo\ intende utilizzare per le attività di verifica su processi e prodotti; per la descrizione di tali strumenti e delle tecniche utilizzate dal gruppo si rimanda al documento \NdP.
+
+\subsection{Misure e metriche}
+Allo scopo di rendere quantificabile il processo di verifica verranno adottate delle misure basate su metriche stabilite a priori. Le metriche incerte, qualora ve ne fossero, verranno migliorate in modo incrementale. \\
+Le varie misure che verranno rilevate saranno analizzate confrontandole con due categorie di misurazione:
+\begin{itemize}
+\item
+\textbf{Accettazione}: intervallo di valori minimi entro i quali il prodotto sarà accettato;
+\item
+\textbf{Ottimale}: intervallo di valori ottimali entro i quali il prodotto risulta soddisfare pienamente, o quasi, i requisiti richiesti. I valori all'interno di tali intervalli devono essere quindi intesi come consigliati ma non vincolanti.
+\end{itemize}
+
+\subsection{Strumenti}
+Per aiutare la verifica delle metriche descritte nelle \NdP\ verranno utilizzati degli strumenti che, in maniera automatica, svolgeranno dei test e forniranno un resoconto del risultato. Tali strumenti vengono descritti già nelle \NdP\ per cui in questo documento verranno solamente elencati.
+
+\begin{itemize}
+\item \textbf{\termine{Jenkins}}
+\item \textbf{\termine{SonarQube}}
+\item \textbf{\termine{Mocha}:} 
+Quest'ultimo affiancato da:
+\begin{itemize}
+\item \textbf{\termine{Chai}}
+\item \textbf{\termine{Sinon}}
+\end{itemize}
+\end{itemize}
+
+%----Non so se Nico ha copiato questa parte sulle Norme.----
+%
+%\subsubsection{Jenkins}
+%\termine{Jenkins} è un software che permetterà di automatizzare una serie di operazioni che consentiranno al \termine{team} di monitorare la qualità del software in modo continuo ogni volta che verrà inviata una modifica alla \termine{repository} che conterrà il codice sorgente. \\
+%Per ottenere questi risultati questo software si appoggerà agli altri strumenti descritti qua di seguito.
+%
+%\subsubsection{SonarQube}
+%\termine{SonarQube} è un software che permette di eseguire analisi statica sul codice che verrà inviato alla \termine{repository} fornendo un feedback al programmatore per fargli sapere cosa dovrà migliorare. Inoltre permetterà di controllare che le regole che il \termine{team} si è imposto per la qualità del codice sorgente vengano rispettate.
+%
+%\subsubsection{Mocha}
+%\termine{Mocha} è un \termine{framework} che permette di eseguire test di unità e di integrazione andando a creare dei \termine{mock} che simulino il comportamento delle varie parti, con lo scopo di testare ogni dettaglio in modo indipendente dal resto. Ad esso si affiancheranno anche:
+%\begin{itemize}
+%\item \textbf{\termine{Chai}}: libreria per formulare asserzioni sull'output atteso;
+%\item \textbf{\termine{Sinon}}: libreria per simulare delle risposte di richieste a server remoti.
+%\end{itemize}

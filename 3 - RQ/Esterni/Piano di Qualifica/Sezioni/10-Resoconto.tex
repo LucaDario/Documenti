@@ -1,13 +1,60 @@
-\section{Valori ottenuti per le metriche}
+\section{Resoconto delle attività di verifica}
 
 In questa sezione vengono inserite tutte le misurazioni delle metriche trovate dal gruppo \gruppo.
 Il team si impegna a garantire almeno il soddisfacimento del range di accettazione per ogni metrica.
 
 
-\subsection{Garanzie di qualità del processo}
-Si informa che non tutte le metriche possono essere misurate poiché alcune richiedono l'entrata nella fase di \COD. Pertanto saranno inserite quelle verificabili sino a questo momento.
+\subsection{Revisione dei Requisiti}
+In questa sezione vengono inseriti i risultati relativi al periodo di Revisione dei Requisiti e le metriche relative ad esso.
 
-\subsubsection{Qualità di affidabilità}
+\subsubsection{Analisi statica dei documenti}
+L'analisi statica dei documenti è stata fatta mediante Walkthrough ed ha portato all'individuazione di alcuni errori. Tra gli errori individuati quelli più frequenti sono stati:
+		\begin{itemize}
+			\item Errori nei concetti esposti.
+			\item Aggettivi o verbi utilizzati in modo scorretto.
+			\item Periodi troppo lunghi o complessi da capire ed interpretare.
+		\end{itemize}
+		
+\subsubsection{Indice di Gulpease}
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\textbf{Documento}	& \textbf{Risultato} & \textbf{Esito} \\
+			\hline
+		 \termine{Analisi} dei Requisiti v1.0.0 & 90 & Superato	\\
+			\hline
+			Glossario v1.0.0 & 56 & Superato	\\
+			\hline
+			Norme di Progetto v1.0.0 & 47 & Superato \\
+			\hline
+			Piano di Progetto v1.0.0 & 48 & Superato\\
+			\hline
+			Piano di Qualifica v1.0.0	& 48 & Superato\\
+			\hline
+			Studio di Fattibilità v1.0.0	& 47 & Superato\\
+			\hline
+			Verbale 23-12-2016 v1.0.0	& 51 & Superato	\\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{RR - Risultato indice di Gulpease}
+\end{table}
+
+
+
+
+
+\subsection{Revisione di Progettazione}
+
+\subsubsection{Analisi statica dei documenti}
+L'analisi statica dei documenti è stata fatta mediante Walkthrough ed ha portato all'individuazione di alcuni errori. Tra gli errori individuati quelli più frequenti sono stati:
+		\begin{itemize}
+			\item Errori ortografici.
+			\item Parole con lettere mancanti o invertite.
+			\item Periodi troppo lunghi o complessi da capire ed interpretare.
+		\end{itemize}
 
 \paragraph{Densità di failure}
 
@@ -19,34 +66,36 @@ Nessuna operazione di testing si è conclusa in modo fallimentare.
 
 \begin{table}[h]
 	\begin{center}
-		\begin{tabular}{|c|c|}
+		\begin{tabular}{|c|c|c|}
 			\hline
-			\textbf{Documento}	& \textbf{Risultato} \\
+			\textbf{Documento}	& \textbf{Risultato} & \textbf{Esito} \\
 			\hline
-		 \termine{Analisi} dei Requisiti v2.0.0 &	90\\
+		 \termine{Analisi} dei Requisiti v2.0.0 &	90 & Superato\\
 			\hline
-			Glossario v2.0.0 &	54\\
+			Glossario v2.0.0 &	54 & Superato\\
 			\hline
-			Norme di Progetto v2.0.0 &	48\\
+			Norme di Progetto v2.0.0 &	48 & Superato\\
 			\hline
-			Piano di Progetto v2.0.0	&	52\\
+			Piano di Progetto v2.0.0	&	52 & Superato\\
 			\hline
-			Piano di Qualifica v2.0.0	&	46\\
+			Piano di Qualifica v2.0.0	&	46 & Superato\\
 			\hline
-			Definizione di \termine{Prodotto} v1.0.0	&	64\\
+			Definizione di \termine{Prodotto} v1.0.0	&	64 & Superato\\
 			\hline
-			Verbale 22-02-2017 v1.0.0	&	54\\
+			Verbale 22-02-2017 v1.0.0	&	54 & Superato\\
 			\hline
-			Verbale 24-02-2017 v1.0.0	&	53\\
+			Verbale 24-02-2017 v1.0.0	&	53 & Superato\\
 			\hline
-			Verbale 26-02-2017 v1.0.0	&	51\\
+			Verbale 26-02-2017 v1.0.0	&	51 & Superato\\
+			\hline
+						Verbale 28-02-2017 v1.0.0	&	52 & Superato\\
 			\hline
 		\end{tabular}
 	\end{center}
-	\caption{Risultato indice di Gulpease}
+	\caption{RP - Risultato indice di Gulpease}
 \end{table}
 
-\subsection{Metriche per il software}
+\newpage
 
 \subsection{Numero di parametri per metodo}
 
@@ -58,240 +107,44 @@ Tutte le classi hanno un numero inferiore o uguale di attributi a sette.
 
 \subsubsection{Livello di stabilità}
 
-\subsubsection{SDK}
-
-\begin{itemize}
-\item Monolith::Bubble : 0.8
-\item Monolith::Component : 0
-\item Monolith::Bubble::todolist : 0.8
-\item Monolith::Bubble::markdown : 0.8
-\item Monolith::Bubble::alert : 0.8
-\item Monolith::Component::layout : 1
-\item Monolith::Component::widget : 1
-\item Monolith::Component::layout::horizontal : 1
-\item Monolith::Component::layout::vertical : 1
-\item Monolith::Component::widget::button : 1
-\item Monolith::Component::widget::button::view : 1
-\item Monolith::Component::widget::button::presenter : 0.6
-\item Monolith::Component::widget::button::option : 0
-\item Monolith::Component::widget::checklist : 0.5
-\item Monolith::Component::widget::checklist::view : 1
-\item Monolith::Component::widget::checklist::presenter : 0.6
-\item Monolith::Component::widget::checklist::option : 0
-\item Monolith::Component::widget::image : 1
-\item Monolith::Component::widget::image::view : 1
-\item Monolith::Component::widget::image::presenter : 0.6
-\item Monolith::Component::widget::image::option : 0
-\item Monolith::Component::widget::list : 1
-\item Monolith::Component::widget::list::view : 1
-\item Monolith::Component::widget::list::presenter : 0.6
-\item Monolith::Component::widget::list::option : 0
-\item Monolith::Component::widget::text : 0.3
-\item Monolith::Component::widget::text::view : 1
-\item Monolith::Component::widget::text::presenter : 0.6
-\item Monolith::Component::widget::text::option : 0
-\end{itemize}
-
-\subsubsection{Applicazione}
-
-\begin{itemize}
-
-\item application::feature : 1
-\item application::feature::add\_item : 1
-\item application::feature::add\_item::presenter : 0.5
-\item application::feature::add\_item::view : 1
-\item application::feature::remove\_item : 1
-\item application::feature::remove\_item::presenter : 0.5
-\item application::feature::remove\_item::view : 1
-\item application::feature::create\_list : 1
-\item application::feature::create\_list::presenter : 0.5
-\item application::feature::create\_list::view : 1
-\item application::feature::input\_item\_info: 0.3
-\item application::feature::input\_item\_info::presenter : 0.5
-\item application::feature::input\_item\_info::view : 1
-\item application::feature::modify\_item : 1
-\item application::feature::modify\_item::presenter : 0.5
-\item application::feature::modify\_item::view : 1
-\item application::feature::change\_list\_info : 1
-\item application::feature::change\_list\_info::presenter : 0.5
-\item application::feature::change\_list\_info::view : 1
-\item application::feature::input\_list\_info : 0.3
-\item application::feature::input\_list\_info::presenter : 0.5
-\item application::feature::input\_list\_info::view : 1
-\item application::feature::help : 0
-\item application::feature::help::presenter : 0.5
-\item application::feature::help::view : 1
-\item application::feature::forward : 0
-\item application::feature::forward::presenter : 0.5
-\item application::feature::forward::view : 1
-\item application::feature::sharewithgroup : 1
-\item application::feature::sharewithgroup::presenter : 0.5
-\item application::feature::sharewithgroup::view : 1
-\item application::feature::sharewithcontact : 0
-\item application::feature::sharewithcontact::presenter : 0.5
-\item application::feature::sharewithcontact::view : 1
-\item application::feature::exception : 0
-\item application::usecase:: 0.6
-
-\end{itemize}
-
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+	\hline
+	\textbf{Parte coinvolta} & \textbf{Risultato} & \textbf{Esito} \\
+	\hline
+	SDK & [0 -- 1] & Superato \\
+	\hline
+	Applicazione & [0.3 -- 1] & Superato \\
+	\hline
+	\end{tabular}
+\end{center}
 
 \subsection{Astrattezza}
 
-\subsubsection{SDK}
-
-\begin{itemize}
-\item Monolith::Bubble : 0.8
-\item Monolith::Component : 0.3
-\item Monolith::Bubble::todolist : 0
-\item Monolith::Bubble::markdown : 0
-\item Monolith::Bubble::alert : 0
-\item Monolith::Component::layout : 0.3
-\item Monolith::Component::widget : 0.3
-\item Monolith::Component::layout::horizontal : 0
-\item Monolith::Component::layout::vertical : 0
-\item Monolith::Component::widget::button : 0.3
-\item Monolith::Component::widget::button::view : 0
-\item Monolith::Component::widget::button::presenter : 0
-\item Monolith::Component::widget::button::option : 0
-\item Monolith::Component::widget::checklist : 0.3
-\item Monolith::Component::widget::checklist::view : 0
-\item Monolith::Component::widget::checklist::presenter : 0
-\item Monolith::Component::widget::checklist::option : 0
-\item Monolith::Component::widget::image : 0.3
-\item Monolith::Component::widget::image::view : 0
-\item Monolith::Component::widget::image::presenter : 0
-\item Monolith::Component::widget::image::option : 0
-\item Monolith::Component::widget::list : 0.3
-\item Monolith::Component::widget::list::view : 0
-\item Monolith::Component::widget::list::presenter : 0
-\item Monolith::Component::widget::list::option : 0
-\item Monolith::Component::widget::text : 0.2
-\item Monolith::Component::widget::text::view : 0
-\item Monolith::Component::widget::text::presenter : 0
-\item Monolith::Component::widget::text::option : 0
-\end{itemize}
-
-\subsubsection{Applicazione}
-
-\begin{itemize}
-
-\item application::feature : 0.3
-\item application::feature::add\_item : 0.3
-\item application::feature::add\_item::presenter : 0
-\item application::feature::add\_item::view : 0
-\item application::feature::remove\_item : 0.3
-\item application::feature::remove\_item::presenter : 0
-\item application::feature::remove\_item::view : 0
-\item application::feature::create\_list : 0.3
-\item application::feature::create\_list::presenter : 0
-\item application::feature::create\_list::view : 0
-\item application::feature::input\_item\_info: 0.3
-\item application::feature::input\_item\_info::presenter : 0
-\item application::feature::input\_item\_info::view : 0
-\item application::feature::modify\_item : 0.3
-\item application::feature::modify\_item::presenter : 0
-\item application::feature::modify\_item::view : 0
-\item application::feature::change\_list\_info : 0.3
-\item application::feature::change\_list\_info::presenter : 0
-\item application::feature::change\_list\_info::view : 0
-\item application::feature::input\_list\_info : 0.3
-\item application::feature::input\_list\_info::presenter : 0
-\item application::feature::input\_list\_info::view : 0
-\item application::feature::help : 0.3
-\item application::feature::help::presenter : 0
-\item application::feature::help::view : 0
-\item application::feature::forward : 0.3
-\item application::feature::forward::presenter : 0
-\item application::feature::forward::view : 0
-\item application::feature::sharewithgroup : 0.3
-\item application::feature::sharewithgroup::presenter : 0
-\item application::feature::sharewithgroup::view : 0
-\item application::feature::sharewithcontact : 0.3
-\item application::feature::sharewithcontact::presenter : 0 
-\item application::feature::sharewithcontact::view : 0
-\item application::feature::exception : 0.5
-\item application::usecase:: 0
-
-\end{itemize}
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+	\hline
+	\textbf{Parte coinvolta} & \textbf{Risultato} & \textbf{Esito} \\
+	\hline
+	SDK & [0 -- 0.8] & Superato \\
+	\hline
+	Applicazione & [0 -- 0.5] & Superato \\
+	\hline
+	\end{tabular}
+\end{center}
 
 \subsection{Distanza dalla sequenza principale}
 
-\subsubsection{SDK}
-
-\begin{itemize}
-\item Monolith::Bubble : 0.6
-\item Monolith::Component : 0.7
-\item Monolith::Bubble::todolist : 0.2
-\item Monolith::Bubble::markdown : 0.2
-\item Monolith::Bubble::alert : 0.2
-\item Monolith::Component::layout : 0.3
-\item Monolith::Component::widget : 0.3
-\item Monolith::Component::layout::horizontal : 0
-\item Monolith::Component::layout::vertical : 0
-\item Monolith::Component::widget::button : 0.3
-\item Monolith::Component::widget::button::view : 0
-\item Monolith::Component::widget::button::presenter : 0.4
-\item Monolith::Component::widget::button::option : 1
-\item Monolith::Component::widget::checklist : 0.3
-\item Monolith::Component::widget::checklist::view : 0
-\item Monolith::Component::widget::checklist::presenter : 0.4
-\item Monolith::Component::widget::checklist::option : 1
-\item Monolith::Component::widget::image : 0.3
-\item Monolith::Component::widget::image::view : 0
-\item Monolith::Component::widget::image::presenter : 0.4
-\item Monolith::Component::widget::image::option : 1
-\item Monolith::Component::widget::list : 0.3
-\item Monolith::Component::widget::list::view : 0
-\item Monolith::Component::widget::list::presenter : 0.4
-\item Monolith::Component::widget::list::option : 1
-\item Monolith::Component::widget::text : 0.3
-\item Monolith::Component::widget::text::view : 0
-\item Monolith::Component::widget::text::presenter : 0.4
-\item Monolith::Component::widget::text::option : 1
-\end{itemize}
-
-\subsubsection{Applicazione}
-
-\begin{itemize}
-
-\item application::feature : 0.3
-\item application::feature::add\_item : 0.2
-\item application::feature::add\_item::presenter : 0
-\item application::feature::add\_item::view : 0.3
-\item application::feature::remove\_item : 0.3
-\item application::feature::remove\_item::presenter : 0.5
-\item application::feature::remove\_item::view : 0
-\item application::feature::create\_list : 0.3
-\item application::feature::create\_list::presenter : 0.5
-\item application::feature::create\_list::view : 0
-\item application::feature::input\_item\_info: 0.4
-\item application::feature::input\_item\_info::presenter : 0.5
-\item application::feature::input\_item\_info::view : 0
-\item application::feature::modify\_item : 0.3
-\item application::feature::modify\_item::presenter : 0.5
-\item application::feature::modify\_item::view : 0
-\item application::feature::change\_list\_info : 0.3
-\item application::feature::change\_list\_info::presenter : 0.5
-\item application::feature::change\_list\_info::view : 0
-\item application::feature::input\_list\_info : 0.3
-\item application::feature::input\_list\_info::presenter : 0.5
-\item application::feature::input\_list\_info::view : 0
-\item application::feature::help : 0.7
-\item application::feature::help::presenter : 0.5
-\item application::feature::help::view : 0
-\item application::feature::forward : 0.7
-\item application::feature::forward::presenter : 0.5
-\item application::feature::forward::view : 0
-\item application::feature::sharewithgroup : 0.3
-\item application::feature::sharewithgroup::presenter : 0.5
-\item application::feature::sharewithgroup::view : 0
-\item application::feature::sharewithcontact : 0.7
-\item application::feature::sharewithcontact::presenter : 0.5
-\item application::feature::sharewithcontact::view : 0
-\item application::feature::exception : 0.5
-\item application::usecase:: 0.4
-
-\end{itemize}
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+	\hline
+	\textbf{Parte coinvolta} & \textbf{Risultato} & \textbf{Esito} \\
+	\hline
+	SDK & [0 -- 1] & Superato \\
+	\hline
+	Applicazione & [0 -- 0.7] & Superato \\
+	\hline
+	\end{tabular}
+\end{center}
 
 Il risultato delle altre metriche non è stato inserito poiché, per farlo, è necessario essere entrati nella fase di \COD.

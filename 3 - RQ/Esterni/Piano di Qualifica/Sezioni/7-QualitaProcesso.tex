@@ -237,6 +237,8 @@ Indica il numero di metodi definiti in una classe; un valore molto alto potrebbe
 \item \textbf{Misurazione}: indice numerico che indica il numero di metodi definiti in una classe.
 \end{itemize}
 
+
+\begin{center}
 \begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
 		\hline
 			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
@@ -381,7 +383,36 @@ Bisognerà cercare di implementare il maggior livello possibile di automazione n
 
 
 
+\subsection{Processo di documentazione}
 
+Il processo punta a produrre e manutenere le informazioni sul software prodotte dai processi attuati.
+\subsubsection{Obiettivi di qualità}
+Il processo di documentazione dovrà perseguire le seguenti direttive:
+\begin{itemize}
+\item la documentazione prodotta dovrà essere chiara e comprensibile a tutti i committenti e sarà resa disponibile a chiunque la necessiti.
+\item ogni forma di ambiguità sul significato di un termine utilizzato verrà eliminata grazie al \glossario.
+\item la documentazione prodotta sarà sempre aggiornata ed allineata allo stato attuale del processo di sviluppo del prodotto.
+\item i documenti saranno verificati ed approvati solo se soddisfacenti tutte le metriche per la qualità. Inoltre tramite le tecniche di analisi statica dovranno essere individuati il maggior numero di errori sintattici.
+\end{itemize}
+\subsubsection{Strategie}
+Durante la stesura della documentazione, ogni termine con significato ambiguo deve essere indicato (corredato di definizione) nel \glossario\ ; gli script automatici provvederanno alla sua segnalazione all'interno del documento.\\
+Ogni documento sarà dotato di numero di versione e corredato da un diario delle modifiche che consente di prendere visione di tutte le azioni effettuate sul testo in oggetto.
+
+\subsubsection{Metriche}
+
+\paragraph{Indice di Gulpease}
+
+\begin{center}
+
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			[40 -- 100] & [50--100] &	Per garantire una buona leggibilità dei documenti. Sono accettati anche valori inferiori, ma verranno accettati in un primo momento per poi essere migliorati successivamente. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Indice di Gulpease}
+\end{center}
 
 
 
@@ -400,19 +431,7 @@ Bisognerà cercare di implementare il maggior livello possibile di automazione n
 
 \subsection{Valori obiettivo della qualità di processo}
 
-\subsubsection{Indice di Gulpease}
 
-\begin{center}
-
-		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
-		\hline
-			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
-			\hline
-			[40 -- 100] & [50--100] &	Per garantire una buona leggibilità dei documenti. Sono accettati anche valori inferiori, ma verranno accettati in un primo momento per poi essere migliorati successivamente. \\
-			\hline
-			\end{tabular}
-\captionof{table}{Indice di Gulpease}
-\end{center}
 
 \subsection{Metriche per il software}
 Questa sezione, che verrà rivista e incrementata nelle prossime revisioni, è da intendere come una dichiarazione di propositi.

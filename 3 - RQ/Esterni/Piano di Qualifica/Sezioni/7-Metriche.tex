@@ -33,7 +33,7 @@ efficienza, usabilità e manutenibilità.
 		\hline
 			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
 			\hline
-			[1 -− 15] & [1 -− 10] &	Per garantire una minore complessità durante la fase di \COD. \\
+			[1 -− 15] & [1 -− 10] &	Garantire una minore complessità durante la fase di \COD. \\
 			\hline
 			\end{tabular}
 \captionof{table}{Complessità ciclomatica}
@@ -46,7 +46,7 @@ efficienza, usabilità e manutenibilità.
 		\hline
 			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
 			\hline
-			[1 -- 5] & [1 −- 3] &	Per garantire una minore complessità del metodo e garantire una sua facile comprensione. \\
+			[1 -- 5] & [1 −- 3] &	Garantire una minore complessità del metodo e garantire una sua facile comprensione. \\
 			\hline
 			\end{tabular}
 \captionof{table}{Numero di livelli di annidamento per metodo}
@@ -59,13 +59,13 @@ efficienza, usabilità e manutenibilità.
 		\hline
 			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
 			\hline
-			[0 −- 11] & [0 −- 7] &	Per garantire un giusto equilibrio tra le classi, in modo da garantire una sufficiente coesione. \\
+			[0 −- 11] & [0 −- 7] &	Garantire un giusto equilibrio tra le classi, in modo da garantire una sufficiente coesione. \\
 			\hline
 			\end{tabular}
 \captionof{table}{Numero di attributi per classe}
 \end{center}
 
-\paragraph{Copertura dei test}
+\subsubsection{Copertura dei test}
 Intervalli richiesti:
 \begin{itemize}
 \item
@@ -74,37 +74,31 @@ Accettazione: [40\% −- 100\%];
 Ottimale: [65\% −- 100\%].
 \end{itemize}
 
-\paragraph{Linee di commento per linee di codice}
-Intervalli richiesti:
-\begin{itemize}
-\item
-Accettazione: [> 0.15];
-\item
-Ottimale: [>0.20].
-\end{itemize}
+\subsubsection{Linee di commento per linee di codice}
 
-\subsubsection{Numero di parametri per metodo}
-Intervalli richiesti:
-\begin{itemize}
-\item
-Accettazione: [0 −- 6];
-\item
-Ottimale: [0 −- 4].
-\end{itemize}
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			[> 0.15] & [> 0.20] &	Garantire una buona comprensibilità del codice, in modo da facilitarne la manutenibilità. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Linee di commento per linee di codice}
+\end{center}
 
 \subsubsection{Livello di stabilità}
 
-\begin{displaymath}
-{\text{Accoppiamento Afferente}}\over{\text{Accoppiamento Afferente} + \text{Accoppiamento Efferente}}
-\end{displaymath}
-
-Intervalli richiesti:
-\begin{itemize}
-\item
-Accettazione: [0.0 −- 1];
-\item
-Ottimale: [0.0 −- 0.6].
-\end{itemize}
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			[0.0 −- 1] & [0.0 −- 0.6] &	Garantire una buona indipendenza e stabilità delle parti del software. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Livello di stabilità}
+\end{center}
 
 \subsection{Astrattezza}
 

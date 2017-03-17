@@ -1,7 +1,168 @@
 \newpage
 
-\section{Obiettivi di qualità}
-La qualità dei processi che il gruppo \gruppo{} intende perseguire verrà raggiunta tramite l'utilizzo delle metriche descritte nel documento \NdP.
+\section{Qualità di processo}
+Per garantire la qualità del prodotto è necessario perseguire la qualità dei processi che lo definiscono. Per fare ciò si è deciso di adottare lo standard ISO/IEC 15504 descritto nelle \NdP. Il gruppo \gruppo{} si impegnerà a seconda dei periodi coinvolti di migliorare ed incrementare eventuali processi con rispettive metriche al fine di garantire una buona qualità.
+
+
+\subsection{Pianificazione, Controllo e Valutazione}
+Il macro-processo (derivante dall’unione dei processi di Pianificazione, Controllo e Valutazione) ha lo scopo di produrre dei piani di sviluppo per il progetto, comprendenti
+la scelta del modello di ciclo di vita del prodotto, descrizioni delle attività e dei compiti
+da svolgere, pianificazione temporale del lavoro e dei costi da sostenere, allocazione di compiti e
+responsabilità, e misurazioni per rilevare lo stato del progetto rispetto alle pianificazioni prodotte.
+
+\subsubsection{Obiettivi di Qualità}
+L'intero sviluppo del progetto dovrà seguire la pianificazione prodotta, in particolare:
+
+\begin{itemize}
+\item Ogni attività assegnata tramite l'utilizzo dello strumento \termine{Wrike} dovrà essere eseguita nel tempo previsto e da colui a cui è stata assegnata.
+\item Il costo preventivato per il periodo descritto nel \PdP{} non dovrà eccedere, ma dovrà rimanere al di sotto della soglia prevista.
+\end{itemize}
+
+\subsubsection{Strategie}
+La pianificazione dovrà essere costantemente aggiornata durante lo sviluppo del progetto per essere coerente alla situazione corrente. Al fine di garantire una pianificazione corretta e conforme alle attese qualsiasi valore negativo rilevato a livello di Schedule Variance o Budget Variance rilevato in una fase di lavoro dovrà essere
+assolutamente compensato entro la fine dell’attività di progetto, in quanto non è assolutamente
+ammesso eccedere le ore di lavoro finali e il preventivo dei costi finale indicato nella pianificazione.
+
+\subsubsection{Metriche}
+
+\paragraph{Schedule Variance}
+Indica se si è in linea, in anticipo o in ritardo rispetto la pianificazione temporale prevista dal \PdP.
+\begin{itemize}
+\item \textbf{Misurazione}: $SV = BCWP - BCWS$, dove $BCWP$ sono le attività completate ad un certo momento e $BCWS$ le attività che, secondo la pianificazione, dovrebbero essere state completate a quel momento.
+\end{itemize}
+
+\begin{center}
+
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			$\geq 0$ & $\geq 0$ & Garantire una buona pianificazione dei tempi in modo da evitare ritardi di consegna. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Schedule Variance}
+\end{center}
+
+
+\paragraph{Budget Variance}
+Indica se alla data corrente si è speso di più o di meno rispetto a quanto pianificato.
+\begin{itemize}
+\item \textbf{Misurazione}: $BV = BCWS - ACWP$, dove $BCWS$ è il costo pianificato per realizzare le attività di progetto alla data corrente e $ACWP$ è il costo effettivamente sostenuto alla data corrente.
+\end{itemize}
+
+\begin{center}
+	\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			$\geq 0$ & $\geq 0$ & Garantire una buona pianificazione dei costi in modo da rimanere entro i limiti del budget prefissati. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Budget Variance}
+\end{center}
+
+\subsection{Processo di gestione dei rischi}
+L'obiettivo del processo è quello di identificare, analizzare, trattare e monitorare continuamente i rischi che possono insorgere durante l'intera attività di progetto.
+
+\subsubsection{Obiettivi di qualità}
+Il gruppo dovrà gestire e monitorare tutti i possibili rischi ed in particolare:
+
+\begin{itemize}
+\item all'inizio dell'attività di progetto, verranno individuati i principali fattori di rischio che si possono verificare in ogni attività.
+\item all'inizio di ogni periodo, il gruppo dovrà analizzare eventuali rischi non preventivati ed in caso trovarne altri associati.
+\item i rischi analizzati che si paleseranno saranno trattati secondo le strategie individuate e descritte nel \PdP.
+\end{itemize}
+
+\subsubsection{Metriche}
+
+\paragraph{Rischi non preventivati}
+Indicatore che evidenzia i rischi non preventivati.
+\begin{itemize}
+\item \textbf{Misurazione}: indice numerico che viene incrementato nel momento in cui si manifesta un rischio non individuato nell'attività di analisi dei rischi;
+\end{itemize}
+
+\begin{center}
+	\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			$0$ & $0 - 5$ & Garantire una buona gestione dei rischi, in modo da evitare che se ne verifichino troppi rischi non preventivati. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Rischi non preventivati}
+\end{center}
+
+
+\subsection{Processo di analisi dei requisiti software/sistema}
+
+Il processo punta a trasformare i requisiti individuati dalle fonti in un set di requisiti tecnici che fungerà da linea guida nella progettazione del sistema.
+
+\subsubsection{Obiettivi di qualità}
+I requisiti dovranno essere gestiti dal gruppo nel seguente modo:
+
+\begin{itemize}
+\item ogni requisito sarà dotato di un codice univoco che lo identifica.
+\item per ogni requisito verrà tenuta traccia della fonte da cui è stato ricavato.
+\item per ogni requisito dovrà essere possibile indicare dei test da effettuare con rispettivo risultato.
+\item nessun requisito dovrà risultare superfluo o ambiguo.
+\end{itemize}
+
+\subsubsection{Strategie}
+Tutti i requisiti individuati saranno riportati in un file json che ne manterrà il tracciamento.
+
+\subsubsection{Metriche}
+\paragraph{Requisiti obbligatori soddisfatti}
+Indica la percentuale di requisiti obbligatori coperti dall'implementazione. \\
+\textbf{Misurazione}: 
+		$$C=\left(1-\mathlarger{\frac{N_{FM}}{N_{FI}}}\right) \cdot 100$$ 
+	dove $N_{FM}$ è il numero di funzionalità mancanti nell'implementazione e $N_{FI}$ è il numero di funzionalità individuate nell'attività di analisi.
+	
+\begin{center}
+	\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			$100$ & $100$ & Garantire il pieno soddisfacimento dei requisiti obbligatori individuati nel documento \AdR. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Requisiti obbligatori soddisfatti}
+\end{center}	
+
+\paragraph{Accuratezza rispetto alle attese}
+Indica la percentuale di risultati concordi alle attese. \\
+\textbf{Misurazione}: 
+		$$A=\left(1-\mathlarger{\frac{N_{RD}}{N_{TE}}}\right) \cdot 100$$
+	dove $N_{RD}$ è il numero di test che producono risultati discordanti rispetto alle attese e $N_{TE}$ è il numero di test-case eseguiti.
+	
+\begin{center}
+	\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			$100$ & $90 - 100$ & Garantire una buona, se non ottima, corrispondenza tra i risultati e i valori attesi preventivati. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Accuratezza rispetto alle attese}
+\end{center}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
 
 
 \subsection{Valori obiettivo della qualità di processo}
@@ -139,26 +300,7 @@ Il \termine{team} si impegnerà affinché:
 \item \textbf{Sicurezza}: il prodotto protegga le informazioni e i dati da accessi e modifiche non autorizzati.
 \end{itemize}
 
-\subsubsection{Metriche}
-\paragraph{Completezza dell'implementazione funzionale}
-Indica la percentuale di requisiti funzionali coperti dall'implementazione.
-\begin{itemize}
-	\item \textbf{Misurazione}: 
-		$$C=\left(1-\mathlarger{\frac{N_{FM}}{N_{FI}}}\right) \cdot 100$$ 
-	dove $N_{FM}$ è il numero di funzionalità mancanti nell'implementazione e $N_{FI}$ è il numero di funzionalità individuate nell'attività di analisi.
-	\item \textbf{Range ottimale}: 100.
-	\item \textbf{Range di accettazione}: 100.
-\end{itemize}
 
-\paragraph{Accuratezza rispetto alle attese}
-Indica la percentuale di risultati concordi alle attese.
-\begin{itemize}
-	\item \textbf{Misurazione}: 
-		$$A=\left(1-\mathlarger{\frac{N_{RD}}{N_{TE}}}\right) \cdot 100$$
-	dove $N_{RD}$ è il numero di test che producono risultati discordanti rispetto alle attese e $N_{TE}$ è il numero di test-case eseguiti.
-	\item \textbf{Range ottimale}: 100.
-	\item \textbf{Range di accettazione}: 90 -- 100.
-\end{itemize}
 
 \paragraph{Controllo degli accessi}
 Indica la percentuale di operazioni illegali non bloccate.

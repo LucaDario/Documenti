@@ -17,16 +17,17 @@ I vantaggi attesi dalla scelta di tale modello sono i seguenti:
 	\item Il favoreggiamento della creazione di prototipi, ovvero di parti di prodotto funzionanti, che a loro volta favoriscono il dialogo con il cliente.
 \end{itemize}
 
-I membri del gruppo, con l'obbiettivo di agevolare lo sviluppo del progetto seguendo il modello incrementale, hanno deciso congiuntamente di suddividere il carico di lavoro in 6 periodi:
+\subsection{Suddivisione delle attività}
+
+I membri del gruppo, con l'obbiettivo di agevolare lo sviluppo del progetto seguendo il modello incrementale, hanno deciso congiuntamente di suddividere il carico di lavoro in 5 periodi:
 \begin{itemize}
 	\item \ARM.
 	\item \ARD.
 	\item \PA.
-	\item \PD.
-	\item \COD.
+	\item \PD\ e \COD.
 	\item \VV.
 \end{itemize}
-Tra questi, i periodi di \PD\ e \COD\ sono essenzialmente concorrenti mentre il periodo di \termine{Verifica}, che comprende anche il periodo di \VV\ sopracitato, è trasversale in tutti i periodi come sarà descritto in un paragrafo successivo.
+Le attività di \PD\ e \COD\ sono essenzialmente concorrenti mentre il periodo di \termine{Verifica}, che comprende anche l'ultimo periodo di \VV\ sopracitato, è trasversale in tutti i periodi come sarà descritto in un paragrafo successivo.
 Ad ognuno dei membri saranno assegnate delle attività principali da svolgere in un determinato periodo. Ognuno avrà dunque associato un \termine{diagramma di Gantt} al fine di agevolargli la visione e la comprensione delle tempistiche e delle scadenze delle varie attività assegnategli.
 Ogni attività potrà, a sua volta, essere suddivisa in sotto-attività ed avere, o meno, forte dipendenze con altre attività.\\
 Saranno inoltre definite delle \termine{milestone} esterne ed interne che coincideranno, rispettivamente, con le date di scadenza per la consegna dei documenti e con le scadenze per le revisioni stabilite dai membri del gruppo.
@@ -35,8 +36,6 @@ Ogni periodo, tra quelli sopraelencati, terminerà sempre con una \termine{miles
 Le diverse attività saranno rappresentate nel \termine{diagramma di Gantt} in termini temporali mediante linee blu.
 
 Infine si informa che l'attività \ARM\ è un periodo di investimento da parte del gruppo per poter accedere al progetto didattico. Questa, dunque, non verrà rendicontata nel calcolo del costo totale che il software richiede.
-
-\subsection{Suddivisione delle attività}
 
  \begin{figure}[H]
 	\centering 
@@ -99,46 +98,30 @@ In questo periodo i ruoli maggiormente interessati sono: \Prog, \Pm, \Ver\ e \Am
 	\caption{Diagramma di Gantt, \PA}
 \end{figure}
 
-\subsubsection{\PD}
+\subsubsection{\PD\ e \COD}
 Periodo: dal 22/02/2017 all'11/04/2017\\
 
 Dal seguente periodo si procede con la realizzazione incrementale del prodotto, ovvero verranno realizzati prima i requisiti essenziali, poi quelli desiderabili e infine quelli facoltativi per ridurre il rischio di fallimento. 
-Inizia in seguito all'approvazione della \PA\ e si conclude entro la consegna del prodotto alla \RQ.
+L'attività di \PD\ inizia subito dopo l'approvazione della \PA\ mentre la \COD\ inizia solo il 14/03/2017, una volta completata la \PD\ delle funzionalità essenziali. Questo periodo si conclude con una \termine{milestone} esterna che coincide con la consegna del prodotto alla \RQ.
 Il gruppo si impegna a terminare la \PD\ almeno delle funzionalità essenziali per il 06/03/2017, che coincide con una \termine{milestone} esterna per la consegna dei documenti della \RP.\\
-Il gruppo, ad ogni incremento, si impegna ad intraprendere e completare le seguenti attività:
+L'obiettivo finale consiste nel consegnare un prodotto software completo, e le attività che ad ogni incremento verranno eseguite a tal fine sono le seguenti:
 \begin{itemize}
-\item
-Redigere o aggiornare il documento \DDP\ in cui i \ProgrP\ e i \ProgP\ devono descrivere il comportamento e le interazioni tra i vari componenti del sistema, basandosi sul documento di \ST.
-\item
-Incrementare i documenti \NdP, \PdP, \PdQ\ e \Gl.
-\end{itemize}
-In questo periodo i ruoli maggiormente impegnati sono quelli di \Prog, \Progr, \Pm, \Ver\ e \Am.
-
- \begin{figure}[H]
-	\centering 
-	\includegraphics[scale=0.5]{Immagini/Gantt/PD.png}
-	\caption{Diagramma di Gantt, \PD}
-\end{figure}
-
-\subsubsection{\COD}
-Periodo: dal 14/03/2017 all'11/04/2017. \\
-
-Il periodo di \COD\ avviene in concorrenza a quello di \PD ed inizia una volta completata la progettazione dettagliata delle funzionalità essenziali. Essa si conclude con la consegna del prodotto alla \RQ. L'obiettivo finale consiste nel consegnare un prodotto completo, e le attività che ad ogni incremento verranno eseguite a tal fine sono le seguenti:
-\begin{itemize}
-	\item \COD: I \ProgrP\ devono sviluppare il codice del prodotto software attenendosi il più possibile a quanto scritto dai \ProgP\ nel documento \DDP. L'attività di \COD\ deve essere fatta seguendo, iterativamente, i seguenti passi:
+\item Redigere o aggiornare il documento \DDP\ in cui i \ProgP\ devono descrivere il comportamento e le interazioni tra i vari componenti del sistema.
+\item Incrementare i documenti \NdP, \PdP, \PdQ\ e \Gl.
+\item I \ProgrP\ devono sviluppare il codice del prodotto software attenendosi il più possibile a quanto scritto dai \ProgP\ nel documento \DDP. L'attività di \COD\ deve essere fatta seguendo, iterativamente, i seguenti passi:
 			\begin{itemize}
 				\item \termine{Codifica} dell'incremento svolto dai \ProgP.
 				\item \termine{Verifica} dell'incremento.
 			\end{itemize}
-	\item Stesura o ampliamento del \MU: questo documento è destinato all'utilizzatore finale del prodotto che, tramite esso, deve essere in grado di capire le principali funzionalità del sistema e come utilizzarle.
-	\item \termine{Verifica} dei documenti, della progettazione e del software prodotto con gli strumenti definiti nelle \NdP.
+\item Stesura o ampliamento del \MU: questo documento è destinato all'utilizzatore finale del prodotto che, tramite esso, deve essere in grado di capire le principali funzionalità del sistema e come utilizzarle.
 \end{itemize}
+
 I ruoli maggiormente interessati sono quelli di \Am, \Pm, \Prog, \Progr\ e \Ver.
 
  \begin{figure}[H]
 	\centering 
 	\includegraphics[scale=0.5]{Immagini/Gantt/COD.png}
-	\caption{Diagramma di Gantt, \COD}
+	\caption{Diagramma di Gantt, \PD\ e \COD}
 \end{figure}
 
 \subsubsection{Verifica}
@@ -149,7 +132,7 @@ Questo periodo, come si può osservare dalla data di inizio, è trasversale a tu
 \paragraph{\VV}
 Periodo: dal 12/04/2017 al 15/05/2017 \\
 
-Al termine della \PD\ e \COD\ verranno effettuati ed intensificati tutti i test necessari per garantire che il prodotto soddisfi tutti i requisiti dell'\AdR e la correzione di eventuali errori nel codice e/o nei vari documenti.
+Al termine del periodo di \PD\ e \COD\ verranno effettuati ed intensificati tutti i test necessari per garantire che il prodotto soddisfi tutti i requisiti dell'\AdR e la correzione di eventuali errori nel codice e/o nei vari documenti.
 Le attività prevedono di:
 \begin{itemize}
 	\item Effettuare dei test di sistema.

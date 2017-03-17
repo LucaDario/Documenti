@@ -93,7 +93,7 @@ Indicatore che evidenzia i rischi non preventivati.
 \end{center}
 
 
-\subsection{Processo di analisi dei requisiti software/sistema}
+\subsection{Processo di analisi dei requisiti software e di sistema}
 
 Il processo punta a trasformare i requisiti individuati dalle fonti in un set di requisiti tecnici che fungerà da linea guida nella progettazione del sistema.
 
@@ -108,7 +108,7 @@ I requisiti dovranno essere gestiti dal gruppo nel seguente modo:
 \end{itemize}
 
 \subsubsection{Strategie}
-Tutti i requisiti individuati saranno riportati in un file json che ne manterrà il tracciamento.
+Tutti i requisiti individuati saranno riportati in un \termine{file json} che ne manterrà il tracciamento.
 
 \subsubsection{Metriche}
 \paragraph{Requisiti obbligatori soddisfatti}
@@ -145,11 +145,62 @@ Indica la percentuale di risultati concordi alle attese. \\
 \captionof{table}{Accuratezza rispetto alle attese}
 \end{center}	
 
+\subsection{Processo di sviluppo architettura di sistema}
+
+Il processo si pone come obiettivo quello di identificare una corrispondenza fra requisiti di sistema ed elementi del sistema.
+\subsubsection{Obiettivi di qualità}
+Durante lo svolgimento delle attività previste da questo processo, il gruppo si impegnerà a trovare una buona architettura di sistema nel seguente modo:
+\begin{itemize}
+\item ogni componente progettato come parte del sistema risulterà essere necessario per il funzionamento del prodotto e, quindi, costantemente tracciabile ai requisiti che soddisfa.
+\item il sistema dovrà presentare basso accoppiamento ed alta coesione, tenendo conto che \termine{RocketChat} implementa il pattern \termine{Observer} per la gestione degli eventi. Il suddetto pattern aumenta l'accoppiamento per cui il \termine{team} dovrà gestire in maniera ottimale il problema.
+\item ogni componente dovrà essere progettato puntando su incapsulamento, modularizzazione e riuso di codice.
+\end{itemize}
+\newpage
+
+\subsubsection{Strategie}
+Nel corso dell'attività di progettazione, sia ad alto livello che di dettaglio, le componenti verranno inserite in un \termine{file json} dedicato, il quale si occuperà del tracciamento con i requisiti trovati nell'attività di analisi.
 
 
+\subsubsection{Metriche}
 
+\paragraph{Livello di stabilità}
 
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			[0.0 −- 1] & [0.0 −- 0.6] &	Garantire una buona indipendenza e stabilità delle parti del software. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Livello di stabilità}
+\end{center}
 
+\paragraph{Astrattezza}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			[0.0 −- 0.8] & [0.0 −- 0.3] &	Garantire un sufficiente polimorfismo e riuso delle componenti. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Astrattezza}
+\end{center}
+
+\paragraph{Distanza dalla sequenza principale}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			[0.0 −- 1] & [0.0 −- 0.4] &	Garantire un buon bilanciamento tra l’astrattezza e la stabilità del \termine{package} da noi sviluppati.\\
+			\hline
+			\end{tabular}
+\captionof{table}{Distanza dalla sequenza principale}
+\end{center}
 
 
 
@@ -248,45 +299,9 @@ Ottimale: [65\% −- 100\%].
 \captionof{table}{Linee di commento per linee di codice}
 \end{center}
 
-\subsubsection{Livello di stabilità}
 
-\begin{center}
-		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
-		\hline
-			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
-			\hline
-			[0.0 −- 1] & [0.0 −- 0.6] &	Garantire una buona indipendenza e stabilità delle parti del software. \\
-			\hline
-			\end{tabular}
-\captionof{table}{Livello di stabilità}
-\end{center}
 
-\subsection{Astrattezza}
 
-\begin{displaymath}
-{\text{Numero classi astratte e interfacce}}\over{\text{Numero totale classi}}
-\end{displaymath}
-
-\begin{itemize}
-\item
-Accettazione: [0.0 −- 0.8];
-\item
-Ottimale: [0.0 −- 0.3].
-\end{itemize}
-
-\subsection{Distanza dalla sequenza principale}
-
-\begin{displaymath}
-{|\text{Astratezza} + \text{Livello di stabilità} - 1|}
-\end{displaymath}
-
-Intervalli richiesti:
-\begin{itemize}
-\item
-Accettazione: [0.0 −- 1];
-\item
-Ottimale: [0.0 −- 0.4].
-\end{itemize}
 
 
 \subsection{Funzionalità}

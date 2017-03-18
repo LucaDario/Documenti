@@ -412,9 +412,80 @@ In particolare il tool  controlla.
 \item Uso di etichette identificative per i cicli.
 \end{itemize}
 
+\paragraph{PDCA}
+Il nostro \termine{team} si impegnerà a seguire una strategia di miglioramento continuo chiamata \termine{PDCA} : acronimo di \textit{Plan–Do–Check–Act}. Attuando questo modello al nostro progetto, passiamo a descrive le 4 fasi in cui i processi di una macrosezione idealmente si può dividere
+\begin{itemize}
+				\item Plan: vengono stabiliti obiettivi e processi necessari per raggiungere i risultati aspettati;
+				\item Do: implementazione ed attuazione dei processi
+				\item Check: vengono comparati i risultati ottenuti con quelli attesi, tramite uno studio tabellare e di grafici. Solo se si sono raggiunti gli obiettivi preposti(a fronte di uno scosamento accettabile, deciso nella prima fase di \textit{Plan}) si può passare alla fase successiva, altrimenti è necessario ripetere il ciclo PDCA tenendo conto delle cause che hanno contribuito al fallimento;
+				\item Act: vengono attuate azioni di aggiustamento, correzione e miglioramento ai processi prima implementati. La soluzione individuata diventa la nuova baseline, e si può quindi ripetere l'intero ciclo.
+			\end{itemize}
+
+
+\subsection{Standard ISO/IEC 15504}
+Questo standard ci permette di individuare altre metodologie per garantire la qualità dei processi.
+Il livello di maturità e completezza del processo viene valutato secondo gli attributi di ognuno di essi ed è definito quantificabilmente secondo questa scala:
+\begin{itemize}
+			\item Level 0 - Incompleto: il processo non è implementato o/e non raggiunge gli obiettivi prefissati epr esso;
+			\item Level 1 - Eseguito: il processo è implementato e raggiunge i suoi obiettivi.
+			Misurato secondo:
+				\begin{itemize}
+					\item Performance: capacità di ottenere risultati identificabili.
+				\end{itemize}
+			\item Level 2 - Gestito: il processo agisce in base ad una pianificazione ed ogni sua azione è tracciata.
+			Misurato secondo:
+				\begin{itemize}
+					\item Capacità di elaborare un prodotto coerente con gli obiettivi attesi;
+					\item Capacità di elaborare un prodotto documentato, controllato e verificato.
+				\end{itemize}
+			\item Level 3 - Stabilito: il processo agisce in base a linee guida uniformi nell'intera organizzazione.
+			Misurato secondo:
+				\begin{itemize}
+					\item Definizione: capacità di elaborare un prodotto seguendo gli standard preposti;
+					\item Risorse: capacità di sfruttare le risorse a disposizione così da venir attuato al meglio.
+				\end{itemize}
+			\item Level 4 - Predicibile: il processo agisce entro certi limiti.
+			Misurato secondo:
+				\begin{itemize}
+					\item Misurazioni: capacità di sfruttare le misure ricavate durante l'esecuzione così da raggiungere i propri obiettivi;
+					\item Controllo: capacità di sfruttare le misure ricavate durante l'esecuzione così da migliorarsi e correggersi, se necessario.
+				\end{itemize}
+			\item Level 5 - Ottimizzato: il processo viene misurato e quindi ottimizzato.
+			Misurato secondo:
+				\begin{itemize}
+					\item Cambiamenti: capacità di supportare cambiamenti strutturali e di esecuzione;
+					\item Miglioramento continuo: capacità di sfruttare i cambiamenti strutturali e di esecuzione così da migliorarsi continuamente nel raggiungimento dei propri obiettivi.
+				\end{itemize}
+			\end{itemize}
+			
+
+\subsection{Joint Review e Audit Process}
+Non lavorando a stretto contatto con i proponenti del progetto , e non richiedendo, anche per impossibilità organizzativa, una revisione pianificata e scandita regolarmente nel tempo non abbiamo potuto attuare il \termine{Joint Review}  e l'\termine{Audit Process} per la verifica da parte dei proponeti del nostro progetto. Abbiamo comunque tenuto un saldo rapporto  tramite chiamate voip per eventuali dubbi e consigli. Tutte le decisioni prese con il proponente sono state esplicitate nei verabali esterni.
+
+
 \subsection{Processo di verifica}
 \subsubsection{Descrizione}
 Il processo di verifica ha il compito di controllare che ogni documento e software prodotto dal \termine{team} non presenti eventuali anomalie o errori e che esso rispecchi quanto previsto dai requisiti ad esso associati. In generale esistono due tipi di analisi nel mondo informatico, l'analisi statica e quella dinamica che andremo successivamente a elencare. Per rendere quantificabile il processo di verifica abbiamo scelto delle metriche per il software e i documenti.
+
+\paragraph{Metriche per la pianificazione}
+Qualsiasi eventuale valore negativo ottenuto dalle  metriche: Schedule Variance o/e Budget Variance dovrà essere  compensato entro la fine dell'attività di progetto modficando e revisionando in modo coerente il \PdP, in quanto non è possbile eccedere le ore di lavoro finali e il budget finale indicato nella pianificazione.
+						
+\subparagraph{Schedule Variance}
+Indica se si è in linea, in anticipo o in ritardo rispetto la pianificazione temporale prevista dal Piano di Progetto.
+Per calcolare questa metrica utilizziamo la seguente formuala: SV = BCWP −BCWS, dove BCWP sono le attività completate ad un certo momento e BCWS
+le attività che, secondo la pianificazione, dovrebbero essere state completate a quel momento.
+Il range di accettazione per questa metrica è un valore superiore o uguale a zero in questo modo ci si assicura di non avere accumulato eventuali ritardi per la consegna.
+
+\subparagraph{Budget Variance}
+Indica se alla data corrente si è speso di più o di meno rispetto a quanto pianificato.
+Per calcolare questa metrica utilizziamo la seguente forumal: BV = BCWS − ACWP , dove BCWS è il costo pianificato per realizzare le attività di progetto
+alla data corrente e ACWP è il costo effettivamente sostenuto alla data corrente.
+Il range di accettazione per questa metrica è un valore superiore o ugale a zero, segnale che i costi sono stati preventivati in maniera corretta e non si esce dal budget prefeissato all'inizio
+
+\subparagraph{Rischi non preventivati}
+Indicatore che evidenzia i rischi non preventivati.
+Per questa metrica l'indice numerico viene incrementato nel momento in cui si manifesta un rischio non individuato nell’attività di analisi dei rischi; il valore di accettazione è tra 0 e 5.
+
 
 \paragraph{Metriche per i documenti}
 \subparagraph{indice di Gulpease}
@@ -436,6 +507,14 @@ Un valore elevato per questa metrica potrebbe essere indice di una complessità 
 Rappresenta il numero di parametri da passare per la chiamata di un metodo.
 Un numero elevato per un dato metodo potrebbe evidenziare la necessità di ridurne le funzionalità associate e/o suddividerle in altri metodi ausiliari.
 Un alto valore di questo indice potrebbe evidenziare pertanto un possibile errore di progettazione.
+
+\subparagraph{Numero di metodi per classe}
+Rappresenta il numero di metodi per ogni classe.
+Un numero molto elevato potrebbe evidenziare la necessità di spezzettare le varie componenti della gerarchia in più classi distinte.
+Per contro un se ogni classe ha un indice abbastanza basso, questa metrica potrebbe indicare un analogo errore di progettazione, in quanto abbiamo classi che potrebbero essere raggruppate in classi più complesse e funzionali.
+Il range di accettazione va da 1-10, il range ottimale va da 3-7.
+
+
 
 \subparagraph{Complessità ciclomatica}
 Questo indice viene utilizzato per misurare la complessità di un programma. Esso misura direttamente il numero di cammini linearmente indipendenti attraverso il \termine{grafo di controllo di flusso}. I nodi del grafo corrispondono a gruppi indivisibili di istruzioni, mentre gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo gruppo.
@@ -503,8 +582,41 @@ L'analisi statica può essere impiegata in due modi diversi:
 \paragraph{Analisi dinamica}
 L'analisi dinamica viene applicata solamente al software prodotto in quanto consiste nell'esecuzione di test mirati a verificare la correttezza del comportamento dello stesso software.
 
+
+\subsubsection{Strumenti per l'analisi statica}
+\begin{itemize}
+  \item \textbf{\termine{SonarQube}}: strumento che esegue una serie di ispezioni sul codice in modo statico, andando a misurare un insieme di parametri per determinare poi se il codice sorgente soddisfa o meno i requisiti di qualità scelti dal \termine{team}. Tra i vari parametri misurati si ritrovano:
+  \begin{itemize}
+    \item \textbf{\termine{Complessità ciclomatica}}: misura la complessità delle classi, dei metodi e delle funzioni del programma.
+    \item Rapporto linee di commento su linee di codice: calcola il rapporto tra
+    le righe di codice e le righe di commento scritte.
+    \item Dipendenze: restituisce le dipendenze interne o esterne con altre
+    classi.
+    \item \textbf{\termine{Indice di manutenibilità}}: calcola un valore che indica quanto il
+    codice risulta manutenibile.
+    \item E molti altri.
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{Strumenti per l'analisi dinamica}
+\begin{itemize}
+  \item \textbf{\termine{Jenkins}}: software che permette l'integrazione di vari altri software per l'analisi statica e dinamica, fornendo un luogo dove lo sviluppatore può controllare facilmente il report dei vari test eseguiti.
+  \item \textbf{\termine{Mocha}}: \termine{framework} che permette di eseguire test di unità e di integrazione andando a creare dei \termine{mock} che simulino il comportamento delle varie parti, con lo scopo di testare ogni dettaglio in modo indipendente dal resto.
+  \item \textbf{\termine{Chai}}: libreria per formulare asserzioni sull'output atteso.
+  \item \textbf{\termine{Sinon}}: libreria per simulare delle risposte di richieste a server remoti.
+
+\end{itemize}
+
+
+
+\subsection{Processi di validazione}
+Per assicurarsi la validità del codice scritto, colui che assegna i task deve assicurarsi, una volta conclusi, il pieno soddisfacimento dei requisiti che esso proponeva. \\
+I metodi usati per un'adeguata validazione finale vengono trattati più approfonditamente all'interno del documento \pianoDiQualifica.
+Gli strumenti utilizzati per eseguire i test qui sotto descritti sono stati elencati nell' analisi dinamica.
+
 \subsubsection{Test}
 Posiamo individuare delle tipologie standard di test.
+Per eseguirli 
 
 \paragraph{Test di unità}
 I test di unità verificano che ogni singola componente del software funzioni correttamente. Effettuando questi test di riduce al minimo la presenza di errori di tutte le componenti di base. I test di unità sono identificati dalla seguente sintassi:
@@ -535,33 +647,7 @@ componente del software prodotto che ha subito delle modifiche. I test di regres
 \end{center}
 
 
-\subsubsection{Strumenti per l'analisi statica}
-\begin{itemize}
-  \item \textbf{\termine{SonarQube}}: strumento che esegue una serie di ispezioni sul codice in modo statico, andando a misurare un insieme di parametri per determinare poi se il codice sorgente soddisfa o meno i requisiti di qualità scelti dal \termine{team}. Tra i vari parametri misurati si ritrovano:
-  \begin{itemize}
-    \item \textbf{\termine{Complessità ciclomatica}}: misura la complessità delle classi, dei metodi e delle funzioni del programma.
-    \item Rapporto linee di commento su linee di codice: calcola il rapporto tra
-    le righe di codice e le righe di commento scritte.
-    \item Dipendenze: restituisce le dipendenze interne o esterne con altre
-    classi.
-    \item \textbf{\termine{Indice di manutenibilità}}: calcola un valore che indica quanto il
-    codice risulta manutenibile.
-    \item E molti altri.
-  \end{itemize}
-\end{itemize}
 
-\subsubsection{Strumenti per l'analisi dinamica}
-\begin{itemize}
-  \item \textbf{\termine{Jenkins}}: software che permette l'integrazione di vari altri software per l'analisi statica e dinamica, fornendo un luogo dove lo sviluppatore può controllare facilmente il report dei vari test eseguiti.
-  \item \textbf{\termine{Mocha}}: \termine{framework} che permette di eseguire test di unità e di integrazione andando a creare dei \termine{mock} che simulino il comportamento delle varie parti, con lo scopo di testare ogni dettaglio in modo indipendente dal resto.
-  \item \textbf{\termine{Chai}}: libreria per formulare asserzioni sull'output atteso.
-  \item \textbf{\termine{Sinon}}: libreria per simulare delle risposte di richieste a server remoti.
-
-\end{itemize}
-
-\subsection{Processi di validazione}
-Per assicurarsi la validità del codice scritto, colui che assegna i task deve assicurarsi, una volta conclusi, il pieno soddisfacimento dei requisiti che esso proponeva. \\
-I metodi usati per un'adeguata validazione finale vengono trattati più approfonditamente all'interno del documento \pianoDiQualifica.
 
 \subsubsection{Test di validazione}
 Il test di validazione coincide con il collaudo del software in presenza del \textit{proponente} e determina, in caso di esito positivo, il rilascio del software. I test di validazione sono identificati dalla seguente sintassi:

@@ -62,6 +62,26 @@ Indica se si è in linea, in anticipo o in ritardo rispetto la pianificazione te
 \captionof{table}{Budget Variance}
 \end{center}
 
+\paragraph{Ottimalità delle misurazioni}
+
+\begin{itemize}
+\item \textbf{Misurazione:} 
+\begin{displaymath}
+{\text{Misurazioni Ottimali}}\over{\text{Misurazioni Ottimali} + \text{Misurazioni Accettabili}}
+\end{displaymath} 
+\end{itemize}
+
+\begin{center}
+	\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			0.3 & 0.4 & Garantire l'ottimo range per almeno un numero cospicuo di metriche così da aumentare la qualità del software. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Ottimalità delle misurazioni}
+\end{center}
+
 \subsection{Processo di gestione dei rischi}
 L'obiettivo del processo è quello di identificare, analizzare, trattare e monitorare continuamente i rischi che possono insorgere durante l'intera attività di progetto.
 
@@ -254,7 +274,7 @@ Sarà necessario effettuare un'analisi dettagliata delle componenti individuate 
 		\hline
 			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
 			\hline
-			[$1 - 10$] & [$1 - 7$] &	Garantire un giusto equilibrio tra funzionalità e coesione tra le classi. \\
+			[$1 - 15$] & [$1 - 7$] &	Garantire un giusto equilibrio tra funzionalità e coesione tra le classi. Il valore di accettazione è stato tenuto così alto, poiché per quanto riguarda la parte dell'\termine{SDK}, essa deve garantire un sufficiente numero di metodi per personalizzare il widget. \\
 			\hline
 			\end{tabular}
 \captionof{table}{Numero di metodi per classe}

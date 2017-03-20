@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="ARD" company="NPE Developers" webLink="http://" view-date="2016-12-01" view-index="0" gantt-divider-location="418" resource-divider-location="300" version="2.8.1" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Gantt" company="" webLink="http://" view-date="2016-12-05" view-index="0" gantt-divider-location="273" resource-divider-location="300" version="2.8.1" locale="it">
     <description/>
-    <view zooming-state="default:9" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="247" order="0"/>
-        <field id="tpd4" name="Data d'inizio" width="84" order="1"/>
-        <field id="tpd5" name="Data di fine" width="81" order="2"/>
-        <option id="color.recent"><![CDATA[#0099ff #ff3333 #3399ff]]></option>
+    <view zooming-state="default:4" id="gantt-chart">
+        <field id="tpd3" name="Nome" width="123" order="0"/>
+        <field id="tpd4" name="Data d'inizio" width="46" order="1"/>
+        <field id="tpd5" name="Data di fine" width="55" order="2"/>
+        <field id="tpd6" name="Durata" width="43" order="3"/>
+        <option id="color.recent"><![CDATA[#009900 #006600 #000000]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Nome" width="209" order="0"/>
@@ -15,7 +16,7 @@
         <day-types>
             <day-type id="0"/>
             <day-type id="1"/>
-            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <default-week id="1" name="default" sun="0" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
             <only-show-weekends value="false"/>
             <overriden-day-types/>
             <days/>
@@ -34,17 +35,201 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Analisi dei Requisiti di Massima" color="#0099ff" meeting="false" start="2016-12-13" duration="22" complete="0" expand="true"/>
-        <task id="1" name="Analisi dei Requisiti in Dettaglio" color="#0099ff" meeting="false" start="2017-01-12" duration="17" complete="0" expand="true"/>
-        <task id="3" name="Progettazione Architetturale" color="#0099ff" meeting="false" start="2017-02-06" duration="12" complete="0" expand="true"/>
-        <task id="4" name="Progettazione di Dettaglio" color="#0099ff" meeting="false" start="2017-02-22" duration="35" complete="0" expand="true"/>
-        <task id="6" name="Codifica" color="#0099ff" meeting="false" start="2017-03-14" duration="21" complete="0" expand="true"/>
-        <task id="5" name="Verifica e Testing Finale" color="#0099ff" meeting="false" start="2017-04-12" duration="24" complete="0" expand="true"/>
-        <task id="12" name="Verifica" color="#0099ff" meeting="false" start="2016-12-13" duration="110" complete="0" expand="true"/>
+        <task id="0" name="Analisi dei Requisiti di Massima" color="#009900" meeting="false" start="2016-12-13" duration="30" complete="0" expand="false">
+            <task id="4" name="Studio di Fattibilità" color="#000000" meeting="false" start="2016-12-13" duration="5" complete="0" expand="true">
+                <task id="24" name="Stesura" color="#8cb6ce" meeting="false" start="2016-12-13" duration="4" complete="0" expand="true">
+                    <depend id="17" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="17" name="Verifica" color="#8cb6ce" meeting="false" start="2016-12-17" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="10" name="Piano di Progetto" meeting="false" start="2016-12-17" duration="13" complete="0" expand="true">
+                <task id="25" name="Stesura" meeting="false" start="2016-12-17" duration="10" complete="0" expand="true">
+                    <depend id="18" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="18" name="Verifica" meeting="false" start="2016-12-27" duration="3" complete="0" expand="true"/>
+            </task>
+            <task id="5" name="Analisi dei Requisiti" color="#000000" meeting="false" start="2016-12-26" duration="17" complete="0" expand="true">
+                <task id="26" name="Stesura" meeting="false" start="2016-12-26" duration="14" complete="0" expand="true">
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="19" name="Verifica" meeting="false" start="2017-01-09" duration="3" complete="0" expand="true"/>
+            </task>
+            <task id="14" name="Norme di Progetto" meeting="false" start="2016-12-17" duration="20" complete="0" expand="true">
+                <task id="20" name="Stesura" meeting="false" start="2016-12-17" duration="13" complete="0" expand="true">
+                    <depend id="27" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="27" name="Verifica" meeting="false" start="2016-12-30" duration="7" complete="0" expand="true"/>
+            </task>
+            <task id="11" name="Piano di Qualifica" color="#000000" meeting="false" start="2016-12-23" duration="15" complete="0" expand="true">
+                <task id="21" name="Stesura" meeting="false" start="2016-12-23" duration="9" complete="0" expand="true">
+                    <depend id="28" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="28" name="Verifica" meeting="false" start="2017-01-01" duration="6" complete="0" expand="true"/>
+            </task>
+            <task id="7" name="Glossario" color="#000000" meeting="false" start="2016-12-18" duration="23" complete="0" expand="true">
+                <task id="22" name="Stesura" meeting="false" start="2016-12-18" duration="22" complete="0" expand="true">
+                    <depend id="29" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="29" name="Verifica" meeting="false" start="2017-01-09" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="15" name="Lettera di Presentazione" meeting="false" start="2017-01-10" duration="2" complete="0" expand="true">
+                <task id="23" name="Stesura" meeting="false" start="2017-01-10" duration="1" complete="0" expand="true">
+                    <depend id="30" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="30" name="Verifica" meeting="false" start="2017-01-11" duration="1" complete="0" expand="true"/>
+            </task>
+        </task>
+        <task id="32" name="Analisi dei Requisiti in Dettaglio" color="#009900" meeting="false" start="2017-01-12" duration="23" complete="0" expand="false">
+            <task id="43" name="Piano di Progetto" meeting="false" start="2017-01-14" duration="8" complete="0" expand="true">
+                <task id="45" name="Incremento" meeting="false" start="2017-01-14" duration="7" complete="0" expand="true">
+                    <depend id="47" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="47" name="Verifica" color="#8cb6ce" meeting="false" start="2017-01-21" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="49" name="Analisi dei Requisiti" color="#000000" meeting="false" start="2017-01-12" duration="23" complete="0" expand="true">
+                <task id="51" name="Incremento" meeting="false" start="2017-01-12" duration="22" complete="0" expand="true">
+                    <depend id="53" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="53" name="Verifica" meeting="false" start="2017-02-03" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="55" name="Norme di Progetto" meeting="false" start="2017-01-13" duration="18" complete="0" expand="true">
+                <task id="57" name="Incremento" meeting="false" start="2017-01-13" duration="17" complete="0" expand="true">
+                    <depend id="118" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="118" name="Verifica" meeting="false" start="2017-01-30" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="61" name="Piano di Qualifica" color="#000000" meeting="false" start="2017-01-23" duration="7" complete="0" expand="true">
+                <task id="63" name="Incremento" meeting="false" start="2017-01-23" duration="6" complete="0" expand="true">
+                    <depend id="65" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="65" name="Verifica" meeting="false" start="2017-01-29" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="67" name="Glossario" color="#000000" meeting="false" start="2017-01-26" duration="9" complete="0" expand="true">
+                <task id="69" name="Incremento" meeting="false" start="2017-01-26" duration="8" complete="0" expand="true">
+                    <depend id="119" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="119" name="Verifica" meeting="false" start="2017-02-03" duration="1" complete="0" expand="true"/>
+            </task>
+        </task>
+        <task id="33" name="Progettazione Architetturale" color="#009900" meeting="false" start="2017-02-06" duration="16" complete="0" expand="false">
+            <task id="108" name="Progettazione" meeting="false" start="2017-02-06" duration="16" complete="0" expand="true">
+                <task id="151" name="Progettazione Architetturale" meeting="false" start="2017-02-06" duration="15" complete="0" expand="true">
+                    <depend id="150" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="150" name="Verifica" meeting="false" start="2017-02-21" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="133" name="Piano di Qualifica" color="#000000" meeting="false" start="2017-02-14" duration="7" complete="0" expand="true">
+                <task id="135" name="Incremento" meeting="false" start="2017-02-14" duration="6" complete="0" expand="true">
+                    <depend id="137" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="137" name="Verifica" meeting="false" start="2017-02-20" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="139" name="Norme di Progetto" meeting="false" start="2017-02-10" duration="5" complete="0" expand="true">
+                <task id="141" name="Incremento" meeting="false" start="2017-02-10" duration="4" complete="0" expand="true">
+                    <depend id="143" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="143" name="Verifica" meeting="false" start="2017-02-14" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="145" name="Glossario" color="#000000" meeting="false" start="2017-02-18" duration="4" complete="0" expand="true">
+                <task id="147" name="Incremento" meeting="false" start="2017-02-18" duration="3" complete="0" expand="true">
+                    <depend id="149" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="149" name="Verifica" meeting="false" start="2017-02-21" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="172" name="Piano di Progetto" meeting="false" start="2017-02-18" duration="4" complete="0" expand="true">
+                <task id="173" name="Incremento" meeting="false" start="2017-02-18" duration="3" complete="0" expand="true">
+                    <depend id="174" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="174" name="Verifica" meeting="false" start="2017-02-21" duration="1" complete="0" expand="true"/>
+            </task>
+        </task>
+        <task id="34" name="Progettazione di Dettaglio e Codifica" color="#009900" meeting="false" start="2017-02-22" duration="49" complete="0" expand="false">
+            <task id="110" name="Norme di Progetto" meeting="false" start="2017-02-26" duration="19" complete="0" expand="true">
+                <task id="192" name="Incremento" meeting="false" start="2017-02-26" duration="18" complete="0" expand="true">
+                    <depend id="111" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="111" name="Verifica" meeting="false" start="2017-03-16" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="180" name="Piano di Qualifica" color="#000000" meeting="false" start="2017-02-22" duration="42" complete="0" expand="true">
+                <task id="182" name="Incremento" color="#8cb6ce" meeting="false" start="2017-02-22" duration="41" complete="0" expand="true">
+                    <depend id="184" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="184" name="Verifica" meeting="false" start="2017-04-04" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="186" name="Piano di Progetto" meeting="false" start="2017-02-26" duration="38" complete="0" expand="true">
+                <task id="188" name="Incremento" meeting="false" start="2017-02-26" duration="37" complete="0" expand="true">
+                    <depend id="190" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="190" name="Verifica" meeting="false" start="2017-04-04" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="196" name="Progettazione" meeting="false" start="2017-02-23" duration="41" complete="0" expand="true">
+                <task id="197" name="Progettazione di Dettaglio" meeting="false" start="2017-02-23" duration="41" complete="0" expand="true"/>
+                <task id="216" name="Verifica" meeting="false" start="2017-02-28" duration="36" complete="0" expand="true"/>
+            </task>
+            <task id="101" name="Definizione di Prodotto" meeting="false" start="2017-03-02" duration="41" complete="0" expand="true">
+                <task id="105" name="Stesura" meeting="false" start="2017-03-02" duration="40" complete="0" expand="true"/>
+                <task id="107" name="Verifica" meeting="false" start="2017-03-05" duration="38" complete="0" expand="true"/>
+            </task>
+            <task id="199" name="Codifica" meeting="false" start="2017-03-21" duration="22" complete="0" expand="true">
+                <task id="200" name="Stesura" meeting="false" start="2017-03-21" duration="21" complete="0" expand="true"/>
+                <task id="201" name="Verifica" meeting="false" start="2017-03-25" duration="18" complete="0" expand="true"/>
+            </task>
+            <task id="219" name="Manuale Utente" meeting="false" start="2017-03-30" duration="13" complete="0" expand="true">
+                <task id="220" name="Stesura" meeting="false" start="2017-03-30" duration="12" complete="0" expand="true"/>
+                <task id="221" name="Verifica" meeting="false" start="2017-04-11" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="115" name="Glossario" meeting="false" start="2017-02-28" duration="43" complete="0" expand="true">
+                <task id="218" name="Incremento" meeting="false" start="2017-02-28" duration="42" complete="0" expand="true"/>
+                <task id="116" name="Verifica" meeting="false" start="2017-04-11" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="112" name="Lettera di Presentazione" meeting="false" start="2017-04-10" duration="2" complete="0" expand="true">
+                <task id="113" name="Modifica" meeting="false" start="2017-04-10" duration="1" complete="0" expand="true">
+                    <depend id="114" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="114" name="Verifica" meeting="false" start="2017-04-11" duration="1" complete="0" expand="true"/>
+            </task>
+        </task>
+        <task id="35" name="Verifica e Testing Finale" color="#8cb6ce" meeting="false" start="2017-04-12" duration="34" complete="0" expand="true">
+            <task id="223" name="Norme di Progetto" meeting="false" start="2017-04-17" duration="10" complete="0" expand="true">
+                <task id="225" name="Incremento" meeting="false" start="2017-04-17" duration="9" complete="0" expand="true">
+                    <depend id="227" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="227" name="Verifica" meeting="false" start="2017-04-26" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="229" name="Piano di Qualifica" color="#000000" meeting="false" start="2017-04-12" duration="31" complete="0" expand="true">
+                <task id="231" name="Incremento" color="#8cb6ce" meeting="false" start="2017-04-12" duration="30" complete="0" expand="true">
+                    <depend id="233" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="233" name="Verifica" meeting="false" start="2017-05-12" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="235" name="Piano di Progetto" meeting="false" start="2017-04-18" duration="27" complete="0" expand="true">
+                <task id="237" name="Incremento" meeting="false" start="2017-04-18" duration="26" complete="0" expand="true">
+                    <depend id="239" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="239" name="Verifica" meeting="false" start="2017-05-14" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="241" name="Manuale Utente" meeting="false" start="2017-04-25" duration="20" complete="0" expand="true">
+                <task id="243" name="Incremento" meeting="false" start="2017-04-25" duration="19" complete="0" expand="true">
+                    <depend id="245" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="245" name="Verifica" meeting="false" start="2017-05-14" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="247" name="Glossario" meeting="false" start="2017-04-30" duration="15" complete="0" expand="true">
+                <task id="249" name="Incremento" meeting="false" start="2017-04-30" duration="14" complete="0" expand="true">
+                    <depend id="251" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="251" name="Verifica" meeting="false" start="2017-05-14" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="252" name="Collaudo" meeting="false" start="2017-04-20" duration="26" complete="0" expand="true">
+                <task id="253" name="Verifica" meeting="false" start="2017-04-28" duration="17" complete="0" expand="true"/>
+                <task id="254" name="Testing" meeting="false" start="2017-04-20" duration="26" complete="0" expand="true"/>
+            </task>
+        </task>
     </tasks>
     <resources/>
     <allocations/>
     <vacations/>
     <previous/>
     <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
 </project>

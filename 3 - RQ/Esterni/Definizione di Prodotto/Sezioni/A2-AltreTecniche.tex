@@ -32,6 +32,7 @@ potrebbero rendere i costruttori difficili da comprendere.
 	\end{itemize}
 	
 	\item \textbf{Utilizzo}: questa tecnica viene utilizzata all'interno delle classi che rappresentano l'implementazione delle interfacce delle viste secondo il metodo della \textbf{Field Injection} per ottenere le istanze del \termine{Presenter} al quale sono legate. Inoltre è utilizzata a cascata la tecnica di \textbf{Constructor Injection} per costruire le varie classi \termine{Presenter} e tutte le classi che si incontrano nel grafo delle dipendenze.
+	Questa scelta è stata presa in quanto si voleva permettere la creazione da parte dell'utente delle implementazioni delle varie interfacce, facendo sì che fosse possibile utilizzare un costruttore senza argomenti che risulta essere più comodo. Allo stesso tempo, però, si voleva utilizzare questa tecnica per far sì che non fosse lo sviluppatore che utilizza una vista a doversi occupare delle sue dipendenze, ma fossero bensì risolte automaticamente. Pertanto tutto ciò che potrà essere utilizzato direttamente dallo sviluppatore avrà le proprie dipendenze risolte mediante il metodo della \termine{Field Injection}, mentre tutto ciò che non dovrà essere visibile allo sviluppatore verrà creato attraverso il metodo della \termine{Contructor Injection}.
 	\item \textbf{Svantaggi}: eventuali errori legati alla risoluzione delle dipendenze o alla loro
 implementazione vengono rilevati solamente durante l'esecuzione.
 \end{itemize}

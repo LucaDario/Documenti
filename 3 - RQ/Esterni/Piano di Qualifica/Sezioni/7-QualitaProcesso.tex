@@ -99,7 +99,7 @@ Il gruppo dovrà gestire e monitorare tutti i possibili rischi ed in particolare
 \paragraph{Rischi non preventivati}
 
 \begin{itemize}
-\item \textbf{Misurazione}: indice numerico che viene incrementato nel momento in cui si manifesta un rischio non individuato nell'attività di analisi dei rischi;
+\item \textbf{Misurazione}: indice numerico che viene incrementato nel momento in cui si manifesta un rischio non individuato nell'attività di analisi dei rischi.
 \end{itemize}
 
 \begin{center}
@@ -114,7 +114,7 @@ Il gruppo dovrà gestire e monitorare tutti i possibili rischi ed in particolare
 \end{center}
 
 
-\subsection{Processo di analisi dei requisiti software e di sistema}
+\subsection{Processo di analisi dei requisiti software}
 
 Il processo punta a trasformare i requisiti individuati dalle fonti in un set di requisiti tecnici che fungerà da linea guida nella progettazione del sistema.
 
@@ -151,7 +151,7 @@ Tutti i requisiti individuati saranno riportati in un \termine{file json} che ne
 \captionof{table}{Requisiti obbligatori soddisfatti}
 \end{center}	
 
-\subsection{Processo di sviluppo dell'architettura di sistema}
+\subsection{Processo di progettazione dell'architettura di sistema}
 
 Il processo si pone come obiettivo quello di identificare una corrispondenza fra requisiti di sistema ed elementi del sistema.
 \subsubsection{Obiettivi di qualità}
@@ -229,7 +229,7 @@ Nel corso dell'attività di progettazione, sia ad alto livello che di dettaglio,
 \captionof{table}{Distanza dalla sequenza principale}
 \end{center}
 
-\subsection{Processo di sviluppo dell'architettura di sistema in dettaglio}
+\subsection{Processo di progettazione dell'architettura di sistema in dettaglio}
 Lo scopo del processo è fornire una progettazione di dettaglio del prodotto che andrà ad implementare i requisiti individuati.
 \subsubsection{Obiettivi di qualità}
 Le attività svolte dovranno raggiungere i seguenti obiettivi:
@@ -244,6 +244,24 @@ Le attività svolte dovranno raggiungere i seguenti obiettivi:
 Sarà necessario effettuare un'analisi dettagliata delle componenti individuate in progettazione architetturale, suddividendole in unità che siano facilmente codificabili e testabili per le attività successive.
 
 \subsubsection{Metriche}
+
+\paragraph{Numero di metodi per classe}
+
+\begin{itemize}
+\item \textbf{Misurazione}: indice numerico che indica il numero di metodi definiti in una classe.
+\end{itemize}
+
+
+\begin{center}
+\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			[$1 - 15$] & [$1 - 7$] &	Garantire un giusto equilibrio tra funzionalità e coesione tra le classi. Il valore di accettazione è stato tenuto così alto, poiché per quanto riguarda la parte dell'\termine{SDK}, essa deve garantire un sufficiente numero di metodi per personalizzare il widget. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Numero di metodi per classe}
+\end{center}
 
 \subsubsection{Numero di attributi per classe}
 
@@ -262,10 +280,10 @@ Sarà necessario effettuare un'analisi dettagliata delle componenti individuate 
 \captionof{table}{Numero di attributi per classe}
 \end{center}
 
-\paragraph{Numero di metodi per classe}
+\paragraph{Numero di parametri per metodo}
 
 \begin{itemize}
-\item \textbf{Misurazione}: indice numerico che indica il numero di metodi definiti in una classe.
+\item \textbf{Misurazione}: indice numerico che indica il numero di parametri definiti in una classe.
 \end{itemize}
 
 
@@ -274,10 +292,10 @@ Sarà necessario effettuare un'analisi dettagliata delle componenti individuate 
 		\hline
 			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
 			\hline
-			[$1 - 15$] & [$1 - 7$] &	Garantire un giusto equilibrio tra funzionalità e coesione tra le classi. Il valore di accettazione è stato tenuto così alto, poiché per quanto riguarda la parte dell'\termine{SDK}, essa deve garantire un sufficiente numero di metodi per personalizzare il widget. \\
+			[$1 - 15$] & [$1 - 7$] &	Garantire che un singolo metodo esegua un numero equilibrato di azioni, troppi parametri infatti potrebbero evidenziare che il singolo metodo vada suddiviso in altri. \\
 			\hline
 			\end{tabular}
-\captionof{table}{Numero di metodi per classe}
+\captionof{table}{Numero di parametri per metodo}
 \end{center}
 
 \subsection{Processo di codifica del Software}
@@ -358,7 +376,7 @@ Il processo si occupa di integrare fra loro gli elementi del sistema, rispettand
 \subsubsection{Obiettivi di qualità}
 Le attività previste da questo processo dovranno puntare a raggiungere un alto livello di automazione, in particolare:
 \begin{itemize}
-\item l'integrazione delle varie parti del sistema sarà completamente automatizzata utilizzando lo strumento di continuous integration Jenkins;
+\item l'integrazione delle varie parti del sistema sarà completamente automatizzata utilizzando lo strumento di continuous integration Jenkins.
 \item il livello di integrazione raggiunto del sistema sarà sempre consultabile grazie all'utilizzo dello strumento di continuous integration \termine{Jenkins}.
 \end{itemize}
 
@@ -369,7 +387,7 @@ Sarà necessario configurare accuratamente lo strumento di \termine {continuous 
 \paragraph{Componenti integrate}
 
 \begin{itemize}
-\item \textbf{Misurazione}: $I=\frac{N_{CI}}{N_{CP}} \cdot 100$, dove $N_{CI}$ è il numero di componenti attualmente integrate nel sistema e $N_{CP}$ è il numero di componenti delineate nell'attività di progettazione;
+\item \textbf{Misurazione}: $I=\frac{N_{CI}}{N_{CP}} \cdot 100$, dove $N_{CI}$ è il numero di componenti attualmente integrate nel sistema e $N_{CP}$ è il numero di componenti delineate nell'attività di progettazione.
 \end{itemize}
 
 \begin{center}
@@ -471,7 +489,7 @@ Indica la percentuale di test di validazione eseguiti manualmente.
 \paragraph{Test superati}
 Indica la percentuale di test superati.
 \begin{itemize}
-\item \textbf{Misurazione}: $S=\frac{N_{TS}}{N_{TE}} \cdot 100$, dove $N_{TS}$ è il numero di test superati e $N_{TE}$ è il numero di test eseguiti;
+\item \textbf{Misurazione}: $S=\frac{N_{TS}}{N_{TE}} \cdot 100$, dove $N_{TS}$ è il numero di test superati e $N_{TE}$ è il numero di test eseguiti.
 \end{itemize}
 
 \begin{center}

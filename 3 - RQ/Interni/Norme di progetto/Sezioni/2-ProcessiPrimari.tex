@@ -99,9 +99,9 @@ La progettazione deve utilizzare le seguenti tipologie di diagrammi \termine{UML
 \item
 \textbf{Diagrammi dei \textit{\termine{package}}}: illustrano i vari raggruppamenti di classi in una unità di livello più alto.
 \item
-\textbf{Diagrammi di attività}: illustrano il flusso di operazioni relativo ad un'attività e utilizzati soprattutto per descrivere la logica di un algoritmo.
+\textbf{Diagrammi di attività(opzionali)}: illustrano il flusso di operazioni relativo ad un'attività e utilizzati soprattutto per descrivere la logica di un algoritmo.
 \item
-\textbf{Diagrammi di sequenza}: descrivono una determinata sequenza di azioni dove tutte le scelte sono già state effettuate. In tali diagrammi non compaiono pertanto scelte né flussi alternativi.
+\textbf{Diagrammi di sequenza}: descrivono una determinata sequenza di azioni dove tutte le scelte sono già state effettuate. In tali diagrammi non compaiono pertanto scelte né flussi alternativi. Verrano descritti solo per le operazioni reputate interessanti, cioè con un alto tassi di utilizzo e con una adeguata complessità, in modo che risultino interessanti da descrivere.
 \end{itemize}
 
 \paragraph{Requisiti per i progettisti}
@@ -121,8 +121,9 @@ Capacità di individuare con rapidità e sicurezza le soluzioni più opportune.
 La fase di progettazione si pone i seguenti obiettivi:
 \begin{itemize}
 \item Soddisfare i requisiti obbligatori fissati dal committente.
-\item Realizzare un applicativo  resistente alle modifiche, senza che l'intera struttura venga compromessa e/o nuovamente messa in discussione.
+\item Realizzare una struttura architetturale per l'applicativo  resistente alle modifiche, senza che l'intera struttura venga compromessa e/o nuovamente messa in discussione.
 \item Progettare un software con le caratteristiche che sono state elencate e descritte nella fase di analisi dei requisiti.
+\item Avere una chiara idea delle parti(classi,metodie e variabili) che si andranno successivamente a codificare nel periodo che va dal \RP al \RQ
 \end{itemize}
 
 \subsubsection{Codifica}
@@ -190,6 +191,40 @@ Di seguito sono elencate le tecniche per raggiungere un buon utilizzo dei nomi.
 \item Utilizzare nome composti da una sola lettera solamente per le variabili che identificano un indice all'interno di una istruzione ciclica.
 \item Cercare di utilizzare nomi diverse per tutte le classi, anche se facenti parte di packages diversi.
 \end{itemize}
+
+\paragraph{Obiettivi della codifica}
+La fase di codifica si pone i seguenti obiettivi:
+\begin{itemize}
+\item Realizzare una parte dell'applicativo funzionante, che dimostri l'utilizzo; come fosse una demo. N
+\item Trasformare in un linguaggio adatto tutte le funzioni e le classi con i loro relativi attributi 
+\end{itemize}
+
+\subsection{Integrazione}
+In questo periodo si cerca di integrare le varie parti del nostro applicativo e del nostro sdk in maniera che funzioni correttamente interfacciandosi in  correttamente tra di loro. Per fare questo abbiamo sviluppato degli appositi test che andremo successivamente ad elencare.
+Questa attività deve essere svolta in maniera ottimale e precisa dai \textit{progettisti}, che dovranno avere una chiara idea del funzionamento delle parti che hanno sviluppato e una idea abbastanza precisa del funzionamento delle parti che gli altri .\textit{progettisti} hanno sviluppato. Una volta finita l'integrazione tra le varie componenti si procederà a verificare tramite dei test appositi il completo e corretto funzionamento di tutto l'applicativo e l'SDK
+
+\paragraph{Requisiti per i progettisti}
+I \textit{\ProgP} sono responsabili delle attività di integrazione e sono tenuti ad avere:
+\begin{itemize}
+\item
+Profonda conoscenza di tutto quello che hanno sviluppato.
+\item
+Capacità di saper effettuare piccoli cambiamneti al loro codice per integrarlo al meglio nel ecosistema del intero progetto.
+\item
+Conoscere le parti sviluppate da altri per poterle integrare al meglio.
+\item
+Avere competenze necessarie per sviluppare le parti mancanti di software che permettono l'interazione tra le varie parti.
+\item
+Capacità di individuare con rapidità i bug e i requisiti non soddisfatti che l'applicativo finale comporta.
+\end{itemize}
+
+\paragraph{Obbiettivi per l'integrazione}
+Il periodo in cui si svolge l'integrazione pone i seguenti obiettivi:
+\begin{itemize}
+\item Avere un applicativo che unisce tutte le parti software sviluppate indipendentemente e non, dai vari progettisti.
+\item Controllare, e nel caso correggere eventuali errori e bug apparsi durante l'integrazione
+\end{itemize}
+
 \subsubsection{Documentazione dei file}
 I file contenenti codice dovranno essere avere un’intestazione contenente:
 \begin{itemize}
@@ -210,6 +245,9 @@ All'interno del file le classi dovranno contenere la seguente intestazione:
 \item * \textbackslash brief Breve descrizione della classe
 \item */
 \end{itemize}
+
+
+
 
 All'interno del file i metodi dovranno contenere la seguente intestazione:
 \begin{itemize}

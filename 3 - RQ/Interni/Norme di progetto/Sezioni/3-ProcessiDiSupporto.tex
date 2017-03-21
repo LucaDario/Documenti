@@ -193,7 +193,7 @@ Questo documento descrive in che maniera l'intero \termine{team} cerca di soddis
 \paragraph{\AdR}
 Questo documento dà una visione dell'insieme dei casi d'uso del progetto e dei requisiti derivati da essi. Contiene inoltre i diagrammi delle attività di interazione tra utente e sistema sviluppato e i servizi che il progetto, una volta concluso, andrà ad erogare. È un documento esterno e la lista di distribuzione comprende committenti che i proponenti.
 
-\paragraph{\ST}
+\paragraph{\studioDiFattibilita}
 L'intento del suddetto documento è dare una visione generale del prodotto e delle sue richieste. Più nello specifico verrà mostrata una progettazione ad alto livello, basata su diagrammi dei \termine{package} per la descrizione delle componenti, diagrammi di sequenza per descrivere gli scenari d'uso e diagrammi di attività. Verranno inoltre elencati i software che saranno utilizzati per la realizzazione del progetto. Questo è un documento esterno e la sua lista di distribuzione comprende  sia i committenti che i proponenti.
 
 \paragraph{\DDP}
@@ -481,6 +481,15 @@ Indica se alla data corrente si è speso di più o di meno rispetto a quanto pia
 Per calcolare questa metrica utilizziamo la seguente forumal: BV = BCWS − ACWP , dove BCWS è il costo pianificato per realizzare le attività di progetto
 alla data corrente e ACWP è il costo effettivamente sostenuto alla data corrente.
 Il range di accettazione per questa metrica è un valore superiore o ugale a zero, segnale che i costi sono stati preventivati in maniera corretta e non si esce dal budget prefeissato all'inizio
+
+
+\subparagraph{Ottimalità delle misurazioni}
+Questa metrica misura quante metriche misurate sono ottimali e assicura che almeno una buona quantita lo siano.
+\textbf{Misurazione:} 
+\begin{displaymath}
+{\text{Misurazioni Ottimali}}\over{\text{Misurazioni Ottimali} + \text{Misurazioni Accettabili}}
+\end{displaymath} 
+Il valore di accettazione è pari a 0.3 mentre il valore ottimale è 0.4 questo per garantire l'ottimo range per almeno un numero cospicuo di metriche così da aumentare la qualità del software.
 
 
 

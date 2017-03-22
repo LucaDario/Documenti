@@ -189,7 +189,10 @@ Di seguito sono elencate le tecniche per raggiungere un buon utilizzo dei nomi.
 \item Evitare di utilizzare gli stessi nomi per elementi diversi.
 \item Utilizzare nome composti da una sola lettera solamente per le variabili che identificano un indice all'interno di una istruzione ciclica.
 \item Cercare di utilizzare nomi diverse per tutte le classi, anche se facenti parte di packages diversi.
+\item tutte le variabili private dovranno essere scritte in \termine{camel case} precedute da un underscore.
 \end{itemize}
+
+
 \subsubsection{Documentazione dei file}
 I file contenenti codice dovranno essere avere un’intestazione contenente:
 \begin{itemize}
@@ -210,17 +213,32 @@ All'interno del file le classi dovranno contenere la seguente intestazione:
 \item * \textbackslash brief Breve descrizione della classe
 \item */
 \end{itemize}
+I file che conterrrano solamente un unica classe non avranno bisogno di un ulteriore descrizione come quella precedente
 
 All'interno del file i metodi dovranno contenere la seguente intestazione:
 \begin{itemize}
 \color{ForestGreen}
-\item /*!
-\item * \textbackslash brief Breve descrizione della funzione
-\item * \textbackslash param Nome del primo parametro
-\item *  eventuali successivi parametri
-\item * \textbackslash return Valore ritornato dalla funzione
+\item /**
+\item * Created by (USER) on (DATE).
+
 \item */
 \end{itemize}
+
+
+Per abilitare la creazione automatica di questo commento in ogni file è necessario, all'interno di IntelliJ IDEA, eseguire la seguente procedura:
+
+Aprire le impostazioni, quindi recarsi in Editor > File and Code Templates oppure utilizzare la shortcut Ctrl + Shift + A e cercare File template,
+nel tab File selezionare JavaScript File e successivamente incollare, nella parte di destra, il seguente spezzone:
+\begin{itemize}
+\color{ForestGreen}
+\item/**
+\item * Created by (USER) on (DATE).
+
+\item */
+\end{itemize}
+
+Cliccare su Apply
+
   
 \subsubsection{Ricorsione}
 La ricorsione va evitata il più possibile. Per ogni funzione ricorsiva sarà necessario valutare il costo in termini di occupazione della memoria e bisognerà associare ad esso una prova di correttezza.

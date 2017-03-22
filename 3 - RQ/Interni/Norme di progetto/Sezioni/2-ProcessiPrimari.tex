@@ -124,6 +124,7 @@ La fase di progettazione si pone i seguenti obiettivi:
 \item Realizzare una struttura architetturale per l'applicativo  resistente alle modifiche, senza che l'intera struttura venga compromessa e/o nuovamente messa in discussione.
 \item Progettare un software con le caratteristiche che sono state elencate e descritte nella fase di analisi dei requisiti.
 \item Avere una chiara idea delle parti(classi,metodie e variabili) che si andranno successivamente a codificare nel periodo che va dal \RP al \RQ
+\item Descrivere in maniera appopriata e comprensibile a uno sviluppatore esterno i metodi,le variabili e le classi codificate. Come successivamente descritto.
 \end{itemize}
 
 \subsubsection{Codifica}
@@ -190,6 +191,7 @@ Di seguito sono elencate le tecniche per raggiungere un buon utilizzo dei nomi.
 \item Evitare di utilizzare gli stessi nomi per elementi diversi.
 \item Utilizzare nome composti da una sola lettera solamente per le variabili che identificano un indice all'interno di una istruzione ciclica.
 \item Cercare di utilizzare nomi diverse per tutte le classi, anche se facenti parte di packages diversi.
+\item Per le variabile private delle classi si usa la pratica \termine{camel case} precedute da un underscore 
 \end{itemize}
 
 \paragraph{Obiettivi della codifica}
@@ -229,22 +231,31 @@ Il periodo in cui si svolge l'integrazione pone i seguenti obiettivi:
 I file contenenti codice dovranno essere avere un’intestazione contenente:
 \begin{itemize}
 \color{ForestGreen}
-\item /*! 
-\item *   \textbackslash file Nome del file
-\item *   \textbackslash author Autore
-\item *   \textbackslash date Data di creazione
-\item *   \textbackslash brief Breve descrizione del file
+\item /** 
+\item *   Created by (USER) on (DATE).
+\item *   Version (VERSION) - (VERSION\_NOTES)
 \item */
 \end{itemize}
+Dove:
+\begin{itemize}
+\color{ForestGreen}
+\item (USER) identifica l'utente che ha creato quel file;
+\item (DATE) identifica la data, in formato GG/MM/AAAA, nella quale è stato creato il file;
+\item (VERSION) identifica la versione del file attuale, inizialmente sarà impostata di default a 1.0.0;
+\item (VERSION\_NOTES) identifica le note relative alla attuale versione, che identificano cosa è cambiato per portare a quella data versione. Inizialmente sarà impostata a 1.0.0 .
+\end{itemize}
+
+
 
 All'interno del file le classi dovranno contenere la seguente intestazione:
 \begin{itemize}
 \color{ForestGreen}
-\item /*!
-\item * \textbackslash class Nome della classe
-\item * \textbackslash brief Breve descrizione della classe
+\item /**
+\item *  class Nome della classe
+\item *  brief Breve descrizione della classe
 \item */
 \end{itemize}
+Per quanto riguarda i file contententi solo un'unica classe non è neccessario inserire i commenti appena descritti.
 
 
 
@@ -252,13 +263,54 @@ All'interno del file le classi dovranno contenere la seguente intestazione:
 All'interno del file i metodi dovranno contenere la seguente intestazione:
 \begin{itemize}
 \color{ForestGreen}
-\item /*!
-\item * \textbackslash brief Breve descrizione della funzione
-\item * \textbackslash param Nome del primo parametro
-\item *  eventuali successivi parametri
-\item * \textbackslash return Valore ritornato dalla funzione
+\item /**
+\item * (TYPE)
+\item * (COMMENT)
+\item  * @param (PARAM) ((TYPE)): (PARAM\_DESC)
 \item */
 \end{itemize}
+Dove:
+\begin{itemize}
+\item (TYPE) identifica il tipo della funzione, può essere:
+\begin {itemize}
+\item @constructor: Identifica un costruttore;
+\item @method: Identifica una funzione diversa da un costruttore;
+\end{itemize}
+\item (COMMENT): Identifica una breve descrizione della funzionalità del metodo;
+\item (PARAM): Identifica il nome di un parametro;
+\item (TYPE): Identifica il tipo di un parametro, può essere Number (numero), String (stringa) o Object (oggetto);
+\item (PARAM\_DESC): Breve descrizione del parametro.
+\end{itemize}
+
+All'interno dei file le variabili sarrano descritte in questa maniera:
+
+\begin{itemize}
+\color{ForestGreen}
+\item /**
+\item (TYPE): Identifica il tipo di un parametro, può essere Number (numero), String (stringa) o Object (oggetto)
+\item (DESCRIPTION): Identifica una breve descrizione della variabile
+\end{itemize}
+Dove:
+\begin{itemize}
+\item (TYPE): Identifica il tipo di un parametro, può essere Number (numero), String (stringa) o Object (oggetto);
+\item (DESCRIPTION): Identifica una breve descrizione della variabile.
+\end{itemize}
+
+
+Per abilitare la creazione automatica di questo commento in ogni file è necessario, all'interno di IntelliJ IDEA, eseguire la seguente procedura:
+Aprire le impostazioni, quindi recarsi in Editor > File and Code Templates (oppure  utilizzare la shortcut Ctrl + Shift + A), cercare File template
+Nel tab File e selezionare JavaScript File
+Incollare, nella parte di destra, il seguente spezzone:
+\begin{itemize}
+\item /**
+\item * Created by (USER on (DATE)
+\item * Version (VERSION - (VERSION\_NOTES)
+\item */
+\end{itemize}
+Cliccare su Apply.
+
+Per quanto riguarda la storia di ogni modifica dei file, abbiamo deciso di tenerla tracciata tramite lo strumento \textit{Git} invece di tenere un tracciamento tramite commenti.
+
   
 \subsubsection{Ricorsione}
 La ricorsione va evitata il più possibile. Per ogni funzione ricorsiva sarà necessario valutare il costo in termini di occupazione della memoria e bisognerà associare ad esso una prova di correttezza.

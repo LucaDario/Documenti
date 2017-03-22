@@ -1,0 +1,117 @@
+% Questo file definisce lo stile che verrà applicato
+% ad ogni pagina di contenuto
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{ifthen}
+\usepackage[
+ a4paper,
+ top=2.5cm,
+ bottom=2.5cm,
+ left=1.5cm,
+ right=1.5cm,
+ head=30pt
+]{geometry}
+\usepackage[italian]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true, urlcolor=black, citecolor=black, linkcolor=black]{hyperref}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\usepackage{eurosym}
+\usepackage{amsmath}
+\usepackage{relsize}
+\usepackage{placeins}
+\usepackage{ltablex}
+\usepackage{float}
+
+\usepackage[multidot]{grffile}
+\usepackage{xcolor,colortbl}
+\definecolor{lightblue}{HTML}{56B4E6}
+\definecolor{blue}{HTML}{2953A1}
+\definecolor{darkblue}{HTML}{1E396E}
+\usepackage{longtable}
+
+\usepackage[toc,page]{appendix}
+\renewcommand\appendixtocname{Appendice}
+\renewcommand{\appendixpagename}{Appendice}
+
+\newcommand\pagenumberingnoreset[1]{\gdef\thepage{\csname @#1\endcsname\c@page}}
+
+% Cambia il font 
+\renewcommand*\rmdefault{qhv}
+
+% ***STILE PAGINA***
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{1cm} 
+% No indentazione paragrafo
+\setlength{\parindent}{0pt}
+
+% ***INTESTAZIONE***
+\newcommand\textline[4][t]{%
+  \noindent\parbox[#1]{.333\textwidth}{\raisebox{-0.40\height}{#2}}%
+  \parbox[#1]{.333\textwidth}{\centering #3}%
+  \parbox[#1]{.333\textwidth}{\raggedleft #4}%
+}
+
+\lhead{
+	\textline[t]{\includegraphics[width=1cm, keepaspectratio=true]{../../../../Template/Logo/Logo.png}}{\progettoShort}{\documento}
+}
+
+\renewcommand{\headrulewidth}{0.4pt}  %Linea sotto l'intestazione
+
+% ***PIÈ DI PAGINA***
+\lfoot{\textit{\gruppoLink}\\ \footnotesize{\email}}
+\rfoot{\thepage} %per le prime pagine: mostra solo il numero romano
+\cfoot{}
+\renewcommand{\footrulewidth}{0.4pt}   %Linea sopra il piè di pagina
+
+
+% Ridefinisce command \paragraph{} andando a capo ogni dopo la parola dentro le parentesi ed ha la possibiltà di enumerazione fino a n cifre modificando il numero dentro "secnumdepth"
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{7}
+\setcounter{tocdepth}{7}
+
+
+% Visualizza paragraph come una section
+\titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\titleformat{\subparagraph}{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+\titlespacing*{\subparagraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\makeatletter
+\newcounter{subsubparagraph}[subparagraph]
+\renewcommand\thesubsubparagraph{%
+  \thesubparagraph.\@arabic\c@subsubparagraph}
+\newcommand\subsubparagraph{%
+  \@startsection{subsubparagraph}    % counter
+    {6}                              % level
+    {\parindent}                     % indent
+    {3.25ex \@plus 1ex \@minus .2ex} % beforeskip
+    {0.75em}                           % afterskip
+    {\normalfont\normalsize\bfseries}}
+\newcommand\l@subsubparagraph{\@dottedtocline{6}{13em}{5.5em}} %gestione dell'indice
+\newcommand{\subsubparagraphmark}[1]{}
+\makeatother
+
+\makeatletter
+\newcounter{subsubsubparagraph}[subsubparagraph]
+\renewcommand\thesubsubsubparagraph{%
+  \thesubsubparagraph.\@arabic\c@subsubsubparagraph}
+\newcommand\subsubsubparagraph{%
+  \@startsection{subsubsubparagraph}    % counter
+    {7}                              % level
+    {\parindent}                     % indent
+    {3.25ex \@plus 1ex \@minus .2ex} % beforeskip
+    {0.75em}                           % afterskip
+    {\normalfont\normalsize\bfseries}}
+\newcommand\l@subsubsubparagraph{\@dottedtocline{7}{16em}{6.5em}} %gestione dell'indice
+\newcommand{\subsubsubparagraphmark}[1]{}
+\makeatother

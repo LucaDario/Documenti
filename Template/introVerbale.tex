@@ -1,0 +1,34 @@
+% Questo file contiene il layout della prima pagina
+\pagenumbering{gobble}
+
+\title{\includegraphics[width=8cm, keepaspectratio=true]{../../../../Template/Logo/Logo.png} \\
+	\documento \\
+	Versione \versione
+}
+\date{\dataApprovazione}
+
+\maketitle
+
+\begin{center}
+
+\begin{tabular}{ r | l }
+  \textbf{Ruolo} & \textbf{Componente} \\
+  Redazione & \redatori \\
+  Revisione & \revisori \\
+  Approvazione & \approvazione \\
+  \\
+  Stato & \statoapprovazione \\
+  Uso & \uso \\
+  Destinatari & \destinatari
+\end{tabular}
+\end{center}
+
+\begin{center}
+\textbf{Sommario\\}
+\sommario \\
+\vspace{1.5cm}\email
+\end{center}
+
+\clearpage
+
+\pagenumbering{arabic}

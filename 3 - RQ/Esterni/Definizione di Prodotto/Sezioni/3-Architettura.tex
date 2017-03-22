@@ -1,11 +1,25 @@
 \newpage
 \section{Architettura}
+
+\subsection{Metodo e Formalismo}
+Nell’esposizione dell’architettura dell’applicazione si procederà con un approccio \termine{top-down} descrivendo l’architettura dal generale al particolare. Si procederà quindi alla descrizione dei
+\termine{packages} e dei componenti, per poi descrivere nel dettaglio le singole classi, specificando per
+ognuna il tipo, l’obiettivo, la funzione, relazioni in ingresso e uscita e i metodi e attributi contenuti. Successivamente si procederà ad elencare i diagrammi di sequenza che descriveranno il funzionamento dell'\termine{SDK} e dell'applicazione. 
+
+
 \subsection{Informazioni Generali}
 Il principio di progettazione che abbiamo addottato è il Common Closure Principale per i seguenti motivi:
 \begin{itemize}
 \item Suddivisione più logica dei vari package e classi.
 \item Aumenta la manutenibilità del codice nel tempo.
 \end{itemize}
+
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[scale=0.5]{Sezioni/Packages/App/application.png}
+%	\caption{Package application}
+%\end{figure}
+
 
 \input{Sezioni/Packages/SDK.tex}
 \input{Sezioni/Packages/App.tex}

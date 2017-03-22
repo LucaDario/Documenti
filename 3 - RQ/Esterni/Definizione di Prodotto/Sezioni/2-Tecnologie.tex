@@ -1,14 +1,31 @@
 \section{Tecnologie utilizzate}
 
-\subsection{Vue.js}
-\textit{Vue.js} è un \termine{framework} per lo sviluppo di interfacce utente. Esso verrà utilizzato per aggiornare le view non appena verranno fatte modifiche nel model e viceversa. In altre parole tale \termine{framework} verrà utilizzato per la gestione della comunicazione tra le componenti del pattern \termine{Model View Presenter}.
+\subsection{Rocket.Chat}
+\termine{Rocket.Chat} è una Web Chat Server, sviluppata in JavaScript, utilizzando il \termine{framework} Meteor. Lo scopo principale del capitolato è quello di sviluppare un'applicazione integrabile con il \termine{package manager} \termine{Atmosphere} nel progetto Meteor \termine{Rocket.Chat}. L'applicazione userà l'\termine{SDK} integrata nello stesso metodo ed, una volta compilato il tutto, il risultato sarà la versione di \termine{Rocket.Chat} del gruppo \gruppo\ compresa delle funzionalità previste.
 
-\subsection{Bootstrap}
-
-\subsection{Meteor}
+\subsection{Meteor.js}
 Meteor è una piattaforma Javascript per lo sviluppo di applicazioni web e mobile. Essa viene utilizzata come ambiente di sviluppo per l'applicazione e per l'\termine{SDK} che verranno integrate come pacchetti stand-alone in \termine{Rocket.Chat}.
 Meteor permette un'ottima gestione delle componenti permettendo lo sviluppo sia la parte server, la parte client e la parte per la comunicazione tra esse in un unico progetto. Per fare ciò Meteor include un set di tecnologie da utilizzare, tra le quali: Node.js, MongoDB e tutte quelle disponibili all'interno del \termine{package manager} \termine{Atmosphere}.
+
 \subsection{MongoDB}
 MongoDB è un \termine{DBMS} non relazionale, orientato ai documenti. Classificato come un database di tipo NoSQL, si allontana dalla
 struttura tradizionale basata su tabelle dei database relazionali in favore di documenti in stile
 JSON con schema dinamico. MongoDB è utilizzato come \termine{storage} da \termine{Rocket.Chat}, così come per qualsiasi progetto meteor. Dunque, il suo utilizzo è derivato principalmente per questo motivo.
+
+\subsection{Node.js}
+Per lo sviluppo della parte Back-End dell’applicazione si è deciso di utilizzare la piattaforma \termine{event-driven} Node.js, basata sul motore JavaScript V8. Esso permette di realizzare applicazioni
+Web utilizzando il linguaggio JavaScript, tipicamente client-side, per
+la scrittura server-side. 
+Node.js è essenziale per lo sviluppo di Monolith e per la compilazione di \termine{Rocket.Chat}. L'installazione di Meteor comporta anche l'installazione di Node.js essenziale per il corretto funzionamento dei progetti Meteor. Il principale vantaggio dell'utilizzo di tale tecnologia è che permette di accedere alle risorse del sistema operativo in modalità \termine{event-driven} non sfruttando il modello basato sui thread concorrenti, utilizzato dai classici web servers.
+
+\subsection{Atmosphere}
+\textit{Atmosphere} è il \termine{package manager} di Meteor e serve per aggiungere pacchetti \termine{stand-alone} all'interno di un generico progetto, come appunto \termine{Monolith} e relativa applicazione. Viene tenuta traccia dei pacchetti integrati nel progetto tramite la directory \textit{packages/} che si crea all'interno del progetto.
+
+\subsection{Vue.js}
+\textit{Vue.js} è un \termine{framework} per lo sviluppo di interfacce utente. Esso verrà utilizzato per aggiornare le view non appena verranno fatte modifiche nel model e viceversa. In altre parole tale \termine{framework} verrà utilizzato per la gestione della comunicazione tra le componenti del pattern \termine{Model View Presenter}.
+
+\subsection{Bootstrap}
+\textit{Bootstrap} è un \termine{framework} per la gestione di HTML, CSS e JavaScript. Viene utilizzato per semplicità di utilizzo e ridurre il tempo necessario per l'implementazione e l'integrazione dei file CSS, HTML e CSS dell'applicazione. Inoltre, tale \termine{framework} è già integrato dentro \termine{Rocket.Chat} e viene, dunque, utilizzato anche per retrocompatibilità.
+
+\subsection{jQuery}
+\textit{jQuery} è una libreria JavaScript. Essa permette di modificare facilmente il file HTML basandosi sul \termine{paradigma DOM}.

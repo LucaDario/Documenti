@@ -1,21 +1,181 @@
-\subsubsection{Suddivisione in package  di \termine{Monolith}}
+\subsubsection{Architettura ad alto livello-Monolith}
 \label{Monolith}
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Sezioni/Packages/SDK/Monolith.png}
-	\caption{Monolith}
+	\caption{Architettura ad alto livello-Monolith}
 \end{figure}
 \begin{itemize}
-	\item{\textbf{Descrizione}}: architettura ad alto livello dell' \termine{SDK} \termine{Monolith}.
+	\item{\textbf{Descrizione}}: architettura ad alto livello dell’\termine{SDK} \termine{Monolith} del gruppo \gruppo. La struttura dei package scelta è quella classica dei progetti Meteor, però l'\termine{SDK} non possiede realmente una parte logica, per cui non è presente il package server poiché non è necessario. Essendo, un'\termine{SDK} e rilasciato sotto licenza libera, è possibile che in un futuro vengano aggiunte nuove classi o ulteriori packages. A tal proposito il gruppo si è impegnato a suddividere le cartelle in modo facilitare la disposizione e la ricerca delle componenti al suo interno.
 	\item{\textbf{Package e classi contenuti}}:
 	\begin{itemize}
-	\item{monolith::bubble}: package contenente tutti i package che compongono le bolle ed esso ha una dipendenza con il il package component.
-	\item{monolith::component}: package contenente tutti i package dei componenti che compongono le bolle, ad esempio tutti i tipi di widget e layout.
+	\item \textbf{client}: package contenente tutte le componenti necessarie al lato client.
 	\end{itemize}
 
 \end{itemize}
 
+\subsection{Package monolith::client}
 
+\label{Package monolith::client}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{Sezioni/Packages/SDK/client.png}
+	\caption{Package monolith::client}
+\end{figure}
+
+\begin{itemize}
+\item \textbf{Descrizione}: Package contenente le componenti adibite alle funzionalità lato client. 
+\item \textbf{Classi e packages contenuti}:
+\begin{itemize}
+	\item \textbf{bubble}: package contenente tutti i package che compongono le bolle ed esso ha una dipendenza con il il package component. Le bolle infatti non sono altro che dei semplici contenitori che potranno contenere dei \textit{BaseComponent} (layout o widget) e disporli in qualsiasi logica si desideri.
+	\item \textbf{component}: package contenente tutti i package dei componenti che compongono le bolle, ad esempio tutti i tipi di widget e layout. Questi possono essere aggiunti alle bolle e, aggiungere un layout significa introdurre in una bolla una logica di disposizione degli elementi. Si noti, infine, che una \termine{BaseBubble} (punto di partenza per qualsiasi bolla) per scelta implementativa possiede di default un layout verticale.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Package monolith::client::component}
+\label{Package monolith::client::component}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/Packages/SDK/component.png}
+	\caption{Package monolith::client::component}
+\end{figure}
+
+\begin{itemize}
+\item \textbf{Descrizione}: package contenente altri due packages. Il primo contiene i widget, il secondo i layout. Essi sono entrambi dei component poiché possono essere aggiunti a qualsiasi bolla per garantire più libertà di modifiche possibile. Infatti, una bolla può essere formata da più layout contenenti ognuno varie componenti.
+Si noti che i widget sono considerati dei \textit{BaseComponent} per cui ognuno di essi ha una dipendenza con l'interfaccia. Per comodità tale dipendenza è espressa a livello del package esterno.
+\item \textbf{Classi e packages contenuti}:
+\begin{itemize}
+\item \textbf{layout}: package che contiene le componenti che forniscono le funzionalità dei layout. Essi vengono usati per disporre i widget nelle \termine{bolle}.
+\item \textbf{widget}: package che contiene i widget, ovvero le componenti usate per creare effettivamente le \termine{bolle}.
+\item \textbf{BaseComponent}: interfaccia che rappresenta la base degli oggetti che possono essere aggiunti ad una \termine{bolla}.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Package monolith::client::component::widget::button}
+\label{Package monolith::client::component::widget::button}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/Packages/SDK/button.png}
+	\caption{Package monolith::client::component::widget::button}
+\end{figure}
+\begin{itemize}
+\item \textbf{Descrizione}: package contenente altri package che rappresentano la componente widget bottone. 
+\item \textbf{Classi e packages contenuti}:
+\begin{itemize}
+\item \textbf{view}: package che contiene le implementazioni dell'interfaccia presente nel package esterno.
+\item \textbf{presenter}: package che contiene il/ i presenter del widget bottone.
+\item \textbf{style}: package contenente la classe (o le classi, nel caso se ne definiscano di più) che incapsulano le informazioni o gli attributi del widget bottone.
+\item \textbf{ButtonWidgetView}: interfaccia che rappresenta la view da implementare del widget bottone.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Package monolith::client::component::widget::checklist}
+\label{Package monolith::client::component::widget::checklist}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/Packages/SDK/checklist.png}
+	\caption{Package monolith::client::component::widget::checklist}
+\end{figure}
+\begin{itemize}
+\item \textbf{Descrizione}: package contenente altri package che rappresentano la componente widget checklist.
+\item \textbf{Classi e packages contenuti}:
+\begin{itemize}
+\item \textbf{view}: package che contiene le implementazioni dell'interfaccia presente nel package esterno.
+\item \textbf{presenter}: package che contiene il/ i presenter del widget checklist.
+\item \textbf{style}: package contenente la classe (o le classi, nel caso se ne definiscano di più) che incapsulano le informazioni o gli attributi del widget checklist.
+\item \textbf{ChecklistWidgetView}: interfaccia che rappresenta la view da implementare del widget checklist.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Package monolith::client::component::widget::list}
+\label{Package monolith::client::component::widget::list}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/Packages/SDK/list.png}
+	\caption{Package monolith::client::component::widget::list}
+\end{figure}
+\begin{itemize}
+\item \textbf{Descrizione}: package contenente altri package che rappresentano la componente lista generica.
+\item \textbf{Classi e packages contenuti}:
+\begin{itemize}
+\item \textbf{view}: package che contiene le implementazioni dell'interfaccia presente nel package esterno.
+\item \textbf{presenter}: package che contiene il/ i presenter della lista generica.
+\item \textbf{style}: package contenente la classe (o le classi, nel caso se ne definiscano di più) che incapsulano le informazioni o gli attributi della lista generica.
+\item \textbf{ListWidgetView}: interfaccia che rappresenta la view da implementare della List.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Package monolith::client::component::widget::image}
+\label{Package monolith::client::component::widget:image}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/Packages/SDK/image.png}
+	\caption{Package monolith::client::component::widget::image}
+\end{figure}
+\begin{itemize}
+\item \textbf{Descrizione}: package contenente altri package che rappresentano la componente widget immagine.
+\item \textbf{Classi e packages contenuti}:
+\begin{itemize}
+\item \textbf{view}: package che contiene le implementazioni dell'interfaccia presente nel package esterno.
+\item \textbf{presenter}: package che contiene il/ i presenter del widget immagine.
+\item \textbf{style}: package contenente la classe (o le classi, nel caso se ne definiscano di più) che incapsulano le informazioni o gli attributi del widget immagine.
+\item \textbf{ImageWidgetView}: interfaccia che rappresenta la view da implementare del widget immagine.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Package monolith::client::component::widget::text}
+\label{Package monolith::client::component::widget::text}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{Sezioni/Packages/SDK/text.png}
+	\caption{Package monolith::client::component::widget::text}
+\end{figure}
+\begin{itemize}
+\item \textbf{Descrizione}: package contenente altri package che rappresentano la componente widget testo.
+\item \textbf{Classi e packages contenuti}:
+\begin{itemize}
+\item \textbf{view}: package che contiene le implementazioni dell'interfaccia presente nel package esterno.
+\item \textbf{presenter}: package che contiene il/ i presenter del widget testo.
+\item \textbf{style}: package contenente la classe (o le classi, nel caso se ne definiscano di più) che incapsulano le informazioni o gli attributi del widget testo.
+\item \textbf{TextWidgetView}: interfaccia che rappresenta la view da implementare del widget testo.
+\end{itemize}
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{comment}
 \subsubsection{Suddivisione in package  di Monolith::bubble}
 \label{Monolith::bubble}
 \begin{figure}[H]
@@ -546,3 +706,4 @@
 	\item{monolith::component::widget::text::option::UrlStyle}: classe per la modifica dello stile dell' url del widget text.
 	\end{itemize}
 \end{itemize}
+\end{comment}

@@ -1,11 +1,11 @@
 \section{Tecnologie utilizzate}
 
 \subsection{Rocket.Chat}
-\termine{Rocket.Chat} è una Web Chat Server, sviluppata in JavaScript, utilizzando il \termine{framework} Meteor. Lo scopo principale del capitolato è quello di sviluppare un'applicazione integrabile con il \termine{package manager} \termine{Atmosphere} nel progetto Meteor \termine{Rocket.Chat}. L'applicazione userà l'\termine{SDK} integrata nello stesso metodo ed, una volta compilato il tutto, il risultato sarà la versione di \termine{Rocket.Chat} del gruppo \gruppo\ compresa delle funzionalità previste.
+\termine{Rocket.Chat} è una Web Chat Server, sviluppata in JavaScript, utilizzando il \termine{framework} Meteor. Lo scopo principale del capitolato è quello di sviluppare un'applicazione integrabile con il \termine{package manager} \termine{Atmosphere} nel progetto Meteor \termine{Rocket.Chat}. L'applicazione, denominata \textit{Bring-It}, userà l'\termine{SDK} integrata nello stesso metodo. Una volta compilato il tutto, il risultato sarà la versione di \termine{Rocket.Chat} del gruppo \gruppo\ che avrà incluso le funzionalità previste, sottoforma di pacchetti.
 
 \subsection{Meteor.js}
 Meteor è una piattaforma Javascript per lo sviluppo di applicazioni web e mobile. Essa viene utilizzata come ambiente di sviluppo per l'applicazione e per l'\termine{SDK} che verranno integrate come pacchetti stand-alone in \termine{Rocket.Chat}.
-Meteor permette un'ottima gestione delle componenti permettendo lo sviluppo sia la parte server, la parte client e la parte per la comunicazione tra esse in un unico progetto. Per fare ciò Meteor include un set di tecnologie da utilizzare, tra le quali: Node.js, MongoDB e tutte quelle disponibili all'interno del \termine{package manager} \termine{Atmosphere}.
+Meteor permette un'ottima gestione delle componenti, permettendo lo sviluppo della parte server, della parte client e della parte per la comunicazione tra esse in un unico progetto. Per fare ciò Meteor include un set di tecnologie da utilizzare, tra le quali: Node.js, MongoDB e tutte quelle disponibili all'interno del \termine{package manager} \termine{Atmosphere}.
 
 \subsection{MongoDB}
 MongoDB è un \termine{DBMS} non relazionale, orientato ai documenti. Classificato come un database di tipo NoSQL, si allontana dalla
@@ -16,7 +16,7 @@ JSON con schema dinamico. MongoDB è utilizzato come \termine{storage} da \termi
 Per lo sviluppo della parte Back-End dell’applicazione si è deciso di utilizzare la piattaforma \termine{event-driven} Node.js, basata sul motore JavaScript V8. Esso permette di realizzare applicazioni
 Web utilizzando il linguaggio JavaScript, tipicamente client-side, per
 la scrittura server-side. 
-Node.js è essenziale per lo sviluppo di Monolith e per la compilazione di \termine{Rocket.Chat}. L'installazione di Meteor comporta anche l'installazione di Node.js essenziale per il corretto funzionamento dei progetti Meteor. Il principale vantaggio dell'utilizzo di tale tecnologia è che permette di accedere alle risorse del sistema operativo in modalità \termine{event-driven} non sfruttando il modello basato sui thread concorrenti, utilizzato dai classici web servers.
+Node.js è essenziale per lo sviluppo di Monolith e per la compilazione di \termine{Rocket.Chat}. Infatti l'installazione di Meteor comporta anche l'installazione di Node.js essenziale per il corretto funzionamento dei progetti Meteor. Il principale vantaggio dell'utilizzo di tale tecnologia è che permette di accedere alle risorse del sistema operativo in modalità \termine{event-driven} non sfruttando il modello basato sui thread concorrenti, utilizzato dai classici web servers.
 
 \subsection{Atmosphere}
 \textit{Atmosphere} è il \termine{package manager} di Meteor e serve per aggiungere pacchetti \termine{stand-alone} all'interno di un generico progetto, come appunto \termine{Monolith} e relativa applicazione. Viene tenuta traccia dei pacchetti integrati nel progetto tramite la directory \textit{packages/} che si crea all'interno del progetto.

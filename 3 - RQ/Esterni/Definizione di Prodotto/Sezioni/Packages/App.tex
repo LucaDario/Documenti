@@ -7,24 +7,24 @@
 \end{figure}
 \begin{itemize}
 
-	\item \textbf{Descrizione}: architettura ad alto livello dell’applicazione \textit{Bring-It} del gruppo \gruppo. Data la natura dell'applicazione, si è scelto di utilizzare il \termine{pattern architetturale} Model-View-Presenter. Le funzionalità sono state divise secondo lo schema classico di un progetto Meteor: lato client, lato server e la parte che gestisce la comunicazione per le altre due. Il lato client si occupa dell'interazione con l'utente, ovvero conterrà tutte quelle componenti che reagiranno alle varie azioni che egli compie; tali cambiamenti saranno visibili all'utente tramite la \termine{chat} di \termine{Rocket.Chat}. La parte server invece comunicherà direttamente con il \termine{DBMS}, ovvero \termine{MongoDB}, che si occuperà di salvare i dati necessari per il corretto funzionamento dell'applicativo. Si noti che per comunicare con il \termine{database} verrà utilizzata l'interfaccia che già offre Meteor.
-In seguito verranno elencati tutti i \termine{packages} con le classi all'interno, alle quali verrà data una spiegazione esaustiva.
+	\item \textbf{Descrizione}: architettura ad alto livello dell’applicazione \textit{Bring-It} del gruppo \gruppo. Data la natura dell'applicazione, si è scelto di utilizzare il \termine{pattern architetturale} Model-View-Presenter. Le funzionalità sono state divise secondo lo schema classico di un progetto Meteor: lato client, lato server e la parte che gestisce la comunicazione per le altre due. Il lato client si occupa dell'interazione con l'utente, ovvero conterrà tutte quelle componenti che reagiranno alle varie azioni che egli compie e tali cambiamenti saranno visibili all'utente tramite la \termine{chat} di \termine{Rocket.Chat}. La parte server invece comunicherà direttamente con il \termine{DBMS}, ovvero \termine{MongoDB}, che si occuperà di salvare i dati necessari per il corretto funzionamento dell'applicativo. Si noti che per comunicare con il \termine{database} verrà utilizzata l'interfaccia che già offre Meteor.
+Infine in seguito verranno elencati tutti i \termine{packages} forniti di una spiegazione esaustiva sulle loro interazioni.
 	\item \textbf{Classi e packages contenuti}:
 	\begin{itemize}
-		\item \textbf{application::client}:  contenente packages e il codice che è necessario lato client. Ovvero tutte le \termine{View} ed i \termine{Presenter} che si occupano di prendere gli input dall'utente (View) e di gestirli (Presenter).
+		\item \textbf{application::client}: package contenente i packages e il codice che è necessario lato client. Ovvero tutte le \termine{View} ed i \termine{Presenter} che si occupano di prendere gli input dall'utente (View) e di gestirli (Presenter).
 		\item \textbf{application::usecase}: package contenente tutti gli usecase dell'applicazione. Essi rappresentano tutti i \termine{models} delle funzionalità offerte dall'applicativo, riceveranno i dati dai rispettivi \termine{presenter} e agiranno per compiere l'azione dell'utente.
 		\item \textbf{application::server}: package contenente classi che interagiscono con l'interfaccia di Meteor che a sua volta comunicherà con il \termine{DBMS} \termine{MongoDB}.
-		\item \textbf{application::data}: contiene le classi che possono risultare utili sia alla parte client che alla parte server.
+		\item \textbf{application::data}: package contenente le classi che possono risultare utili sia alla parte client che alla parte server.
 		\item \textbf{application::exception}: package contenente la gerarchia di eccezioni definita dal gruppo. Queste sono state inserite al fine di permettere una modellazione maggiore da parte degli sviluppatori che voglio usare l'\termine{SDK}.
 	\end{itemize}
 	\item \textbf{Librerie e Framework}
 	\begin{itemize}
-	\item \textbf{jQuery}: Libreria JavaScript. Essa è stata inclusa per garantire operazioni di basso livello (come l'interazione con i nodi del documento HTML) o comunque per avere la garanzia che se qualcosa non è possibile farla con un \termine{framework}, possiamo usare jQuery.
+	\item \textbf{jQuery}: libreria JavaScript. Essa è stata inclusa per garantire operazioni di basso livello (come l'interazione con i nodi del documento HTML) o comunque per avere la garanzia che se qualcosa non è possibile farla con un \termine{framework}, possiamo usare jQuery.
 	\item \textbf{Bootstrap}: \termine{framework} che serve per facilitare l'utilizzo del CSS con l'HTML.
 	\item \textbf{Sass}: Sass è un'estensione retrocompatibile con CSS. Esso facilita molto la scrittura del CSS poiché provvisto di più funzionalità, rendendo la scrittura del file più facile. Viene utilizzato per creare fogli di stile di alcune pagine da visualizzare nel client. E' possibile caricare fogli di stile tramite Meteor.
 	\item \textbf{Vue.js}: ??
 	\item \textbf{Dependency-injection-es6}: libreria per Node.js e per gli ambienti di sviluppo JavaScript con Ecmascript 6. Essa è utile per \termine{Inversion of Control} e {Dependency Injection}.
-	\item \textbf{Meteor}: Piattaforma di sviluppo completa di molte funzionalità. Essa è fondamentale, oltre per l'ambiente di esecuzione, anche poiché fornisce l'interfaccia con MongoDB e permette l'aggiunta di pacchetti tramite \termine{Atmosphere}.
+	\item \textbf{Meteor}: piattaforma di sviluppo completa di molte funzionalità. Essa è fondamentale, oltre per l'ambiente di esecuzione, anche poiché fornisce l'interfaccia con MongoDB e permette l'aggiunta di pacchetti tramite \termine{Atmosphere}.
 	\end{itemize}
 \end{itemize}
 
@@ -44,11 +44,11 @@ In seguito verranno elencati tutti i \termine{packages} con le classi all'intern
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione}: Package contenente le componenti adibite alle funzionalità lato client. Il package chat non è stato rappresentato poiché contenente solo un'interfaccia che, una volta implementata, interagirà con la chat di \termine{Rocket.Chat} per l'invio delle bolle progettate.
+\item \textbf{Descrizione}: package contenente le componenti adibite alle funzionalità lato client. Il package chat non è stato rappresentato poiché contenente solo un'interfaccia che, una volta implementata, interagirà con la chat di \termine{Rocket.Chat} per l'invio delle bolle progettate.
 \item \textbf{Classi e packages contenuti}:
 \begin{itemize}
-\item \textbf{application::client::list}: Package contenente le componenti che rappresentano la lista che l'utente può creare.
-\item \textbf{application::client::item}: Package contenente le componenti che rappresentano gli elementi della lista che l'utente può aggiungere alla lista.
+\item \textbf{application::client::list}: package contenente le componenti che rappresentano la lista che l'utente può creare.
+\item \textbf{application::client::item}: package contenente le componenti che rappresentano gli elementi della lista che l'utente può aggiungere alla lista.
 \end{itemize}
 \end{itemize}
 
@@ -60,14 +60,14 @@ In seguito verranno elencati tutti i \termine{packages} con le classi all'intern
 	\caption{Package application::client::list}
 \end{figure}
 \begin{itemize}
-\item \textbf{Descrizione}: Package contenente altri package che contengono a loro volta View, Presenter e interfaccia delle funzionalità previste per la creazione, modifica e rimozione della lista. Ogni package, dunque, conterrà la stessa struttura appena citata, perciò quelli più interni non verranno presentati poiché contenenti informazioni ridondanti e poco specifiche a rappresentare l'interazioni tra le componenti. Le classi invece saranno presentate nella sezione contenente i \termine{Diagrammi delle Classi}.
+\item \textbf{Descrizione}: package contenente altri package che contengono a loro volta View, Presenter e interfaccia delle funzionalità previste per la creazione, modifica e rimozione della lista. Ogni package, dunque, conterrà la stessa struttura appena citata, perciò quelli più interni non verranno presentati poiché contenenti informazioni ridondanti e poco specifiche a rappresentare le interazioni tra le componenti. Le classi invece saranno presentate nella sezione contenente i \termine{Diagrammi delle Classi}.
 	\item \textbf{Classi e packages contenuti}:
 	\begin{itemize}
-	\item \textbf{application::client::list::create}: Package che contiene le funzionalità per la creazione della lista da parte dell'utente.
-	\item \textbf{application::client::list::delete}: Package che contiene le funzionalità per l'eliminazione della lista da parte dell'utente.
-	\item \textbf{application::client::list::info}: Package che contiene le informazioni della lista creata dall'utente.
-	\item \textbf{application::client::list::forward}: Package che contiene le funzionalità per l'inoltro in un'altra chat della lista da parte dell'utente.
-	\item \textbf{application::client::list::help}: Package che contiene le le funzionalità per la richiesta di aiuto all'utilizzo della lista da parte dell'utente.
+	\item \textbf{application::client::list::create}: package che contiene le funzionalità per la creazione della lista da parte dell'utente.
+	\item \textbf{application::client::list::delete}: package che contiene le funzionalità per l'eliminazione della lista da parte dell'utente.
+	\item \textbf{application::client::list::info}: package che contiene le informazioni della lista creata dall'utente.
+	\item \textbf{application::client::list::forward}: package che contiene le funzionalità per l'inoltro in un'altra chat della lista da parte dell'utente.
+	\item \textbf{application::client::list::help}: package che contiene le le funzionalità per la richiesta di aiuto all'utilizzo della lista da parte dell'utente.
 	\end{itemize}
 \end{itemize}
 
@@ -79,15 +79,13 @@ In seguito verranno elencati tutti i \termine{packages} con le classi all'intern
 	\caption{Package application::client::item}
 \end{figure}
 \begin{itemize}
-	\item \textbf{Descrizione}: Package contenente altri package che contengono a loro volta View, Presenter e interfaccia delle funzionalità previste per la creazione, modifica e rimozione degli elementi della lista.
+	\item \textbf{Descrizione}: package contenente altri package che contengono a loro volta View, Presenter e interfaccia delle funzionalità previste per la creazione, modifica e rimozione degli elementi della lista.
 	\item \textbf{Classi e packages contenuti}:
 	\begin{itemize}
-	\item \textbf{application::client::item::modify}: contiene le componenti per garantire la modifica degli elementi o item presenti all'interno della lista.
-	\item \textbf{application::client::item::remove}: contiene le componenti per garantire la corretta rimozione degli elementi o item presenti all'interno della lista.
-	\item \textbf{application::client::item::add}: 
-	contiene le componenti per garantire l'aggiunta degli elementi o item presenti all'interno della lista.
-	\item \textbf{application::client::item::input}:
-	contiene le componenti per permettere all'utente di inserire i dati di un oggetto della lista quando va ad aggiungere un nuovo elemento o a modificarne uno già presente nella lista.
+	\item \textbf{application::client::item::modify}: package che contiene le componenti per garantire la modifica degli elementi o item presenti all'interno della lista.
+	\item \textbf{application::client::item::remove}: package che contiene le componenti per garantire la corretta rimozione degli elementi o item presenti all'interno della lista.
+	\item \textbf{application::client::item::add}: package che contiene le componenti per garantire l'aggiunta degli elementi o item presenti all'interno della lista.
+	\item \textbf{application::client::item::input}: package che contiene le componenti per permettere all'utente di inserire i dati di un oggetto della lista quando va ad aggiungere un nuovo elemento o a modificarne uno già presente nella lista.
 \end{itemize}
 \end{itemize}
 
@@ -98,14 +96,13 @@ In seguito verranno elencati tutti i \termine{packages} con le classi all'intern
 	\includegraphics[scale=0.6]{Sezioni/Packages/App/pck_usecase.png}
 	\caption{Package application::usecase}
 \end{figure}
-
 \begin{itemize}
-\item \textbf{Descrizione}: Package contenente le componenti adibite alla comunicazione tra il lato client e il lato server. In altre parole le componenti presenti in questo package rappresentano i \termine{Model} delle funzionalità previste. Esse ricevono dati dal presenter e interagiscono anche con il server per svolgere correttamente le loro funzioni.
+\item \textbf{Descrizione}: package contenente le componenti adibite alla comunicazione tra il lato client e il lato server. In altre parole le componenti presenti in questo package rappresentano i \termine{Model} delle funzionalità previste. Esse ricevono dati dal presenter e interagiscono anche con il server per svolgere correttamente le loro funzioni.
 \item \textbf{Classi e packages contenuti}:
 \begin{itemize}
-\item \textbf{application::usecase::popup}: contiene le componenti logiche per l'invio dei \termine{popup} che serviranno all'utente per modificare, aggiungere o rimuovere elementi dalla lista.
-\item \textbf{application::usecase::list}: contiene le componenti logiche della lista.
-\item \textbf{application::usecase::item}: contiene le componenti logiche degli item presenti nella lista.
+\item \textbf{application::usecase::popup}: package che contiene le componenti logiche per l'invio dei \termine{popup} che serviranno all'utente per modificare, aggiungere o rimuovere elementi dalla lista.
+\item \textbf{application::usecase::list}: package che contiene le componenti logiche della lista.
+\item \textbf{application::usecase::item}: package che contiene le componenti logiche degli item presenti nella lista.
 \end{itemize}
 \end{itemize}
 
@@ -118,9 +115,8 @@ In seguito verranno elencati tutti i \termine{packages} con le classi all'intern
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione}: Il seguente package contiene l'interfaccia che poi implementata andrà ad interagire direttamente con l'interfaccia del database presente dentro Meteor.
+\item \textbf{Descrizione}: questo package contiene l'interfaccia che poi implementata andrà ad interagire direttamente con l'interfaccia del database presente dentro Meteor.
 \end{itemize}
-
 
 
 

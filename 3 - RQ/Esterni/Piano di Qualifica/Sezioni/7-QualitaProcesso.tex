@@ -166,12 +166,14 @@ Durante lo svolgimento delle attività previste da questo processo, il gruppo si
 \begin{itemize}
 \item ogni componente progettato come parte del sistema risulterà essere necessario per il funzionamento del prodotto e, quindi, costantemente tracciabile ai requisiti che soddisfa.
 \item il sistema dovrà presentare basso accoppiamento ed alta coesione, tenendo conto che \termine{RocketChat} implementa il pattern \termine{Observer} per la gestione degli eventi. Il suddetto pattern aumenta l'accoppiamento per cui il \termine{team} dovrà gestire in maniera ottimale il problema.
-\item ogni componente dovrà essere progettato puntando su incapsulamento, modularizzazione e riuso di codice.
+\item ogni componente dovrà essere progettato puntando su incapsulamento, modularizzazione e riuso di codice, in modo da garantire un indice elevato di utilità.
+\item Bassa complessità del Sistema, seguendo in maniera precisa i pattern scelti.
 \end{itemize}
 \newpage
 
 \subsubsection{Strategie}
-Nel corso dell'attività di progettazione, sia ad alto livello che di dettaglio, le componenti verranno inserite in un \termine{file json} dedicato, il quale si occuperà del tracciamento con i requisiti trovati nell'attività di analisi.
+L'approccio utilizzato coinvolge il modello statico di progettazione, utilizzando l'ereditarietà come strumento di organizzazione, garantendo semplicità e riuso del codice.
+Inoltre nel corso dell'attività di progettazione, sia ad alto livello che di dettaglio, le componenti verranno inserite in un \termine{file json} dedicato, il quale si occuperà del tracciamento con i requisiti trovati nell'attività di analisi.
 
 
 \subsubsection{Metriche}
@@ -244,6 +246,7 @@ Le attività svolte dovranno raggiungere i seguenti obiettivi:
 \item il livello di dettaglio della progettazione dovrà essere tale da guidare codifica e testing senza bisogno di informazioni aggiuntive, indicando metodi con i relativi parametri e campi dati forniti da ciascuna componente.
 \item la struttura dell'architettura sia ad alto che a basso livello verrà definita nel documento \DDP
 \item oltre alle unità software individuate, le attività permetteranno di definire dettagliatamente le interfacce fra esse costituite.
+\item la progettazione in dettaglio deve perseguire gli stessi obiettivi di qualità del processo di progettazione dell'architettura di sistema per quanto riguarda coesione, accoppiamento, utilità e complessità.
 \end{itemize}
 
 \subsubsection{Strategie}

@@ -11,7 +11,7 @@ Il gruppo \gruppo\ come già illustrato nelle \NdP\ si impegna a seguire lo stan
 \end{itemize}
 Questa scelta è dovuta soprattutto dalla mancanza di tempo, raggiungere un livello elevato richiederebbe troppo tempo in termini di tempo e di risorse. Infine, lo stato di avanzamento del livello dei processi sarà tracciato nella sezione 10 di questo documento.
 
-\subsection{Pianificazione, Controllo e Valutazione}
+\subsection{Processo di fornitura}
 Il macro-processo (derivante dall’unione dei processi di Pianificazione, Controllo e Valutazione) ha lo scopo di produrre dei piani di sviluppo per il progetto, comprendenti
 la scelta del modello di ciclo di vita del prodotto, descrizioni delle attività e dei compiti
 da svolgere, pianificazione temporale del lavoro e dei costi da sostenere, allocazione di compiti e
@@ -32,7 +32,9 @@ ammesso eccedere le ore di lavoro finali e il preventivo dei costi finale indica
 
 \subsubsection{Metriche}
 
-\paragraph{Schedule Variance}
+\paragraph{Pianificazione}
+
+\subparagraph{Schedule Variance}
 Indica se si è in linea, in anticipo o in ritardo rispetto la pianificazione temporale prevista dal \PdP.
 
 \begin{itemize}
@@ -52,7 +54,7 @@ Indica se si è in linea, in anticipo o in ritardo rispetto la pianificazione te
 \end{center}
 
 
-\paragraph{Budget Variance}
+\subparagraph{Budget Variance}
 
 \begin{itemize}
 \item \textbf{Misurazione}: $BV = BCWS - ACWP$, dove $BCWS$ è il costo pianificato per realizzare le attività di progetto alla data corrente e $ACWP$ è il costo effettivamente sostenuto alla data corrente.
@@ -69,7 +71,9 @@ Indica se si è in linea, in anticipo o in ritardo rispetto la pianificazione te
 \captionof{table}{Budget Variance}
 \end{center}
 
-\paragraph{Ottimalità delle misurazioni}
+\paragraph{Revisione e Valutazione}
+
+\subparagraph{Ottimalità delle misurazioni}
 
 \begin{itemize}
 \item \textbf{Misurazione:} 
@@ -89,21 +93,7 @@ Indica se si è in linea, in anticipo o in ritardo rispetto la pianificazione te
 \captionof{table}{Ottimalità delle misurazioni}
 \end{center}
 
-\subsection{Processo di gestione dei rischi}
-L'obiettivo del processo è quello di identificare, analizzare, trattare e monitorare continuamente i rischi che possono insorgere durante l'intera attività di progetto.
-
-\subsubsection{Obiettivi di qualità}
-Il gruppo dovrà gestire e monitorare tutti i possibili rischi ed in particolare:
-
-\begin{itemize}
-\item all'inizio dell'attività di progetto, verranno individuati i principali fattori di rischio che si possono verificare in ogni attività.
-\item all'inizio di ogni periodo, il gruppo dovrà analizzare eventuali rischi non preventivati ed in caso trovarne altri associati.
-\item i rischi analizzati che si paleseranno saranno trattati secondo le strategie individuate e descritte nel \PdP.
-\end{itemize}
-
-\subsubsection{Metriche}
-
-\paragraph{Rischi non preventivati}
+\subparagraph{Rischi non preventivati}
 
 \begin{itemize}
 \item \textbf{Misurazione}: indice numerico che viene incrementato nel momento in cui si manifesta un rischio non individuato nell'attività di analisi dei rischi.
@@ -120,12 +110,13 @@ Il gruppo dovrà gestire e monitorare tutti i possibili rischi ed in particolare
 \captionof{table}{Rischi non preventivati}
 \end{center}
 
+\subsection{Processo di sviluppo}
 
-\subsection{Processo di analisi dei requisiti software}
+Il processo punta a trasformare l'idea del committente in un prodotto software.
 
-Il processo punta a trasformare i requisiti individuati dalle fonti in un set di requisiti tecnici che fungerà da linea guida nella progettazione del sistema.
+\subsubsection{Analisi dei requisiti}
 
-\subsubsection{Obiettivi di qualità}
+\paragraph{Obiettivi di qualità}
 I requisiti dovranno essere gestiti dal gruppo nel seguente modo:
 
 \begin{itemize}
@@ -135,11 +126,11 @@ I requisiti dovranno essere gestiti dal gruppo nel seguente modo:
 \item nessun requisito dovrà risultare superfluo o ambiguo.
 \end{itemize}
 
-\subsubsection{Strategie}
+\paragraph{Strategie}
 Tutti i requisiti individuati saranno riportati in un \termine{file json} che ne manterrà il tracciamento.
 
-\subsubsection{Metriche}
-\paragraph{Requisiti obbligatori soddisfatti}
+\paragraph{Metriche}
+\subparagraph{Requisiti obbligatori soddisfatti}
 
 \begin{itemize}
 \item \textbf{Misurazione}: 
@@ -158,10 +149,9 @@ Tutti i requisiti individuati saranno riportati in un \termine{file json} che ne
 \captionof{table}{Requisiti obbligatori soddisfatti}
 \end{center}	
 
-\subsection{Processo di progettazione dell'architettura di sistema}
+\subsubsection{Progettazione dell'architettura di sistema}
 
-Il processo si pone come obiettivo quello di identificare una corrispondenza fra requisiti di sistema ed elementi del sistema.
-\subsubsection{Obiettivi di qualità}
+\paragraph{Obiettivi di qualità}
 Durante lo svolgimento delle attività previste da questo processo, il gruppo si impegnerà a trovare una buona architettura di sistema nel seguente modo:
 \begin{itemize}
 \item ogni componente progettato come parte del sistema risulterà essere necessario per il funzionamento del prodotto e, quindi, costantemente tracciabile ai requisiti che soddisfa.
@@ -171,14 +161,14 @@ Durante lo svolgimento delle attività previste da questo processo, il gruppo si
 \end{itemize}
 \newpage
 
-\subsubsection{Strategie}
+\paragraph{Strategie}
 L'approccio utilizzato coinvolge il modello statico di progettazione, utilizzando l'ereditarietà come strumento di organizzazione, garantendo semplicità e riuso del codice.
 Inoltre nel corso dell'attività di progettazione, sia ad alto livello che di dettaglio, le componenti verranno inserite in un \termine{file json} dedicato, il quale si occuperà del tracciamento con i requisiti trovati nell'attività di analisi.
 
 
-\subsubsection{Metriche}
+\paragraph{Metriche}
 
-\paragraph{Livello di stabilità}
+\subparagraph{Livello di stabilità}
 
 \begin{itemize}
 \item \textbf{Misurazione:} 
@@ -198,7 +188,7 @@ Inoltre nel corso dell'attività di progettazione, sia ad alto livello che di de
 \captionof{table}{Livello di stabilità}
 \end{center}
 
-\paragraph{Astrattezza}
+\subparagraph{Astrattezza}
 
 \begin{itemize}
 \item \textbf{Misurazione:}
@@ -218,7 +208,7 @@ Inoltre nel corso dell'attività di progettazione, sia ad alto livello che di de
 \captionof{table}{Astrattezza}
 \end{center}
 
-\paragraph{Distanza dalla sequenza principale}
+\subparagraph{Distanza dalla sequenza principale}
 
 \begin{itemize}
 \item \textbf{Misurazione:}
@@ -238,9 +228,9 @@ Inoltre nel corso dell'attività di progettazione, sia ad alto livello che di de
 \captionof{table}{Distanza dalla sequenza principale}
 \end{center}
 
-\subsection{Processo di progettazione dell'architettura di sistema in dettaglio}
-Lo scopo del processo è fornire una progettazione di dettaglio del prodotto che andrà ad implementare i requisiti individuati.
-\subsubsection{Obiettivi di qualità}
+\subsubsection{Progettazione dell'architettura di sistema in dettaglio}
+
+\paragraph{Obiettivi di qualità}
 Le attività svolte dovranno raggiungere i seguenti obiettivi:
 \begin{itemize}
 \item il livello di dettaglio della progettazione dovrà essere tale da guidare codifica e testing senza bisogno di informazioni aggiuntive, indicando metodi con i relativi parametri e campi dati forniti da ciascuna componente.
@@ -249,13 +239,13 @@ Le attività svolte dovranno raggiungere i seguenti obiettivi:
 \item la progettazione in dettaglio deve perseguire gli stessi obiettivi di qualità del processo di progettazione dell'architettura di sistema per quanto riguarda coesione, accoppiamento, utilità e complessità.
 \end{itemize}
 
-\subsubsection{Strategie}
+\paragraph{Strategie}
 
 Sarà necessario effettuare un'analisi dettagliata delle componenti individuate in progettazione architetturale, suddividendole in unità che siano facilmente codificabili e testabili per le attività successive.
 
-\subsubsection{Metriche}
+\paragraph{Metriche}
 
-\paragraph{Numero di metodi per classe}
+\subparagraph{Numero di metodi per classe}
 
 \begin{itemize}
 \item \textbf{Misurazione}: indice numerico che indica il numero di metodi definiti in una classe.
@@ -273,7 +263,7 @@ Sarà necessario effettuare un'analisi dettagliata delle componenti individuate 
 \captionof{table}{Numero di metodi per classe}
 \end{center}
 
-\subsubsection{Numero di attributi per classe}
+\subparagraph{Numero di attributi per classe}
 
 \begin{itemize}
 \item \textbf{Misurazione}: indice numerico che indica il numero di attributi per classe.
@@ -290,7 +280,7 @@ Sarà necessario effettuare un'analisi dettagliata delle componenti individuate 
 \captionof{table}{Numero di attributi per classe}
 \end{center}
 
-\paragraph{Numero di parametri per metodo}
+\subparagraph{Numero di parametri per metodo}
 
 \begin{itemize}
 \item \textbf{Misurazione}: indice numerico che indica il numero di parametri definiti in una classe.
@@ -308,20 +298,21 @@ Sarà necessario effettuare un'analisi dettagliata delle componenti individuate 
 \captionof{table}{Numero di parametri per metodo}
 \end{center}
 
-\subsection{Processo di codifica del Software}
-Il processo definisce le attività principali volte alla produzione di unità software eseguibili che riflettano quanto progettato.
+\subsubsection{Codifica del Software}
 
-\subsubsection{Obiettivi di qualità}
+\paragraph{Obiettivi di qualità}
 Le unità software prodotte dovranno risultare di qualità; a questo fine il \textit{team\ped{G}} si è posto i seguenti obiettivi:
 \begin{itemize}
 \item l'implementazione delle classi e dei metodi definiti in progettazione dovrà puntare a produrre codice a bassa complessità, in modo tale che quanto prodotto risulti facilmente comprensibile e testabile.
 \item il codice prodotto dovrà risultare facilmente manutenibile.
 \end{itemize}
-\subsubsection{Strategie}
-Durante l'attività di codifica, il \textit{\Progr} dovrà attenersi a quanto indicato nel documento \textit{\DDP}, concentrandosi (in particolare) nel limitare la complessità del codice prodotto. Sarà necessario inoltre procedere con la codifica dei test individuati nell'attività di progettazione, in modo tale da consentire la verifica del corretto funzionamento delle varie unità prodotte. Per i suddetti test verranno utilizzati gli strumenti descritti nelle \NdP.
-\subsubsection{Metriche}
 
-\subsubsection{Complessità ciclomatica}
+\paragraph{Strategie}
+Durante l'attività di codifica, il \textit{\Progr} dovrà attenersi a quanto indicato nel documento \textit{\DDP}, concentrandosi (in particolare) nel limitare la complessità del codice prodotto. Sarà necessario inoltre procedere con la codifica dei test individuati nell'attività di progettazione, in modo tale da consentire la verifica del corretto funzionamento delle varie unità prodotte. Per i suddetti test verranno utilizzati gli strumenti descritti nelle \NdP.
+
+\paragraph{Metriche}
+
+\subparagraph{Complessità ciclomatica}
 
 \begin{itemize}
 \item \textbf{Misurazione}: indice numerico che indica il numero cammini percorribili nel grafo di controllo di flusso di un metodo.
@@ -339,7 +330,7 @@ Durante l'attività di codifica, il \textit{\Progr} dovrà attenersi a quanto in
 \end{center}
 
 
-\subsubsection{Linee di commento per linee di codice}
+\subparagraph{Linee di commento per linee di codice}
 
 \begin{itemize}
 \item \textbf{Misurazione}: $P=\frac{N_{C}}{N_{SLOC}} \cdot 100$, dove $N_{C}$ è il numero di linee di commento presenti nel codice e $N_{SLOC}$ è il numero di Source Lines Of Code prodotte.
@@ -356,7 +347,7 @@ Durante l'attività di codifica, il \textit{\Progr} dovrà attenersi a quanto in
 \captionof{table}{Linee di commento per linee di codice}
 \end{center}
 
-\subsubsection{Numero di livelli di annidamento per metodo}
+\subparagraph{Numero di livelli di annidamento per metodo}
 
 \begin{itemize}
 \item \textbf{Misurazione}: indice numerico che indica il numero di chiamate a funzioni o procedure presenti all'interno di un metodo.
@@ -380,21 +371,20 @@ Per garantire una buona qualità anche per il processo di Codifica verrà utiliz
 
 
 
-\subsection{Processo di integrazione Software}
-Il processo si occupa di integrare fra loro gli elementi del sistema, rispettando quanto stabilito nell'attività di progettazione. L'obiettivo di questo processo è di produrre un prodotto completo che soddisfi quanto espresso dai requisiti identificati.
+\subsubsection{Integrazione Software}
 
-\subsubsection{Obiettivi di qualità}
+\paragraph{Obiettivi di qualità}
 Le attività previste da questo processo dovranno puntare a raggiungere un alto livello di automazione, in particolare:
 \begin{itemize}
 \item l'integrazione delle varie parti del sistema sarà completamente automatizzata utilizzando lo strumento di continuous integration Jenkins.
 \item il livello di integrazione raggiunto del sistema sarà sempre consultabile grazie all'utilizzo dello strumento di continuous integration \termine{Jenkins}.
 \end{itemize}
 
-\subsubsection{Strategie}
+\paragraph{Strategie}
 Sarà necessario configurare accuratamente lo strumento di \termine {continuous integration} \termine{Jenkins} affinché esegua dei test di integrazione di quanto prodotto prima che le ultime modifiche diventino parte del sistema.
 
-\subsubsection{Metriche}
-\paragraph{Componenti integrate}
+\paragraph{Metriche}
+\subparagraph{Componenti integrate}
 
 \begin{itemize}
 \item \textbf{Misurazione}: $I=\frac{N_{CI}}{N_{CP}} \cdot 100$, dove $N_{CI}$ è il numero di componenti attualmente integrate nel sistema e $N_{CP}$ è il numero di componenti delineate nell'attività di progettazione.

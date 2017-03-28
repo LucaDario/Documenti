@@ -1,5 +1,7 @@
 \section{Processi primari}
 \subsection{Processo di fornitura}
+In questa sezione verrà spiegato il processo di fornitura da parte del gruppo \gruppo.
+
 \subsubsection{Studio di Fattibilità}
 Alla pubblicazione dei capitolati d'appalto il \textit{\Pm} avrà il compito fissare un
 numero sufficiente di riunioni volte alla discussione e al confronto tra i membri del \termine{team}.
@@ -18,6 +20,16 @@ emerso nelle riunioni. Tale documento sarà articolato nei seguenti punti:
 	\item \textbf{Analisi di mercato} descrizione delle potenzialità del dominio applicativo.
 	\item \textbf{Valutazione Finale:} piccolo elenco dei lati positivi e negativi del capitolato scelto.
 \end{itemize}
+
+\subsubsection{Pianificazione}
+Per garantire una buona probabilità di successo del capitolato è stato redatto il documento \PdP contente la pianificazione dei periodi, la scelta del modello di vita del software e le \termine{milestones} per la consegna. \\
+Infine per garantire qualità ai processi e al prodotto è stato redatto il documento \PdQ.
+
+\subsubsection{Esecuzione e Controllo}
+Dopo l'esecuzione di un processo descritto in questo documento, esso sarà sottoposto da parte dei \VerP\ al controllo del processo contenuto nel \PdQ. Sarà, infatti, compito dei membri del gruppo eseguire i processi descritti in questo documento e monitorare continuamente il loro stato. Questa attività è necessaria anche per l'individuazione, registrazione, analisi e risoluzione dei problemi che potrebbero verificarsi.
+
+\subsubsection{Revisione e Valutazione}
+Questa attività è destinata ai \Ver\ che hanno il compito di attuare le attività di verificazione e validazione rispettivamente per i processi e per il prodotto. Una volta ottenuti i risultati, tramite essi, si deve valutare lo stato dei processi. Nel caso qualcuno di essi non superi la verifica, il gruppo \gruppo\ dovrà discutere su come intervenire per migliorare quel processo.
 
 \subsection{Processo di sviluppo}
 \subsubsection{Analisi dei Requisiti}
@@ -88,22 +100,6 @@ Inoltre per ogni caso d'uso dovranno essere indicati:
 \end{itemize}
 
 \subsubsection{Progettazione}
-\paragraph{Descrizione}
-L'attività di progettazione definisce come deve essere realizzata la struttura dell'architettura software. I requisiti delineati all'interno del documento \textit{\AdR} devono essere utili a realizzare la documentazione specifica e a determinare le linee guida da seguire durante l'attività di codifica.
-Tale attività deve essere svolta in maniera ottimale e precisa dai \textit{progettisti}.
-
-\paragraph{Diagrammi}
-La progettazione deve utilizzare le seguenti tipologie di diagrammi \termine{UML}:
-\begin{itemize}
-\item
-\textbf{Diagrammi di classe}: illustrano una collezione di elementi dichiarativi di un modello come classi e tipi, assieme ai loro contenuti e alle loro relazioni.
-\item
-\textbf{Diagrammi dei \textit{\termine{package}}}: illustrano i vari raggruppamenti di classi in una unità di livello più alto.
-\item
-\textbf{Diagrammi di attività(opzionali)}: illustrano il flusso di operazioni relativo ad un'attività e utilizzati soprattutto per descrivere la logica di un algoritmo.
-\item
-\textbf{Diagrammi di sequenza}: descrivono una determinata sequenza di azioni dove tutte le scelte sono già state effettuate. In tali diagrammi non compaiono pertanto scelte né flussi alternativi. Verrano descritti solo per le operazioni reputate interessanti, cioè con un alto tassi di utilizzo e con una adeguata complessità, in modo che risultino interessanti da descrivere.
-\end{itemize}
 
 \paragraph{Requisiti per i progettisti}
 I \textit{\ProgP} sono responsabili delle attività di progettazione e sono tenuti ad avere:
@@ -118,14 +114,57 @@ Notevole inventiva per riuscire a trovare una soluzione progettuale accettabile 
 Capacità di individuare con rapidità e sicurezza le soluzioni più opportune.
 \end{itemize}
 
-\paragraph{Obiettivi della progettazione}
+L'attività di Progettazione coinvolge due attività, le quali:
+\begin{itemize}
+\item \textbf{Progettazione architetturale}
+\item \textbf{Progettazione in dettaglio}
+\end{itemize}
+
+\paragraph{Progettazione architetturale}
+\subparagraph{Descrizione}
+L'attività di progettazione architetturale descrive le attività per realizzare la struttura dell'architettura software ed è necessaria per dominare la complessità del prodotto. Tale attività deve soddisfare i requisiti delineati all'interno del documento \AdR{} e dovrà essere svolta in maniera ottimale dai \textit{progettisti}.
+
+\subparagraph{Diagrammi}
+La progettazione deve utilizzare le seguenti tipologie di diagrammi \termine{UML}:
+\begin{itemize}
+\item
+\textbf{Diagrammi dei \textit{\termine{package}}}: illustrano i vari raggruppamenti di classi in una unità di livello più alto.
+\end{itemize}
+
+\subparagraph{Obiettivi della progettazione architetturale}
+L'attività di progettazione si pone i seguenti obiettivi:
+\begin{itemize}
+\item Realizzare una struttura architetturale per l'applicativo  resistente alle modifiche, senza che l'intera struttura venga compromessa e/o nuovamente messa in discussione.
+\item Progettare un software con le caratteristiche che sono state elencate e descritte nella fase di analisi dei requisiti.
+\item Identificare i \termine{Design Patterns} più utili al fine di creare un'architettura coesa, con poco accoppiamento e con un'elevata riusabilità.
+\item Individuare le interfacce necessarie all'interazione tra le componenti tra loro e con l'ambiente.
+\item Perseguire una buona qualità per l'architettura.
+\end{itemize}
+
+\paragraph{Progettazione in dettaglio}
+
+\subparagraph{Descrizione}
+L'attività di Progettazione in dettaglio definisce le unità realizzative, ovvero i moduli che poi andranno a formare l'intero sistema. Tali moduli devono essere specificati in modo dettagliato e devono essere descritte le interazioni tra di essi.
+
+\subparagraph{Diagrammi}
+La progettazione deve utilizzare le seguenti tipologie di diagrammi \termine{UML}:
+\begin{itemize}
+\item
+\textbf{Diagrammi di classe}: illustrano una collezione di elementi dichiarativi di un modello come classi e tipi, assieme ai loro contenuti e alle loro relazioni.
+\item
+\textbf{Diagrammi di attività (opzionali)}: illustrano il flusso di operazioni relativo ad un'attività e utilizzati soprattutto per descrivere la logica di un algoritmo.
+\item
+\textbf{Diagrammi di sequenza}: descrivono una determinata sequenza di azioni dove tutte le scelte sono già state effettuate. In tali diagrammi non compaiono pertanto scelte né flussi alternativi. Verranno descritti solo per le operazioni reputate interessanti, cioè con un alto tassi di utilizzo e con una adeguata complessità, in modo che risultino interessanti da descrivere.
+\end{itemize}
+
+\subparagraph{Obiettivi della progettazione in dettaglio}
 La fase di progettazione si pone i seguenti obiettivi:
 \begin{itemize}
 \item Soddisfare i requisiti obbligatori fissati dal committente.
-\item Realizzare una struttura architetturale per l'applicativo  resistente alle modifiche, senza che l'intera struttura venga compromessa e/o nuovamente messa in discussione.
-\item Progettare un software con le caratteristiche che sono state elencate e descritte nella fase di analisi dei requisiti.
-\item Avere una chiara idea delle parti(classi,metodie e variabili) che si andranno successivamente a codificare nel periodo che va dal \RP al \RQ
+\item Avere una chiara idea delle parti(classi,metodi e e variabili) che si andranno successivamente a codificare nel periodo che va dal \RP al \RQ
 \item Descrivere in maniera appopriata e comprensibile a uno sviluppatore esterno i metodi,le variabili e le classi codificate. Come successivamente descritto.
+\item Descrivere in dettaglio le interazioni tra le varie componenti utilizzando i \textit{Design Patterns} scelti durante l'attività di progettazione architetturale.
+\item Seguendo quanto detto per la progettazione architetturale, anche quella in dettaglio deve perseguire gli obbiettivi di coesione, basso accoppiamento e riusabilità dei moduli.
 \end{itemize}
 
 \subsubsection{Codifica}
@@ -134,7 +173,7 @@ La fase di codifica ha come obiettivo quello di passare, nel miglior modo possib
 In questa fase i responsabili della codifica sono i \textit{\ProgrP} e questi sono tenuti a seguire le seguenti \termine{best practice}, con lo scopo di produrre il prodotto designato nella fase di progettazione.
 
 \paragraph{Formattazione}
-Per semplificare il compito del \textit{\Prog} è fondamentale delineare uno standard di formattazione.
+Per semplificare il compito del \textit{\Progr} è fondamentale delineare uno standard di formattazione.
 Esso coincide nei seguenti punti:
 
 \begin{itemize}
@@ -169,17 +208,6 @@ Di seguito sono suggeriti alcuni metodi di inserimento di commenti che saranno u
 \item Evitare commenti superflui o umoristici in quanto in caso di \termine{commit} resteranno nella storia dello sviluppo del software.
 \end{itemize}
 
-\paragraph{Documentazione}
-All'interno di un progetto \termine{open source} un'altra caratteristica di fondamentale importanza risulta essere la documentazione. \\
-Di seguito vengono pertanto riportate alcune \termine{best practice} per stilare una documentazione di facile comprensione.
-
-\begin{itemize}
-\item Scrivere la documentazione in lingua inglese, in quanto il software dovrà poter essere letto anche da sviluppatori internazionali.
-\item Elencare in modo preciso tutte le variabili(anche quelle opzionali) ed i loro significato nei rispettivi metodi.
-\item Segnalare il tipo ed il significato del dato ritornato dai rispettivi metodi.
-\item Documentare in modo preciso il contratto di tutti i metodi pubblici e protetti delle classi.
-\end{itemize}
-
 \paragraph{Nomi}
 Lo schema di denominazione è uno dei supporti più determinanti per la comprensione del codice.
 Di seguito sono elencate le tecniche per raggiungere un buon utilizzo dei nomi.
@@ -195,41 +223,17 @@ Di seguito sono elencate le tecniche per raggiungere un buon utilizzo dei nomi.
 \item Per le variabile private delle classi si usa la pratica \termine{camel case} precedute da un underscore 
 \end{itemize}
 
-\paragraph{Obiettivi della codifica}
-La fase di codifica si pone i seguenti obiettivi:
-\begin{itemize}
-\item Realizzare una parte dell'applicativo funzionante, che dimostri l'utilizzo; come fosse una demo. N
-\item Trasformare in un linguaggio adatto tutte le funzioni e le classi con i loro relativi attributi 
-\end{itemize}
-
-\subsection{Integrazione}
-In questo periodo si cerca di integrare le varie parti del nostro applicativo e del nostro sdk in maniera che funzioni correttamente interfacciandosi in  correttamente tra di loro. Per fare questo abbiamo sviluppato degli appositi test che andremo successivamente ad elencare.
-Questa attività deve essere svolta in maniera ottimale e precisa dai \textit{progettisti}, che dovranno avere una chiara idea del funzionamento delle parti che hanno sviluppato e una idea abbastanza precisa del funzionamento delle parti che gli altri .\textit{progettisti} hanno sviluppato. Una volta finita l'integrazione tra le varie componenti si procederà a verificare tramite dei test appositi il completo e corretto funzionamento di tutto l'applicativo e l'SDK
-
-\paragraph{Requisiti per i progettisti}
-I \textit{\ProgP} sono responsabili delle attività di integrazione e sono tenuti ad avere:
-\begin{itemize}
-\item
-Profonda conoscenza di tutto quello che hanno sviluppato.
-\item
-Capacità di saper effettuare piccoli cambiamneti al loro codice per integrarlo al meglio nel ecosistema del intero progetto.
-\item
-Conoscere le parti sviluppate da altri per poterle integrare al meglio.
-\item
-Avere competenze necessarie per sviluppare le parti mancanti di software che permettono l'interazione tra le varie parti.
-\item
-Capacità di individuare con rapidità i bug e i requisiti non soddisfatti che l'applicativo finale comporta.
-\end{itemize}
-
-\paragraph{Obbiettivi per l'integrazione}
-Il periodo in cui si svolge l'integrazione pone i seguenti obiettivi:
-\begin{itemize}
-\item Avere un applicativo che unisce tutte le parti software sviluppate indipendentemente e non, dai vari progettisti.
-\item Controllare, e nel caso correggere eventuali errori e bug apparsi durante l'integrazione
-\end{itemize}
-
 \subsubsection{Documentazione dei file}
-I file contenenti codice dovranno essere avere un’intestazione contenente:
+All'interno di un progetto \termine{open source} un'altra caratteristica di fondamentale importanza risulta essere la documentazione. \\
+Di seguito vengono pertanto riportate alcune \termine{best practice} per stilare una documentazione di facile comprensione.
+
+\begin{itemize}
+\item Scrivere la documentazione in lingua inglese, in quanto il software dovrà poter essere letto anche da sviluppatori internazionali.
+\item Elencare in modo preciso tutte le variabili(anche quelle opzionali) ed i loro significato nei rispettivi metodi.
+\item Segnalare il tipo ed il significato del dato ritornato dai rispettivi metodi.
+\item Documentare in modo preciso il contratto di tutti i metodi pubblici e protetti delle classi.
+\end{itemize}
+Inoltre i file contenenti codice dovranno essere avere un’intestazione contenente:
 \begin{itemize}
 \color{ForestGreen}
 \item /** 
@@ -316,6 +320,39 @@ Per quanto riguarda la storia di ogni modifica dei file, abbiamo deciso di tener
 \subsubsection{Ricorsione}
 La ricorsione va evitata il più possibile. Per ogni funzione ricorsiva sarà necessario valutare il costo in termini di occupazione della memoria e bisognerà associare ad esso una prova di correttezza.
 Valutare la memoria occupata dalla funzione sarà obbligatorio in quanto le funzioni ricorsive possono facilmente non terminare occupando tutto lo stack della memoria andando quindi in \termine{stack overflow}.
+
+\paragraph{Obiettivi della codifica}
+La fase di codifica si pone i seguenti obiettivi:
+\begin{itemize}
+\item Realizzare una parte dell'applicativo funzionante, che dimostri l'utilizzo; come fosse una demo. N
+\item Trasformare in un linguaggio adatto tutte le funzioni e le classi con i loro relativi attributi 
+\end{itemize}
+
+\subsection{Integrazione}
+In questo periodo si cerca di integrare le varie parti del nostro applicativo e del nostro sdk in maniera che funzioni correttamente interfacciandosi in  correttamente tra di loro. Per fare questo abbiamo sviluppato degli appositi test che andremo successivamente ad elencare.
+Questa attività deve essere svolta in maniera ottimale e precisa dai \textit{progettisti}, che dovranno avere una chiara idea del funzionamento delle parti che hanno sviluppato e una idea abbastanza precisa del funzionamento delle parti che gli altri .\textit{progettisti} hanno sviluppato. Una volta finita l'integrazione tra le varie componenti si procederà a verificare tramite dei test appositi il completo e corretto funzionamento di tutto l'applicativo e l'SDK
+
+\paragraph{Requisiti per i progettisti}
+I \textit{\ProgP} sono responsabili delle attività di integrazione e sono tenuti ad avere:
+\begin{itemize}
+\item
+Profonda conoscenza di tutto quello che hanno sviluppato.
+\item
+Capacità di saper effettuare piccoli cambiamneti al loro codice per integrarlo al meglio nel ecosistema del intero progetto.
+\item
+Conoscere le parti sviluppate da altri per poterle integrare al meglio.
+\item
+Avere competenze necessarie per sviluppare le parti mancanti di software che permettono l'interazione tra le varie parti.
+\item
+Capacità di individuare con rapidità i bug e i requisiti non soddisfatti che l'applicativo finale comporta.
+\end{itemize}
+
+\paragraph{Obiettivi per l'integrazione}
+Il periodo in cui si svolge l'integrazione pone i seguenti obiettivi:
+\begin{itemize}
+\item Avere un applicativo che unisce tutte le parti software sviluppate indipendentemente e non, dai vari progettisti.
+\item Controllare, e nel caso correggere eventuali errori e bug apparsi durante l'integrazione
+\end{itemize}
 
 \subsubsection{Sistemi Operativi}
 Ogni componente del team ha scelto di usare il proprio sistema operativo preferito. Sono, dunque, utilizzate attualmente tre diversi sistemi: MacOs,  ArchLinux e Windows 10. L'uso di sistemi diversi, però, non risulta essere un problema poiché la programmazione avviene principalmente lato server rendendo cosi ininfluente la scelta del sistema operativo del client.

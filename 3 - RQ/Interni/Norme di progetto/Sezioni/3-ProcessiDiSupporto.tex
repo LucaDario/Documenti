@@ -294,12 +294,11 @@ Per ogni punto fondamentale ci sono diversi task assegnati ai diversi componenti
 
 \subsubsection{Gestione delle configurazioni dei processi software}
 Per controllare le versioni e le modifiche applicate al software viene utilizzata una \termine{repository} su \termine{GitHub}. All'interno di essa ogni partecipante può verificare l'integrità e la correttezza delle modifiche applicate. Inoltre, per ogni modifica effettuata, viene fatto un \termine{commit} con lo scopo di tenere traccia di ogni variazione effettuata nel ciclo di sviluppo. Ogni volta che deve venire accettata una modifica bisogna effettuare un 	\termine{push} del software modificato che risiede nella \termine{repository} (con il relativo \termine{commit}), e prima di essere accettato saranno presenti dei testi di integrazione automatici sviluppati con i framework \termine{SonarQube} e \termine{Jenkins} implementati nella \termine{repository} di \termine{GitHub} tramite \termine{webhook}.
-
+\newpage
 \subsection{Garanzia di qualità del prodotto}
 Per garantire la qualità del prodotto vengono adottato varie metodologie tra le quali ritroviamo i processi di verifica e di validazione successivamente illustrati. \\
 Nel caso in cui i task assegnati al team non siano soddisfatti per eventuali problematiche, questi devono essere riportati nella lista di problemi menzionata nel \textit{processo di soluzione di problemi}. \\
 Un ulteriore garanzia di qualità è data dall'assicurarsi che i requisiti principali del progetto siano soddisfatti alla fine dello sviluppo del software. Ci si può assicurare di questo attraverso una documentazione valida ed un incontro con i committenti ed i proponenti che dovranno accertarsi della validità del prodotto finale. \\
-L'organizzazione più naturale dei contenuti di questo documento è per processi (quelli adottati e adattati a partire dallo standard ISO/IEC 12207).\\
 Infine per stabilire in maniera quantitativa la qualità ottenuta abbiamo individuato delle metriche che andremo ora a esplicitare, indicando i range accettabili e quelli ottimali. Il loro valore effettivo è invece indicato nel Piano di qualifica.
 Le metriche individuate sono state suddivise in
 \begin{itemize}
@@ -471,11 +470,6 @@ Il livello di maturità e completezza del processo viene valutato secondo gli at
 				\end{itemize}
 			\end{itemize}
 			
-
-\subsection{Joint Review e Audit Process}
-Non lavorando a stretto contatto con i proponenti del progetto , e non richiedendo, anche per impossibilità organizzativa, una revisione pianificata e scandita regolarmente nel tempo non abbiamo potuto attuare il \termine{Joint Review}  e l'\termine{Audit Process} per la verifica da parte dei proponeti del nostro progetto. Abbiamo comunque tenuto un saldo rapporto  tramite chiamate voip per eventuali dubbi e consigli. Tutte le decisioni prese con il proponente sono state esplicitate nei verabali esterni.
-
-
 \subsection{Processo di verifica}
 \subsubsection{Descrizione}
 Il processo di verifica ha il compito di controllare che ogni documento e software prodotto dal \termine{team} non presenti eventuali anomalie o errori e che esso rispecchi quanto previsto dai requisiti ad esso associati. In generale esistono due tipi di analisi nel mondo informatico, l'analisi statica e quella dinamica che andremo successivamente a elencare. Per rendere quantificabile il processo di verifica abbiamo scelto delle metriche per il software e i documenti.
@@ -517,37 +511,7 @@ L'indice Gulpease rispetto ad altri indici di leggibilità possiede il vantaggio
 
 I valori dell'indice sono compresi tra 0 e 100, dove il valore 100 indica la leggibilità più alta e 0 la leggibilità più bassa.
 
-\paragraph{Metriche per la codifica}
-
-\subparagraph{Numero di livelli di annidamento per metodo}
-Rappresenta il numero di strutture di controllo, annidate tra loro internamente ad un metodo.
-Un valore elevato per questa metrica potrebbe essere indice di una complessità troppo elevata del metodo stesso, e di un basso livello di astrazione del codice.
-
-\subparagraph{Numero di parametri per metodo}
-Rappresenta il numero di parametri da passare per la chiamata di un metodo.
-Un numero elevato per un dato metodo potrebbe evidenziare la necessità di ridurne le funzionalità associate e/o suddividerle in altri metodi ausiliari.
-Un alto valore di questo indice potrebbe evidenziare pertanto un possibile errore di progettazione.
-
-\subparagraph{Numero di metodi per classe}
-Rappresenta il numero di metodi per ogni classe.
-Un numero molto elevato potrebbe evidenziare la necessità di spezzettare le varie componenti della gerarchia in più classi distinte.
-Per contro un se ogni classe ha un indice abbastanza basso, questa metrica potrebbe indicare un analogo errore di progettazione, in quanto abbiamo classi che potrebbero essere raggruppate in classi più complesse e funzionali.
-Il range di accettazione va da 1-10, il range ottimale va da 3-7.
-
-
-
-\subparagraph{Complessità ciclomatica}
-Questo indice viene utilizzato per misurare la complessità di un programma. Esso misura direttamente il numero di cammini linearmente indipendenti attraverso il \termine{grafo di controllo di flusso}. I nodi del grafo corrispondono a gruppi indivisibili di istruzioni, mentre gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo gruppo.
-Alti valori di \termine{complessità ciclomatica} implicano una ridotta manutenibilità del codice. Valori bassi potrebbero però determinare  una scarsa efficienza dei metodi. McCabe, ideatore di questa metrica, raccomandava che i programmatori contassero la complessità dei moduli in sviluppo, e li dividessero in moduli più piccoli, qualora tale complessità superi 10 ma osservando che in certe circostanze può essere appropriato rilassare tale restrizione e permettere moduli con una complessità anche di 15.
-
-\subparagraph{Numero di attributi per classe}
-Questa metrica prevede di valutare la qualità del software in base al numero di attributi presenti in una classe.
-Un numero elevato di attributi potrebbe evidenziare un possibile errore di progettazione con conseguente necessità di suddividere la classe in più classi in relazione tra loro seguendo il principio dell'incapsulamento.
-
-
-
-\subparagraph{Linee di commento per linee di codice}
-Questo indice indica il rapporto tra linee di commento e linee di codice ed è utile per stimare la manutenibilità e la comprensibilità del codice. 
+\paragraph{Metriche per la progettazione dell'architettura di sistema}
 
 \subparagraph{Livello di stabilità}
 Per comprendere questa metrica è necessario dare una semplice spiegazione di \termine{accoppiamento afferente} e di \termine{accoppiamento efferente}.
@@ -572,6 +536,7 @@ Questa metrica misura l'astrattezza di ogni package tramite il seguente rapporto
 {\text{Numero classi astratte e interfacce}}\over{\text{Numero totale classi}}
 \end{displaymath}
 In questa metrica non esiste un valore accettabile ma solo un valore che si vorrà ottenere. esso sarà indicato nel Piano di qualifica.
+
 \subparagraph{Distanza dalla sequenza principale}
 Questa metrica misura il bilanciamento tra l'astrattezza e la stabilità del \termine{package} da noi sviluppato. I \termine{package} idealmente perfetti sono infatti quelli o compleatamente concreti e instabili(I=1, A=0) o quelli astratti e stabili (I=0, A=1). Per misurare questa metrica si utilizza quindi la seguente formula matematica:
 
@@ -580,6 +545,37 @@ Questa metrica misura il bilanciamento tra l'astrattezza e la stabilità del \te
 \end{displaymath}
 
 La sequenza principale menzionata nel titolo è infatti la linea retta A+I=1 e la formula appena descritta misura la distanza del nostro \termine{package} da esso.
+
+\paragraph{Metriche per la progettazione dell'architettura in dettaglio}
+
+\subparagraph{Numero di metodi per classe}
+Rappresenta il numero di metodi per ogni classe.
+Un numero molto elevato potrebbe evidenziare la necessità di spezzettare le varie componenti della gerarchia in più classi distinte.
+Per contro un se ogni classe ha un indice abbastanza basso, questa metrica potrebbe indicare un analogo errore di progettazione, in quanto abbiamo classi che potrebbero essere raggruppate in classi più complesse e funzionali.
+
+\subparagraph{Numero di attributi per classe}
+Questa metrica prevede di valutare la qualità del software in base al numero di attributi presenti in una classe.
+Un numero elevato di attributi potrebbe evidenziare un possibile errore di progettazione con conseguente necessità di suddividere la classe in più classi in relazione tra loro seguendo il principio dell'incapsulamento.
+
+\subparagraph{Numero di parametri per metodo}
+Rappresenta il numero di parametri da passare per la chiamata di un metodo.
+Un numero elevato per un dato metodo potrebbe evidenziare la necessità di ridurne le funzionalità associate e/o suddividerle in altri metodi ausiliari.
+Un alto valore di questo indice potrebbe evidenziare pertanto un possibile errore di progettazione.
+
+\paragraph{Metriche per la codifica del Software}
+
+\subparagraph{Complessità ciclomatica}
+Questo indice viene utilizzato per misurare la complessità di un programma. Esso misura direttamente il numero di cammini linearmente indipendenti attraverso il \termine{grafo di controllo di flusso}. I nodi del grafo corrispondono a gruppi indivisibili di istruzioni, mentre gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo gruppo.
+Alti valori di \termine{complessità ciclomatica} implicano una ridotta manutenibilità del codice. Valori bassi potrebbero però determinare  una scarsa efficienza dei metodi. McCabe, ideatore di questa metrica, raccomandava che i programmatori contassero la complessità dei moduli in sviluppo, e li dividessero in moduli più piccoli, qualora tale complessità superi 10 ma osservando che in certe circostanze può essere appropriato rilassare tale restrizione e permettere moduli con una complessità anche di 15.
+
+\subparagraph{Linee di commento per linee di codice}
+Questo indice indica il rapporto tra linee di commento e linee di codice ed è utile per stimare la manutenibilità e la comprensibilità del codice. 
+
+\subparagraph{Numero di livelli di annidamento per metodo}
+Rappresenta il numero di strutture di controllo, annidate tra loro internamente ad un metodo.
+Un valore elevato per questa metrica potrebbe essere indice di una complessità troppo elevata del metodo stesso, e di un basso livello di astrazione del codice.
+
+
 
 \paragraph{Metriche per la validazione}
 
@@ -667,9 +663,9 @@ L'analisi dinamica viene applicata solamente al software prodotto in quanto cons
   \item \textbf{\termine{Sinon}}: libreria per simulare delle risposte di richieste a server remoti.
 
 \end{itemize}
-
-
-
+\subsection{Joint Review e Audit Process}
+Non lavorando a stretto contatto con i proponenti del progetto , e non richiedendo, anche per impossibilità organizzativa, una revisione pianificata e scandita regolarmente nel tempo non abbiamo potuto attuare il \termine{Joint Review}  e l'\termine{Audit Process} per la verifica da parte dei proponeti del nostro progetto. Abbiamo comunque tenuto un saldo rapporto  tramite chiamate voip per eventuali dubbi e consigli. Tutte le decisioni prese con il proponente sono state esplicitate nei verabali esterni.
+\newpage
 \subsection{Processi di validazione}
 Per assicurarsi la validità del codice scritto, colui che assegna i task deve assicurarsi, una volta conclusi, il pieno soddisfacimento dei requisiti che esso proponeva. \\
 I metodi usati per un'adeguata validazione finale vengono trattati più approfonditamente all'interno del documento \pianoDiQualifica.

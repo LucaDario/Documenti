@@ -5,62 +5,42 @@
     "tests": [
       {
         "description": "Verificare che in un widget di tipo testo venga impostata in modo corretto la grandezza del font del testo",
-        "implemented": false,
-        "approved": false
+        "implemented": true,
+        "approved": true
       },
       {
-        "description": "Verificare che all'instanziazione di un widget di tipo testo venga impostata la grandezza del font al valore di default",
-        "implemented": false,
+        "description": "Verificare che all'instanziazione di un widget di tipo testo la grandezza del testo sia di default a 1em",
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che all'interno di un widget di tipo testo venga impostata in corsivo la parte di testo richiesta",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che all'interno di un widget di tipo testo venga impostata in corsivo la parte di testo corretta",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che all'interno di un widget di tipo testo venga inserito un link cliccabile nel modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che all'interno di un widget di tipo testo i link cliccabili abbiano il colore corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che all'interno di un widget di tipo testo venga impostata in grassetto la parte di testo richiesta",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che all'interno di un widget di tipo testo venga impostato in modo corretto il colore del testo richiesto",
-        "implemented": false,
+        "description": "Verificare che all'interno di un widget di tipo testo venga impostato il colore del testo in modo corretto",
+        "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che all'instanziazione di un widget di tipo testo venga impostato il colore del testo al colore di default",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che all'instanziazione di un widget di tipo testo venga impostato il colore del testo al colore di default",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che all'interno di un widget di tipo testo venga inserito del testo in modo corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che venga mostrarto in modo corretto il messaggio di errore se viene inserita una sequenza di caratteri non valida in un widget di tipo testo",
-        "implemented": false,
+        "description": "Verificare che all'instanziazione di un widget di tipo testo il colore del testo sia di default a nero",
+        "implemented": true,
         "approved": false
       },
       {
@@ -70,11 +50,6 @@
       },
       {
         "description": "Verificare che in un widget di tipo immagine venga mostrato il messaggio di errore appropriato nel caso si inserisca un immagina non valida",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che in un widget di tipo immagine l'immagine venga agiunta in modo corretto",
         "implemented": false,
         "approved": false
       },
@@ -189,18 +164,28 @@
         "approved": false
       },
       {
-        "description": "Verificare in un widget di tipo checklist venga visualizzato l'eventuale messaggio di completamento",
+        "description": "Verificare che in un widget di tipo checklist venga visualizzato l'eventuale messaggio di completamento",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Verificare in un widget di tipo checklist venga mostrato un messaggio di errore se il messagio di completamento non è valido",
+        "description": "Verificare che in un widget di tipo checklist venga mostrato un messaggio di errore se il messagio di completamento non è valido",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Verificare in un widget di tipo checklist venga mostrato un messaggio di errore se il messagio di completamento non è valido",
+        "description": "Verificare che in un widget di tipo checklist venga mostrato un messaggio di errore se il messagio di completamento non è valido",
         "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo list venga impostato correttamente il cambiamento dello stile",
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo list che vengano aggiunti correttamente tutti gli elementi",
+        "implemented": true,
         "approved": false
       },
       {

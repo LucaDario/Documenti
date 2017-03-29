@@ -22,7 +22,7 @@ emerso nelle riunioni. Tale documento sarà articolato nei seguenti punti:
 \end{itemize}
 
 \subsubsection{Pianificazione}
-Per garantire una buona probabilità di successo del capitolato è stato redatto il documento \PdP contente la pianificazione dei periodi, la scelta del modello di vita del software e le \termine{milestones} per la consegna. \\
+Per garantire una buona probabilità di successo del capitolato è stato redatto il documento \PdP\ contente la pianificazione dei periodi, la scelta del modello di vita del software e le \termine{milestones} per la consegna. \\
 Infine per garantire qualità ai processi e al prodotto è stato redatto il documento \PdQ.
 
 \subsubsection{Esecuzione e Controllo}
@@ -243,9 +243,9 @@ Inoltre i \textbf{file contenenti codice} dovranno essere avere un’intestazion
 \end{lstlisting}
 Dove:
 \begin{itemize}
-\item \{USER\} identifica l'utente che ha creato quel file;
-\item \{DATE\} identifica la data, in formato GG/MM/AAAA, nella quale è stato creato il file;
-\item \{VERSION\} identifica la versione del file attuale, inizialmente sarà impostata di default a 1.0.0;
+\item \{USER\} identifica l'utente che ha creato quel file.
+\item \{DATE\} identifica la data, in formato GG/MM/AAAA, nella quale è stato creato il file.
+\item \{VERSION\} identifica la versione del file attuale, inizialmente sarà impostata di default a 1.0.0.
 \item \{VERSION\_NOTES\} identifica le note relative alla attuale versione, che identificano cosa è cambiato per portare a quella data versione. Inizialmente sarà impostata a 1.0.0 .
 Per quanto riguarda la storia di ogni modifica dei file, abbiamo deciso di tenerla tracciata tramite lo strumento \textit{Git} invece di tenere un tracciamento tramite commenti.
 \end{itemize}
@@ -270,9 +270,20 @@ I \textbf{costruttori} delle classi dovranno contenere la seguente intestazione:
 
 \begin{lstlisting}[language=Java]
 /**
- *  Public constructor
+ *  {TYPE} constructor
+ *  @param {PARAM} {{PARAM_TYPE}}: {PARAM_DESC} 
  */
 \end{lstlisting}
+Dove:
+\begin{itemize}
+\item \{TYPE\}: Indicare "Public" se il costruttore è pubblico. "Private" se privato.
+\item \{PARAM\}: Identifica il nome di un parametro.
+\item \{\{PARAM\_TYPE\}\}: Identifica il tipo di un parametro, può essere Number (numero), String (stringa) o Object (oggetto).
+\item \{PARAM\_DESC\}: Breve descrizione del parametro.
+\end{itemize}
+Se non vi sono parametri non includere "@param" nell'intestazione.
+\\
+
 
 
 All'interno del file i \textbf{metodi} dovranno contenere la seguente intestazione:
@@ -290,17 +301,21 @@ Dove:
 \begin{itemize}
 \item \{TYPE\} identifica il tipo della funzione, può essere:
 \begin {itemize}
-\item @method: Identifica una funzione diversa da un costruttore;
+\item @method: Identifica una funzione diversa da un costruttore.
 \end{itemize}
-\item \{COMMENT\}: Identifica una breve descrizione della funzionalità del metodo;
-\item \{PARAM\}: Identifica il nome di un parametro;
-\item \{\{PARAM\_TYPE\}\}: Identifica il tipo di un parametro, può essere Number (numero), String (stringa) o Object (oggetto);
+\item \{COMMENT\}: Identifica una breve descrizione della funzionalità del metodo.
+\item \{PARAM\}: Identifica il nome di un parametro.
+\item \{\{PARAM\_TYPE\}\}: Identifica il tipo di un parametro, può essere Number (numero), String (stringa) o Object (oggetto).
 \item \{PARAM\_DESC\}: Breve descrizione del parametro.
 \item \{\{RETURN\_TYPE\}\}: Identifica il tipo ritornato dal metodo.
 \item \{RETURN\_DESC\}: Descrizione del tipo di ritorno del metodo.
 \end{itemize}
+Il tipo e la descrizione del tipo di ritorno non sono necessari nel caso in cui il metodo non ritorni nulla. Stesso ragionamento vale per i parametri nel caso in cui quest'ultimo non ne possieda.
+\\
 
-Eventuali metodi \texttt{get} e \texttt{set} dovranno essere scritti nel seguente modo:
+
+
+Infine eventuali metodi \texttt{get} e \texttt{set} dovranno essere scritti nel seguente modo:
 \begin{center}
 \textit{get/setNomeAttributo}
 \end{center}
@@ -320,7 +335,7 @@ All'interno dei file gli \textbf{attributi di una classe} saranno descritte in q
 
 Dove:
 \begin{itemize}
-\item \{TYPE\}: Identifica il tipo di un attributo, può essere Number (numero), String (stringa) o Object (oggetto);
+\item \{TYPE\}: Identifica il tipo di un attributo, può essere Number (numero), String (stringa) o Object (oggetto).
 \item \{DESCRIPTION\}: Identifica una breve descrizione della variabile.
 \end{itemize}
 
@@ -344,7 +359,7 @@ Valutare la memoria occupata dalla funzione sarà obbligatorio in quanto le funz
 \paragraph{Obiettivi della codifica}
 La fase di codifica si pone i seguenti obiettivi:
 \begin{itemize}
-\item Realizzare una parte dell'applicativo funzionante, che dimostri l'utilizzo; come fosse una demo. N
+\item Realizzare una parte dell'applicativo funzionante, che dimostri l'utilizzo. come fosse una demo. N
 \item Trasformare in un linguaggio adatto tutte le funzioni e le classi con i loro relativi attributi 
 \end{itemize}
 

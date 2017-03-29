@@ -18,14 +18,32 @@ Web utilizzando il linguaggio JavaScript, tipicamente client-side, per
 la scrittura server-side. 
 Node.js è essenziale per lo sviluppo di Monolith e per la compilazione di \termine{Rocket.Chat}. Infatti l'installazione di Meteor comporta anche l'installazione di Node.js essenziale per il corretto funzionamento dei progetti Meteor. Il principale vantaggio dell'utilizzo di tale tecnologia è che permette di accedere alle risorse del sistema operativo in modalità \termine{event-driven} non sfruttando il modello basato sui thread concorrenti, utilizzato dai classici web servers.
 
-\subsection{Atmosphere}
-\textit{Atmosphere} è il \termine{package manager} di Meteor e serve per aggiungere pacchetti \termine{stand-alone} all'interno di un generico progetto, come appunto \termine{Monolith} e relativa applicazione. Viene tenuta traccia dei pacchetti integrati nel progetto tramite la directory \textit{packages/} che si crea all'interno del progetto.
+\subsection{Atmosphere e npm}
+\textit{Atmosphere} e \textit{npm} sono dei \termine{packages managers} di Meteor e serve per aggiungere pacchetti \termine{stand-alone} all'interno di un generico progetto, come appunto \termine{Monolith} e relativa applicazione. Viene tenuta traccia dei pacchetti integrati nel progetto tramite la directory \textit{packages/} che si crea all'interno del progetto.
 
-\subsection{Vue.js}
-\textit{Vue.js} è un \termine{framework} per lo sviluppo di interfacce utente. Esso verrà utilizzato per aggiornare le view non appena verranno fatte modifiche nel model e viceversa. In altre parole tale \termine{framework} verrà utilizzato per la gestione della comunicazione tra le componenti del pattern \termine{Model View Presenter}.
+\subsection{Can.js}
+\textit{Can.js} è una collezione di \termine{librerie} lato client per lo sviluppo di applicazioni web. In particolare il gruppo ha utilizzato la \termine{libreria} \textit{can-stache} utilizzata per costruire dei \textit{template} HTML ed aggiornarli in modo semplice e garantire un \termine{binding} dinamico.
 
 \subsection{Bootstrap}
 \textit{Bootstrap} è un \termine{framework} per la gestione di HTML, CSS e JavaScript. Viene utilizzato per semplicità di utilizzo e ridurre il tempo necessario per l'implementazione e l'integrazione dei file CSS, HTML e CSS dell'applicazione. Inoltre, tale \termine{framework} è già integrato dentro \termine{Rocket.Chat} e viene, dunque, utilizzato anche per retrocompatibilità.
 
 \subsection{jQuery}
 \textit{jQuery} è una libreria JavaScript. Essa permette di modificare facilmente il file HTML basandosi sul \termine{paradigma DOM}. Esso viene utilizzato nel caso di operazioni semplici (come una semplice animazione) oppure per implementare o gestire funzionalità che non si possono fare tramite i \termine{frameworks} scelti.
+
+\subsection{Ecmascript 6}
+\textit{Ecmascript 6} è un linguaggio di programmazione standardizzato e mantenuto da Ecma International nell'ECMA-262 ed ISO/IEC 16262. Le implementazioni più conosciute di questo linguaggio (spesso definite come dialetti) sono JavaScript, JScript e ActionScript che sono entrati largamente in uso, inizialmente, come linguaggi client-side nel web development. L versione 6 implementa significanti cambiamenti sintattici per scrivere applicazioni più complesse, incluse le classi e i moduli. Ciò ci permette di creare una struttura ben definita e di poter utilizzarla per implementare una struttura modulare.
+
+\subsection{Dependency-injection-es6}
+\textit{Dependency-injection-es6} è una \termine{libreria} per \textit{Node.js} e l'ambiente \textit{JavaScript} dove \textit{EcmaScript 6} è supportato. Grazie a quest'ultima caratteristica, tale \termine{libreria} è stata scelta dal team per implementare il \termine{design-pattern} della \termine{dependency-injection}.
+
+\subsection{Es6-event-emitter}
+\textit{Es6-event-emitter} è una \termine{libreria} che serve per emettere e catturare eventi, generati dopo particolari azioni.
+
+\subsection{Sass}
+\textit{Sass} è preprocessore CSS. Esso serve a definire fogli di stile con una forma più semplice, completa e potente rispetto ai \termine{CSS} e a generare file \termine{CSS} ottimizzati, aggregando le strutture definite anche in modo complesso. Esso è utilizzato per generare alcuni fogli di stile particolarmente complicati e per semplificare la loro gestione.
+
+\subsection{Marked}
+\textit{Marked} è una \termine{libreria} che trasforma del testo che rispetta la sintassi \termine{Markdown} in \termine{HTML}. Tale \termine{libreria} viene utilizzata per la generazione dell'\termine{HTML} del widget Markdown per semplificarne la gestione. 
+
+\subsection{BlazeJS}
+\textit{BlazeJS} è una potente \termine{libreria} per la creazione di interfacce utente tramite template \termine{HTML}. Essa elimina l'esigenza di aggiornare la parte logica dell'applicazione che è in ascolto dei cambiamenti e di eventuali manipolazioni del \termine{DOM}.

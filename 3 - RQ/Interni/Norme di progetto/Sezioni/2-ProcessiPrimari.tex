@@ -233,72 +233,90 @@ Di seguito vengono pertanto riportate alcune \termine{best practice} per stilare
 \item Segnalare il tipo ed il significato del dato ritornato dai rispettivi metodi.
 \item Documentare in modo preciso il contratto di tutti i metodi pubblici e protetti delle classi.
 \end{itemize}
-Inoltre i file contenenti codice dovranno essere avere un’intestazione contenente:
-\begin{itemize}
-\color{ForestGreen}
-\item /** 
-\item *   Created by (USER) on (DATE).
-\item *   Version (VERSION) - (VERSION\_NOTES)
-\item */
-\end{itemize}
+Inoltre i \textbf{file contenenti codice} dovranno essere avere un’intestazione contenente:
+
+\begin{lstlisting}[language=Java]
+/** 
+ *   Created by {USER} on {DATE}.
+ *   Version {VERSION} - {VERSION_NOTES}
+ */
+\end{lstlisting}
 Dove:
 \begin{itemize}
-\color{ForestGreen}
-\item (USER) identifica l'utente che ha creato quel file;
-\item (DATE) identifica la data, in formato GG/MM/AAAA, nella quale è stato creato il file;
-\item (VERSION) identifica la versione del file attuale, inizialmente sarà impostata di default a 1.0.0;
-\item (VERSION\_NOTES) identifica le note relative alla attuale versione, che identificano cosa è cambiato per portare a quella data versione. Inizialmente sarà impostata a 1.0.0 .
+\item \{USER\} identifica l'utente che ha creato quel file;
+\item \{DATE\} identifica la data, in formato GG/MM/AAAA, nella quale è stato creato il file;
+\item \{VERSION\} identifica la versione del file attuale, inizialmente sarà impostata di default a 1.0.0;
+\item \{VERSION\_NOTES\} identifica le note relative alla attuale versione, che identificano cosa è cambiato per portare a quella data versione. Inizialmente sarà impostata a 1.0.0 .
 \end{itemize}
 
 
+I \textbf{costruttori} delle classi dovranno contenere la seguente intestazione:
 
-All'interno del file le classi dovranno contenere la seguente intestazione:
-\begin{itemize}
-\color{ForestGreen}
-\item /**
-\item *  class Nome della classe
-\item *  brief Breve descrizione della classe
-\item */
-\end{itemize}
+\begin{lstlisting}[language=Java]
+/**
+ *  Public constructor
+ */
+\end{lstlisting}
+
+
+All'interno del file le \textbf{classi} dovranno contenere la seguente intestazione:
+
+\begin{lstlisting}[language=Java]
+/**
+ *  class Nome della classe
+ *  brief Breve descrizione della classe
+ */
+\end{lstlisting}
+
 Per quanto riguarda i file contententi solo un'unica classe non è neccessario inserire i commenti appena descritti.
 
 
 
 
-All'interno del file i metodi dovranno contenere la seguente intestazione:
-\begin{itemize}
-\color{ForestGreen}
-\item /**
-\item * (TYPE)
-\item * (COMMENT)
-\item  * @param (PARAM) ((TYPE)): (PARAM\_DESC)
-\item */
-\end{itemize}
+All'interno del file i \textbf{metodi} dovranno contenere la seguente intestazione:
+
+\begin{lstlisting}[language=Java]
+/**
+ * {TYPE}
+ * {COMMENT}
+ * @param {PARAM} {{PARAM_TYPE}}: {PARAM_DESC}
+ * @return {{RETURN_TYPE}}: {RETURN_DESC} 
+ */
+\end{lstlisting}
+
 Dove:
 \begin{itemize}
-\item (TYPE) identifica il tipo della funzione, può essere:
+\item \{TYPE\} identifica il tipo della funzione, può essere:
 \begin {itemize}
-\item @constructor: Identifica un costruttore;
 \item @method: Identifica una funzione diversa da un costruttore;
 \end{itemize}
-\item (COMMENT): Identifica una breve descrizione della funzionalità del metodo;
-\item (PARAM): Identifica il nome di un parametro;
-\item (TYPE): Identifica il tipo di un parametro, può essere Number (numero), String (stringa) o Object (oggetto);
-\item (PARAM\_DESC): Breve descrizione del parametro.
+\item \{COMMENT\}: Identifica una breve descrizione della funzionalità del metodo;
+\item \{PARAM\}: Identifica il nome di un parametro;
+\item \{\{PARAM\_TYPE\}\}: Identifica il tipo di un parametro, può essere Number (numero), String (stringa) o Object (oggetto);
+\item \{PARAM\_DESC\}: Breve descrizione del parametro.
+\item \{\{RETURN\_TYPE\}\}: Identifica il tipo ritornato dal metodo.
+\item \{RETURN\_DESC\}: Descrizione del tipo di ritorno del metodo.
 \end{itemize}
 
-All'interno dei file le variabili sarrano descritte in questa maniera:
+Eventuali metodi \texttt{get} e \texttt{set} dovranno essere scritti nel seguente modo:
+\begin{center}
+\textit{get/setNomeAttributo}
+\end{center}
+dove NomeAttributo è il nome dell'attributo al quale si vuole fare i metodi \texttt{get} e \texttt{set}. In questa maniera non sono necessari ulteriori commenti ai metodi perché autoesplicativi.
+\\
+All'interno dei file le \textbf{variabili} saranno descritte in questa maniera:
 
-\begin{itemize}
-\color{ForestGreen}
-\item /**
-\item (TYPE): Identifica il tipo di un parametro, può essere Number (numero), String (stringa) o Object (oggetto)
-\item (DESCRIPTION): Identifica una breve descrizione della variabile
-\end{itemize}
+\begin{lstlisting}[language=Java]
+/**
+ * {TYPE}
+ * {DESCRIPTION}
+ */ 
+\end{lstlisting}
+
 Dove:
 \begin{itemize}
-\item (TYPE): Identifica il tipo di un parametro, può essere Number (numero), String (stringa) o Object (oggetto);
-\item (DESCRIPTION): Identifica una breve descrizione della variabile.
+\item \{TYPE\}: Identifica il tipo di un parametro, può essere Number (numero), String (stringa) o Object (oggetto);
+\item \{DESCRIPTION\}: Identifica una breve descrizione della variabile.
 \end{itemize}
 
 
@@ -306,12 +324,12 @@ Per abilitare la creazione automatica di questo commento in ogni file è necessa
 Aprire le impostazioni, quindi recarsi in Editor > File and Code Templates (oppure  utilizzare la shortcut Ctrl + Shift + A), cercare File template
 Nel tab File e selezionare JavaScript File
 Incollare, nella parte di destra, il seguente spezzone:
-\begin{itemize}
-\item /**
-\item * Created by (USER on (DATE)
-\item * Version (VERSION - (VERSION\_NOTES)
-\item */
-\end{itemize}
+\begin{lstlisting}
+/**
+ * Created by {USER} on {DATE}
+ * Version {VERSION} - {VERSION_NOTES}
+ */
+\end{lstlisting}
 Cliccare su Apply.
 
 Per quanto riguarda la storia di ogni modifica dei file, abbiamo deciso di tenerla tracciata tramite lo strumento \textit{Git} invece di tenere un tracciamento tramite commenti.

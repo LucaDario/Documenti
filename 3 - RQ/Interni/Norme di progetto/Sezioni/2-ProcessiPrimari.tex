@@ -247,16 +247,9 @@ Dove:
 \item \{DATE\} identifica la data, in formato GG/MM/AAAA, nella quale è stato creato il file;
 \item \{VERSION\} identifica la versione del file attuale, inizialmente sarà impostata di default a 1.0.0;
 \item \{VERSION\_NOTES\} identifica le note relative alla attuale versione, che identificano cosa è cambiato per portare a quella data versione. Inizialmente sarà impostata a 1.0.0 .
+Per quanto riguarda la storia di ogni modifica dei file, abbiamo deciso di tenerla tracciata tramite lo strumento \textit{Git} invece di tenere un tracciamento tramite commenti.
 \end{itemize}
 
-
-I \textbf{costruttori} delle classi dovranno contenere la seguente intestazione:
-
-\begin{lstlisting}[language=Java]
-/**
- *  Public constructor
- */
-\end{lstlisting}
 
 
 All'interno del file le \textbf{classi} dovranno contenere la seguente intestazione:
@@ -269,8 +262,17 @@ All'interno del file le \textbf{classi} dovranno contenere la seguente intestazi
 \end{lstlisting}
 
 Per quanto riguarda i file contententi solo un'unica classe non è neccessario inserire i commenti appena descritti.
+\\
 
 
+
+I \textbf{costruttori} delle classi dovranno contenere la seguente intestazione:
+
+\begin{lstlisting}[language=Java]
+/**
+ *  Public constructor
+ */
+\end{lstlisting}
 
 
 All'interno del file i \textbf{metodi} dovranno contenere la seguente intestazione:
@@ -304,7 +306,10 @@ Eventuali metodi \texttt{get} e \texttt{set} dovranno essere scritti nel seguent
 \end{center}
 dove NomeAttributo è il nome dell'attributo al quale si vuole fare i metodi \texttt{get} e \texttt{set}. In questa maniera non sono necessari ulteriori commenti ai metodi perché autoesplicativi.
 \\
-All'interno dei file le \textbf{variabili} saranno descritte in questa maniera:
+
+
+
+All'interno dei file gli \textbf{attributi di una classe} saranno descritte in questa maniera:
 
 \begin{lstlisting}[language=Java]
 /**
@@ -315,7 +320,7 @@ All'interno dei file le \textbf{variabili} saranno descritte in questa maniera:
 
 Dove:
 \begin{itemize}
-\item \{TYPE\}: Identifica il tipo di un parametro, può essere Number (numero), String (stringa) o Object (oggetto);
+\item \{TYPE\}: Identifica il tipo di un attributo, può essere Number (numero), String (stringa) o Object (oggetto);
 \item \{DESCRIPTION\}: Identifica una breve descrizione della variabile.
 \end{itemize}
 
@@ -331,9 +336,6 @@ Incollare, nella parte di destra, il seguente spezzone:
  */
 \end{lstlisting}
 Cliccare su Apply.
-
-Per quanto riguarda la storia di ogni modifica dei file, abbiamo deciso di tenerla tracciata tramite lo strumento \textit{Git} invece di tenere un tracciamento tramite commenti.
-
   
 \subsubsection{Ricorsione}
 La ricorsione va evitata il più possibile. Per ogni funzione ricorsiva sarà necessario valutare il costo in termini di occupazione della memoria e bisognerà associare ad esso una prova di correttezza.

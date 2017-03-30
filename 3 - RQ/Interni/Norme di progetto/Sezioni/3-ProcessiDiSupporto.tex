@@ -258,12 +258,6 @@ dove:
   \item Documenti \textbf{approvati}.
 \end{itemize}
 I documenti \textbf{in lavorazione} sono quelli in fase di stesura da parte del relativo redattore. Ultimata la loro realizzazione questi documenti vengono segnati come \textbf{da verificare} e passano in mano al relativo \Ver. Infine i documenti \textbf{verificati} vengono consegnati al \Pm che avrà il compito di approvarli definitivamente. Nella figura 1.0 è rappresentato lo schema del ciclo di vita di un documento
-\label{figura 1.0}
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.8]{ciclo_di_vita.jpg}
-	\caption{Ciclo di vita di un documento}
-\end{figure}
 
 \subsubsection{Versionamento}
 Ogni documento prodotto deve essere identificato, oltre che dal nome, dal numero
@@ -287,14 +281,89 @@ modificato, seguendo lo stesso schema precedentemente proposto:
   nomeDocumento\_v.X.Y.Z.pdf
 \end{center}
 
-\subsection{Processo di configurazione e gestione dei processi}
-\subsubsection{Implementazione dei processi}
-È stato steso un piano generale per l'implementazione dei processi. Questo piano si divide in 5 punti fondamentali: RR (Revisione dei Requisiti), RP (Revisione di Progetto), RQ (Revisione di Qualifica), RA (Revisione di Accettazione). \\
-Per ogni punto fondamentale ci sono diversi task assegnati ai diversi componenti del \termine{team} e delle milestone da raggiungere. Per assegnare i task e determinare le date di ciascuna \termine{milestone} è stato usato un strumento di pianificazione, \termine{Wrike}, come descritto in dettaglio nella sezione 1.3.4 di questo documento.
+\subsubsection{Strumenti}
+\paragraph{LaTeX}
+Lo strumento che il \termine{team} ha scelto per la stesura e la manutenzione di tutti i documenti è \termine{LaTeX}. Le ragioni che hanno portato a questa scelta sono:
+\begin{itemize}
+\item La disponibilità di mezzi per l'automazione della maggior parte della composizione tipografica.
+\item La possibilità di definire \termine{template} dei documenti da stilare.
+\item La possibilità di utilizzarlo gratuitamente e ovunque grazie alla sua licenza \termine{open source}.
+\item La possibilità di suddivisione del documento in file separati al fine di facilitare il lavoro in gruppo.
+\item La disponibilità di strumenti di controllo ortografico per minimizzare i possibili errori tipografici.
+\item La facilità d'uso e di configurazione.
+\item La possibilità di conversione del testo scritto in file \termine{PDF}.
+\item Gli editor usati usati per \termine{LaTeX} son \termine{Texmaker} su MacOS e Windows 10 e \termine{Gummi}.
+\item Per creare il glossario è stato implementato un script automatico in \termine{python} che attraverso un file json contenente i vocaboli e le loro definizioni genera il glossario. Per far funzionare correttamente lo script è necessario che i redattori del documento marchino con il rispettivo comando "$\backslash$termine" gli elementi da inserire nel glossario.
+\end{itemize}
 
-\subsubsection{Gestione delle configurazioni dei processi software}
+\subsection{Processo di configurazione}
+
+\label{figura 1.0}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{ciclo_di_vita.jpg}
+	\caption{Ciclo di vita di un documento}
+\end{figure}
+
+\subsubsection{Scrittura dei documenti}
+È stato steso un piano generale per la stesura dei documenti, in modo da definire le varie parti da stendere e come queste interagiscano tra loro.
+Per ogni documento verranno assegnati diversi task (descritti nella Figura 1) ai diversi componenti del \termine{team}, ciascuno con dei propri o. Per assegnare i task e determinare le date di ciascuna \termine{milestone} è stato usato un strumento di pianificazione, \termine{Wrike}, come descritto in dettaglio nella sezione 1.3.4 di questo documento.
+
+\subsubsection{Gestione delle configurazioni}
 Per controllare le versioni e le modifiche applicate al software viene utilizzata una \termine{repository} su \termine{GitHub}. All'interno di essa ogni partecipante può verificare l'integrità e la correttezza delle modifiche applicate. Inoltre, per ogni modifica effettuata, viene fatto un \termine{commit} con lo scopo di tenere traccia di ogni variazione effettuata nel ciclo di sviluppo. Ogni volta che deve venire accettata una modifica bisogna effettuare un 	\termine{push} del software modificato che risiede nella \termine{repository} (con il relativo \termine{commit}), e prima di essere accettato saranno presenti dei testi di integrazione automatici sviluppati con i framework \termine{SonarQube} e \termine{Jenkins} implementati nella \termine{repository} di \termine{GitHub} tramite \termine{webhook}.
+
+\subsubsection{Strumenti}
+
+\paragraph{GitHub}
+Gli strumenti per il versionamento rendono possibile lo sviluppo del software in maniera controllata e quantificabile. È stato quindi deciso di creare una \termine{repository} che ospiterà documenti digitali e manuali, oltre che al codice sorgente del software, rendendo possibile il tracciamento della loro evoluzione. \\
+Il software di versionamento scelto è \termine{Git} perché presenta molti più aspetti positivi rispetto ad altri sistemi di versionamento centralizzati. \termine{Git} permette ai membri del \termine{team} di copiare la \termine{repository} in locale, lavorandoci anche in assenza di connessione, per poi successivamente caricare nuovamente su di essa i file modificati. \\
+Il servizio scelto per l'\termine{hosting} delle \termine{repository} contenenti rispettivamente i documenti, il codice sorgente dell'\termine{SDK} e il codice sorgente della applicazione \termine{demo} è \termine{GitHub} e la loro struttura base è la seguente:
+\begin{itemize}
+  \item \termine{Repository} dei documenti
+  	\begin{itemize}
+  		\item RR
+			\begin{itemize}
+				\item Interni
+				\item Esterni
+			\end{itemize}
+  		\item RQ
+  			\begin{itemize}
+				\item Interni
+				\item Esterni
+			\end{itemize}
+  		\item RP
+  			\begin{itemize}
+				\item Interni
+				\item Esterni
+			\end{itemize}
+  		\item RA
+  			\begin{itemize}
+				\item Interni
+				\item Esterni
+			\end{itemize}
+  		\item \termine{Template}   			\begin{itemize}
+  				\item Firme
+  			\end{itemize}
+  	\end{itemize}
+  	\item \termine{Repository} del codice sorgente dell'\termine{SDK}
+  		\begin{itemize}
+  			\item Codice sorgente dell'\termine{SDK}
+  		\end{itemize}
+  	\item \termine{Repository} del codice sorgente dell'applicazione \termine{demo}
+  		\begin{itemize}
+  			\item Codice sorgente dell'applicazione \termine{demo}
+  		\end{itemize}
+  	
+\end{itemize}
+
+\subparagraph{Regole per il push}
+Il team ha standardizzato i \termine{push} da effettuare nella \termine{Repository} contenente i documenti. Dovrà essere specificato il documento (documenti se più di uno) modificati/creati in quel particolare commit. Non è ancora stato definito un metodo unico per i \termine{push} effettuati nella codifica del codice. Esso verrà definito prima dell'inizio dell'attività di codifica.
+
+\paragraph{Git}
+Come sistema di controllo di versionamento la scelta è ricaduta obbligatoriamente su \termine{Git} avendo scelto GitHub come host.
+
 \newpage
+
 \subsection{Processo di garanzia di qualità del prodotto}
 Per garantire la qualità del prodotto vengono adottato varie metodologie tra le quali ritroviamo i processi di verifica e di validazione successivamente illustrati. \\
 Nel caso in cui i task assegnati al team non siano soddisfatti per eventuali problematiche, questi devono essere riportati nella lista di problemi menzionata nel \textit{processo di soluzione di problemi}. \\

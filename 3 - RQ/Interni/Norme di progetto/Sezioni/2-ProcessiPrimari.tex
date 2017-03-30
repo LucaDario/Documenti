@@ -25,8 +25,19 @@ emerso nelle riunioni. Tale documento sarà articolato nei seguenti punti:
 Per garantire una buona probabilità di successo del capitolato è stato redatto il documento \PdP\ contente la pianificazione dei periodi, la scelta del modello di vita del software e le \termine{milestones} per la consegna. \\
 Infine per garantire qualità ai processi e al prodotto è stato redatto il documento \PdQ.
 
+\paragraph{Strumenti}
+
+\subparagraph{GanttChart}
+Lo strumento per la costruzione dei diagrammi di Gantt contenuti nel \PdP\ che abbiamo scelto è \termine{GanttChart}.
+Le ragioni che ci hanno portato a questa scelta sono:
+
+\begin{itemize}
+\item Facilità di utilizzo.
+\item Problematiche legate all'estrapolazione del \termine{diagramma di Gantt} da \termine{Wrike}.
+\end{itemize}
+
 \subsubsection{Esecuzione e Controllo}
-Dopo l'esecuzione di un processo descritto in questo documento, esso sarà sottoposto da parte dei \VerP\ al controllo del processo contenuto nel \PdQ. Sarà, infatti, compito dei membri del gruppo eseguire i processi descritti in questo documento e monitorare continuamente il loro stato. Questa attività è necessaria anche per l'individuazione, registrazione, analisi e risoluzione dei problemi che potrebbero verificarsi.
+E' compito dei membri del gruppo eseguire i processi descritti in questo documento e monitorare continuamente il loro stato. Questa attività è necessaria anche per l'individuazione, registrazione, analisi e risoluzione dei problemi che potrebbero verificarsi.
 
 \subsubsection{Revisione e Valutazione}
 Questa attività è destinata ai \Ver\ che hanno il compito di attuare le attività di verificazione e validazione rispettivamente per i processi e per il prodotto. Una volta ottenuti i risultati, tramite essi, si deve valutare lo stato dei processi. Nel caso qualcuno di essi non superi la verifica, il gruppo \gruppo\ dovrà discutere su come intervenire per migliorare quel processo.
@@ -99,6 +110,18 @@ Inoltre per ogni caso d'uso dovranno essere indicati:
   l'esecuzione del caso d'uso.
 \end{itemize}
 
+\paragraph{Strumenti}
+
+\subparagraph{Astah}
+Lo strumento per la costruzione degli use cases che abbiamo scelto è \termine{Astah}.
+Le ragioni che ci hanno portato a questa scelta sono:
+\begin{itemize}
+\item Disponibilità dello strumento di costruire \termine{Diagrammi dei casi d'uso}.
+\item Possibilità di avere la licenza in modo gratuito essendo studenti.
+\end{itemize}
+
+
+
 \subsubsection{Progettazione}
 
 \paragraph{Requisiti per i progettisti}
@@ -161,10 +184,20 @@ La progettazione deve utilizzare le seguenti tipologie di diagrammi \termine{UML
 La fase di progettazione si pone i seguenti obiettivi:
 \begin{itemize}
 \item Soddisfare i requisiti obbligatori fissati dal committente.
-\item Avere una chiara idea delle parti(classi,metodi e e variabili) che si andranno successivamente a codificare nel periodo che va dal \RP al \RQ
+\item Avere una chiara idea delle parti(classi,metodi e e variabili) che si andranno successivamente a codificare nel periodo che va dal \RP\ alla \RQ
 \item Descrivere in maniera appopriata e comprensibile a uno sviluppatore esterno i metodi,le variabili e le classi codificate. Come successivamente descritto.
 \item Descrivere in dettaglio le interazioni tra le varie componenti utilizzando i \textit{Design Patterns} scelti durante l'attività di progettazione architetturale.
 \item Seguendo quanto detto per la progettazione architetturale, anche quella in dettaglio deve perseguire gli obbiettivi di coesione, basso accoppiamento e riusabilità dei moduli.
+\end{itemize}
+
+\paragraph{Strumenti}
+
+\subparagraph{Astah}
+Lo strumento per la costruzione dell'architettura di sistema e dettaglio che abbiamo scelto è \termine{Astah}.
+Le ragioni che ci hanno portato a questa scelta sono:
+\begin{itemize}
+\item Disponibilità dello strumento di costruire \termine{Diagrammi dei package} per la progettazione architetturale.
+\item Disponibilità dello strumento di costruire \termine{Diagrammi delle classi}, \termine{Diagrammi di sequenza} e \termine{Diagrammi delle attività} per la progettazione in dettaglio.
 \end{itemize}
 
 \subsubsection{Codifica}
@@ -359,15 +392,27 @@ Valutare la memoria occupata dalla funzione sarà obbligatorio in quanto le funz
 \paragraph{Obiettivi della codifica}
 La fase di codifica si pone i seguenti obiettivi:
 \begin{itemize}
-\item Realizzare una parte dell'applicativo funzionante, che dimostri l'utilizzo. come fosse una demo. N
+\item Realizzare una parte dell'applicativo funzionante, che dimostri l'utilizzo. come fosse una demo.
 \item Trasformare in un linguaggio adatto tutte le funzioni e le classi con i loro relativi attributi 
+\end{itemize}
+
+\subsubsection{Strumenti}
+
+\paragraph{IntelliJ IDEA}
+L'ambiente di sviluppo integrato (\termine{IDE}) scelto per lo sviluppo e la manutenzione del progetto è \termine{IntelliJ IDEA}. Le ragioni che hanno portato a questa scelta sono le seguenti:
+\begin{itemize}
+\item Disponibilità di svariati \termine{plugin} per lo sviluppo, in particolare per \termine{Meteor.js}.
+\item Buona conoscenza di questo strumento d parte di tutti i componenti del \termine{team} maturata durante il corso di laurea.
+\item Possesso di una completa integrazione con i metodi di versionamento \termine{Git}.
+\item Abilità di autocompletamento del codice \termine{JavaScript} scritto.
+\item Possesso di un \termine{debugger} \termine{JavaScript}.
 \end{itemize}
 
 \subsection{Integrazione}
 In questo periodo si cerca di integrare le varie parti del nostro applicativo e del nostro sdk in maniera che funzioni correttamente interfacciandosi in  correttamente tra di loro. Per fare questo abbiamo sviluppato degli appositi test che andremo successivamente ad elencare.
 Questa attività deve essere svolta in maniera ottimale e precisa dai \textit{progettisti}, che dovranno avere una chiara idea del funzionamento delle parti che hanno sviluppato e una idea abbastanza precisa del funzionamento delle parti che gli altri .\textit{progettisti} hanno sviluppato. Una volta finita l'integrazione tra le varie componenti si procederà a verificare tramite dei test appositi il completo e corretto funzionamento di tutto l'applicativo e l'SDK
 
-\paragraph{Requisiti per i progettisti}
+\subsection{Requisiti per i progettisti}
 I \textit{\ProgP} sono responsabili delle attività di integrazione e sono tenuti ad avere:
 \begin{itemize}
 \item
@@ -382,7 +427,7 @@ Avere competenze necessarie per sviluppare le parti mancanti di software che per
 Capacità di individuare con rapidità i bug e i requisiti non soddisfatti che l'applicativo finale comporta.
 \end{itemize}
 
-\paragraph{Obiettivi per l'integrazione}
+\subsection{Obiettivi per l'integrazione}
 Il periodo in cui si svolge l'integrazione pone i seguenti obiettivi:
 \begin{itemize}
 \item Avere un applicativo che unisce tutte le parti software sviluppate indipendentemente e non, dai vari progettisti.
@@ -390,88 +435,6 @@ Il periodo in cui si svolge l'integrazione pone i seguenti obiettivi:
 \end{itemize}
 
 \subsubsection{Sistemi Operativi}
-Ogni componente del team ha scelto di usare il proprio sistema operativo preferito. Sono, dunque, utilizzate attualmente tre diversi sistemi: MacOs,  ArchLinux e Windows 10. L'uso di sistemi diversi, però, non risulta essere un problema poiché la programmazione avviene principalmente lato server rendendo cosi ininfluente la scelta del sistema operativo del client.
+Ogni componente del team ha scelto di usare il proprio sistema operativo preferito. Sono, dunque, utilizzate attualmente tre diversi sistemi: MacOs,  ArchLinux e Windows 10. L'uso di sistemi diversi, però, non risulta essere un problema per il corretto funzionamento del software poiché la programmazione avviene principalmente lato server rendendo cosi ininfluente la scelta del sistema operativo del client.
 
-\subsubsection{Strumenti}
-\paragraph{LaTeX}
-Lo strumento che il \termine{team} ha scelto per la stesura e la manutenzione di tutti i documenti è \termine{LaTeX}. Le ragioni che hanno portato a questa scelta sono:
-\begin{itemize}
-\item La disponibilità di mezzi per l'automazione della maggior parte della composizione tipografica.
-\item La possibilità di definire \termine{template} dei documenti da stilare.
-\item La possibilità di utilizzarlo gratuitamente e ovunque grazie alla sua licenza \termine{open source}.
-\item La possibilità di suddivisione del documento in file separati al fine di facilitare il lavoro in gruppo.
-\item La disponibilità di strumenti di controllo ortografico per minimizzare i possibili errori tipografici.
-\item La facilità d'uso e di configurazione.
-\item La possibilità di conversione del testo scritto in file \termine{PDF}.
-\item Gli editor usati usati per \termine{LaTeX} son \termine{Texmaker} su MacOS e Windows 10 e \termine{Gummi}.
-\item Per creare il glossario è stato implementato un script automatico in \termine{python} che attraverso un file json contenente i vocaboli e le loro definizioni genera il glossario. Per far funzionare correttamente lo script è necessario che i redattori del documento marchino con il rispettivo comando "$\backslash$termine" gli elementi da inserire nel glossario.
-\end{itemize}
-
-\paragraph{IntelliJ IDEA}
-L'ambiente di sviluppo integrato (\termine{IDE}) scelto per lo sviluppo e la manutenzione del progetto è \termine{IntelliJ IDEA}. Le ragioni che hanno portato a questa scelta sono le seguenti:
-\begin{itemize}
-\item Disponibilità di svariati \termine{plugin} per lo sviluppo, in particolare per \termine{Meteor.js}.
-\item Buona conoscenza di questo strumento d parte di tutti i componenti del \termine{team} maturata durante il corso di laurea.
-\item Possesso di una completa integrazione con i metodi di versionamento \termine{Git}.
-\item Abilità di autocompletamento del codice \termine{JavaScript} scritto.
-\item Possesso di un \termine{debugger} \termine{JavaScript}.
-\end{itemize}
-
-\paragraph{Slack}
-Lo strumento che scelto per la comunicazione interna formale è \termine{Slack}.
-Le ragioni che hanno portato a questa scelta sono:
-\begin{itemize}
-\item La possibilità di organizzare le discussioni in canali, rendendole quindi molto più organizzate ed accessibili ai membri del \termine{team}.
-\item Disponibilità su qualsiasi piattaforma in modo gratuito, e pertanto usufruibile in ogni momento.
-\end{itemize}
-
-\paragraph{Telegram}
-Lo strumento abbiamo scelto per la comunicazione interna informale è \termine{Telegram}.
-Le ragioni che hanno portato a questa scelta sono:
-\begin{itemize}
-\item Disponibilità su qualsiasi sistema operativo mobile e desktop, attraverso le applicazioni ufficiali sviluppate e/o il client web.
-\item Possibilità di aggiungere molteplici \termine{bot} utili in varie funzioni, come ad esempio la possibilità di creare sondaggi.
-\item Immediatezza per la formulazione e la risposta a domande veloci e informali, evitando così di compromettere lo storico delle conversazioni su \termine{Slack}.
-\end{itemize}
-
-\paragraph{GitHub}
-Il servizio di hosting che scelto per ospitare la \termine{repository} che andrà a contenere i documenti ed il codice del progetto è \termine{GitHub}.
-Le ragioni che hanno portato a questa scelta sono:
-\begin{itemize} 
-\item La possibilità di creare issues e indirizzarle a determinate persone definendo la rispettiva data di scadenza di risoluzione.
-\item Richiesta specifica eseguita da parte del \termine{proponente} del progetto.
-\end{itemize}
-
-\paragraph{Git}
-Come sistema di controllo di versionamento la scelta è ricaduta obbligatoriamente su \termine{Git} avendo scelto GitHub come host.
-
-\paragraph{Wrike}
-Lo strumento di pianificazione che abbiamo scelto è \termine{Wrike}.
-Le ragioni che ci hanno portato a questa scelta sono:
-
-\begin{itemize}
-\item Disponibilità gratuita mediante la richiesta di una licenza per studenti.
-\item Possibilità di assegnare un \termine{task} a più di una persona.
-\item Possesso di una interfaccia semplice ed intuitiva.
-\item Possibilità di utilizzo anche su sistemi operativi mobile quali Android e iOS mediante l'applicazione gratuita disponibile.
-\item Possibilità, previa sincronizzazione, di segnalare, tra \termine{Wrike} e la \termine{repository} \termine{GitHub}, quando un determinato \termine{task} è completato attraverso un semplice \termine{commit}.
-\item Possibilità di commentare e rispondere all'interno della pagina di un rispettivo \termine{task}.
-
-\end{itemize}
-
-\paragraph{GanttChart}
-Lo strumento per la costruzione dei diagrammi di Gantt che abbiamo scelto è \termine{GanttChart}.
-Le ragioni che ci hanno portato a questa scelta sono:
-
-\begin{itemize}
-\item Facilità di utilizzo.
-\item Problematiche legate all'estrapolazione del \termine{diagramma di Gantt} da \termine{Wrike}.
-\end{itemize}
-
-\paragraph{Visual Paradigm}
-Lo strumento per la costruzione degli use cases che abbiamo scelto è \termine{Visual Paradigm}.
-Le ragioni che ci hanno portato a questa scelta sono:
-\begin{itemize}
-\item Facilità di utilizzo.
-\end{itemize}
 \newpage 

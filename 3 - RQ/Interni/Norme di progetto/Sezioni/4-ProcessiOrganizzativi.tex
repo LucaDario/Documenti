@@ -38,9 +38,27 @@ Per le comunicazioni esterne è stata creata la seguente casella di posta elettr
 
 Il \Pm gestisce le comunicazioni con i proponenti e i committenti, avvertendo i membri del \termine{team} nel caso vengano rese disponibili nuove informazioni utili.
 
+\paragraph{Strumenti}
 
-\subsection{Processo di pianificazione}
-\subsubsection{Descrizione}
+\subparagraph{Slack}
+Lo strumento che scelto per la comunicazione interna formale è \termine{Slack}.
+Le ragioni che hanno portato a questa scelta sono:
+\begin{itemize}
+\item La possibilità di organizzare le discussioni in canali, rendendole quindi molto più organizzate ed accessibili ai membri del \termine{team}.
+\item Disponibilità su qualsiasi piattaforma in modo gratuito, e pertanto usufruibile in ogni momento.
+\end{itemize}
+
+\subparagraph{Telegram}
+Lo strumento abbiamo scelto per la comunicazione interna informale è \termine{Telegram}.
+Le ragioni che hanno portato a questa scelta sono:
+\begin{itemize}
+\item Disponibilità su qualsiasi sistema operativo mobile e desktop, attraverso le applicazioni ufficiali sviluppate e/o il client web.
+\item Possibilità di aggiungere molteplici \termine{bot} utili in varie funzioni, come ad esempio la possibilità di creare sondaggi.
+\item Immediatezza per la formulazione e la risposta a domande veloci e informali, evitando così di compromettere lo storico delle conversazioni su \termine{Slack}.
+\end{itemize}
+
+\subsubsection{Processo di pianificazione}
+\paragraph{Descrizione}
 Nell'arco dello sviluppo del progetto ogni membro del gruppo dovrà assumere almeno una volta tutti i ruoli progettuali.
 Un membro del \termine{team} può assumere più ruoli contemporaneamente, ma non può mai essere redattore e verificatore dello stesso documento, al fine di evitare conflitti di interesse che potrebbero vanificare il processo di verifica del materiale prodotto.
 
@@ -91,54 +109,19 @@ responsabile dell'attività di codifica. In dettaglio, i suoi compiti sono:
 \end{itemize}
 Il \Progr\ redige il \MU e produce la documentazione del codice.
 
-\subsection{Strumenti}
-\subsubsection{GitHub}
-Gli strumenti per il versionamento rendono possibile lo sviluppo del software in maniera controllata e quantificabile. È stato quindi deciso di creare una \termine{repository} che ospiterà documenti digitali e manuali, oltre che al codice sorgente del software, rendendo possibile il tracciamento della loro evoluzione. \\
-Il software di versionamento scelto è \termine{Git} perché presenta molti più aspetti positivi rispetto ad altri sistemi di versionamento centralizzati. \termine{Git} permette ai membri del \termine{team} di copiare la \termine{repository} in locale, lavorandoci anche in assenza di connessione, per poi successivamente caricare nuovamente su di essa i file modificati. \\
-Il servizio scelto per l'\termine{hosting} delle \termine{repository} contenenti rispettivamente i documenti, il codice sorgente dell'\termine{SDK} e il codice sorgente della applicazione \termine{demo} è \termine{GitHub} e la loro struttura base è la seguente:
+\subsubsection{Strumenti}
+
+\paragraph{Wrike}
+Lo strumento di pianificazione che abbiamo scelto è \termine{Wrike}.
+Le ragioni che ci hanno portato a questa scelta sono:
 \begin{itemize}
-  \item \termine{Repository} dei documenti
-  	\begin{itemize}
-  		\item RR
-			\begin{itemize}
-				\item Interni
-				\item Esterni
-			\end{itemize}
-  		\item RQ
-  			\begin{itemize}
-				\item Interni
-				\item Esterni
-			\end{itemize}
-  		\item RP
-  			\begin{itemize}
-				\item Interni
-				\item Esterni
-			\end{itemize}
-  		\item RA
-  			\begin{itemize}
-				\item Interni
-				\item Esterni
-			\end{itemize}
-  		\item \termine{Template}   			\begin{itemize}
-  				\item Firme
-  			\end{itemize}
-  	\end{itemize}
-  	\item \termine{Repository} del codice sorgente dell'\termine{SDK}
-  		\begin{itemize}
-  			\item Codice sorgente dell'\termine{SDK}
-  		\end{itemize}
-  	\item \termine{Repository} del codice sorgente dell'applicazione \termine{demo}
-  		\begin{itemize}
-  			\item Codice sorgente dell'applicazione \termine{demo}
-  		\end{itemize}
-  	
+\item Disponibilità gratuita mediante la richiesta di una licenza per studenti.
+\item Possibilità di assegnare un \termine{task} a più di una persona.
+\item Possesso di una interfaccia semplice ed intuitiva.
+\item Possibilità di utilizzo anche su sistemi operativi mobile quali Android e iOS mediante l'applicazione gratuita disponibile.
+\item Possibilità, previa sincronizzazione, di segnalare, tra \termine{Wrike} e la \termine{repository} \termine{GitHub}, quando un determinato \termine{task} è completato attraverso un semplice \termine{commit}.
+\item Possibilità di commentare e rispondere all'interno della pagina di un rispettivo \termine{task}. 
 \end{itemize}
-
-\paragraph{Regole per il push}
-Il team ha standardizzato i \termine{push} da effettuare nella \termine{Repository} contenente i documenti. Dovrà essere specificato il documento (documenti se più di uno) modificati/creati in quel particolare commit. Non è ancora stato definito un metodo unico per i \termine{push} effettuati nella codifica del codice. Esso verrà definito prima dell'inizio dell'attività di codifica.
-
-\subsubsection{Wrike}
-\termine{Wrike} è uno strumento online per la collaborazione ed il project management. Permette ai suoi utenti di modificare progetti, classificare le attività per importanza e collaborare con altri utenti dello stesso gruppo. 
 
 \subsubsection{Gestione delle attività del progetto}
 Si è scelto di utilizzare il sistema di pianificazione delle attività \termine{Wrike}, grazie al quale vengono tenute sotto controllo le milestones, i task personali e di gruppo. Il programma \termine{Wrike} è disponibile anche come applicazione su sistemi operativi mobile, garantendo più velocità nella comunicazione di eventuali novità nelle attività del gruppo.

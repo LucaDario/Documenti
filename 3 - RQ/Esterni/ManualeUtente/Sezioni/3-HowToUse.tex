@@ -1,0 +1,33 @@
+\section{Features Guide}
+As it's mentioned in the introduction this product is divided in two parts, so the group \gruppo\ will supply two guides for the correct using of this software.
+
+\subsection{SDK}
+This guide is dedicated just for one actor: the developer. Using this Manual he can simply learn how to use \textit{Monolith}, the \termine{SDK} supplied by \gruppo. 
+
+\subsubsection{Creation of a Bubble}
+There are three kind of Bubbles available in \textit{Monolith}.
+\begin{itemize}
+\item \textbf{MarkdownBubble}
+\item \textbf{ToDoListBubble}
+\item \textbf{AlertBubble}
+\end{itemize}
+
+%immagine di codice bolle e come si vedono
+
+Supposing you wanted to create your own Bubble it would be necessary extend the \textit{Abstract} class \texttt{BaseBubble} and would add all the components you need with the method \texttt{addComponent} available in his relative class. You can add every widget there is in \textit{Monolith} ord add your coustom one.
+
+%immagine del codice di una nuova bolla creata da uno sviluppatore con i propri campi
+
+
+
+\subsubsection{Composition/chaining of Layouts or Components}
+
+In the \termine{SDK} you can also compose the Bubble as you want. To make this clearer we'll give you some examples of adding a Widget and adding layouts.
+
+\paragraph{Adding a widget}
+
+%immagine
+
+\paragraph{Adding a Layout with some widgets}
+
+%immagine

@@ -27,14 +27,26 @@ let bubble = new AlertBubble();
 \textbf{Note}. We are not describing how to use all the default bubbles as the code is always the same, except that the bubble's name.
 
 \paragraph{Creation of a new type of bubble}
+To create a new bubble type it is necessary to extend the abstract class \texttt{BaseBubble} and define a no-arguments constructor which calls the one of \texttt{BaseBubble}. \\
+\begin{lstlisting}[language=JavaScript, frame=single]
+// Needed to be able to extend from the BaseBubble class
+import {BaseBubble} from {BOH}
 
-Supposing you wanted to create your own Bubble it would be necessary extend the \textit{Abstract} class \texttt{BaseBubble} and would add all the components you need with the method \texttt{addComponent} available in his relative class. You can add every widget there is in \textit{Monolith} ord add your coustom one.
+export class MyBubble extends BaseBubble {
+    constructor(){
+        // Necessary call
+        super();
+        
+        // Initialize the bubble
+    }
+}
+\end{lstlisting}
 
 %immagine del codice di una nuova bolla creata da uno sviluppatore con i propri campi
 
 
 
-\subsubsection{Composition/chaining of Layouts or Components}
+\subsubsection{Composition/chaining of layouts or widgets}
 
 In the \termine{SDK} you can also compose the Bubble as you want. To make this clearer we'll give you some examples of adding a Widget and adding layouts.
 

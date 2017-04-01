@@ -1,18 +1,32 @@
 \section{Features Guide}
-As it's mentioned in the introduction this product is divided in two parts, so the group \gruppo\ will supply two guides for the correct using of this software.
+Inside this section there will be some examples of code that show how to use \progettoShort, followed by a guide explaining how to use the \app application.
 
 \subsection{SDK}
-This guide is dedicated just for one actor: the developer. Using this Manual he can simply learn how to use \textit{Monolith}, the \termine{SDK} supplied by \gruppo. 
+This guide is dedicated to a generic developer which wants to use \progettoShort\ to integrate its feature inside his \termine{Meteor.js} project. 
 
-\subsubsection{Creation of a Bubble}
-There are three kind of Bubbles available in \textit{Monolith}.
+\subsubsection{Usage of a bubble}
+\paragraph{Use of a default bubble}
+Inside \progettoShort\ there are three kinds of bubbles available:
 \begin{itemize}
-\item \textbf{MarkdownBubble}
-\item \textbf{ToDoListBubble}
-\item \textbf{AlertBubble}
+	\item \textbf{MarkdownBubble}: represents a bubble which holds a text that can be formatted using the \termine{markdown} markup language;
+	\item \textbf{ToDoListBubble}: represents a bubble that holds a to-do list made using a list of check buttons;
+	\item \textbf{AlertBubble}: represents a bubble that holds a message which will be displayed as an alert.
 \end{itemize}
 
 %immagine di codice bolle e come si vedono
+
+In order to instantiate one of these bubble, all that needs to be done is the following:
+\begin{lstlisting}[language=JavaScript, frame=single]
+// Needed to be able to create the new bubble instance
+import {AlertBubble} from {BOH}
+
+let bubble = new AlertBubble();
+// Now you can work with this bubble accessing its methods
+\end{lstlisting}
+
+\textbf{Note}. We are not describing how to use all the default bubbles as the code is always the same, except that the bubble's name.
+
+\paragraph{Creation of a new type of bubble}
 
 Supposing you wanted to create your own Bubble it would be necessary extend the \textit{Abstract} class \texttt{BaseBubble} and would add all the components you need with the method \texttt{addComponent} available in his relative class. You can add every widget there is in \textit{Monolith} ord add your coustom one.
 

@@ -4,12 +4,8 @@
 Per garantire la qualità del prodotto è necessario perseguire la qualità dei processi che lo definiscono. Per fare ciò si è deciso di adottare lo standard ISO/IEC 15504 descritto nelle \NdP. Il gruppo \gruppo{} si impegnerà a seconda dei periodi coinvolti di migliorare ed incrementare eventuali processi con rispettive metriche al fine di garantire una buona qualità.
 
 \subsection{Standard ISO/IEC 15504}
-Il gruppo \gruppo\ come già illustrato nelle \NdP\ si impegna a seguire lo standard Standard ISO/IEC 15504 per garantire qualità ai processi. Per la mancanza di tempo il team si impegnerà ad ottenere:
-\begin{itemize}
-\item \textbf{Livello di accettazione}: 2.
-\item \textbf{Livello ottimale}: 3.
-\end{itemize}
-Questa scelta è dovuta soprattutto dalla mancanza di tempo, raggiungere un livello elevato richiederebbe troppo tempo in termini di tempo e di risorse. Infine, lo stato di avanzamento del livello dei processi sarà tracciato nella sezione 10 di questo documento.
+Il gruppo \gruppo\ come già illustrato nelle \NdP\ si impegna a seguire lo standard Standard ISO/IEC 15504 per garantire qualità ai processi. Per mancanza di tempo e risorse il gruppo cercherà di migliorare il livello di \textit{capability} solo per i processi ripetuti costantemente nel tempo o ritenuti fondamentali per la buona riuscita del progetto. Per i restanti processi, il gruppo si impegna a soddisfare solo il primo livello ovvero quello del "Do", senza cercare miglioramenti successivi della qualità.
+Questa scelta è dovuta soprattutto dalla mancanza di tempo, raggiungere un livello elevato richiederebbe troppo in termini di tempo e di risorse. Infine, lo stato di avanzamento del livello dei processi sarà tracciato nella sezione 10 di questo documento.
 
 \subsection{Processo di fornitura}
 Il macro-processo (derivante dall’unione dei processi di Pianificazione, Controllo e Valutazione) ha lo scopo di produrre dei piani di sviluppo per il progetto, comprendenti
@@ -25,14 +21,29 @@ L'intero sviluppo del progetto dovrà seguire la pianificazione prodotta, in par
 \item Il costo preventivato per il periodo descritto nel \PdP{} non dovrà eccedere, ma dovrà rimanere al di sotto della soglia prevista.
 \end{itemize}
 
+\subsection{Standard ISO/IEC 15504}
+Questo processo, per come è strutturato il progetto, viene effettuato una volta dal gruppo, perciò, anche per mancanza di tempo il gruppo non si impegnerà a raggiungere un elevato livello di \termine{capability} ed a migliorare le metriche per le attività individuate per tale processo. Il gruppo però si impegna a verificare costantemente la qualità dell'attività di pianificazione, ritenuta fondamentale dai membri per raggiungere lo scopo prefissato.
+\begin{itemize}
+\item \textbf{Livello di accettazione}: 1.
+\item \textbf{Livello ottimale}: 2.
+\end{itemize}
+
 \subsubsection{Strategie}
 La pianificazione dovrà essere costantemente aggiornata durante lo sviluppo del progetto per essere coerente alla situazione corrente. Al fine di garantire una pianificazione corretta e conforme alle attese qualsiasi valore negativo rilevato a livello di Schedule Variance o Budget Variance rilevato in una fase di lavoro dovrà essere
 assolutamente compensato entro la fine dell’attività di progetto, in quanto non è assolutamente
 ammesso eccedere le ore di lavoro finali e il preventivo dei costi finale indicato nella pianificazione.
 
-\subsubsection{Metriche}
+\subsubsection{Pianificazione}
 
-\paragraph{Pianificazione}
+\paragraph{Obiettivi di qualità}
+Le attività svolte dovranno raggiungere i seguenti obiettivi:
+\begin{itemize}
+\item Assicurare la pianificazione corretta del budget necessario.
+\item Attenersi il più possibile alle ore di lavoro previste nel \PdQ.
+\item Attenersi il più possibile al ruolo indicato nel \PdP.
+\end{itemize}
+
+\paragraph{Metriche}
 
 \subparagraph{Schedule Variance}
 Indica se si è in linea, in anticipo o in ritardo rispetto la pianificazione temporale prevista dal \PdP.
@@ -70,14 +81,6 @@ Indica se si è in linea, in anticipo o in ritardo rispetto la pianificazione te
 			\end{tabular}
 \captionof{table}{Budget Variance}
 \end{center}
-
-\subparagraph{Obbiettivi di qualità}
-Le attività svolte dovranno raggiungere i seguenti obiettivi:
-\begin{itemize}
-\item Assicurare la pianificazione corretta del budget necessario.
-\item Attenersi il più possibile alle ore di lavoro previste nel pdq.
-\item Attenersi il più possibile al ruolo indivato nel \PdP.
-\end{itemize}
 
 \paragraph{Revisione e Valutazione}
 
@@ -122,6 +125,13 @@ Le attività svolte dovranno raggiungere i seguenti obiettivi:
 
 Il processo punta a trasformare l'idea del committente in un prodotto software.
 
+\subsection{Standard ISO/IEC 15504}
+Questo processo è ritenuto fondamentale dal gruppo per cui le attività svolte verranno ottimizzate al fine di raggiungere dei buoni obiettivi di qualità. Il tempo ridotto e le risorse disponibili per il controllo del processo ci costringe a non spingere troppo in profondità le regole e le misurazioni per esso. Perciò il gruppo si pone questi obiettivi:
+\begin{itemize}
+\item \textbf{Livello di accettazione}: 2.
+\item \textbf{Livello ottimale}: 3.
+\end{itemize}
+
 \subsubsection{Analisi dei requisiti}
 
 \paragraph{Obiettivi di qualità}
@@ -135,7 +145,7 @@ I requisiti dovranno essere gestiti dal gruppo nel seguente modo:
 \end{itemize}
 
 \paragraph{Strategie}
-Tutti i requisiti individuati saranno riportati in un \termine{file json} che ne manterrà il tracciamento.
+Tutti i requisiti individuati saranno riportati in un \termine{file json} che ne manterrà il tracciamento per poi essere trascritti con maggiore. Questi poi saranno utilizzati nella per i test di sistema e di collaudo per verificarne il completo soddisfacimento.
 
 \paragraph{Metriche}
 \subparagraph{Requisiti obbligatori soddisfatti}
@@ -167,7 +177,6 @@ Durante lo svolgimento delle attività previste da questo processo, il gruppo si
 \item ogni componente dovrà essere progettato puntando su incapsulamento, modularizzazione e riuso di codice, in modo da garantire un indice elevato di utilità.
 \item Bassa complessità del Sistema, seguendo in maniera precisa i pattern scelti.
 \end{itemize}
-\newpage
 
 \paragraph{Strategie}
 L'approccio utilizzato coinvolge il modello statico di progettazione, utilizzando l'ereditarietà come strumento di organizzazione, garantendo semplicità e riuso del codice.
@@ -419,6 +428,14 @@ Durante lo svolgimento delle attività, ci si impegnerà affinché:
 \item il sistema dovrà implementare tutti i requisiti obbligatori individuati nell'attività di analisi.
 \end{itemize}
 
+\subsection{Standard ISO/IEC 15504}
+Il processo di validazione deve produrre risultati misurabili e soprattutto deve essere verificato per garantire efficacia al prodotto software che sarà sviluppato. Considerando i limiti di risorse e di tempo gli obiettivi che il gruppo si pone sono i seguenti:
+\begin{itemize}
+\item \textbf{Livello di accettazione}: 3.
+\item \textbf{Livello ottimale}: 3.
+\end{itemize}
+
+
 \subsubsection{Strategie}
 Bisognerà cercare di implementare il maggior livello possibile di automazione nell'esecuzione dei test di sistema, in modo tale che la loro esecuzione non richieda costi eccessivi (soprattutto in termini temporali).
 
@@ -524,6 +541,14 @@ Il processo di documentazione dovrà perseguire le seguenti direttive:
 \item la documentazione prodotta sarà sempre aggiornata ed allineata allo stato attuale del processo di sviluppo del prodotto.
 \item i documenti saranno verificati ed approvati solo se soddisfacenti tutte le metriche per la qualità. Inoltre tramite le tecniche di analisi statica dovranno essere individuati il maggior numero di errori sintattici.
 \end{itemize}
+
+\subsection{Standard ISO/IEC 15504}
+Il processo di documentazione verrà svolto durante tutto il lasso di tempo in cui il gruppo lavorerà al progetto. Come processo di supporto, dunque, esso risulta fondamentale poiché ripetuto costantemente ed esplica il lavoro eseguito dal gruppo. Dunque, gli obiettivi per questo processo sono:
+\begin{itemize}
+\item \textbf{Livello di accettazione}: 3.
+\item \textbf{Livello ottimale}: 3.
+\end{itemize}
+
 \subsubsection{Strategie}
 Durante la stesura della documentazione, ogni termine con significato ambiguo deve essere indicato (corredato di definizione) nel \glossario\ ; gli script automatici provvederanno alla sua segnalazione all'interno del documento.\\
 Ogni documento sarà dotato di numero di versione e corredato da un diario delle modifiche che consente di prendere visione di tutte le azioni effettuate sul testo in oggetto.

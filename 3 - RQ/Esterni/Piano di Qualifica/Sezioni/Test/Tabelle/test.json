@@ -50,17 +50,17 @@
       },
       {
         "description": "Verificare che in un widget di tipo immagine venga mostrato il messaggio di errore appropriato nel caso si inserisca un immagina non valida",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che un widget di tipo immagine venga impostata la dimensione del immagine da visualizzare in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che all'instanziazione di un widget di tipo immagine venga impostata la larghezza e l'altezza di default",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
@@ -70,32 +70,32 @@
       },
       {
         "description": "Verificare che in un widget di tipo bottone venga impostato il testo in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che venga mostrarto in modo corretto il messaggio di errore se viene inserita una sequenza di caratteri non valida in un widget di tipo bottone",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che un widget di tipo bottone venga impostata la dimensione in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che all'instanziazione di un widget di tipo bottone venga impostata la larghezza e l'altezza di default",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che in un widget di tipo bottone venga impostato il colore di sfondo in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che all'instanziazione di un widget di tipo bottone venga impostato il colore di sfondo di default",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {

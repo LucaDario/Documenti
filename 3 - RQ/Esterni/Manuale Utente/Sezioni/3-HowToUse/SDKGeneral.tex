@@ -1,0 +1,41 @@
+\subsubsection{Composition of layouts or widgets}
+Using the \texttt{BaseLayout}'s or \texttt{BaseBubble}'s \texttt{addComponent(component : BaseComponent)}  method, you can add to a layout or bubble either a widget or a sub-layout. \\
+
+\textbf{Notes}. 
+\begin{enumerate}
+	\item The default bubble's layout will always be a \texttt{VerticalLayout} and cannot be changed.
+	\item The below examples will use a bubble as the containers, but the same code applies also to simple layouts.
+\end{enumerate}
+
+\paragraph{Adding a widget}
+In order to add a widget, the only thing there's need to do is create the widget instance and then call the \texttt{addComponent} method passing it as parameter.
+
+% Immagine bolla prima del'aggiunta di un widget
+\begin{lstlisting}[language=JavaScript, frame=single]
+const bubble = new ToDoListBubble();
+const widget = new TextWidget();
+widget.setText("This is a new widget which has been added to the bubble");
+bubble.addComponent(widget);
+\end{lstlisting}
+% Immagine bolla dopo l'aggiunta del widget
+
+\paragraph{Adding a Layout with some widgets}
+To add a layout to a bubble, the method which needs to be follow is the same as the one presented for the widget. The layout needs to be created and then \texttt{addComponent} must be called giving the layout as parameter.
+
+% Immagine bolla prima dell'aggiunta del layout
+\begin{lstlisting}[language=JavaScript, frame=single]
+// Needed to be able to extend from the BaseBubble class
+const bubble = new ToDoListBubble();
+
+const widget = new TextWidget();
+widget.setText("First text widget");
+const widget 2 = new TextWidget();
+widget2.setText("Second text widget");
+
+const layout = new HorizzontalLayout();
+layout.addComponent(widget1);
+layout.addComponent(widget2);
+
+bubble.addComponent(layout);
+\end{lstlisting}
+% Immagine della bolla dopo l'aggiunta del layout

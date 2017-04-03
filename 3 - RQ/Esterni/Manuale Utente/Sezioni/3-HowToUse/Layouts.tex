@@ -1,0 +1,41 @@
+\subsubsection{Layouts}
+Inside \progettoShort\ there are two classes which gives the possibility of arranging the different widgets in two main orientations:
+\begin{itemize}
+	\item \texttt{HorizontaLayout}: it allows the widgets that are added to it to be displayed each one on the right of the previous ones;
+	\item \texttt{VerticalLayout}: it allows the widgets to be displayed one below the previous ones.
+\end{itemize}
+
+\paragraph{Using a layout}
+To use one of the given layout classes, all that needs to be done is the following:
+
+% Immagine layout prima dell'aggiunta di un widget
+\begin{lstlisting}[language=JavaScript, frame=single]
+// Needed to be able to create the new layout
+import {HorizontalLayout} from {BOH}
+
+let widget = new TextWidget();
+
+let layout = new HorizontalLayout();
+layout.addComponent(widget);
+\end{lstlisting}
+% Immagine layout dopo l'aggiunta del widget
+
+\paragraph{Creating a new layout}
+In order to create a new layout class, the only thing that needs to be done is creating a new class which extends from \texttt{BaseLayout} and implements its abstract methods:
+\begin{lstlisting}[language=JavaScript, frame=single]
+// Needed to be able to create the new layout
+import {BaseLayout} from {BOH}
+
+export class MyLayout extends BaseLayout {
+    constructor(){
+        // Needed in order to create the base class instance
+        super();
+    }
+    
+    renderView(){
+        // Renders the layout view usually calling its components' 
+        // renderView() method and returns the HTML code
+    }
+
+}
+\end{lstlisting}

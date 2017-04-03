@@ -4,56 +4,8 @@ Inside this section there will be some examples of code that show how to use \pr
 \subsection{SDK}
 This guide is dedicated to a generic developer which wants to use \progettoShort\ to integrate its feature inside his \termine{Meteor.js} project. 
 
-\subsubsection{Usage of a bubble}
-\paragraph{Use of a default bubble}
-Inside \progettoShort\ there are three kinds of bubbles available:
-\begin{itemize}
-	\item \textbf{MarkdownBubble}: represents a bubble which holds a text that can be formatted using the \termine{markdown} markup language;
-	\item \textbf{ToDoListBubble}: represents a bubble that holds a to-do list made using a list of check buttons;
-	\item \textbf{AlertBubble}: represents a bubble that holds a message which will be displayed as an alert.
-\end{itemize}
+\input{Sezioni/3-HowToUse/Widgets.tex}
+\input{Sezioni/3-HowToUse/Layouts.tex}
+\input{Sezioni/3-HowToUse/Bubbles.tex}
+\input{Sezioni/3-HowToUse/SDKGeneral.tex}
 
-%immagine di codice bolle e come si vedono
-
-In order to instantiate one of these bubble, all that needs to be done is the following:
-\begin{lstlisting}[language=JavaScript, frame=single]
-// Needed to be able to create the new bubble instance
-import {AlertBubble} from {BOH}
-
-let bubble = new AlertBubble();
-// Now you can work with this bubble accessing its methods
-\end{lstlisting}
-
-\textbf{Note}. We are not describing how to use all the default bubbles as the code is always the same, except that the bubble's name.
-
-\paragraph{Creation of a new type of bubble}
-To create a new bubble type it is necessary to extend the abstract class \texttt{BaseBubble} and define a no-arguments constructor which calls the one of \texttt{BaseBubble}. \\
-\begin{lstlisting}[language=JavaScript, frame=single]
-// Needed to be able to extend from the BaseBubble class
-import {BaseBubble} from {BOH}
-
-export class MyBubble extends BaseBubble {
-    constructor(){
-        // Necessary call
-        super();
-        
-        // Initialize the bubble
-    }
-}
-\end{lstlisting}
-
-%immagine del codice di una nuova bolla creata da uno sviluppatore con i propri campi
-
-
-
-\subsubsection{Composition/chaining of layouts or widgets}
-
-In the \termine{SDK} you can also compose the Bubble as you want. To make this clearer we'll give you some examples of adding a Widget and adding layouts.
-
-\paragraph{Adding a widget}
-
-%immagine
-
-\paragraph{Adding a Layout with some widgets}
-
-%immagine

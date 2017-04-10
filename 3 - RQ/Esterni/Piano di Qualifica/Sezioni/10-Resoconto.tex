@@ -93,29 +93,35 @@ L'analisi statica dei documenti è stata fatta mediante Walkthrough ed ha portat
 \newpage
 
 \subsection{Livello dei processi}
-\begin{longtable}{|>{\centering}m{5cm}|c|c|c|c|c|}
+\begin{longtable}{|>{\centering}m{6cm}|c|c|c|c|c|}
 \hline
 \textbf{Processo} & \textbf{Livello} & \textbf{Esito} & \textbf{Valore}\\
 \hline
 \endhead
-\emph{Processo di fornitura} & \textcolor{Green}{3} & Superato & Ottimale\\ \hline
-\emph{Processo di sviluppo} & \textcolor{Orange}{0} & Non superato & /\\ \hline
-\emph{Validazione} & \textcolor{Orange}{0} & Non superato & /\\
-\hline
+\emph{Processo di fornitura} & \textcolor{Green}{1} & Superato & Accettabile\\ \hline
+\emph{Processo di sviluppo} & \textcolor{Green}{2}* & Superato & Accettabile\\ \hline
 \emph{Processo di documentazione} & \textcolor{Green}{2} & Superato & Accettabile\\ 
 \hline
-\emph{Processo di Configurazione} & \textcolor{Green}{1} & Superato & Accettabile\\ 
+\emph{Processo di Configurazione} & \textcolor{Green}{1} & Superato & Ottimale\\ 
 \hline
-\emph{Processo di garanzia di qualità del Prodotto} & \textcolor{Green}{1} & Superato & Accettabile\\ 
+\emph{Processo di garanzia di qualità del Prodotto} & * & / & /\\ 
 \hline
-\emph{Processo di Verifica} & \textcolor{Green}{1} & Superato & Accettabile\\ 
+\emph{Processo di Verifica} & \textcolor{Green}{1} & Superato & Ottimale\\ 
 \hline
-\emph{Processo di Validazione} & \textcolor{Green}{1} & Superato & Accettabile\\ 
+\emph{Processo di Validazione} & * & / & /\\ 
 \hline
-\emph{Processo di Risoluzione dei problemi} & \textcolor{Green}{1} & Superato & Accettabile\\ 
+\emph{Processo di Risoluzione dei problemi} & \textcolor{Green}{1} & Superato & Ottimale\\ 
+\hline
+\emph{Processo di Coordinamento} & \textcolor{Green}{1} & Superato & Ottimale\\ 
+\hline
+\emph{Processo di Pianificazione} & \textcolor{Green}{1} & Superato & Ottimale\\ 
+\hline
+\emph{Processo di Formazione} & \textcolor{Green}{1} & Superato & Ottimale\\ 
 \hline
 \caption{RR-Livello dei processi}
 \end{longtable}
+
+Per i processi con segnatura \texttt{Voto*} vengono considerate solo le attività inerenti al lavoro che deve essere svolto per la \textit{Revisione di progettazione}. Per quelli, invece, con solo \texttt{*} significa che nessuna attività di quel processo era necessaria per il raggiungimento della milestone esterna.
 
 \newpage
 
@@ -210,24 +216,35 @@ L'analisi statica dei documenti è stata fatta mediante Walkthrough ed ha portat
 \end{longtable}
 
 \subsection{Livello dei processi}
-\begin{longtable}{|>{\centering}m{5cm}|c|c|c|c|c|}
+\begin{longtable}{|>{\centering}m{6cm}|c|c|c|c|c|}
 \hline
 \textbf{Processo} & \textbf{Livello} & \textbf{Esito} & \textbf{Valore}\\
 \hline
 \endhead
-\emph{Pianificazione, Controllo e Valutazione} & \textcolor{Green}{2} & Superato & Accettabile\\ \hline
-\emph{Processo di gestione dei rischi} & \textcolor{Green}{3} & Superato & Ottimale\\ \hline
-\emph{Processo di analisi dei requisiti software} & \textcolor{Orange}{0} & Non superato & /\\ \hline
-\emph{Processo di progettazione dell’architettura di sistema} & \textcolor{Green}{2} & Superato & Accettabile\\ \hline
-\emph{Processo di progettazione dell’architettura di sistema in dettaglio} & \textcolor{Green}{2} & Superato & Accettabile\\ \hline
-\emph{Processo di codifica del Software} & \textcolor{Orange}{0} & Non superato & /\\ \hline
-\emph{Processo di integrazione Software} & \textcolor{Orange}{0} & Non superato & /\\ \hline
-\emph{Processo di Validazione} & \textcolor{Orange}{0} & Non superato & /\\ 
+\emph{Processo di fornitura} & \textcolor{Green}{2} & Superato & Ottimale\\ \hline
+\emph{Processo di sviluppo} & \textcolor{Green}{2}* & Superato & Accettabile\\ \hline
+\emph{Processo di documentazione} & \textcolor{Green}{2} & Superato & Accettabile\\ 
 \hline
-\emph{Processo di documentazione} & \textcolor{Green}{3} & Superato & Ottimale\\ 
+\emph{Processo di Configurazione} & \textcolor{Green}{1} & Superato & Ottimale\\ 
+\hline
+\emph{Processo di garanzia di qualità del Prodotto} & * & / & /\\ 
+\hline
+\emph{Processo di Verifica} & \textcolor{Green}{1} & Superato & Ottimale\\ 
+\hline
+\emph{Processo di Validazione} & * & / & /\\ 
+\hline
+\emph{Processo di Risoluzione dei problemi} & \textcolor{Green}{1} & Superato & Ottimale\\ 
+\hline
+\emph{Processo di Coordinamento} & \textcolor{Green}{1} & Superato & Ottimale\\ 
+\hline
+\emph{Processo di Pianificazione} & \textcolor{Green}{1} & Superato & Ottimale\\ 
+\hline
+\emph{Processo di Formazione} & \textcolor{Green}{1} & Superato & Ottimale\\ 
 \hline
 \caption{RP-Livello dei processi}
 \end{longtable}
+
+Per i processi con segnatura \texttt{Voto*} vengono considerate solo le attività inerenti al lavoro che deve essere svolto per la \textit{Revisione di progettazione}. Per quelli, invece, con solo \texttt{*} significa che nessuna attività di quel processo era necessaria per il raggiungimento della milestone esterna.
 
 \newpage
 

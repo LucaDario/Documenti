@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Gantt" company="" webLink="http://" view-date="2016-12-05" view-index="0" gantt-divider-location="273" resource-divider-location="300" version="2.8.1" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Gantt" company="" webLink="http://" view-date="2017-02-20" view-index="0" gantt-divider-location="375" resource-divider-location="300" version="2.8.1" locale="it">
     <description/>
-    <view zooming-state="default:4" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="123" order="0"/>
-        <field id="tpd4" name="Data d'inizio" width="46" order="1"/>
-        <field id="tpd5" name="Data di fine" width="55" order="2"/>
-        <field id="tpd6" name="Durata" width="43" order="3"/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Nome" width="153" order="0"/>
+        <field id="tpd4" name="Data d'inizio" width="63" order="1"/>
+        <field id="tpd5" name="Data di fine" width="65" order="2"/>
+        <field id="tpd6" name="Durata" width="73" order="3"/>
         <option id="color.recent"><![CDATA[#009900 #006600 #000000]]></option>
     </view>
     <view id="resource-table">
@@ -143,7 +143,7 @@
                 <task id="174" name="Verifica" meeting="false" start="2017-02-21" duration="1" complete="0" expand="true"/>
             </task>
         </task>
-        <task id="34" name="Progettazione di Dettaglio e Codifica" color="#009900" meeting="false" start="2017-02-22" duration="49" complete="0" expand="false">
+        <task id="34" name="Progettazione di Dettaglio e Codifica" color="#009900" meeting="false" start="2017-02-22" duration="76" complete="0" expand="true">
             <task id="110" name="Norme di Progetto" meeting="false" start="2017-02-26" duration="19" complete="0" expand="true">
                 <task id="192" name="Incremento" meeting="false" start="2017-02-26" duration="18" complete="0" expand="true">
                     <depend id="111" type="2" difference="0" hardness="Strong"/>
@@ -156,73 +156,89 @@
                 </task>
                 <task id="184" name="Verifica" meeting="false" start="2017-04-04" duration="1" complete="0" expand="true"/>
             </task>
-            <task id="186" name="Piano di Progetto" meeting="false" start="2017-02-26" duration="38" complete="0" expand="true">
-                <task id="188" name="Incremento" meeting="false" start="2017-02-26" duration="37" complete="0" expand="true">
+            <task id="186" name="Piano di Progetto" meeting="false" start="2017-02-26" duration="46" complete="0" expand="true">
+                <task id="188" name="Incremento" meeting="false" start="2017-02-26" duration="45" complete="0" expand="true">
                     <depend id="190" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="190" name="Verifica" meeting="false" start="2017-04-04" duration="1" complete="0" expand="true"/>
+                <task id="190" name="Verifica" meeting="false" start="2017-04-12" duration="1" complete="0" expand="true"/>
             </task>
-            <task id="196" name="Progettazione" meeting="false" start="2017-02-23" duration="41" complete="0" expand="true">
-                <task id="197" name="Progettazione di Dettaglio" meeting="false" start="2017-02-23" duration="41" complete="0" expand="true"/>
-                <task id="216" name="Verifica" meeting="false" start="2017-02-28" duration="36" complete="0" expand="true"/>
+            <task id="196" name="Progettazione" meeting="false" start="2017-02-23" duration="66" complete="0" expand="true">
+                <task id="197" name="Progettazione di Dettaglio" meeting="false" start="2017-02-23" duration="66" complete="0" expand="true"/>
+                <task id="216" name="Verifica" meeting="false" start="2017-02-28" duration="61" complete="0" expand="true"/>
             </task>
-            <task id="101" name="Definizione di Prodotto" meeting="false" start="2017-03-02" duration="41" complete="0" expand="true">
-                <task id="105" name="Stesura" meeting="false" start="2017-03-02" duration="40" complete="0" expand="true"/>
-                <task id="107" name="Verifica" meeting="false" start="2017-03-05" duration="38" complete="0" expand="true"/>
+            <task id="101" name="Definizione di Prodotto" meeting="false" start="2017-03-02" duration="63" complete="0" expand="true">
+                <task id="105" name="Stesura" meeting="false" start="2017-03-02" duration="63" complete="0" expand="true"/>
+                <task id="107" name="Verifica" meeting="false" start="2017-03-05" duration="60" complete="0" expand="true"/>
             </task>
-            <task id="199" name="Codifica" meeting="false" start="2017-03-21" duration="22" complete="0" expand="true">
-                <task id="200" name="Stesura" meeting="false" start="2017-03-21" duration="21" complete="0" expand="true"/>
-                <task id="201" name="Verifica" meeting="false" start="2017-03-25" duration="18" complete="0" expand="true"/>
+            <task id="199" name="Codifica" meeting="false" start="2017-03-21" duration="47" complete="0" expand="true">
+                <task id="200" name="Stesura" meeting="false" start="2017-03-21" duration="47" complete="0" expand="true"/>
+                <task id="201" name="Verifica" meeting="false" start="2017-03-25" duration="43" complete="0" expand="true"/>
             </task>
-            <task id="219" name="Manuale Utente" meeting="false" start="2017-03-30" duration="13" complete="0" expand="true">
-                <task id="220" name="Stesura" meeting="false" start="2017-03-30" duration="12" complete="0" expand="true"/>
-                <task id="221" name="Verifica" meeting="false" start="2017-04-11" duration="1" complete="0" expand="true"/>
+            <task id="219" name="Manuale Utente" meeting="false" start="2017-03-30" duration="39" complete="0" expand="true">
+                <task id="220" name="Stesura" meeting="false" start="2017-03-30" duration="38" complete="0" expand="true">
+                    <depend id="221" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="221" name="Verifica" meeting="false" start="2017-05-07" duration="1" complete="0" expand="true"/>
             </task>
-            <task id="115" name="Glossario" meeting="false" start="2017-02-28" duration="43" complete="0" expand="true">
-                <task id="218" name="Incremento" meeting="false" start="2017-02-28" duration="42" complete="0" expand="true"/>
-                <task id="116" name="Verifica" meeting="false" start="2017-04-11" duration="1" complete="0" expand="true"/>
+            <task id="115" name="Glossario" meeting="false" start="2017-02-28" duration="69" complete="0" expand="true">
+                <task id="218" name="Incremento" meeting="false" start="2017-02-28" duration="68" complete="0" expand="true">
+                    <depend id="116" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="116" name="Verifica" meeting="false" start="2017-05-07" duration="1" complete="0" expand="true"/>
             </task>
-            <task id="112" name="Lettera di Presentazione" meeting="false" start="2017-04-10" duration="2" complete="0" expand="true">
-                <task id="113" name="Modifica" meeting="false" start="2017-04-10" duration="1" complete="0" expand="true">
+            <task id="112" name="Lettera di Presentazione" meeting="false" start="2017-04-10" duration="29" complete="0" expand="true">
+                <task id="113" name="Modifica" meeting="false" start="2017-04-10" duration="28" complete="0" expand="true">
                     <depend id="114" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="114" name="Verifica" meeting="false" start="2017-04-11" duration="1" complete="0" expand="true"/>
+                <task id="114" name="Verifica" meeting="false" start="2017-05-08" duration="1" complete="0" expand="true"/>
             </task>
         </task>
-        <task id="35" name="Verifica e Testing Finale" color="#8cb6ce" meeting="false" start="2017-04-12" duration="34" complete="0" expand="true">
-            <task id="223" name="Norme di Progetto" meeting="false" start="2017-04-17" duration="10" complete="0" expand="true">
-                <task id="225" name="Incremento" meeting="false" start="2017-04-17" duration="9" complete="0" expand="true">
+        <task id="35" name="Verifica e Testing Finale" color="#8cb6ce" meeting="false" start="2017-05-09" duration="50" complete="0" expand="false">
+            <task id="223" name="Norme di Progetto" meeting="false" start="2017-05-18" duration="10" complete="0" expand="true">
+                <task id="225" name="Incremento" meeting="false" start="2017-05-18" duration="9" complete="0" expand="true">
                     <depend id="227" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="227" name="Verifica" meeting="false" start="2017-04-26" duration="1" complete="0" expand="true"/>
+                <task id="227" name="Verifica" meeting="false" start="2017-05-27" duration="1" complete="0" expand="true"/>
             </task>
-            <task id="229" name="Piano di Qualifica" color="#000000" meeting="false" start="2017-04-12" duration="31" complete="0" expand="true">
-                <task id="231" name="Incremento" color="#8cb6ce" meeting="false" start="2017-04-12" duration="30" complete="0" expand="true">
+            <task id="229" name="Piano di Qualifica" color="#000000" meeting="false" start="2017-05-18" duration="40" complete="0" expand="true">
+                <task id="231" name="Incremento" color="#8cb6ce" meeting="false" start="2017-05-18" duration="39" complete="0" expand="true">
                     <depend id="233" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="233" name="Verifica" meeting="false" start="2017-05-12" duration="1" complete="0" expand="true"/>
+                <task id="233" name="Verifica" meeting="false" start="2017-06-26" duration="1" complete="0" expand="true"/>
             </task>
-            <task id="235" name="Piano di Progetto" meeting="false" start="2017-04-18" duration="27" complete="0" expand="true">
-                <task id="237" name="Incremento" meeting="false" start="2017-04-18" duration="26" complete="0" expand="true">
+            <task id="235" name="Piano di Progetto" meeting="false" start="2017-05-16" duration="42" complete="0" expand="true">
+                <task id="237" name="Incremento" meeting="false" start="2017-05-16" duration="41" complete="0" expand="true">
                     <depend id="239" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="239" name="Verifica" meeting="false" start="2017-05-14" duration="1" complete="0" expand="true"/>
+                <task id="239" name="Verifica" meeting="false" start="2017-06-26" duration="1" complete="0" expand="true"/>
             </task>
-            <task id="241" name="Manuale Utente" meeting="false" start="2017-04-25" duration="20" complete="0" expand="true">
-                <task id="243" name="Incremento" meeting="false" start="2017-04-25" duration="19" complete="0" expand="true">
+            <task id="274" name="Definizione di Prodotto" meeting="false" start="2017-05-09" duration="39" complete="0" expand="true">
+                <task id="275" name="Incremento" meeting="false" start="2017-05-09" duration="38" complete="0" expand="true">
+                    <depend id="276" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="276" name="Verifica" meeting="false" start="2017-06-16" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="279" name="Codifica" meeting="false" start="2017-05-10" duration="36" complete="0" expand="true">
+                <task id="280" name="Incremento" meeting="false" start="2017-05-10" duration="35" complete="0" expand="true">
+                    <depend id="281" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="281" name="Verifica" meeting="false" start="2017-06-14" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="241" name="Manuale Utente" meeting="false" start="2017-05-25" duration="33" complete="0" expand="true">
+                <task id="243" name="Incremento" meeting="false" start="2017-05-25" duration="32" complete="0" expand="true">
                     <depend id="245" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="245" name="Verifica" meeting="false" start="2017-05-14" duration="1" complete="0" expand="true"/>
+                <task id="245" name="Verifica" meeting="false" start="2017-06-26" duration="1" complete="0" expand="true"/>
             </task>
-            <task id="247" name="Glossario" meeting="false" start="2017-04-30" duration="15" complete="0" expand="true">
-                <task id="249" name="Incremento" meeting="false" start="2017-04-30" duration="14" complete="0" expand="true">
+            <task id="247" name="Glossario" meeting="false" start="2017-06-12" duration="15" complete="0" expand="true">
+                <task id="249" name="Incremento" meeting="false" start="2017-06-12" duration="14" complete="0" expand="true">
                     <depend id="251" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="251" name="Verifica" meeting="false" start="2017-05-14" duration="1" complete="0" expand="true"/>
+                <task id="251" name="Verifica" meeting="false" start="2017-06-26" duration="1" complete="0" expand="true"/>
             </task>
-            <task id="252" name="Collaudo" meeting="false" start="2017-04-20" duration="26" complete="0" expand="true">
-                <task id="253" name="Verifica" meeting="false" start="2017-04-28" duration="17" complete="0" expand="true"/>
-                <task id="254" name="Testing" meeting="false" start="2017-04-20" duration="26" complete="0" expand="true"/>
+            <task id="252" name="Collaudo" meeting="false" start="2017-05-17" duration="42" complete="0" expand="true">
+                <task id="253" name="Verifica" meeting="false" start="2017-05-17" duration="42" complete="0" expand="true"/>
+                <task id="254" name="Testing" meeting="false" start="2017-05-25" duration="34" complete="0" expand="true"/>
             </task>
         </task>
     </tasks>

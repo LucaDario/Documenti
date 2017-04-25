@@ -45,7 +45,7 @@
       },
       {
         "description": "Verificare che in un widget di tipo immagine l'immagine venga agiunta in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
@@ -55,17 +55,17 @@
       },
       {
         "description": "Verificare che un widget di tipo immagine venga impostata la dimensione del immagine da visualizzare in modo corretto",
-        "implemented": true,
+        "implemented": false,
         "approved": false
       },
       {
         "description": "Verificare che all'instanziazione di un widget di tipo immagine venga impostata la larghezza e l'altezza di default",
-        "implemented": true,
+        "implemented": false,
         "approved": false
       },
       {
         "description": "Verificare un widget di tipo immagine venga visualizzato con le dimensioni corrette",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
@@ -120,32 +120,32 @@
       },
       {
         "description": "Verificare che un un widget di tipo checkbutton venga cambiato in modo corretto la stato da \"cliccato\" a \"non cliccato\" e viceversa",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che all'instanziazione di un widget di tipo checkbutton venga inpostato lo stato a \"non cliccato\"",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che un widget di tipo checkbutton venga visualizzato con lo stile di spunta e colore corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che in un widget di tipo checkbutton vengano associati gli eventi di pressione nel modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che in un widget di tipo checkbutton vengano associati gli eventi di pressione prolungata nel modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che in un widget di tipo checkbutton vengano eseguiti gli eventi associati alla pressione",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
@@ -185,6 +185,26 @@
       },
       {
         "description": "Verificare che in un widget di tipo list che vengano aggiunti correttamente tutti gli elementi",
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un layout verticale sia possibile aggiungere un elemento",
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un layout verticale non sia possibile aggiungere se stesso",
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un layout orizzontale sia possibile aggiungere un elemento",
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un layout orizzontale non sia possibile aggiungere se stesso",
         "implemented": true,
         "approved": false
       },

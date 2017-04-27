@@ -628,14 +628,84 @@
     "skip_not_approved": false,
     "tests": [
       {
-        "description": "Viene verificato che sia possibile creare un widget di tipo testo formattato",
+        "description": "Viene verificato che sia possibile creare e aggiungere ad una bolla un widget per tipo, tra quelli presenti nell'SDK",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile creare un widget di tipo immagine",
+        "description": "Viene verificato che sia possibile creare e aggiungere ad una bolla un layout per tipo, tra quelli presenti nell'SDK",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile impostare le variabili di un widget testo formattato",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che un widget testo formattato faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile impostare le variabili di un widget immagine",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che un widget immagine faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile impostare le variabili di un widget bottone",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che un widget bottone faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile impostare le variabili di un widget checklistitem",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che un widget checklistitem faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che sia possibile impostare le variabili di un widget lista",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che un widget lista faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
         "implemented": false,
         "approved": false,
         "type": "F",
@@ -656,76 +726,6 @@
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile creare un widget di tipo bottone",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che sia possibile creare un widget di tipo checkbutton",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che sia possibile creare un widget di tipo checklist",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che sia possibile spuntare un elemento di un widget checklist",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che la spunta di un elemento di un widget checklist sia rappresentato mediate una spunta",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che la spunta di un elemento di un widget checklist sia rappresentato mediate una \"x\"",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "D"
-      },
-      {
-        "description": "Viene verificato che la spunta di un elemento di un widget checklist sia rappresentato mediate la colorazione della casella di spunta",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "D"
-      },
-      {
-        "description": "Viene verificato che sia possibile creare un widget personalizzato",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "D"
-      },
-      {
-        "description": "Viene verificato che i widget si dispongano in verticale all'interno di un VerticalLayoutView",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che i widget si dispongano in orizzontale all'interno di un HorizzontalLayoutView",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
         "description": "Viene verificato che sia possibile aggiungere un widget all'interno di un VerticalLayoutView",
         "implemented": false,
         "approved": false,
@@ -734,27 +734,6 @@
       },
       {
         "description": "Viene verificato che sia possibile aggiungere un widget all'interno di un HorizzontalLayoutView",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che sia possibile creare un layout personalizzato",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "F"
-      },
-      {
-        "description": "Viene verificato che sia possibile aggiungere un widget all'interno di una bolla",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che sia possibile aggiungere un layout all'interno di una bolla",
         "implemented": false,
         "approved": false,
         "type": "F",
@@ -776,13 +755,6 @@
       },
       {
         "description": "Viene verificato che sia possibile istanziare una bolla lista",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che sia possibile aggiungere metodi e campi dati ad una bolla",
         "implemented": false,
         "approved": false,
         "type": "F",

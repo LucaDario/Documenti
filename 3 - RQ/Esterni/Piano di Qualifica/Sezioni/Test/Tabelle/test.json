@@ -119,62 +119,42 @@
         "approved": false
       },
       {
-        "description": "Verificare che un un widget di tipo checkbutton venga cambiato in modo corretto la stato da \"cliccato\" a \"non cliccato\" e viceversa",
+        "description": "Verificare che un un widget di tipo checklistitem venga cambiato in modo corretto la stato da \"cliccato\" a \"non cliccato\" e viceversa",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che all'instanziazione di un widget di tipo checkbutton venga inpostato lo stato a \"non cliccato\"",
+        "description": "Verificare che all'instanziazione di un widget di tipo checklistitem venga impostato lo stato a \"non cliccato\"",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che un widget di tipo checkbutton venga visualizzato con lo stile di spunta e colore corretto",
+        "description": "Verificare che un widget di tipo checklistitem venga visualizzato con lo stile di spunta e colore corretto",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che in un widget di tipo checkbutton vengano associati gli eventi di pressione nel modo corretto",
+        "description": "Verificare che in un widget di tipo checklistitem vengano associati gli eventi di pressione nel modo corretto",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che in un widget di tipo checkbutton vengano associati gli eventi di pressione prolungata nel modo corretto",
+        "description": "Verificare che in un widget di tipo checklistitem vengano associati gli eventi di pressione prolungata nel modo corretto",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che in un widget di tipo checkbutton vengano eseguiti gli eventi associati alla pressione",
+        "description": "Verificare che in un widget di tipo checklistitem vengano eseguiti gli eventi associati alla pressione",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che in un widget di tipo checkbutton vengano eseguiti gli eventi associati alla pressione pressione prolungata",
+        "description": "Verificare che in un widget di tipo checklistitem vengano eseguiti gli eventi associati alla pressione pressione prolungata",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Verificare che in un widget di tipo checkbutton venga impostato in modo corretto la soglia per determinare che una pressione da parte del utente è di tipo: \"pressione prolungata\"",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che il widget di tipo checklist venga visualizzato con lo stile corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che in un widget di tipo checklist venga visualizzato l'eventuale messaggio di completamento",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che in un widget di tipo checklist venga mostrato un messaggio di errore se il messagio di completamento non è valido",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che in un widget di tipo checklist venga mostrato un messaggio di errore se il messagio di completamento non è valido",
+        "description": "Verificare che in un widget di tipo checklistitem venga impostato in modo corretto la soglia per determinare che una pressione da parte del utente è di tipo: \"pressione prolungata\"",
         "implemented": false,
         "approved": false
       },
@@ -220,16 +200,6 @@
       },
       {
         "description": "Verificare che l'immagine della lista della spesa venga impostata in modo corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che l'immagine della lista della spesa venga mostrata in modo corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che l'immagine della lista della spesa venga mostrata in modo corretto",
         "implemented": false,
         "approved": false
       },
@@ -346,42 +316,42 @@
     "skip_not_approved": false,
     "tests": [
       {
-        "description": "Si verifica che il mettodo ButtonWidget::setText passi correttamente al presenter il testo il  quale eventualmente formatterà il testo e lo presenterà nella view",
+        "description": "Si verifica che il metodo ButtonWidget::setText passi correttamente al presenter il testo il  quale eventualmente formatterà il testo e lo presenterà nella view",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che il mettodo ButtonWidget::setHeight passi correttamente al presenter il valore dell'altezza il quale aggiornerà la view",
+        "description": "Si verifica che il metodo ButtonWidget::setHeight passi correttamente al presenter il valore dell'altezza il quale aggiornerà la view",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che il mettodo ButtonWidget::setWidth passi correttamente al presenter il valore della lareghezza il quale aggiornerà la view",
+        "description": "Si verifica che il metodo ButtonWidget::setWidth passi correttamente al presenter il valore della lareghezza il quale aggiornerà la view",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che il mettodo ButtonWidget::setBackgroundColor passi correttamente al presenter il colore dello sfondo il quale aggiornerà la view",
+        "description": "Si verifica che il metodo ButtonWidget::setBackgroundColor passi correttamente al presenter il colore dello sfondo il quale aggiornerà la view",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che il mettodo ButtonWidget::setOnClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene premuto il pulsante",
+        "description": "Si verifica che il metodo ButtonWidget::setOnClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene premuto il pulsante",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che il mettodo ButtonWidget::setOnLongClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene mantenuto premuto il pulsante",
+        "description": "Si verifica che il metodo ButtonWidget::setOnLongClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene mantenuto premuto il pulsante",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che il mettodo TextWidget::setText passi correttamente al presenter il testo che verrà poi mostrato a video",
+        "description": "Si verifica che il metodo TextWidget::setText passi correttamente al presenter il testo che verrà poi mostrato a video",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che il mettodo TextWidget::setTextColor passi correttamente al presenter il colore del testo il quele dovrà presengtare il testo nel colore corrispondente",
+        "description": "Si verifica che il metodo TextWidget::setTextColor passi correttamente al presenter il colore del testo il quele dovrà presengtare il testo nel colore corrispondente",
         "implemented": false,
         "approved": false
       },
@@ -401,27 +371,17 @@
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo ChecklistWidget::addOption passi al presenter il testo del elemento il quale dovrà presentare la view con il nuovo elemento",
+        "description": "Si verifica che il metodo ChecklistItemWidget::setUseSelectionMark imposti la scelta di utilizzare un carattere o un colore come spunta",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo ChecklistWidget::setUseSelectionMark ",
+        "description": "Si verifica che il metodo ChecklistItemWidget::setSelectionColor passi al presenter il colore dello spunta il quale dovrà presentare la lista con lo stile corretto",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo ChecklistWidget::setSelectionColor passi al presenter il colore dello spunta il quale docrà presentare la lista con lo stile corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che il metodo ChecklistWidget::setSelectionCharacter passi al presenter lo stile della spunta il quale dovrà presentare la lista con lo stile corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che il metodo ChecklistWidget::setCompletionMessage passi al presenter il messaggio che dovrà essere visualizzato quando il tutti gli elemnti della lista vengono spuntati",
+        "description": "Si verifica che il metodo ChecklistItemWidget::setSelectionCharacter passi al presenter un carattere per la spunta, e il presenter dovrà presentare la lista con lo stile corretto",
         "implemented": false,
         "approved": false
       },

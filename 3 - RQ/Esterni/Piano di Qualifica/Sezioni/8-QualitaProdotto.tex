@@ -47,23 +47,6 @@ Il \termine{team} si impegnerà affinché:
 \captionof{table}{Accuratezza rispetto alle attese}
 \end{center}	
 
-\paragraph{Controllo degli accessi}
-
-\begin{itemize}
-\item \textbf{Misurazione}: $I=\frac{N_{IE}}{N_{II}} \cdot 100$, dove $N_{IE}$ è il numero di operazioni illegali effettuabili dai test e $N_{II}$ è il numero di operazioni illegali individuate;
-\end{itemize}
-
-\begin{center}
-		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
-		\hline
-			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
-			\hline
-			0 -- 10 & 0 &	Garantire che tutte le operazioni definite illegali dal gruppo siano bloccate almeno in gran parte. \\
-			\hline
-			\end{tabular}
-\captionof{table}{Controllo degli accessi}
-\end{center}
-
 \subsection{Affidabilità}
 Rappresenta la capacità del prodotto software di svolgere correttamente le sue funzioni durante il suo utilizzo, anche nel caso in cui si presentino situazioni anomale.
 
@@ -112,77 +95,6 @@ L'esecuzione del prodotto dovrà presentare le seguenti caratteristiche:
 			\hline
 			\end{tabular}
 \captionof{table}{Controllo degli accessi}
-\end{center}
-
-
-\subsection{Usabilità}
-Rappresenta la capacità del prodotto di essere facilmente comprensibile e attraente in ogni sua parte per qualsiasi utente che lo andrà ad utilizzare.
-
-\subsubsection{Obiettivi di qualità}
-Il prodotto dovrà puntare ai seguenti obiettivi di usabilità:
-\begin{itemize}
-\item \textbf{Comprensibilità)}: l'utente dovrà essere in grado di riconoscerne le funzionalità offerte dal software e dovrà comprenderne le modalità di utilizzo per riuscire a raggiungere i risultati attesi;
-\item \textbf{Apprendibilità}: dovrà essere data la possibilità all'utente di imparare ad utilizzare l'applicazione senza troppo impegno;
-\item \textbf{Operabilità}: le funzionalità presenti dovranno essere coerenti con le aspettative dell'utente.
-\end{itemize}
-
-\subsubsection{Metriche}
-\paragraph{Comprensibilità delle funzioni offerte}
-
-\begin{itemize}
-	\item \textbf{Misurazione}: 
-		$$C=\mathlarger{\frac{N_{FC}}{N_{FO}}} \cdot 100$$
-	dove $N_{FC}$ è il numero di funzionalità comprese in modo immediato dall'utente durante l'attività di testing del prodotto e $N_{FO}$ è il numero di funzionalità offerte dal sistema.
-\end{itemize}
-
-\begin{center}
-		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
-		\hline
-			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
-			\hline
-			80 -- 100 & 90 -- 100 &	Garantire una buona garanzia che l'utente comprenda tutte le funzioni offerte dal programma. \\
-			\hline
-			\end{tabular}
-\captionof{table}{Comprensibilità delle funzioni offerte}
-\end{center}
-
-
-\paragraph{Facilità di apprendimento delle funzionalità}
-
-\begin{itemize}
-	\item \textbf{Misurazione}: indicatore numerico, espresso in minuti, che tiene traccia del tempo medio impiegato dall'utente nell'apprendere il corretto utilizzo di una funzionalità offerta dal sistema.
-
-\end{itemize}
-
-\begin{center}
-		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
-		\hline
-			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
-			\hline
-			0 -- 30 & 0 -- 15 &	Garantire che l'utente apprenda le funzionalità principali del software in un lasso di tempo non eccessivo. \\
-			\hline
-			\end{tabular}
-\captionof{table}{Facilità di apprendimento delle funzionalità}
-\end{center}
-
-
-\paragraph{Consistenza operazionale in uso}
-
-\begin{itemize}
-	\item \textbf{Misurazione}: 
-		$$C=\left(1-\mathlarger{\frac{N_{MFI}}{N_{MFO}}}\right) \cdot 100$$
-	dove $N_{MFI}$ è il numero di messaggi e funzionalità che non rispettano le aspettative dell'utente e $N_{MFO}$ è il numero di messaggi e funzionalità offerti dal sistema.
-\end{itemize}
-
-\begin{center}
-		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
-		\hline
-			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
-			\hline
-			80 -- 100 & 90 -- 100 &	Garantire che le aspettative dell'utente non siano deluse dal comportamento del software. \\
-			\hline
-			\end{tabular}
-\captionof{table}{Consistenza operazionale in uso}
 \end{center}
 
 

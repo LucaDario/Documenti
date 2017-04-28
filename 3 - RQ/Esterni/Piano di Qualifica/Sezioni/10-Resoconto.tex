@@ -92,7 +92,7 @@ L'analisi statica dei documenti è stata fatta mediante Walkthrough ed ha portat
 
 \newpage
 
-\subsection{Livello dei processi}
+\subsubsection{Livello dei processi}
 \begin{longtable}{|>{\centering}m{6cm}|c|c|c|c|c|}
 \hline
 \textbf{Processo} & \textbf{Livello} & \textbf{Esito} & \textbf{Valore}\\
@@ -215,7 +215,7 @@ L'analisi statica dei documenti è stata fatta mediante Walkthrough ed ha portat
 \caption{RP-Metriche di qualità di processo}
 \end{longtable}
 
-\subsection{Livello dei processi}
+\subsubsection{Livello dei processi}
 \begin{longtable}{|>{\centering}m{6cm}|c|c|c|c|c|}
 \hline
 \textbf{Processo} & \textbf{Livello} & \textbf{Esito} & \textbf{Valore}\\
@@ -283,3 +283,74 @@ L'analisi statica dei documenti è stata fatta mediante Walkthrough ed ha portat
 	\end{center}
 	\caption{RQ - Risultato indice di Gulpease}
 \end{table}
+
+
+\subsubsection{Soddisfacimento metriche}
+
+\paragraph{Qualità di processo}
+\begin{longtable}{|>{\centering}m{5cm}|c|c|c|c|c|}
+\hline
+\textbf{Metrica} & \textbf{Unità di misura} & \textbf{Risultato} & \textbf{Risultato Massimo} & \textbf{Esito} & \textbf{Valore}\\
+\hline
+\endhead
+
+%\emph{Schedule Variance} & {Attività} & \textcolor{Green}{0} & / & Superato & Ottimale\\ \hline
+%\emph{Budget Variance} & {Euro} & \textcolor{Orange}{-50} & / & Non superato & /\\ \hline
+%\emph{Ottimalità delle misurazioni} & {Percentuale} & \textcolor{Green}{0.6} & / & Superato & Ottimale \\ \hline
+\emph{Rischi non preventivati} & {Rischi} & \textcolor{Green}{2} & / & Superato & Accettabile\\ \hline
+%\emph{Requisiti obbligatori soddisfatti} & {Percentuale} & \textcolor{Green}{100} & $100$ & $100$\\ \hline
+%\emph{Livello di stabilità-SDK} & {Percentuale} & / &\textcolor{Green}{1} & Superato & Accettabile\\ \hline
+%\emph{Livello di stabilità-Applicazione} & {Percentuale} & / &\textcolor{Green}{1} & Superato & Accettabile\\ \hline
+%\emph{Astrattezza-SDK} & {Percentuale} & / &\textcolor{Green}{0.8} & Superato & Accettabile\\ \hline
+%\emph{Astrattezza-Applicazione} & {Percentuale} & / &\textcolor{Green}{0.5} & Superato & Ottimale\\ \hline
+%\emph{Distanza dalla sequenza principale-SDK} & {Percentuale} & / &\textcolor{Green}{1} & Superato & Accettabile\\ \hline
+%\emph{Distanza dalla sequenza principale-Applicazione} & {Percentuale} & / &\textcolor{Green}{0.7} & Superato & Accettabile\\ \hline
+\emph{Numero di metodi per classe} & {Metodi} & \textcolor{Green}{12} & 15 & Superato & Accettabile\\ \hline
+\emph{Numero di attributi per classe} & {Attributi} & \textcolor{Green}{7} & 11 & Superato & Ottimale\\ \hline
+\emph{Numero di parametri per metodo} & {Parametri} & \textcolor{Green}{3} & 15 & Superato & Ottimale\\ \hline
+\emph{Complessità Ciclomatica media} & {Cammini} & \textcolor{Green}{1.3} & 15 & Superato & Ottimale\\ \hline
+%\emph{Livelli di annidamento medi} & {Chiamate} & \textcolor{Green}{1} & $1 - 6$ & $1 - 3$\\ \hline
+\emph{Linee di codice per linee di commento} & {Percentuale} & \textcolor{Green}{28.3\%} & / & Superato & Ottimale\\ \hline
+%\emph{Halstead Difficulty media} & {Percentuale} & \textcolor{Green}{0} & $0 - 25$ & $0 - 15$\\ \hline
+%\emph{Halstead Volume media} & {Percentuale} & \textcolor{Green}{20} & $20 - 1500$ & $20 - 1000$\\ \hline
+%\emph{Halstead Effort media} & {Percentuale} & \textcolor{Green}{0} & $0 - 400$ & $0 - 300$\\ \hline
+%\emph{Indice di manutenibilità} & {Percentuale} & \textcolor{Orange}{5.14} & $100 - 171$ & $120 - 171$\\ \hline
+%\emph{Componenti integrate} & {Percentuale} & \textcolor{Green}{100} & $100$ & $100$\\ \hline
+%\emph{Test di Unità eseguiti} & {Percentuale} & \textcolor{Red}{36.6} & $90 - 100$ & $100$\\ \hline
+%\emph{Test di Integrazione eseguiti} & {Percentuale} & \textcolor{Red}{0} & $60 - 100$ & $70 - 100$\\ \hline
+%\emph{Test di Sistema eseguiti} & {Percentuale} & \textcolor{Red}{0} & $70 - 100$ & $80 - 100$\\ \hline
+%\emph{Test di Validazione eseguiti} & {Percentuale} & \textcolor{Red}{0} & $100$ & $100$\\ \hline
+%\emph{Test superati} & {Percentuale} & \textcolor{Green}{100} & $90 - 100$ & $100$\\ \hline
+%\emph{Branch Coverage} & {Percentuale} & \textcolor{Orange}{73.3} & $70 - 100$ & $80 - 100$\\ \hline
+%\emph{Code Coverage} & {Percentuale} & \textcolor{Green}{76.57} & $60 - 100$ & $70 - 100$\\ \hline
+\caption{RQ-Metriche di qualità di processo}
+\end{longtable}
+
+\subsubsection{Livello dei processi}
+\begin{longtable}{|>{\centering}m{6cm}|c|c|c|c|c|}
+\hline
+\textbf{Processo} & \textbf{Livello} & \textbf{Esito} & \textbf{Valore}\\
+\hline
+\endhead
+\emph{Processo di fornitura} & \textcolor{Green}{2} & Superato & Ottimale\\ \hline
+\emph{Processo di sviluppo} & \textcolor{Green}{2}* & Superato & Accettabile\\ \hline
+\emph{Processo di documentazione} & \textcolor{Green}{2} & Superato & Accettabile\\ 
+\hline
+\emph{Processo di Configurazione} & \textcolor{Green}{1} & Superato & Ottimale\\ 
+\hline
+\emph{Processo di garanzia di qualità del Prodotto} & * & / & /\\ 
+\hline
+\emph{Processo di Verifica} & \textcolor{Green}{1} & Superato & Ottimale\\ 
+\hline
+\emph{Processo di Validazione} & * & / & /\\ 
+\hline
+\emph{Processo di Risoluzione dei problemi} & \textcolor{Green}{1} & Superato & Ottimale\\ 
+\hline
+\emph{Processo di Coordinamento} & \textcolor{Green}{1} & Superato & Ottimale\\ 
+\hline
+\emph{Processo di Pianificazione} & \textcolor{Green}{1} & Superato & Ottimale\\ 
+\hline
+\emph{Processo di Formazione} & \textcolor{Green}{1} & Superato & Ottimale\\ 
+\hline
+\caption{RP-Livello dei processi}
+\end{longtable}

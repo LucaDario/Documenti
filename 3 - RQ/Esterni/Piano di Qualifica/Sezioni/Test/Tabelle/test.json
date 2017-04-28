@@ -316,22 +316,22 @@
     "skip_not_approved": false,
     "tests": [
       {
-        "description": "Si verifica che il metodo ButtonWidget::setText passi correttamente al presenter il testo il  quale eventualmente formatterà il testo e lo presenterà nella view",
+        "description": "Si verifica che il metodo ButtonWidget::setText passi correttamente il testo al presenter il quale eventualmente lo formatterà e modificherà correttamente l'HTML e CSS",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo ButtonWidget::setHeight passi correttamente al presenter il valore dell'altezza il quale aggiornerà la view",
+        "description": "Si verifica che il metodo ButtonWidget::setHeight passi correttamente il valore dell'altezza al presenter il quale modificherà correttamente l'HTML e CSS",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo ButtonWidget::setWidth passi correttamente al presenter il valore della lareghezza il quale aggiornerà la view",
+        "description": "Si verifica che il metodo ButtonWidget::setWidth passi correttamente il valore della lareghezza al presenter modificherà correttamente l'HTML e CSS",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo ButtonWidget::setBackgroundColor passi correttamente al presenter il colore dello sfondo il quale aggiornerà la view",
+        "description": "Si verifica che il metodo ButtonWidget::setBackgroundColor passi correttamente il colore dello sfondo del bottone al presenter il quale modificherà correttamente l'HTML e CSS",
         "implemented": false,
         "approved": false
       },
@@ -351,17 +351,17 @@
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo TextWidget::setTextColor passi correttamente al presenter il colore del testo il quele dovrà presengtare il testo nel colore corrispondente",
+        "description": "Si verifica che il metodo TextWidget::setTextColor passi correttamente il colore del testo al presenter il quale modificherà correttamente l'HTML e CSS, presentandolo con il colore corrispondente",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo TextWidget::setFormatText passi al presenter il valore il quale dovrà presentare il testo formattato seguendo la sintassi markdown oppure lasciarlo invariato in fuznione al valore booleano passato al presenter",
+        "description": "Si verifica che il metodo TextWidget::setFormatText passi il valore booleano (che rappresenta la scelta di formattare il testo) al presenter. Essp dovrà, poi, presentare il testo formattato seguendo la sintassi markdown oppure lasciarlo invariato in funzione al valore booleano",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo TextWidget::setUrlHighlightColor passi al presenter il valore il quale dovrà presentare i link evidenziati oppure non evidenziati in fuznione al valore booleano passato al presenter",
+        "description": "Si verifica che il metodo TextWidget::setUrlHighlightColor passi il valore del colore al presenter il quale dovrà presentare i link evidenziati oppure non evidenziati in funzione al colore scelto",
         "implemented": false,
         "approved": false
       },

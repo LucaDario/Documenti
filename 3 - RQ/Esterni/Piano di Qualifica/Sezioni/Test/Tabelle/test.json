@@ -397,27 +397,27 @@
       },
       {
         "description": "Si verifica che il metodo ImageWidget::setWidth passi correttamente al presenter il valore dell'altezza il quale aggiornerà la view",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che il metodo ImageWidget::setHeight passi correttamente al presenter il valore della larghezza il quale aggiornerà la view",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che il metodo ImageWidget::setImage passi correttamente al presenter il path del'immagine che dovrà essere presentata nella view",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che il metodo VerticalLayoutView::renderView generi la view mostrando gli elementi uno sotto l'altro nel ordine in cui sono stati inseriti",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che il metodo HorizontalLayoutView::renderView generi la view mostrando gli elementi uno affinaco all'altro nel ordine in cui sono stati inseriti",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {

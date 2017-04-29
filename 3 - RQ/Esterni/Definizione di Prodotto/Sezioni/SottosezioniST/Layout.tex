@@ -49,8 +49,8 @@ Aggiunge un oggetto BaseComponent al layout verticale.
 \item \textit{component:BaseComponent}\\
 Oggetto che rappresenta il BaseComponent da aggiungere al layout verticale.
 \end{itemize}
-\item \textit{public renderView():string}\\
-Genera il codice HTML, CSS e JavaScript necessario per visualizzare BaseComponent disposti nel layout verticale.
+\item \textit{public renderView():HtmlDOMElement}\\
+Restituisce l'elemento DOM rappresentante i BaseComponent disposti nel layout verticale.
 \end{itemize}
 \end{itemize}
 
@@ -69,15 +69,17 @@ Genera il codice HTML, CSS e JavaScript necessario per visualizzare BaseComponen
 \item \textbf{Attributi:}
 \item \textbf{Metodi:}
 \begin{itemize}
-\item\textit{public HorizzontalLayoutView():HorizzontalLayoutView}\\
-Il costruttore per la classe HorizzontalLayoutView.
+\item\textit{public HorizontalLayoutView():HorizontalLayoutView}\\
+Il costruttore per la classe HorizontalLayoutView.
+\item \textit{private createColumn():Object}\\
+Crea una colonna per la disposizione degli oggetti in senso orizzontale del layout
 \item \textit{public addItem(component:BaseComponent):void}\\
 Aggiunge un oggetto BaseComponent al layout orizzontale.
 \\ \textbf{Parametri}: \begin{itemize}
 \item \textit{component:BaseComponent}\\
 Oggetto che rappresenta il BaseComponent da aggiungere al layout orizzontale.
 \end{itemize}
-\item \textit{public renderView():string}\\
-Genera il codice HTML, CSS e JavaScript necessario per visualizzare BaseComponent disposti nel layout orizzontale.
+\item \textit{public renderView():HtmlDOMElement}\\
+Restituisce l'elemento DOM rappresentante i BaseComponent disposti nel layout orizzontale.
 \end{itemize}
 \end{itemize}

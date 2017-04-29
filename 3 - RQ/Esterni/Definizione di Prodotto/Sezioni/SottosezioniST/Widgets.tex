@@ -71,14 +71,16 @@
 				\item \textit{milliseconds:int}\\
 				Tempo in millisecondi che deve trascorrere dall'inizio della pressione sul bottone.
 	\end{itemize}}
+	\item \textit{public getHeight():string}\\
+	Ritorna l'altezza del bottone.
+	\item \textit{public getWidth():string}\\
+	Ritorna la larghezza del bottone.
+	\item \textit{public getColor():string}\\
+	Ritorna la stringa che rappresenta il colore del bottone in esadecimale.
+	\item \textit{public getText():string}\\
+	Ritorna il testo contenuto all'interno del bottone.
 	\end{itemize}
 \item \textbf{Eventi}:
-	\begin{itemize}
-	\item \textit{public onClick():void}\\
-	Evento che rappresenta il click normale sul bottone, dopo il quale si può personalizzare la reazione del bottone.
-	\item \textit{public onLongClick():void}\\
-	Evento che rappresenta il click prolungato sul bottone, dopo il quale si può personalizzare la reazione del bottone.
-	\end{itemize}
 \end{itemize}
 
 \subsubsection{monolith::component::widget::button::view::ButtonWidget}
@@ -97,13 +99,15 @@
 	\begin{itemize}
 	\item \textit{private presenter:ButtonWidgetPresenter}\\
 	Il presenter associato al widget bottone, al quale questa classe delega la gestione del comportamento del widget stesso.
+	\item \textit{private eventClick:ClickButtonEvent}\\
+	L'oggetto che si occupa della gestione degli eventi emessi dal ButtonWidget.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{ButtonWidget():ButtonWidget}\\
 	Il costruttore della classe ButtonWidget.
-	\item \textit{public renderView():string}\\
-	 Genera il codice HTML CSS JS necessario per visualizzare il widget.
+	\item \textit{public renderView():HtmlDOMElement}\\
+	 Restituisce l'elemento DOM rappresentante il widget.
 	\item \textit{public setText(text:string):void}\\
 	Imposta il testo all'interno del bottone.
 		\\ \textbf{Parametri}: \begin{itemize}
@@ -140,20 +144,24 @@
 		\item \textit{action:function}\\
 		L'azione, sotto forma di funzione, che deve essere eseguita al click prolungato del bottone.
 		\end{itemize}
-		\item \textit{public setOnLongClickActionTimer(milliseconds:int):void}\\
+	\item \textit{public setOnLongClickActionTimer(milliseconds:int):void}\\
 		Questo metodo viene utilizzato per impostare il timer per la pressione prolungata di un bottone.
 				\\ \textbf{Parametri}: \begin{itemize}
 				\item \textit{milliseconds:int}\\
 				Tempo in millisecondi.
 	\end{itemize}
+	\item \textit{public getEvent():ClickButtonEvent}\\
+	Ritorna l'oggetto che si occupa della gestione degli eventi emessi dal ButtonWidget.
+	\item \textit{public getHeight():string}\\
+	Ritorna l'altezza del bottone.
+	\item \textit{public getWidth():string}\\
+	Ritorna la larghezza del bottone.
+	\item \textit{public getColor():string}\\
+	Ritorna la stringa che rappresenta il colore del bottone in esadecimale.
+	\item \textit{public getText():string}\\
+	Ritorna il testo contenuto all'interno del bottone.
 	\end{itemize}
-\item{Eventi}
-	\begin{itemize}
-	\item \textit{public onClick():void}\\
-	Evento che rappresenta il click normale sul bottone, dopo il quale si può personalizzare la reazione del bottone.
-	\item \textit{public onLongClick():void}\\
-	Evento che rappresenta il click prolungato sul bottone, dopo il quale si può personalizzare la reazione del bottone.
-	\end{itemize}
+\item{Eventi}:
 \end{itemize}
 
 \subsubsection{monolith::component::widget::button::presenter::ButtonWidgetPresenter}
@@ -180,6 +188,8 @@
 	L'oggetto che contiene le informazioni sullo stile visuale del bottone.
 	\item \textit{private millisecondsBeforeOnLongClickActs:int}\\
 	Tempo di pressione di un bottone in millisecondi dopo cui eseguire azioni in seguito ad un click prolungato.
+	\item \textit{private dom:HtmlDOMElement}\\
+	L'elemento dom che contiene il widget bottone in questione.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
@@ -230,9 +240,17 @@
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{color:string}\\
 		Rappresenta la stringa in esadecimale corrispondente al colore che verrà impostata come sfondo del bottone.
-		\end{itemize}
-	\item \textit{public renderView():string}\\
-	Genera il codice HTML CSS JS necessario per visualizzare il widget.
+		\end{itemize}\\
+	\item \textit{public getHeight():string}\\
+	Ritorna l'altezza del bottone.
+	\item \textit{public getWidth():string}\\
+	Ritorna la larghezza del bottone.
+	\item \textit{public getColor():string}\\
+	Ritorna la stringa che rappresenta il colore del bottone in esadecimale.
+	\item \textit{public getText():string}\\
+	Ritorna il testo contenuto all'interno del bottone.
+	\item \textit{public renderView():HtmlDOMElement}\\
+	Restituisce l'elemento DOM rappresentante il widget.
 	\end{itemize}
 \end{itemize}
 
@@ -333,6 +351,10 @@
 		\item \textit{size:int}\\
 		Rappresenta il numero di pixel corrispondente all'altezza del testo che verrà impostata all'interno del widget.
 		\end{itemize} 
+	\item \textit{getColor():string}\\
+	Ritorna il colore del testo all'interno del TextWidget.
+	\item \textit{getText():string}\\
+	Ritorna il testo contenuto all'interno del TextWidget.
 	\end{itemize}
 \end{itemize}
 
@@ -387,8 +409,12 @@
 		\item \textit{size:int}\\
 		Rappresenta il numero di pixel corrispondente all'altezza del testo che verrà impostata all'interno del widget.
 		\end{itemize} 
-	\item \textit{public renderView():string}\\
-	Genera il codice HTML CSS JS necessario per visualizzare il widget.
+	\item \textit{getColor():string}\\
+	Ritorna il colore del testo all'interno del TextWidget.
+	\item \textit{getText():string}\\
+	Ritorna il testo contenuto all'interno del TextWidget.
+	\item \textit{public renderView():HtmlDOMElement}\\
+	Restituisce l'elemento DOM rappresentante il widget.
 	\end{itemize}
 \end{itemize}
 
@@ -412,6 +438,8 @@
 	Stile del testo del widget.
 	\item \textit{private urlsStyle:UrlsStyle}\\
 	Stile dei link presenti all'interno del testo.
+	\item \textit{private dom:HtmlDOMElement}\\
+	L'elemento dom che contiene il widget testo in questione.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
@@ -421,6 +449,10 @@
 		\item \textit{view:TextWidgetView}\\
 		La view necessaria alla costruzione del presenter.
 		\end{itemize} 
+	\item \textit{private updateText():void}\\
+	Aggiorna il dom del widget in modo tale da mostrare le modifiche effettuate al testo contenuto al suo interno.
+	\item \textit{private updateLinkColor():void}\\
+	Aggiorna il dom del widget in modo tale da mostrare le modifiche effettuate al colore dei link contenuti all'interno del testo del widget.
 	\item \textit{public setText(text:string):void}\\
 	Imposta il testo all'interno del widget testo.
 		\\ \textbf{Parametri}: \begin{itemize}
@@ -451,8 +483,12 @@
 		\item \textit{size:int}\\
 		Rappresenta il numero di pixel corrispondente all'altezza del testo che verrà impostata all'interno del widget.
 		\end{itemize} 
-	\item \textit{public renderView():string}\\
-	Genera il codice HTML CSS JS necessario per visualizzare il widget.
+	\item \textit{getColor():string}\\
+	Ritorna il colore del testo all'interno del TextWidget.
+	\item \textit{getText():string}\\
+	Ritorna il testo contenuto all'interno del TextWidget.
+	\item \textit{public renderView():HtmlDOMElement}\\
+	Restituisce l'elemento DOM rappresentante il widget.
 	\end{itemize}
 \end{itemize}
 
@@ -560,31 +596,27 @@
 	\end{itemize}
 \end{itemize}
 
-\subsubsection{monolith::component::widget::checklist::ChecklistWidgetView}
+\subsubsection{monolith::component::widget::checklist::ChecklistItemWidgetView}
 
-\label{monolith::component::widget::checklist::ChecklistWidgetView}
+\label{monolith::component::widget::checklist::ChecklistItemWidgetView}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/ChecklistWidgetView.png}
-	\caption{monolith::component::widget::checklist::ChecklistWidgetView}
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/ChecklistItemWidgetView.png}
+	\caption{monolith::component::widget::checklist::ChecklistItemWidgetView}
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione}: Questa interfaccia rappresenta la view relativa ai widget di tipo checklist.
+\item \textbf{Descrizione}: Questa interfaccia rappresenta la view relativa ai widget di tipo checklistitem.
 \item \textbf{Utilizzo}: L'interfaccia viene utilizzata per disaccoppiare presenter e implementazione del widget, visualizza i dati che gli vengono passati dal presenter.
 \item \textbf{Attributi}:
 \item \textbf{Metodi}:
 	\begin{itemize}
-	\item \textit{public addOption(option:CheckOption,onClick:function,onLongClick:function):void}\\
-	Questo metodo aggiunge una opzione alla checklist.
-		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{option:CheckOption}\\
-		L'entry della checklist che verrà aggiunta.
-		\item \textit{onClick:function}\\
-		La funzione che viene eseguita al click normale di una entry della checklist.
-		\item \textit{onLongClick:function}\\
-		La funzione che viene eseguita al click prolungato di una entry della checklist.
-		\end{itemize} 
+	\item \textit{public removeOption():void}\\
+	Questo metodo rimuove il ChecklistItemWidget dalla bolla in cui è stato inserito.
+	\item \textit{public getId():string}\\
+	Questo metodo ritorna l'identificativo del ChecklistItemWidget.
+	\item \textit{public isChecked():boolean}\\
+	Ritorna true se la entry è spuntata, false altrimenti.
 	\item \textit{public setUseSelectionMark(useMark:boolean):void}\\
 	Imposta la visualizzazione delle spunte con un carattere oppure con un colore.
 		\\ \textbf{Parametri}: \begin{itemize}
@@ -603,85 +635,71 @@
 		\item \textit{character:string}\\
 		Il carattere utilizzato per la visualizzazione delle spunte.
 		\end{itemize} 
-	\item \textit{public setChecked(checked:boolean,position:int):void}\\
+	\item \textit{public setChecked(checked:boolean):void}\\
 	Permette di spuntare un oggetto della checlist o di togliere una spunta da esso.
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{checked:boolean}\\
 		Questo booleano è a true se si vorrà spuntare la entry, a false altrimenti.
-		\item \textit{position:int}\\
-		La posizione, all'interno della checklist, dell'elemento del quale si vuole modificare lo stato. 
 		\end{itemize}  
-	\item \textit{public setCheckStyle(style:CheckStyle):void}\\
-	Questo metodo imposta lo stile per le spunte delle opzioni della checklist.
+	\item \textit{public getChecklistUpdate():checklistUpdate}\\
+	Questo metodo restituisce un oggetto di tipo checklistUpdate associato al ChecklistItemWidget in questione, che sarà utilizzato dal presenter per lanciare gli eventi di aggiornamento del widget.
+	\item \textit{public setOnClick(func:function):void}\\
+	Questo metodo viene utilizzato per impostare l'azione che deve essere eseguita dopo il click normale del widget.
 		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{style:CheckStyle}\\
-		Lo stile per le spunte delle opzioni della checklist che verrà impostata.
-		\end{itemize}  
-	\item \textit{public setCompletionMessage(message:string):void}\\
-	Questo metodo imposta il messaggio di completamento che viene visualizzato quando tutte le opzioni della lista vengono spuntate.
+		\item \textit{func:function}\\
+		L'azione, sotto forma di funzione, che deve essere eseguita al click normale del bottone.
+		\end{itemize}
+	\item \textit{public setOnLongClick(func:function):void}\\
+		Questo metodo viene utilizzato per impostare l'azione che deve essere eseguita dopo il click prolungato del widget.
 		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{message:string}\\
-		Stringa che rappresenta il messaggio di completamento della checklist.
-		\end{itemize} 
-	\item \textit{public emitOnListCompletedEvent():void}\\
-	Questo metodo serve per lanciare l'evento di completamento della lista \texttt{onListCompleted()}.
+		\item \textit{func:function}\\
+		L'azione, sotto forma di funzione, che deve essere eseguita al click prolungato del bottone.
+		\end{itemize}
+	\item \texit{public setText(text:string):void}\\
+	Imposta il testo presente all'interno del widget.
+		\\ \textbf{Parametri}: \begin{itemize}
+		\item \textit{text:string}\\
+		Il testo da impostare nel checklistItem widget.
+		\end{itemize}
+	\item \texit{public getText():string}\\
+	Ritorna il testo presente all'interno del ChecklistItemWidget
 	\end{itemize}
 \item{Eventi}:
-	\begin{itemize}
-	\item \textit{public onItemClicked(itemId:string):void}\\
-	Evento che rappresenta il click normale su una delle entry della lista, dopo il quale si può personalizzare la reazione della checklist.
-		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{itemId:string}\\
-		Id corrispondente all'entry della lista che è stata cliccata.
-		\end{itemize} 
-	\item \textit{public onItemLongClicked(itemId:string):void}\\
-	Evento che rappresenta il click prolungato su una delle entry della lista, dopo il quale si può personalizzare la reazione della checklist.
-		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{itemId:string}\\
-		Id corrispondente all'entry della lista che è stata cliccata.
-		\end{itemize} 
-	\item \textit{public onListCompleted():void}\\
-	Evento che rappresenta il completamento della checklist, ovvero quando tutte le sue entry sono spuntate.
-	\end{itemize}
 \end{itemize}
 
-\subsubsection{monolith::component::widget::checklist::view::ChecklistWidget}
+\subsubsection{monolith::component::widget::checklist::view::ChecklistItemWidget}
 
-\label{monolith::component::widget::checklist::view::ChecklistWidget}
+\label{monolith::component::widget::checklist::view::ChecklistItemWidget}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/ChecklistWidget.png}
-	\caption{monolith::component::widget::checklist::view::ChecklistWidget}
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/ChecklistItemWidget.png}
+	\caption{monolith::component::widget::checklist::view::ChecklistItemWidget}
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione}: Questa classe rappresenta un widget checklist, implementando l'interfaccia ChecklistWidgetView
-\item \textbf{Utilizzo}: Implementando i metodi di ChecklistWidgetView questa classe viene utilizzata al momento della creazione e della personalizzazione del widget checklist e del suo contenuto.
+\item \textbf{Descrizione}: Questa classe rappresenta un widget checklistItem, implementando l'interfaccia ChecklistItemWidgetView
+\item \textbf{Utilizzo}: Implementando i metodi di ChecklistItemWidgetView questa classe viene utilizzata al momento della creazione e della personalizzazione del widget checklistItem e del suo contenuto.
 \item \textbf{Attributi}:
 	\begin{itemize}
-	\item \textit{private presenter:ChecklistWidgetPresenter}\\
-	Il presenter associato al widget checklist, al quale questa classe delega la gestione del comportamento del widget stesso.
+	\item \textit{private presenter:ChecklistItemWidgetPresenter}\\
+	Il presenter associato al widget checklistItem, al quale questa classe delega la gestione del comportamento del widget stesso.
+	\item \textit{private checklistUpdate:ChecklistUpdateEmitter}\\
+	Questo oggetto permette di catturare gli eventi di tipo update.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
-	\item \textit{public ChecklistWidget():ChecklistWidget}\\
-	Il costruttore della classe ChecklistWidget.
-	\item \textit{public addOption(option:CheckOption,onClick:function,onLongClick:function):void}\\
-	Questo metodo aggiunge una entry alla checklist.
-		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{option:CheckOption}\\
-		L'entry della checklist che verrà aggiunta.
-		\item \textit{onClick:function}\\
-		La funzione che viene eseguita al click normale di una entry della checklist.
-		\item \textit{onLongClick:function}\\
-		La funzione che viene eseguita al click prolungato di una entry della checklist.
-		\end{itemize} 
+	\item \textit{public removeOption():void}\\
+	Questo metodo rimuove il ChecklistItemWidget dalla bolla in cui è stato inserito.
+	\item \textit{public getId():string}\\
+	Questo metodo ritorna l'identificativo del ChecklistItemWidget.
+	\item \textit{public isChecked():boolean}\\
+	Ritorna true se la entry è spuntata, false altrimenti.
 	\item \textit{public setUseSelectionMark(useMark:boolean):void}\\
-		Imposta la visualizzazione delle spunte con un carattere oppure con un colore.
-			\\ \textbf{Parametri}: \begin{itemize}
-			\item \textit{useMark:boolean}\\
-			Se questo è a true la visualizzazione della spunta viene effettuata con un carattere, altrimenti la visualizzazione viene effettuata con un colore.
-			\end{itemize}  
+	Imposta la visualizzazione delle spunte con un carattere oppure con un colore.
+		\\ \textbf{Parametri}: \begin{itemize}
+		\item \textit{useMark:boolean}\\
+		Se questo è a true la visualizzazione della spunta viene effettuata con un carattere, altrimenti la visualizzazione viene effettuata con un colore.
+		\end{itemize}  
 	\item \textit{public setSelectionColor(color:string):void}\\
 	Imposta il colore con il quale effettuare la visualizzazione delle spunte.
 		\\ \textbf{Parametri}: \begin{itemize}
@@ -693,91 +711,92 @@
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{character:string}\\
 		Il carattere utilizzato per la visualizzazione delle spunte.
-		\end{itemize}  
-	\item \textit{public setChecked(checked:boolean,position:int):void}\\
+		\end{itemize} 
+	\item \textit{public setChecked(checked:boolean):void}\\
 	Permette di spuntare un oggetto della checlist o di togliere una spunta da esso.
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{checked:boolean}\\
 		Questo booleano è a true se si vorrà spuntare la entry, a false altrimenti.
-		\item \textit{position:int}\\
-		La posizione, all'interno della checklist, dell'elemento del quale si vuole modificare lo stato. 
-		\end{itemize} 
-	\item \textit{public setCheckStyle(style:CheckStyle):void}\\
-	Questo metodo imposta lo stile per le spunte delle opzioni della checklist.
-		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{style:CheckStyle}\\
-		Lo stile per le spunte delle opzioni della checklist che verrà impostata.
 		\end{itemize}  
-	\item \textit{public setCompletionMessage(message:string):void}\\
-	Questo metodo imposta il messaggio di completamento che viene visualizzato quando tutte le opzioni della lista vengono spuntate.
+	\item \textit{public getChecklistUpdate():checklistUpdate}\\
+	Questo metodo restituisce un oggetto di tipo checklistUpdate associato al ChecklistItemWidget in questione, che sarà utilizzato dal presenter per lanciare gli eventi di aggiornamento del widget.
+	\item \textit{public setOnClick(func:function):void}\\
+	Questo metodo viene utilizzato per impostare l'azione che deve essere eseguita dopo il click normale del widget.
 		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{message:string}\\
-		Stringa che rappresenta il messaggio di completamento della checklist.
-		\end{itemize} 
-	\item \textit{public emitOnListCompletedEvent():void}\\
-	Questo metodo serve per lanciare l'evento di completamento della lista \texttt{onListCompleted()}.
-	\item \textit{public renderView():string}\\
-	Genera il codice HTML CSS JS necessario per visualizzare il widget.
+		\item \textit{func:function}\\
+		L'azione, sotto forma di funzione, che deve essere eseguita al click normale del bottone.
+		\end{itemize}
+	\item \textit{public setOnLongClick(func:function):void}\\
+		Questo metodo viene utilizzato per impostare l'azione che deve essere eseguita dopo il click prolungato del widget.
+		\\ \textbf{Parametri}: \begin{itemize}
+		\item \textit{func:function}\\
+		L'azione, sotto forma di funzione, che deve essere eseguita al click prolungato del bottone.
+		\end{itemize}
+	\item \texit{public setText(text:string):void}\\
+	Imposta il testo presente all'interno del widget.
+		\\ \textbf{Parametri}: \begin{itemize}
+		\item \textit{text:string}\\
+		Il testo da impostare nel checklistItem widget.
+		\end{itemize}
+	\item \texit{public getText():string}\\
+	Ritorna il testo presente all'interno del ChecklistItemWidget
+	\item \textit{public renderView():HtmlDOMElement}\\
+	Restituisce l'elemento DOM rappresentante il widget.
 	\end{itemize}
 \item{Eventi}:
-	\begin{itemize}
-	\item \textit{public onItemClicked(itemId:string):void}\\
-	Evento che rappresenta il click normale su una delle entry della lista, dopo il quale si può personalizzare la reazione della checklist.
-		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{itemId:string}\\
-		Id corrispondente all'entry della lista che è stata cliccata.
-		\end{itemize} 
-	\item \textit{public onItemLongClicked(itemId:string):void}\\
-	Evento che rappresenta il click prolungato su una delle entry della lista, dopo il quale si può personalizzare la reazione della checklist.
-		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{itemId:string}\\
-		Id corrispondente all'entry della lista che è stata cliccata.
-		\end{itemize} 
-	\end{itemize}
 \end{itemize}
 
-\subsubsection{monolith::component::widget::checklist::presenter::ChecklistWidgetPresenter}
+\subsubsection{monolith::component::widget::checklist::presenter::ChecklistItemWidgetPresenter}
 
-\label{monolith::component::widget::checklist::presenter::ChecklistWidgetPresenter}
+\label{monolith::component::widget::checklist::presenter::ChecklistItemWidgetPresenter}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/ChecklistWidgetPresenter.png}
-	\caption{monolith::component::widget::checklist::presenter::ChecklistWidgetPresenter}
+	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/ChecklistItemWidgetPresenter.png}
+	\caption{monolith::component::widget::checklist::presenter::ChecklistItemWidgetPresenter}
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione}: Questa classe rappresenta il presenter per i widget di tipo checklist.
+\item \textbf{Descrizione}: Questa classe rappresenta il presenter per i widget di tipo checklistItem.
 \item \textbf{Utilizzo}: Il presenter fa da tramite tra l'implementazione del widget e la view, formattando i dati che verranno visualizzati nella view e manipolando gli input dell'utente per eseguire le operazioni predisposte.
 \item \textbf{Attributi}:
 	\begin{itemize}
 	\item \textit{private view:ChecklistWidgetView}\\
 	La view associata al presenter.
-	\item \textit{private options:List<CheckOption>}\\
-	Collezione contentente tutte le opzioni della lista.
+	\item \textit{private dom:HtmlDOMElement}\\
+	L'elemento dom che contiene il widget checklistItem in questione.
 	\item \textit{private style:CheckStyle}\\
 	Stile per le spunte della lista.
-	\item \textit{private completionMessage:string}\\
-	Stringa che contiene il messaggio di completamento della checklist.
+	\item \textit{private options:CheckOption}\\
+	Rappresenta lo stato del widget.
+	\item \textit{onClick:function}\\
+	La funzione che deve essere eseguita dopo il click normale sul widget.
+	\item \textit{onLongClick:function}\\
+	La funzione che deve essere eseguita dopo il click prolungato (che ha timer predefinito a 1 secondo) sul widget.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
-	\item \textit{public ChecklistWidgetPresenter(view:ChecklistWidgetView):ChecklistWidgetPresenter}\\
-	Il costruttore della classe ChecklistWidgetPresenter.
+	\item \textit{public ChecklistItemWidgetPresenter(text:string,check:boolean,id:string):ChecklistItemWidgetPresenter}\\
 		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{view:ChecklistWidgetView}\\
-		La view necessaria alla costruzione del presenter.
-		\end{itemize} 
-	\item \textit{public addOption(option:CheckOption,onClick:function,onLongClick:function):void}\\
-	Questo metodo aggiunge una entry alla checklist.
-		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{option:CheckOption}\\
-		L'entry della checklist che verrà aggiunta.
-		\item \textit{onClick:function}\\
-		La funzione che viene eseguita al click normale di una entry della checklist.
-		\item \textit{onLongClick:function}\\
-		La funzione che viene eseguita al click prolungato di una entry della checklist.
-		\end{itemize} 
-\item \textit{public setUseSelectionMark(useMark:boolean):void}\\
+		\item \textit{text:string}\\
+		Il testo del widget.
+		\item \textit{check:boolean}\\
+		Il booleano che rapresenta lo stato della spunta del widget.
+		\item \textit{id:string}\\
+		L'identificativo del widget.
+		\end{itemize}
+	\item \textit{private createOption(optionText:string,check:boolean):void}\\
+	Questo metodo crea il DOM del checklistItemWidget.
+	\item \textit{private setDomStyle():void}\\
+	Permette di aggiornare il DOM del widget.
+	\item \textit{public setView(view:ChecklistItemWidgetView):void}\\
+	Permette di impostare il riferimento alla view del presenter.
+	\item \textit{public removeOption():void}\\
+	Questo metodo rimuove il ChecklistItemWidget dalla bolla in cui è stato inserito.
+	\item \textit{public getId():string}\\
+	Questo metodo ritorna l'identificativo del ChecklistItemWidget.
+	\item \textit{public isChecked():boolean}\\
+	Ritorna true se la entry è spuntata, false altrimenti.
+	\item \textit{public setUseSelectionMark(useMark:boolean):void}\\
 	Imposta la visualizzazione delle spunte con un carattere oppure con un colore.
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{useMark:boolean}\\
@@ -794,45 +813,37 @@
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{character:string}\\
 		Il carattere utilizzato per la visualizzazione delle spunte.
-		\end{itemize}   
-	\item \textit{public setChecked(checked:boolean,position:int):void}\\
+		\end{itemize} 
+	\item \textit{public setChecked(checked:boolean):void}\\
 	Permette di spuntare un oggetto della checlist o di togliere una spunta da esso.
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{checked:boolean}\\
 		Questo booleano è a true se si vorrà spuntare la entry, a false altrimenti.
-		\item \textit{position:int}\\
-		La posizione, all'interno della checklist, dell'elemento del quale si vuole modificare lo stato. 
 		\end{itemize}  
-	\item \textit{public setCheckStyle(style:CheckStyle):void}\\
-	Questo metodo imposta lo stile per le spunte delle opzioni della checklist.
+	\item \textit{public setOnClick(func:function):void}\\
+	Questo metodo viene utilizzato per impostare l'azione che deve essere eseguita dopo il click normale del widget.
 		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{style:CheckStyle}\\
-		Lo stile per le spunte delle opzioni della checklist che verrà impostata.
-		\end{itemize} 
-	\item \textit{public setCompletionMessage(message:string):void}\\
-	Questo metodo imposta il messaggio di completamento che viene visualizzato quando tutte le opzioni della lista vengono spuntate.
+		\item \textit{func:function}\\
+		L'azione, sotto forma di funzione, che deve essere eseguita al click normale del bottone.
+		\end{itemize}
+	\item \textit{public setOnLongClick(func:function):void}\\
+		Questo metodo viene utilizzato per impostare l'azione che deve essere eseguita dopo il click prolungato del widget.
 		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{message:string}\\
-		Stringa che rappresenta il messaggio di completamento della checklist.
-		\end{itemize} 
-	\item \textit{public renderView():string}\\
-	Genera il codice HTML CSS JS necessario per visualizzare il widget.
+		\item \textit{func:function}\\
+		L'azione, sotto forma di funzione, che deve essere eseguita al click prolungato del bottone.
+		\end{itemize}
+	\item \texit{public setText(text:string):void}\\
+	Imposta il testo presente all'interno del widget.
+		\\ \textbf{Parametri}: \begin{itemize}
+		\item \textit{text:string}\\
+		Il testo da impostare nel checklistItem widget.
+		\end{itemize}
+	\item \texit{public getText():string}\\
+	Ritorna il testo presente all'interno del ChecklistItemWidget.
+	\item \textit{public renderView():HtmlDOMElement}\\
+	Restituisce l'elemento DOM rappresentante il widget.
 	\end{itemize}
 \item{Eventi}:
-	\begin{itemize}
-	\item \textit{public onItemClicked(itemId:string):void}\\
-	Evento che rappresenta il click normale su una delle entry della lista, dopo il quale si può personalizzare la reazione della checklist.
-		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{itemId:string}\\
-		Id corrispondente all'entry della lista che è stata cliccata.
-		\end{itemize} 
-	\item \textit{public onItemLongClicked(itemId:string):void}\\
-	Evento che rappresenta il click prolungato su una delle entry della lista, dopo il quale si può personalizzare la reazione della checklist.
-		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{itemId:string}\\
-		Id corrispondente all'entry della lista che è stata cliccata.
-		\end{itemize} 
-	\end{itemize}
 \end{itemize}
 
 \subsubsection{monolith::component::widget::checklist::option::CheckOption}
@@ -845,65 +856,47 @@
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione}: La classe rappresenta una entry di un widget checklist.
-\item \textbf{Utilizzo}: Viene utilizzata per ogni modifica di una checklist o evento relativo ad essa, poiché gli eventi della checklist sono relativi alle opzioni che ha al suo interno.
+\item \textbf{Descrizione}: La classe rappresenta lo stato, comprensivo di testo e id, di un ChecklistItemWidget.
+\item \textbf{Utilizzo}: Viene utilizzata per ogni modifica di un ChecklistItemWidget o evento relativo ad esso.
 \item \textbf{Attributi}:
 	\begin{itemize}
 	\item \textit{private id:string}\\
 	Stringa identificativa della entry della checklist.
 	\item \textit{private isChecked:boolean}\\
-	Booleano che rappresenta lo stato della entry, ovvero se questa è spuntata o no.
-	\item \textit{private onClick:function}\\
-	Funzione che verrà eseguita in seguito al click breve sulla entry.
-	\item \textit{private onLongClick:function}\\
-	Funzione che verrà eseguita in seguito al click prolungato sulla entry.
+	Booleano che rappresenta lo stato del ChecklistItemWidget, ovvero se questo è spuntata o no.
 	\item \textit{private text:string}\\
-	Questa stringa rappresenta il testo associato alla entry della checklist.
+	Questa stringa rappresenta il testo associato al ChecklistItemWidget.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
 	\item \textit{public CheckOption():CheckOption}\\
 	Il costruttore della classe CheckOption.
 	\item \textit{public getId():string}\\
-	Ritorna l'id associato alla entry nella lista.
+	Ritorna l'id associato al ChecklistItemWidget.
 	\item \textit{public setId(id:string):void}\\
 	Imposta l'id della entry con il valore passato.
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{id:string}\\
 			Valore da impostare come id della entry.
 		\end{itemize}
-	\item \textit{public getOnClick():string}\\
-	Ritorna la funzione impostata come azione per il click normale della entry.
-	\item \textit{public setOnClick(action:function):void}\\
-	Imposta l'azione per il click normale della entry.
-		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{action:function}\\
-		La funzione che verrà impostata per il click normale della entry.
-		\end{itemize} 
-	\item \textit{public getOnLongClick():string}\\
-	Ritorna la funzione impostata come azione per il click prolungato della entry.	
-	\item \textit{public setOnLongClick(action:function):void}\\
-	Imposta l'azione per il click prolungato della entry.	
-		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{action:function}\\
-		La funzione che verrà impostata per il click prolungato della entry.
-		\end{itemize} 
 	\item \textit{public setChecked(checked:boolean):void}\\
 	Spunta la entry o toglie la spunta da essa.
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{checked:boolean}\\
 		Il metodo spunta la entry se questo campo è true, toglie la spunta se è false.
 		\end{itemize} 
-	\item \textit{public boolean isChecked()}\\
+	\item \textit{public isChecked():boolean}\\
 	Ritorna true se la entry è spuntata, false altrimenti.
 	\item \textit{public getText():string}\\
-	Ritorna la stringa contentente il testo associato alla entry della checklist.
+	Ritorna la stringa contentente il testo associato al ChecklistItemWidget.
 	\item \textit{public setText(text:string):void}\\
 	Imposta il testo associato alla entry della checklist.
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{text:string}\\
-		La stringa contentente il testo che verrà impostato come testo associato alla entry della checklist.
+		La stringa contentente il testo che verrà impostato come testo associato al ChecklistItemWidget.
 		\end{itemize} 
+	\item \textit{public changeStatus():boolean}\\
+	Inverte lo stato del check (cioè se è spuntato toglie la spunta, e viceversa) e ritorna il booleano che rappresenta il nuovo stato.
 	\end{itemize}
 \end{itemize}
 
@@ -917,16 +910,16 @@
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Descrizione}: La classe rappresenta lo stile con il quale vengono indicate le spunte su una entry di una checklist.
-\item \textbf{Utilizzo}: Il suo utilizzo è legato alla scelta visuale dello sviluppatore per quanto riguarda lo stile con il quale viene evidenziata una selezione nella checklist.
+\item \textbf{Descrizione}: La classe rappresenta lo stile con il quale vengono indicate le spunte su un ChecklistItemWidget.
+\item \textbf{Utilizzo}: Il suo utilizzo è legato alla scelta visuale dello sviluppatore per quanto riguarda lo stile con il quale viene evidenziata una selezione nel ChecklistItemWidget.
 \item \textbf{Attributi}:
 	\begin{itemize}
 	\item \textit{private selectionCharacter:string}\\
-	Il carattere che viene utilizzato per la spunta delle entry della checklist.
+	Il carattere che viene utilizzato per la spunta del ChecklistItemWidget.
 	\item \textit{private useSelectionMark:boolean}\\
-	Se questo booleano è a true, le spunte verranno visualizzate con un carattere, altrimenti verranno visualizzate evidenziando le entry con un colore.
+	Se questo booleano è a true, le spunte verranno visualizzate con un carattere, altrimenti verranno visualizzate evidenziando il widget con un colore.
 	\item \textit{private selectionColor:string}\\
-	Rappresenta la stringa in esadecimale corrispondente al colore che è impostato per evidenziare le opzioni spuntate della checklist.
+	Rappresenta la stringa in esadecimale corrispondente al colore che è impostato per evidenziare i widget spuntati.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
@@ -939,23 +932,23 @@
 		Il carattere scelto per visualizzare le spunte.
 		\end{itemize} 
 	\item \textit{public setUseSelectionMark(useMark:boolean):void}\\
-	Imposta l'utilizzo del carattere o del colore per evidenziare la spunta di una entry della checklist.
+	Imposta l'utilizzo del carattere o del colore per evidenziare la spunta di un ChecklistItemWidget.
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{useMark:boolean)}\\
-		Se questo booleano è a true, le spunte verranno visualizzate con un carattere, altrimenti verranno visualizzate evidenziando le entry con un colore.
+		Se questo booleano è a true, le spunte verranno visualizzate con un carattere, altrimenti verranno visualizzate evidenziando i widget con un colore.
 		\end{itemize} 
 	\item \textit{public setSelectionColor(color:string):void}\\
-	Imposta il colore per evidenziare le opzioni spuntate nella checklist.
+	Imposta il colore per evidenziare la spunta del widget.
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{color:string}\\
-		Rappresenta la stringa in esadecimale corrispondente al colore che verrà impostato per evidenziare le opzioni spuntate della checklist.
+		Rappresenta la stringa in esadecimale corrispondente al colore che verrà impostato per evidenziare la spunta del widget.
 		\end{itemize} 
 	\item \textit{public getSelectionCharacter():string}\\
-	Ritorna il carattere che viene utilizzato per la spunta delle entry della checklist.
+	Ritorna il carattere che viene utilizzato per la spunta del widget.
 	\item \textit{public getUseSelectionMark():boolean}\\
-	Ritorna true se viene utilizzato il carattere per visualizzare le spunte, altrimenti false.
+	Ritorna true se viene utilizzato il carattere per visualizzare la spunta, altrimenti false.
 	\item \textit{public getSelectionColor():string}\\
-	Ritorna la stringa in esadecimale corrispondente al colore che è impostato per evidenziare le opzioni spuntate della checklist.
+	Ritorna la stringa in esadecimale corrispondente al colore che è impostato per evidenziare la spunta del widget.
 	\end{itemize}
 \end{itemize}
 
@@ -980,18 +973,24 @@
 		\item \textit{item:string}\\
 		Il testo dell'oggetto da aggiungere alla lista.
 		\end{itemize} 
-	\item \textit{public setCharacter(character:string):void}\\
-		Imposta il carattere utilizzato per indicare un elemento nella lista.
-		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{character:string}\\
-		Carattere da utilizzare per indicare un elemento nella lista.
-		\end{itemize} 
+	\item \textit{public setCharacterNumber():void}\\
+	Cambia l'indicatore della lista impostando la visualizzazione con i numeri.
+	\item \textit{public setCharacterCircle():void}\\
+	Cambia l'indicatore della lista impostando la visualizzazione con i pallini.
+	\item \textit{public setCharacterDash():void}\\
+	Cambia l'indicatore della lista impostando la visualizzazione con i trattini.
 	\item \textit{public setColor(color:string):void}\\
 		Imposta il colore del carattere utilizzato per indicare un elemento nella lista.
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{color:string}\\
 		Codice esadecimale corrispondente al colore con il quale verrà colorato il carattere utilizzato per indicare un elemento nella lista.
 		\end{itemize} 
+	\item \textit{public getColor():string}\\
+	Ritorna la stringa esadecimale corrispondente al colore con il quale verrà colorato il carattere utilizzato per indicare un elemento nella lista.
+	\item \textit{public getOptions():List<string>}\\
+	Ritorna un array contenente tutti gli elementi presenti all'interno della lista.
+	\item \textit{public getCharacter():string}\\
+	Ritorna il carattere utilizzato attualmente come indicatore per gli elementi della lista.
 	\end{itemize}
 \end{itemize}
 
@@ -1022,20 +1021,26 @@
 		\item \textit{item:string}\\
 		Il testo dell'oggetto da aggiungere alla lista.
 		\end{itemize} 
-	\item \textit{public setCharacter(character:string):void}\\
-	Imposta il simbolo che rappresenta l'indicatore dell'elenco puntato.
-		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{character:string}\\
-		La stringa contentente il simbolo che verrà impostato come indicatore dell'elenco puntato.
-		\end{itemize} 
+	\item \textit{public setCharacterNumber():void}\\
+	Cambia l'indicatore della lista impostando la visualizzazione con i numeri.
+	\item \textit{public setCharacterCircle():void}\\
+	Cambia l'indicatore della lista impostando la visualizzazione con i pallini.
+	\item \textit{public setCharacterDash():void}\\
+	Cambia l'indicatore della lista impostando la visualizzazione con i trattini.
 	\item \textit{public setColor(color:string):void}\\
-	Imposta il colore dell'indicatore dell'elenco puntato.
+		Imposta il colore del carattere utilizzato per indicare un elemento nella lista.
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{color:string}\\
-		Rappresenta la stringa in esadecimale corrispondente al colore che verrà impostato per l'indicatore dell'elenco puntato.
+		Codice esadecimale corrispondente al colore con il quale verrà colorato il carattere utilizzato per indicare un elemento nella lista.
 		\end{itemize} 
-	\item \textit{public renderView():string}\\
-	Genera il codice HTML CSS JS necessario per visualizzare il widget.
+	\item \textit{public getColor():string}\\
+	Ritorna la stringa esadecimale corrispondente al colore con il quale verrà colorato il carattere utilizzato per indicare un elemento nella lista.
+	\item \textit{public getOptions():List<string>}\\
+	Ritorna un array contenente tutti gli elementi presenti all'interno della lista.
+	\item \textit{public getCharacter():string}\\
+	Ritorna il carattere utilizzato attualmente come indicatore per gli elementi della lista.
+	\item \textit{public renderView():HtmlDOMElement}\\
+	Restituisce l'elemento DOM rappresentante il widget.
 	\end{itemize}
 \end{itemize}
 
@@ -1059,6 +1064,10 @@
 	Questa collezione di stringhe rappresenta l'elenco di oggetti appartenenti alla lista.
 	\item \textit{private indicator:Indicator}\\
 	Il simbolo impostato per indicare gli oggetti della lista.
+	\item \textit{private map:canMap}\\
+	La mappa della libreria map necessaria alle funzioni del widget.
+	\item \textit{private dom:HtmlDOMElement}\\
+	L'elemento dom che contiene il widget lista in questione.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
@@ -1074,20 +1083,26 @@
 		\item \textit{item:string}\\
 		Il testo dell'oggetto da aggiungere alla lista.
 		\end{itemize} 
-	\item \textit{public setCharacter(character:string):void}\\
-	Imposta il simbolo che rappresenta l'indicatore dell'elenco puntato.
-		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{character:string}\\
-		La stringa contentente il simbolo che verrà impostato come indicatore dell'elenco puntato.
-		\end{itemize} 
+	\item \textit{public setCharacterNumber():void}\\
+	Cambia l'indicatore della lista impostando la visualizzazione con i numeri.
+	\item \textit{public setCharacterCircle():void}\\
+	Cambia l'indicatore della lista impostando la visualizzazione con i pallini.
+	\item \textit{public setCharacterDash():void}\\
+	Cambia l'indicatore della lista impostando la visualizzazione con i trattini.
 	\item \textit{public setColor(color:string):void}\\
-	Imposta il colore dell'indicatore dell'elenco puntato.
+		Imposta il colore del carattere utilizzato per indicare un elemento nella lista.
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{color:string}\\
-		Rappresenta la stringa in esadecimale corrispondente al colore che verrà impostato per l'indicatore dell'elenco puntato.
+		Codice esadecimale corrispondente al colore con il quale verrà colorato il carattere utilizzato per indicare un elemento nella lista.
 		\end{itemize} 
-	\item \textit{public renderView():string}\\
-	Genera il codice HTML CSS JS necessario per visualizzare il widget.
+	\item \textit{public getColor():string}\\
+	Ritorna la stringa esadecimale corrispondente al colore con il quale verrà colorato il carattere utilizzato per indicare un elemento nella lista.
+	\item \textit{public getOptions():List<string>}\\
+	Ritorna un array contenente tutti gli elementi presenti all'interno della lista.
+	\item \textit{public getCharacter():string}\\
+	Ritorna il carattere utilizzato attualmente come indicatore per gli elementi della lista.
+	\item \textit{public renderView():HtmlDOMElement}\\
+	Restituisce l'elemento DOM rappresentante il widget.
 	\end{itemize}
 \end{itemize}
 
@@ -1114,12 +1129,12 @@
 	\begin{itemize}
 	\item \textit{public Indicator():Indicator}\\
 	Il costruttore della classe Indicator.
-	\item \textit{public setCharacter(character:string):void}\\
-	Imposta il simbolo per indicare gli oggetti della lista.
-		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{character:string}\\
-		Il simbolo che verrà impostato per indicare gli oggetti della lista.
-		\end{itemize} 
+	\item \textit{public setCharacterNumber():void}\\
+	Cambia l'indicatore della lista impostando la visualizzazione con i numeri.
+	\item \textit{public setCharacterCircle():void}\\
+	Cambia l'indicatore della lista impostando la visualizzazione con i pallini.
+	\item \textit{public setCharacterDash():void}\\
+	Cambia l'indicatore della lista impostando la visualizzazione con i trattini.
 	\item \textit{public setColor(color:string):void}\\
 	Imposta il colore degli indicatori.
 		\\ \textbf{Parametri}: \begin{itemize}
@@ -1166,6 +1181,12 @@
 		\item \textit{width:int}\\
 		La larghezza dell'immagine che si vuole impostare in pixel.
 		\end{itemize} 
+	\item \textit{public getPath():string}\\
+	Ritorna la stringa contenente il percorso che porta all'immagine.
+	\item \textit{public getHeigth():string}\\
+	Ritorna l'altezza dell'immagine.
+	\item \textit{public getWidth():string}\\
+	Ritorna la larghezza dell'immagine.
 	\end{itemize}
 \end{itemize}
 
@@ -1193,7 +1214,8 @@
 	\item \textit{public setImage(imagePath:string):void}\\
 	Imposta il percorso nel file system che porta all'immagine che si vuole inserire nel widget.
 		\\ \textbf{Parametri}: \begin{itemize}
-		\item \textit{imagePath:string}: Il percorso dell'immagine.
+		\item \textit{imagePath:string}\\
+		Il percorso dell'immagine.
 		\end{itemize} 
 	\item \textit{public setHeight(height:int):void}\\
 	Imposta l'altezza dell'immagine.
@@ -1207,8 +1229,14 @@
 		\item \textit{width:int}\\
 		La larghezza dell'immagine che si vuole impostare in pixel.
 		\end{itemize} 
-	\item \textit{public renderView():string}\\
-	Genera il codice HTML CSS JS necessario per visualizzare il widget.
+	\item \textit{public getPath():string}\\
+	Ritorna la stringa contenente il percorso che porta all'immagine.
+	\item \textit{public getHeigth():string}\\
+	Ritorna l'altezza dell'immagine.
+	\item \textit{public getWidth():string}\\
+	Ritorna la larghezza dell'immagine.
+	\item \textit{public renderView():HtmlDOMElement}\\
+	Restituisce l'elemento DOM rappresentante il widget.
 	\end{itemize}
 \end{itemize}
 
@@ -1230,6 +1258,10 @@
 	La view associata al presenter.
 	\item \textit{private imageOptions:ImageOptions}\\
 	Contiene le impostazioni attuali del widget.
+	\item \textit{private map:canMap}\\
+	La mappa della libreria map necessaria alle funzioni del widget.
+	\item \textit{private dom:HtmlDOMElement}\\
+	Il dom che rappresenta il widget.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
@@ -1257,8 +1289,14 @@
 		\item \textit{width:int}\\
 		La larghezza dell'immagine che si vuole impostare in pixel.
 		\end{itemize} 
-	\item \textit{public renderView():string}\\
-	Genera il codice HTML CSS JS necessario per visualizzare il widget.
+	\item \textit{public getPath():string}\\
+	Ritorna la stringa contenente il percorso che porta all'immagine.
+	\item \textit{public getHeigth():string}\\
+	Ritorna l'altezza dell'immagine.
+	\item \textit{public getWidth():string}\\
+	Ritorna la larghezza dell'immagine.
+	\item \textit{public renderView():HtmlDOMElement}\\
+	Restituisce l'elemento DOM rappresentante il widget.
 	\end{itemize}
 \end{itemize}
 
@@ -1305,5 +1343,11 @@
 		\item \textit{width:int}\\
 		La larghezza dell'immagine che si vuole impostare  in pixel.
 		\end{itemize} 
+	\item \textit{public getPath():string}\\
+	Ritorna la stringa contenente il percorso che porta all'immagine.
+	\item \textit{public getHeigth():string}\\
+	Ritorna l'altezza dell'immagine.
+	\item \textit{public getWidth():string}\\
+	Ritorna la larghezza dell'immagine.
 	\end{itemize}
 \end{itemize}

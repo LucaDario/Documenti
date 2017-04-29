@@ -317,82 +317,82 @@
     "tests": [
       {
         "description": "Si verifica che il metodo ButtonWidget::setText passi correttamente il testo al presenter il quale eventualmente lo formatterà e modificherà correttamente l'HTML e CSS",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che il metodo ButtonWidget::setHeight passi correttamente il valore dell'altezza al presenter il quale modificherà correttamente l'HTML e CSS",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che il metodo ButtonWidget::setWidth passi correttamente il valore della lareghezza al presenter modificherà correttamente l'HTML e CSS",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che il metodo ButtonWidget::setBackgroundColor passi correttamente il colore dello sfondo del bottone al presenter il quale modificherà correttamente l'HTML e CSS",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che il metodo ButtonWidget::setOnClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene premuto il pulsante",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che il metodo ButtonWidget::setOnLongClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene mantenuto premuto il pulsante",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che il metodo TextWidget::setText passi correttamente al presenter il testo che verrà poi mostrato a video",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che il metodo TextWidget::setTextColor passi correttamente il colore del testo al presenter il quale modificherà correttamente l'HTML e CSS, presentandolo con il colore corrispondente",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che il metodo TextWidget::setFormatText passi il valore booleano (che rappresenta la scelta di formattare il testo) al presenter. Essp dovrà, poi, presentare il testo formattato seguendo la sintassi markdown oppure lasciarlo invariato in funzione al valore booleano",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che il metodo TextWidget::setUrlHighlightColor passi il valore del colore al presenter il quale dovrà presentare i link evidenziati oppure non evidenziati in funzione al colore scelto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che il metodo TextWidget::setTextSize passi la dimensione del testo del presenter il quale dovrà occuparsi di presentare il testo della dimensione impostata",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo ChecklistItemWidget::setUseSelectionMark imposti la scelta di utilizzare un carattere o un colore come spunta",
-        "implemented": false,
+        "description": "Si verifica che il metodo ChecklistItemWidget::setUseSelectionMark imposti la scelta di utilizzare un carattere o un colore come spunta passando correttamente per il Presenter",
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che il metodo ChecklistItemWidget::setSelectionColor passi al presenter il colore dello spunta il quale dovrà presentare la lista con lo stile corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che il metodo ChecklistItemWidget::setSelectionCharacter passi al presenter un carattere per la spunta, e il presenter dovrà presentare la lista con lo stile corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo ListWidget::addItem passi al presenter il testo del elemento il quale dovrà presentare la view con il nuovo elemento",
-        "implemented": false,
+        "description": "Si verifica che il metodo ListWidget::addItem passi al presenter il testo del elemento il quale dovrà presentare l'HTML con il nuovo elemento",
+        "implemented": true,
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo ListWidget::setIndicator passi al presenter lo stile con il quale si vuole mostrare la lista il quale dovrà presentarla con lo stile impostato",
-        "implemented": false,
+        "description": "Si verifica che la view passi al presenter il carattere con il quale mostrare gli indicatori della lista. Esso provvederà poi ad impostarli correttamente nell'HTML",
+        "implemented": true,
         "approved": false
       },
       {

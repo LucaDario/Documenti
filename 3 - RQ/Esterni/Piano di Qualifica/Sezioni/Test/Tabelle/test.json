@@ -726,21 +726,21 @@
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile istanziare una bolla avviso",
+        "description": "Viene verificato che sia possibile istanziare una bolla avviso e sia possibile utilizzare tutti i suoi metodi",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile istanziare una bolla markdown",
+        "description": "Viene verificato che sia possibile istanziare una bolla markdown e sia possibile utilizzare tutti i suoi metodi",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile istanziare una bolla lista",
+        "description": "Viene verificato che sia possibile istanziare una bolla lista e sia possibile utilizzare tutti i suoi metodi",
         "implemented": true,
         "approved": false,
         "type": "F",

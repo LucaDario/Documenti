@@ -629,133 +629,119 @@
     "tests": [
       {
         "description": "Viene verificato che sia possibile creare e aggiungere ad una bolla un widget per tipo, tra quelli presenti nell'SDK",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Viene verificato che sia possibile creare e aggiungere ad una bolla un layout per tipo, tra quelli presenti nell'SDK",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Viene verificato che sia possibile impostare le variabili di un widget testo formattato",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Viene verificato che un widget testo formattato faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Viene verificato che sia possibile impostare le variabili di un widget immagine",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Viene verificato che un widget immagine faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Viene verificato che sia possibile impostare le variabili di un widget bottone",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Viene verificato che un widget bottone faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Viene verificato che sia possibile impostare le variabili di un widget checklistitem",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Viene verificato che un widget checklistitem faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Viene verificato che sia possibile impostare le variabili di un widget lista",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Viene verificato che un widget lista faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che la dimensione del'immagine all'interno di un widget di tipo immagine sia corretta",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "F"
-      },
-      {
-        "description": "Viene verificato che previsto un messaggio di errore da visualizzare nel qual caso lo sviluppatore non associ una immagine ad un widget immagine oppure tenti di associarne una non supportata",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Viene verificato che sia possibile aggiungere un widget all'interno di un VerticalLayoutView",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Viene verificato che sia possibile aggiungere un widget all'interno di un HorizzontalLayoutView",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Viene verificato che sia possibile istanziare una bolla avviso",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Viene verificato che sia possibile istanziare una bolla markdown",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Viene verificato che sia possibile istanziare una bolla lista",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"

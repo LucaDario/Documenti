@@ -279,11 +279,6 @@
         "approved": false
       },
       {
-        "description": "Verificare che la pubblicazione di una lista della spesa avvenga in modo corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
         "description": "Verificare che l'inoltro di una lista della spesa avvenga in modo corretto",
         "implemented": false,
         "approved": false
@@ -471,7 +466,7 @@
         "approved": false
       },
       {
-        "description": "Si verifica che ForwardListViewPresenter riceva l'evento ForwardListView::onForwardClicked ed inizzi la procedura di inoltro trammite ForwardListUseCase",
+        "description": "Si verifica che ForwardListViewPresenter riceva l'evento ForwardListView::onForwardClicked ed inizzi la procedura di inoltro tramite ForwardListUseCase",
         "implemented": false,
         "approved": false
       },
@@ -744,28 +739,49 @@
         "importance": "O"
       },
       {
-        "description": "Verificare che l'aggiunta di un nuovo prodotto alla lista della spesa venga eseguita correttamente",
+        "description": "Viene verificato che l'aggiunta di un nuovo prodotto alla lista della spesa venga eseguita correttamente",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verifica che sia possibile rimuovere un elemento ad una bolla \"lista della spesa\"",
+        "description": "Viene verificato che sia possibile rimuovere un elemento ad una bolla \"lista della spesa\"",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verifica che sia possibile spuntare un elemento di una bolla \"lista della spesa\"",
+        "description": "Viene verificato che sia possibile spuntare un elemento di una bolla \"lista della spesa\"",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verifica che sia possibile condividere una bolla \"lista della spesa\"",
+        "description": "Viene verificato che l'inoltro a un utente di una bolla \"lista della spesa\" avvenga in modo corretto",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'inoltro a un gruppo di una bolla \"lista della spesa\" avvenga in modo corretto",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che la pubblicazione a un utente di una bolla \"lista della spesa\" avvenga in modo corretto",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che la pubblicazione a un gruppo di una bolla \"lista della spesa\" avvenga in modo corretto",
         "implemented": false,
         "approved": false,
         "type": "F",

@@ -55,12 +55,12 @@
       },
       {
         "description": "Verificare che un widget di tipo immagine venga impostata la dimensione del immagine da visualizzare in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che all'instanziazione di un widget di tipo immagine venga impostata la larghezza e l'altezza di default",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
@@ -105,17 +105,17 @@
       },
       {
         "description": "Verificare che in un widget di tipo button vengano eseguiti gli eventi associati alla pressione",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che in un widget di tipo button vengano eseguiti gli eventi associati alla pressione pressione prolungata",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che in un widget di tipo button venga impostato in modo corretto la soglia per determinare che una pressione da parte del utente è di tipo: \"pressione prolungata\"",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
@@ -150,22 +150,22 @@
       },
       {
         "description": "Verificare che in un widget di tipo checklistitem vengano eseguiti gli eventi associati alla pressione pressione prolungata",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che in un widget di tipo checklistitem venga impostato in modo corretto la soglia per determinare che una pressione da parte del utente è di tipo: \"pressione prolungata\"",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che in un widget di tipo list venga impostato correttamente il cambiamento dello stile",
-        "implemented": true,
+        "implemented": false,
         "approved": false
       },
       {
         "description": "Verificare che in un widget di tipo list che vengano aggiunti correttamente tutti gli elementi",
-        "implemented": true,
+        "implemented": false,
         "approved": false
       },
       {
@@ -279,17 +279,32 @@
         "approved": false
       },
       {
-        "description": "Verificare che l'inoltro di una lista della spesa avvenga in modo corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
         "description": "Verificare che le interazioni con la lista della spesa siano coerenti con i permessi che ha l'utente",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Viene verificato che il codice html associato ad una qualsiasi widet sia valido",
+        "description": "Verificare che il codice html associato ad una qualsiasi widget sia valido",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che GetListInfoUseCase ritorni la lista che corrisponde all'id inserito",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che GetItemInfoUseCase ritorni l'oggetto che corrisponde all'id inserito",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che ManageListUseCase cancelli la lista che corrisponde all'id inserito",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che ShareListUseCase aggiunga agli utenti della lista l'utente corrispondente all'id inserito",
         "implemented": false,
         "approved": false
       }

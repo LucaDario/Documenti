@@ -105,17 +105,17 @@
       },
       {
         "description": "Verificare che in un widget di tipo button vengano eseguiti gli eventi associati alla pressione",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che in un widget di tipo button vengano eseguiti gli eventi associati alla pressione pressione prolungata",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che in un widget di tipo button venga impostato in modo corretto la soglia per determinare che una pressione da parte del utente è di tipo: \"pressione prolungata\"",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {

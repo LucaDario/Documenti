@@ -1,27 +1,27 @@
 \begin{center}
 	\begin{longtable}{|c|>{\centering}m{10cm}|c|}\hline
 		Id & Descrizione & stato \\ \hline
-		TI1 & Si verifica che il metodo ButtonWidget::setText passi correttamente al presenter il testo il  quale eventualmente formatterà il testo e lo presenterà nella view & Non implementato \\ \hline
-		TI2 & Si verifica che il metodo ButtonWidget::setHeight passi correttamente al presenter il valore dell'altezza il quale aggiornerà la view & Non implementato \\ \hline
-		TI3 & Si verifica che il metodo ButtonWidget::setWidth passi correttamente al presenter il valore della lareghezza il quale aggiornerà la view & Non implementato \\ \hline
-		TI4 & Si verifica che il metodo ButtonWidget::setBackgroundColor passi correttamente al presenter il colore dello sfondo il quale aggiornerà la view & Non implementato \\ \hline
-		TI5 & Si verifica che il metodo ButtonWidget::setOnClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene premuto il pulsante & Non implementato \\ \hline
-		TI6 & Si verifica che il metodo ButtonWidget::setOnLongClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene mantenuto premuto il pulsante & Non implementato \\ \hline
-		TI7 & Si verifica che il metodo TextWidget::setText passi correttamente al presenter il testo che verrà poi mostrato a video & Non implementato \\ \hline
-		TI8 & Si verifica che il metodo TextWidget::setTextColor passi correttamente al presenter il colore del testo il quele dovrà presengtare il testo nel colore corrispondente & Non implementato \\ \hline
-		TI9 & Si verifica che il metodo TextWidget::setFormatText passi al presenter il valore il quale dovrà presentare il testo formattato seguendo la sintassi markdown oppure lasciarlo invariato in fuznione al valore booleano passato al presenter & Non implementato \\ \hline
-		TI10 & Si verifica che il metodo TextWidget::setUrlHighlightColor passi al presenter il valore il quale dovrà presentare i link evidenziati oppure non evidenziati in fuznione al valore booleano passato al presenter & Non implementato \\ \hline
-		TI11 & Si verifica che il metodo TextWidget::setTextSize passi la dimensione del testo del presenter il quale dovrà occuparsi di presentare il testo della dimensione impostata & Non implementato \\ \hline
-		TI12 & Si verifica che il metodo ChecklistItemWidget::setUseSelectionMark imposti la scelta di utilizzare un carattere o un colore come spunta & Non implementato \\ \hline
-		TI13 & Si verifica che il metodo ChecklistItemWidget::setSelectionColor passi al presenter il colore dello spunta il quale dovrà presentare la lista con lo stile corretto & Non implementato \\ \hline
-		TI14 & Si verifica che il metodo ChecklistItemWidget::setSelectionCharacter passi al presenter un carattere per la spunta, e il presenter dovrà presentare la lista con lo stile corretto & Non implementato \\ \hline
-		TI15 & Si verifica che il metodo ListWidget::addItem passi al presenter il testo del elemento il quale dovrà presentare la view con il nuovo elemento & Non implementato \\ \hline
-		TI16 & Si verifica che il metodo ListWidget::setIndicator passi al presenter lo stile con il quale si vuole mostrare la lista il quale dovrà presentarla con lo stile impostato & Non implementato \\ \hline
-		TI17 & Si verifica che il metodo ImageWidget::setWidth passi correttamente al presenter il valore dell'altezza il quale aggiornerà la view & Non implementato \\ \hline
-		TI18 & Si verifica che il metodo ImageWidget::setHeight passi correttamente al presenter il valore della larghezza il quale aggiornerà la view & Non implementato \\ \hline
-		TI19 & Si verifica che il metodo ImageWidget::setImage passi correttamente al presenter il path del'immagine che dovrà essere presentata nella view & Non implementato \\ \hline
-		TI20 & Si verifica che il metodo VerticalLayoutView::renderView generi la view mostrando gli elementi uno sotto l'altro nel ordine in cui sono stati inseriti & Non implementato \\ \hline
-		TI21 & Si verifica che il metodo HorizontalLayoutView::renderView generi la view mostrando gli elementi uno affinaco all'altro nel ordine in cui sono stati inseriti & Non implementato \\ \hline
+		TI1 & Si verifica che il metodo ButtonWidget::setText passi correttamente il testo al presenter il quale eventualmente lo formatterà e modificherà correttamente l'HTML e CSS & Implementato \\ \hline
+		TI2 & Si verifica che il metodo ButtonWidget::setHeight passi correttamente il valore dell'altezza al presenter il quale modificherà correttamente l'HTML e CSS & Implementato \\ \hline
+		TI3 & Si verifica che il metodo ButtonWidget::setWidth passi correttamente il valore della lareghezza al presenter modificherà correttamente l'HTML e CSS & Implementato \\ \hline
+		TI4 & Si verifica che il metodo ButtonWidget::setBackgroundColor passi correttamente il colore dello sfondo del bottone al presenter il quale modificherà correttamente l'HTML e CSS & Implementato \\ \hline
+		TI5 & Si verifica che il metodo ButtonWidget::setOnClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene premuto il pulsante & Implementato \\ \hline
+		TI6 & Si verifica che il metodo ButtonWidget::setOnLongClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene mantenuto premuto il pulsante & Implementato \\ \hline
+		TI7 & Si verifica che il metodo TextWidget::setText passi correttamente al presenter il testo che verrà poi mostrato a video & Implementato \\ \hline
+		TI8 & Si verifica che il metodo TextWidget::setTextColor passi correttamente il colore del testo al presenter il quale modificherà correttamente l'HTML e CSS, presentandolo con il colore corrispondente & Implementato \\ \hline
+		TI9 & Si verifica che il metodo TextWidget::setFormatText passi il valore booleano (che rappresenta la scelta di formattare il testo) al presenter. Essp dovrà, poi, presentare il testo formattato seguendo la sintassi markdown oppure lasciarlo invariato in funzione al valore booleano & Implementato \\ \hline
+		TI10 & Si verifica che il metodo TextWidget::setUrlHighlightColor passi il valore del colore al presenter il quale dovrà presentare i link evidenziati oppure non evidenziati in funzione al colore scelto & Implementato \\ \hline
+		TI11 & Si verifica che il metodo TextWidget::setTextSize passi la dimensione del testo del presenter il quale dovrà occuparsi di presentare il testo della dimensione impostata & Implementato \\ \hline
+		TI12 & Si verifica che il metodo ChecklistItemWidget::setUseSelectionMark imposti la scelta di utilizzare un carattere o un colore come spunta passando correttamente per il Presenter & Implementato \\ \hline
+		TI13 & Si verifica che il metodo ChecklistItemWidget::setSelectionColor passi al presenter il colore dello spunta il quale dovrà presentare la lista con lo stile corretto & Implementato \\ \hline
+		TI14 & Si verifica che il metodo ChecklistItemWidget::setSelectionCharacter passi al presenter un carattere per la spunta, e il presenter dovrà presentare la lista con lo stile corretto & Implementato \\ \hline
+		TI15 & Si verifica che il metodo ListWidget::addItem passi al presenter il testo del elemento il quale dovrà presentare l'HTML con il nuovo elemento & Implementato \\ \hline
+		TI16 & Si verifica che la view passi al presenter il carattere con il quale mostrare gli indicatori della lista. Esso provvederà poi ad impostarli correttamente nell'HTML & Implementato \\ \hline
+		TI17 & Si verifica che il metodo ImageWidget::setWidth passi correttamente al presenter il valore dell'altezza il quale aggiornerà la view & Implementato \\ \hline
+		TI18 & Si verifica che il metodo ImageWidget::setHeight passi correttamente al presenter il valore della larghezza il quale aggiornerà la view & Implementato \\ \hline
+		TI19 & Si verifica che il metodo ImageWidget::setImage passi correttamente al presenter il path del'immagine che dovrà essere presentata nella view & Implementato \\ \hline
+		TI20 & Si verifica che il metodo VerticalLayoutView::renderView generi la view mostrando gli elementi uno sotto l'altro nel ordine in cui sono stati inseriti & Implementato \\ \hline
+		TI21 & Si verifica che il metodo HorizontalLayoutView::renderView generi la view mostrando gli elementi uno affinaco all'altro nel ordine in cui sono stati inseriti & Implementato \\ \hline
 		TI22 & Si verifica che RemoteItemViewPresenter riceva l'evento RemoveItemView::onItemRemovedClicked ed elimini l'elelemnto relativo dalla lista & Non implementato \\ \hline
 		TI23 & Si verifica che RemoteItemViewPresenter rimuovendo un elemento dalla lista mantenga RemoveItemView in uno stato consistente agli elementi presenti & Non implementato \\ \hline
 		TI24 & Si verifica che il ModifyListUseCase esegua le operazioni di aggiunta, rimmozione e aggiornamento dei dati trammite DatabaseSource in modo corretto & Non implementato \\ \hline

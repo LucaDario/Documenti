@@ -1,0 +1,23 @@
+\section{Features Guide}
+The following section contains the list of all the allowed operations that the different types of user can perform inside \app. \\
+Please note that, due to time reasons, not all the features are currently implemented, but they will be implemented in a short time and this section will be so updated. These features will be marked by a * near their names.
+
+\subsection{Users' types}
+The common use of the application will involve different types of users, which can be represented by the following hierarchy, from the one that has fewer permissions (at the top) to the one with the most permissions (at the bottom):
+\begin{itemize}
+	\item \textbf{View-only user}, also simply called \textbf{viewer}. \\
+		  This kind of user can just view the list, without interacting with it. The operations that this kind of user can perform will be marked with an \texttt{[V]} near their name;
+	\item \textbf{Common user}, also called \textbf{user}.
+		  This kind of user does nothing else than interacting with an already-created list, performing common operations. The operations that this kind of user can perform will be marked with an \texttt{[U]} near their name;
+	\item \textbf{Permissions-granted user}, also called \textbf{editor}.
+		  This kind of user has all the above permissions, plus he can add or remove items to the list. All the operations that he can perform will be marked with an \texttt{E} near their name;
+	\item \textbf{Creator of the list}, also called \textbf{creator}
+		  This kind of user is the user that creates a list and so can perform some special actions on it. The operation that this kind of user can perform are marked with a \texttt{[C]} near their name.
+\end{itemize}
+
+\input{Sections/3-HowToUse/ListCreation.tex}
+%\input{Sections/3-HowToUse/ListEdit.tex}
+\input{Sections/3-HowToUse/ItemAdd.tex}
+%\input{Sections/3-HowToUse/ItemEdit.tex}
+\input{Sections/3-HowToUse/ListShare.tex}
+%\input{Sections/3-HowToUse/ListForward.tex}

@@ -284,7 +284,27 @@
         "approved": false
       },
       {
-        "description": "Viene verificato che il codice html associato ad una qualsiasi widet sia valido",
+        "description": "Verificare che il codice html associato ad una qualsiasi widget sia valido",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che GetListInfoUseCase ritorni la lista che corrisponde all'id inserito",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che GetItemInfoUseCase ritorni l'oggetto che corrisponde all'id inserito",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che ManageListUseCase cancelli la lista che corrisponde all'id inserito",
+        "implemented": false,
+        "approved": false
+      },
+      {
+        "description": "Verificare che ShareListUseCase aggiunga agli utenti della lista l'utente corrispondente all'id inserito",
         "implemented": false,
         "approved": false
       }

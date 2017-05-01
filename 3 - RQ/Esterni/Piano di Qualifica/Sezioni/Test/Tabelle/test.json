@@ -55,12 +55,12 @@
       },
       {
         "description": "Verificare che un widget di tipo immagine venga impostata la dimensione del immagine da visualizzare in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che all'instanziazione di un widget di tipo immagine venga impostata la larghezza e l'altezza di default",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
@@ -150,22 +150,22 @@
       },
       {
         "description": "Verificare che in un widget di tipo checklistitem vengano eseguiti gli eventi associati alla pressione pressione prolungata",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che in un widget di tipo checklistitem venga impostato in modo corretto la soglia per determinare che una pressione da parte del utente è di tipo: \"pressione prolungata\"",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che in un widget di tipo list venga impostato correttamente il cambiamento dello stile",
-        "implemented": true,
+        "implemented": false,
         "approved": false
       },
       {
         "description": "Verificare che in un widget di tipo list che vengano aggiunti correttamente tutti gli elementi",
-        "implemented": true,
+        "implemented": false,
         "approved": false
       },
       {

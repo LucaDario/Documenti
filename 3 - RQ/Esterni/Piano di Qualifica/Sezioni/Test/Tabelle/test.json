@@ -204,22 +204,12 @@
         "approved": false
       },
       {
-        "description": "Verificare che l'aggiunta di un nuovo prodotto alla lista della spesa venga inserito correttamente",
-        "implemented": false,
-        "approved": false
-      },
-      {
         "description": "Verificare che nel caso di un errore durante l'aggiunta di un prodotto alla lista della spesa venga mostrato uk mesaggio di errore corretto",
         "implemented": false,
         "approved": false
       },
       {
         "description": "Verificare che l'immagine del prodotto venga aggiunta in modo corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che l'immagine del prodotto venga mostrata in modo corretto",
         "implemented": false,
         "approved": false
       },
@@ -754,7 +744,7 @@
         "importance": "O"
       },
       {
-        "description": "Viene verifica che sia possibile aggiungere un elemento ad una bolla \"lista della spesa\"",
+        "description": "Verificare che l'aggiunta di un nuovo prodotto alla lista della spesa venga eseguita correttamente",
         "implemented": false,
         "approved": false,
         "type": "F",
@@ -782,7 +772,7 @@
         "importance": "O"
       },
       {
-        "description": "Viene verifica che l'sdk si installi correttamente in una istanza di Rocket.chat hostata su Heroku",
+        "description": "Viene verificato che l'sdk si installi correttamente in una istanza di Rocket.chat, della quale viene fatto hosting su Heroku",
         "implemented": false,
         "approved": false,
         "type": "V",
@@ -831,7 +821,7 @@
     "skip_not_approved": false,
     "tests": [
       {
-        "description": "Viene verificato che sia possibile scaricare l'sdk trammite il gestore dei pacchetti npm",
+        "description": "Viene verificato che sia possibile scaricare l'sdk tramite il gestore dei pacchetti npm",
         "implemented": false,
         "approved": false,
         "type": "V",
@@ -887,21 +877,21 @@
         "importance": "O"
       },
       {
-        "description": "Viene verificato che se un utente ha i permessi per interagire con una bolla qust'ultimo sia in grado di visualizzare gli elementi e di spuntarli",
+        "description": "Viene verificato che se un utente ha i permessi per interagire con una bolla quest'ultimo sia in grado di visualizzare gli elementi e di spuntarli",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che se un utente inoltra una lista della spesa qust'ultima venga inoltrata in forma testuale bloccando quindi ogni forma di interazione con l'utente",
+        "description": "Viene verificato che se un utente inoltra una lista della spesa quest'ultima venga inoltrata in forma testuale bloccando quindi ogni forma di interazione con l'utente",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene  verificato che tutti i file che contengono codice scritto in javascript o coffe script passino i test di linting",
+        "description": "Viene verificato che tutti i file che contengono codice scritto in javascript o coffescript passino i test di linting",
         "implemented": false,
         "approved": false,
         "type": "V",

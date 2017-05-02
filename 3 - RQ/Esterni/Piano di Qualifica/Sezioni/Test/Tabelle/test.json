@@ -99,11 +99,6 @@
         "approved": false
       },
       {
-        "description": "Verificare che un widget di tipo bottone venga visualizzato con dimensione, colore e testo correti",
-        "implemented": false,
-        "approved": false
-      },
-      {
         "description": "Verificare che in un widget di tipo button vengano eseguiti gli eventi associati alla pressione",
         "implemented": true,
         "approved": false
@@ -159,13 +154,23 @@
         "approved": false
       },
       {
-        "description": "Verificare che in un widget di tipo list venga impostato correttamente il cambiamento dello stile",
-        "implemented": false,
+        "description": "Verificare che in un widget di tipo list venga impostato correttamente il cambiamento dell'indicatore a 'pallino'",
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo list venga impostato correttamente il cambiamento dell'indicatore a 'trattino'",
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo list venga impostato correttamente il cambiamento dell'indicatore ad elenco numerato",
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che in un widget di tipo list che vengano aggiunti correttamente tutti gli elementi",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
@@ -190,32 +195,32 @@
       },
       {
         "description": "Verificare che il nome della lista della spesa venga impostato nel modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che all'instanziazione di una lista della spesa venga impostato il valore du default per il nome della lista",
-        "implemented": false,
+        "description": "Verificare che all'instanziazione di una lista della spesa venga impostato il valore di default per il nome della lista",
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che l'immagine della lista della spesa venga impostata in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che nel caso di un errore durante l'aggiunta di un prodotto alla lista della spesa venga mostrato uk mesaggio di errore corretto",
-        "implemented": false,
+        "description": "Verificare che nel caso di un errore durante l'aggiunta di un prodotto alla lista della spesa venga mostrato un mesaggio di errore",
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che l'immagine del prodotto venga aggiunta in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che la descrizione del prodotto venga aggiunta in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
@@ -225,22 +230,22 @@
       },
       {
         "description": "Verificare che la quantità del prodotto venga aggiunta in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che alla creazione di un nuovo prodotto venga impostata la quantità di default",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che l'unità di misura relativa alla quantità del prodotto venga impostata in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che alla creazione di un nuovo prodotto venga impostata l'unità di misura di default",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
@@ -284,28 +289,48 @@
         "approved": false
       },
       {
-        "description": "Verificare che il codice html associato ad una qualsiasi widget sia valido",
-        "implemented": false,
-        "approved": false
-      },
-      {
         "description": "Verificare che GetListInfoUseCase ritorni la lista che corrisponde all'id inserito",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che GetItemInfoUseCase ritorni l'oggetto che corrisponde all'id inserito",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che ManageListUseCase cancelli la lista che corrisponde all'id inserito",
-        "implemented": false,
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Verificare che ModifyListUseCase interagisca e modifichi la lista in modo corretto",
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che ShareListUseCase aggiunga agli utenti della lista l'utente corrispondente all'id inserito",
-        "implemented": false,
+        "implemented": true,
+        "approved": false
+      }
+      {
+        "description": "Verificare che ModifyListUseCase salvi correttamente la lista nel database",
+        "implemented": true,
+        "approved": false
+      }
+      {
+        "description": "Verificare che ModifyListUseCase aggiunga correttamente un item alla lista nel database",
+        "implemented": true,
+        "approved": false
+      }
+      {
+        "description": "Verificare che ModifyListUseCase rimuova correttamente un item alla lista nel database",
+        "implemented": true,
+        "approved": false
+      }
+      {
+        "description": "Verificare che ModifyListUseCase aggiorni correttamente un item alla lista nel database",
+        "implemented": true,
         "approved": false
       }
     ]
@@ -411,27 +436,22 @@
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo VerticalLayoutView::renderView generi la view mostrando gli elementi uno sotto l'altro nel ordine in cui sono stati inseriti",
+        "description": "Si verifica che l'aggiunta di un VerticalLayoutView, creato con degli elementi al suo interno, non causi errori nell'aggiunta di questo alla bolla e che, gli elementi, nel layout appena aggiunto, vengano mostrati uno sotto l'altro",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo HorizontalLayoutView::renderView generi la view mostrando gli elementi uno affinaco all'altro nel ordine in cui sono stati inseriti",
+        "description": "Si verifica che l'aggiunta di un HorizontalLayoutView, creato con degli elementi al suo interno, non causi errori nell'aggiunta di questi alla bolla e che gli elementi, nel layout appena aggiunto, vengano mostrati uno vicino all'altro",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Si verifica che RemoteItemViewPresenter riceva l'evento RemoveItemView::onItemRemovedClicked ed elimini l'elelemnto relativo dalla lista",
+        "description": "Si verifica che RemoveItemViewPresenter riceva l'evento RemoveItemView::onItemRemovedClicked ed elimini l'elemento relativo dalla lista",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che RemoteItemViewPresenter rimuovendo un elemento dalla lista mantenga RemoveItemView in uno stato consistente agli elementi presenti",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che il ModifyListUseCase esegua le operazioni di aggiunta, rimmozione e aggiornamento dei dati trammite DatabaseSource in modo corretto",
+        "description": "Si verifica che il ModifyListUseCase esegua le operazioni di aggiunta, rimozione e aggiornamento dei dati trammite DatabaseSource in modo corretto",
         "implemented": false,
         "approved": false
       },
@@ -802,48 +822,6 @@
         "type": "F",
         "importance": "O"
       },
-      {
-        "description": "Viene verificato che l'sdk si installi correttamente in una istanza di Rocket.chat, della quale viene fatto hosting su Heroku",
-        "implemented": false,
-        "approved": false,
-        "type": "V",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che l'sdk funzioni con il browser chrome versione >= 56",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che l'sdk funzioni con il browser safari versione >= 10",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che l'sdk funzioni con il browser opera versione >= 43",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che l'sdk funzioni con il browser firefox versione >= 45",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che l'sdk funzioni con il browser microsoft edge versione >= 13",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      }
     ]
   },
 
@@ -926,6 +904,48 @@
         "implemented": false,
         "approved": false,
         "type": "V",
+        "importance": "O"
+      }
+      {
+        "description": "Viene verificato che l'sdk si installi correttamente in una istanza di Rocket.chat, della quale viene fatto hosting su Heroku",
+        "implemented": false,
+        "approved": false,
+        "type": "V",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'sdk funzioni con il browser chrome versione >= 56",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'sdk funzioni con il browser safari versione >= 10",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'sdk funzioni con il browser opera versione >= 43",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'sdk funzioni con il browser firefox versione >= 45",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'sdk funzioni con il browser microsoft edge versione >= 13",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
         "importance": "O"
       }
     ]

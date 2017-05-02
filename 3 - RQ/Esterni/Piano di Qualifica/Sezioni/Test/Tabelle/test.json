@@ -99,11 +99,6 @@
         "approved": false
       },
       {
-        "description": "Verificare che un widget di tipo bottone venga visualizzato con dimensione, colore e testo correti",
-        "implemented": false,
-        "approved": false
-      },
-      {
         "description": "Verificare che in un widget di tipo button vengano eseguiti gli eventi associati alla pressione",
         "implemented": true,
         "approved": false
@@ -318,6 +313,26 @@
         "implemented": true,
         "approved": false
       }
+      {
+        "description": "Verificare che ModifyListUseCase salvi correttamente la lista nel database",
+        "implemented": true,
+        "approved": false
+      }
+      {
+        "description": "Verificare che ModifyListUseCase aggiunga correttamente un item alla lista nel database",
+        "implemented": true,
+        "approved": false
+      }
+      {
+        "description": "Verificare che ModifyListUseCase rimuova correttamente un item alla lista nel database",
+        "implemented": true,
+        "approved": false
+      }
+      {
+        "description": "Verificare che ModifyListUseCase aggiorni correttamente un item alla lista nel database",
+        "implemented": true,
+        "approved": false
+      }
     ]
   },
 
@@ -421,12 +436,12 @@
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo VerticalLayoutView::renderView generi la view mostrando gli elementi uno sotto l'altro nel ordine in cui sono stati inseriti",
+        "description": "Si verifica che l'aggiunta di un VerticalLayoutView, creato con degli elementi al suo interno, non causi errori nell'aggiunta di questo alla bolla e che, gli elementi, nel layout appena aggiunto, vengano mostrati uno sotto l'altro",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo HorizontalLayoutView::renderView generi la view mostrando gli elementi uno affinaco all'altro nel ordine in cui sono stati inseriti",
+        "description": "Si verifica che l'aggiunta di un HorizontalLayoutView, creato con degli elementi al suo interno, non causi errori nell'aggiunta di questi alla bolla e che gli elementi, nel layout appena aggiunto, vengano mostrati uno vicino all'altro",
         "implemented": true,
         "approved": false
       },

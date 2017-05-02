@@ -1,49 +1,50 @@
 \section{Tecnologie utilizzate}
 
-\subsection{Rocket.Chat}
-\termine{Rocket.Chat} è una Web Chat Server, sviluppata in JavaScript, utilizzando il \termine{framework} Meteor. Lo scopo principale del capitolato è quello di sviluppare un'applicazione integrabile con il \termine{package manager} \termine{Atmosphere} nel progetto Meteor \termine{Rocket.Chat}. L'applicazione, denominata \textit{Bring-It}, userà l'\termine{SDK} integrata nello stesso metodo. Una volta compilato il tutto, il risultato sarà la versione di \termine{Rocket.Chat} del gruppo \gruppo\ che avrà incluso le funzionalità previste, sottoforma di pacchetti.
-
-\subsection{Meteor.js}
-Meteor è una piattaforma Javascript per lo sviluppo di applicazioni web e mobile. Essa viene utilizzata come ambiente di sviluppo per l'applicazione e per l'\termine{SDK} che verranno integrate come pacchetti stand-alone in \termine{Rocket.Chat}.
-Meteor permette un'ottima gestione delle componenti, permettendo lo sviluppo della parte server, della parte client e della parte per la comunicazione tra esse in un unico progetto. Per fare ciò Meteor include un set di tecnologie da utilizzare, tra le quali: Node.js, MongoDB e tutte quelle disponibili all'interno del \termine{package manager} \termine{Atmosphere}.
-
-\subsection{MongoDB}
-MongoDB è un \termine{DBMS} non relazionale, orientato ai documenti. Classificato come un database di tipo NoSQL, si allontana dalla
-struttura tradizionale basata su tabelle dei database relazionali in favore di documenti in stile
-JSON con schema dinamico. MongoDB è utilizzato come \termine{storage} da \termine{Rocket.Chat}, così come per qualsiasi progetto meteor. Dunque, il suo utilizzo è derivato principalmente per questo motivo.
-
-\subsection{Node.js}
-Per lo sviluppo della parte Back-End dell’applicazione si è deciso di utilizzare la piattaforma \termine{event-driven} Node.js, basata sul motore JavaScript V8. Esso permette di realizzare applicazioni
-Web utilizzando il linguaggio JavaScript, tipicamente client-side, per
-la scrittura server-side. 
-Node.js è essenziale per lo sviluppo di Monolith e per la compilazione di \termine{Rocket.Chat}. Infatti l'installazione di Meteor comporta anche l'installazione di Node.js essenziale per il corretto funzionamento dei progetti Meteor. Il principale vantaggio dell'utilizzo di tale tecnologia è che permette di accedere alle risorse del sistema operativo in modalità \termine{event-driven} non sfruttando il modello basato sui thread concorrenti, utilizzato dai classici web servers.
-
-\subsection{Atmosphere e npm}
-\textit{Atmosphere} e \textit{npm} sono dei \termine{packages managers} di Meteor e serve per aggiungere pacchetti \termine{stand-alone} all'interno di un generico progetto, come appunto \termine{Monolith} e relativa applicazione. Viene tenuta traccia dei pacchetti integrati nel progetto tramite la directory \textit{packages/} che si crea all'interno del progetto.
-
-\subsection{Can.js}
-\textit{Can.js} è una collezione di \termine{librerie} lato client per lo sviluppo di applicazioni web. In particolare il gruppo ha utilizzato la \termine{libreria} \textit{can-stache} utilizzata per costruire dei \textit{template} HTML ed aggiornarli in modo semplice e garantire un \termine{binding} dinamico.
-
-\subsection{Bootstrap}
-\textit{Bootstrap} è un \termine{framework} per la gestione di HTML, CSS e JavaScript. Viene utilizzato per semplicità di utilizzo e ridurre il tempo necessario per l'implementazione e l'integrazione dei file CSS, HTML e CSS dell'applicazione. Inoltre, tale \termine{framework} è già integrato dentro \termine{Rocket.Chat} e viene, dunque, utilizzato anche per retrocompatibilità.
-
-\subsection{jQuery}
-\textit{jQuery} è una libreria JavaScript. Essa permette di modificare facilmente il file HTML basandosi sul \termine{paradigma DOM}. Esso viene utilizzato nel caso di operazioni semplici (come una semplice animazione) oppure per implementare o gestire funzionalità che non si possono fare tramite i \termine{frameworks} scelti.
-
-\subsection{Ecmascript 6}
-\textit{Ecmascript 6} è un linguaggio di programmazione standardizzato e mantenuto da Ecma International nell'ECMA-262 ed ISO/IEC 16262. Le implementazioni più conosciute di questo linguaggio (spesso definite come dialetti) sono JavaScript, JScript e ActionScript che sono entrati largamente in uso, inizialmente, come linguaggi client-side nel web development. L versione 6 implementa significanti cambiamenti sintattici per scrivere applicazioni più complesse, incluse le classi e i moduli. Ciò ci permette di creare una struttura ben definita e di poter utilizzarla per implementare una struttura modulare.
-
-\subsection{Dependency-injection-es6}
-\textit{Dependency-injection-es6} è una \termine{libreria} per \textit{Node.js} e l'ambiente \textit{JavaScript} dove \textit{EcmaScript 6} è supportato. Grazie a quest'ultima caratteristica, tale \termine{libreria} è stata scelta dal team per implementare il \termine{design-pattern} della \termine{dependency-injection}.
-
-\subsection{Es6-event-emitter}
-\textit{Es6-event-emitter} è una \termine{libreria} che serve per emettere e catturare eventi, generati dopo particolari azioni.
-
-\subsection{Sass}
-\textit{Sass} è preprocessore CSS. Esso serve a definire fogli di stile con una forma più semplice, completa e potente rispetto ai \termine{CSS} e a generare file \termine{CSS} ottimizzati, aggregando le strutture definite anche in modo complesso. Esso è utilizzato per generare alcuni fogli di stile particolarmente complicati e per semplificare la loro gestione.
-
-\subsection{Marked}
-\textit{Marked} è una \termine{libreria} che trasforma del testo che rispetta la sintassi \termine{Markdown} in \termine{HTML}. Tale \termine{libreria} viene utilizzata per la generazione dell'\termine{HTML} del widget Markdown per semplificarne la gestione. 
+\subsection{Atmosphere ed npm}
+\textit{Atmosphere} ed \textit{npm} sono dei \termine{package managers} supportati da Meteor attraverso i quali è possibile aggiungere pacchetti \termine{stand alone} all'interno di un generico progetto, come appunto \termine{Monolith} e \termine{BringIt}. \\
+Tutti i pacchetti installati attraverso uno dei due sistemi verranno installati all'interno della cartella \textit{packages}, che verrà creata all'interno della cartella base del progetto durante il primo avvio.
 
 \subsection{BlazeJS}
 \textit{BlazeJS} è una potente \termine{libreria} per la creazione di interfacce utente tramite template \termine{HTML}. Essa elimina l'esigenza di aggiornare la parte logica dell'applicazione che è in ascolto dei cambiamenti e di eventuali manipolazioni del \termine{DOM}.
+
+\subsection{Bootbox.js}
+\textit{Bootbox.js} è una \termine{libreria} dal semplice utilizzo, che permette di creare programmaticamente dei popup utilizzando i modali presenti all'interno di \textit{Bootstrap}, senza doversi preoccupare di aggiungere, modificare o rimuovere gli elementi DOM o i gestori di eventi \termine{JavaScript} necessari.
+
+\subsection{Bootstrap}
+\textit{Bootstrap} è un \termine{framework} per la gestione di codice HTML, CSS e JavaScript. Esso viene utilizzato per ridurre il tempo necessario all'implementazione e l'integrazione dei file CSS, HTML e CSS dell'applicazione.
+
+\subsection{Can.js}
+\textit{Can.js} è una collezione di librerie per lo sviluppo lato client di applicazioni web. In particolare il gruppo ha utilizzato la libreria \textit{can-stache} per costruire dei \textit{template} HTML ed aggiornarli in modo semplice garantendo così un \termine{binding} dinamico dei valori posti al loro interno, al fine di poterli poi aggiornare facilmente.
+
+\subsection{Dependency-injection-es6}
+\textit{Dependency-injection-es6} è una \termine{libreria} per \textit{Node.js} e  per l'ambiente \textit{JavaScript} che supporta \textit{ECMAScript 6}. Grazie a quest'ultima caratteristica, tale \termine{libreria} è stata scelta dal team per implementare il \termine{design pattern} della \termine{dependency injection}.
+
+\subsection{ECMAScript 6}
+\textit{ECMAScript 6} è un linguaggio di programmazione standardizzato e mantenuto da Ecma International nell'ECMA-262 ed ISO/IEC 16262. Le implementazioni più conosciute di questo linguaggio (spesso definite come dialetti) sono JavaScript, JScript e ActionScript che sono entrati largamente in uso, inizialmente, come linguaggi client-side nello sviluppo web. La versione 6 implementa significanti cambiamenti sintattici per scrivere applicazioni più complesse, incluse le classi e i moduli. Ciò ci permette di creare una struttura ben definita e di poter utilizzarla per implementare una architettura modulare.
+
+\subsection{Es6-event-emitter}
+\textit{Es6-event-emitter} è una \termine{libreria} che supporta \textit{ECMAScript 6} utile per implementare il design pattern \termine{observer} in quanto permette di emettere e catturare eventi in modo molto semplice.
+
+\subsection{jQuery}
+\textit{jQuery} è una libreria JavaScript che permette di modificare facilmente i file HTML basandosi sul \termine{paradigma DOM}. Esso viene utilizzato nel caso di operazioni semplici (come una semplice animazione) oppure per implementare o gestire funzionalità che non si possono ottenere tramite i \termine{frameworks} scelti.
+
+\subsection{Less}
+\textit{Less} è un preprocessore \termine{CSS} utile per definire fogli di stile aventi una forma più semplice, completa e potente rispetto al classico \termine{CSS}. Oltre a ciò, egli permette di generare file \termine{CSS} ottimizzati, aggregando le strutture definite anche in modo complesso.
+
+\subsection{Marked}
+\textit{Marked} è una \termine{libreria} \termine{JavaScript} che trasforma del testo che rispetta la sintassi \termine{Markdown}, in codice \termine{HTML}. Tale \termine{libreria} viene utilizzata per la generazione del codice \termine{HTML} che rappresenta il testo inserito all'interno del widget \texttt{TextWidget} nel qual caso esso sia scritto con tale sintassi. 
+
+\subsection{Meteor.js}
+Meteor è una piattaforma JavaScript per lo sviluppo di applicazioni web e mobile. Essa viene utilizzata come ambiente di sviluppo per l'applicazione e per l'\termine{SDK} che verranno integrati come pacchetti stand-alone in \termine{Rocket.chat}. \\
+Meteor permette un'ottima gestione delle componenti, permettendo lo sviluppo della parte server, della parte client e della parte per la comunicazione tra esse in un unico progetto. Per fare ciò Meteor include un set di tecnologie da utilizzare, tra le quali: Node.js, MongoDB e tutte quelle disponibili all'interno del \termine{package manager} \termine{Atmosphere}.
+
+\subsection{MongoDB}
+MongoDB è un \termine{DBMS} non relazionale orientato ai documenti. Classificato come un database di tipo NoSQL, si allontana dalla struttura tradizionale basata su tabelle dei database relazionali in favore di documenti in stile JSON con schema dinamico. MongoDB è utilizzato come \termine{storage} da \termine{Rocket.chat}, così come per qualsiasi progetto Meteor. Il suo utilizzo è pertanto derivato principalmente per questo motivo.
+
+\subsection{Node.js}
+Per lo sviluppo della parte backend dell'applicazione si è deciso di utilizzare la piattaforma \termine{event driven} Node.js, basata sul motore JavaScript V8. Essa permette di realizzare applicazioni web utilizzando il linguaggio JavaScript, tipicamente client-side, per la scrittura anche della parte server-side. \\
+Node.js è essenziale per lo sviluppo di Monolith e per la compilazione di \termine{Rocket.chat}, e viene automaticamente installato durante il primo avvio di un qualunque progetto Meteor. \\
+Il principale vantaggio dell'utilizzo di tale tecnologia è che permette di accedere alle risorse del sistema operativo in modalità \termine{event driven} senza sfruttare il modello basato sui thread concorrenti utilizzato dai classici web servers.
+
+\subsection{Rocket.chat}
+\termine{Rocket.chat} è un sistema di web chat sviluppato in JavaScript utilizzando il \termine{framework} Meteor.js. Lo scopo principale del capitolato è quello di sviluppare un'applicazione integrabile con il \termine{package manager} \termine{Atmosphere} nel progetto Meteor \termine{Rocket.Chat}. L'applicazione, denominata \textit{BringIt}, utilizzerà l'\termine{SDK} creato dal gruppo stesso. Una volta compilato il tutto, il risultato sarà la versione di \termine{Rocket.Chat} del gruppo \gruppo\ che avrà incluso le funzionalità previste, sottoforma di pacchetti.

@@ -312,22 +312,22 @@
         "description": "Verificare che ShareListUseCase aggiunga agli utenti della lista l'utente corrispondente all'id inserito",
         "implemented": true,
         "approved": false
-      }
+      },
       {
         "description": "Verificare che ModifyListUseCase salvi correttamente la lista nel database",
         "implemented": true,
         "approved": false
-      }
+      },
       {
         "description": "Verificare che ModifyListUseCase aggiunga correttamente un item alla lista nel database",
         "implemented": true,
         "approved": false
-      }
+      },
       {
         "description": "Verificare che ModifyListUseCase rimuova correttamente un item alla lista nel database",
         "implemented": true,
         "approved": false
-      }
+      },
       {
         "description": "Verificare che ModifyListUseCase aggiorni correttamente un item alla lista nel database",
         "implemented": true,
@@ -821,7 +821,7 @@
         "approved": false,
         "type": "F",
         "importance": "O"
-      },
+      }
     ]
   },
 
@@ -905,7 +905,7 @@
         "approved": false,
         "type": "V",
         "importance": "O"
-      }
+      },
       {
         "description": "Viene verificato che l'sdk si installi correttamente in una istanza di Rocket.chat, della quale viene fatto hosting su Heroku",
         "implemented": false,

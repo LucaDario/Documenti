@@ -1,10 +1,10 @@
-\subsubsection{list\_data::ListData}
+\subsubsection{data::ListData}
 
-\label{list_data::ListData}
+\label{data::ListData}
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ListData.png}
-	\caption{list\_data::ListData}
+	\caption{data::ListData}
 \end{figure}
 
 \begin{itemize}
@@ -59,10 +59,10 @@
 				\item \textit{id:string}\\
 				L'identificativo dell'oggetto che si desidera rimuovere dalla lista.
 			\end{itemize} 
-	\item \textit{public getItem(id:string):void}\\
+	\item \textit{public getItemById(itemId:string):void}\\
 	Ritorna un oggetto della lista.
 				\\ \textbf{Parametri}: \begin{itemize}
-				\item \textit{id:string}\\
+				\item \textit{itemId:string}\\
 				L'identificativo dell'oggetto che si desidera ottenere dalla lista.
 			\end{itemize} 
 	\item \textit{public getId():string}\\
@@ -99,13 +99,13 @@
 \item \textbf{Eventi}:
 \end{itemize}
 
-\subsubsection{list\_data::ListItem}
+\subsubsection{data::ListItem}
 
-\label{list_data::ListItem}
+\label{data::ListItem}
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Sezioni/SottosezioniST/img/app/ListItem.png}
-	\caption{list\_data::ListItem}
+	\caption{data::ListItem}
 \end{figure}
 
 \begin{itemize}
@@ -127,6 +127,8 @@
 	Questa stringa rappresenta le note relative al prodotto.
 	\item \textit{private quantity:int}\\
 	Questa stringa rappresenta la quantità di prodotto richiesta.
+	\item \textit{private status:boolean}\\
+	Questo booleano rappresenta lo stato dell'item, se è spuntato o no.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
@@ -148,7 +150,7 @@
 	Imposta l'immagine al prodotto.
 				\\ \textbf{Parametri}: \begin{itemize}
 				\item \textit{path:string}\\
-				l percorso dell'immagine che verrà impostata per il prodotto.
+				Il percorso dell'immagine che verrà impostata per il prodotto.
 			\end{itemize} 
 	\item \textit{public setMeasurementsUnit(mu:string):void}\\
 	Imposta l'unità di misura relativa alla quantità di prodotto.
@@ -161,6 +163,12 @@
 				\\ \textbf{Parametri}: \begin{itemize}
 				\item \textit{name:string}\\
 				Il nome che verrà impostato al prodotto.
+			\end{itemize} 
+	\item \textit{public setStatus(value:boolean):void}\\
+	Imposta lo stato dell'item.
+				\\ \textbf{Parametri}: \begin{itemize}
+				\item \textit{value:boolean}\\
+				Il booleano che si vuole impostare per lo stato, a true se è spuntato o a false altrimenti.
 			\end{itemize} 
 
 	\item \textit{public addNote(note:string):void}\\
@@ -201,6 +209,8 @@
 	Restituisce l'unità di misura impostata al prodotto.
 	\item \textit{public getQuantity():int}\\
 	Restituisce la quantità di prodotto richiesta.
+	\item \textit{public getStatus():boolean}\\
+	Restituisce lo stato del prodotto.
 \end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}

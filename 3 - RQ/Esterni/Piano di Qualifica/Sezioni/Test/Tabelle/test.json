@@ -99,11 +99,6 @@
         "approved": false
       },
       {
-        "description": "Verificare che un widget di tipo bottone venga visualizzato con dimensione, colore e testo correti",
-        "implemented": false,
-        "approved": false
-      },
-      {
         "description": "Verificare che in un widget di tipo button vengano eseguiti gli eventi associati alla pressione",
         "implemented": true,
         "approved": false
@@ -200,32 +195,32 @@
       },
       {
         "description": "Verificare che il nome della lista della spesa venga impostato nel modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che all'instanziazione di una lista della spesa venga impostato il valore du default per il nome della lista",
-        "implemented": false,
+        "description": "Verificare che all'instanziazione di una lista della spesa venga impostato il valore di default per il nome della lista",
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che l'immagine della lista della spesa venga impostata in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che nel caso di un errore durante l'aggiunta di un prodotto alla lista della spesa venga mostrato uk mesaggio di errore corretto",
-        "implemented": false,
+        "description": "Verificare che nel caso di un errore durante l'aggiunta di un prodotto alla lista della spesa venga mostrato un mesaggio di errore",
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che l'immagine del prodotto venga aggiunta in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che la descrizione del prodotto venga aggiunta in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
@@ -235,22 +230,22 @@
       },
       {
         "description": "Verificare che la quantità del prodotto venga aggiunta in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che alla creazione di un nuovo prodotto venga impostata la quantità di default",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che l'unità di misura relativa alla quantità del prodotto venga impostata in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che alla creazione di un nuovo prodotto venga impostata l'unità di misura di default",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
@@ -315,6 +310,26 @@
       },
       {
         "description": "Verificare che ShareListUseCase aggiunga agli utenti della lista l'utente corrispondente all'id inserito",
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Verificare che ModifyListUseCase salvi correttamente la lista nel database",
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Verificare che ModifyListUseCase aggiunga correttamente un item alla lista nel database",
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Verificare che ModifyListUseCase rimuova correttamente un item alla lista nel database",
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Verificare che ModifyListUseCase aggiorni correttamente un item alla lista nel database",
         "implemented": true,
         "approved": false
       }
@@ -421,12 +436,12 @@
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo VerticalLayoutView::renderView generi la view mostrando gli elementi uno sotto l'altro nel ordine in cui sono stati inseriti",
+        "description": "Si verifica che l'aggiunta di un VerticalLayoutView, creato con degli elementi al suo interno, non causi errori nell'aggiunta di questo alla bolla e che, gli elementi, nel layout appena aggiunto, vengano mostrati uno sotto l'altro",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo HorizontalLayoutView::renderView generi la view mostrando gli elementi uno affinaco all'altro nel ordine in cui sono stati inseriti",
+        "description": "Si verifica che l'aggiunta di un HorizontalLayoutView, creato con degli elementi al suo interno, non causi errori nell'aggiunta di questi alla bolla e che gli elementi, nel layout appena aggiunto, vengano mostrati uno vicino all'altro",
         "implemented": true,
         "approved": false
       },
@@ -806,7 +821,7 @@
         "approved": false,
         "type": "F",
         "importance": "O"
-      },
+      }
     ]
   },
 
@@ -890,7 +905,7 @@
         "approved": false,
         "type": "V",
         "importance": "O"
-      }
+      },
       {
         "description": "Viene verificato che l'sdk si installi correttamente in una istanza di Rocket.chat, della quale viene fatto hosting su Heroku",
         "implemented": false,

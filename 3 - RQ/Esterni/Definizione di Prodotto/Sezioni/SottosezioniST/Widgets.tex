@@ -351,10 +351,18 @@
 		\item \textit{size:int}\\
 		Rappresenta il numero di pixel corrispondente all'altezza del testo che verrà impostata all'interno del widget.
 		\end{itemize} 
-	\item \textit{getColor():string}\\
+				\item \textit{public setVisibility(value:boolean):void}\\
+	Imposta il valore di visibilità del widget a un valore dato.
+			\\ \textbf{Parametri}: \begin{itemize}
+			\item \textit{value:boolean}\\
+			Il valore booleano che si vuole impostare come visibilità, messo a true se si vuole il widget visibile, false altrimenti.
+	\end{itemize}
+	\item \textit{public getColor():string}\\
 	Ritorna il colore del testo all'interno del TextWidget.
-	\item \textit{getText():string}\\
+	\item \textit{public getText():string}\\
 	Ritorna il testo contenuto all'interno del TextWidget.
+	\item \textit{public getVisibility():boolean}\\
+	Ritorna il booleano che rappresenta la visibilità del widget.
 	\end{itemize}
 \end{itemize}
 
@@ -409,10 +417,18 @@
 		\item \textit{size:int}\\
 		Rappresenta il numero di pixel corrispondente all'altezza del testo che verrà impostata all'interno del widget.
 		\end{itemize} 
-	\item \textit{getColor():string}\\
+		\item \textit{public setVisibility(value:boolean):void}\\
+	Imposta il valore di visibilità del widget a un valore dato.
+			\\ \textbf{Parametri}: \begin{itemize}
+			\item \textit{value:boolean}\\
+			Il valore booleano che si vuole impostare come visibilità, messo a true se si vuole il widget visibile, false altrimenti.
+	\end{itemize}
+	\item \textit{public getColor():string}\\
 	Ritorna il colore del testo all'interno del TextWidget.
-	\item \textit{getText():string}\\
+	\item \textit{public getText():string}\\
 	Ritorna il testo contenuto all'interno del TextWidget.
+	\item \textit{public getVisibility():boolean}\\
+	Ritorna il booleano che rappresenta la visibilità del widget.
 	\item \textit{public renderView():HtmlDOMElement}\\
 	Restituisce l'elemento DOM rappresentante il widget.
 	\end{itemize}
@@ -483,10 +499,18 @@
 		\item \textit{size:int}\\
 		Rappresenta il numero di pixel corrispondente all'altezza del testo che verrà impostata all'interno del widget.
 		\end{itemize} 
-	\item \textit{getColor():string}\\
+		\item \textit{public setVisibility(value:boolean):void}\\
+	Imposta il valore di visibilità del widget a un valore dato.
+			\\ \textbf{Parametri}: \begin{itemize}
+			\item \textit{value:boolean}\\
+			Il valore booleano che si vuole impostare come visibilità, messo a true se si vuole il widget visibile, false altrimenti.
+	\end{itemize}
+	\item \textit{public getColor():string}\\
 	Ritorna il colore del testo all'interno del TextWidget.
-	\item \textit{getText():string}\\
+	\item \textit{public getText():string}\\
 	Ritorna il testo contenuto all'interno del TextWidget.
+	\item \textit{public getVisibility():boolean}\\
+	Ritorna il booleano che rappresenta la visibilità del widget.
 	\item \textit{public renderView():HtmlDOMElement}\\
 	Restituisce l'elemento DOM rappresentante il widget.
 	\end{itemize}
@@ -514,6 +538,8 @@
 	Rappresenta il testo stesso. 
 	\item \textit{private formatted:boolean}\\
 	Rappresenta l'impostazione del testo a formattato o meno.
+	\item \textit{private visibility:boolean}\\
+	Rappresenta la visibilità del widget testo.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
@@ -543,6 +569,12 @@
 		\item \textit{formatted:boolean}\\
 		Se questo booleano è a true il testo del widget viene formattato, se a false il testo viene considerato normale.
 		\end{itemize} 
+		\item \textit{public setVisibility(value:boolean):void}\\
+	Imposta il valore di visibilità del widget a un valore dato.
+			\\ \textbf{Parametri}: \begin{itemize}
+			\item \textit{value:boolean}\\
+			Il valore booleano che si vuole impostare come visibilità, messo a true se si vuole il widget visibile, false altrimenti.
+	\end{itemize}
 	\item \textit{public getSize():int}\\
 	Ritorna il numero di pixel corrispondente all'altezza del testo.
 	\item \textit{public getColor():string}\\
@@ -551,6 +583,8 @@
 	Ritorna la stringa contenente il testo.
 	\item \textit{public isFormatted():boolean}\\
 	Ritorna true se il testo è formattato, false altrimenti.
+	\item \textit{public getVisibility():boolean}\\
+	Ritorna il booleano che rappresenta la visibilità del widget.
 	\end{itemize}
 \end{itemize}
 
@@ -1181,12 +1215,20 @@
 		\item \textit{width:int}\\
 		La larghezza dell'immagine che si vuole impostare in pixel.
 		\end{itemize} 
+	\item \textit{public setVisibility(value:boolean):void}\\
+	Imposta il valore di visibilità del widget a un valore dato.
+			\\ \textbf{Parametri}: \begin{itemize}
+			\item \textit{value:boolean}\\
+			Il valore booleano che si vuole impostare come visibilità, messo a true se si vuole il widget visibile, false altrimenti.
+		\end{itemize} 
 	\item \textit{public getPath():string}\\
 	Ritorna la stringa contenente il percorso che porta all'immagine.
 	\item \textit{public getHeigth():string}\\
 	Ritorna l'altezza dell'immagine.
 	\item \textit{public getWidth():string}\\
 	Ritorna la larghezza dell'immagine.
+	\item \textit{public getVisibility():string}\\
+	Ritorna il booleano che rappresenta la visibilità del widget.
 	\end{itemize}
 \end{itemize}
 
@@ -1229,12 +1271,20 @@
 		\item \textit{width:int}\\
 		La larghezza dell'immagine che si vuole impostare in pixel.
 		\end{itemize} 
+	\item \textit{public setVisibility(value:boolean):void}\\
+	Imposta il valore di visibilità del widget a un valore dato.
+			\\ \textbf{Parametri}: \begin{itemize}
+			\item \textit{value:boolean}\\
+			Il valore booleano che si vuole impostare come visibilità, messo a true se si vuole il widget visibile, false altrimenti.
+		\end{itemize} 
 	\item \textit{public getPath():string}\\
 	Ritorna la stringa contenente il percorso che porta all'immagine.
 	\item \textit{public getHeigth():string}\\
 	Ritorna l'altezza dell'immagine.
 	\item \textit{public getWidth():string}\\
 	Ritorna la larghezza dell'immagine.
+	\item \textit{public getVisibility():boolean}\\
+	Ritorna il booleano che rappresenta la visibilità del widget.
 	\item \textit{public renderView():HtmlDOMElement}\\
 	Restituisce l'elemento DOM rappresentante il widget.
 	\end{itemize}
@@ -1288,6 +1338,12 @@
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{width:int}\\
 		La larghezza dell'immagine che si vuole impostare in pixel.
+		\end{itemize}
+	\item \textit{public setVisibility(value:boolean):void}\\
+	Imposta il valore di visibilità del widget a un valore dato.
+			\\ \textbf{Parametri}: \begin{itemize}
+			\item \textit{value:boolean}\\
+			Il valore booleano che si vuole impostare come visibilità, messo a true se si vuole il widget visibile, false altrimenti.
 		\end{itemize} 
 	\item \textit{public getPath():string}\\
 	Ritorna la stringa contenente il percorso che porta all'immagine.
@@ -1295,6 +1351,8 @@
 	Ritorna l'altezza dell'immagine.
 	\item \textit{public getWidth():string}\\
 	Ritorna la larghezza dell'immagine.
+	\item \textit{public getVisibility():boolean}\\
+	Ritorna il booleano che rappresenta la visibilità del widget.
 	\item \textit{public renderView():HtmlDOMElement}\\
 	Restituisce l'elemento DOM rappresentante il widget.
 	\end{itemize}
@@ -1319,7 +1377,9 @@
 	\item \textit{private width:int}\\
 	L'altezza dell'immagine. 
 	\item \textit{private height:int}\\
-	La larghezza dell'immagine. 
+	La larghezza dell'immagine.
+	\item \textit{private visibility:boolean}\\
+	Questo booleano rappresenta lo stato di visibilità del widget immagine.
 	\end{itemize}
 \item \textbf{Metodi}:
 	\begin{itemize}
@@ -1342,12 +1402,20 @@
 		\\ \textbf{Parametri}: \begin{itemize}
 		\item \textit{width:int}\\
 		La larghezza dell'immagine che si vuole impostare  in pixel.
-		\end{itemize} 
+		\end{itemize}
+	\item \textit{public setVisibility(value:boolean):void}\\
+	Imposta il valore di visibilità del widget a un valore dato.
+			\\ \textbf{Parametri}: \begin{itemize}
+			\item \textit{value:boolean}\\
+			Il valore booleano che si vuole impostare come visibilità, messo a true se si vuole il widget visibile, false altrimenti.
+	\end{itemize}
 	\item \textit{public getPath():string}\\
 	Ritorna la stringa contenente il percorso che porta all'immagine.
 	\item \textit{public getHeigth():string}\\
 	Ritorna l'altezza dell'immagine.
 	\item \textit{public getWidth():string}\\
-	Ritorna la larghezza dell'immagine.
+	Ritorna la larghezza dell'immagine.\\
+  	\item \textit{public getVisibility():boolean}\\
+	Ritorna il booleano che rappresenta la visibilità del widget.
 	\end{itemize}
 \end{itemize}

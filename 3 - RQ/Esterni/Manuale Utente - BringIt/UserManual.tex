@@ -3,10 +3,10 @@
 
 % Comandi per generare l'intro
 \newcommand{\documento}{User Manual}
-\newcommand{\versione}{0.1.1}
-\newcommand{\redatori}{\SL\\ & \RM}
+\newcommand{\versione}{0.1.2}
+\newcommand{\redatori}{\RM}
 \newcommand{\revisori}{\DC}
-\newcommand{\dataApprovazione}{** aprile 2017}
+\newcommand{\dataApprovazione}{05 may 2017}
 \newcommand{\approvazione}{\ND}
 \newcommand{\statoapprovazione}{Non approvato}
 \newcommand{\uso}{Esterno}
@@ -21,9 +21,10 @@
 \usepackage{verbatim}
 
 
-\input{Sezioni/Diario.tex}
+\input{Sections/Diary.tex}
 
 \begin{document}
+
 
 \input{../../../Template/Introduction.tex}
 \input{../../../Template/Diary.tex}
@@ -32,9 +33,13 @@
 \renewcommand{\contentsname}{Table of Contents}
 \input{../../../Template/Indice.tex}
 
-\input{../../../Template/IndiceTabelleFigure.tex}
-\input{Sezioni/1-Introduction.tex}
-\input{Sezioni/2-SystemRequirements.tex}
-\input{Sezioni/3-HowToUse.tex}
+\renewcommand{\listfigurename}{List of figures}
+\renewcommand{\figurename}{Fig.}
+\listoffigures
+\newpage
+
+\input{Sections/1-Introduction.tex}
+\input{Sections/2-SystemRequirements.tex}
+\input{Sections/3-HowToUse.tex}
 
 \end{document}

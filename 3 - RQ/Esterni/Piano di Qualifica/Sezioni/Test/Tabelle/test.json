@@ -159,13 +159,23 @@
         "approved": false
       },
       {
-        "description": "Verificare che in un widget di tipo list venga impostato correttamente il cambiamento dello stile",
-        "implemented": false,
+        "description": "Verificare che in un widget di tipo list venga impostato correttamente il cambiamento dell'indicatore a 'pallino'",
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo list venga impostato correttamente il cambiamento dell'indicatore a 'trattino'",
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Verificare che in un widget di tipo list venga impostato correttamente il cambiamento dell'indicatore ad elenco numerato",
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che in un widget di tipo list che vengano aggiunti correttamente tutti gli elementi",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
@@ -284,28 +294,28 @@
         "approved": false
       },
       {
-        "description": "Verificare che il codice html associato ad una qualsiasi widget sia valido",
-        "implemented": false,
-        "approved": false
-      },
-      {
         "description": "Verificare che GetListInfoUseCase ritorni la lista che corrisponde all'id inserito",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che GetItemInfoUseCase ritorni l'oggetto che corrisponde all'id inserito",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che ManageListUseCase cancelli la lista che corrisponde all'id inserito",
-        "implemented": false,
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Verificare che ModifyListUseCase interagisca e modifichi la lista in modo corretto",
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Verificare che ShareListUseCase aggiunga agli utenti della lista l'utente corrispondente all'id inserito",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       }
     ]
@@ -421,17 +431,12 @@
         "approved": false
       },
       {
-        "description": "Si verifica che RemoteItemViewPresenter riceva l'evento RemoveItemView::onItemRemovedClicked ed elimini l'elelemnto relativo dalla lista",
+        "description": "Si verifica che RemoveItemViewPresenter riceva l'evento RemoveItemView::onItemRemovedClicked ed elimini l'elemento relativo dalla lista",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che RemoteItemViewPresenter rimuovendo un elemento dalla lista mantenga RemoveItemView in uno stato consistente agli elementi presenti",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che il ModifyListUseCase esegua le operazioni di aggiunta, rimmozione e aggiornamento dei dati trammite DatabaseSource in modo corretto",
+        "description": "Si verifica che il ModifyListUseCase esegua le operazioni di aggiunta, rimozione e aggiornamento dei dati trammite DatabaseSource in modo corretto",
         "implemented": false,
         "approved": false
       },
@@ -802,48 +807,6 @@
         "type": "F",
         "importance": "O"
       },
-      {
-        "description": "Viene verificato che l'sdk si installi correttamente in una istanza di Rocket.chat, della quale viene fatto hosting su Heroku",
-        "implemented": false,
-        "approved": false,
-        "type": "V",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che l'sdk funzioni con il browser chrome versione >= 56",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che l'sdk funzioni con il browser safari versione >= 10",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che l'sdk funzioni con il browser opera versione >= 43",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che l'sdk funzioni con il browser firefox versione >= 45",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che l'sdk funzioni con il browser microsoft edge versione >= 13",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      }
     ]
   },
 
@@ -926,6 +889,48 @@
         "implemented": false,
         "approved": false,
         "type": "V",
+        "importance": "O"
+      }
+      {
+        "description": "Viene verificato che l'sdk si installi correttamente in una istanza di Rocket.chat, della quale viene fatto hosting su Heroku",
+        "implemented": false,
+        "approved": false,
+        "type": "V",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'sdk funzioni con il browser chrome versione >= 56",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'sdk funzioni con il browser safari versione >= 10",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'sdk funzioni con il browser opera versione >= 43",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'sdk funzioni con il browser firefox versione >= 45",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Viene verificato che l'sdk funzioni con il browser microsoft edge versione >= 13",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
         "importance": "O"
       }
     ]

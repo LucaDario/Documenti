@@ -406,17 +406,12 @@
         "approved": false
       },
       {
-        "description": "Si verifica che ShowPopupUseCase interagisca in modod corretto con l'interfaccia ChatSource",
+        "description": "Si verifica che ShowPopupUseCase interagisca con ChatSource in modo corretto il quale dovà eseguire l’effetiva visualizzazione del popup e l’invio del messaggio",
         "implemented": false,
         "approved": false
       },
       {
         "description": "Si verifica che CreateListViewPresenter interagisca con ShowPopupUseCase in modo corretto il quale dovrà mostrare l'opportuno popup",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che ShowPopupUseCase interagisca con ChatSource in modo corretto il quale dovà eseguire l'effetiva visualizzazione del popup e l'invio del messaggio",
         "implemented": false,
         "approved": false
       },
@@ -433,11 +428,6 @@
  
       {
         "description": "Si verifica che DeleteListViewPresenter interagisca con ManageListUseCase rimuovendo una lista in modo corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che ShowPopupUseCase interagisca in modo corretto con ChatSource al fine di mostrare il popup corretto",
         "implemented": false,
         "approved": false
       },
@@ -513,11 +503,6 @@
       },
       {
         "description": "Si verifica che ShareWithGroupViewPresenter interagosca in modo corretto con ShowPopupUseCase",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifca che ChatSource interagisca in modo corretto con Rocket.chat",
         "implemented": false,
         "approved": false
       }

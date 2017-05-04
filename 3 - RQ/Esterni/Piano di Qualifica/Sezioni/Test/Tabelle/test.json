@@ -264,32 +264,27 @@
         "approved": false
       },
       {
-        "description": "Verificare che DatabaseSource modifichi la lista in modo corretto",
-        "implemented": true,
-        "approved": false
-      },
-      {
-        "description": "Verificare che DatabaseSource aggiunga agli utenti della lista l'utente corrispondente all'id inserito",
-        "implemented": true,
-        "approved": false
-      },
-      {
         "description": "Verificare che DatabaseSource salvi correttamente la lista nel database",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che DatabaseSource aggiunga correttamente un item alla lista nel database",
+        "description": "Verificare che ModifyListUseCase aggiunga correttamente un item alla lista nel database",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che DatabaseSource rimuova correttamente un item alla lista nel database",
+        "description": "Verificare che ModifyListUseCase rimuova correttamente un item alla lista nel database",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che DatabaseSource aggiorni correttamente un item alla lista nel database",
+        "description": "Verificare che ModifyListUseCase aggiorni correttamente un item alla lista nel database",
+        "implemented": true,
+        "approved": false
+      }
+      {
+        "description": "Verificare che ShareListUseCase aggiunga agli utenti della lista l’utente corrispondente all’id inserito",
         "implemented": true,
         "approved": false
       }
@@ -407,7 +402,7 @@
       },
       {
         "description": "Si verifica che il ModifyListUseCase esegua le operazioni di aggiunta, rimozione e aggiornamento dei dati trammite DatabaseSource in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
@@ -432,7 +427,7 @@
       },
       {
         "description": "Si verifica che ManageListUseCase interagisca con DatabaseSource rimuovendo e aggiungendo una lista dal database in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
  
@@ -452,8 +447,8 @@
         "approved": false
       },
       {
-        "description": "Si verifica che GetListInfoUseCase esegua i fetch dei dati in modo corretto dal database trammite DatabaseSource",
-        "implemented": false,
+        "description": "Si verifica che GetListInfoUseCase esegua i fetch dei dati in modo corretto dal database tramite DatabaseSource",
+        "implemented": true,
         "approved": false
       },
       {
@@ -473,7 +468,7 @@
       },
       {
         "description": "Si verifica che GetItemInfoUseCase interagisca in modo corretto con DatabaseSource",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
@@ -488,7 +483,7 @@
       },
       {
         "description": "Si verifica che ModifyListUseCase interagisca in modo corretto con DatabaseSource",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {
@@ -508,7 +503,7 @@
       },
       {
         "description": "Si verifica che ShareListUseCase interagisca in modo corretto con DatabaseSource",
-        "implemented": false,
+        "implemented": true,
         "approved": false
       },
       {

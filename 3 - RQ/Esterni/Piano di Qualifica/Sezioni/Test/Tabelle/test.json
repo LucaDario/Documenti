@@ -716,7 +716,7 @@
     "skip_not_approved": false,
     "tests": [
       {
-        "description": "Si verifica che sia possibile scaricare l'SDK tramite il gestore dei pacchetti npm",
+        "description": "Si verifica che sia possibile scaricare l'SDK tramite il gestore dei pacchetti Atmosphere",
         "implemented": false,
         "approved": false,
         "type": "V",
@@ -758,35 +758,35 @@
         "importance": "O"
       },
       {
-        "description": "Si verifica che un generico utente possa creare un lista della spesa e pubblicarla al'interno di un canale Rockt.chat",
+        "description": "Si verifica che un generico utente possa creare un lista della spesa e pubblicarla all'interno di un canale Rockt.chat",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Si verifica che un generico utente possa creare un lista della spesa e pubblicarla ad un singolo utente avente un account sul istanza Rocket.chat su cui è installata l'SDK",
+        "description": "Si verifica che un generico utente possa creare un lista della spesa e pubblicarla ad un singolo utente avente un account sull'istanza Rocket.chat su cui è installata l'SDK",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Si verifica che se un utente ha i permessi per interagire con una bolla quest'ultimo sia in grado di visualizzare gli elementi e di spuntarli",
+        "description": "Si verifica che, se un utente ha i permessi per interagire con una bolla, quest'ultima sia in grado di visualizzare gli elementi e di spuntarli",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Si verifica che se un utente inoltra una lista della spesa quest'ultima venga inoltrata in forma testuale bloccando quindi ogni forma di interazione con l'utente",
+        "description": "Si verifica che, se un utente inoltra una lista della spesa, quest'ultima venga inoltrata in forma testuale bloccando quindi ogni forma di interazione con l'utente",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Si verifica che tutti i file che contengono codice scritto in javascript o coffescript passino i test di linting",
+        "description": "Si verifica che tutti i file che contengono codice scritto in JavaScript o coffescript passino i test di linting",
         "implemented": true,
         "approved": false,
         "type": "V",
@@ -800,35 +800,35 @@
         "importance": "O"
       },
       {
-        "description": "Si verifica che l'SDK funzioni con il browser chrome versione >= 56",
+        "description": "Si verifica che l'SDK funzioni con il browser Chrome versione >= 56",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Si verifica che l'SDK funzioni con il browser safari versione >= 10",
+        "description": "Si verifica che l'SDK funzioni con il browser Safari versione >= 10",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Si verifica che l'SDK funzioni con il browser opera versione >= 43",
+        "description": "Si verifica che l'SDK funzioni con il browser Opera versione >= 43",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Si verifica che l'SDK funzioni con il browser firefox versione >= 45",
+        "description": "Si verifica che l'SDK funzioni con il browser Firefox versione >= 45",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Si verifica che l'SDK funzioni con il browser microsoft edge versione >= 13",
+        "description": "Si verifica che l'SDK funzioni con il browser Microsoft Edge versione >= 13",
         "implemented": false,
         "approved": false,
         "type": "F",

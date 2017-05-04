@@ -73,5 +73,15 @@
 				\item \textit{index:number}\\
 				Questo parametro viene utilizzato per la scelta del tipo di modale.
 			\end{itemize}
+	\item \textit{public showPopupContactPermission(content:string,person:string,json:JSONObject):void}\\
+	Questo metodo visualizza un popup in Rocket.Chat e esegue una funzione in maniera asincrona una volta chiuso. Questo metodo è usato per la concessione di permessi a un altro utente.
+			\\ \textbf{Parametri}: \begin{itemize}
+				\item \textit{content:string}\\
+				Il contenuto del popup che sarà mostrato.
+				\item \textit{person:string}\\
+				La persona alla quale vengono concessi i permessi.
+				\item \textit{json:JSONObject}\\
+				Il messaggio che è stato mandato.
+			\end{itemize}
 	\end{itemize}
 \end{itemize}

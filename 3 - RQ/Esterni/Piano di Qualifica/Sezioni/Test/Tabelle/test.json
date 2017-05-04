@@ -282,7 +282,7 @@
         "description": "Verificare che ModifyListUseCase aggiorni correttamente un item alla lista nel database",
         "implemented": true,
         "approved": false
-      }
+      },
       {
         "description": "Verificare che ShareListUseCase aggiunga agli utenti della lista l’utente corrispondente all’id inserito",
         "implemented": true,

@@ -22,29 +22,26 @@
 		TI19 & Si verifica che il metodo ImageWidget::setImage passi correttamente al presenter il path del'immagine che dovrà essere presentata nella view & Implementato \\ \hline
 		TI20 & Si verifica che l'aggiunta di un VerticalLayoutView, creato con degli elementi al suo interno, non causi errori nell'aggiunta di questo alla bolla e che, gli elementi, nel layout appena aggiunto, vengano mostrati uno sotto l'altro & Implementato \\ \hline
 		TI21 & Si verifica che l'aggiunta di un HorizontalLayoutView, creato con degli elementi al suo interno, non causi errori nell'aggiunta di questi alla bolla e che gli elementi, nel layout appena aggiunto, vengano mostrati uno vicino all'altro & Implementato \\ \hline
-		TI22 & Si verifica che il ModifyListUseCase esegua le operazioni di aggiunta, rimozione e aggiornamento dei dati trammite DatabaseSource in modo corretto & Non implementato \\ \hline
-		TI23 & Si verifica che ShowPopupUseCase interagisca in modod corretto con l'interfaccia ChatSource & Non implementato \\ \hline
+		TI22 & Si verifica che il ModifyListUseCase esegua le operazioni di aggiunta, rimozione e aggiornamento dei dati trammite DatabaseSource in modo corretto & Implementato \\ \hline
+		TI23 & Si verifica che ShowPopupUseCase interagisca con ChatSource in modo corretto il quale dovà eseguire l’effetiva visualizzazione del popup e l’invio del messaggio & Non implementato \\ \hline
 		TI24 & Si verifica che CreateListViewPresenter interagisca con ShowPopupUseCase in modo corretto il quale dovrà mostrare l'opportuno popup & Non implementato \\ \hline
-		TI25 & Si verifica che ShowPopupUseCase interagisca con ChatSource in modo corretto il quale dovà eseguire l'effetiva visualizzazione del popup e l'invio del messaggio & Non implementato \\ \hline
-		TI26 & Si verifica che CreateListViewPresenter interagisca con ManageListUseCase aggiungendo una lista in modo corretto & Non implementato \\ \hline
-		TI27 & Si verifica che ManageListUseCase interagisca con DatabaseSource rimuovendo e aggiungendo una lista dal database in modo corretto & Non implementato \\ \hline
-		TI28 & Si verifica che DeleteListViewPresenter interagisca con ManageListUseCase rimuovendo una lista in modo corretto & Non implementato \\ \hline
-		TI29 & Si verifica che ShowPopupUseCase interagisca in modo corretto con ChatSource al fine di mostrare il popup corretto & Non implementato \\ \hline
-		TI30 & Si verifica che ForwardListUseCase interagisca in modo corretto con ChatSource al fine di inoltrare la lista selezionata & Non implementato \\ \hline
-		TI31 & Si verifica che GetListInfoUseCase esegua i fetch dei dati in modo corretto dal database trammite DatabaseSource & Non implementato \\ \hline
-		TI32 & Si verifica che ChangeListInfoViewPresenter interagisca in modo corretto con ModifyListUseCase & Non implementato \\ \hline
-		TI33 & Si verifica che ChangeListInfoViewPresenter interagisca in modo corretto con ShowPopupUseCase & Non implementato \\ \hline
-		TI34 & Si verifica che InputInfoViewPresenter interagisca in modod corretto con GetItemInfoUseCase & Non implementato \\ \hline
-		TI35 & Si verifica che GetItemInfoUseCase interagisca in modo corretto con DatabaseSource & Non implementato \\ \hline
-		TI36 & Si verifica che ModifyItemPresenter interagisca in modod corretto con ModifyListUseCase & Non implementato \\ \hline
-		TI37 & Si verifica che ModifyItemPresenter interagisca in modod corretto con ShowPopupUseCase & Non implementato \\ \hline
-		TI38 & Si verifica che ModifyListUseCase interagisca in modo corretto con DatabaseSource & Non implementato \\ \hline
-		TI39 & Si verifica che ShowPopupUseCase interagisca in modo corretto con ChatSource & Non implementato \\ \hline
-		TI40 & Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ShareWithContactView & Non implementato \\ \hline
-		TI41 & Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ShareListUseCase & Non implementato \\ \hline
-		TI42 & Si verifica che ShareListUseCase interagisca in modo corretto con DatabaseSource & Non implementato \\ \hline
-		TI43 & Si verifica che ShareWithGroupViewPresenter interagisca in modo corretto con ShareWithContactView & Non implementato \\ \hline
-		TI44 & Si verifica che ShareWithGroupViewPresenter interagosca in modo corretto con ShowPopupUseCase & Non implementato \\ \hline
-		TI45 & Si verifca che ChatSource interagisca in modo corretto con Rocket.chat & Non implementato \\ \hline
+		TI25 & Si verifica che CreateListViewPresenter interagisca con ManageListUseCase aggiungendo una lista in modo corretto & Non implementato \\ \hline
+		TI26 & Si verifica che ManageListUseCase interagisca con DatabaseSource rimuovendo e aggiungendo una lista dal database in modo corretto & Implementato \\ \hline
+		TI27 & Si verifica che DeleteListViewPresenter interagisca con ManageListUseCase rimuovendo una lista in modo corretto & Non implementato \\ \hline
+		TI28 & Si verifica che ForwardListUseCase interagisca in modo corretto con ChatSource al fine di inoltrare la lista selezionata & Non implementato \\ \hline
+		TI29 & Si verifica che GetListInfoUseCase esegua i fetch dei dati in modo corretto dal database tramite DatabaseSource & Implementato \\ \hline
+		TI30 & Si verifica che ChangeListInfoViewPresenter interagisca in modo corretto con ModifyListUseCase & Non implementato \\ \hline
+		TI31 & Si verifica che ChangeListInfoViewPresenter interagisca in modo corretto con ShowPopupUseCase & Non implementato \\ \hline
+		TI32 & Si verifica che InputInfoViewPresenter interagisca in modod corretto con GetItemInfoUseCase & Non implementato \\ \hline
+		TI33 & Si verifica che GetItemInfoUseCase interagisca in modo corretto con DatabaseSource & Implementato \\ \hline
+		TI34 & Si verifica che ModifyItemPresenter interagisca in modod corretto con ModifyListUseCase & Non implementato \\ \hline
+		TI35 & Si verifica che ModifyItemPresenter interagisca in modod corretto con ShowPopupUseCase & Non implementato \\ \hline
+		TI36 & Si verifica che ModifyListUseCase interagisca in modo corretto con DatabaseSource & Implementato \\ \hline
+		TI37 & Si verifica che ShowPopupUseCase interagisca in modo corretto con ChatSource & Non implementato \\ \hline
+		TI38 & Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ShareWithContactView & Non implementato \\ \hline
+		TI39 & Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ShareListUseCase & Non implementato \\ \hline
+		TI40 & Si verifica che ShareListUseCase interagisca in modo corretto con DatabaseSource & Implementato \\ \hline
+		TI41 & Si verifica che ShareWithGroupViewPresenter interagisca in modo corretto con ShareWithContactView & Non implementato \\ \hline
+		TI42 & Si verifica che ShareWithGroupViewPresenter interagosca in modo corretto con ShowPopupUseCase & Non implementato \\ \hline
 	\end{longtable}
 \end{center}

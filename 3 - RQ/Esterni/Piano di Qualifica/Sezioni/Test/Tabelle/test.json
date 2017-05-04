@@ -229,7 +229,7 @@
         "approved": false
       },
       {
-        "description": "Verificare che la quantità del prodotto venga aggiunta in modo corretto",
+        "description": "Verificare che la quantità del prodotto venga impostata in modo corretto",
         "implemented": true,
         "approved": false
       },
@@ -249,87 +249,47 @@
         "approved": false
       },
       {
-        "description": "Verificare che la rimozione di un prodotto dalla lista avvenga in modo corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che la modifica del nome di un prodotto in una lista della spesa avvenga in modo corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che la modifica della descrizione di un prodotto in una lista della spesa avvenga in modo corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che la modifica del'immagine di un prodotto in una lista della spesa avvenga in modo corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che la modifica delle note di un prodotto in una lista della spesa avvenga in modo corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che la modifica della quantità di un prodotto in una lista della spesa avvenga in modo corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che la modifica del unità di misura relativa alla quantità di un prodotto in una lista della spesa avvenga in modo corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che le interazioni con la lista della spesa siano coerenti con i permessi che ha l'utente",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Verificare che GetListInfoUseCase ritorni la lista che corrisponde all'id inserito",
+        "description": "Verificare che DatabaseSource ritorni la lista che corrisponde all'id inserito",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che GetItemInfoUseCase ritorni l'oggetto che corrisponde all'id inserito",
+        "description": "Verificare che DatabaseSource ritorni l'oggetto che corrisponde all'id inserito",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che ManageListUseCase cancelli la lista che corrisponde all'id inserito",
+        "description": "Verificare che DatabaseSource cancelli la lista che corrisponde all'id inserito",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che ModifyListUseCase interagisca e modifichi la lista in modo corretto",
+        "description": "Verificare che DatabaseSource modifichi la lista in modo corretto",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che ShareListUseCase aggiunga agli utenti della lista l'utente corrispondente all'id inserito",
+        "description": "Verificare che DatabaseSource aggiunga agli utenti della lista l'utente corrispondente all'id inserito",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che ModifyListUseCase salvi correttamente la lista nel database",
+        "description": "Verificare che DatabaseSource salvi correttamente la lista nel database",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che ModifyListUseCase aggiunga correttamente un item alla lista nel database",
+        "description": "Verificare che DatabaseSource aggiunga correttamente un item alla lista nel database",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che ModifyListUseCase rimuova correttamente un item alla lista nel database",
+        "description": "Verificare che DatabaseSource rimuova correttamente un item alla lista nel database",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Verificare che ModifyListUseCase aggiorni correttamente un item alla lista nel database",
+        "description": "Verificare che DatabaseSource aggiorni correttamente un item alla lista nel database",
         "implemented": true,
         "approved": false
       }
@@ -446,27 +406,12 @@
         "approved": false
       },
       {
-        "description": "Si verifica che RemoveItemViewPresenter riceva l'evento RemoveItemView::onItemRemovedClicked ed elimini l'elemento relativo dalla lista",
-        "implemented": false,
-        "approved": false
-      },
-      {
         "description": "Si verifica che il ModifyListUseCase esegua le operazioni di aggiunta, rimozione e aggiornamento dei dati trammite DatabaseSource in modo corretto",
         "implemented": false,
         "approved": false
       },
       {
-        "description": "Si verifica che AddItemViewPresenter riceva l'evento AddItemView::onAddItemClicked ed aggiunga gli elementi",
-        "implemented": false,
-        "approved": false
-      },
-      {
         "description": "Si verifica che ShowPopupUseCase interagisca in modod corretto con l'interfaccia ChatSource",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che CreateListViewPresenter riceva l'evento CreateListView::onCreateListClicked e lo gestisca in modo corretto",
         "implemented": false,
         "approved": false
       },
@@ -490,23 +435,9 @@
         "implemented": false,
         "approved": false
       },
-      {
-        "description": "Si verifica che DeleteListViewPresenter riceva l'evento DeleteListView::onDeleteListClicked ed elimini l'emento selezionato dal utente",
-        "implemented": false,
-        "approved": false
-      },
+ 
       {
         "description": "Si verifica che DeleteListViewPresenter interagisca con ManageListUseCase rimuovendo una lista in modo corretto",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che ForwardListViewPresenter riceva l'evento ForwardListView::onForwardClicked ed inizzi la procedura di inoltro tramite ForwardListUseCase",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che ForwardListViewPresenter riceva l'evento ForwardListView::onForwardClicked ed inizzi la procedura di inoltro mostrando un popup trammite ShowPopupUseCase",
         "implemented": false,
         "approved": false
       },
@@ -517,21 +448,6 @@
       },
       {
         "description": "Si verifica che ForwardListUseCase interagisca in modo corretto con ChatSource al fine di inoltrare la lista selezionata",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che InputListInfoViewPresenter riceva l'evento InputListInfoView::onSaveClicked il quale aggiornerà i dati",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che InputListInfoViewPresenter successivamente al evento InputListInfoView::onSaveClicked invochi il metodo InputListInfoView::emitOnSavedDataEvent",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che ChangeListInfoViewPresenter riceva l'evento InputListInfoView::onSavedData e presenti i nuovi dati che dovranno essere visualizzati",
         "implemented": false,
         "approved": false
       },
@@ -551,27 +467,12 @@
         "approved": false
       },
       {
-        "description": "Si verifica che InputInfoViewPresenter ricevà l'evento InputItemInfoView::onSaveClicked a seguito del'intenzione di salvare i dati da parte del utente",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifca che ModifyItemPresenter ricevà l'evento InputItemInfoView::onSavedItem a seguito del avvenuto salvataggio dei dati",
-        "implemented": false,
-        "approved": false
-      },
-      {
         "description": "Si verifica che InputInfoViewPresenter interagisca in modod corretto con GetItemInfoUseCase",
         "implemented": false,
         "approved": false
       },
       {
         "description": "Si verifica che GetItemInfoUseCase interagisca in modo corretto con DatabaseSource",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che ModifyItemPresenter ricevà l'evento ModifyItemView::onClickModifyItem",
         "implemented": false,
         "approved": false
       },
@@ -596,11 +497,6 @@
         "approved": false
       },
       {
-        "description": "Si verifica che ShareWithContactViewPresenter riceva l'evento ShareWithContactView::onClickShareWithContact",
-        "implemented": false,
-        "approved": false
-      },
-      {
         "description": "Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ShareWithContactView",
         "implemented": false,
         "approved": false
@@ -612,16 +508,6 @@
       },
       {
         "description": "Si verifica che ShareListUseCase interagisca in modo corretto con DatabaseSource",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che ShareWithGroupViewPresenter riceva l'evento ShareWithGroupView::onClickShareWithGroup",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che ShareWithGroupViewPresenter riceva l'evento ShareWithContactView::onClickShareWithContact",
         "implemented": false,
         "approved": false
       },
@@ -648,175 +534,175 @@
     "skip_not_approved": false,
     "tests": [
       {
-        "description": "Viene verificato che sia possibile creare e aggiungere ad una bolla un widget per tipo, tra quelli presenti nell'SDK",
+        "description": "Si verifica che sia possibile creare e aggiungere ad una bolla un widget per tipo, tra quelli presenti nell'SDK",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile creare e aggiungere ad una bolla un layout per tipo, tra quelli presenti nell'SDK",
+        "description": "Si verifica che sia possibile creare e aggiungere ad una bolla un layout per tipo, tra quelli presenti nell'SDK",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile impostare le variabili di un widget testo formattato",
+        "description": "Si verifica che sia possibile impostare le variabili di un widget testo formattato",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che un widget testo formattato faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
+        "description": "Si verifica che un widget testo formattato faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile impostare le variabili di un widget immagine",
+        "description": "Si verifica che sia possibile impostare le variabili di un widget immagine",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che un widget immagine faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
+        "description": "Si verifica che un widget immagine faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile impostare le variabili di un widget bottone",
+        "description": "Si verifica che sia possibile impostare le variabili di un widget bottone",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che un widget bottone faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
+        "description": "Si verifica che un widget bottone faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile impostare le variabili di un widget checklistitem",
+        "description": "Si verifica che sia possibile impostare le variabili di un widget checklistitem",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che un widget checklistitem faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
+        "description": "Si verifica che un widget checklistitem faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile impostare le variabili di un widget lista",
+        "description": "Si verifica che sia possibile impostare le variabili di un widget lista",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che un widget lista faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
+        "description": "Si verifica che un widget lista faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile aggiungere un widget all'interno di un VerticalLayoutView",
+        "description": "Si verifica che sia possibile aggiungere un widget all'interno di un VerticalLayoutView",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile aggiungere un widget all'interno di un HorizzontalLayoutView",
+        "description": "Si verifica che sia possibile aggiungere un widget all'interno di un HorizzontalLayoutView",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile istanziare una bolla avviso e sia possibile utilizzare tutti i suoi metodi",
+        "description": "Si verifica che sia possibile istanziare una bolla avviso e sia possibile utilizzare tutti i suoi metodi",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile istanziare una bolla markdown e sia possibile utilizzare tutti i suoi metodi",
+        "description": "Si verifica che sia possibile istanziare una bolla markdown e sia possibile utilizzare tutti i suoi metodi",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile istanziare una bolla lista e sia possibile utilizzare tutti i suoi metodi",
+        "description": "Si verifica che sia possibile istanziare una bolla lista e sia possibile utilizzare tutti i suoi metodi",
         "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile creare una bolla \"lista della spesa\"",
+        "description": "Si verifica che sia possibile creare una bolla \"lista della spesa\"",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che l'aggiunta di un nuovo prodotto alla lista della spesa venga eseguita correttamente",
+        "description": "Si verifica che l'aggiunta di un nuovo prodotto alla lista della spesa venga eseguita correttamente",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile rimuovere un elemento ad una bolla \"lista della spesa\"",
+        "description": "Si verifica che sia possibile rimuovere un elemento ad una bolla \"lista della spesa\"",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile spuntare un elemento di una bolla \"lista della spesa\"",
+        "description": "Si verifica che sia possibile spuntare un elemento di una bolla \"lista della spesa\"",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che l'inoltro a un utente di una bolla \"lista della spesa\" avvenga in modo corretto",
+        "description": "Si verifica che l'inoltro a un utente di una bolla \"lista della spesa\" avvenga in modo corretto",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che l'inoltro a un gruppo di una bolla \"lista della spesa\" avvenga in modo corretto",
+        "description": "Si verifica che l'inoltro a un gruppo di una bolla \"lista della spesa\" avvenga in modo corretto",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che la pubblicazione a un utente di una bolla \"lista della spesa\" avvenga in modo corretto",
+        "description": "Si verifica che la pubblicazione a un utente di una bolla \"lista della spesa\" avvenga in modo corretto",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che la pubblicazione a un gruppo di una bolla \"lista della spesa\" avvenga in modo corretto",
+        "description": "Si verifica che la pubblicazione a un gruppo di una bolla \"lista della spesa\" avvenga in modo corretto",
         "implemented": false,
         "approved": false,
         "type": "F",
@@ -830,119 +716,119 @@
     "skip_not_approved": false,
     "tests": [
       {
-        "description": "Viene verificato che sia possibile scaricare l'sdk tramite il gestore dei pacchetti npm",
+        "description": "Si verifica che sia possibile scaricare l'SDK tramite il gestore dei pacchetti npm",
         "implemented": false,
         "approved": false,
         "type": "V",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che l'sdk sia utilizzabile dal applicazione di demo",
+        "description": "Si verifica che l'SDK sia utilizzabile dall'applicazione di demo",
+        "implemented": true,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Si verifica che sia possibile istanziare tutti i widget che sono inclusi nell'SDK",
+        "implemented": true,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Si verifica che sia possibile istanziare tutti i layout che sono inclusi nell'SDK",
+        "implemented": true,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Si verifica che sia possibile istanziare tutte le bolle che sono incluse nell'SDK",
+        "implemented": true,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Si verifica che sia possibile comporre una bolla personalizzata mediante widget e layout",
+        "implemented": true,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Si verifica che un generico utente possa creare un lista della spesa e pubblicarla al'interno di un canale Rockt.chat",
+        "implemented": true,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Si verifica che un generico utente possa creare un lista della spesa e pubblicarla ad un singolo utente avente un account sul istanza Rocket.chat su cui è installata l'SDK",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile istanziare tutti i widget che sono inclusi nel sdk",
+        "description": "Si verifica che se un utente ha i permessi per interagire con una bolla quest'ultimo sia in grado di visualizzare gli elementi e di spuntarli",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile istanziare tutti i layout che sono inclusi nel sdk",
+        "description": "Si verifica che se un utente inoltra una lista della spesa quest'ultima venga inoltrata in forma testuale bloccando quindi ogni forma di interazione con l'utente",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile istanziare tutte le bolle che sono incluse nel sdk",
-        "implemented": false,
+        "description": "Si verifica che tutti i file che contengono codice scritto in javascript o coffescript passino i test di linting",
+        "implemented": true,
         "approved": false,
-        "type": "F",
+        "type": "V",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che sia possibile comporre una bolla personalizzata mediante widget e layout",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che un generico utente possa creare un lista della spesa e pubblicarla al'interno di un canale Rockt.chat",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che un generico utente possa creare un lista della spesa e pubblicarla ad un singolo utente avente un account sul istanza Rocket.chat su cui è installata l'sdk",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che se un utente ha i permessi per interagire con una bolla quest'ultimo sia in grado di visualizzare gli elementi e di spuntarli",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che se un utente inoltra una lista della spesa quest'ultima venga inoltrata in forma testuale bloccando quindi ogni forma di interazione con l'utente",
-        "implemented": false,
-        "approved": false,
-        "type": "F",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che tutti i file che contengono codice scritto in javascript o coffescript passino i test di linting",
+        "description": "Si verifica che l'SDK si installi correttamente in una istanza di Rocket.chat, della quale viene fatto hosting su Heroku",
         "implemented": false,
         "approved": false,
         "type": "V",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che l'sdk si installi correttamente in una istanza di Rocket.chat, della quale viene fatto hosting su Heroku",
-        "implemented": false,
-        "approved": false,
-        "type": "V",
-        "importance": "O"
-      },
-      {
-        "description": "Viene verificato che l'sdk funzioni con il browser chrome versione >= 56",
+        "description": "Si verifica che l'SDK funzioni con il browser chrome versione >= 56",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che l'sdk funzioni con il browser safari versione >= 10",
+        "description": "Si verifica che l'SDK funzioni con il browser safari versione >= 10",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che l'sdk funzioni con il browser opera versione >= 43",
+        "description": "Si verifica che l'SDK funzioni con il browser opera versione >= 43",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che l'sdk funzioni con il browser firefox versione >= 45",
+        "description": "Si verifica che l'SDK funzioni con il browser firefox versione >= 45",
         "implemented": false,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
-        "description": "Viene verificato che l'sdk funzioni con il browser microsoft edge versione >= 13",
+        "description": "Si verifica che l'SDK funzioni con il browser microsoft edge versione >= 13",
         "implemented": false,
         "approved": false,
         "type": "F",

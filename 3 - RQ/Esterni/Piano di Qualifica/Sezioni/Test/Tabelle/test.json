@@ -341,7 +341,7 @@
         "approved": false
       },
       {
-        "description": "Si verifica che il metodo TextWidget::setFormatText passi il valore booleano (che rappresenta la scelta di formattare il testo) al presenter. Essp dovrà, poi, presentare il testo formattato seguendo la sintassi markdown oppure lasciarlo invariato in funzione al valore booleano",
+        "description": "Si verifica che il metodo TextWidget::setFormatText passi il valore booleano (che rappresenta la scelta di formattare il testo) al presenter. Esso dovrà, poi, presentare il testo formattato seguendo la sintassi markdown oppure lasciarlo invariato in funzione al valore booleano",
         "implemented": true,
         "approved": false
       },

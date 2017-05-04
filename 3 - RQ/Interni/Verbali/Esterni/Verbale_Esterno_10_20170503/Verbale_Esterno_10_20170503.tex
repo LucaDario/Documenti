@@ -1,0 +1,66 @@
+\input{../../../../../Template/layoutVerbale.tex}
+\input{../../../../../Template/Comandi.tex}
+
+% Comandi per generare l'intro
+\newcommand{\documento}{Verbale riunione 03/05/2017}
+\newcommand{\versione}{1.0.0}
+\newcommand{\redatori}{\LD}
+\newcommand{\revisori}{\RM}
+\newcommand{\approvazione}{\SL}
+\newcommand{\statoapprovazione}{Approvato}
+% Quando il documento sarà approvato, inserire all'interno del comando seguente la data nel formato GG mese AAAA dove GG è il giorno a due cifre, mese è il mese scritto per esteso con la prima lettera minuscola, e AAAA è l'anno a quattro cifre
+\newcommand{\dataApprovazione}{03 maggio 2017}
+\newcommand{\uso}{Esterno}
+\newcommand{\destinatari}{\RB\\ & \gruppo\\ & \TV\\ & \RC}
+
+\newcommand{\sommario}{Verbale di incontro svoltosi tra il gruppo \gruppo\ e il proponente \RB.
+}
+
+% Comandi per generare il verbale
+\newcommand{\data}{03 maggio 2017}
+\newcommand{\luogo}{Skype}
+\newcommand{\oraInizio}{14:00}
+\newcommand{\oraFine}{14:30}
+\newcommand{\oggetto}{Discussione sulla forma del \MU\ per \progettoShort}
+\newcommand{\segretario}{\RM}
+\newcommand{\durata}{30 minuti}
+\newcommand{\partecipanti}{
+\begin{itemize}
+	\item \textbf{\RB :}
+		\begin{itemize}
+			\item Alessandro Maccagnan
+			\item Milo Ertola
+		\end{itemize}
+	
+	\item \textbf{\gruppo}
+		\begin{itemize}
+			\item \LD
+			\item \ND
+			\item \RM
+			\item \MT
+			\item \SL
+			\item \DC
+			\item \FB
+		\end{itemize}
+\end{itemize}
+}
+
+\newcommand{\ordineDelGiorno}{
+\begin{enumerate}
+	\item Chiarimenti sulla forma del \MU\ per \progettoShort.
+\end{enumerate}
+}
+
+\newcommand{\contenuto}{
+\begin{itemize}
+	\item \textbf{VE10.1}: Il proponente, dopo una breve discussione, ha specificato che il \MU\ potrà essere consegnato anche senza rispettare le norme definite all'interno del documento \NdP. \RB\ ha anche specificato che tale documento potrà essere un semplice documento scritto in \termine{Markdown} e successivamente convertito, attraverso l'utilizzo di script automatici (è stato consigliato l'uso di \texttt{github-wikito-converter}, disponibile liberamente su \termine{GitHub}), nel formato \texttt{.pdf}.
+	
+\end{itemize}
+}
+
+
+\begin{document}
+\input{../../../../../Template/introVerbale.tex}
+\input{../../../../../Template/Verbale.tex}
+
+\end{document}

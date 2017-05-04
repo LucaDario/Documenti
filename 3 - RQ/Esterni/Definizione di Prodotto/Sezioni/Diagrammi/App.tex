@@ -6,7 +6,7 @@ Questi scenari rappresentano alcune operazioni comuni della lista Bringit. Si fa
 \label{Creazione di una lista}
 \begin{figure}[H]
 	\centering
-	\includegraphics[ width=\textwidth]{Sezioni/Diagrammi/App/creazione_lista.jpg}
+	\includegraphics[ width=\textwidth]{Sezioni/Diagrammi/App/creazionelista.png}
 	\caption{Creazione di una lista}
 \end{figure}
 
@@ -19,11 +19,11 @@ Questo scenario rappresenta l'utente che vuole creare una nuova lista nella chat
 \label{Cancellazione di una lista}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{Sezioni/Diagrammi/App/cancellare_lista.jpg}
+	\includegraphics[width=\textwidth]{Sezioni/Diagrammi/App/cancellarelist.png}
 	\caption{Cancellazione di una lista}
 \end{figure}
 
-In questo scenario lo sviluppatore vuole cancellare la propria lista causandone l'eliminazione da tutte le chat che la contengono. L'utente quando premerà il bottone "Elimina lista" farà emettere un evento di tipo \texxtit{DeleteEvent}, che verrà catturato da \textit{DeleteListView}, che demanderà al presenter la gestione dell'eliminazione; quest'ultimo userà infatti \textit{ManageListUseCase} per comunicare a \textit{DataBaseSource} che la lista venga eliminata.
+In questo scenario lo sviluppatore vuole cancellare la propria lista causandone l'eliminazione da tutte le chat che la contengono. L'utente quando premerà il bottone "Elimina lista" farà emettere un evento di tipo \textit{DeleteEvent}, che verrà catturato da \textit{DeleteListView}, che demanderà al presenter la gestione dell'eliminazione; quest'ultimo userà infatti \textit{ManageListUseCase} per comunicare a \textit{DataBaseSource} che la lista venga eliminata.
 
 \subsubsection{Modifica di una lista}
 
@@ -39,10 +39,10 @@ All'avvenuta modifica della lista  verrà emesso l'evento che attiverà i metodi
  
 \subsubsection{Spunta di un oggetto della lista}
 
-\label{Interaione con lista}
+\label{Spunta di un oggetto della lista}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{Sezioni/Diagrammi/App/Checklist_diagram.jpg}
+	\includegraphics[width=\textwidth]{Sezioni/Diagrammi/App/clickitem.png}
 	\caption{Interaione con lista}
 \end{figure}
 
@@ -55,7 +55,7 @@ Per farlo l'utente clicca sul segno del quadrato: questo scatena l'evento del wi
 \label{Aggiunta di un Item}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{Sezioni/Diagrammi/App/aggiunta_item.jpg}
+	\includegraphics[width=\textwidth]{Sezioni/Diagrammi/App/aggiuntaitem.png}
 	\caption{Aggiunta di un Item}
 \end{figure}
 
@@ -78,7 +78,7 @@ In questo scenario lo sviluppatore vuole modificare le informazioni di un item g
 \label{Rimozione Item }
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{Sezioni/Diagrammi/App/rimozione_item.jpg}
+	\includegraphics[width=\textwidth]{Sezioni/Diagrammi/App/rimozioneitem.png}
 	\caption{Rimozione Item}
 	
 \end{figure}
@@ -102,7 +102,7 @@ In questo scenario l'utente vuole pubblicare la lista ad un altro contatto, dand
 \label{Pubblicazione a un gruppo}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{Sezioni/Diagrammi/App/publicazione_con_gruppo.jpg}
+	\includegraphics[width=\textwidth]{Sezioni/Diagrammi/App/publicazionecongruppo.png}
 	\caption{Pubblicazione a un gruppo}
 	
 \end{figure}

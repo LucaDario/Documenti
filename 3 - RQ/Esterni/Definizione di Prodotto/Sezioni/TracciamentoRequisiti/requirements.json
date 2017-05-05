@@ -95,179 +95,503 @@
       "requisiti" : ["R1F0", "R1F2.3", "R1F4", "R1F4.2.1", "R1F4.2.2", "R1F4.2.3", "R1F4.2.4", "R1F4.2.3.5", "RIF4.2.5", "R1F4.1", "R1F4.1.1"]
     }
   },
-  "application.communication" : {
-    "ChatSource" : {
-      "requisiti" : ["R1F0", "R1F4", "R1F4.1", "R1F4.2.1", "R1F4.2.2", "R1F4.2.3", "RIF4.2.5"]
+  "bringit.client.chat" : {
+    "ChatSource": {
+      "requisiti": [
+        "R1F0",
+        "R1F4",
+        "R1F4.1",
+        "R1F4.2.1",
+        "R1F4.2.2",
+        "R1F4.2.3",
+        "RIF4.2.5"
+      ]
     }
   },
-  "application.database" : {
-    "DatabaseSource" : {
-      "requisiti" : ["R1F4.2.4", "R1F4", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5", "R1F4.2.3.1", "R1F4.2.3.3", "R1F4.2.3.4", "R1F4.2.6", "R1F4.3.1.2", "R1F4.1.1", "R1F4.2.3.6", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8", "R1F4.2.5.7", "R1F4.2.5.9", "R1F4.3.2", "R1F4.3.3", "R1F4.3.4", "R1F4.3.5", "R1F4.2.2", "R1F4.3.2", "R1F4.3.3", "R1F4.3.4", "R1F4.3.5"]
+  "bringit.server.database" : {
+    "DatabaseSource": {
+      "requisiti": [
+        "R1F4.2.4",
+        "R1F4",
+        "R1F4.1.3",
+        "R1F4.1.4",
+        "R1F4.1.5",
+        "R1F4.2.3.1",
+        "R1F4.2.3.3",
+        "R1F4.2.3.4",
+        "R1F4.2.6",
+        "R1F4.3.1.2",
+        "R1F4.1.1",
+        "R1F4.2.3.6",
+        "R1F4.2.5",
+        "R1F4.2.5.1",
+        "R1F4.2.5.3",
+        "R1F4.2.5.4",
+        "R1F4.2.5.5",
+        "R1F4.2.5.6",
+        "R1F4.2.5.8",
+        "R1F4.2.5.7",
+        "R1F4.2.5.9",
+        "R1F4.3.2",
+        "R1F4.3.3",
+        "R1F4.3.4",
+        "R1F4.3.5",
+        "R1F4.2.2",
+        "R1F4.3.2",
+        "R1F4.3.3",
+        "R1F4.3.4",
+        "R1F4.3.5",
+        "R1F4.2.5.7",
+        "R1F4.2.5.9"
+      ]
     }
   },
-  "application.feature" : {
-    "GeneralView" : {
-      "requisiti" : ["R1F4", "R1F4.1"]
+  "bringit.client.bringit" : {
+    "Bringit": {
+      "requisiti": [
+        "R1F4.2.6",
+        "R1F4.1",
+        "R1F4.2.3.2",
+        "R1F4",
+        "R1F4.1.1",
+        "R1F4.1.2",
+        "R1F4.1.3",
+        "R1F4.1.4",
+        "R1F4.1.5",
+        "R1F4.2.3.9",
+        "R1F4.2.3.9",
+        "R1F4.3.1.3",
+        "R1F4.2.2",
+        "R1F4.3.2",
+        "R1F4.3.3",
+        "R1F4.3.4",
+        "R1F4.3.5"
+      ]
     }
   },
-  "application.feature.add_item" : {
-    "AddItemView" : {
-      "requisiti" : ["R1F4.2.6", "R1F4.1"]
-    },
-    "AddItemViewImpl" : {
-      "requisiti" : ["R1F4.2.6", "R1F4.1"]
-    },
-    "AddItemViewPresenter" : {
-      "requisiti" : ["R1F4.2.6", "R1F4.2.3.2", "R1F4.1"]
-    }
-  },
-  "application.feature.change_list_info" : {
-    "ChangeInfoListView" : {
-      "requisiti" : ["R1F4.1.4", "R1F4.1.5"]
+  "bringit.feature.change_list_info" : {
+    "ChangeInfoListView": {
+      "requisiti": [
+        "R1F4.1.4",
+        "R1F4.1.5"
+      ]
     },
     "ChangeListInfoViewPresenter": {
-      "requisiti" : ["R1F4.1.4", "R1F4.1.5"]
+      "requisiti": [
+        "R1F4.1.4",
+        "R1F4.1.5"
+      ]
     },
-    "ChangeListInfoViewImpl" : {
-      "requisiti" : ["R1F4.1.4", "R1F4.1.5"]
+    "ChangeListInfoViewImpl": {
+      "requisiti": [
+        "R1F4.1.4",
+        "R1F4.1.5"
+      ]
     }
   },
-  "application.feature.create_list" : {
-    "CreateListView" : {
-      "requisiti" : ["R1F4", "R1F4.1.1", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5"]
+  "bringit.feature.create_list" : {
+    "CreateListView": {
+      "requisiti": [
+        "R1F4",
+        "R1F4.1.1",
+        "R1F4.1.3",
+        "R1F4.1.4",
+        "R1F4.1.5"
+      ]
     },
-    "CreateListViewImpl" : {
-      "requisiti" : ["R1F4", "R1F4.1.1", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5"]
+    "CreateListViewImpl": {
+      "requisiti": [
+        "R1F4",
+        "R1F4.1.1",
+        "R1F4.1.3",
+        "R1F4.1.4",
+        "R1F4.1.5"
+      ]
     },
-    "CreateListViewPresenter" : {
-      "requisiti" : ["R1F4", "R1F4.1.1", "R1F4.1.2", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5", "R1F4.2.3.9", "R1F4.2.3.9", "R1F4.3.1.3"]
+    "CreateListViewPresenter": {
+      "requisiti": [
+        "R1F4",
+        "R1F4.1.1",
+        "R1F4.1.2",
+        "R1F4.1.3",
+        "R1F4.1.4",
+        "R1F4.1.5",
+        "R1F4.2.3.9",
+        "R1F4.2.3.9",
+        "R1F4.3.1.3"
+      ]
     }
   },
-  "application.feature.exception" : {
-    "BadParameterException" : {
-      "requisiti" : ["R1F4.2.3.2", "R1F4.2.5.2"]
+  "bringit.feature.exception" : {
+    "BadParameterException": {
+      "requisiti": [
+        "R1F4.2.3.2",
+        "R1F4.2.5.2"
+      ]
     },
-    "Exception" : {
-      "requisiti" : ["R1F4.2.3.2", "R1F4.2.5.2"]
+    "Exception": {
+      "requisiti": [
+        "R1F4.2.3.2",
+        "R1F4.2.5.2"
+      ]
     }
   },
-  "application.feature.forward" : {
-    "ForwardListView" : {
-      "requisiti" : ["R1F4.2.2", "R1F4.3.2", "R1F4.3.3", "R1F4.3.4", "R1F4.3.5"]
+  "bringit.client.view.forward" : {
+    "ForwardListView": {
+      "requisiti": [
+        "R1F4.2.2",
+        "R1F4.3.2",
+        "R1F4.3.3",
+        "R1F4.3.4",
+        "R1F4.3.5"
+      ]
     },
-    "ForwardListViewPresenter" : {
-      "requisiti" : ["R1F4.2.2", "R1F4.3.2", "R1F4.3.3", "R1F4.3.4", "R1F4.3.5"]
+    "ForwardListViewPresenter": {
+      "requisiti": [
+        "R1F4.2.2",
+        "R1F4.3.2",
+        "R1F4.3.3",
+        "R1F4.3.4",
+        "R1F4.3.5"
+      ]
     },
-    "ForwardListViewImpl" : {
-      "requisiti" : ["R1F4.2.2", "R1F4.3.2", "R1F4.3.3", "R1F4.3.4", "R1F4.3.5"]
+    "ForwardListViewImpl": {
+      "requisiti": [
+        "R1F4.2.2",
+        "R1F4.3.2",
+        "R1F4.3.3",
+        "R1F4.3.4",
+        "R1F4.3.5"
+      ]
     }
   },
-  "application.feature.help" : {
-    "HelpView" : {
-      "requisiti" : []
+  "bringit.client.view.help" : {
+    "HelpView": {
+      "requisiti": ["R3F4.4"]
     },
-    "HelpViewPresenter" : {
-      "requisiti" : []
+    "HelpViewPresenter": {
+      "requisiti": ["R3F4.4"]
     },
-    "HelpViewImpl" : {
-      "requisiti" : []
+    "HelpViewImpl": {
+      "requisiti": ["R3F4.4"]
     }
   },
-  "application.feature.input_item_info" : {
-    "InputItemInfoView" : {
-      "requisiti" : ["R1F4.1", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5", "R1F4.2.3.1", "R1F4.2.3.4", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8" ]
+  "bringit.client.view.item.inputitem" : {
+    "InputItemInfoView": {
+      "requisiti": [
+        "R1F4.1",
+        "R1F4.1.3",
+        "R1F4.1.4",
+        "R1F4.1.5",
+        "R1F4.2.3.1",
+        "R1F4.2.3.4",
+        "R1F4.2.5",
+        "R1F4.2.5.1",
+        "R1F4.2.5.3",
+        "R1F4.2.5.4",
+        "R1F4.2.5.5",
+        "R1F4.2.5.6",
+        "R1F4.2.5.8"
+      ]
     },
-    "InputItemInfoViewPresenter" : {
-      "requisiti" : ["R1F4.1", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5", "R1F4.2.3.1", "R1F4.2.3.4", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8", "R1F4.2.5.7", "R1F4.2.5.9", "R1F4.2.3.7", "R1F4.2.3.9", "R1F4.2.3.2", "R1F4.2.5.2"]
+    "InputItemInfoViewPresenter": {
+      "requisiti": [
+        "R1F4.1",
+        "R1F4.1.3",
+        "R1F4.1.4",
+        "R1F4.1.5",
+        "R1F4.2.3.1",
+        "R1F4.2.3.4",
+        "R1F4.2.5",
+        "R1F4.2.5.1",
+        "R1F4.2.5.3",
+        "R1F4.2.5.4",
+        "R1F4.2.5.5",
+        "R1F4.2.5.6",
+        "R1F4.2.5.8",
+        "R1F4.2.5.7",
+        "R1F4.2.5.9",
+        "R1F4.2.3.7",
+        "R1F4.2.3.9",
+        "R1F4.2.3.2",
+        "R1F4.2.5.2"
+      ]
     },
-    "InputItemInfoViewImpl" : {
-      "requisiti" : ["R1F4.1", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5", "R1F4.2.3.1", "R1F4.2.3.4", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8" ]
+    "InputItemInfoViewImpl": {
+      "requisiti": [
+        "R1F4.1",
+        "R1F4.1.3",
+        "R1F4.1.4",
+        "R1F4.1.5",
+        "R1F4.2.3.1",
+        "R1F4.2.3.4",
+        "R1F4.2.5",
+        "R1F4.2.5.1",
+        "R1F4.2.5.3",
+        "R1F4.2.5.4",
+        "R1F4.2.5.5",
+        "R1F4.2.5.6",
+        "R1F4.2.5.8"
+      ]
     }
   },
-  "application.feature.input_list_info" : {
-    "InputListInfoView" : {
-      "requisiti" : ["R1F4.1", "R1F4.1.1", "R1F4.2.3.3"]
+  "bringit.client.view.list.input" : {
+    "InputListInfoView": {
+      "requisiti": [
+        "R1F4.1",
+        "R1F4.1.1",
+        "R1F4.2.3.3"
+      ]
     },
-    "InputListInfoViewPresenter" : {
-      "requisiti" : ["R1F4.1", "R1F4.1.1", "R1F4.1.2", "R1F4.2.3.3"]
+    "InputListInfoViewPresenter": {
+      "requisiti": [
+        "R1F4.1",
+        "R1F4.1.1",
+        "R1F4.1.2",
+        "R1F4.2.3.3"
+      ]
     },
-    "InputListInfoViewImpl" : {
-      "requisiti" : ["R1F4.1", "R1F4.1.1", "R1F4.2.3.3"]
+    "InputListInfoViewImpl": {
+      "requisiti": [
+        "R1F4.1",
+        "R1F4.1.1",
+        "R1F4.2.3.3"
+      ]
     }
   },
-  "application.feature.modify_item" : {
-    "ModifyItemView" : {
-      "requisiti" : ["R1F4.2.3.1", "R1F4.2.3.5", "R1F4.2.3.5", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8" , "R1F4.2.3.6", "R1F4.1"]
+  "bringit.client.view.list.sharelistwithcontact" : {
+    "ShareWithContactView": {
+      "requisiti": [
+        "R3F4.3.1.4",
+        "R1F4.3.1.5",
+        "R1F4.3.1.7"
+      ]
     },
-    "ModifyItemViewPresenter" : {
-      "requisiti" : ["R1F4.1", "R1F4.2.3.1", "R1F4.2.3.2", "R1F4.2.3.5", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8" , "R1F4.2.3.6", "R1F4.2.3.9", "R1F4.2.5.8"]
+    "ShareWithContactViewPresenter": {
+      "requisiti": [
+        "R3F4.3.1.4",
+        "R1F4.3.1.5",
+        "R1F4.3.1.7"
+      ]
     },
-    "ModifyItemViewImpl" : {
-      "requisiti" : ["R1F4.1", "R1F4.2.3.1", "R1F4.2.3.2", "R1F4.2.3.5", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8" , "R1F4.2.3.6"]
+    "ShareWithContactViewImpl": {
+      "requisiti": [
+        "R3F4.3.1.4",
+        "R1F4.3.1.5",
+        "R1F4.3.1.7"
+      ]
     }
   },
-  "application.feature.remove_item" : {
-    "RemoveItemView" : {
-      "requisiti" : ["R1F4.1", "R1F4.2.4"]
+  "bringit.client.view.list.sharelistwithgroup" : {
+    "ShareWithGroupView": {
+      "requisiti": [
+        "R1F4.3.1.1",
+        "R1F4.3.1.2",
+        "R1F4.3.1.5"
+      ]
     },
-    "RemoveItemViewPresenter" : {
-      "requisiti" : ["R1F4.1", "R1F4.2.4"]
+    "ShareWithGroupViewPresenter": {
+      "requisiti": [
+        "R1F4.3.1.1",
+        "R1F4.3.1.2",
+        "R1F4.3.1.3",
+        "R1F4.3.1.5"
+      ]
     },
-    "RemoveItemViewImpl" : {
-      "requisiti" : ["R1F4.1", "R1F4.2.4"]
+    "ShareWithGroupViewImpl": {
+      "requisiti": [
+        "R1F4.3.1.1",
+        "R1F4.3.1.2",
+        "R1F4.3.1.5"
+      ]
     }
   },
-  "application.feature.sharewithcontact" : {
-    "ShareWithContactView" : {
-      "requisiti" : ["R1F4.3.1.4", "R1F4.3.1.5", "R1F4.3.1.7"]
+  "bringit.data" : {
+    "ListData": {
+      "requisiti": [
+        "R1F4",
+        "R1F4.1",
+        "R1F4.2.4"
+      ]
     },
-    "ShareWithContactViewPresenter" : {
-      "requisiti" : ["R1F4.3.1.4", "R1F4.3.1.5", "R1F4.3.1.7"]
-    },
-    "ShareWithContactViewImpl" : {
-      "requisiti" : ["R1F4.3.1.4", "R1F4.3.1.5", "R1F4.3.1.7"]
+    "ListItem": {
+      "requisiti": [
+        "R1F4.1",
+        "R1F4.1.3",
+        "R1F4.1.4",
+        "R1F4.1.5",
+        "R1F4.2.3.1",
+        "R1F4.2.3.4",
+        "R1F4.2.5",
+        "R1F4.2.5.1",
+        "R1F4.2.5.3",
+        "R1F4.2.5.4",
+        "R1F4.2.5.5",
+        "R1F4.2.5.6",
+        "R1F4.2.5.8"
+      ]
     }
   },
-  "application.feature.sharewithgroup" : {
-    "ShareWithGroupView" : {
-      "requisiti" : ["R1F4.3.1.1", "R1F4.3.1.2",  "R1F4.3.1.5"]
+  "bringit.server.usecase" : {
+    "ForwardListUseCase": {
+      "requisiti": [
+        "R1F4.3.2",
+        "R1F4.3.3",
+        "R1F4.3.4",
+        "R1F4.3.5",
+        "R1F4.3.4",
+        "R1F4.3.5"
+      ]
     },
-    "ShareWithGroupViewPresenter" : {
-      "requisiti" : ["R1F4.3.1.1", "R1F4.3.1.2", "R1F4.3.1.3", "R1F4.3.1.5"]
+    "GetItemInfoUseCase": {
+      "requisiti": [
+        "R1F4.2.5.1",
+        "R1F4.2.5.2",
+        "R1F4.2.5.4",
+        "R1F4.2.5.5",
+        "R1F4.2.5.6",
+        "R1F4.2.5.8"
+      ]
     },
-    "ShareWithGroupViewImpl" : {
-      "requisiti" : ["R1F4.3.1.1", "R1F4.3.1.2",  "R1F4.3.1.5"]
+    "GetListInfoUseCase": {
+      "requisiti": [
+        "R1F4.2.5.7",
+        "R1F4.2.5.9"
+      ]
+    },
+    "ManageListUseCase": {
+      "requisiti": [
+        "R1F4",
+        "R1F4.1"
+      ]
+    },
+    "ModifyListUseCase": {
+      "requisiti": [
+        "R1F4.1.1",
+        "R1F4.1.2",
+        "R1F4.1.3",
+        "R1F4.1.4",
+        "R1F4.1.5",
+        "R1F4.2.2",
+        "R1F4.2.3.1",
+        "R1F4.2.3.3",
+        "R1F4.2.3.4",
+        "R1F4.2.3.8",
+        "R1F4.2.3.6",
+        "R1F4.2.5",
+        "R1F4.2.5.1",
+        "R1F4.2.5.3",
+        "R1F4.2.5.4",
+        "R1F4.2.5.5",
+        "R1F4.2.5.6",
+        "R1F4.2.5.8",
+        "R1F4.2.6",
+        "R1F4.2.4"
+      ]
+    },
+    "ShareListUseCase": {
+      "requisiti": [
+        "R1F4.2.3",
+        "R1F4.2.3.5",
+        "RIF4.2.5",
+        "R1F4.3.1.1",
+        "R1F4.3.1.2",
+        "R3F4.3.1.4",
+        "R1F4.3.1.6",
+        "R1F4.3.1.7"
+      ]
+    },
+    "ShowPopupUseCase": {
+      "requisiti": [
+        "R1F4.3.1.1",
+        "R1F4.3.1.2",
+        "R1F4.3.1.3",
+        "R3F4.3.1.4",
+        "R1F4.3.1.6",
+        "R1F4.3.1.7",
+        "R1F4.3.2"
+      ]
     }
   },
-  "application.feature.list_data" : {
-    "ListData" : {
-      "requisiti" : ["R1F4", "R1F4.1", "R1F4.2.4"]
-    },
-    "ListItem" : {
-      "requisiti" : ["R1F4.1", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5", "R1F4.2.3.1", "R1F4.2.3.4", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8"]
+    "bringit.client.event" : {
+      "ForwardListUseCase": {
+        "requisiti": [
+          "R1F4.3.2",
+          "R1F4.3.3",
+          "R1F4.3.4",
+          "R1F4.3.5",
+          "R1F4.3.4",
+          "R1F4.3.5"
+        ]
+      },
+      "GetItemInfoUseCase": {
+        "requisiti": [
+          "R1F4.2.5.1",
+          "R1F4.2.5.2",
+          "R1F4.2.5.4",
+          "R1F4.2.5.5",
+          "R1F4.2.5.6",
+          "R1F4.2.5.8"
+        ]
+      },
+      "GetListInfoUseCase": {
+        "requisiti": [
+          "R1F4.2.5.7",
+          "R1F4.2.5.9"
+        ]
+      },
+      "ManageListUseCase": {
+        "requisiti": [
+          "R1F4",
+          "R1F4.1"
+        ]
+      },
+      "ModifyListUseCase": {
+        "requisiti": [
+          "R1F4.1.1",
+          "R1F4.1.2",
+          "R1F4.1.3",
+          "R1F4.1.4",
+          "R1F4.1.5",
+          "R1F4.2.2",
+          "R1F4.2.3.1",
+          "R1F4.2.3.3",
+          "R1F4.2.3.4",
+          "R1F4.2.3.8",
+          "R1F4.2.3.6",
+          "R1F4.2.5",
+          "R1F4.2.5.1",
+          "R1F4.2.5.3",
+          "R1F4.2.5.4",
+          "R1F4.2.5.5",
+          "R1F4.2.5.6",
+          "R1F4.2.5.8",
+          "R1F4.2.6",
+          "R1F4.2.4"
+        ]
+      },
+      "ShareListUseCase": {
+        "requisiti": [
+          "R1F4.2.3",
+          "R1F4.2.3.5",
+          "RIF4.2.5",
+          "R1F4.3.1.1",
+          "R1F4.3.1.2",
+          "R3F4.3.1.4",
+          "R1F4.3.1.6",
+          "R1F4.3.1.7"
+        ]
+      },
+      "ShowPopupUseCase": {
+        "requisiti": [
+          "R1F4.3.1.1",
+          "R1F4.3.1.2",
+          "R1F4.3.1.3",
+          "R3F4.3.1.4",
+          "R1F4.3.1.6",
+          "R1F4.3.1.7",
+          "R1F4.3.2"
+        ]
+      }
     }
-  },
-  "application.feature.usecase" : {
-    "ForwardListUseCase" : {
-      "requisiti" : ["R1F4.3.2", "R1F4.3.3", "R1F4.3.4", "R1F4.3.5", "R1F4.3.4", "R1F4.3.5"]
-    },
-    "GetItemInfoUseCase" : {
-      "requisiti" : ["R1F4.2.5.1", "R1F4.2.5.2", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8" ]
-    },
-    "GetListInfoUseCase" : {
-      "requisiti" : ["R1F4.2.5.7", "R1F4.2.5.9"]
-    },
-    "ManageListUseCase" : {
-      "requisiti" : ["R1F4", "R1F4.1"]
-    },
-    "ModifyListUseCase" : {
-      "requisiti" : ["R1F4.1.1", "R1F4.1.2", "R1F4.1.3", "R1F4.1.4", "R1F4.1.5", "R1F4.2.2", "R1F4.2.3.1", "R1F4.2.3.3", "R1F4.2.3.4", "R1F4.2.3.8", "R1F4.2.3.6", "R1F4.2.5", "R1F4.2.5.1", "R1F4.2.5.3", "R1F4.2.5.4", "R1F4.2.5.5", "R1F4.2.5.6", "R1F4.2.5.8", "R1F4.2.6", "R1F4.2.4"]
-    },
-    "ShareListUseCase" : {
-      "requisiti" : ["R1F4.2.3", "R1F4.2.3.5", "RIF4.2.5", "R1F4.3.1.1", "R1F4.3.1.2", "R1F4.3.1.4", "R1F4.3.1.6", "R1F4.3.1.7"]
-    },
-    "ShowPopupUseCase" : {
-      "requisiti" : ["R1F4.3.1.1", "R1F4.3.1.2", "R1F4.3.1.3", "R1F4.3.1.4", "R1F4.3.1.6", "R1F4.3.1.7", "R1F4.3.2"]
-    }
-  }
 }

@@ -1,4 +1,4 @@
-GENERATOR = ../../../../../Tools/Requirements\ Trakcer/Tracker.py
+GENERATOR = ../../../../../Tools/Requirements\ Tracker/Tracker.py
 
 all :
 	$(GENERATOR)

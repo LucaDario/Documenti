@@ -287,6 +287,11 @@
         "description": "Verificare che ShareListUseCase aggiunga agli utenti della lista l’utente corrispondente all’id inserito",
         "implemented": true,
         "approved": false
+      },
+      {
+        "description": "Si verifica che InputItemInfoViewPresenter causi un'errore quando non viene inserita un'informazione obbligatoria relativa alla lista da creare",
+        "implemented": true,
+        "approved": false
       }
     ]
   },
@@ -512,6 +517,11 @@
         "approved": false
       },
       {
+        "description": "Si verifica che InputItemInfoViewImpl interagisca in modo corretto con InputItemInfoViewPresenter",
+        "implemented": true,
+        "approved": false
+      },
+      {
         "description": "Si verifica che ShareListUseCase interagisca in modo corretto con DatabaseSource",
         "implemented": true,
         "approved": false
@@ -644,14 +654,14 @@
       },
       {
         "description": "Si verifica che sia possibile creare una bolla \"lista della spesa\"",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Si verifica che l'aggiunta di un nuovo prodotto alla lista della spesa venga eseguita correttamente",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
@@ -665,7 +675,7 @@
       },
       {
         "description": "Si verifica che sia possibile spuntare un elemento di una bolla \"lista della spesa\"",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
@@ -686,14 +696,14 @@
       },
       {
         "description": "Si verifica che la pubblicazione a un utente di una bolla \"lista della spesa\" avvenga in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Si verifica che la pubblicazione a un gruppo di una bolla \"lista della spesa\" avvenga in modo corretto",
-        "implemented": false,
+        "implemented": true,
         "approved": false,
         "type": "F",
         "importance": "O"

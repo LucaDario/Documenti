@@ -406,7 +406,7 @@
         "approved": false
       },
       {
-        "description": "Si verifica che ShowPopupUseCase interagisca con ChatSource in modo corretto il quale dovà eseguire l’effetiva visualizzazione del popup e l’invio del messaggio",
+        "description": "Si verifica che ShareWithGroupViewPresenter interagisca in modo corretto con ChatSource",
         "implemented": false,
         "approved": false
       },
@@ -452,8 +452,13 @@
         "approved": false
       },
       {
-        "description": "Si verifica che InputInfoViewPresenter interagisca in modod corretto con GetItemInfoUseCase",
-        "implemented": false,
+        "description": "Si verifica che ShareWithGroupViewImpl interagisca in modo corretto con ShareWithGroupViewPresenter",
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che ShareWithContactViewImpl interagisca in modo corretto con ShareWithContactViewPresenter",
+        "implemented": true,
         "approved": false
       },
       {
@@ -472,38 +477,43 @@
         "approved": false
       },
       {
+        "description": "Si verifica che ModifyItemView interagisca in modod corretto con ModifyItemPresenter",
+        "implemented": false,
+        "approved": false
+      },
+      {
         "description": "Si verifica che ModifyListUseCase interagisca in modo corretto con DatabaseSource",
         "implemented": true,
         "approved": false
       },
       {
-        "description": "Si verifica che ShowPopupUseCase interagisca in modo corretto con ChatSource",
-        "implemented": false,
+        "description": "Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ChatSource",
+        "implemented": true,
         "approved": false
       },
       {
-        "description": "Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ShareWithContactView",
-        "implemented": false,
+        "description": "Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ShowPopupUseCase",
+        "implemented": true,
         "approved": false
       },
       {
-        "description": "Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ShareListUseCase",
-        "implemented": false,
+        "description": "Si verifica che CreateListViewImpl interagisca in modo corretto con CreateListViewPresenter",
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che DeleteListViewImpl interagisca in modo corretto con DeleteListViewPresenter",
+        "implemented": true,
+        "approved": false
+      },
+      {
+        "description": "Si verifica che InputListInfoViewImpl interagisca in modo corretto con InputListInfoViewPresenter",
+        "implemented": true,
         "approved": false
       },
       {
         "description": "Si verifica che ShareListUseCase interagisca in modo corretto con DatabaseSource",
         "implemented": true,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che ShareWithGroupViewPresenter interagisca in modo corretto con ShareWithContactView",
-        "implemented": false,
-        "approved": false
-      },
-      {
-        "description": "Si verifica che ShareWithGroupViewPresenter interagosca in modo corretto con ShowPopupUseCase",
-        "implemented": false,
         "approved": false
       }
     ]

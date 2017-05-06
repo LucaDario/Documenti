@@ -25,18 +25,6 @@ Questo scenario rappresenta l'utente che vuole creare una nuova lista nella chat
 
 In questo scenario lo sviluppatore vuole cancellare la propria lista causandone l'eliminazione da tutte le chat che la contengono. L'utente quando premerà il bottone "Elimina lista" farà emettere un evento di tipo \textit{DeleteEvent}, che verrà catturato da \textit{DeleteListView}, che demanderà al presenter la gestione dell'eliminazione; quest'ultimo userà infatti \textit{ManageListUseCase} per comunicare a \textit{DataBaseSource} che la lista venga eliminata.
 
-\subsubsection{Modifica di una lista}
-
-\label{Modifca di un lista}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\textwidth]{Sezioni/Diagrammi/App/modifica_lista.jpg}
-	\caption{Modifica di una lista}
-\end{figure}
-
-In questo scenario lo sviluppatore vuole modificare una lista cambiando, ad esempio, il suo nome o l'immagine ad essa associata. L'utente premendo il bottone modifica lista attiverà l'emissione di un evento che verrà catturato dalla classe \textit{ChangeListViewImpl} e demanderà la  gestione al suo presenter. Quest'ultimo attraverso il suo  metodo \textit{showInputListView} gli ritornerà l'HTML per la modifica della lista completa di tutte le informazioni di essa presenti nel \termine{database}. Successivamente richiamando il metodo \textit{showPopUp} si visualizzerà a schermo  le informazioni prima ottenute con la possibilità di modificarle. Una volta modificate le informazioni desiderate l'utente premerà il pulsante di conferma modifica, facendo sì che venga emesso l'evento di salvataggio che verrà catturato dalla classe \textit{InpuListInfoViewImpl} e successivamente demandato alla classe \textit{ChangeListPresenter} che si occuperà di salvare le modifiche nel \termine{database}. \\
-All'avvenuta modifica della lista  verrà emesso l'evento che attiverà i metodi nel presenter della bolla lista per aggiornare tutte le chat contenenti l'istanza di quella lista.
- 
 \subsubsection{Spunta di un oggetto della lista}
 
 \label{Spunta di un oggetto della lista}

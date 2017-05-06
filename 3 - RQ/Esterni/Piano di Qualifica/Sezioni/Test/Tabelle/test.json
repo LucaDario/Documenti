@@ -229,7 +229,7 @@
         "approved": false
       },
       {
-        "description": "Verificare che la quantità del prodotto venga impostata in modo corretto",
+        "description": "Verificare che la quantità del prodotto venga impostata in modo corretto quando non inserita",
         "implemented": true,
         "approved": false
       },
@@ -667,11 +667,11 @@
         "importance": "O"
       },
       {
-        "description": "Si verifica che sia possibile rimuovere un elemento ad una bolla \"lista della spesa\"",
+        "description": "Si verifica che sia possibile rimuovere, per un utente con i permessi ed al creatore, un elemento ad una bolla \"lista della spesa\"",
         "implemented": false,
         "approved": false,
         "type": "F",
-        "importance": "O"
+        "importance": "F"
       },
       {
         "description": "Si verifica che sia possibile spuntare un elemento di una bolla \"lista della spesa\"",
@@ -688,11 +688,11 @@
         "importance": "O"
       },
       {
-        "description": "Si verifica che l'inoltro a un gruppo di una bolla \"lista della spesa\" avvenga in modo corretto",
+        "description": "Si verifica che l'inoltro a un gruppo, da perte di tutti gli utenti, di una bolla \"lista della spesa\" avvenga in modo corretto",
         "implemented": false,
         "approved": false,
         "type": "F",
-        "importance": "O"
+        "importance": "F"
       },
       {
         "description": "Si verifica che la pubblicazione a un utente di una bolla \"lista della spesa\" avvenga in modo corretto",
@@ -707,6 +707,34 @@
         "approved": false,
         "type": "F",
         "importance": "O"
+      },
+      {
+        "description": "Si verifica che l'utente con i permessi possa aggiungere elementi alla lista",
+        "implemented": true,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Si verifica che l'utente senza i permessi non possa aggiungere elementi alla lista",
+        "implemented": true,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Si verifica che il creatore della lista possa aggiungere elementi alla lista",
+        "implemented": true,
+        "approved": false,
+        "type": "F",
+        "importance": "O"
+      },
+      {
+        "description": "Si verifica che il creatore della lista e gli utenti con permessi possano modificare i prodotti della lista",
+        "implemented": false,
+        "approved": false,
+        "type": "F",
+        "importance": "D"
       }
     ]
   },

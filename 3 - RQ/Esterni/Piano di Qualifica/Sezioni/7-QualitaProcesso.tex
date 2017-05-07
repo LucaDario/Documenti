@@ -18,7 +18,7 @@ L'intero sviluppo del progetto dovrà seguire la pianificazione prodotta, in par
 \end{itemize}
 
 \subsection{Standard ISO/IEC 15504}
-Questo processo, per come è strutturato il progetto, viene effettuato una volta dal gruppo, perciò, anche per mancanza di tempo il gruppo non si impegnerà a raggiungere un elevato livello di \termine{capability} ed a migliorare le metriche per le attività individuate per tale processo. Il gruppo però si impegna a verificare costantemente la qualità dell'attività di pianificazione, ritenuta fondamentale dai membri per raggiungere lo scopo prefissato.
+Questo processo, per come è strutturato il progetto, viene effettuato una volta dal gruppo, perciò, anche per mancanza di tempo il gruppo non si impegnerà a raggiungere un elevato livello di capability ed a migliorare le metriche per le attività individuate per tale processo. Il gruppo però si impegna a verificare costantemente la qualità dell'attività di pianificazione, ritenuta fondamentale dai membri per raggiungere lo scopo prefissato.
 \begin{itemize}
 \item \textbf{Livello di accettazione}: 1.
 \item \textbf{Livello ottimale}: 2.
@@ -141,7 +141,7 @@ I requisiti dovranno essere gestiti dal gruppo nel seguente modo:
 \end{itemize}
 
 \paragraph{Strategie}
-Tutti i requisiti individuati saranno riportati in un \termine{file json} che ne manterrà il tracciamento per poi essere trascritti con maggiore. Questi poi saranno utilizzati nella per i test di sistema e di collaudo per verificarne il completo soddisfacimento.
+Tutti i requisiti individuati saranno riportati in un file json che ne manterrà il tracciamento per poi essere trascritti con maggiore. Questi poi saranno utilizzati nella per i test di sistema e di collaudo per verificarne il completo soddisfacimento.
 
 \paragraph{Metriche}
 \subparagraph{Requisiti obbligatori soddisfatti}
@@ -169,14 +169,14 @@ Tutti i requisiti individuati saranno riportati in un \termine{file json} che ne
 Durante lo svolgimento delle attività previste da questo processo, il gruppo si impegnerà a trovare una buona architettura di sistema nel seguente modo:
 \begin{itemize}
 \item ogni componente progettato come parte del sistema risulterà essere necessario per il funzionamento del prodotto e, quindi, costantemente tracciabile ai requisiti che soddisfa.
-\item il sistema dovrà presentare basso accoppiamento ed alta coesione, tenendo conto che \termine{RocketChat} implementa il pattern \termine{Observer} per la gestione degli eventi. Il suddetto pattern aumenta l'accoppiamento per cui il \termine{team} dovrà gestire in maniera ottimale il problema.
+\item il sistema dovrà presentare basso accoppiamento ed alta coesione, tenendo conto che RocketChat implementa il pattern \termine{Observer} per la gestione degli eventi. Il suddetto pattern aumenta l'accoppiamento per cui il \termine{team} dovrà gestire in maniera ottimale il problema.
 \item ogni componente dovrà essere progettato puntando su incapsulamento, modularizzazione e riuso di codice, in modo da garantire un indice elevato di utilità.
 \item Bassa complessità del Sistema, seguendo in maniera precisa i pattern scelti.
 \end{itemize}
 
 \paragraph{Strategie}
 L'approccio utilizzato coinvolge il modello statico di progettazione, utilizzando l'ereditarietà come strumento di organizzazione, garantendo semplicità e riuso del codice.
-Inoltre nel corso dell'attività di progettazione, sia ad alto livello che di dettaglio, le componenti verranno inserite in un \termine{file json} dedicato, il quale si occuperà del tracciamento con i requisiti trovati nell'attività di analisi.
+Inoltre nel corso dell'attività di progettazione, sia ad alto livello che di dettaglio, le componenti verranno inserite in un file json dedicato, il quale si occuperà del tracciamento con i requisiti trovati nell'attività di analisi.
 
 
 \paragraph{Metriche}
@@ -346,7 +346,7 @@ Durante l'attività di codifica, il \textit{\Progr} dovrà attenersi a quanto in
 \subparagraph{Linee di commento per linee di codice}
 
 \begin{itemize}
-\item \textbf{Misurazione}: $P=\frac{N_{C}}{N_{SLOC}} \cdot 100$, dove $N_{C}$ è il numero di linee di commento presenti nel codice e $N_{SLOC}$ è il numero di Source Lines Of Code prodotte.
+\item \textbf{Misurazione}: $P=\frac{N_{C}}{N_{SLOC}} \cdot 100$, dove $N_{C}$ è il numero di linee di commento presenti nel codice e $N_{SLOC}$ è il numero di \termine{Source} Lines Of Code prodotte.
 \end{itemize}
 
 \begin{center}
@@ -380,7 +380,7 @@ Durante l'attività di codifica, il \textit{\Progr} dovrà attenersi a quanto in
 
 \subsubsection{Lint}
 
-Per garantire una buona qualità anche per il processo di Codifica verrà utilizzato lo strumento \termine{Lint}. Esso garantisce il controllo di alcuni elementi nel codice già descritti nelle \NdP.
+Per garantire una buona qualità anche per il processo di \termine{Codifica} verrà utilizzato lo strumento Lint. Esso garantisce il controllo di alcuni elementi nel codice già descritti nelle \NdP.
 
 
 
@@ -490,10 +490,10 @@ Bisognerà cercare di implementare il maggior livello possibile di automazione n
 \captionof{table}{Test di Sistema eseguiti}
 \end{center}
 
-\paragraph{Test di Validazione eseguiti}
+\paragraph{Test di \termine{Validazione} eseguiti}
 
 \begin{itemize}
-\item \textbf{Misurazione}: $VE=\frac{N_{TVE}}{N_{TVP}} \cdot 100$, dove $N_{TVE}$ è il numero di test di validazione eseguiti e $N_{TVP}$ è il numero di test di Validazione pianificati.
+\item \textbf{Misurazione}: $VE=\frac{N_{TVE}}{N_{TVP}} \cdot 100$, dove $N_{TVE}$ è il numero di test di validazione eseguiti e $N_{TVP}$ è il numero di test di \termine{Validazione} pianificati.
 \end{itemize}
 
 \begin{center}
@@ -501,10 +501,10 @@ Bisognerà cercare di implementare il maggior livello possibile di automazione n
 		\hline
 			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
 			\hline
-			$100$ & $100$ &	Garantire che tutti o la maggior parte dei test di Validazione siano eseguiti con successo. \\
+			$100$ & $100$ &	Garantire che tutti o la maggior parte dei test di \termine{Validazione} siano eseguiti con successo. \\
 			\hline
 			\end{tabular}
-\captionof{table}{Test di Validazione eseguiti}
+\captionof{table}{Test di \termine{Validazione} eseguiti}
 \end{center}
 
 \paragraph{Test superati}

@@ -28,7 +28,7 @@
 \item \textbf{Classi e packages contenuti}:
 \begin{itemize}
 	\item \textbf{bubble}: package contenente tutti le componenti che rappresentano le bolle ed esso ha una dipendenza con il il package component. Le bolle, infatti, non sono altro che dei semplici contenitori che potranno contenere dei \textit{BaseComponent} (layout o widget) e disporli in qualsiasi logica si desideri. Infine, per considerare una componente una bolla, questa dovrà estendere la classe base \textit{BaseBubble}, classe base della gerarchia.
-	\item \textbf{component}: package contenente tutti i package dei componenti che compongono le bolle, ad esempio tutti i tipi di widget e layout. Questi possono essere aggiunti alle bolle e, aggiungere un layout significa introdurre in una bolla una logica di disposizione degli elementi. Si noti, infine, che una \termine{BaseBubble} (punto di partenza per qualsiasi bolla) per scelta implementativa possiede di default un layout verticale.
+	\item \textbf{component}: package contenente tutti i package dei componenti che compongono le bolle, ad esempio tutti i tipi di widget e layout. Questi possono essere aggiunti alle bolle e, aggiungere un layout significa introdurre in una bolla una logica di disposizione degli elementi. Si noti, infine, che una BaseBubble (punto di partenza per qualsiasi bolla) per scelta implementativa possiede di default un layout verticale.
 	\item \textbf{BaseComponent}: interfaccia che rappresenta un generico componente. Qualsiasi classe adibita a questa funzionalità dovrà implementare (o estendere) questa interfaccia.
 \end{itemize}
 \end{itemize}
@@ -46,8 +46,8 @@
 Si noti che i widget sono considerati dei \textit{BaseComponent} per cui ognuno di essi ha una dipendenza con l'interfaccia. Per comodità tale dipendenza è espressa a livello del package esterno.
 \item \textbf{Classi e packages contenuti}:
 \begin{itemize}
-\item \textbf{layout}: package che contiene le componenti che forniscono le funzionalità dei layout. Essi vengono usati per disporre i widget nelle \termine{bolle}.
-\item \textbf{widget}: package che contiene i widget, ovvero le componenti che formano effettivamente le \termine{bolle}.
+\item \textbf{layout}: package che contiene le componenti che forniscono le funzionalità dei layout. Essi vengono usati per disporre i widget nelle bolle.
+\item \textbf{widget}: package che contiene i widget, ovvero le componenti che formano effettivamente le bolle.
 \item \textbf{BaseComponent}: interfaccia che rappresenta la base degli oggetti che possono essere aggiunti ad una \termine{bolla}.
 \end{itemize}
 \end{itemize}

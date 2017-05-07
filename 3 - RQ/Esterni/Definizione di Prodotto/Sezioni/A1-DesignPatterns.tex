@@ -58,11 +58,11 @@
 	\item \textbf{Utilizzo}: all'interno di \progettoShort\ questo pattern viene utilizzato nella gestione grafica di tutte le bolle e particolari altre viste inserite all'interno dell'applicazione. Più in particolare viene adottato il seguente schema, per i widget:
 \begin{itemize}
 \item Le \textbf{View} saranno dei semplici template in HTML con una semplice interfaccia di comunicazione.
-\item I \textbf{Presenter} verranno implementati con il design pattern comportamentale Observer, quando la View dovrà interagire con l'utente e di conseguenza il Presenter deve poter ricevere questi aggiornamenti. Se, invece, la View non deve essere aggiornata poiché statica, non verrà utilizzato il Pattern Observer, ma l'interazione sarà mantenuta solo per rimanere coerenti al Pattern e permettere una futura implementazione interattiva per chi volesse un giorno espandere l'\termine{SDK}.
-\item I \textbf{Model} per i widget non saranno disponibili nell'\termine{SDK}, questo perché dovrà essere lo sviluppatore a definire il loro  comportamento, ovvero la loro \termine{Business-Logic}, mantenendo così la struttura del pattern.
+\item I \textbf{Presenter} verranno implementati con il design pattern comportamentale Observer, quando la \termine{View} dovrà interagire con l'utente e di conseguenza il \termine{Presenter} deve poter ricevere questi aggiornamenti. Se, invece, la \termine{View} non deve essere aggiornata poiché statica, non verrà utilizzato il Pattern Observer, ma l'interazione sarà mantenuta solo per rimanere coerenti al Pattern e permettere una futura implementazione interattiva per chi volesse un giorno espandere l'\termine{SDK}.
+\item I \textbf{Model} per i widget non saranno disponibili nell'\termine{SDK}, questo perché dovrà essere lo sviluppatore a definire il loro  comportamento, ovvero la loro Business-Logic, mantenendo così la struttura del pattern.
 \end{itemize}
-Lo schema Model-View-Presenter verrà utilizzato anche nell'applicazione \app\ per ogni azione o componente.
-Essendo totalmente definita e non ampliabile dallo sviluppatore (come per l'\termine{SDK}), l'applicazione definirà, oltre alla View e al Presenter, anche il Model. Quest'ultimi verranno caricati nella parte Server del programma seguendo la suddivisione logica dei programmi \textit{Meteor}.
+Lo schema \termine{Model-View-Presenter} verrà utilizzato anche nell'applicazione \app\ per ogni azione o componente.
+Essendo totalmente definita e non ampliabile dallo sviluppatore (come per l'\termine{SDK}), l'applicazione definirà, oltre alla \termine{View} e al Presenter, anche il Model. Quest'ultimi verranno caricati nella parte \termine{Server} del programma seguendo la suddivisione logica dei programmi \textit{Meteor}.
 \end{itemize}
 
 \subsubsection{Clean Architecture}

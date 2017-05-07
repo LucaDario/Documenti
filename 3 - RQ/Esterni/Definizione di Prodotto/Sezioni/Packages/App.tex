@@ -7,12 +7,12 @@
 \end{figure}
 \begin{itemize}
 
-	\item \textbf{Descrizione}: architettura ad alto livello dell’applicazione \textit{Bring-It} del gruppo \gruppo. Data la natura dell'applicazione, si è scelto di utilizzare il \termine{pattern architetturale} Model-View-Presenter. Le funzionalità sono state divise secondo lo schema classico di un progetto Meteor: lato client, lato server e la parte che gestisce la comunicazione per le altre due. Il lato client si occupa dell'interazione con l'utente, ovvero conterrà tutte quelle componenti che reagiranno alle varie azioni che egli compie e tali cambiamenti saranno visibili all'utente tramite la \termine{chat} di \termine{Rocket.Chat}. La parte server invece comunicherà direttamente con il \termine{DBMS}, ovvero \termine{MongoDB}, che si occuperà di salvare i dati necessari per il corretto funzionamento dell'applicativo. Si noti che per comunicare con il \termine{database} verrà utilizzata l'interfaccia che già offre Meteor.
-Infine in seguito verranno elencati tutti i \termine{packages} forniti di una spiegazione esaustiva sulle loro interazioni.
+	\item \textbf{Descrizione}: architettura ad alto livello dell’applicazione \textit{Bring-It} del gruppo \gruppo. Data la natura dell'applicazione, si è scelto di utilizzare il \termine{pattern architetturale} Model-View-Presenter. Le funzionalità sono state divise secondo lo schema classico di un progetto Meteor: lato client, lato server e la parte che gestisce la comunicazione per le altre due. Il lato client si occupa dell'interazione con l'utente, ovvero conterrà tutte quelle componenti che reagiranno alle varie azioni che egli compie e tali cambiamenti saranno visibili all'utente tramite la chat di \termine{Rocket.Chat}. La parte server invece comunicherà direttamente con il \termine{DBMS}, ovvero \termine{MongoDB}, che si occuperà di salvare i dati necessari per il corretto funzionamento dell'applicativo. Si noti che per comunicare con il \termine{database} verrà utilizzata l'interfaccia che già offre Meteor.
+Infine in seguito verranno elencati tutti i packages forniti di una spiegazione esaustiva sulle loro interazioni.
 	\item \textbf{Classi e packages contenuti}:
 	\begin{itemize}
 		\item \textbf{application::client}: package contenente i packages e il codice che è necessario lato client. Ovvero tutte le \termine{View} ed i \termine{Presenter} che si occupano di prendere gli input dall'utente (View) e di gestirli (Presenter).
-		\item \textbf{application::usecase}: package contenente tutti gli usecase dell'applicazione. Essi rappresentano tutti i \termine{models} delle funzionalità offerte dall'applicativo, riceveranno i dati dai rispettivi \termine{presenter} e agiranno per compiere l'azione dell'utente.
+		\item \textbf{application::usecase}: package contenente tutti gli usecase dell'applicazione. Essi rappresentano tutti i models delle funzionalità offerte dall'applicativo, riceveranno i dati dai rispettivi \termine{presenter} e agiranno per compiere l'azione dell'utente.
 		\item \textbf{application::server}: package contenente classi che interagiscono con l'interfaccia di Meteor che a sua volta comunicherà con il \termine{DBMS} \termine{MongoDB}.
 		\item \textbf{application::data}: package contenente le classi che possono risultare utili sia alla parte client che alla parte server.
 		\item \textbf{application::exception}: package contenente la gerarchia di eccezioni definita dal gruppo. Queste sono state inserite al fine di permettere una modellazione maggiore da parte degli sviluppatori che voglio usare l'\termine{SDK}.
@@ -60,7 +60,7 @@ Infine in seguito verranno elencati tutti i \termine{packages} forniti di una sp
 	\caption{Package application::client::list}
 \end{figure}
 \begin{itemize}
-\item \textbf{Descrizione}: package contenente altri package che contengono a loro volta View, Presenter e interfaccia delle funzionalità previste per la creazione, modifica e rimozione della lista. Ogni package, dunque, conterrà la stessa struttura appena citata, perciò quelli più interni non verranno presentati poiché contenenti informazioni ridondanti e poco specifiche a rappresentare le interazioni tra le componenti. Le classi invece saranno presentate nella sezione contenente i \termine{Diagrammi delle Classi}.
+\item \textbf{Descrizione}: package contenente altri package che contengono a loro volta View, \termine{Presenter} e interfaccia delle funzionalità previste per la creazione, modifica e rimozione della lista. Ogni package, dunque, conterrà la stessa struttura appena citata, perciò quelli più interni non verranno presentati poiché contenenti informazioni ridondanti e poco specifiche a rappresentare le interazioni tra le componenti. Le classi invece saranno presentate nella sezione contenente i Diagrammi delle Classi.
 	\item \textbf{Classi e packages contenuti}:
 	\begin{itemize}
 	\item \textbf{application::client::list::create}: package che contiene le funzionalità per la creazione della lista da parte dell'utente.
@@ -79,7 +79,7 @@ Infine in seguito verranno elencati tutti i \termine{packages} forniti di una sp
 	\caption{Package application::client::item}
 \end{figure}
 \begin{itemize}
-	\item \textbf{Descrizione}: package contenente altri package che contengono a loro volta View, Presenter e interfaccia delle funzionalità previste per la creazione, modifica e rimozione degli elementi della lista.
+	\item \textbf{Descrizione}: package contenente altri package che contengono a loro volta View, \termine{Presenter} e interfaccia delle funzionalità previste per la creazione, modifica e rimozione degli elementi della lista.
 	\item \textbf{Classi e packages contenuti}:
 	\begin{itemize}
 	\item \textbf{application::client::item::modify}: package che contiene le componenti per garantire la modifica degli elementi o item presenti all'interno della lista.
@@ -97,10 +97,10 @@ Infine in seguito verranno elencati tutti i \termine{packages} forniti di una sp
 	\caption{Package application::usecase}
 \end{figure}
 \begin{itemize}
-\item \textbf{Descrizione}: package contenente le componenti adibite alla comunicazione tra il lato client e il lato server. In altre parole le componenti presenti in questo package rappresentano i \termine{Model} delle funzionalità previste. Esse ricevono dati dal presenter e interagiscono anche con il server per svolgere correttamente le loro funzioni.
+\item \textbf{Descrizione}: package contenente le componenti adibite alla comunicazione tra il lato client e il lato server. In altre parole le componenti presenti in questo package rappresentano i Model delle funzionalità previste. Esse ricevono dati dal presenter e interagiscono anche con il server per svolgere correttamente le loro funzioni.
 \item \textbf{Classi e packages contenuti}:
 \begin{itemize}
-\item \textbf{application::usecase::popup}: package che contiene le componenti logiche per l'invio dei \termine{popup} che serviranno all'utente per modificare, aggiungere o rimuovere elementi dalla lista.
+\item \textbf{application::usecase::popup}: package che contiene le componenti logiche per l'invio dei popup che serviranno all'utente per modificare, aggiungere o rimuovere elementi dalla lista.
 \item \textbf{application::usecase::list}: package che contiene le componenti logiche della lista.
 \item \textbf{application::usecase::item}: package che contiene le componenti logiche degli item presenti nella lista.
 \end{itemize}

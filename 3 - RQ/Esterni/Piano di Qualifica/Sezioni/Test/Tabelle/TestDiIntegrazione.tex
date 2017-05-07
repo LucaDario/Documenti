@@ -1,49 +1,49 @@
 \begin{center}
-	\begin{longtable}{|c|>{\centering}m{10cm}|c|}\hline
-		Id & Descrizione & stato \\ \hline
-		TI1 & Si verifica che il metodo ButtonWidget::setText passi correttamente il testo al presenter il quale eventualmente lo formatterà e modificherà correttamente l'HTML e CSS & Implementato \\ \hline
-		TI2 & Si verifica che il metodo ButtonWidget::setHeight passi correttamente il valore dell'altezza al presenter il quale modificherà correttamente l'HTML e CSS & Implementato \\ \hline
-		TI3 & Si verifica che il metodo ButtonWidget::setWidth passi correttamente il valore della lareghezza al presenter modificherà correttamente l'HTML e CSS & Implementato \\ \hline
-		TI4 & Si verifica che il metodo ButtonWidget::setBackgroundColor passi correttamente il colore dello sfondo del bottone al presenter il quale modificherà correttamente l'HTML e CSS & Implementato \\ \hline
-		TI5 & Si verifica che il metodo ButtonWidget::setOnClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene premuto il pulsante & Implementato \\ \hline
-		TI6 & Si verifica che il metodo ButtonWidget::setOnLongClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene mantenuto premuto il pulsante & Implementato \\ \hline
-		TI7 & Si verifica che il metodo TextWidget::setText passi correttamente al presenter il testo che verrà poi mostrato a video & Implementato \\ \hline
-		TI8 & Si verifica che il metodo TextWidget::setTextColor passi correttamente il colore del testo al presenter il quale modificherà correttamente l'HTML e CSS, presentandolo con il colore corrispondente & Implementato \\ \hline
-		TI9 & Si verifica che il metodo TextWidget::setFormatText passi il valore booleano (che rappresenta la scelta di formattare il testo) al presenter. Esso dovrà, poi, presentare il testo formattato seguendo la sintassi markdown oppure lasciarlo invariato in funzione al valore booleano & Implementato \\ \hline
-		TI10 & Si verifica che il metodo TextWidget::setUrlHighlightColor passi il valore del colore al presenter il quale dovrà presentare i link evidenziati oppure non evidenziati in funzione al colore scelto & Implementato \\ \hline
-		TI11 & Si verifica che il metodo TextWidget::setTextSize passi la dimensione del testo del presenter il quale dovrà occuparsi di presentare il testo della dimensione impostata & Implementato \\ \hline
-		TI12 & Si verifica che il metodo ChecklistItemWidget::setUseSelectionMark imposti la scelta di utilizzare un carattere o un colore come spunta passando correttamente per il Presenter & Implementato \\ \hline
-		TI13 & Si verifica che il metodo ChecklistItemWidget::setSelectionColor passi al presenter il colore dello spunta il quale dovrà presentare la lista con lo stile corretto & Implementato \\ \hline
-		TI14 & Si verifica che il metodo ChecklistItemWidget::setSelectionCharacter passi al presenter un carattere per la spunta, e il presenter dovrà presentare la lista con lo stile corretto & Implementato \\ \hline
-		TI15 & Si verifica che il metodo ListWidget::addItem passi al presenter il testo del elemento il quale dovrà presentare l'HTML con il nuovo elemento & Implementato \\ \hline
-		TI16 & Si verifica che la view passi al presenter il carattere con il quale mostrare gli indicatori della lista. Esso provvederà poi ad impostarli correttamente nell'HTML & Implementato \\ \hline
-		TI17 & Si verifica che il metodo ImageWidget::setWidth passi correttamente al presenter il valore dell'altezza il quale aggiornerà la view & Implementato \\ \hline
-		TI18 & Si verifica che il metodo ImageWidget::setHeight passi correttamente al presenter il valore della larghezza il quale aggiornerà la view & Implementato \\ \hline
-		TI19 & Si verifica che il metodo ImageWidget::setImage passi correttamente al presenter il path del'immagine che dovrà essere presentata nella view & Implementato \\ \hline
-		TI20 & Si verifica che l'aggiunta di un VerticalLayoutView, creato con degli elementi al suo interno, non causi errori nell'aggiunta di questo alla bolla e che, gli elementi, nel layout appena aggiunto, vengano mostrati uno sotto l'altro & Implementato \\ \hline
-		TI21 & Si verifica che l'aggiunta di un HorizontalLayoutView, creato con degli elementi al suo interno, non causi errori nell'aggiunta di questi alla bolla e che gli elementi, nel layout appena aggiunto, vengano mostrati uno vicino all'altro & Implementato \\ \hline
-		TI22 & Si verifica che il ModifyListUseCase esegua le operazioni di aggiunta, rimozione e aggiornamento dei dati trammite DatabaseSource in modo corretto & Implementato \\ \hline
-		TI23 & Si verifica che ShareWithGroupViewPresenter interagisca in modo corretto con ChatSource & Implementato \\ \hline
-		TI24 & Si verifica che CreateListViewPresenter interagisca con ChatSource in modo corretto & Non implementato \\ \hline
-		TI25 & Si verifica che ShareListUseCase interagisca in modo corretto con DatabaseSource & Implementato \\ \hline
-		TI26 & Si verifica che ManageListUseCase interagisca con DatabaseSource rimuovendo e aggiungendo una lista dal database in modo corretto & Implementato \\ \hline
-		TI27 & Si verifica che DeleteListViewPresenter interagisca con ShowPopupUseCase mostrando il popup di eliminazione della lista & Implementato \\ \hline
-		TI28 & Si verifica che ForwardListUseCase interagisca in modo corretto con ChatSource al fine di inoltrare la lista selezionata & Non implementato \\ \hline
-		TI29 & Si verifica che GetListInfoUseCase esegua i fetch dei dati in modo corretto dal database tramite DatabaseSource & Implementato \\ \hline
-		TI30 & Si verifica che ChangeListInfoViewPresenter interagisca in modo corretto con ModifyListUseCase & Non implementato \\ \hline
-		TI31 & Si verifica che ChangeListInfoViewPresenter interagisca in modo corretto con ShowPopupUseCase & Non implementato \\ \hline
-		TI32 & Si verifica che ShareWithGroupViewImpl interagisca in modo corretto con ShareWithGroupViewPresenter & Implementato \\ \hline
-		TI33 & Si verifica che ShareWithContactViewImpl interagisca in modo corretto con ShareWithContactViewPresenter & Implementato \\ \hline
-		TI34 & Si verifica che GetItemInfoUseCase interagisca in modo corretto con DatabaseSource & Implementato \\ \hline
-		TI35 & Si verifica che ModifyItemPresenter interagisca in modod corretto con ModifyListUseCase & Non implementato \\ \hline
-		TI36 & Si verifica che ModifyItemPresenter interagisca in modod corretto con ShowPopupUseCase & Non implementato \\ \hline
-		TI37 & Si verifica che ModifyItemView interagisca in modod corretto con ModifyItemPresenter & Non implementato \\ \hline
-		TI38 & Si verifica che ModifyListUseCase interagisca in modo corretto con DatabaseSource & Implementato \\ \hline
-		TI39 & Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ChatSource & Implementato \\ \hline
-		TI40 & Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ShowPopupUseCase & Implementato \\ \hline
-		TI41 & Si verifica che CreateListViewImpl interagisca in modo corretto con CreateListViewPresenter & Implementato \\ \hline
-		TI42 & Si verifica che DeleteListViewImpl interagisca in modo corretto con DeleteListViewPresenter & Implementato \\ \hline
-		TI43 & Si verifica che InputListInfoViewImpl interagisca in modo corretto con InputListInfoViewPresenter & Implementato \\ \hline
-		TI44 & Si verifica che InputItemInfoViewImpl interagisca in modo corretto con InputItemInfoViewPresenter & Implementato \\ \hline
+	\begin{longtable}{|c|>{\centering}m{10cm}|c|c|}\hline
+		Id & Descrizione & Stato & Esito\\ \hline
+		TI1 & Si verifica che il metodo ButtonWidget::setText passi correttamente il testo al presenter il quale eventualmente lo formatterà e modificherà correttamente l'HTML e CSS & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI2 & Si verifica che il metodo ButtonWidget::setHeight passi correttamente il valore dell'altezza al presenter il quale modificherà correttamente l'HTML e CSS & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI3 & Si verifica che il metodo ButtonWidget::setWidth passi correttamente il valore della lareghezza al presenter modificherà correttamente l'HTML e CSS & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI4 & Si verifica che il metodo ButtonWidget::setBackgroundColor passi correttamente il colore dello sfondo del bottone al presenter il quale modificherà correttamente l'HTML e CSS & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI5 & Si verifica che il metodo ButtonWidget::setOnClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene premuto il pulsante & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI6 & Si verifica che il metodo ButtonWidget::setOnLongClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene mantenuto premuto il pulsante & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI7 & Si verifica che il metodo TextWidget::setText passi correttamente al presenter il testo che verrà poi mostrato a video & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI8 & Si verifica che il metodo TextWidget::setTextColor passi correttamente il colore del testo al presenter il quale modificherà correttamente l'HTML e CSS, presentandolo con il colore corrispondente & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI9 & Si verifica che il metodo TextWidget::setFormatText passi il valore booleano (che rappresenta la scelta di formattare il testo) al presenter. Esso dovrà, poi, presentare il testo formattato seguendo la sintassi markdown oppure lasciarlo invariato in funzione al valore booleano & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI10 & Si verifica che il metodo TextWidget::setUrlHighlightColor passi il valore del colore al presenter il quale dovrà presentare i link evidenziati oppure non evidenziati in funzione al colore scelto & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI11 & Si verifica che il metodo TextWidget::setTextSize passi la dimensione del testo del presenter il quale dovrà occuparsi di presentare il testo della dimensione impostata & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI12 & Si verifica che il metodo ChecklistItemWidget::setUseSelectionMark imposti la scelta di utilizzare un carattere o un colore come spunta passando correttamente per il Presenter & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI13 & Si verifica che il metodo ChecklistItemWidget::setSelectionColor passi al presenter il colore dello spunta il quale dovrà presentare la lista con lo stile corretto & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI14 & Si verifica che il metodo ChecklistItemWidget::setSelectionCharacter passi al presenter un carattere per la spunta, e il presenter dovrà presentare la lista con lo stile corretto & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI15 & Si verifica che il metodo ListWidget::addItem passi al presenter il testo del elemento il quale dovrà presentare l'HTML con il nuovo elemento & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI16 & Si verifica che la view passi al presenter il carattere con il quale mostrare gli indicatori della lista. Esso provvederà poi ad impostarli correttamente nell'HTML & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI17 & Si verifica che il metodo ImageWidget::setWidth passi correttamente al presenter il valore dell'altezza il quale aggiornerà la view & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI18 & Si verifica che il metodo ImageWidget::setHeight passi correttamente al presenter il valore della larghezza il quale aggiornerà la view & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI19 & Si verifica che il metodo ImageWidget::setImage passi correttamente al presenter il path del'immagine che dovrà essere presentata nella view & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI20 & Si verifica che l'aggiunta di un VerticalLayoutView, creato con degli elementi al suo interno, non causi errori nell'aggiunta di questo alla bolla e che, gli elementi, nel layout appena aggiunto, vengano mostrati uno sotto l'altro & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI21 & Si verifica che l'aggiunta di un HorizontalLayoutView, creato con degli elementi al suo interno, non causi errori nell'aggiunta di questi alla bolla e che gli elementi, nel layout appena aggiunto, vengano mostrati uno vicino all'altro & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI22 & Si verifica che il ModifyListUseCase esegua le operazioni di aggiunta, rimozione e aggiornamento dei dati trammite DatabaseSource in modo corretto & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI23 & Si verifica che ShareWithGroupViewPresenter interagisca in modo corretto con ChatSource & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI24 & Si verifica che CreateListViewPresenter interagisca con ChatSource in modo corretto & \textcolor{Orange}{Non implementato} & \textcolor{Orange}{Non superato} \\ \hline
+		TI25 & Si verifica che ShareListUseCase interagisca in modo corretto con DatabaseSource & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI26 & Si verifica che ManageListUseCase interagisca con DatabaseSource rimuovendo e aggiungendo una lista dal database in modo corretto & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI27 & Si verifica che DeleteListViewPresenter interagisca con ShowPopupUseCase mostrando il popup di eliminazione della lista & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI28 & Si verifica che ForwardListUseCase interagisca in modo corretto con ChatSource al fine di inoltrare la lista selezionata & \textcolor{Orange}{Non implementato} & \textcolor{Orange}{Non superato} \\ \hline
+		TI29 & Si verifica che GetListInfoUseCase esegua i fetch dei dati in modo corretto dal database tramite DatabaseSource & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI30 & Si verifica che ChangeListInfoViewPresenter interagisca in modo corretto con ModifyListUseCase & \textcolor{Orange}{Non implementato} & \textcolor{Orange}{Non superato} \\ \hline
+		TI31 & Si verifica che ChangeListInfoViewPresenter interagisca in modo corretto con ShowPopupUseCase & \textcolor{Orange}{Non implementato} & \textcolor{Orange}{Non superato} \\ \hline
+		TI32 & Si verifica che ShareWithGroupViewImpl interagisca in modo corretto con ShareWithGroupViewPresenter & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI33 & Si verifica che ShareWithContactViewImpl interagisca in modo corretto con ShareWithContactViewPresenter & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI34 & Si verifica che GetItemInfoUseCase interagisca in modo corretto con DatabaseSource & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI35 & Si verifica che ModifyItemPresenter interagisca in modod corretto con ModifyListUseCase & \textcolor{Orange}{Non implementato} & \textcolor{Orange}{Non superato} \\ \hline
+		TI36 & Si verifica che ModifyItemPresenter interagisca in modod corretto con ShowPopupUseCase & \textcolor{Orange}{Non implementato} & \textcolor{Orange}{Non superato} \\ \hline
+		TI37 & Si verifica che ModifyItemView interagisca in modod corretto con ModifyItemPresenter & \textcolor{Orange}{Non implementato} & \textcolor{Orange}{Non superato} \\ \hline
+		TI38 & Si verifica che ModifyListUseCase interagisca in modo corretto con DatabaseSource & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI39 & Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ChatSource & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI40 & Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ShowPopupUseCase & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI41 & Si verifica che CreateListViewImpl interagisca in modo corretto con CreateListViewPresenter & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI42 & Si verifica che DeleteListViewImpl interagisca in modo corretto con DeleteListViewPresenter & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI43 & Si verifica che InputListInfoViewImpl interagisca in modo corretto con InputListInfoViewPresenter & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
+		TI44 & Si verifica che InputItemInfoViewImpl interagisca in modo corretto con InputItemInfoViewPresenter & \textcolor{Green}{Implementato} & \textcolor{Green}{Superato} \\ \hline
 	\end{longtable}
 \end{center}

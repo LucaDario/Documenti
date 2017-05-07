@@ -57,22 +57,18 @@
         "Dependency Inversion Principle": "Tecnica di disaccoppiamento dei moduli software, che consiste nel rovesciare la pratica tradizionale secondo cui i moduli di alto livello dipendono da quelli di basso livello",
         "Design Pattern": "Soluzione progettuale generale ad un problema ricorrente",
         "Diagramma Di Gantt": "Strumento di supporto alla gestione dei progetti si rappresenta sotto forma di un grafico avente un asse orizzontale in cui vi è la rappresentazione dell'arco temporale totale del progetto, suddiviso in fasi incrementali (ad esempio, giorni, settimane, mesi) e da un asse verticale che mostra la rappresentazione delle mansioni o attività che costituiscono il progetto",
-        "Diagrammi Delle Classi": "",
     },
     "E": {
         "Editing Bubble": "Bolla avente contenuto modificabile",
         "Efficacia": "Capacità di produrre l'effetto e i risultati voluti o sperati",
         "Efficienza": "Capacità di azione o di produzione con il minimo di scarto, di spesa, di risorse e di tempo impiegati",
-        "Event Driven": "",
+        "Event Driven": "Identifica il paradigma di programmazione orientato agli eventi",
         "Event Listener": "Pattern comportamentale che permette di impostare delle azioni che devono essere eseguite al verificarsi di un particolare evento"
     },
     "F": {
-        "Field Injection": "",
-        "File Json": "",
         "Font": "\\textit{eng. Tipo di carattere}. Insieme di caratteri tipografici caratterizzati e accomunati da un certo stile grafico o intesi per svolgere una data funzione",
         "Framework": "Un framework in informatica e specificatamente nello sviluppo software è un'architettura logica di supporto su cui un software può essere progettato e realizzato, spesso facilitandone lo sviluppo da parte del programmatore",
-        "Framework Frontend": "\\termine{Framework} atto allo sviluppo di una interfaccia grafica",
-        "Frameworks": ""
+        "Framework Frontend": "\\termine{Framework} atto allo sviluppo di una interfaccia grafica"
     },
     "G": {
         "Ganttchart": "\\textit{eng. Diagramma di Gantt} Strumento di supporto alla gestione dei progetti usato principalmente nelle attività di project management e costruito partendo da un asse orizzontale -- che rappresenta dell'arco temporale totale del progetto, suddiviso in fasi incrementali (ad esempio, giorni, settimane, mesi) -- e da un asse verticale -- che rappresenta delle mansioni o attività che costituiscono il progetto",
@@ -111,11 +107,8 @@
     },
     "L": {
         "Latex": "\\termine{Linguaggio di markup} usato per la preparazione di testi basato sul programma di composizione tipografica \\LaTeX",
-        "Layout": "",
-        "Libreria": "",
-        "Librerie": "Insieme di utility software",
+        "Libreria": "Insieme di utility software",
         "Linguaggio Di Markup": "E' un insieme di regole che descrivono i meccanismi di rappresentazione (strutturali, semantici o presentazionali) di un testo che, utilizzando convenzioni standardizzate, sono utilizzabili su più supporti",
-        "Lint": "",
         "Linting": "Processo tramite il quale vengono individuati potenziali errori nel codice tramite l'utilizzo di un programma",
         "Log": "File o insieme di file su cui vengono memorizzate sequenzialmente e cronologicamente delle operazioni effettuate"
     },

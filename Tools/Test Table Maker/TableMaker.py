@@ -18,13 +18,16 @@ if __name__ == '__main__':
         camel_code_title = remove_accents(title.title().replace(" ", "") + ".tex")
         section_file = open(camel_code_title, 'w')
         section_file.write("\\begin{center}\n")
-        section_file.write("\t\\begin{longtable}{|c|>{\centering}m{10cm}|c|}\\hline\n")
-        section_file.write("\t\tId & Descrizione & stato \\\\ \\hline\n")
+        section_file.write("\t\\begin{longtable}{|c|>{\centering}m{10cm}|c|c|}\\hline\n")
+        section_file.write("\t\tId & Descrizione & Stato & Esito\\\\ \\hline\n")
         for id, test in section:
-            implemented_tex = 'Non implementato'
+            implemented_tex = '\\textcolor{Orange}{Non implementato}'
             if test['implemented']:
-                implemented_tex = 'Implementato'
-            section_file.write("\t\t" + id + " & " + test['description'] + " & " + implemented_tex + " \\\\ \\hline\n")
+                implemented_tex = '\\textcolor{Green}{Implementato}'
+            result_text = '\\textcolor{Orange}{Non superato}'
+            if test['passed']:
+                result_text = '\\textcolor{Green}{Superato}'
+            section_file.write("\t\t" + id + " & " + test['description'] + " & " + implemented_tex + " & " + result_text + " \\\\ \\hline\n")
         section_file.write("\t\\end{longtable}\n")
         section_file.write("\\end{center}\n")
         section_file.close()

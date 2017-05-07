@@ -10,6 +10,6 @@ fix :
 
 pdf :
 	$(GENERATOR) ../
-	pdflatex Glossario.tex
-	pdflatex Glossario.tex
-	rm Glossario.aux Glossario.log Glossario.out Glossario.toc
+	cd .. && pdflatex Glossario.tex
+	cd .. && pdflatex Glossario.tex
+	rm ../Glossario.aux ../Glossario.log ../Glossario.out ../Glossario.toc

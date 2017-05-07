@@ -5,24 +5,30 @@ import os.path
 import sys
 
 
-def main(args):
+def main(args, argsc):
+    base_dir = './'
+    if argsc > 1:
+        base_dir = args[1]
+        if base_dir[:-1] != '/':
+            base_dir += '/'
+
     glossary = Glossary.Glossary()
 
     if not glossary.init():
         print('Errore durante l\'inizializzazione del glossario')
 
     # Generate a directory that hold all the sections.
-    if not os.path.exists('Sezioni'):
-        os.makedirs('Sezioni')
+    if not os.path.exists(base_dir + 'Sezioni'):
+        os.makedirs(base_dir + 'Sezioni')
 
-    include_file = open('SezioniGlossario.tex', 'w')
+    include_file = open(base_dir + 'SezioniGlossario.tex', 'w')
 
     # Iterate over the sections
     for title, section in glossary:
         include_file.write('\input{Sezioni/' + title + '.tex}\n')
         print('Sezione : ' + title)
         # Open the file for output
-        file = open('Sezioni/' + title + '.tex', 'w')
+        file = open(base_dir + 'Sezioni/' + title + '.tex', 'w')
         # Write the file header
         file.write("\section*{" + title + "}\n")
         file.write("\\addcontentsline{toc}{section}{" + title + "}\n")
@@ -42,4 +48,4 @@ def main(args):
     include_file.close()
 
 if __name__ == '__main__':
-    main(sys.argv)
+    main(sys.argv, len(sys.argv))

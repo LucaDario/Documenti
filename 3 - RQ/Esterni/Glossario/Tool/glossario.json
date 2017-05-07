@@ -7,29 +7,40 @@
         "Accoppiamento Efferente": "Numero di classi interne ad un \\termine{package} che dipendono da una classe esterna ad esso",
         "Ambienti Di Sviluppo": "Insieme di software atti a suportare il programmatore durante la scrittura del codice sorgente di un software",
         "Analisi": "Metodo di indagine basato sulla scomposizione di ciò che si presenta unitario nei suoi elementi costitutivi",
+        "Analisi Statica": "",
         "Api": "Insieme di procedure disponibili al programmatore, di solito raggruppate a formare un set di strumenti specifici per l'espletamento di un determinato compito all'interno di un certo programma",
+        "Applicazione": "",
         "Architettura Di Dettaglio": "Risultato della Progettazione in Dettaglio. Essa rappresenta l'architettura del sistema in tutte le sue funzionalità",
         "Atmosphere": "Sito web da cui è possibile cercare librerie compatibili con il \\termine{framework} \\termine{Meteor.js}"
     },
     "B": {
+        "Basebubble": "",
         "Best Practice": "Insieme delle attività che, organizzate in modo sistematico, possono essere prese come riferimento e riprodotte per favorire il raggiungimento dei risultati migliori",
+        "Binding": "",
         "Bitbucket": "Servizio di hosting per progetti software",
         "Bolla": "Ogni messaggio presente all'interno di \\termine{Monolith} e, più in generale di \\termine{Rocket.chat}, che l'utente può visualizzare all'interno di una qualsiasi chat",
+        "Bolle": "",
         "Bolle Interattive": "Messagio in grado di cambiare il proprio contenuto dopo essere stato inviato",
         "Bot": "Programma che accede alla rete attraverso lo stesso tipo di canali utilizzati dagli utenti umani, e che nel nostro caso invia messaggi all'interno di una chat offrendo servizi utili agli utenti",
         "Bottone Semplice": "Oggetto che genera eventi alla sua pressione",
+        "Bringit": "",
         "Browser": "E' un'applicazione per il recupero, la presentazione e la navigazione delle risorse sul web",
-        "Business": "Termine inglese che identifica in generale un'attività economica e approssimativamente può essere tradotto con il termine italiano \\textit{affari}"
+        "Business": "Termine inglese che identifica in generale un'attività economica e approssimativamente può essere tradotto con il termine italiano \\textit{affari}",
+        "Business Logic": "",
+        "Business-Logic": ""
     },
     "C": {
         "Callback": "In programmazione, un callback (o, in italiano, richiamo) è, in genere, una funzione, o un \"blocco di codice\" che viene passata come parametro ad un'altra funzione",
         "Camel Case": "Pratica di scrivere parole composte o frasi unendo le parole tra loro ma lasciando le loro iniziali maiuscole es: (Ciao mondo = CiaoMondo)",
+        "Capability": "",
         "Capability Maturity Model": "Modello di riferimento costituito da pratiche consolidate in una disciplina specifica",
         "Capability Maturity Model Integration -- Cmmi": "Approccio al miglioramento dei processi il cui obiettivo è di aiutare un'organizzazione a migliorare le sue prestazioni",
         "Capitolato": "Atto allegato a un contratto d'appalto che intercorre tra il cliente ed una ditta appaltatrice in cui vengono indicate modalità, costi e tempi di realizzazione dell'opera oggetto del contratto",
         "Caso D'Uso": "Tecnica usata nei processi di ingegneria del software per effettuare in maniera esaustiva e non ambigua, la raccolta dei requisiti al fine di produrre software di qualità",
         "Chai": "E' una libreria per verificare che lo stato di una variabile o oggetto sia quello desiderato",
+        "Chat": "",
         "Checkbutton": "Componente che ha due stati: selezionato e non selezionato",
+        "Checklistitem": "",
         "Ciclo Di Deming": "Metodo di gestione in quattro fasi, utilizzato in attività per il controllo e il miglioramento continuo dei processi e dei prodotti",
         "Clean Architecture": "Pattern Architetturale e ideato da Robert Cecil Martin",
         "Codifica": "Periodo durante il quale uno o più programmatori scrivono del codice (\\textit{codificano}) al fine di creare un prodotto software",
@@ -38,6 +49,7 @@
         "Committente": "Figura che commissiona un lavoro, indipendentemente dall'entità o dall'importo",
         "Complessità Ciclomatica": "Metrica software utilizzata per misurare la complessità di un programma",
         "Conformità": "Situazione in cui il software prodotto risulta essere coerente con gli obiettivi stabiliti in precedenza alla sua realizzazione",
+        "Contructor Injection": "",
         "Css": "\\textit{eng. Cascading Style Sheets}, in italiano \\textit{fogli di stile a cascata}. Linguaggio usato per definire la formattazione di documenti HTML, XHTML e XML ad esempio i siti web e relative pagine web",
         "Css3": "Versione 3 del linguaggio \\termine{CSS}",
         "Csshint": "Software per rendere lo stile di scrittura dei documenti css conforme alle regole stabilite dal gruppo"
@@ -50,19 +62,26 @@
         "Demo": "Campione dimostrativo della produzione dei programmatori. Specificatamente, risultato dell'utilizzo dell'\\termine{SDK} che ne mostra alcune (se non tutte) le funzionalità",
         "Dependency Injection": "Design pattern della Programmazione orientata agli oggetti il cui scopo è quello di semplificare lo sviluppo e migliorare la testabilità di software di grandi dimensioni",
         "Dependency Inversion Principle": "Tecnica di disaccoppiamento dei moduli software, che consiste nel rovesciare la pratica tradizionale secondo cui i moduli di alto livello dipendono da quelli di basso livello",
+        "Design Pattern": "",
         "Design-Pattern": "Soluzione progettuale generale ad un problema ricorrente",
-        "Diagramma Di Gantt": "Strumento di supporto alla gestione dei progetti si rappresenta sotto forma di un grafico avente un asse orizzontale in cui vi è la rappresentazione dell'arco temporale totale del progetto, suddiviso in fasi incrementali (ad esempio, giorni, settimane, mesi) e da un asse verticale che mostra la rappresentazione delle mansioni o attività che costituiscono il progetto"
+        "Diagramma Di Gantt": "Strumento di supporto alla gestione dei progetti si rappresenta sotto forma di un grafico avente un asse orizzontale in cui vi è la rappresentazione dell'arco temporale totale del progetto, suddiviso in fasi incrementali (ad esempio, giorni, settimane, mesi) e da un asse verticale che mostra la rappresentazione delle mansioni o attività che costituiscono il progetto",
+        "Diagrammi Delle Classi": "",
+        "Dom": ""
     },
     "E": {
         "Editing Bubble": "Bolla avente contenuto modificabile",
         "Efficacia": "Capacità di produrre l'effetto e i risultati voluti o sperati",
         "Efficienza": "Capacità di azione o di produzione con il minimo di scarto, di spesa, di risorse e di tempo impiegati",
+        "Event Driven": "",
         "Event Listener": "Pattern comportamentale che permette di impostare delle azioni che devono essere eseguite al verificarsi di un particolare evento"
     },
     "F": {
+        "Field Injection": "",
+        "File Json": "",
         "Font": "\\textit{eng. Tipo di carattere}. Insieme di caratteri tipografici caratterizzati e accomunati da un certo stile grafico o intesi per svolgere una data funzione",
         "Framework": "Un framework in informatica e specificatamente nello sviluppo software è un'architettura logica di supporto su cui un software può essere progettato e realizzato, spesso facilitandone lo sviluppo da parte del programmatore",
-        "Framework Frontend": "\\termine{Framework} atto allo sviluppo di una interfaccia grafica"
+        "Framework Frontend": "\\termine{Framework} atto allo sviluppo di una interfaccia grafica",
+        "Frameworks": ""
     },
     "G": {
         "Ganttchart": "\\textit{eng. Diagramma di Gantt} Strumento di supporto alla gestione dei progetti usato principalmente nelle attività di project management e costruito partendo da un asse orizzontale -- che rappresenta dell'arco temporale totale del progetto, suddiviso in fasi incrementali (ad esempio, giorni, settimane, mesi) -- e da un asse verticale -- che rappresenta delle mansioni o attività che costituiscono il progetto",
@@ -101,8 +120,11 @@
     },
     "L": {
         "Latex": "\\termine{Linguaggio di markup} usato per la preparazione di testi basato sul programma di composizione tipografica \\LaTeX",
+        "Layout": "",
+        "Libreria": "",
         "Librerie": "Insieme di utility software",
         "Linguaggio Di Markup": "E' un insieme di regole che descrivono i meccanismi di rappresentazione (strutturali, semantici o presentazionali) di un testo che, utilizzando convenzioni standardizzate, sono utilizzabili su più supporti",
+        "Lint": "",
         "Linting": "Processo tramite il quale vengono individuati potenziali errori nel codice tramite l'utilizzo di un programma",
         "Log": "File o insieme di file su cui vengono memorizzate sequenzialmente e cronologicamente delle operazioni effettuate"
     },
@@ -115,9 +137,11 @@
         "Milestone": "\\textit{eng. Pietra miliare}. Indica importanti traguardi intermedi nello svolgimento del progetto",
         "Mocha": "\\termine{Framework} per eseguire test automatici su codice \\termine{Javascript}",
         "Mock": "Serve per indicare che una o più componenti software sono state simulate durante l'esecuzione di test automatici",
+        "Model": "",
         "Model-View-Controller": "Pattern architetturale che gestisce direttamente i dati, la logica e le regole dell'applicazione",
         "Model-View-Presenter": "Pattern architetturale che permette la separazione concettuale tra parte logica e grafica di una applicazione, mediante l'utilizzo di una classe intermedia tra le due",
         "Modello Incrementale": "Per modello incrementale o modello iterativo si intende, nell'ambito dell'ingegneria informatica, un modello di sviluppo di un progetto software basato sulla successione dei seguenti passi principali: pianificazione, analisi dei requisiti, progetto, implementazione, prove, valutazione",
+        "Models": "",
         "Mongodb": "\\termine{DBMS} non relazionale orientato ai documenti. Classificato come un database di tipo NoSQL, \\termine{MongoDB} si allontana dalla struttura tradizionale basata su tabelle dei database relazionali in favore di documenti in stile JSON con schema dinamico (BSON), rendendo l'integrazione di dati di alcuni tipi di applicazioni più facile e veloce",
         "Monolith": "\\termine{SDK} che permette agli sviluppatori che operano su piattaforma \\termine{Rocket.chat} di creare varie tipologie di bolle differenti oppure di utilizzare quelle preesistenti"
     },
@@ -131,11 +155,16 @@
         "Package": "\\textit{eng. Pacchetto}. Collezione di classi e interfacce correlate",
         "Package Management": "Collezione di strumenti che automatizzano il processo di installazione, aggiornamento, configurazione e rimozione dei pacchetti software",
         "Package Manager": "Software che gestisce e organizza dei pacchetti software",
+        "Package Managers": "",
+        "Packages": "",
+        "Paradigma Dom": "",
         "Pascalcase": "Tecnica tipografica che prevede la scrittura di parole composte come una unica parola all'interno delle quali l'iniziale di ciascuna parola inizia con una lettera maiuscola",
+        "Pattern Architetturale": "",
         "Pdca": "\\textit{eng. Plan Do Check Act, sin. Ciclo di Deming}. Metodo di gestione in quattro fasi iterativo, utilizzato in attività per il controllo e il miglioramento continuo dei processi e dei prodotti",
         "Pdf": "\\textit{eng. Portable Document Format, Formato di documenti portatile}. Formato di file basato su un linguaggio di descrizione di pagina sviluppato da Adobe Systems nel 1993, per rappresentare documenti in modo indipendente dall'hardware e dal software utilizzati per generarli o per visualizzarli",
         "Plugin": "Programma non autonomo che interagisce con un altro programma per ampliarne o estenderne le funzionalità originarie",
         "Png": "\\textit{eng. Portable Network Graphics}. Formato di file per memorizzare immagini",
+        "Popup": "",
         "Presenter": "Classe intermedia che serve per far comunicare la parte logica e la parte grafica di un'applicazione",
         "Prodotto": "Nel campo del project management il prodotto rilasciato, indicato solitamente con il termine \\textit{deliverable} nella letteratura tecnologica, indica un oggetto materiale o immateriale realizzato (fornito/consegnato) come risultato di una attività del progetto",
         "Progettazione Architetturale": "Progettazione \"ad altissimo livello\", in cui si definisce solo la struttura complessiva del sistema in termini dei principali moduli di cui esso è composto e delle relazioni macroscopiche fra di essi",
@@ -158,7 +187,8 @@
         "Repository": "Ambiente di un sistema informativo (ad es. di tipo ERP), in cui vengono gestiti i metadati, attraverso tabelle relazionali; l'insieme di tabelle, regole e motori di calcolo tramite cui si gestiscono i metadati prende il nome di \\textit{metabase}. Nell'ambiente \\termine{Git} viene indicato con questo termine il luogo dove è possibile salvare in remoto del codice, eseguire dei \\termine{pull}, dei \\termine{push} e aprire delle \\termine{issue}",
         "Rest": "\\textit{eng. REpresentational State Transfer}. Interfaccia che usa il protocollo HTTP per invio, ricezione ed eliminazione dei dati",
         "Rich Media Bubble": "\\termine{Bolla} che mostra delle anteprime mediante immagini di contenuti multimediali",
-        "Rocket.Chat": "Applicazione di \\termine{Instant Messaging}"
+        "Rocket.Chat": "Applicazione di \\termine{Instant Messaging}",
+        "Rocketchat": ""
     },
     "S": {
         "Scripting": "Linguaggio di programmazione destinato in genere a compiti di automazione",
@@ -171,8 +201,10 @@
         "Source": "Sorgente dati",
         "Stack Overflow": "Errore che avviene quando è richiesto l'uso di una quantità troppo elevata di memoria nello stack",
         "Stakeholder": "Indica genericamente un soggetto (o un gruppo di soggetti) influente nei confronti di un'iniziativa economica, che sia un'azienda o un progetto",
+        "Stand Alone": "",
         "Stand-Alone": "Componenete software che non dipende da librerie esterne",
         "Statement": "\\textit{eng. Dichiarazione}. All'interno dei linguaggi di programmazione, la più piccola unità di un programma che identifica una azione che deve essere eseguita",
+        "Storage": "",
         "Sviluppatore": "Programmatore che si prende cura di uno o più aspetti del ciclo di vita del software"
     },
     "T": {
@@ -185,6 +217,7 @@
         "Tempo Di Slack": "Periodo di tempo durante il quale un'attività può essere ritardata senza ritardare l'intero progetto di cui fa parte",
         "Testing": "Fase del ciclo di vita di un software all'interno della quale il codice prodotto dalla fase di programmazione viene sottoposto a dei controllo che ne assicurano l'\\termine{efficacia} e l'\\termine{efficienza}",
         "Texmaker": "Editor gratuito e cross-platform per LaTeX",
+        "Top-Down": "",
         "Twitter Bootstrap": "\\termine{Framework} per sviluppare interfacce web compatibili con i dispositivi mobili"
     },
     "U": {

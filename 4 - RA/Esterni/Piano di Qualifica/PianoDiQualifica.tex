@@ -1,0 +1,43 @@
+\input{../../../Template/Layout.tex}
+\input{../../../Template/Comandi.tex}
+
+% Comandi per generare l'intro
+\newcommand{\documento}{\PdQ}
+\newcommand{\versione}{3.0.0}
+\newcommand{\redatori}{\FB\\ & \RM\\ & \MT\\ & \SL}
+\newcommand{\revisori}{\RM}
+\newcommand{\approvazione}{\FB}
+\newcommand{\statoapprovazione}{Approvato}
+% Quando il documento sarà approvato, inserire all'interno del comando seguente la data nel formato GG mese AAAA dove GG è il giorno a due cifre, mese è il mese scritto per esteso con la prima lettera minuscola, e AAAA è l'anno a quattro cifre
+\newcommand{\dataApprovazione}{07 maggio 2017}
+\newcommand{\uso}{Esterno}
+\newcommand{\destinatari}{\TV\\ & \RC\\ & \RB}
+
+\newcommand{\sommario}{Questo documento si prefigge di regolamentare le operazioni di verifica e validazione del gruppo \gruppo\ necessarie ad assicurare i requisiti qualitativi per il progetto \progetto.
+}
+\input{Sezioni/Diario.tex}
+
+\usepackage{caption}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\begin{document}
+
+\input{../../../Template/Intro.tex}
+\input{../../../Template/Diario.tex}
+\input{../../../Template/Indice.tex}
+\setcounter{table}{0}
+\listoftables
+\newpage
+
+% Sezioni
+\input{Sezioni/1-Introduzione.tex}
+\input{Sezioni/2-VisioneGeneraleStrategiaGestioneQualita.tex}
+\input{Sezioni/3-StrategiaGestioneQualitaInDettaglio.tex}
+\input{Sezioni/4-QualitaProcesso.tex}
+\input{Sezioni/5-QualitaProdotto.tex}
+\input{Sezioni/6-PianificazioneDeiTest.tex}
+\input{Sezioni/7-Resoconto.tex}
+
+\input{Sezioni/Appendice.tex}
+\end{document}

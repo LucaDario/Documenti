@@ -1,0 +1,604 @@
+\newpage
+
+\section{Qualità di processo}
+Per garantire la qualità del prodotto è necessario perseguire la qualità dei processi che lo definiscono. Per fare ciò si è deciso di adottare lo standard ISO/IEC 15504 descritto nelle \NdP. Il gruppo \gruppo{} si impegnerà a seconda dei periodi coinvolti di migliorare ed incrementare eventuali processi con rispettive metriche al fine di garantire una buona qualità.
+
+\subsection{Standard ISO/IEC 15504}
+Il gruppo \gruppo\ come già illustrato nelle \NdP\ si impegna a seguire lo standard Standard ISO/IEC 15504 per garantire qualità ai processi. Per mancanza di tempo e risorse il gruppo cercherà di migliorare il livello di \textit{capability} solo per i processi ripetuti costantemente nel tempo o ritenuti fondamentali per la buona riuscita del progetto. Per i restanti processi, il gruppo si impegna a soddisfare solo il primo livello ovvero quello del "Do", senza cercare miglioramenti successivi della qualità.
+Questa scelta è dovuta soprattutto dalla mancanza di tempo, raggiungere un livello elevato richiederebbe troppo in termini di tempo e di risorse. Infine, lo stato di avanzamento del livello dei processi sarà tracciato nella sezione 10 di questo documento.
+
+\subsection{Processo di fornitura}
+
+\subsubsection{Obiettivi di Qualità}
+L'intero sviluppo del progetto dovrà seguire la pianificazione prodotta, in particolare:
+
+\begin{itemize}
+\item Ogni attività assegnata tramite l'utilizzo dello strumento \termine{Wrike} dovrà essere eseguita nel tempo previsto e da colui a cui è stata assegnata.
+\item Il costo preventivato per il periodo descritto nel \PdP{} non dovrà eccedere, ma dovrà rimanere al di sotto della soglia prevista.
+\end{itemize}
+
+\subsection{Standard ISO/IEC 15504}
+Questo processo, per come è strutturato il progetto, viene effettuato una volta dal gruppo, perciò, anche per mancanza di tempo il gruppo non si impegnerà a raggiungere un elevato livello di capability ed a migliorare le metriche per le attività individuate per tale processo. Il gruppo però si impegna a verificare costantemente la qualità dell'attività di pianificazione, ritenuta fondamentale dai membri per raggiungere lo scopo prefissato.
+\begin{itemize}
+\item \textbf{Livello di accettazione}: 1.
+\item \textbf{Livello ottimale}: 2.
+\end{itemize}
+
+\subsubsection{Strategie}
+La pianificazione dovrà essere costantemente aggiornata durante lo sviluppo del progetto per essere coerente alla situazione corrente. Al fine di garantire una pianificazione corretta e conforme alle attese qualsiasi valore negativo rilevato a livello di Schedule Variance o Budget Variance rilevato in una fase di lavoro dovrà essere
+assolutamente compensato entro la fine dell’attività di progetto, in quanto non è assolutamente
+ammesso eccedere le ore di lavoro finali e il preventivo dei costi finale indicato nella pianificazione.
+
+\subsubsection{Pianificazione}
+
+\paragraph{Obiettivi di qualità}
+Le attività svolte dovranno raggiungere i seguenti obiettivi:
+\begin{itemize}
+\item Assicurare la pianificazione corretta del budget necessario.
+\item Attenersi il più possibile alle ore di lavoro previste nel \PdQ.
+\item Attenersi il più possibile al ruolo indicato nel \PdP.
+\end{itemize}
+
+\paragraph{Metriche}
+
+\subparagraph{Schedule Variance}
+Indica se si è in linea, in anticipo o in ritardo rispetto la pianificazione temporale prevista dal \PdP.
+
+\begin{itemize}
+\item \textbf{Misurazione}: $SV = BCWP - BCWS$, dove $BCWP$ sono le attività completate ad un certo momento e $BCWS$ le attività che, secondo la pianificazione, dovrebbero essere state completate a quel momento.
+\end{itemize}
+
+\begin{center}
+
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			$\geq 0$ & $\geq 0$ & Garantire una buona pianificazione dei tempi in modo da evitare ritardi di consegna. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Schedule Variance}
+\end{center}
+
+
+\subparagraph{Budget Variance}
+
+\begin{itemize}
+\item \textbf{Misurazione}: $BV = BCWS - ACWP$, dove $BCWS$ è il costo pianificato per realizzare le attività di progetto alla data corrente e $ACWP$ è il costo effettivamente sostenuto alla data corrente.
+\end{itemize}
+
+\begin{center}
+	\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			$\geq 0$ & $\geq 0$ & Garantire una buona pianificazione dei costi in modo da rimanere entro i limiti del budget prefissati. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Budget Variance}
+\end{center}
+
+\paragraph{Revisione e Valutazione}
+
+\subparagraph{Ottimalità delle misurazioni}
+
+\begin{itemize}
+\item \textbf{Misurazione:} 
+\begin{displaymath}
+{\text{Misurazioni Ottimali}}\over{\text{Misurazioni Ottimali} + \text{Misurazioni Accettabili}}
+\end{displaymath} 
+\end{itemize}
+
+\begin{center}
+	\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			>=0.3 & >=0.4 & Garantire l'ottimo valore per almeno un numero cospicuo di metriche così da aumentare la qualità del software. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Ottimalità delle misurazioni}
+\end{center}
+
+\subparagraph{Rischi non preventivati}
+
+\begin{itemize}
+\item \textbf{Misurazione}: indice numerico che viene incrementato nel momento in cui si manifesta un rischio non individuato nell'attività di analisi dei rischi.
+\end{itemize}
+
+\begin{center}
+	\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[$0 - 5$] & $0$ & Garantire una buona gestione dei rischi, in modo da evitare che se ne verifichino troppi rischi non preventivati. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Rischi non preventivati}
+\end{center}
+
+\subsection{Processo di sviluppo}
+
+Il processo punta a trasformare l'idea del committente in un prodotto software.
+
+\subsection{Standard ISO/IEC 15504}
+Questo processo è ritenuto fondamentale dal gruppo per cui le attività svolte verranno ottimizzate al fine di raggiungere dei buoni obiettivi di qualità. Il tempo ridotto e le risorse disponibili per il controllo del processo ci costringe a non spingere troppo in profondità le regole e le misurazioni per esso. Perciò il gruppo si pone questi obiettivi:
+\begin{itemize}
+\item \textbf{Livello di accettazione}: 2.
+\item \textbf{Livello ottimale}: 3.
+\end{itemize}
+
+\subsubsection{Analisi dei requisiti}
+
+\paragraph{Obiettivi di qualità}
+I requisiti dovranno essere gestiti dal gruppo nel seguente modo:
+
+\begin{itemize}
+\item ogni requisito sarà dotato di un codice univoco che lo identifica.
+\item per ogni requisito verrà tenuta traccia della fonte da cui è stato ricavato.
+\item per ogni requisito dovrà essere possibile indicare dei test da effettuare con rispettivo risultato.
+\item nessun requisito dovrà risultare superfluo o ambiguo.
+\end{itemize}
+
+\paragraph{Strategie}
+Tutti i requisiti individuati saranno riportati in un file json che ne manterrà il tracciamento per poi essere trascritti con maggiore. Questi poi saranno utilizzati nella per i test di sistema e di collaudo per verificarne il completo soddisfacimento.
+
+\paragraph{Metriche}
+\subparagraph{Requisiti obbligatori soddisfatti}
+
+\begin{itemize}
+\item \textbf{Misurazione}: 
+		$$C=\left(1-\mathlarger{\frac{N_{FM}}{N_{FI}}}\right) \cdot 100$$ 
+	dove $N_{FM}$ è il numero di funzionalità mancanti nell'implementazione e $N_{FI}$ è il numero di funzionalità individuate nell'attività di analisi. 
+\end{itemize}
+	
+\begin{center}
+	\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			$100$ & $100$ & Garantire il pieno soddisfacimento dei requisiti obbligatori individuati nel documento \AdR. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Requisiti obbligatori soddisfatti}
+\end{center}	
+
+\subsubsection{Progettazione dell'architettura di sistema}
+
+\paragraph{Obiettivi di qualità}
+Durante lo svolgimento delle attività previste da questo processo, il gruppo si impegnerà a trovare una buona architettura di sistema nel seguente modo:
+\begin{itemize}
+\item ogni componente progettato come parte del sistema risulterà essere necessario per il funzionamento del prodotto e, quindi, costantemente tracciabile ai requisiti che soddisfa.
+\item il sistema dovrà presentare basso accoppiamento ed alta coesione, tenendo conto che RocketChat implementa il pattern \termine{Observer} per la gestione degli eventi. Il suddetto pattern aumenta l'accoppiamento per cui il \termine{team} dovrà gestire in maniera ottimale il problema.
+\item ogni componente dovrà essere progettato puntando su incapsulamento, modularizzazione e riuso di codice, in modo da garantire un indice elevato di utilità.
+\item Bassa complessità del Sistema, seguendo in maniera precisa i pattern scelti.
+\end{itemize}
+
+\paragraph{Strategie}
+L'approccio utilizzato coinvolge il modello statico di progettazione, utilizzando l'ereditarietà come strumento di organizzazione, garantendo semplicità e riuso del codice.
+Inoltre nel corso dell'attività di progettazione, sia ad alto livello che di dettaglio, le componenti verranno inserite in un file json dedicato, il quale si occuperà del tracciamento con i requisiti trovati nell'attività di analisi.
+
+
+\paragraph{Metriche}
+
+\subparagraph{Livello di instabilità}
+
+\begin{itemize}
+\item \textbf{Misurazione:} 
+\begin{displaymath}
+{\text{Accoppiamento Efferente}}\over{\text{Accoppiamento Afferente} + \text{Accoppiamento Efferente}}
+\end{displaymath} 
+\end{itemize}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[0.0 −- 1] & [0.0 −- 0.6] &	Garantire una buona indipendenza e stabilità delle parti del software. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Livello di stabilità}
+\end{center}
+
+\subparagraph{Astrattezza}
+
+\begin{itemize}
+\item \textbf{Misurazione:}
+\begin{displaymath}
+{\text{Numero classi astratte e interfacce}}\over{\text{Numero totale classi}}
+\end{displaymath}
+\end{itemize}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[0.0 −- 0.8] & [0.0 −- 0.3] &	Garantire un sufficiente polimorfismo e riuso delle componenti. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Astrattezza}
+\end{center}
+
+\subparagraph{Distanza dalla sequenza principale}
+
+\begin{itemize}
+\item \textbf{Misurazione:}
+\begin{displaymath}
+{|\text{Astratezza} + \text{Livello di stabilità} - 1|}
+\end{displaymath}
+\end{itemize}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[0.0 −- 1] & [0.0 −- 0.4] &	Garantire un buon bilanciamento tra l’astrattezza e la stabilità del \termine{package} da noi sviluppati.\\
+			\hline
+			\end{tabular}
+\captionof{table}{Distanza dalla sequenza principale}
+\end{center}
+
+\subsubsection{Progettazione dell'architettura di sistema in dettaglio}
+
+\paragraph{Obiettivi di qualità}
+Le attività svolte dovranno raggiungere i seguenti obiettivi:
+\begin{itemize}
+\item il livello di dettaglio della progettazione dovrà essere tale da guidare codifica e testing senza bisogno di informazioni aggiuntive, indicando metodi con i relativi parametri e campi dati forniti da ciascuna componente.
+\item la struttura dell'architettura sia ad alto che a basso livello verrà definita nel documento \DDP
+\item oltre alle unità software individuate, le attività permetteranno di definire dettagliatamente le interfacce fra esse costituite.
+\item la progettazione in dettaglio deve perseguire gli stessi obiettivi di qualità del processo di progettazione dell'architettura di sistema per quanto riguarda coesione, accoppiamento, utilità e complessità.
+\end{itemize}
+
+\paragraph{Strategie}
+
+Sarà necessario effettuare un'analisi dettagliata delle componenti individuate in progettazione architetturale, suddividendole in unità che siano facilmente codificabili e testabili per le attività successive.
+
+\paragraph{Metriche}
+
+\subparagraph{Numero di metodi per classe}
+
+\begin{itemize}
+\item \textbf{Misurazione}: indice numerico che indica il numero di metodi definiti in una classe.
+\end{itemize}
+
+
+\begin{center}
+\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[$1 - 15$] & [$1 - 7$] &	Garantire un giusto equilibrio tra funzionalità e coesione tra le classi. Il range di accettazione è stato tenuto così alto, poiché per quanto riguarda la parte dell'\termine{SDK}, essa deve garantire un sufficiente numero di metodi per personalizzare i widget. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Numero di metodi per classe}
+\end{center}
+
+\subparagraph{Numero di attributi per classe}
+
+\begin{itemize}
+\item \textbf{Misurazione}: indice numerico che indica il numero di attributi per classe.
+\end{itemize}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[0 −- 11] & [0 −- 7] &	Garantire un giusto equilibrio tra le classi, in modo da garantire una sufficiente coesione. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Numero di attributi per classe}
+\end{center}
+
+\subparagraph{Numero di parametri per metodo}
+
+\begin{itemize}
+\item \textbf{Misurazione}: indice numerico che indica il numero di parametri definiti in una classe.
+\end{itemize}
+
+
+\begin{center}
+\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[$1 - 15$] & [$1 - 7$] &	Garantire che un singolo metodo esegua un numero equilibrato di azioni, troppi parametri infatti potrebbero evidenziare che il singolo metodo vada suddiviso in altri. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Numero di parametri per metodo}
+\end{center}
+
+\subsubsection{Codifica del Software}
+
+\paragraph{Obiettivi di qualità}
+Le unità software prodotte dovranno risultare di qualità; a questo fine il \textit{team\ped{G}} si è posto i seguenti obiettivi:
+\begin{itemize}
+\item l'implementazione delle classi e dei metodi definiti in progettazione dovrà puntare a produrre codice a bassa complessità, in modo tale che quanto prodotto risulti facilmente comprensibile e testabile.
+\item il codice prodotto dovrà risultare facilmente manutenibile.
+\end{itemize}
+
+\paragraph{Strategie}
+Durante l'attività di codifica, il \textit{\Progr} dovrà attenersi a quanto indicato nel documento \textit{\DDP}, concentrandosi (in particolare) nel limitare la complessità del codice prodotto. Sarà necessario inoltre procedere con la codifica dei test individuati nell'attività di progettazione, in modo tale da consentire la verifica del corretto funzionamento delle varie unità prodotte. Per i suddetti test verranno utilizzati gli strumenti descritti nelle \NdP.
+
+\paragraph{Metriche}
+
+\subparagraph{Complessità ciclomatica}
+
+\begin{itemize}
+\item \textbf{Misurazione}: indice numerico che indica il numero cammini percorribili nel grafo di controllo di flusso di un metodo.
+\end{itemize}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[1 -− 15] & [1 -− 10] &	Garantire una minore complessità durante la fase di \COD. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Complessità ciclomatica}
+\end{center}
+
+
+\subparagraph{Linee di commento per linee di codice}
+
+\begin{itemize}
+\item \textbf{Misurazione}: $P=\frac{N_{C}}{N_{SLOC}} \cdot 100$, dove $N_{C}$ è il numero di linee di commento presenti nel codice e $N_{SLOC}$ è il numero di \termine{Source} Lines Of Code prodotte.
+\end{itemize}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[> 0.15] & [> 0.20] &	Garantire una buona comprensibilità del codice, in modo da facilitarne la manutenibilità. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Linee di commento per linee di codice}
+\end{center}
+
+\subparagraph{Numero di livelli di annidamento per metodo}
+
+\begin{itemize}
+\item \textbf{Misurazione}: indice numerico che indica il numero di chiamate a funzioni o procedure presenti all'interno di un metodo.
+\end{itemize}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[1 -- 5] & [1 −- 3] &	Garantire una minore complessità del metodo e garantire una sua facile comprensione. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Numero di livelli di annidamento per metodo}
+\end{center}
+
+
+\subsubsection{Lint}
+
+Per garantire una buona qualità anche per il processo di \termine{Codifica} verrà utilizzato lo strumento Lint. Esso garantisce il controllo di alcuni elementi nel codice già descritti nelle \NdP.
+
+
+
+\subsubsection{Integrazione Software}
+
+\paragraph{Obiettivi di qualità}
+Le attività previste da questo processo dovranno puntare a raggiungere un alto livello di automazione, in particolare:
+\begin{itemize}
+\item l'integrazione delle varie parti del sistema sarà completamente automatizzata utilizzando lo strumento di continuous integration Jenkins.
+\item il livello di integrazione raggiunto del sistema sarà sempre consultabile grazie all'utilizzo dello strumento di continuous integration \termine{Jenkins}.
+\end{itemize}
+
+\paragraph{Strategie}
+Sarà necessario configurare accuratamente lo strumento di \termine {continuous integration} \termine{Jenkins} affinché esegua dei test di integrazione di quanto prodotto prima che le ultime modifiche diventino parte del sistema.
+
+\paragraph{Metriche}
+\subparagraph{Componenti integrate}
+
+\begin{itemize}
+\item \textbf{Misurazione}: $I=\frac{N_{CI}}{N_{CP}} \cdot 100$, dove $N_{CI}$ è il numero di componenti attualmente integrate nel sistema e $N_{CP}$ è il numero di componenti delineate nell'attività di progettazione.
+\end{itemize}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			$100$ & $100$ &	Garantire un buon soddisfacimento dei requisiti. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Numero di livelli di annidamento per metodo}
+\end{center}
+
+\subsection{Processo di Validazione}
+Lo scopo del processo è quello di assicurare che ogni requisito individuato sia stato implementato nel prodotto.
+
+\subsubsection{Obiettivi di qualità}
+Durante lo svolgimento delle attività, ci si impegnerà affinché:
+\begin{itemize}
+\item le attività di test previste dal processo verranno svolte su un sistema le cui componenti sono verificate e correttamente integrate fra loro.
+\item il sistema dovrà implementare tutti i requisiti obbligatori individuati nell'attività di analisi.
+\end{itemize}
+
+\subsection{Standard ISO/IEC 15504}
+Il processo di validazione deve produrre risultati misurabili e soprattutto deve essere verificato per garantire efficacia al prodotto software che sarà sviluppato. Considerando i limiti di risorse e di tempo gli obiettivi che il gruppo si pone sono i seguenti:
+\begin{itemize}
+\item \textbf{Livello di accettazione}: 3.
+\item \textbf{Livello ottimale}: 3.
+\end{itemize}
+
+
+\subsubsection{Strategie}
+Bisognerà cercare di implementare il maggior livello possibile di automazione nell'esecuzione dei test di sistema, in modo tale che la loro esecuzione non richieda costi eccessivi (soprattutto in termini temporali).
+
+\subsubsection{Metriche}
+
+\paragraph{Test di Unità eseguiti}
+
+\begin{itemize}
+\item \textbf{Misurazione}: $UE=\frac{N_{TUE}}{N_{TUP}} \cdot 100$, dove $N_{TUE}$ è il numero di test di unità eseguiti e $N_{TUP}$ è il numero di test di unità pianificati.
+\end{itemize}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[$90 - 100$] & $100$ &	Garantire che tutti o la maggior parte dei test di Unità siano eseguiti con successo. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Test di Unità eseguiti}
+\end{center}
+
+
+\paragraph{Test di Integrazione eseguiti}
+
+\begin{itemize}
+\item \textbf{Misurazione}: $IE=\frac{N_{TIE}}{N_{TIP}} \cdot 100$, dove $N_{TIE}$ è il numero di test di integrazione eseguiti e $N_{TIP}$ è il numero di test di Integrazione pianificati.
+\end{itemize}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[$60 - 100$] & [$70 - 100$] &	Garantire che tutti o la maggior parte dei test di Integrazione siano eseguiti con successo. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Test di Integrazione eseguiti}
+\end{center}
+
+
+\paragraph{Test di Sistema eseguiti}
+
+\begin{itemize}
+\item \textbf{Misurazione}: $SE=\frac{N_{TSE}}{N_{TSP}} \cdot 100$, dove $N_{TSE}$ è il numero di test di sistema eseguiti e $N_{TSP}$ è il numero di test di sistema pianificati.
+\end{itemize}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[$70 - 100$] & [$80 - 100$] &	Garantire che tutti o la maggior parte dei test di Sistema siano eseguiti con successo. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Test di Sistema eseguiti}
+\end{center}
+
+\paragraph{Test di \termine{Validazione} eseguiti}
+
+\begin{itemize}
+\item \textbf{Misurazione}: $VE=\frac{N_{TVE}}{N_{TVP}} \cdot 100$, dove $N_{TVE}$ è il numero di test di validazione eseguiti e $N_{TVP}$ è il numero di test di \termine{Validazione} pianificati.
+\end{itemize}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Valore di accettazione}	& \textbf{Valore ottimale} & \textbf{Motivazione} \\
+			\hline
+			$100$ & $100$ &	Garantire che tutti o la maggior parte dei test di \termine{Validazione} siano eseguiti con successo. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Test di \termine{Validazione} eseguiti}
+\end{center}
+
+\paragraph{Test superati}
+
+\begin{itemize}
+\item \textbf{Misurazione}: $S=\frac{N_{TS}}{N_{TE}} \cdot 100$, dove $N_{TS}$ è il numero di test superati e $N_{TE}$ è il numero di test eseguiti.
+\end{itemize}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[$90 - 100$] & $100$ &	Garantire che il numero di test totali eseguiti sia uguale o quasi a quelli preventivati per garantire tutte le funzionalità previste. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Test superati}
+\end{center}
+
+\subparagraph{Branch coverage}
+
+\begin{itemize}
+\item \textbf{Misurazione}: percentuale di cammini distinti presenti nel codice che vengono percorsi da parte della suite di test.
+\end{itemize}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[70 - 100] & [90 - 100] &	Garantire che l'esecuzione dei test dia un risultato di peso per la caratterizzazione della qualità del software. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Branch Coverage}
+\end{center}
+
+\subparagraph{Statement coverage}
+
+\begin{itemize}
+\item \textbf{Misurazione}: percentuale di operazioni atomiche presenti nel codice che vengono percorse da parte della suite di test.
+\end{itemize}
+
+\begin{center}
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[70 - 100] & [90 - 100] &	Garantire che l'esecuzione dei test dia un risultato di peso per la caratterizzazione della qualità del software. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Statement Coverage}
+\end{center}
+
+
+
+\subsection{Processo di documentazione}
+
+Il processo punta a produrre e manutenere le informazioni sul software prodotte dai processi attuati.
+\subsubsection{Obiettivi di qualità}
+Il processo di documentazione dovrà perseguire le seguenti direttive:
+\begin{itemize}
+\item la documentazione prodotta dovrà essere chiara e comprensibile a tutti i committenti e sarà resa disponibile a chiunque la necessiti.
+\item ogni forma di ambiguità sul significato di un termine utilizzato verrà eliminata grazie al \glossario.
+\item la documentazione prodotta sarà sempre aggiornata ed allineata allo stato attuale del processo di sviluppo del prodotto.
+\item i documenti saranno verificati ed approvati solo se soddisfacenti tutte le metriche per la qualità. Inoltre tramite le tecniche di analisi statica dovranno essere individuati il maggior numero di errori sintattici.
+\end{itemize}
+
+\subsection{Standard ISO/IEC 15504}
+Il processo di documentazione verrà svolto durante tutto il lasso di tempo in cui il gruppo lavorerà al progetto. Come processo di supporto, dunque, esso risulta fondamentale poiché ripetuto costantemente ed esplica il lavoro eseguito dal gruppo. Dunque, gli obiettivi per questo processo sono:
+\begin{itemize}
+\item \textbf{Livello di accettazione}: 2.
+\item \textbf{Livello ottimale}: 3.
+\end{itemize}
+
+\subsubsection{Strategie}
+Durante la stesura della documentazione, ogni termine con significato ambiguo deve essere indicato (corredato di definizione) nel \glossario\ ; gli script automatici provvederanno alla sua segnalazione all'interno del documento.\\
+Ogni documento sarà dotato di numero di versione e corredato da un diario delle modifiche che consente di prendere visione di tutte le azioni effettuate sul testo in oggetto.
+
+\subsubsection{Metriche}
+
+\paragraph{Indice di Gulpease}
+
+\begin{itemize}
+\item \textbf{Misurazione:} Per misurare l'indice di Gulpease verrà utilizzato uno script in python che calcolerà il valore del documento.
+\end{itemize}
+
+\begin{center}
+
+		\begin{tabular}{|P{2.5cm}|P{2.5cm}|P{6cm}|}
+		\hline
+			\textbf{Range di accettazione}	& \textbf{Range ottimale} & \textbf{Motivazione} \\
+			\hline
+			[40 -- 100] & [50--100] &	Per garantire una buona leggibilità dei documenti. \\
+			\hline
+			\end{tabular}
+\captionof{table}{Indice di Gulpease}
+\end{center}

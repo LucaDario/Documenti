@@ -1,0 +1,64 @@
+\input{../../../../../Template/layoutVerbale.tex}
+\input{../../../../../Template/Comandi.tex}
+
+% Comandi per generare l'intro
+\newcommand{\documento}{Verbale riunione 26/03/2017}
+\newcommand{\versione}{1.0.0}
+\newcommand{\redatori}{\FB}
+\newcommand{\revisori}{\RM}
+\newcommand{\approvazione}{\DC}
+\newcommand{\statoapprovazione}{Approvato}
+% Quando il documento sarà approvato, inserire all'interno del comando seguente la data nel formato GG mese AAAA dove GG è il giorno a due cifre, mese è il mese scritto per esteso con la prima lettera minuscola, e AAAA è l'anno a quattro cifre
+\newcommand{\dataApprovazione}{27 marzo 2017}
+\newcommand{\uso}{Interno}
+\newcommand{\destinatari}{\RB\\ & \gruppo\\ & \TV\\ & \RC}
+
+\newcommand{\sommario}{Verbale di incontro tra i membri del gruppo \gruppo.
+}
+
+% Comandi per generare il verbale
+\newcommand{\data}{26 marzo 2017}
+\newcommand{\luogo}{Torre Archimede - Via Trieste, 63 Padova}
+\newcommand{\oraInizio}{16:00}
+\newcommand{\oraFine}{16:50}
+\newcommand{\oggetto}{Discussione sulla codifica}
+\newcommand{\segretario}{\SL}
+\newcommand{\durata}{50 minuti}
+\newcommand{\partecipanti}{
+\begin{itemize}
+\item \textbf{\gruppo}
+		\begin{itemize}
+			\item \LD
+			\item \SL
+			\item \ND
+			\item \DC
+			\item \RM
+		\end{itemize}
+\end{itemize}
+}
+\newcommand{\ordineDelGiorno}{
+\begin{enumerate}
+	\item Discussione in merito alle interfacce con \termine{ecmascript 6} a seguito della scoperta di una nuova metodologia per fare comunicare la view con il presenter.
+	\item Problemi con la \termine{libreria} \textit{dependency-injection-es6} per la \termine{constructor-injection}. Infatti, quest'ultima non è stata completamente sviluppata nella \termine{libreria}.
+\end{enumerate}
+}
+
+\newcommand{\contenuto}{
+\begin{itemize}
+	\item \textbf{VI7.1}: Il membro \RM\ ha trovato un modo alternativo di far interagire le view con i presenter dei vari elementi, orientato agli eventi. Dopo la sua spiegazione è compito di tutti gli altri membri e scegliere la migliore soluzione, tale decisione verrà discussa e successivamente verbalizzata al prossimo incontro.
+	\item \textbf{VI7.2}: A seguito delle problematiche sorte con il \termine{constructor-injection} il gruppo \gruppo\ ha deciso di abbandonare completamente questa tipologia di attività a discapito della \termine{field-injection} realizzata con la medesima libreria.
+La seguente decisione comporterà le seguenti azioni concordate dai membri del \termine{team}:
+\begin{itemize}
+\item \textbf{VI7.2.1} I costruttori saranno tutti vuoti, quindi non abbiamo problemi con \textit{JavaScript} che non supporta costruttori multipli.
+\item \textbf{VI7.2.2} Sarà più difficile fare testing, ma questo non sarà un problema dato che \textit{JavaScript} permette di accedere direttamente ai campi privati che possiamo quindi modificare durante tali test.
+\item \textbf{VI7.2.3} Non c'è più il problema di avere due metodologie di \textit{injection}, questo però al costo di nascondere le dipendenze e non renderle più visibili chiaramente nel costruttore.
+\end{itemize}
+\end{itemize}
+}
+
+
+\begin{document}
+\input{../../../../../Template/introVerbale.tex}
+\input{../../../../../Template/Verbale.tex}
+
+\end{document}

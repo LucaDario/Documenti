@@ -1,0 +1,286 @@
+\section{Processi organizzativi}
+\subsection{Processo di coordinamento}
+\subsubsection{Comunicazioni}
+Le comunicazioni possono essere interne o esterne al \termine{team}.
+
+\paragraph{Comunicazioni interne}
+Dipendentemente dal carattere della comunicazione, si deve decidere se effettuarle in modo formale o informale.
+In funzione di questi due criteri, le forme di comunicazione che vengono adottate sono:
+\begin{itemize}
+	\item \textbf{Comunicazione formale scritta}: le informazioni comunicate in questa forma hanno carattere ufficiale, e avranno quindi una grande importanza per il \termine{team}.
+	\item \textbf{Comunicazione verbale formale}: comunicazioni divulgative o di presentazione.
+	\item \textbf{Comunicazione informale scritta}: discussioni tra membri del \termine{team} non ufficiali, al fine di chiarire dubbi o fare proposte senza ufficialità.
+	\item \textbf{Comunicazione informale orale}: informazioni non ufficiali scambiate tra i membri del \termine{team} riguardanti il progetto.
+\end{itemize}
+
+Per ogni tipologia di comunicazione si è deciso di utilizzare i seguenti strumenti:
+\begin{itemize}
+	\item \textit{\PdP}, convocazioni di riunione e verbali di riunione per le comunicazioni formali scritte.
+	\item Presentazioni e discorsi per le comunicazioni verbali formali.
+	\item Piattaforme di \termine{instant messaging} per le comunicazioni informali scritte.
+	\item Conversazioni per le comunicazioni informali orali.
+\end{itemize}
+
+La comunicazione interna viene usata dal \termine{team} per:
+\begin{itemize}
+\item
+Trasmettere informazioni su scadenze e obiettivi tecnici.
+\item
+Informare i membri del \termine{team} sull'organizzazione.
+\item
+Motivare i membri del \termine{team}.
+\end{itemize}
+
+\paragraph{Comunicazioni esterne}
+Per le comunicazioni esterne è stata creata la seguente casella di posta elettronica:
+
+\begin{center} \email \end{center}
+
+Il \Pm gestisce le comunicazioni con i proponenti e i committenti, avvertendo i membri del \termine{team} nel caso vengano rese disponibili nuove informazioni utili.
+
+\paragraph{Strumenti}
+
+\subparagraph{Slack}
+Lo strumento che scelto per la comunicazione interna formale è \termine{Slack}.
+Le ragioni che hanno portato a questa scelta sono:
+\begin{itemize}
+\item La possibilità di organizzare le discussioni in canali, rendendole quindi molto più organizzate ed accessibili ai membri del \termine{team}.
+\item Disponibilità su qualsiasi piattaforma in modo gratuito, e pertanto usufruibile in ogni momento.
+\end{itemize}
+
+\subparagraph{Telegram}
+Lo strumento abbiamo scelto per la comunicazione interna informale è \termine{Telegram}.
+Le ragioni che hanno portato a questa scelta sono:
+\begin{itemize}
+\item Disponibilità su qualsiasi sistema operativo mobile e desktop, attraverso le applicazioni ufficiali sviluppate e/o il client web.
+\item Possibilità di aggiungere molteplici \termine{bot} utili in varie funzioni, come ad esempio la possibilità di creare sondaggi.
+\item Immediatezza per la formulazione e la risposta a domande veloci e informali, evitando così di compromettere lo storico delle conversazioni su \termine{Slack}.
+\end{itemize}
+
+\subsection{Processo di pianificazione}
+\paragraph{Descrizione}
+Nell'arco dello sviluppo del progetto ogni membro del gruppo dovrà assumere almeno una volta tutti i ruoli progettuali.
+Un membro del \termine{team} può assumere più ruoli contemporaneamente, ma non può mai essere redattore e verificatore dello stesso documento, al fine di evitare conflitti di interesse che potrebbero vanificare il processo di verifica del materiale prodotto.
+
+\paragraph{\Pm}
+Il \Pm\ rappresenta l'intero \termine{team} in situazioni formali come la comunicazione con i committenti e i proponenti. È anche il responsabile ultimo del lavoro del gruppo. Inoltre redige l'\termine{organigramma}, assegnando task e scadenze ai membri del \termine{team}, assicurandosi che queste vengano soddisfatte. 
+Il \Pm\ approverà definitivamente i documenti, oltre che a collaborare alla stesura del \PdP\  e del \PdQ.
+Infine elabora ed emette piani per il \termine{team}.
+
+\paragraph{\Am}
+L'\Am\ si occupa dell'ambiente di sviluppo del \termine{team}. Più in dettaglio, egli si occupa di:
+\begin{itemize}
+  \item Controllo dell'ambiente di lavoro.
+  \item Gestione del versionamento della documentazione.
+  \item Controllo delle versioni e delle configurazioni del prodotto.
+\end{itemize}
+L'\Am\ redige le \NdP\ e collabora alla stesura del
+\PdP.
+
+\paragraph{\Prog} 
+Il \Prog\ è il responsabile di tutto ciò che riguarda la progettazione.
+Più in dettaglio, egli si occupa di:
+\begin{itemize}
+  \item Produrre una soluzione attuabile, robusta e semplice entro i limiti di
+  tempo stabiliti.
+  \item Garantire la manutenibilità e la modularità del prodotto software.
+\end{itemize}
+Il \Prog redige la \DDP\ e la parte programmatica del \PdQ.
+
+\paragraph{\An}
+L'\An ha il dovere di scomporre il problema in parti sempre più elementari che lo portino ad una comprensione completa del problema iniziale.
+Il frutto del suo lavoro serve al progettista per costruire una soluzione che davvero risponda alle aspettative dei committenti.
+In dettaglio l' \An\ deve produrre una specifica di progetto comprensibile per il \termine{proponente}, per il \termine{committente} e per il \Prog. \\
+L'\An\ redige lo \SdF, l'\AdR\ e parte del \PdQ.
+
+\paragraph{\Ver}
+Il \Ver\ è responsabile della qualità del lavoro del \termine{team}.
+Egli effettua la verifica dei documenti e del software utilizzando gli strumenti e i metodi proposti nel
+\PdQ\ e seguendo rigorosamente quanto descritto nelle \NdP.
+Egli ha il compito di garantire la conformità rispetto le \NdP\ dei documenti e del software da lui verificati.
+
+\paragraph{\Progr}
+Il \Progr\ ha la responsabilità di implementare le soluzioni del \Prog, e quindi è
+responsabile dell'attività di codifica. In dettaglio, i suoi compiti sono:
+\begin{itemize}
+  \item Implementare le soluzioni descritte dal \Prog\ in maniera rigorosa.
+  \item Scrivere il codice rispettando le convenzioni prese nelle \NdP.
+  \item Implementare i test per il codice scritto da utilizzare per l'attività di verifica.
+\end{itemize}
+Il \Progr\ redige il \MU e produce la documentazione del codice.
+
+\subsubsection{Strumenti}
+
+\paragraph{Wrike}
+Lo strumento di pianificazione che abbiamo scelto è \termine{Wrike}.
+Le ragioni che ci hanno portato a questa scelta sono:
+\begin{itemize}
+\item Disponibilità gratuita mediante la richiesta di una licenza per studenti.
+\item Possibilità di assegnare un \termine{task} a più di una persona.
+\item Possesso di una interfaccia semplice ed intuitiva.
+\item Possibilità di utilizzo anche su sistemi operativi mobile quali Android e iOS mediante l'applicazione gratuita disponibile.
+\item Possibilità, previa sincronizzazione, di segnalare, tra \termine{Wrike} e la \termine{repository} \termine{GitHub}, quando un determinato \termine{task} è completato attraverso un semplice \termine{commit}.
+\item Possibilità di commentare e rispondere all'interno della pagina di un rispettivo \termine{task}. 
+\end{itemize}
+
+\subsubsection{Gestione delle attività del progetto}
+Si è scelto di utilizzare il sistema di pianificazione delle attività \termine{Wrike}, grazie al quale vengono tenute sotto controllo le milestones, i task personali e di gruppo. Il programma \termine{Wrike} è disponibile anche come applicazione su sistemi operativi mobile, garantendo più velocità nella comunicazione di eventuali novità nelle attività del gruppo.
+
+\subsubsection{Task management}
+I \termine{task} vengono creati dal \Pm\ e possono essere assegnati ad uno o più membri del gruppo. Nel caso in cui il compito sia di particolare importanza, il \Pm\ suddividerà il \termine{task} principale in sotto-task, e li assegnerà ai membri del \termine{team}. Egli, inoltre, dovrà segnare come \textbf{New} tale \termine{task}, e dovrà indicare nella sezione commenti eventuali consigli o informazioni utili al destinatario del task. \\
+Successivamente il \Pm\ creerà i sotto-task di verifica assegnandoli ad un verificatore che avrà il compito di appurare la bontà del lavoro compiuto nel \termine{task} superiore, quando questo sarà segnato come pronto per la verifica. \\
+Il primo componente che inizierà a lavorare su quel \termine{task} dovrà segnarlo come \textbf{In corso}. \\
+Se durante l'elaborazione del \termine{task} arriverà un compito con priorità maggiore al membro che stava lavorando in quel suddetto \termine{task}, l'utente dovrà metterlo in stato \textbf{In sospeso} e completarlo una volta finiti i \termine{task} di maggior priorità
+Una volta che il proprietario riterrà il suo sotto-task completato dovrà segnalarlo come \textbf{In sospeso}, in modo tale che il verificatore assegnato possa controllarlo e segnarlo come completato nel caso in cui risultasse idoneo. \\
+Se il \termine{task} riguarda la stesura di un documento, una volta completata la verifica, il verificatore dovrà segnarlo come \textbf{In sospeso}, lasciando al \Pm\ la responsabilità dell'ultima verifica e dell'approvazione del documento. A seguito di tale verifica ed approvazione, il \Pm\ segnerà successivamente il task come \textbf{Completato}.
+Il ciclo di vita di un task è descritto nel figura 2.0
+\label{figura 2.0}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{lavorazione_task.jpg}
+	\caption{Ciclo di vita di un task}
+\end{figure}
+
+
+
+\paragraph{Creazione di un task}
+Per la creazione di un nuovo singolo \termine{task} bisogna seguire le seguenti
+istruzioni:
+\begin{enumerate}
+  \item Dalla pagina principale di \termine{Wrike} selezionare il progetto interessato (\progetto).
+  \item Selezionare la voce \textbf{Nuova attività} e compilare il \termine{task} nel seguente modo:
+    \begin{itemize}
+      \item \textbf{Nome task:} assegnare un nome identificativo al \termine{task} seguito dalla \termine{milestone} corrispondente (se necessaria).
+      \item \textbf{Aggiungi descrizione:} inserire una descrizione breve ma
+      concisa del \termine{task}.
+      \item \textbf{Allega file:} allegare, eventualmente, file utili alla realizzazione del task.
+      \item \textbf{Priorità:} inserire, opzionalmente, una priorità al \termine{task}.
+    \end{itemize}
+\end{enumerate}
+
+
+\paragraph{Modifica di un task}
+Per modificare un \termine{task} seguire le seguenti istruzioni:
+\begin{itemize}
+  \item Selezionare il \termine{task} da modificare.
+  \item Dalla pagina proposta selezionare il campo che si vuole modificare.
+  \item Completata la modifica premere il pulsante \textbf{Invio}.
+\end{itemize}
+
+\paragraph{Completamento di un task}
+Dopo che il verificatore avrà appurato che il \termine{task} soddisfa i requisiti richiesti, e quindi è stato completato secondo le \NdP, potrà procedere con il suo completamento ottenibile tramite le seguenti operazioni:
+\begin{itemize}
+  \item Selezionare il \termine{task} da segnare come completato.
+  \item Cliccare nella checkbox apposita segnando il termine come \textbf{"Completato"}.
+\end{itemize}
+Il lavoro viene quindi considerato concluso da questo momento, ma potrebbe essere riportato nello stato \textbf{"In corso"} nel caso in cui:
+\begin{itemize}
+  \item Il \Pm\ non approvi il documento.
+  \item Il \Ver\, dopo un secondo controllo sui \termine{task} a lui assegnati, si accorga di errori e/o incompletezze. 
+\end{itemize}
+
+\subsection{Processo di miglioramento dei Processi}
+\subsubsection{Descrizione}
+Il processo di miglioramento dei processi consiste nell'attuare il \textit{Ciclo di Deming} in modo da migliorare i processi, renderli più misurabili e ottenere risultati soddisfacenti.
+
+\subsubsection{PDCA}
+Il nostro \termine{team} si impegnerà a seguire una strategia di miglioramento continuo chiamata \termine{PDCA} : acronimo di \textit{Plan–Do–Check–Act}. Attuando questo modello al nostro progetto, passiamo a descrive le 4 fasi in cui i processi di una macrosezione idealmente si può dividere
+\begin{itemize}
+				\item Plan: vengono stabiliti obiettivi e processi necessari per raggiungere i risultati aspettati;
+				\item Do: implementazione ed attuazione dei processi
+				\item Check: vengono comparati i risultati ottenuti con quelli attesi, tramite uno studio tabellare e di grafici. Solo se si sono raggiunti gli obiettivi preposti(a fronte di uno scosamento accettabile, deciso nella prima fase di \textit{Plan}) si può passare alla fase successiva, altrimenti è necessario ripetere il ciclo PDCA tenendo conto delle cause che hanno contribuito al fallimento;
+				\item Act: vengono attuate azioni di aggiustamento, correzione e miglioramento ai processi prima implementati. La soluzione individuata diventa la nuova baseline, e si può quindi ripetere l'intero ciclo.
+			\end{itemize}
+
+
+\subsubsection{Standard ISO/IEC 15504}
+Per ottenere una migliore precisione del miglioramento dei processi si è deciso di utilizzare lo \textit{Standard ISO/IEC 15504}.
+Questo standard ci permette di individuare altre metodologie per garantire la qualità dei processi.
+Il livello di maturità e completezza del processo viene valutato secondo gli attributi di ognuno di essi ed è definito quantificabilmente secondo questa scala:
+\begin{itemize}
+			\item Level 0 - Incompleto: il processo non è implementato o/e non raggiunge gli obiettivi prefissati epr esso;
+			\item Level 1 - Eseguito: il processo è implementato e raggiunge i suoi obiettivi.
+			Misurato secondo:
+				\begin{itemize}
+					\item Performance: capacità di ottenere risultati identificabili.
+				\end{itemize}
+			\item Level 2 - Gestito: il processo agisce in base ad una pianificazione ed ogni sua azione è tracciata.
+			Misurato secondo:
+				\begin{itemize}
+					\item Capacità di elaborare un prodotto coerente con gli obiettivi attesi;
+					\item Capacità di elaborare un prodotto documentato, controllato e verificato.
+				\end{itemize}
+			\item Level 3 - Stabilito: il processo agisce in base a linee guida uniformi nell'intera organizzazione.
+			Misurato secondo:
+				\begin{itemize}
+					\item Definizione: capacità di elaborare un prodotto seguendo gli standard preposti;
+					\item Risorse: capacità di sfruttare le risorse a disposizione così da venir attuato al meglio.
+				\end{itemize}
+			\item Level 4 - Predicibile: il processo agisce entro certi limiti.
+			Misurato secondo:
+				\begin{itemize}
+					\item Misurazioni: capacità di sfruttare le misure ricavate durante l'esecuzione così da raggiungere i propri obiettivi;
+					\item Controllo: capacità di sfruttare le misure ricavate durante l'esecuzione così da migliorarsi e correggersi, se necessario.
+				\end{itemize}
+			\item Level 5 - Ottimizzato: il processo viene misurato e quindi ottimizzato.
+			Misurato secondo:
+				\begin{itemize}
+					\item Cambiamenti: capacità di supportare cambiamenti strutturali e di esecuzione;
+					\item Miglioramento continuo: capacità di sfruttare i cambiamenti strutturali e di esecuzione così da migliorarsi continuamente nel raggiungimento dei propri obiettivi.
+				\end{itemize}
+			\end{itemize}
+
+\subsection{Processo di Formazione}
+\subsubsection{Descrizione}
+Il processo di formazione consiste nel fornire e mantenere tutti i membri del gruppo preparati e in grado di lavorare efficacemente ed efficientemente nella produzione e nella gestione del software.
+
+\subsubsection{Implementazione}
+Il \termine{team} ha deciso che la formazione dei membri del gruppo non sarà di pertinenza del gruppo stesso, bensì un dovere del singolo che dovrà intraprendere azioni di autoapprendimento nel caso le sue conoscenze fossero insufficienti al completamento del suo lavoro.
+
+\subsubsection{Materiale di Formazione}
+Essendo il processo di formazione riguardante il singolo, ogni membro del \termine{team} che raccolga materiale interessante lo distribuirà all'interno del gruppo. In questo modo il ripresentarsi di problemi di natura similare avrà già parte della soluzione trovata. Eventualmente un membro del \termine{team} può anche chiedere delucidazioni alla persone che in precedenza aveva già trovato una soluzione al medesimo problema.
+
+
+%
+% la parte riguardante la lista di controllo è stata eliminata in quanto
+% il prof. stesso ha detto che l improvement dei processi è un processo lungo
+% che non riguarda un progetto della durata simile alla nostro
+%
+%
+%\subsection{Lista di controllo}
+%Durante l'applicazione della tecnica del \textit{Walkthrough\ped{G}} ai documenti sono stati riportati
+%più frequentemente i seguenti errori:
+%\begin{itemize}
+ % \item\textbf{Norme stilistiche}:
+  %\begin{itemize}
+   % \item La prima parola di una voce dell'elenco puntato non inizia con una lettera maiuscola.
+%    \item La voce dell'elenco puntato termina con un punto anziché con un punto e virgola o viceversa.
+ %   \item I due punti in grassetto.
+  %  \item Errori di battitura.
+    
+  %\end{itemize}
+
+  %\item\textbf{Italiano}:
+  %\begin{itemize}
+   % \item Maiuscole usate impropriamente.
+    
+  %\end{itemize}
+
+  %\item\textbf{\LaTeX}:
+  %\begin{itemize}
+  %\item Mancato utilizzo dei comandi \LaTeX{} personalizzati.
+
+  %\end{itemize}
+  
+  %\item\textbf{Casi d'Uso}:
+  %\begin{itemize}
+%\item Mancato rispetto del template stabilito per i punti trattati nei casi d'uso.
+ % \end{itemize}
+
+	%\item\textbf{Glossario}:
+	%\begin{itemize}
+	%	\item Sono stati evidenziati dei termini che non andavano nel \textit{\glossario{}}.
+	%	\item Non sono stati evidenziati dei termini che sono presenti nel \textit{\glossario{}}.
+	%\end{itemize}
+
+%\end{itemize}

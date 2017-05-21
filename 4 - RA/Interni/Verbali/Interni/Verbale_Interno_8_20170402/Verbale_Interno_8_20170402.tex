@@ -1,0 +1,62 @@
+\input{../../../../../Template/layoutVerbale.tex}
+\input{../../../../../Template/Comandi.tex}
+
+% Comandi per generare l'intro
+\newcommand{\documento}{Verbale riunione 02/04/2017}
+\newcommand{\versione}{1.0.0}
+\newcommand{\redatori}{\FB}
+\newcommand{\revisori}{\RM}
+\newcommand{\approvazione}{\DC}
+\newcommand{\statoapprovazione}{Approvato}
+% Quando il documento sarà approvato, inserire all'interno del comando seguente la data nel formato GG mese AAAA dove GG è il giorno a due cifre, mese è il mese scritto per esteso con la prima lettera minuscola, e AAAA è l'anno a quattro cifre
+\newcommand{\dataApprovazione}{04 Aprile 2017}
+\newcommand{\uso}{Interno}
+\newcommand{\destinatari}{\RB\\ & \gruppo\\ & \TV\\ & \RC}
+
+\newcommand{\sommario}{Verbale di incontro tra i membri del gruppo \gruppo.
+}
+
+% Comandi per generare il verbale
+\newcommand{\data}{02 Aprile 2017}
+\newcommand{\luogo}{Skype}
+\newcommand{\oraInizio}{11:00}
+\newcommand{\oraFine}{12:30}
+\newcommand{\oggetto}{Discussione sulle problematiche legate a Rocket.Chat}
+\newcommand{\segretario}{\SL}
+\newcommand{\durata}{1 ora e 30 minuti}
+\newcommand{\partecipanti}{
+\begin{itemize}
+\item \textbf{\gruppo}
+		\begin{itemize}
+			\item \LD
+			\item \SL
+			\item \DC
+			\item \RM
+			\item \FB
+			\item \MT
+		\end{itemize}
+\end{itemize}
+}
+\newcommand{\ordineDelGiorno}{
+\begin{enumerate}
+	\item Il membro \LD\ ha segnalato delle problematiche riguardanti l'integrazione con \termine{Rocket.Chat}. In particolare la mancata documentazione dell'applicazione rende difficoltosa la codifica dell'applicativo \textit{Bring-it}.
+	\item Discussione sui \termine{Pop-up}.
+	\item Segnalazione di ritardi alla pianificazione prevista per la consegna.
+	\item Aggiornamento del documento \DDP per i cambiamenti avvenuti nella codifica.
+\end{enumerate}
+}
+
+\newcommand{\contenuto}{
+\begin{itemize}
+	\item \textbf{VI8.1}: Il gruppo, notati i problemi, ha deciso di procedere con la codifica per raggiungere poi i risultati previsti con un maggiore impegno. Se dovessero verificarsi ulteriori ritardi o problemi il gruppo valuterà lo slittamento della consegna per la \RQ.
+	\item \textbf{VI8.2}: Per i \termine{Pop-up} previsti per il corretto funzionamento dell'applicazione \textit{Bring-it} è stato deciso di utilizzare quelli proposti da \termine{Bootstrap}. Nel caso in cui questi non dovessero andare bene, verrà reintegrata la \termine{libreria} \textit{Vue.js}.
+	\item \textbf{VI8.3}: I membri segnalano che l'integrazione con \termine{Rocket.chat} è stata più complicata del previsto e ciò ha portato a dei leggeri cambiamenti dei metodi disponibili nelle classi descritti nel \DDP. Ciascun membro perciò dovrà modificare tale documento, descrivendo i cambiamenti avvenuti nella parte da lui codificata.
+\end{itemize}
+}
+
+
+\begin{document}
+\input{../../../../../Template/introVerbale.tex}
+\input{../../../../../Template/Verbale.tex}
+
+\end{document}

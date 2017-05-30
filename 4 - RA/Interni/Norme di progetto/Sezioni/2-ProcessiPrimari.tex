@@ -151,10 +151,21 @@ L'attività di Progettazione coinvolge due attività, le quali:
 \end{itemize}
 
 \paragraph{Progettazione architetturale}
-\subparagraph{Descrizione}
-L'attività di progettazione architetturale descrive le attività per realizzare la struttura dell'architettura software ed è necessaria per dominare la complessità del prodotto. Tale attività deve soddisfare i requisiti delineati all'interno del documento \AdR{} e dovrà essere svolta in maniera ottimale dai \textit{progettisti}.
 
-\subparagraph{Diagrammi}
+\subparagraph{Descrizione}
+L'attività di progettazione architetturale descrive le attività per realizzare la struttura dell'architettura ed è rivolta ai programmatori. Essi hanno il compito di trasformare i requisiti software delineati nel documento \AdR{} in un'architettura che descrive ad alto livello le componenti software. Inoltre è necessario assicurarsi che tutti i requisiti siano soddisfatti dalle componenti individuate, il tutto, poi, va appositamente documentato nella sezione dedicata del \DDP{}.
+Per arrivare, dunque, ad una definizione soddisfacente dell'architettura dei prodotti software è necessario svolgere delle attività, che porteranno come risultato i seguenti prodotti:
+
+\begin{enumerate}
+\item \textbf{Componenti}: Individuazione delle componenti ad alto livello che andranno a costituire il sistema. Dovranno essere definite poi le interazioni tra le componenti, in modo da far capire il funzionamento del prodotto realizzato.
+\item \textbf{Tecnologie}: Dovranno essere individuate tutte le \termine{librerie} o \termine{framework} necessari per la realizzazione del prodotto. Ognuna dovrà essere descritta con annessa spiegazione del suo utilizzo.
+\item \textbf{Design Pattern}: I \textit{Progettisti} devono inoltre individuare, se ritenuti necessari, eventuali \termine{Design Pattern} per la definizione dell'architettura di sistema. Ognuno di essi dovrà essere fornito di una motivazione del suo utilizzo e dovrà essere opportunamente descritto, accompagnato da un \termine{diagramma di sequenza} che ne spiega il funzionamento.
+\item  \textbf{Tracciamento delle componenti}: Ogni componente dovrà essere tracciata ed associata ad almeno un requisito. In tal modo sarà possibile essere certi che tutti i requisiti, individuati durante l'attività di analisi, siano soddisfatti e che non esistano componenti che non soddisfino requisiti. Il tracciamento potrà essere fatto tramite gli opportuni script in \termine{Python} e la scrittura dei file \termine{JSON}.
+\item \textbf{Test d'integrazione}: definite le componenti, i \textit{Progettisti}, dovranno opportunamente definire dei test che possano verificare efficacemente le interazioni tra le componenti.
+\end{enumerate}
+
+
+\subparagraph{Diagrammi UML}
 La progettazione deve utilizzare le seguenti tipologie di diagrammi \termine{UML}:
 \begin{itemize}
 \item

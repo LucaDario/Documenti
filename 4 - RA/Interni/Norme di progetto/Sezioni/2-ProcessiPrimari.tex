@@ -159,9 +159,17 @@ Per arrivare, dunque, ad una definizione soddisfacente dell'architettura dei pro
 \begin{enumerate}
 \item \textbf{Definizione delle componenti}: Individuazione delle componenti ad alto livello che andranno a costituire il sistema. Dovranno essere definite poi le interazioni tra le componenti, in modo da far capire il funzionamento del prodotto realizzato.
 \item \textbf{Scelta delle tecnologie}: Dovranno essere individuate tutte le \termine{librerie} o \termine{framework} necessari per la realizzazione del prodotto. Ognuna dovrà essere descritta con annessa spiegazione del suo utilizzo.
-\item \textbf{Definizione dei Design Pattern}: I \textit{Progettisti} devono inoltre individuare, se ritenuti necessari, eventuali \termine{Design Pattern} per la definizione dell'architettura di sistema. Ognuno di essi dovrà essere fornito di una motivazione del suo utilizzo e dovrà essere opportunamente descritto, accompagnato da un \termine{diagramma di sequenza} che ne spiega il funzionamento.
+\item \textbf{Definizione dei Design Pattern}: I \textit{Progettisti} devono inoltre individuare, se ritenuti necessari, eventuali \termine{Design Pattern} per la definizione dell'architettura di sistema. Per ognuno di essi si dovranno fornire le seguenti informazioni:
+\begin{itemize}
+\item descrizione testuale.
+\item descrizione grafica, tramite un \termine{diagramma di sequenza} che ne spiega il funzionamento.
+\item motivazione dell'utilizzo.
+\item descrizione di come viene applicato il pattern al progetto.
+\end{itemize}
 \item  \textbf{Tracciamento delle componenti}: Ogni componente dovrà essere tracciata ed associata ad almeno un requisito. In tal modo sarà possibile essere certi che tutti i requisiti, individuati durante l'attività di analisi, siano soddisfatti e che non esistano componenti che non soddisfino requisiti. Il tracciamento potrà essere fatto tramite gli opportuni script in \termine{Python} e la scrittura dei file \termine{JSON}.
 \item \textbf{Definizione Test d'integrazione}: definite le componenti, i \textit{Progettisti}, dovranno opportunamente definire dei test che possano verificare efficacemente le interazioni tra le componenti.
+\item \textbf{Definizione Test di Sistema}: i \textit{Progettisti} dovranno progettare dei test di sistema in modo che tutti i requisiti siano verificati, al fine di garantire correttezza al programma.
+\item \textbf{Definizione Tesi di validazione}: i \textit{Progettisti} devono infine progettare dei test di validazione che verranno poi provati in periodo di collaudo. Tali test dovranno coprire tutte le funzionalità del programma al fine di mostrarne il valore e correttezza.
 \end{enumerate}
 
 
@@ -193,13 +201,6 @@ L'attività di progettazione si pone i seguenti obiettivi:
 
 \paragraph{Progettazione in dettaglio}
 
-\subparagraph{Tecniche di modularizzazione}
-
-I \textit{Progettisti} prima di iniziare l'attività di progettazione in dettaglio, devono necessariamente adottare delle tecniche di modularizzazione al fine di garantire una progettazione di qualità. Queste tecniche devono, infatti, garantire una scomposizione efficace delle componenti individuate nell'attività di progettazione architetturale. \\
-Queste tecniche devono essere incentrate sul riuso del codice, in modo da garantire una sviluppo più rapido del prodotto. A tal fine saranno stabilite successivamente delle metriche per garantire che ciò avvenga correttamente.
-
-
-
 \subparagraph{Descrizione}
 L'attività di Progettazione in dettaglio definisce le unità realizzative, ovvero i moduli che poi andranno a formare l'intero sistema. Tali moduli devono essere specificati in modo dettagliato e devono essere descritte le interazioni tra di essi.
 Al fine di ottenere una buona progettazione in dettaglio dovranno essere svolte delle attività, che dovranno portare come risultato i seguenti risultati:
@@ -211,7 +212,7 @@ Al fine di ottenere una buona progettazione in dettaglio dovranno essere svolte 
 \item \textbf{Definizione dei Test di Unità}: per verificare il corretto funzionamento di una classe, i \textit{Progettisti} devono pianificare dei test adatti a tale scopo. Essi verranno poi implementati dai \textit{Programmatori}, perciò è necessario mantenerne traccia.
 \end{enumerate}
 
-\subparagraph{Diagrammi}
+\subparagraph{Diagrammi UML}
 La progettazione deve utilizzare le seguenti tipologie di diagrammi \termine{UML}:
 \begin{itemize}
 \item
@@ -221,6 +222,21 @@ La progettazione deve utilizzare le seguenti tipologie di diagrammi \termine{UML
 \item
 \textbf{Diagrammi di sequenza}: descrivono una determinata sequenza di azioni dove tutte le scelte sono già state effettuate. In tali diagrammi non compaiono pertanto scelte né flussi alternativi. Verranno descritti solo per le operazioni reputate interessanti, cioè con un alto tassi di utilizzo e con una adeguata complessità, in modo che risultino interessanti da descrivere.
 \end{itemize}
+
+\subparagraph{Tecniche di modularizzazione}
+
+I \textit{Progettisti} prima di iniziare l'attività di progettazione in dettaglio, devono necessariamente adottare delle tecniche di modularizzazione al fine di garantire una progettazione di qualità. Queste tecniche devono, infatti, garantire una scomposizione efficace delle componenti individuate nell'attività di progettazione architetturale. \\
+Queste tecniche devono essere incentrate sul riuso del codice, in modo da garantire una sviluppo più rapido del prodotto. A tal fine saranno stabilite successivamente delle metriche per garantire che ciò avvenga correttamente.
+
+\subparagraph{Classificazione delle classi}
+
+Le classi vengono univocamente identificate dalla seguente forma di scrittura:
+\begin{center}
+\textit{NomePackage::NomeClasse}
+\end{center}
+
+Dove \textit{NomePackage} è il nome della componente ad alto livello che contiene la classe. Essa viene scritta nella forma precedentemente citata. \\
+Mentre \textit{NomeClasse} è il nome del modulo attribuito dai \textit{Progettisti}.
 
 \subparagraph{Obiettivi della progettazione in dettaglio}
 La fase di progettazione si pone i seguenti obiettivi:
@@ -298,136 +314,22 @@ Di seguito sono elencate le tecniche per raggiungere un buon utilizzo dei nomi.
 \item Per le variabile private delle classi si usa la pratica \termine{camel case} precedute da un underscore 
 \end{itemize}
 
-\subsubsection{Documentazione dei file}
-All'interno di un progetto \termine{open source} un'altra caratteristica di fondamentale importanza risulta essere la documentazione. \\
-Di seguito vengono pertanto riportate alcune \termine{best practice} per stilare una documentazione di facile comprensione.
+\paragraph{Rami di sviluppo}
 
-\begin{itemize}
-\item Scrivere la documentazione in lingua inglese, in quanto il software dovrà poter essere letto anche da sviluppatori internazionali.
-\item Elencare in modo preciso tutte le variabili(anche quelle opzionali) ed i loro significato nei rispettivi metodi.
-\item Segnalare il tipo ed il significato del dato ritornato dai rispettivi metodi.
-\item Documentare in modo preciso il contratto di tutti i metodi pubblici e protetti delle classi.
-\end{itemize}
-Inoltre i \textbf{file contenenti codice} dovranno essere avere un \textbf{intestazione introduttiva} contenente:
-
-\begin{lstlisting}[language=JavaScript]
-/** 
- *   Created by {USER} on {DATE}.
- *   Version {VERSION} - {VERSION_NOTES}
- */
-\end{lstlisting}
-Dove:
-\begin{itemize}
-\item \{USER\} identifica l'utente che ha creato quel file.
-\item \{DATE\} identifica la data, in formato GG/MM/AAAA, nella quale è stato creato il file.
-\item \{VERSION\} identifica la versione del file attuale, inizialmente sarà impostata di default a 1.0.0.
-\item \{VERSION\_NOTES\} identifica le note relative alla attuale versione, che identificano cosa è cambiato per portare a quella data versione. Inizialmente sarà impostata a 1.0.0 .
-Per quanto riguarda la storia di ogni modifica dei file, abbiamo deciso di tenerla tracciata tramite lo strumento \textit{Git} invece di tenere un tracciamento tramite commenti.
-\end{itemize}
+La \termine{Repository} su \termine{GitHub} sarà divisa in due branch, in entrambi i progetti che si andranno a realizzare (\termine{SDK} e applicativo):
+\begin{enumerate}
+\item \textbf{master}: costituirà il ramo contenente le versioni stabili del codice.
+\item \textbf{development}: ramo che può contenere codice non testato o in fase di sviluppo.
+\end{enumerate}
 
 
+Tutti i \textit{Programmatori} dovranno sviluppare nel ramo \textit{development}. Potranno, una volta terminata e testata la parte assegnata, effettuare una richiesta per il \termine{merge} sul \textit{master}.
 
-All'interno del file le \textbf{classi} dovranno contenere la seguente intestazione:
+\paragraph{Analisi statica}
 
-\begin{lstlisting}[language=JavaScript]
-/**
- *  class Nome della classe
- *  brief Breve descrizione della classe
- */
-\end{lstlisting}
-
-Per quanto riguarda i file contenenti solo un'\textbf{unica classe} non è necessario inserire i commenti appena descritti aggiungendo il nome della classe, ma la \textbf{descrizione} della classe dovrà essere inclusa direttamente nell'intestazione introduttiva.
-\\
-
-
-
-I \textbf{costruttori} delle classi dovranno contenere la seguente intestazione:
-
-\begin{lstlisting}[language=JavaScript]
-/**
- *  {TYPE} constructor
- *  @param {PARAM} {{PARAM_TYPE}}: {PARAM_DESC} 
- */
-\end{lstlisting}
-Dove:
-\begin{itemize}
-\item \{TYPE\}: Indicare "Public" se il costruttore è pubblico. "Private" se privato.
-\item \{PARAM\}: Identifica il nome di un parametro.
-\item \{\{PARAM\_TYPE\}\}: Identifica il tipo di un parametro, può essere Number (numero), String (stringa) o Object (oggetto).
-\item \{PARAM\_DESC\}: Breve descrizione del parametro.
-\end{itemize}
-Se non vi sono parametri non includere "@param" nell'intestazione.
-\\
-
-
-
-All'interno del file i \textbf{metodi} dovranno contenere la seguente intestazione:
-
-\begin{lstlisting}[language=JavaScript]
-/**
- * {TYPE}
- * {COMMENT}
- * @param {PARAM} {{PARAM_TYPE}}: {PARAM_DESC}
- * @return {{RETURN_TYPE}}: {RETURN_DESC} 
- */
-\end{lstlisting}
-
-Dove:
-\begin{itemize}
-\item \{TYPE\} identifica il tipo della funzione, può essere:
-\begin {itemize}
-\item @method: Identifica una funzione diversa da un costruttore.
-\end{itemize}
-\item \{COMMENT\}: Identifica una breve descrizione della funzionalità del metodo.
-\item \{PARAM\}: Identifica il nome di un parametro.
-\item \{\{PARAM\_TYPE\}\}: Identifica il tipo di un parametro, può essere Number (numero), String (stringa) o Object (oggetto).
-\item \{PARAM\_DESC\}: Breve descrizione del parametro.
-\item \{\{RETURN\_TYPE\}\}: Identifica il tipo ritornato dal metodo.
-\item \{RETURN\_DESC\}: Descrizione del tipo di ritorno del metodo.
-\end{itemize}
-Il tipo e la descrizione del tipo di ritorno non sono necessari nel caso in cui il metodo non ritorni nulla. Stesso ragionamento vale per i parametri nel caso in cui quest'ultimo non ne possieda.
-\\
-
-
-
-Infine eventuali metodi \texttt{get} e \texttt{set} dovranno essere scritti nel seguente modo:
-\begin{center}
-\textit{get/setNomeAttributo}
-\end{center}
-dove NomeAttributo è il nome dell'attributo al quale si vuole fare i metodi \texttt{get} e \texttt{set}. In questa maniera non sono necessari ulteriori commenti ai metodi perché autoesplicativi.
-\\
-
-
-
-All'interno dei file gli \textbf{attributi di una classe} saranno descritte in questa maniera:
-
-\begin{lstlisting}[language=JavaScript]
-/**
- * {TYPE}
- * {DESCRIPTION}
- */ 
-\end{lstlisting}
-
-Dove:
-\begin{itemize}
-\item \{TYPE\}: Identifica il tipo di un attributo, può essere Number (numero), String (stringa) o Object (oggetto).
-\item \{DESCRIPTION\}: Identifica una breve descrizione della variabile.
-\end{itemize}
-
-
-Per abilitare la creazione automatica di questo commento in ogni file è necessario, all'interno di IntelliJ IDEA, eseguire la seguente procedura:
-Aprire le impostazioni, quindi recarsi in Editor > File and Code Templates (oppure  utilizzare la shortcut Ctrl + Shift + A), cercare File template
-Nel tab File e selezionare JavaScript File
-Incollare, nella parte di destra, il seguente spezzone:
-\begin{lstlisting}
-/**
- * Created by {USER} on {DATE}
- * Version {VERSION} - {VERSION_NOTES}
- */
-\end{lstlisting}
-Cliccare su Apply.
+Per effettuare l’analisi statica del codice scritto è possibile utilizzare \termine{SonarQube}. Questo strumento ad ogni \termine{push} effettuata nel \termine{Repository} controllerà i parametri di qualità statici definiti dalle metriche trovate dal gruppo. Nel caso in cui, tali parametri, non fossero superati i \textit{Programmatori} dovranno provvedere, al più presto, a correggere gli errori con un successivo \termine{push}. Ciò è necessario poiché non sarà possibile fare il \termine{merge} delle modifiche dal ramo \textit{development} al ramo \textit{master} senza che i parametri di qualità vengano superati.
   
-\subsubsection{Ricorsione}
+\paragraph{Ricorsione}
 La ricorsione va evitata il più possibile. Per ogni funzione ricorsiva sarà necessario valutare il costo in termini di occupazione della memoria e bisognerà associare ad esso una prova di correttezza.
 Valutare la memoria occupata dalla funzione sarà obbligatorio in quanto le funzioni ricorsive possono facilmente non terminare occupando tutto lo stack della memoria andando quindi in \termine{stack overflow}.
 
@@ -438,9 +340,9 @@ La fase di codifica si pone i seguenti obiettivi:
 \item Trasformare in un linguaggio adatto tutte le funzioni e le classi con i loro relativi attributi 
 \end{itemize}
 
-\subsubsection{Strumenti}
+\paragraph{Strumenti}
 
-\paragraph{IntelliJ IDEA}
+\subparagraph{IntelliJ IDEA}
 L'ambiente di sviluppo integrato (\termine{IDE}) scelto per lo sviluppo e la manutenzione del progetto è \termine{IntelliJ IDEA}. Le ragioni che hanno portato a questa scelta sono le seguenti:
 \begin{itemize}
 \item Disponibilità di svariati \termine{plugin} per lo sviluppo, in particolare per \termine{Meteor.js}.

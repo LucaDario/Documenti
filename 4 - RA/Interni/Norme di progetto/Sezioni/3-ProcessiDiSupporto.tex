@@ -261,6 +261,135 @@ dove:
 \end{itemize}
 I documenti \textbf{in lavorazione} sono quelli in fase di stesura da parte del relativo redattore. Ultimata la loro realizzazione questi documenti vengono segnati come \textbf{da verificare} e passano in mano al relativo \Ver. Infine i documenti \textbf{verificati} vengono consegnati al \Pm che avrà il compito di approvarli definitivamente. Nella figura 1.0 è rappresentato lo schema del ciclo di vita di un documento
 
+\subsubsection{Documentazione dei file contenente codice}
+All'interno di un progetto \termine{open source} un'altra caratteristica di fondamentale importanza risulta essere la documentazione. \\
+Di seguito vengono pertanto riportate alcune \termine{best practice} per stilare una documentazione di facile comprensione.
+
+\begin{itemize}
+\item Scrivere la documentazione in lingua inglese, in quanto il software dovrà poter essere letto anche da sviluppatori internazionali.
+\item Elencare in modo preciso tutte le variabili(anche quelle opzionali) ed i loro significato nei rispettivi metodi.
+\item Segnalare il tipo ed il significato del dato ritornato dai rispettivi metodi.
+\item Documentare in modo preciso il contratto di tutti i metodi pubblici e protetti delle classi.
+\end{itemize}
+Inoltre i \textbf{file contenenti codice} dovranno essere avere un \textbf{intestazione introduttiva} contenente:
+
+\begin{lstlisting}[language=JavaScript]
+/** 
+ *   Created by {USER} on {DATE}.
+ *   Version {VERSION} - {VERSION_NOTES}
+ */
+\end{lstlisting}
+Dove:
+\begin{itemize}
+\item \{USER\} identifica l'utente che ha creato quel file.
+\item \{DATE\} identifica la data, in formato GG/MM/AAAA, nella quale è stato creato il file.
+\item \{VERSION\} identifica la versione del file attuale, inizialmente sarà impostata di default a 1.0.0.
+\item \{VERSION\_NOTES\} identifica le note relative alla attuale versione, che identificano cosa è cambiato per portare a quella data versione. Inizialmente sarà impostata a 1.0.0 .
+Per quanto riguarda la storia di ogni modifica dei file, abbiamo deciso di tenerla tracciata tramite lo strumento \textit{Git} invece di tenere un tracciamento tramite commenti.
+\end{itemize}
+
+
+
+All'interno del file le \textbf{classi} dovranno contenere la seguente intestazione:
+
+\begin{lstlisting}[language=JavaScript]
+/**
+ *  class Nome della classe
+ *  brief Breve descrizione della classe
+ */
+\end{lstlisting}
+
+Per quanto riguarda i file contenenti solo un'\textbf{unica classe} non è necessario inserire i commenti appena descritti aggiungendo il nome della classe, ma la \textbf{descrizione} della classe dovrà essere inclusa direttamente nell'intestazione introduttiva.
+\\
+
+
+
+I \textbf{costruttori} delle classi dovranno contenere la seguente intestazione:
+
+\begin{lstlisting}[language=JavaScript]
+/**
+ *  {TYPE} constructor
+ *  @param {PARAM} {{PARAM_TYPE}}: {PARAM_DESC} 
+ */
+\end{lstlisting}
+Dove:
+\begin{itemize}
+\item \{TYPE\}: Indicare "Public" se il costruttore è pubblico. "Private" se privato.
+\item \{PARAM\}: Identifica il nome di un parametro.
+\item \{\{PARAM\_TYPE\}\}: Identifica il tipo di un parametro, può essere Number (numero), String (stringa) o Object (oggetto).
+\item \{PARAM\_DESC\}: Breve descrizione del parametro.
+\end{itemize}
+Se non vi sono parametri non includere "@param" nell'intestazione.
+\\
+
+
+
+All'interno del file i \textbf{metodi} dovranno contenere la seguente intestazione:
+
+\begin{lstlisting}[language=JavaScript]
+/**
+ * {TYPE}
+ * {COMMENT}
+ * @param {PARAM} {{PARAM_TYPE}}: {PARAM_DESC}
+ * @return {{RETURN_TYPE}}: {RETURN_DESC} 
+ */
+\end{lstlisting}
+
+Dove:
+\begin{itemize}
+\item \{TYPE\} identifica il tipo della funzione, può essere:
+\begin {itemize}
+\item @method: Identifica una funzione diversa da un costruttore.
+\end{itemize}
+\item \{COMMENT\}: Identifica una breve descrizione della funzionalità del metodo.
+\item \{PARAM\}: Identifica il nome di un parametro.
+\item \{\{PARAM\_TYPE\}\}: Identifica il tipo di un parametro, può essere Number (numero), String (stringa) o Object (oggetto).
+\item \{PARAM\_DESC\}: Breve descrizione del parametro.
+\item \{\{RETURN\_TYPE\}\}: Identifica il tipo ritornato dal metodo.
+\item \{RETURN\_DESC\}: Descrizione del tipo di ritorno del metodo.
+\end{itemize}
+Il tipo e la descrizione del tipo di ritorno non sono necessari nel caso in cui il metodo non ritorni nulla. Stesso ragionamento vale per i parametri nel caso in cui quest'ultimo non ne possieda.
+\\
+
+
+
+Infine eventuali metodi \texttt{get} e \texttt{set} dovranno essere scritti nel seguente modo:
+\begin{center}
+\textit{get/setNomeAttributo}
+\end{center}
+dove NomeAttributo è il nome dell'attributo al quale si vuole fare i metodi \texttt{get} e \texttt{set}. In questa maniera non sono necessari ulteriori commenti ai metodi perché autoesplicativi.
+\\
+
+
+
+All'interno dei file gli \textbf{attributi di una classe} saranno descritte in questa maniera:
+
+\begin{lstlisting}[language=JavaScript]
+/**
+ * {TYPE}
+ * {DESCRIPTION}
+ */ 
+\end{lstlisting}
+
+Dove:
+\begin{itemize}
+\item \{TYPE\}: Identifica il tipo di un attributo, può essere Number (numero), String (stringa) o Object (oggetto).
+\item \{DESCRIPTION\}: Identifica una breve descrizione della variabile.
+\end{itemize}
+
+
+Per abilitare la creazione automatica di questo commento in ogni file è necessario, all'interno di IntelliJ IDEA, eseguire la seguente procedura:
+Aprire le impostazioni, quindi recarsi in Editor > File and Code Templates (oppure  utilizzare la shortcut Ctrl + Shift + A), cercare File template
+Nel tab File e selezionare JavaScript File
+Incollare, nella parte di destra, il seguente spezzone:
+\begin{lstlisting}
+/**
+ * Created by {USER} on {DATE}
+ * Version {VERSION} - {VERSION_NOTES}
+ */
+\end{lstlisting}
+Cliccare su Apply.
+
 \subsubsection{Versionamento}
 Ogni documento prodotto deve essere identificato, oltre che dal nome, dal numero
 di versione nel seguente modo:

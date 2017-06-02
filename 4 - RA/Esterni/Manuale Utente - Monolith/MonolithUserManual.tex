@@ -3,12 +3,12 @@
 
 % Comandi per generare l'intro
 \newcommand{\documento}{Monolith's user manual}
-\newcommand{\versione}{1.0.0}
+\newcommand{\versione}{2.0.0}
 \newcommand{\redatori}{\RM\\}
 \newcommand{\revisori}{\LD}
-\newcommand{\dataApprovazione}{06 maggio 2017}
-\newcommand{\approvazione}{\ND}
-\newcommand{\statoapprovazione}{Approvato}
+\newcommand{\dataApprovazione}{15th june 2017}
+\newcommand{\approvazione}{\LD}
+\newcommand{\statoapprovazione}{Approved}
 \newcommand{\uso}{External}
 \newcommand{\destinatari}{\RB\\ & \TV\\ & \RC}
 
@@ -20,11 +20,16 @@
 \usepackage{verbatim}
 
 
-\input{Sezioni/Diary.tex}
+\input{Sections/Diary.tex}
 
 \begin{document}
 \input{../../../Template/Introduction.tex}
 \input{../../../Template/DiaryArabic.tex}
+\input{../../../Template/TableOfContents.tex}
+
+\input{Sections/Introduction.tex}
+\input{Sections/Usage.tex}
+\input{Sections/Tests.tex}
 
 
 \end{document}

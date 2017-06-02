@@ -1,0 +1,29 @@
+\section{Tests}
+Our project comes with several tests already written and ready to execute. \\
+We used these tests during the development of the SDK in order to be sure that the increments that were performed didn't break the code previously written. \\
+We highly suggest you to keep running those tests sometimes, in order to be sure that, if you modify the source code for the application, anything breaks and stop functioning properly. \\
+
+
+\subsection{Libraries and frameworks}
+In order to write and execute the tests, we used the following libraries and frameworks:
+\begin{itemize}
+	\item \url{Mocha}{https://mochajs.org/}: framework used to execute the test;
+	\item \url{Should.js}{https://github.com/shouldjs/should.js}: assertion library;
+	\item \url{Expect.js}{https://github.com/LearnBoost/expect.js}: preferred assertion library, as it comes with multiple features that are not present inside Should.js;
+	\item \url{Chai.js}{http://chaijs.com/}: another assertion library.
+\end{itemize}
+
+\subsection{Running the tests}
+In order to run the tests suite, execute the following command inside the folder which contains the Meteor project code that includes Monolith as a dependency:
+
+\begin{lstlisting}
+    meteor test-packages --driver-package practicalmeteor:mocha monolith
+\end{lstlisting}
+
+After executing this command, all the unit and integration tests will be run, and the results will be presented at the following url
+
+\begin{lstlisting}
+    http://localhost:3000
+\end{lstlisting}
+
+where \texttt{localhost} is the server inside which the project using Monolith is running.

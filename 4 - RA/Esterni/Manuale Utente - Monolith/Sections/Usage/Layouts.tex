@@ -1,0 +1,81 @@
+\subsection{Layouts}
+\subsubsection{VerticalLayout}
+\begin{lstlisting}[language=JavaScript]
+// Create a new VerticalLayout
+let verticalLayout = new Monolith.Layout.VerticalLayout;
+
+// Add a widget to the bottom of the layout
+verticalLayout.addComponent(myWidget);
+
+// Add another layout inside the layout
+verticalLayout.addComponent(myLayout);
+
+// Render the layout view with all of its contents
+let domElement = verticalLayout.renderView();
+// Perform operations with the returned DOMElement
+\end{lstlisting}
+~\\~\\
+
+\subsubsection{HorizontalLayout}
+\begin{lstlisting}[language=JavaScript]
+// Create a new HorizontalLayout
+let horizontalLayout = new Monolith.Layout.HorizontalLayout;
+
+// Add a widget to the right of the layout
+horizontalLayout.addComponent(myWidget);
+
+// Add another layout inside the layout
+horizontalLayout.addComponent(myLayout);
+
+// Render the layout view with all of its contents
+let domElement = horizontalLayout.renderView();
+// Perform operations with the returned DOMElement
+\end{lstlisting}
+
+\newpage
+\subsubsection{Create a custom layout}
+In order to create a custom layout, all you have to do is the following.  
+
+\begin{enumerate}
+
+	\item Create a new class that represents your layout.
+\begin{lstlisting}[language=JavaScript]
+export class MyLayout extends Monolith.Layout.BaseLayout {
+    
+    // This represents the array of items that are 
+    // being added to the layout
+    _items;
+    
+    constructor(){
+        super(); // You need to call this
+        
+        // Perform the layout setup
+    }
+    
+    addItem(component){
+        // Add the given component to the array of items
+    }
+    
+    renderView(){
+        // Handles the rendering of the view and returns a DOMElement object
+        // It should call the renderView() method of each item in the list
+    }
+}
+\end{lstlisting}
+
+	\item Instantiate your class and use it
+\begin{lstlisting}[language=JavaScript]
+// Import the class
+import {MyLayout} from 'path/to/MyLayout.js';
+
+
+// Create the layout instance
+let myLayout = new MyLayout();
+
+// Perform operations with the layout
+\end{lstlisting}
+
+\end{enumerate}
+
+
+\newpage

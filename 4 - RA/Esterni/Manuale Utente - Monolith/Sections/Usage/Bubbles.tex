@@ -1,0 +1,164 @@
+\subsection{Bubbles}
+\subsubsection{MarkdownBubble}
+\begin{lstlisting}[language=JavaScript]
+// Create the bubble
+let markdownBubble = new Monolith.Bubble.MarkdownBubble("Optional text here");
+
+// Change the bubble text
+markdownBubble.setText("Text with **markdown** __inside__");
+
+// Render the bubble
+markdownBubble.renderView();
+\end{lstlisting}
+~\\~\\
+
+\subsubsection{AlertBubble}
+\begin{lstlisting}[language=JavaScript]
+// Create the bubble
+let alertBubble = new Monolith.Bubble.AlertBubble;
+
+// Set the alert title
+alertBubble.setTitle("Warning");
+
+// Set the alert message
+alertBubble.setMessage("Please check your data");
+
+// Build the view
+alertBubble.renderView();
+\end{lstlisting}
+
+\newpage
+\subsubsection{ToDoListBubble}
+\begin{lstlisting}[language=JavaScript]
+// Create the ToDoListBubble
+let toDoListBubble = new Monolith.Bubble.ToDoListBubble;
+
+// --- GENERIC OPERATIONS ---
+
+// Get the id of the bubble
+let id = toDoListBubble.getId();
+
+// Set the text associated with the bubble
+toDoListBubble.setText("This bubble contains a lot of items that can be checked");
+
+// Set the color of the text
+toDoListBubble.setTextColor("#1A5418");
+
+// Tell the bubble to format the text and so support the markdown notation
+toDoListBubble.setFormatText(true);
+
+// Disable text formatting
+toDoListBubble.setFormatText(false);
+
+// Set the highlight color for URLs
+toDoListBubble.setUrlHighlightColor("#891C15");
+
+// Set the bubble's text size in pixel
+toDoListBubble.setTextSize(15);
+
+// Set the message to show upon completion 
+toDoListBubble.setCompletionMessage("The list has all been checked.")
+
+
+// --- ITEMS OPERATIONS ---
+
+// Add an item to the list
+toDoListBubble.addItem("First item");
+
+// You can specify a second parameter which tells if the item that is being added
+// should be initially checked or not
+toDoListBubble.addItem("Second item", true); 
+
+// Set the text of an item
+toDoListBubble.setItemText("New text", 0); // Changes the text of the first item
+
+// Check an item
+toDoListBubble.setChecked(true, 0); // Checks the first item
+
+// Remove an item specifying the index of that item. Indexes start from 0
+toDoListBubble.removeItem(1);
+
+
+// Tell the bubble to use selection marks when ticking the options
+toDoListBubble.setUseSelectionMark(true);
+
+// Set the character to use when ticking an option
+toDoListBubble.setSelectionCharacter("X");
+
+// Tell the bubble to color the check box when ticking the options
+toDoListBubble.setUseSelectionMark(false);
+
+// Set the color used to color the check box
+toDoListBubble.setSelectionColor("#1D2565");
+
+// Set the function to call when clicking an item
+// This function will be called after the click of any of the items.
+// The parameter indicates the view of the item that has been clicked
+toDoListBubble.setOnItemClick(function(item){
+    item.setText("New text after click");
+});
+
+// Set the function to call when long-clicking an item
+// This function will be called after the long click of any of the items.
+// The parameter indicates the view of the item that has been long clicked
+toDoListBubble.setOnItemClick(function(item){
+    item.setText("New text after long click");
+});
+
+\end{lstlisting}
+
+\newpage
+\subsubsection{Create a custom bubble}
+In order to create a new bubble type you have to do as follows.
+
+\begin{enumerate}
+	\item Create a new class which extends from `Monolith.Bubble.BaseBubble`.
+\begin{lstlisting}[language=JavaScript]
+export class CustomBubble extends Monolith.Bubble.BaseBubble {
+    
+    constructor(params){
+        super(); // Always remember to call super!
+        
+        // Do something with the params
+        // Setup the bubble
+    }
+    
+    customOperation(){
+        // Perform a custom operation
+    }
+    
+    renderView(){
+        super.renderView(); // Again, necessary call
+        
+        // Return a DOMElement object
+    }
+    
+}
+\end{lstlisting}
+
+	\item Put the following code wherever you want. Thi can be done even inside the same file that contains the class definition, outside the definition itself.
+\begin{lstlisting}[language=JavaScript]
+Monolith.Bubble.addBubble("key", function(message){
+    // Create the bubble
+    let customBubble = new CustomBubble(params);
+    
+    // Perform the operations you want
+    customBubble.customOperation();
+    
+    // Return the setup bubble
+    return customBubble;
+});
+\end{lstlisting}
+Please note that this function takes two parameters:
+	\begin{enumerate}
+		\item A \texttt{string} which defines the unique key that identifies your custom bubble.   \\
+   		A good naming conventions for this key would be using the \url{reverse domain name notation}{https://en.wikipedia.org/wiki/Reverse_domain_name_notation} (e.g. \texttt{com.mycompany.bubble.custom}) which allows you to identify your custom bubble type among all the other bubbles types.
+		\item A \texttt{function} which takes as parameter a \texttt{message} object that identifies a \url{Rocket.chat message}{https://rocket.chat/docs/developer-guides/realtime-api/the-message-object/}.  \\
+   This function is the one that creates the bubble, taking data from the parameter object, performs operation on it if there's the need, and then return it.
+   \end{enumerate}
+\end{enumerate}   
+   
+\textbf{Note} \\
+All of the written above should be made \textbf{only} inside the \texttt{client} directory of your Meteor project, otherwise it will make your application crash.
+
+\newpage

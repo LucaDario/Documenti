@@ -259,7 +259,7 @@ dove:
   \item Documenti \textbf{da verificare}.
   \item Documenti \textbf{approvati}.
 \end{itemize}
-I documenti \textbf{in lavorazione} sono quelli in fase di stesura da parte del relativo redattore. Ultimata la loro realizzazione questi documenti vengono segnati come \textbf{da verificare} e passano in mano al relativo \Ver. Infine i documenti \textbf{verificati} vengono consegnati al \Pm che avrà il compito di approvarli definitivamente. Nella figura 1.0 è rappresentato lo schema del ciclo di vita di un documento
+I documenti \textbf{in lavorazione} sono quelli in fase di stesura da parte del relativo redattore. Ultimata la loro realizzazione questi documenti vengono segnati come \textbf{da verificare} e passano in mano al relativo \Ver. Infine i documenti \textbf{verificati} vengono consegnati al \Pm{} che avrà il compito di approvarli definitivamente. Nella figura 1.0 è rappresentato lo schema del ciclo di vita di un documento
 
 \subsubsection{Documentazione dei file contenente codice}
 All'interno di un progetto \termine{open source} un'altra caratteristica di fondamentale importanza risulta essere la documentazione. \\
@@ -788,6 +788,7 @@ L'analisi dinamica viene applicata solamente al software prodotto in quanto cons
 
 \subsubsection{Strumenti per l'analisi statica}
 \begin{itemize}
+  \item \textbf{\termine{Jenkins}}: software che permette l'integrazione di vari altri software per l'analisi statica e dinamica, fornendo un luogo dove lo sviluppatore può controllare facilmente il report dei vari test eseguiti.
   \item \textbf{\termine{SonarQube}}: strumento che esegue una serie di ispezioni sul codice in modo statico, andando a misurare un insieme di parametri per determinare poi se il codice sorgente soddisfa o meno i requisiti di qualità scelti dal \termine{team}. Tra i vari parametri misurati si ritrovano:
   \begin{itemize}
     \item \textbf{\termine{Complessità ciclomatica}}: misura la complessità delle classi, dei metodi e delle funzioni del programma.
@@ -821,23 +822,31 @@ In particolare il tool  controlla.
 \item Uso di etichette identificative per i cicli.
 \end{itemize}
 
-\subsubsection{Strumenti per l'analisi dinamica}
-\begin{itemize}
-  \item \textbf{\termine{Jenkins}}: software che permette l'integrazione di vari altri software per l'analisi statica e dinamica, fornendo un luogo dove lo sviluppatore può controllare facilmente il report dei vari test eseguiti.
-  \item \textbf{\termine{Mocha}}: \termine{framework} che permette di eseguire test di unità e di integrazione andando a creare dei \termine{mock} che simulino il comportamento delle varie parti, con lo scopo di testare ogni dettaglio in modo indipendente dal resto.
-  \item \textbf{\termine{Chai}}: libreria per formulare asserzioni sull'output atteso.
-  \item \textbf{\termine{Sinon}}: libreria per simulare delle risposte di richieste a server remoti.
+\subsection{Processo di validazione}
 
+Il processo di validazione ha come obiettivo quello di verificare le seguenti cose:
+\begin{itemize}
+\item Il prodotto finale sia conforme alle attese e rispetti quanto pianificato in precedenza.
+\item Il prodotto finale abbia le caratteristiche di qualità precedentemente descritte.
 \end{itemize}
 
-\subsection{Processo di validazione}
-Per assicurarsi la validità del codice scritto, colui che assegna i task deve assicurarsi, una volta conclusi, il pieno soddisfacimento dei requisiti che esso proponeva. \\
-I metodi usati per un'adeguata validazione finale vengono trattati più approfonditamente all'interno del documento \pianoDiQualifica.
-Gli strumenti utilizzati per eseguire i test qui sotto descritti sono stati elencati nell' analisi dinamica.
+L'attività di validazione viene descritta con più precisione nel documento \pianoDiQualifica{}
+
+\subsubsection{Ruoli e responsabilità}
+
+La forma più efficace per fare analisi dinamica è quella di progettare ed eseguire dei Test automatici. Essi fungono da ottimo strumento per la validazione del codice.
+I ruoli coinvolti, in questo processo, sono:
+\ProgP{}, \ProgrP{}, \VerP{} e \Pm{}. Di seguito verranno elencati i loro compiti e responsabilità.
+\begin{itemize}
+\item i \ProgP{} hanno il compito di progettare dei test che garantiscano efficacia al prodotto che verrà realizzato.
+\item i \ProgrP{} hanno il compito di implementare tutti i test individuati e progettati da \ProgP{}.
+\item i \VerP{} hanno il compito di eseguire con attenzione i test tramite l'apposito comando \termine{Meteor} che sfrutta il \termine{framework} \termine{Mocha}. Essi devono, inoltre, tracciare i risultati al fine di valutarli con precisione.
+\item il \Pm{} ha il compito di revisionare i risultati dei test forniti dai \VerP{} e deve decidere se accettarli o ripeterli. In caso di dubbi su tale decisione, egli dovrà contattare il committente per poter arrivare al più presto ad una scelta. Nel caso in cui	il \Pm{} avesse già accettato l'esito dei test, egli dovrà comunque contattare il committente per comunicargli i risultati ottenuti.
+\end{itemize}
 
 \subsubsection{Test}
-Posiamo individuare delle tipologie standard di test.
-Per eseguirli 
+
+Di seguito verranno elencate tutte le tipologie di Test che il gruppo ha deciso di implementare.
 
 \paragraph{Test di unità}
 I test di unità verificano che ogni singola componente del software funzioni correttamente. Effettuando questi test di riduce al minimo la presenza di errori di tutte le componenti di base. I test di unità sono identificati dalla seguente sintassi:
@@ -869,14 +878,19 @@ componente del software prodotto che ha subito delle modifiche. I test di regres
   TR[Codice Test]
 \end{center}
 
-
-
-
 \subsubsection{Test di validazione}
 Il test di validazione coincide con il collaudo del software in presenza del \textit{proponente} e determina, in caso di esito positivo, il rilascio del software. I test di validazione sono identificati dalla seguente sintassi:
 \begin{center}
   TV[Codice requisito]
 \end{center}
+
+\subsubsection{Strumenti per l'analisi dinamica}
+
+\begin{itemize}
+\item \textbf{\termine{Mocha}}: \termine{framework} che permette di eseguire test di unità e di integrazione andando a creare dei \termine{mock} che simulino il comportamento delle varie parti, con lo scopo di testare ogni dettaglio in modo indipendente dal resto.
+  \item \textbf{\termine{Chai}}: libreria per formulare asserzioni sull'output atteso.
+  \item \textbf{\termine{Sinon}}: libreria per simulare delle risposte di richieste a server remoti.
+\end{itemize}
 
 \subsection{Processi per la risoluzione dei problemi}
 Per ogni problema trovato all'interno del progetto (sia esso di qualunque natura e importanza), esso viene inserito all'interno di un documento non ufficiale presente nella \termine{repository} di documenti. \\

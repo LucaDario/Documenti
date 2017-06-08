@@ -325,6 +325,14 @@ La \termine{Repository} su \termine{GitHub} sarà divisa in due branch, in entra
 
 Tutti i \textit{Programmatori} dovranno sviluppare nel ramo \textit{development}. Potranno, una volta terminata e testata la parte assegnata, effettuare una richiesta per il \termine{merge} sul \textit{master}.
 
+\subparagraph{Effettuare una pull request}
+
+Una volta che il codice è stato completamente scritto, documentato e testato, il \Prog{} dovrà, oltre ad avvisare gli altri membri del gruppo con gli appositi strumenti, richiedere una \termine{pull-request}, tramite GitHub, sul ramo-master. Il \Pm{}, a quel punto, deve decidere se accettare o meno la richiesta dopo una breve discussione con i \VerP{}, che a loro volta devono aver controllato e testato il codice.
+
+\paragraph{Gestione dei problemi}
+
+Quando vengono individuati dei malfunzionamenti o dei problemi che non si riescono a risolvere da soli, si dovrà, tramite lo strumento GitHub, aprire una \textit{issue}. Essa consiste nel descrivere un problema al quale successivamente l'intero \termine{team} si impegnerà a risolvere. Lo scopo principale di quest'attività è quello, non solo di trovare una soluzione accettabile, ma anche quello di coinvolgere utenti esterni al gruppo, in modo da poter creare, e successivamente sfruttare, una \termine{community} di persone. Inoltre, ciò è fatto anche per quegli utenti, che usando l'\textit{Monolith} o \textit{Bring-it} da poco, si trovano innanzi a problemi già affrontati, in modo tale da aiutarli a trovare presto la soluzione ideale.
+
 \paragraph{Analisi statica}
 
 Per effettuare l’analisi statica del codice scritto è possibile utilizzare \termine{SonarQube}. Questo strumento ad ogni \termine{push} effettuata nel \termine{Repository} controllerà i parametri di qualità statici definiti dalle metriche trovate dal gruppo. Nel caso in cui, tali parametri, non fossero superati i \textit{Programmatori} dovranno provvedere, al più presto, a correggere gli errori con un successivo \termine{push}. Ciò è necessario poiché non sarà possibile fare il \termine{merge} delle modifiche dal ramo \textit{development} al ramo \textit{master} senza che i parametri di qualità vengano superati.

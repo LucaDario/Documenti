@@ -1,28 +1,28 @@
 \section{Introduction}
 \subsection{Purporse}
-The following document will explain how to use Monolith - An interactive bubble provider, the stand-alone \url{Atmosphere.js}{https://atmospherejs.com/}-hosted package developed by \url{NPE Developers}{https://github.com/NPE-Developers}. \\
+The following document will explain how to use \termine{Monolith} - An interactive bubble provider, the stand-alone \url{Atmosphere.js}{https://atmospherejs.com/}-hosted package developed by \url{NPE Developers}{https://github.com/NPE-Developers}. \\
 
-The purpose of Monolith is to provide an SDK which will let the developer that uses it create one of the default bubble types that are present inside it, or extends them to create new kinds of bubble, that will be shown inside a \url{Rocket.chat}{https://rocket.chat/} room as interactive messages.
+The purpose of \termine{Monolith} is to provide an \termine{SDK} which will let the developer that uses it create one of the default bubble types that are present inside it, or extends them to create new kinds of bubble, that will be shown inside a \url{\termine{Rocket.chat}}{https://rocket.chat/} room as interactive messages.
 
 \subsection{Recipients}
-This documents has been written thinking about all the developers that will use Monolith inside their Meteor's project. Because of that, the language used is highly specific and detailed.
+This documents has been written thinking about all the developers that will use \termine{Monolith} inside their Meteor's project. Because of that, the language used is highly specific and detailed.
 
 \subsection{Contents}
 This guide contains all the information about how to create, use or extend each kind of widget, layout or bubble that is already present inside Monolith. \\
-Before all of that, it will also explain how to install Monolith and getting started for using it.
+Before all of that, it will also explain how to install \termine{Monolith} and getting started for using it.
 
 \subsection{Getting started}
-To install Monolith you will need the following things:
+To install \termine{Monolith} you will need the following things:
 \begin{itemize}
 	\item an internet connection;
-	\item the knowledge on how to setup a Meteor project.
+	\item the knowledge on how to setup a \termine{Meteor} project.
 \end{itemize}
 
-In order to include Monolith inside your Meteor project, you have to do as follows.
+In order to include \termine{Monolith} inside your \termine{Meteor} project, you have to do as follows.
 \begin{enumerate}
 	\item Create a root folder (let's call it \texttt{root}) and put your project's root folder (let's call it \texttt{project}) inside it.
 	
-	\item Clone the current \url{Monolith GitHub repo}{https://github.com/NPE-Developers/monolith} inside a folder (let's call it \texttt{monolith}) and put that folder inside the \texttt{root} folder. \\
+	\item Clone the current \url{Monolith \termine{GitHub} repo}{https://github.com/NPE-Developers/monolith} inside a folder (let's call it \texttt{monolith}) and put that folder inside the \texttt{root} folder. \\
 Once you have done so, you should have a folder tree that looks like the following:
 	\begin{lstlisting}
     root
@@ -33,7 +33,7 @@ Once you have done so, you should have a folder tree that looks like the followi
 
 	\end{lstlisting}
 	
-	\item Now add an ambient's variable with the following name and value.
+	\item Now add an ambient variable with the following name and value.
 	\begin{itemize}
 		\item Name: \texttt{METEOR\_PACKAGE\_DIRS}
 		\item Value:  Path to the \texttt{root} folder
@@ -49,7 +49,7 @@ Once you have done so, you should have a folder tree that looks like the followi
 
 \end{enumerate}
 
-\textbf{Note}. This procedure will erase all the temporary files that might have been created during previous project runs (such as databases, logs, etc.), but it will ensure that Monolith is properly installed.
+\textbf{Note}. This procedure will erase all the temporary files that might have been created during previous project runs (such as databases, logs, etc.), but it will ensure that \termine{Monolith} is properly installed.
 
 
 \subsection{General knowledge on classes' structure}
@@ -69,7 +69,7 @@ This class than extends into two classes:
 
 
 \subsubsection{\texttt{BaseWidget (extends BaseComponent)}}
-Represents a base widget, which is the most basic part that a bubble is composed of.
+Represents a base \termine{widget}, which is the most basic part that a bubble is composed of.
 This class extends into the following widget classes:
 \begin{itemize}
 	\item \texttt{TextWidget} : represent a text that can be formatted using the Markdown notation;

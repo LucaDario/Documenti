@@ -28,6 +28,6 @@ def ignore_file(ignore_list, file_path):
     """
     file_name = ntpath.basename(file_path)
     for ignore_f in ignore_list:
-        if re.match(ignore_f, file_name) is not None:
+        if re.match(ignore_f, file_name) is not None or re.match(ignore_f, file_path):
             return True
     return False

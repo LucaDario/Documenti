@@ -791,8 +791,8 @@
       },
       {
         "description": "Si verifica che sia possibile rimuovere, per un utente con i permessi ed al creatore, un elemento ad una bolla \"lista della spesa\"",
-        "implemented": false,
-        "passed": false,
+        "implemented": true,
+        "passed": true,
         "approved": false,
         "type": "F",
         "importance": "F"
@@ -874,7 +874,7 @@
 
   "Test di validazione": {
     "id_config": "TV[type][importance]#POS#",
-    "skip_not_approved": false,
+    "skip_not_approved": true,
     "tests": [
       {
         "description": "Si verifica che sia possibile scaricare l'SDK tramite il gestore dei pacchetti Atmosphere",
@@ -888,7 +888,7 @@
         "description": "Si verifica che l'SDK sia utilizzabile dall'applicazione di demo",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -896,7 +896,7 @@
         "description": "Si verifica che sia possibile istanziare tutti i widget che sono inclusi nell'SDK",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -904,7 +904,7 @@
         "description": "Si verifica che sia possibile istanziare tutti i layout che sono inclusi nell'SDK",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -912,7 +912,7 @@
         "description": "Si verifica che sia possibile istanziare tutte le bolle che sono incluse nell'SDK",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -920,7 +920,7 @@
         "description": "Si verifica che sia possibile comporre una bolla personalizzata mediante widget e layout",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -928,7 +928,7 @@
         "description": "Si verifica che un generico utente possa creare un lista della spesa e pubblicarla all'interno di un canale Rockt.chat",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -936,7 +936,7 @@
         "description": "Si verifica che un generico utente possa creare un lista della spesa e pubblicarla ad un singolo utente avente un account sull'istanza Rocket.chat su cui è installata l'SDK",
         "implemented": false,
         "passed": false,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -944,7 +944,7 @@
         "description": "Si verifica che, se un utente ha i permessi per interagire con una bolla, quest'ultima sia in grado di visualizzare gli elementi e di spuntarli",
         "implemented": false,
         "passed": false,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -952,7 +952,7 @@
         "description": "Si verifica che, se un utente inoltra una lista della spesa, quest'ultima venga inoltrata in forma testuale bloccando quindi ogni forma di interazione con l'utente",
         "implemented": false,
         "passed": false,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -960,7 +960,7 @@
         "description": "Si verifica che tutti i file che contengono codice scritto in JavaScript o coffescript passino i test di linting",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "V",
         "importance": "O"
       },
@@ -968,7 +968,7 @@
         "description": "Si verifica che l'SDK si installi correttamente in una istanza di Rocket.chat, della quale viene fatto hosting su Heroku",
         "implemented": false,
         "passed": false,
-        "approved": false,
+        "approved": true,
         "type": "V",
         "importance": "O"
       },
@@ -976,7 +976,7 @@
         "description": "Si verifica che l'SDK funzioni con il browser Chrome versione >= 56",
         "implemented": false,
         "passed": false,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -984,7 +984,7 @@
         "description": "Si verifica che l'SDK funzioni con il browser Safari versione >= 10",
         "implemented": false,
         "passed": false,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -992,7 +992,7 @@
         "description": "Si verifica che l'SDK funzioni con il browser Opera versione >= 43",
         "implemented": false,
         "passed": false,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -1000,7 +1000,7 @@
         "description": "Si verifica che l'SDK funzioni con il browser Firefox versione >= 45",
         "implemented": false,
         "passed": false,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -1008,7 +1008,7 @@
         "description": "Si verifica che l'SDK funzioni con il browser Microsoft Edge versione >= 13",
         "implemented": false,
         "passed": false,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       }

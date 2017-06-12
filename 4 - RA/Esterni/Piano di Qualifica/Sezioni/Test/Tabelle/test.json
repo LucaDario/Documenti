@@ -244,12 +244,6 @@
         "approved": false
       },
       {
-        "description": "Verificare che l'immagine della lista della spesa venga impostata in modo corretto",
-        "implemented": false,
-        "passed": false,
-        "approved": false
-      },
-      {
         "description": "Verificare che nel caso di un errore durante l'aggiunta di un prodotto alla lista della spesa venga mostrato un mesaggio di errore",
         "implemented": true,
         "passed": true,
@@ -511,8 +505,8 @@
       },
       {
         "description": "Si verifica che CreateListViewPresenter interagisca con ChatSource in modo corretto",
-        "implemented": false,
-        "passed": false,
+        "implemented": true,
+        "passed": true,
         "approved": false
       },
       {

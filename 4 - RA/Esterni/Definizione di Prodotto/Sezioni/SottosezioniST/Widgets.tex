@@ -657,6 +657,22 @@
 		\item \textit{useMark:boolean}\\
 		Se questo è a true la visualizzazione della spunta viene effettuata con un carattere, altrimenti la visualizzazione viene effettuata con un colore.
 		\end{itemize}  
+		\item \textit{setTextColor(color:string):void}\\
+		Imposta il colore del testo dell'etichetta del widget.
+		\\ \textbf{Parametri}: \begin{itemize}
+		\item \textit{colort:string}\\
+		Il colore che verrà impostato al testo dell'etichetta del widget.
+		\end{itemize}
+		\item \textit{getTextColor():string}\\
+		Restituisce il colore del testo dell'etichetta del widget.
+		\item \textit{setNotSelectedColor(color:string):void}\\
+		Imposta il colore di sfondo del box di un elemento non ancora selezionato.
+		\\ \textbf{Parametri}: \begin{itemize}
+		\item \textit{color:string}\\
+		Il colore sfondo che verrà impostato al box di spunta.
+		\end{itemize}
+		\item \textit{getNotSelectedColor():string}\\
+		Restituisce il colore di sfondo del box di un elemento non ancora selezionato.
 	\item \textit{public setSelectionColor(color:string):void}\\
 	Imposta il colore con il quale effettuare la visualizzazione delle spunte.
 		\\ \textbf{Parametri}: \begin{itemize}
@@ -734,6 +750,22 @@
 		\item \textit{useMark:boolean}\\
 		Se questo è a true la visualizzazione della spunta viene effettuata con un carattere, altrimenti la visualizzazione viene effettuata con un colore.
 		\end{itemize}  
+		\item \textit{setTextColor(color:string):void}\\
+		Imposta il colore del testo dell'etichetta del widget.
+		\\ \textbf{Parametri}: \begin{itemize}
+		\item \textit{colort:string}\\
+		Il colore che verrà impostato al testo dell'etichetta del widget.
+		\end{itemize}
+		\item \textit{getTextColor():string}\\
+		Restituisce il colore del testo dell'etichetta del widget.
+		\item \textit{setNotSelectedColor(color:string):void}\\
+		Imposta il colore di sfondo del box di un elemento non ancora selezionato.
+		\\ \textbf{Parametri}: \begin{itemize}
+		\item \textit{color:string}\\
+		Il colore sfondo che verrà impostato al box di spunta.
+		\end{itemize}
+		\item \textit{getNotSelectedColor():string}\\
+		Restituisce il colore di sfondo del box di un elemento non ancora selezionato.
 	\item \textit{public setSelectionColor(color:string):void}\\
 	Imposta il colore con il quale effettuare la visualizzazione delle spunte.
 		\\ \textbf{Parametri}: \begin{itemize}
@@ -818,6 +850,22 @@
 		\item \textit{id:string}\\
 		L'identificativo del widget.
 		\end{itemize}
+		\item \textit{setTextColor(color:string):void}\\
+		Imposta il colore del testo dell'etichetta del widget.
+		\\ \textbf{Parametri}: \begin{itemize}
+		\item \textit{colort:string}\\
+		Il colore che verrà impostato al testo dell'etichetta del widget.
+		\end{itemize}
+		\item \textit{getTextColor():string}\\
+		Restituisce il colore del testo dell'etichetta del widget.
+		\item \textit{setNotSelectedColor(color:string):void}\\
+		Imposta il colore di sfondo del box di un elemento non ancora selezionato.
+		\\ \textbf{Parametri}: \begin{itemize}
+		\item \textit{color:string}\\
+		Il colore sfondo che verrà impostato al box di spunta.
+		\end{itemize}
+		\item \textit{getNotSelectedColor():string}\\
+		Restituisce il colore di sfondo del box di un elemento non ancora selezionato.
 	\item \textit{private createOption(optionText:string,check:boolean):void}\\
 	Questo metodo crea il DOM del checklistItemWidget.
 	\item \textit{private setDomStyle():void}\\
@@ -948,6 +996,10 @@
 \item \textbf{Utilizzo}: Il suo utilizzo è legato alla scelta visuale dello sviluppatore per quanto riguarda lo stile con il quale viene evidenziata una selezione nel ChecklistItemWidget.
 \item \textbf{Attributi}:
 	\begin{itemize}
+	\item \textit{private notSelectedColor:string}\\
+	Il colore di sfondo del box di spunta per un elemento non ancora selezionato.
+	\item \textit{private textColor:string}\\
+	Il colore del testo dell'etichetta del widget.
 	\item \textit{private selectionCharacter:string}\\
 	Il carattere che viene utilizzato per la spunta del ChecklistItemWidget.
 	\item \textit{private useSelectionMark:boolean}\\
@@ -965,6 +1017,22 @@
 		\item \textit{character:string}\\
 		Il carattere scelto per visualizzare le spunte.
 		\end{itemize} 
+		\item \textit{setTextColor(color:string):void}\\
+		Imposta il colore del testo dell'etichetta del widget.
+		\\ \textbf{Parametri}: \begin{itemize}
+		\item \textit{colort:string}\\
+		Il colore che verrà impostato al testo dell'etichetta del widget.
+		\end{itemize}
+		\item \textit{getTextColor():string}\\
+		Restituisce il colore del testo dell'etichetta del widget.
+		\item \textit{setNotSelectedColor(color:string):void}\\
+		Imposta il colore di sfondo del box di un elemento non ancora selezionato.
+		\\ \textbf{Parametri}: \begin{itemize}
+		\item \textit{color:string}\\
+		Il colore sfondo che verrà impostato al box di spunta.
+		\end{itemize}
+		\item \textit{getNotSelectedColor():string}\\
+		Restituisce il colore di sfondo del box di un elemento non ancora selezionato.
 	\item \textit{public setUseSelectionMark(useMark:boolean):void}\\
 	Imposta l'utilizzo del carattere o del colore per evidenziare la spunta di un ChecklistItemWidget.
 		\\ \textbf{Parametri}: \begin{itemize}

@@ -834,14 +834,14 @@ L'attività di validazione viene descritta con più precisione nel documento \pi
 
 \subsubsection{Ruoli e responsabilità}
 
-La forma più efficace per fare analisi dinamica è quella di progettare ed eseguire dei Test automatici. Essi fungono da ottimo strumento per la validazione del codice.
+La forma più efficace per fare analisi dinamica è quella di progettare ed eseguire dei \textbf{Test automatici}. Essi fungono da ottimo strumento per la validazione del codice.
 I ruoli coinvolti, in questo processo, sono:
 \ProgP{}, \ProgrP{}, \VerP{} e \Pm{}. Di seguito verranno elencati i loro compiti e responsabilità.
 \begin{itemize}
 \item i \ProgP{} hanno il compito di progettare dei test che garantiscano efficacia al prodotto che verrà realizzato.
 \item i \ProgrP{} hanno il compito di implementare tutti i test individuati e progettati da \ProgP{}.
 \item i \VerP{} hanno il compito di eseguire con attenzione i test tramite l'apposito comando \termine{Meteor} che sfrutta il \termine{framework} \termine{Mocha}. Essi devono, inoltre, tracciare i risultati al fine di valutarli con precisione.
-\item il \Pm{} ha il compito di revisionare i risultati dei test forniti dai \VerP{} e deve decidere se accettarli o ripeterli. In caso di dubbi su tale decisione, egli dovrà contattare il committente per poter arrivare al più presto ad una scelta. Nel caso in cui	il \Pm{} avesse già accettato l'esito dei test, egli dovrà comunque contattare il committente per comunicargli i risultati ottenuti.
+\item il \Pm{} ha il compito di revisionare i risultati dei test forniti dai \VerP{} e deve decidere se accettarli o ripeterli. In caso di dubbi, egli dovrà contattare il committente per poter arrivare al più presto ad una decisione. Nel caso in cui	il \Pm{} avesse già accettato l'esito dei test, egli dovrà comunque contattare il committente per comunicargli i risultati ottenuti.
 \end{itemize}
 
 \subsubsection{Test}
@@ -853,13 +853,16 @@ I test di unità verificano che ogni singola componente del software funzioni co
 \begin{center}
   TU[Codice Test]
 \end{center}
-Lo sviluppatore avrà quindi il compito di svolgere dei test per vedere se l'unità da lui creata soddisferà i requisiti presenti nel analisi. Dovrà essere quindi esplicato in maniera tabellare e chiara quali requisiti sono stati soddisfatti dal unità correalata e attraverso quali test è stato verificato il processo.
+Lo sviluppatore avrà quindi il compito di implementare i test individuati dai \ProgP{} al fine di garantire la correttezza di ogni frammento di codice individuato, ognuno dei quali corrisponderà alla parte più piccola di software testabile.
+Per il più comune approccio di test di unità è necessaria la scrittura di \termine{driver} e \termine{stub}. Il driver simula un’unità chiamante mentre lo stub simula un’unità chiamata.
 
 
 
 \paragraph{Test di integrazione}
 I test di integrazione verificano che più unità, validate singolarmente, funzionino
-correttamente una volta assemblate. I test di integrazione sono identificati dalla seguente sintassi:
+correttamente una volta assemblate. Il più semplice di questo tipo di test consiste nella combinazione di due unità, già sottoposte a test, in un solo componente e nel test dell’interfaccia presente tra le due.
+\\
+I test di integrazione sono identificati dalla seguente sintassi:
 \begin{center}
   TI[Codice Test]
 \end{center}

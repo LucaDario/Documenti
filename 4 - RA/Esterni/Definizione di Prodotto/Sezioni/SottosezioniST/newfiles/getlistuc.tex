@@ -89,6 +89,14 @@
 			\item \textit{contactId:string}\\
 			L'id dell'utente al quale si vuole condividere la lista.
 					\end{itemize} 
+	\item \textit{public removeListPermission(listId:Mongo.ObjectID,contactId:string):void}\\
+	Questo metodo rimuove un certo utente da una particolare lista.
+				\\ \textbf{Parametri}: \begin{itemize}
+			\item \textit{listId:Mongo.ObjectID}\\
+			L'id della lista dalla quale si vuole rimuovere un utente.
+			\item \textit{contactId:string}\\
+			L'id dell'utente che si vuole rimuovere dalla lista.
+					\end{itemize}
 	\end{itemize}
 \item \textbf{Eventi}:
 \end{itemize}

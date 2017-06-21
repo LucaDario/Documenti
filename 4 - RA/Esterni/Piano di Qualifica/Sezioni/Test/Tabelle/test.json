@@ -1,7 +1,7 @@
 {
   "Test di unità": {
     "id_config": "TU#POS#",
-    "skip_not_approved": false,
+    "skip_not_approved": true,
     "tests": [
       {
         "description": "Verificare che in un widget di tipo testo venga impostata in modo corretto la grandezza del font del testo",
@@ -13,253 +13,253 @@
         "description": "Verificare che all'instanziazione di un widget di tipo testo la grandezza del testo sia di default a 1em",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che all'interno di un widget di tipo testo venga impostata in corsivo la parte di testo richiesta",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che all'interno di un widget di tipo testo venga inserito un link cliccabile nel modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che all'interno di un widget di tipo testo i link cliccabili abbiano il colore corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che all'interno di un widget di tipo testo venga impostata in grassetto la parte di testo richiesta",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che all'interno di un widget di tipo testo venga impostato il colore del testo in modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che all'instanziazione di un widget di tipo testo il colore del testo sia di default a nero",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un widget di tipo immagine l'immagine venga agiunta in modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un widget di tipo immagine venga mostrato il messaggio di errore appropriato nel caso si inserisca un immagina non valida",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che un widget di tipo immagine venga impostata la dimensione del immagine da visualizzare in modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che all'instanziazione di un widget di tipo immagine venga impostata la larghezza e l'altezza di default",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare un widget di tipo immagine venga visualizzato con le dimensioni corrette",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un widget di tipo bottone venga impostato il testo in modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che venga mostrarto in modo corretto il messaggio di errore se viene inserita una sequenza di caratteri non valida in un widget di tipo bottone",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che un widget di tipo bottone venga impostata la dimensione in modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che all'instanziazione di un widget di tipo bottone venga impostata la larghezza e l'altezza di default",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un widget di tipo bottone venga impostato il colore di sfondo in modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che all'instanziazione di un widget di tipo bottone venga impostato il colore di sfondo di default",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un widget di tipo button vengano eseguiti gli eventi associati alla pressione",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un widget di tipo button vengano eseguiti gli eventi associati alla pressione pressione prolungata",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un widget di tipo button venga impostato in modo corretto la soglia per determinare che una pressione da parte del utente è di tipo: \"pressione prolungata\"",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che un un widget di tipo checklistitem venga cambiato in modo corretto la stato da \"cliccato\" a \"non cliccato\" e viceversa",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che all'instanziazione di un widget di tipo checklistitem venga impostato lo stato a \"non cliccato\"",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che un widget di tipo checklistitem venga visualizzato con lo stile di spunta e colore corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un widget di tipo checklistitem vengano associati gli eventi di pressione nel modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un widget di tipo checklistitem vengano associati gli eventi di pressione prolungata nel modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un widget di tipo checklistitem vengano eseguiti gli eventi associati alla pressione",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un widget di tipo checklistitem vengano eseguiti gli eventi associati alla pressione pressione prolungata",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un widget di tipo checklistitem venga impostato in modo corretto la soglia per determinare che una pressione da parte del utente è di tipo: \"pressione prolungata\"",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un widget di tipo list venga impostato correttamente il cambiamento dell'indicatore a 'pallino'",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un widget di tipo list venga impostato correttamente il cambiamento dell'indicatore a 'trattino'",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un widget di tipo list venga impostato correttamente il cambiamento dell'indicatore ad elenco numerato",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un widget di tipo list che vengano aggiunti correttamente tutti gli elementi",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un layout verticale sia possibile aggiungere un elemento",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un layout verticale non sia possibile aggiungere se stesso",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un layout orizzontale sia possibile aggiungere un elemento",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che in un layout orizzontale non sia possibile aggiungere se stesso",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che il nome della lista della spesa venga impostato nel modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che all'instanziazione di una lista della spesa venga impostato il valore di default per il nome della lista",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che nel caso di un errore durante l'aggiunta di un prodotto alla lista della spesa venga mostrato un mesaggio di errore",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che l'immagine del prodotto venga aggiunta in modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che la descrizione del prodotto venga aggiunta in modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che le note del prodotto vengano aggiunte in modo corretto",
@@ -271,91 +271,91 @@
         "description": "Verificare che la quantità del prodotto venga impostata in modo corretto quando inserita",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che alla creazione di un nuovo prodotto venga impostata la quantità di default",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che l'unità di misura relativa alla quantità del prodotto venga impostata in modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che alla creazione di un nuovo prodotto venga impostata l'unità di misura di default",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che DatabaseSource ritorni la lista che corrisponde all'id inserito",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che DatabaseSource ritorni l'oggetto che corrisponde all'id inserito",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che DatabaseSource cancelli la lista che corrisponde all'id inserito",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che DatabaseSource salvi correttamente la lista nel database",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che ModifyListUseCase aggiunga correttamente un item alla lista nel database",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che ModifyListUseCase rimuova correttamente un item alla lista nel database",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che ModifyListUseCase aggiorni correttamente un item alla lista nel database",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che DeleteListViewPresenter funzioni correttamente senza lanciare eccezioni",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che InputListInfoViewPresenter crei correttamente un elemento della lista",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che ShareWithGroupViewPresenter funzioni correttamente senza lanciare eccezioni",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Verificare che ShareWithContactViewPresenter funzioni correttamente senza lanciare eccezioni",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       }
 
     ]
@@ -363,170 +363,170 @@
 
   "Test di integrazione": {
     "id_config": "TI#POS#",
-    "skip_not_approved": false,
+    "skip_not_approved": true,
     "tests": [
       {
         "description": "Si verifica che il metodo ButtonWidget::setText passi correttamente il testo al presenter il quale eventualmente lo formatterà e modificherà correttamente l'HTML e CSS",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo ButtonWidget::setHeight passi correttamente il valore dell'altezza al presenter il quale modificherà correttamente l'HTML e CSS",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo ButtonWidget::setWidth passi correttamente il valore della lareghezza al presenter modificherà correttamente l'HTML e CSS",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo ButtonWidget::setBackgroundColor passi correttamente il colore dello sfondo del bottone al presenter il quale modificherà correttamente l'HTML e CSS",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo ButtonWidget::setOnClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene premuto il pulsante",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo ButtonWidget::setOnLongClickAction passi correttamente al presenter la funzione che verrà eseguita quanto viene mantenuto premuto il pulsante",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo TextWidget::setText passi correttamente al presenter il testo che verrà poi mostrato a video",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo TextWidget::setTextColor passi correttamente il colore del testo al presenter il quale modificherà correttamente l'HTML e CSS, presentandolo con il colore corrispondente",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo TextWidget::setFormatText passi il valore booleano (che rappresenta la scelta di formattare il testo) al presenter. Esso dovrà, poi, presentare il testo formattato seguendo la sintassi markdown oppure lasciarlo invariato in funzione al valore booleano",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo TextWidget::setUrlHighlightColor passi il valore del colore al presenter il quale dovrà presentare i link evidenziati oppure non evidenziati in funzione al colore scelto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo TextWidget::setTextSize passi la dimensione del testo del presenter il quale dovrà occuparsi di presentare il testo della dimensione impostata",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo ChecklistItemWidget::setUseSelectionMark imposti la scelta di utilizzare un carattere o un colore come spunta passando correttamente per il Presenter",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo ChecklistItemWidget::setSelectionColor passi al presenter il colore dello spunta il quale dovrà presentare la lista con lo stile corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo ChecklistItemWidget::setSelectionCharacter passi al presenter un carattere per la spunta, e il presenter dovrà presentare la lista con lo stile corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo ListWidget::addItem passi al presenter il testo del elemento il quale dovrà presentare l'HTML con il nuovo elemento",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che la view passi al presenter il carattere con il quale mostrare gli indicatori della lista. Esso provvederà poi ad impostarli correttamente nell'HTML",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo ImageWidget::setWidth passi correttamente al presenter il valore dell'altezza il quale aggiornerà la view",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo ImageWidget::setHeight passi correttamente al presenter il valore della larghezza il quale aggiornerà la view",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il metodo ImageWidget::setImage passi correttamente al presenter il path del'immagine che dovrà essere presentata nella view",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che l'aggiunta di un VerticalLayoutView, creato con degli elementi al suo interno, non causi errori nell'aggiunta di questo alla bolla e che, gli elementi, nel layout appena aggiunto, vengano mostrati uno sotto l'altro",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che l'aggiunta di un HorizontalLayoutView, creato con degli elementi al suo interno, non causi errori nell'aggiunta di questi alla bolla e che gli elementi, nel layout appena aggiunto, vengano mostrati uno vicino all'altro",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che il ModifyListUseCase esegua le operazioni di aggiunta, rimozione e aggiornamento dei dati trammite DatabaseSource in modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che ShareWithGroupViewPresenter interagisca in modo corretto con ChatSource",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che CreateListViewPresenter interagisca con ChatSource in modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che ShareListUseCase interagisca in modo corretto con DatabaseSource",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che ManageListUseCase interagisca con DatabaseSource rimuovendo e aggiungendo una lista dal database in modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
 
       {
         "description": "Si verifica che DeleteListViewPresenter interagisca con ShowPopupUseCase mostrando il popup di eliminazione della lista",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che ForwardListUseCase interagisca in modo corretto con ChatSource al fine di inoltrare la lista selezionata",
@@ -538,110 +538,110 @@
         "description": "Si verifica che GetListInfoUseCase esegua i fetch dei dati in modo corretto dal database tramite DatabaseSource",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che ChangeListInfoViewPresenter interagisca in modo corretto con ModifyListUseCase",
         "implemented": false,
         "passed": false,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che ChangeListInfoViewPresenter interagisca in modo corretto con ShowPopupUseCase",
         "implemented": false,
         "passed": false,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che ShareWithGroupViewImpl interagisca in modo corretto con ShareWithGroupViewPresenter",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che ShareWithContactViewImpl interagisca in modo corretto con ShareWithContactViewPresenter",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che GetItemInfoUseCase interagisca in modo corretto con DatabaseSource",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che ModifyItemPresenter interagisca in modod corretto con ModifyListUseCase",
         "implemented": false,
         "passed": false,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che ModifyItemPresenter interagisca in modod corretto con ShowPopupUseCase",
         "implemented": false,
         "passed": false,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che ModifyItemView interagisca in modod corretto con ModifyItemPresenter",
         "implemented": false,
         "passed": false,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che ModifyListUseCase interagisca in modo corretto con DatabaseSource",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ChatSource",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che ShareWithContactViewPresenter interagisca in modo corretto con ShowPopupUseCase",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che CreateListViewImpl interagisca in modo corretto con CreateListViewPresenter",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che DeleteListViewImpl interagisca in modo corretto con DeleteListViewPresenter",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che InputListInfoViewImpl interagisca in modo corretto con InputListInfoViewPresenter",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       },
       {
         "description": "Si verifica che InputItemInfoViewImpl interagisca in modo corretto con InputItemInfoViewPresenter",
         "implemented": true,
         "passed": true,
-        "approved": false
+        "approved": true
       }
     ]
   },
 
   "Test di sistema": {
     "id_config": "TS[type][importance]#POS#",
-    "skip_not_approved": false,
+    "skip_not_approved": true,
     "tests": [
       {
         "description": "Si verifica che sia possibile creare e aggiungere ad una bolla un widget per tipo, tra quelli presenti nell'SDK",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -649,7 +649,7 @@
         "description": "Si verifica che sia possibile creare e aggiungere ad una bolla un layout per tipo, tra quelli presenti nell'SDK",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -657,7 +657,7 @@
         "description": "Si verifica che sia possibile impostare le variabili di un widget testo formattato",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -665,7 +665,7 @@
         "description": "Si verifica che un widget testo formattato faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -673,7 +673,7 @@
         "description": "Si verifica che sia possibile impostare le variabili di un widget immagine",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -681,7 +681,7 @@
         "description": "Si verifica che un widget immagine faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -689,7 +689,7 @@
         "description": "Si verifica che sia possibile impostare le variabili di un widget bottone",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -697,7 +697,7 @@
         "description": "Si verifica che un widget bottone faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -705,7 +705,7 @@
         "description": "Si verifica che sia possibile impostare le variabili di un widget checklistitem",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -713,7 +713,7 @@
         "description": "Si verifica che un widget checklistitem faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -721,7 +721,7 @@
         "description": "Si verifica che sia possibile impostare le variabili di un widget lista",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -729,7 +729,7 @@
         "description": "Si verifica che un widget lista faccia visualizzare un messaggio d'errore in caso venga impostata una sua variabile in maniera errata",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -737,7 +737,7 @@
         "description": "Si verifica che sia possibile aggiungere un widget all'interno di un VerticalLayoutView",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -745,7 +745,7 @@
         "description": "Si verifica che sia possibile aggiungere un widget all'interno di un HorizzontalLayoutView",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -753,7 +753,7 @@
         "description": "Si verifica che sia possibile istanziare una bolla avviso e sia possibile utilizzare tutti i suoi metodi",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -761,7 +761,7 @@
         "description": "Si verifica che sia possibile istanziare una bolla markdown e sia possibile utilizzare tutti i suoi metodi",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -769,7 +769,7 @@
         "description": "Si verifica che sia possibile istanziare una bolla lista e sia possibile utilizzare tutti i suoi metodi",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -777,7 +777,7 @@
         "description": "Si verifica che sia possibile creare una bolla \"lista della spesa\"",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -785,7 +785,7 @@
         "description": "Si verifica che l'aggiunta di un nuovo prodotto alla lista della spesa venga eseguita correttamente",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -793,7 +793,7 @@
         "description": "Si verifica che sia possibile rimuovere, per un utente con i permessi ed al creatore, un elemento ad una bolla \"lista della spesa\"",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "F"
       },
@@ -801,7 +801,7 @@
         "description": "Si verifica che sia possibile spuntare, per tutti gli utenti, un elemento di una bolla \"lista della spesa\"",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -825,7 +825,7 @@
         "description": "Si verifica che la pubblicazione a un utente di una bolla \"lista della spesa\" avvenga in modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -833,7 +833,7 @@
         "description": "Si verifica che la pubblicazione a un gruppo di una bolla \"lista della spesa\" avvenga in modo corretto",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -841,7 +841,7 @@
         "description": "Si verifica che l'utente con i permessi possa aggiungere elementi alla lista",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -849,7 +849,7 @@
         "description": "Si verifica che l'utente senza i permessi non possa aggiungere elementi alla lista",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -857,7 +857,7 @@
         "description": "Si verifica che il creatore della lista possa aggiungere elementi alla lista",
         "implemented": true,
         "passed": true,
-        "approved": false,
+        "approved": true,
         "type": "F",
         "importance": "O"
       },
@@ -880,7 +880,7 @@
         "description": "Si verifica che sia possibile scaricare l'SDK tramite il gestore dei pacchetti Atmosphere",
         "implemented": false,
         "passed": false,
-        "approved": false,
+        "approved": true,
         "type": "V",
         "importance": "O"
       },
@@ -934,16 +934,16 @@
       },
       {
         "description": "Si verifica che un generico utente possa creare un lista della spesa e pubblicarla ad un singolo utente avente un account sull'istanza Rocket.chat su cui è installata l'SDK",
-        "implemented": false,
-        "passed": false,
+        "implemented": true,
+        "passed": true,
         "approved": true,
         "type": "F",
         "importance": "O"
       },
       {
         "description": "Si verifica che, se un utente ha i permessi per interagire con una bolla, quest'ultima sia in grado di visualizzare gli elementi e di spuntarli",
-        "implemented": false,
-        "passed": false,
+        "implemented": true,
+        "passed": true,
         "approved": true,
         "type": "F",
         "importance": "O"
@@ -952,7 +952,7 @@
         "description": "Si verifica che, se un utente inoltra una lista della spesa, quest'ultima venga inoltrata in forma testuale bloccando quindi ogni forma di interazione con l'utente",
         "implemented": false,
         "passed": false,
-        "approved": true,
+        "approved": false,
         "type": "F",
         "importance": "O"
       },
@@ -968,14 +968,14 @@
         "description": "Si verifica che l'SDK si installi correttamente in una istanza di Rocket.chat, della quale viene fatto hosting su Heroku",
         "implemented": false,
         "passed": false,
-        "approved": true,
+        "approved": false,
         "type": "V",
         "importance": "O"
       },
       {
         "description": "Si verifica che l'SDK funzioni con il browser Chrome versione >= 56",
-        "implemented": false,
-        "passed": false,
+        "implemented": true,
+        "passed": true,
         "approved": true,
         "type": "F",
         "importance": "O"

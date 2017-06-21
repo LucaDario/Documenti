@@ -12,6 +12,7 @@ This guide contains all the information about how to create, use or extend each 
 Before all of that, it will also explain how to install \termine{Monolith} and getting started for using it.
 
 \subsection{Getting started}
+\subsubsection{Installing \termine{Monolith}}
 To install \termine{Monolith} you will need the following things:
 \begin{itemize}
 	\item an internet connection;
@@ -20,34 +21,61 @@ To install \termine{Monolith} you will need the following things:
 
 In order to include \termine{Monolith} inside your \termine{Meteor} project, you have to do as follows.
 \begin{enumerate}
-	\item Create a root folder (let's call it \texttt{root}) and put your project's root folder (let's call it \texttt{project}) inside it.
-	
-	\item Clone the current \url{Monolith \termine{GitHub} repo}{https://github.com/NPE-Developers/monolith} inside a folder (let's call it \texttt{monolith}) and put that folder inside the \texttt{root} folder. \\
-Once you have done so, you should have a folder tree that looks like the following:
-	\begin{lstlisting}
-    root
-     |- project
-     |     |- all your project's files
-     |- monolith
-     |- files from the cloned Monolith's GitHub repo
 
+	\item Open a shell inside your project's root folder and type the following commands:
+	\begin{lstlisting}
+    > meteor install npedevelopers:monolith
+    > meteor reset
+    > meteor npm install
+    > meteor run
 	\end{lstlisting}
-	
-	\item Now add an ambient variable with the following name and value.
-	\begin{itemize}
-		\item Name: \texttt{METEOR\_PACKAGE\_DIRS}
-		\item Value:  Path to the \texttt{root} folder
-	\end{itemize}
+\end{enumerate}	
 
-	\item If everything has been done properly, the last thing that you have to do is to go inside the \texttt{project} folder and type the following commands inside a shell prompt:
+\textbf{Note}. This procedure will erase all the temporary files that might have been created during previous project runs (such as databases, logs, etc.), but it will ensure that \termine{Monolith} is properly installed.
+	
+\subsubsection{Using Monolith inside a \termine{Rocket.chat}-based project}
+If your project is based on \termine{Rocket.chat}, we provide an additional library that will help you rendering the bubbles on a \termine{Rocket.chat} chat. \\
+In order to install this library do as follows:
+\begin{enumerate}
+
+	\item Go inside the \textit{packages} folder inside the main \termine{Rocket.chat} folder;
+	\item Create a new folder called \textit{npedevelopers:monolith-rc};
+	\item Clone the following repository inside the folder:
 	\begin{lstlisting}
-    > meteor install monolith
+    https://github.com/NPE-Developers/Monolith-rc
+	\end{lstlisting}
+	\item Open a command prompt inside the root folder of your project and type the following commands:
+	\begin{lstlisting}
+    > meteor install npedevelopers:monolith-rc
     > meteor reset
     > meteor npm install
     > meteor run
 	\end{lstlisting}
 
 \end{enumerate}
+
+
+%	\item Create a root folder (let's call it \texttt{root}) and put your project's root folder (let's call it \texttt{project}) inside it.
+%	
+%	\item Clone the current \url{Monolith \termine{GitHub} repo}{https://github.com/NPE-Developers/monolith} inside a folder (let's call it \texttt{monolith}) and put that folder inside the \texttt{root} folder. \\
+%Once you have done so, you should have a folder tree that looks like the following:
+%	\begin{lstlisting}
+%    root
+%     |- project
+%     |     |- all your project's files
+%     |- monolith
+%     |- files from the cloned Monolith's GitHub repo
+%
+%	\end{lstlisting}
+%	
+%	\item Now add an ambient variable with the following name and value.
+%	\begin{itemize}
+%		\item Name: \texttt{METEOR\_PACKAGE\_DIRS}
+%		\item Value:  Path to the \texttt{root} folder
+%	\end{itemize}
+
+	
+
 
 \textbf{Note}. This procedure will erase all the temporary files that might have been created during previous project runs (such as databases, logs, etc.), but it will ensure that \termine{Monolith} is properly installed.
 

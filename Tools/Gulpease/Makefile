@@ -30,3 +30,13 @@ rq :
 	$(GULPEASE_TOOL) ../../3\ -\ RQ/Interni/Verbali/Interni/Verbale_Interno_7_20170327
 	$(GULPEASE_TOOL) ../../3\ -\ RQ/Interni/Verbali/Interni/Verbale_Interno_8_20170402
 	$(GULPEASE_TOOL) ../../3\ -\ RQ/Interni/Verbali/Interni/Verbale_Interno_9_20170407
+
+ra :
+	$(GULPEASE_TOOL) ../../4\ -\ RA/Esterni/Analisi\ Dei\ Requisiti
+	$(GULPEASE_TOOL) ../../4\ -\ RA/Esterni/Definizione\ di\ Prodotto
+	$(GULPEASE_TOOL) ../../4\ -\ RA/Esterni/Glossario
+	$(GULPEASE_TOOL) ../../4\ -\ RA/Esterni/Piano\ Di\ Progetto
+	$(GULPEASE_TOOL) ../../4\ -\ RA/Esterni/Piano\ di\ Qualifica
+	$(GULPEASE_TOOL) ../../4\ -\ RA/Interni/Norme\ di\ progetto
+	$(GULPEASE_TOOL) ../../4\ -\ RA/Esterni/Manuale\ Utente\ -\ BringIt
+	$(GULPEASE_TOOL) ../../4\ -\ RA/Esterni/Manuale\ Utente\ -\ Monolith

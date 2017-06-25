@@ -878,8 +878,8 @@
     "tests": [
       {
         "description": "Si verifica che sia possibile scaricare l'SDK tramite il gestore dei pacchetti Atmosphere",
-        "implemented": false,
-        "passed": false,
+        "implemented": true,
+        "passed": true,
         "approved": true,
         "type": "V",
         "importance": "O"
@@ -982,8 +982,8 @@
       },
       {
         "description": "Si verifica che l'SDK funzioni con il browser Safari versione >= 10",
-        "implemented": false,
-        "passed": false,
+        "implemented": true,
+        "passed": true,
         "approved": true,
         "type": "F",
         "importance": "O"
@@ -998,8 +998,8 @@
       },
       {
         "description": "Si verifica che l'SDK funzioni con il browser Firefox versione >= 45",
-        "implemented": false,
-        "passed": false,
+        "implemented": true,
+        "passed": true,
         "approved": true,
         "type": "F",
         "importance": "O"
